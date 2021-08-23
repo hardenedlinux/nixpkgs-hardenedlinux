@@ -1,0 +1,109 @@
+# nvfetcher.toml
+[brim]
+src.github = "brimdata/brim"
+fetch.url = "https://github.com/brimdata/brim/releases/download/$ver/brim_amd64.deb"
+#src.prefix = "v"
+
+
+[broker]
+src.git = "https://github.com/zeek/broker"
+fetch.github = "zeek/broker"
+git.fetchSubmodules = true
+
+
+[broker-to-json]
+src.github = "grigorescu/broker-to-json"
+fetch.github = "grigorescu/broker-to-json"
+
+
+[sybilhunter]
+src.git = "https://github.com/NullHypothesis/sybilhunter"
+fetch.github = "NullHypothesis/sybilhunter"
+
+
+[eZeeKonfigurator]
+src.git = "https://github.com/esnet/eZeeKonfigurator"
+fetch.github = "esnet/eZeeKonfigurator"
+
+
+[rmm]
+src.git = "https://github.com/rapidsai/rmm"
+fetch.github = "rapidsai/rmm"
+
+
+[cudf]
+src.git = "https://github.com/rapidsai/cudf"
+fetch.github = "rapidsai/cudf"
+
+[clx]
+src.git = "https://github.com/rapidsai/clx"
+fetch.github = "rapidsai/clx"
+
+[cnmem]
+src.git = "https://github.com/NVIDIA/cnmem"
+fetch.github = "NVIDIA/cnmem"
+
+
+[eZeeKonfigurator_client]
+src.git = "https://github.com/esnet/eZeeKonfigurator_client"
+fetch.github = "esnet/eZeeKonfigurator_client"
+
+[elastalert2]
+src.git = "https://github.com/jertel/elastalert2"
+fetch.github = "jertel/elastalert2"
+
+[choochoo]
+src.git = "https://github.com/andrewcooke/choochoo"
+fetch.github = "andrewcooke/choochoo"
+
+#################
+# Python fastai #
+#################
+[fastai]
+src.git = "https://github.com/fastai/fastai"
+fetch.github = "fastai/fastai"
+
+[fastcore]
+src.git = "https://github.com/fastai/fastcore"
+fetch.github = "fastai/fastcore"
+
+[fastprogress]
+src.pypi = "fastprogress"
+fetch.pypi = "fastprogress"
+
+
+[zat]
+src.git = "https://github.com/SuperCowPowers/zat"
+fetch.github = "SuperCowPowers/zat"
+
+#Python Packages
+[btest]
+src.pypi = "btest"
+fetch.pypi = "btest"
+
+[durationpy]
+src.pypi = "durationpy"
+fetch.pypi = "durationpy"
+
+
+
+#Go Pkgs
+[ghq]
+src.git = "https://github.com/x-motemen/ghq"
+fetch.github = "x-motemen/ghq"
+
+[gst]
+src.git = "https://github.com/uetchy/gst"
+fetch.github = "uetchy/gst"
+
+
+# [deepsea]
+# src.manual= "b48e9302d079ed9f53a9123a805096a845d2c6a5"
+# fetch.github = "dsnezhkov/deepsea:b48e9302d079ed9f53a9123a805096a845d2c6a5"
+[zed]
+src.git = "https://github.com/brimdata/zed"
+fetch.github = "brimdata/zed"
+
+[nvdtools]
+src.git = "https://github.com/facebookincubator/nvdtools"
+fetch.github = "facebookincubator/nvdtools"

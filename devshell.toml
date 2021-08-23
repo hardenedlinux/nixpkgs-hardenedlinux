@@ -1,0 +1,15 @@
+[devshell]
+packages = ["fup-repl"]
+
+[[commands]]
+name = "repl-local"
+command = "repl $DEVSHELL_ROOT/flake.nix"
+help = "run nix repl with flake"
+
+[[commands]]
+name = "only-x86-64_linux"
+category = "tests"
+command = '''
+        sed -i 's|\#supportedSystems|supportedSystems|' flake.nix
+        '''
+help = "lock rev for bindary cache build"

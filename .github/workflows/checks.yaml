@@ -1,0 +1,84 @@
+name: "CI"
+on:
+  pull_request:
+  push:
+  schedule:
+    - cron: "* * 7 * *"
+jobs:
+  nix-tests:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v2.3.4
+        with:
+          fetch-depth: 0
+
+      - uses: cachix/install-nix-action@v13
+        with:
+          install_url: https://github.com/numtide/nix-flakes-installer/releases/download/nix-2.4pre20210604_8e6ee1b/install
+          extra_nix_config: |
+            experimental-features = nix-command flakes
+            system-features = nixos-test benchmark big-parallel kvm recursive-nix
+
+      - uses: cachix/cachix-action@v10
+        with:
+          name: zeek
+          authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
+
+      # CI workflows
+      - name: Run Nix Format Check
+        run: nix -Lv develop -c nixpkgs-fmt --check .
+
+      - name: Run Nix Flake Show
+        run: |
+          nix develop -c only-x86-64_linux
+          nix flake show
+
+      - name: Run Nix Flake Check
+        run: nix -Lv flake check
+
+      - name: Run nvfetcher
+        run: |
+          nix -Lv develop --command nvfetcher -l changelog
+
+      - name: Build Package broker
+        run: nix -Lv build .\#broker
+
+      - name: Build Package elastalert2
+        run: nix -Lv build .\#elastalert2
+
+      - name: Build Package zqd
+        run: nix -Lv build .\#zqd
+
+      - name: Build Package zat
+        run: nix -Lv build .\#zat
+
+      - name: Build Package zed
+        run: nix -Lv build .\#zed
+
+      - name: Build Package btest
+        run: nix -Lv build .\#btest
+
+      - name: Build Package GoPackages
+        run: |
+          nix -Lv build .\#gst
+          nix -Lv build .\#ghq
+
+      - name: COMMIT_MSG
+        run: |
+          changlog=$(find . -type f -name "changelog")
+          if [[ ! -z "$(cat $changlog)" ]]; then
+          echo "COMMIT_MSG<<EOF" >>$GITHUB_ENV
+          echo "$(cat $changlog)" >>$GITHUB_ENV
+          echo "EOF" >>$GITHUB_ENV
+          rm -rf $changlog
+          else
+          rm -rf $changlog
+          fi
+
+      - name: Commit changes
+        if: ${{ env.COMMIT_MSG != null }}
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: ${{ env.COMMIT_MSG }}

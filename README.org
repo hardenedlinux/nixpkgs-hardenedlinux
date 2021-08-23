@@ -1,0 +1,45 @@
+#+TITLE: Hardenedlinux nixpkgs collection
+
+* Show all of packages in Nixpkgs-Hardenedlinux
+
+#+begin_src sh :exports both :results output
+nix flake show github:hardenedlinux/nixpkgs-hardenedlinux
+#+end_src
+* Build Package with Nix build
+
+#+begin_src sh :async t :exports both :results output
+nix build github:hardenedlinux/nixpkgs-hardenedlinux#<package name>
+#+end_src
+
+For Example: (Build Spicy)
+
+#+begin_src sh :async t :exports both :results output
+nix build github:hardenedlinux/nixpkgs-hardenedlinux#spicy
+#+end_src
+
+* Phishing
+** SMTP/email
+*** Deepsea
+- quickly test commmands
+
+#+begin_src sh :async t :exports both :results output
+- Tow methods: templated and hand-rolled
+
+cd ./test/deepsea
+nix run github:hardenedlinux/nixpkgs-hardenedlinux#deepsea -- --config template.yaml content inline
+nix run github:hardenedlinux/nixpkgs-hardenedlinux#deepsea -- --config template.yaml content multipart
+
+-  create DB and load from CSV
+./result/bin/deepsea -t
+nix run github:hardenedlinux/nixpkgs-hardenedlinux#deepsea -- --config template.yaml storage -D test/deepsea/template.db manager  -T createtable
+
+ - load CSV
+nix run github:hardenedlinux/nixpkgs-hardenedlinux#deepsea -- --config template.yaml storage  -d ./template.db load -s ./marks.csv
+
+- show loaded marks of table
+nix run github:hardenedlinux/nixpkgs-hardenedlinux#deepsea -- --config template.yaml  storage  -d ./template.db manager  -T showmarks
+
+- Mail Campaign
+nix run github:hardenedlinux/nixpkgs-hardenedlinux#deepsea -- --config template.yaml  mailclient --config template.yaml
+#+end_src
+
