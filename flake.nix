@@ -2,7 +2,7 @@
   description = "Hardenedlinux Nixpkgs Collection -> Nix Flakes ";
 
   inputs = {
-    utils.url = "github:gytis-ivaskevicius/flake-utils-plus/staging";
+    utils.url = "github:gytis-ivaskevicius/flake-utils-plus";
     nixpkgs.url = "nixpkgs/release-21.05";
     stable.url = "nixpkgs/release-20.09";
     nvfetcher = { url = "github:berberman/nvfetcher"; };
@@ -25,7 +25,7 @@
       inherit (utils-lib) pathsToImportedAttrs overlayPaths;
       utils-lib = import ./lib/utils-ext.nix { inherit lib; };
     in
-    utils.lib.systemFlake
+    utils.lib.mkFlake
       {
         inherit self inputs;
 
