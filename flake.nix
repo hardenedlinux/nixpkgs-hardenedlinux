@@ -29,7 +29,7 @@
       {
         inherit self inputs;
 
-        #supportedSystems = [ "x86_64-linux" ];
+        supportedSystems = [ "x86_64-linux" ];
 
         channelsConfig = {
           allowUnsupportedSystem = true;
