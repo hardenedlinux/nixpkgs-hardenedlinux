@@ -79,14 +79,14 @@
   };
   cudf = {
     pname = "cudf";
-    version = "91f853395475b6a89a44aaf3b08224c66e109166";
+    version = "a02f888badcd9cf7f81a0e32605f51d51085311f";
     src = fetchgit {
       url = "https://github.com/rapidsai/cudf";
-      rev = "91f853395475b6a89a44aaf3b08224c66e109166";
+      rev = "a02f888badcd9cf7f81a0e32605f51d51085311f";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "18grrn5zr414038m9yclygs54ml4s9gzbwhgw9mq8vi6n650qh3h";
+      sha256 = "0jxsxvc7g00a6m0wyr8s0bydi1lv02z475nmzl55vxqh57y0hrym";
     };
   };
   durationpy = {
