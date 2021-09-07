@@ -239,14 +239,14 @@
   };
   zed = {
     pname = "zed";
-    version = "882418925884e7b2cd43425b8e95f0bd79df9705";
+    version = "f5fef7c0ac41d7cbb2b6abb75eaad0c25c6d6a41";
     src = fetchgit {
       url = "https://github.com/brimdata/zed";
-      rev = "882418925884e7b2cd43425b8e95f0bd79df9705";
+      rev = "f5fef7c0ac41d7cbb2b6abb75eaad0c25c6d6a41";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "01vfcn1868is7xsqhr75rfb9qs0flwmh5vsw703r0xfvqgrgj220";
+      sha256 = "1jsxqspi0zgwcss2pmmv6lq774p64k9r4gb05gd3vzksxfbdr5fj";
     };
   };
 }
