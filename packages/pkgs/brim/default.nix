@@ -86,7 +86,7 @@ stdenv.mkDerivation rec {
     ln -s $out/share/Brim/brim $out/bin/brim
 
     substituteInPlace $out/share/applications/brim.desktop  \
-      --replace "brim %U" "$out/bin/brim $U"
+      --replace "/opt/Brim/brim %U" "$out/bin/brim $U"
 
     runHook postInstall
   '';
