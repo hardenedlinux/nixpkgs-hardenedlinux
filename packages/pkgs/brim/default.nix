@@ -25,6 +25,7 @@
 , dpkg
 , libudev0-shim
 , glibc
+, libsecret
 , nixpkgs-hardenedlinux-sources
 }:
 stdenv.mkDerivation rec {
@@ -70,25 +71,24 @@ stdenv.mkDerivation rec {
   ];
 
 
-  runtimeLibs = lib.makeLibraryPath [ libudev0-shim glibc ];
+  runtimeLibs = lib.makeLibraryPath [ libudev0-shim glibc libsecret ];
 
   unpackPhase = "dpkg-deb --fsys-tarfile $src | tar -x --no-same-permissions --no-same-owner";
 
   installPhase = ''
     runHook preInstall
-    mkdir -p $out/share/brim
-    mkdir -p $out/bin
-    mkdir -p $out/lib
 
-    mv usr/lib/brim/* $out/share/brim
-    mv $out/share/brim/*.so $out/lib/
+    mkdir -p $out/{bin,share/Brim,lib}
+
+    mv opt/Brim/* $out/share/Brim
+    mv $out/share/Brim/*.so $out/lib/
     mv usr/share/* $out/share/
-    ln -s $out/share/brim/Brim $out/bin/brim
+    ln -s $out/share/Brim/brim $out/bin/brim
 
     substituteInPlace $out/share/applications/brim.desktop  \
       --replace "brim %U" "$out/bin/brim $U"
 
-    runHook preInstall
+    runHook postInstall
   '';
 
   preFixup = ''

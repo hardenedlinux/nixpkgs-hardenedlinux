@@ -1,8 +1,8 @@
 # nvfetcher.toml
 [brim]
 src.github = "brimdata/brim"
-fetch.url = "https://github.com/brimdata/brim/releases/download/$ver/brim_amd64.deb"
-#src.prefix = "v"
+fetch.url = "https://github.com/brimdata/brim/releases/download/v$ver/Brim-$ver.deb"
+src.prefix = "v"
 
 
 [broker]

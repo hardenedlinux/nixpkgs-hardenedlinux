@@ -3,11 +3,11 @@
     "devshell-flake": {
       "flake": false,
       "locked": {
-        "lastModified": 1630239564,
-        "narHash": "sha256-lv7atkVE1+dFw0llmzONsbSIo5ao85KpNSRoFk4K8vU=",
+        "lastModified": 1631528035,
+        "narHash": "sha256-ZV4+WsrF1uaAOM2ynGzWD5dCmrWpKc+Rj1hZkodEPQY=",
         "owner": "numtide",
         "repo": "devshell",
-        "rev": "bd86d3a2bb28ce4d223315e0eca0d59fef8a0a73",
+        "rev": "dd0d585d2ed42b9d226673dd56d4fe2dfd0bf0dc",
         "type": "github"
       },
       "original": {
@@ -153,11 +153,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1630964657,
-        "narHash": "sha256-owGDhoOhY9AXsqkPvGJrprxfH3VEEiRmmzZiHy2bibM=",
+        "lastModified": 1631578828,
+        "narHash": "sha256-qwy3uSFuZBOCn1RXJyvuVlwF2sf2h9eq+gglLtAz6Xs=",
         "ref": "release-21.05",
-        "rev": "e421291bdd94c79d6ae98f05ed8f09412d0b6ad7",
-        "revCount": 294475,
+        "rev": "667c06be315ea3cc1a991e0a0d0598de6d779181",
+        "revCount": 294563,
         "type": "git",
         "url": "file:///nix/nixpkgs"
       },
@@ -206,11 +206,11 @@
     "pypi-deps-db": {
       "flake": false,
       "locked": {
-        "lastModified": 1630959298,
-        "narHash": "sha256-elhmuLn7Ar8OfiMIHq1NVJvRc7Ah/1dq4z+/PuLx3bA=",
+        "lastModified": 1631650513,
+        "narHash": "sha256-gx0UbCDeXVDOdmkRX41+W0S8GxN2W8jNFdcBqx57GvI=",
         "owner": "DavHau",
         "repo": "pypi-deps-db",
-        "rev": "fc315a802e0d08944ccc515db11bdd7804b829e8",
+        "rev": "674459b53563c5d115f53ef79193c04ec0be57ce",
         "type": "github"
       },
       "original": {
@@ -268,11 +268,11 @@
         "flake-utils": "flake-utils_3"
       },
       "locked": {
-        "lastModified": 1630871058,
-        "narHash": "sha256-TAkWqc4b+ssyGb+jf5gcDskGWkPPbgHwzJKs4etU+LU=",
+        "lastModified": 1631138716,
+        "narHash": "sha256-hp+/dyKWtt9p0MD7dNTR1foRWrjcitUp3848OnRQz7w=",
         "owner": "gytis-ivaskevicius",
         "repo": "flake-utils-plus",
-        "rev": "afaa6ea2a7a1df5e000325739d98a32025979137",
+        "rev": "51169bf93d010a874bc8fe8ea3dee1c24471b697",
         "type": "github"
       },
       "original": {
