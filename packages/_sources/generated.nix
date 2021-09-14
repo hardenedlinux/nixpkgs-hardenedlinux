@@ -79,14 +79,14 @@
   };
   cudf = {
     pname = "cudf";
-    version = "c6ddd46d4aa7b7c9914da29c89ad6a5ebde1c3bd";
+    version = "eab2486008229414737de8107d04fef63d5a1dd7";
     src = fetchgit {
       url = "https://github.com/rapidsai/cudf";
-      rev = "c6ddd46d4aa7b7c9914da29c89ad6a5ebde1c3bd";
+      rev = "eab2486008229414737de8107d04fef63d5a1dd7";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "1dxs68vi89lcw86v23x2xwq9rjq65f7qb77apkd0p3iiysa97wna";
+      sha256 = "1w0raxx5ijnijc5wv8rxkyyp8gl7xb2gkaa6z8275h1iz0nhzhl7";
     };
   };
   durationpy = {
@@ -239,14 +239,14 @@
   };
   zed = {
     pname = "zed";
-    version = "15a44c930ebb1783d7a577537addd22096bfb4a0";
+    version = "f5024835c57a412755c5332e5202de4bc5e4f215";
     src = fetchgit {
       url = "https://github.com/brimdata/zed";
-      rev = "15a44c930ebb1783d7a577537addd22096bfb4a0";
+      rev = "f5024835c57a412755c5332e5202de4bc5e4f215";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "1hsjhz64042gqfnjynhrrvli6d84h9x4vmrvgmnwgbm9gdg148c8";
+      sha256 = "0w1hy3k7bx5kf74ca770acr31dc7k419888cspk6yp8wyq4wh0rb";
     };
   };
 }
