@@ -5,7 +5,9 @@ buildGoApplication rec {
 
   modules = ./gomod2nix.toml;
 
-  subPackages = [ "cmd/zed" ];
+  subPackages = [ "cmd/*" ];
+
+  doCheck = false;
 
   meta = {
     description = "Search and analysis tooling for structured logs";

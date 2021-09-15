@@ -44,7 +44,6 @@
               [
                 self.overlay
                 (final: prev: { nvfetcher-bin = nvfetcher.defaultPackage."${final.system}"; })
-                (utils.overlay)
               ];
           };
           stable = {
