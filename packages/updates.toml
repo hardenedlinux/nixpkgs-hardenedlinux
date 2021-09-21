@@ -2,11 +2,19 @@
 packages = ["gomod2nix"]
 
 [[commands]]
+name = "t1"
+category = "test"
+command = '''
+        source $DEVSHELL_ROOT/packages/update.sh
+        mkcd
+'''
+help = ""
+[[commands]]
 name = "zed-update"
 category = "update"
 command = '''
         git clone https://github.com/brimdata/zed --depth=1 /tmp/zed
         gomod2nix -dir /tmp/zed
-        cp /tmp/zed/gomod2nix.toml $DEVSHELL_ROOT/packages/pkgs/zed
+        cp -rf /tmp/zed/gomod2nix.toml $DEVSHELL_ROOT/packages/pkgs/zed
         '''
 help = "gomod2nix to zed"

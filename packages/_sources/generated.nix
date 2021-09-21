@@ -177,6 +177,18 @@
       sha256 = "1fa540x43jn3anckrjjlqvvd9pgk23ac7g30w0qig7kffcr0myal";
     };
   };
+  go-nfsd = {
+    pname = "go-nfsd";
+    version = "bb1dc61f5ca3f77c93164a94023548ff2fa5ec07";
+    src = fetchgit {
+      url = "https://github.com/mit-pdos/go-nfsd";
+      rev = "bb1dc61f5ca3f77c93164a94023548ff2fa5ec07";
+      fetchSubmodules = false;
+      deepClone = false;
+      leaveDotGit = false;
+      sha256 = "1cp8nx72qcnis1k1lk5zh189qdlpsndg3lmm49mznx9fsj77qz2p";
+    };
+  };
   gst = {
     pname = "gst";
     version = "fdab2f198de5873440a6014df4eb2eaa2d7f2ba0";

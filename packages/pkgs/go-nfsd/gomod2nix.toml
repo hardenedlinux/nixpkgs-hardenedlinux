@@ -1,0 +1,271 @@
+["github.com/creack/pty"]
+  sumVersion = "v1.1.9"
+  ["github.com/creack/pty".fetch]
+    type = "git"
+    url = "https://github.com/creack/pty"
+    rev = "3a6a957789163cacdfe0e291617a1c8e80612c11"
+    sha256 = "1v52599qq76dwq742mffakzj6mxqqccv2szn3hjicjld56nmd2d3"
+
+["github.com/davecgh/go-spew"]
+  sumVersion = "v1.1.1"
+  ["github.com/davecgh/go-spew".fetch]
+    type = "git"
+    url = "https://github.com/davecgh/go-spew"
+    rev = "8991bc29aa16c548c550c7ff78260e27b9ab7c73"
+    sha256 = "0hka6hmyvp701adzag2g26cxdj47g21x6jz4sc6jjz1mn59d474y"
+
+["github.com/fatih/color"]
+  sumVersion = "v1.9.0"
+  ["github.com/fatih/color".fetch]
+    type = "git"
+    url = "https://github.com/fatih/color"
+    rev = "daf2830f2741ebb735b21709a520c5f37d642d85"
+    sha256 = "086z8ssmr1fn9ba4mqnw7pnccfpys6l5yfhvycv1gdrsk7n27mvs"
+
+["github.com/goose-lang/std"]
+  sumVersion = "v0.0.0-20210910024443-21c4593d3dec"
+  ["github.com/goose-lang/std".fetch]
+    type = "git"
+    url = "https://github.com/goose-lang/std"
+    rev = "21c4593d3dec287058496318f724f67c23b6ab43"
+    sha256 = "145c42axbfnjb4sifaii50msnaiibdqmj4q00rhr2v1m1930n4rf"
+
+["github.com/kr/pretty"]
+  sumVersion = "v0.2.0"
+  ["github.com/kr/pretty".fetch]
+    type = "git"
+    url = "https://github.com/kr/pretty"
+    rev = "4e0886370c3a67530192c6a238cff68f56c141b0"
+    sha256 = "1ywbfzz1h3a3qd8rpkiqwi1dm4w8ls9ijb4x1b7567grns9f0vnp"
+
+["github.com/kr/pty"]
+  sumVersion = "v1.1.1"
+  ["github.com/kr/pty".fetch]
+    type = "git"
+    url = "https://github.com/kr/pty"
+    rev = "282ce0e5322c82529687d609ee670fac7c7d917c"
+    sha256 = "0383f0mb9kqjvncqrfpidsf8y6ns5zlrc91c6a74xpyxjwvzl2y6"
+
+["github.com/kr/text"]
+  sumVersion = "v0.2.0"
+  ["github.com/kr/text".fetch]
+    type = "git"
+    url = "https://github.com/kr/text"
+    rev = "702c74938df48b97370179f33ce2107bd7ff3b3e"
+    sha256 = "0hf58ypz6rxsw6nx3i856whir9lvy4sdx946wbw1nfaf2rdmr9vx"
+
+["github.com/mattn/go-colorable"]
+  sumVersion = "v0.1.7"
+  ["github.com/mattn/go-colorable".fetch]
+    type = "git"
+    url = "https://github.com/mattn/go-colorable"
+    rev = "f6c00982823144337e56cdb71c712eaac151d29c"
+    sha256 = "08y5c01bvyqxraj3wc0di80gbp87178rsshb74x0p3m7wwfv82l3"
+
+["github.com/mattn/go-isatty"]
+  sumVersion = "v0.0.12"
+  ["github.com/mattn/go-isatty".fetch]
+    type = "git"
+    url = "https://github.com/mattn/go-isatty"
+    rev = "7b513a986450394f7bbf1476909911b3aa3a55ce"
+    sha256 = "1dfsh27d52wmz0nmmzm2382pfrs2fcijvh6cgir7jbb4pnigr5w4"
+
+["github.com/mattn/go-runewidth"]
+  sumVersion = "v0.0.9"
+  ["github.com/mattn/go-runewidth".fetch]
+    type = "git"
+    url = "https://github.com/mattn/go-runewidth"
+    rev = "14e809f6d78fcf9f48ff9b70981472b64c05f754"
+    sha256 = "1mvlxcdwr0vwp8b2wqs6y7hk72y28sqh03dz5x0xkg48d4y9cplj"
+
+["github.com/mit-pdos/go-journal"]
+  sumVersion = "v0.4.1"
+  ["github.com/mit-pdos/go-journal".fetch]
+    type = "git"
+    url = "https://github.com/mit-pdos/go-journal"
+    rev = "c68fddb66fceb08ac1f6fab103d84b7b0db29fb5"
+    sha256 = "16fqsim3jbwaf01i0r7vzn39qh4zbjrzbp5znql6pjna9b53wa4g"
+
+["github.com/niemeyer/pretty"]
+  sumVersion = "v0.0.0-20200227124842-a10e7caefd8e"
+  ["github.com/niemeyer/pretty".fetch]
+    type = "git"
+    url = "https://github.com/niemeyer/pretty"
+    rev = "a10e7caefd8e0d600cea437f5c3613aeb1553d56"
+    sha256 = "1jmazh4xzaa3v6g46hz60q2z7nmqs9l9cxdzmmscn3kbcs2znq4v"
+
+["github.com/pkg/errors"]
+  sumVersion = "v0.9.1"
+  ["github.com/pkg/errors".fetch]
+    type = "git"
+    url = "https://github.com/pkg/errors"
+    rev = "614d223910a179a466c1767a985424175c39b465"
+    sha256 = "1761pybhc2kqr6v5fm8faj08x9bql8427yqg6vnfv6nhrasx1mwq"
+
+["github.com/pmezard/go-difflib"]
+  sumVersion = "v1.0.0"
+  ["github.com/pmezard/go-difflib".fetch]
+    type = "git"
+    url = "https://github.com/pmezard/go-difflib"
+    rev = "792786c7400a136282c1664665ae0a8db921c6c2"
+    sha256 = "0c1cn55m4rypmscgf0rrb88pn58j3ysvc2d0432dp3c6fqg6cnzw"
+
+["github.com/rodaine/table"]
+  sumVersion = "v1.0.1"
+  ["github.com/rodaine/table".fetch]
+    type = "git"
+    url = "https://github.com/rodaine/table"
+    rev = "7577773ec6078c681ee89831b3fd862bd7b691f9"
+    sha256 = "013mkkgiq8gmzmlz03ajwkjh34dpvswfra6vp4m2bc4zsnx2r4ad"
+
+["github.com/stretchr/objx"]
+  sumVersion = "v0.1.0"
+  ["github.com/stretchr/objx".fetch]
+    type = "git"
+    url = "https://github.com/stretchr/objx"
+    rev = "facf9a85c22f48d2f52f2380e4efce1768749a89"
+    sha256 = "19ynspzjdynbi85xw06mh8ad5j0qa1vryvxjgvbnyrr8rbm4vd8w"
+
+["github.com/stretchr/testify"]
+  sumVersion = "v1.7.0"
+  ["github.com/stretchr/testify".fetch]
+    type = "git"
+    url = "https://github.com/stretchr/testify"
+    rev = "acba37e5db06f0093b465a7d47822bf13644b66c"
+    sha256 = "0ixgjsvafr3513pz3r6pmgk074s2dxkll0dadvl25gkf30rkmh10"
+
+["github.com/tchajed/goose"]
+  sumVersion = "v0.3.1"
+  ["github.com/tchajed/goose".fetch]
+    type = "git"
+    url = "https://github.com/tchajed/goose"
+    rev = "8501897b658aa95bbe5e5f164ed98b70a86b7905"
+    sha256 = "03pyihjprn7vqknzmbm8ikwic8jxc4glzxclbz47lwasajdnng2r"
+
+["github.com/tchajed/mailboat"]
+  sumVersion = "v0.2.0"
+  ["github.com/tchajed/mailboat".fetch]
+    type = "git"
+    url = "https://github.com/tchajed/mailboat"
+    rev = "4b671d576d3da8a13af2d166721b2403959e82a0"
+    sha256 = "1mcwa7hlyx6zsc6wkcv8488msjcynnrgrp77py7zdc87282djh6j"
+
+["github.com/tchajed/marshal"]
+  sumVersion = "v0.2.0"
+  ["github.com/tchajed/marshal".fetch]
+    type = "git"
+    url = "https://github.com/tchajed/marshal"
+    rev = "6cc5ba0f60483d54cdec6b5c41290c88c5bab1ce"
+    sha256 = "0mkxf1nzyay5c9wmd0m46ys6fhm40zj8523vk7q2051zw56yyz6z"
+
+["github.com/yuin/goldmark"]
+  sumVersion = "v1.3.5"
+  ["github.com/yuin/goldmark".fetch]
+    type = "git"
+    url = "https://github.com/yuin/goldmark"
+    rev = "9f5125e104c38283b8ca0a581793abe4260dd786"
+    sha256 = "08rrhfji92hixiv3v0wvamwcy56f90wsw84w7lyvad7g90kbsknx"
+
+["github.com/zeldovich/go-rpcgen"]
+  sumVersion = "v0.1.4"
+  ["github.com/zeldovich/go-rpcgen".fetch]
+    type = "git"
+    url = "https://github.com/zeldovich/go-rpcgen"
+    rev = "6bfb1fc1b087e50713518542bb8724dea74ddab5"
+    sha256 = "0s9mzfy4sagc4ac3y9kw7q22z1zzv4gmnfmxh7kbc15270jriara"
+
+["golang.org/x/crypto"]
+  sumVersion = "v0.0.0-20191011191535-87dc89f01550"
+  ["golang.org/x/crypto".fetch]
+    type = "git"
+    url = "https://go.googlesource.com/crypto"
+    rev = "87dc89f01550277dc22b74ffcf4cd89fa2f40f4c"
+    sha256 = "0z4i1m2yn3f31ci7wvcm2rxkx2yiv7a78mfzklncmsz2k97rlh2g"
+
+["golang.org/x/mod"]
+  sumVersion = "v0.4.2"
+  ["golang.org/x/mod".fetch]
+    type = "git"
+    url = "https://go.googlesource.com/mod"
+    rev = "d6ab96f2441f9631f81862375ef66782fc4a9c12"
+    sha256 = "0z1p17i291z2k6va08i80ljyzyij2b6qsz78lnz0wi8zsnkfdz43"
+
+["golang.org/x/net"]
+  sumVersion = "v0.0.0-20210405180319-a5a99cb37ef4"
+  ["golang.org/x/net".fetch]
+    type = "git"
+    url = "https://go.googlesource.com/net"
+    rev = "a5a99cb37ef4b68617775ab669177656090ab396"
+    sha256 = "0z90hpmxdw9i8vfhd6vf7hd63c86f1128qfb5f3y4kinvlpjy3rl"
+
+["golang.org/x/sync"]
+  sumVersion = "v0.0.0-20210220032951-036812b2e83c"
+  ["golang.org/x/sync".fetch]
+    type = "git"
+    url = "https://go.googlesource.com/sync"
+    rev = "036812b2e83c0ddf193dd5a34e034151da389d09"
+    sha256 = "1gl202py3s4gl6arkaxlf8qa6f0jyyg2f95m6f89qnfmr416h85b"
+
+["golang.org/x/sys"]
+  sumVersion = "v0.0.0-20210823070655-63515b42dcdf"
+  ["golang.org/x/sys".fetch]
+    type = "git"
+    url = "https://go.googlesource.com/sys"
+    rev = "63515b42dcdf9544f4e6a02fd7632793fde2f72d"
+    sha256 = "0ljpr34brdrwldi9w52nx2zz31rzk0ya8nd2kbfpi12b0lny1c6g"
+
+["golang.org/x/term"]
+  sumVersion = "v0.0.0-20201126162022-7de9c90e9dd1"
+  ["golang.org/x/term".fetch]
+    type = "git"
+    url = "https://go.googlesource.com/term"
+    rev = "7de9c90e9dd184706b838f536a1cbf40a296ddb7"
+    sha256 = "1ba252xmv6qsvf1w1gcy98mngrj0vd4inbjw0lsklqvva65nljna"
+
+["golang.org/x/text"]
+  sumVersion = "v0.3.3"
+  ["golang.org/x/text".fetch]
+    type = "git"
+    url = "https://go.googlesource.com/text"
+    rev = "23ae387dee1f90d29a23c0e87ee0b46038fbed0e"
+    sha256 = "19pihqm3phyndmiw6i42pdv6z1rbvlqlsnhsyqf9gsnn0qnmqqlh"
+
+["golang.org/x/tools"]
+  sumVersion = "v0.1.1"
+  ["golang.org/x/tools".fetch]
+    type = "git"
+    url = "https://go.googlesource.com/tools"
+    rev = "cd1d0887dc8cfcfb844340a5fce628c61da00a20"
+    sha256 = "0ih3gcz1vc6ic27fmsqdllspwal2h76zi8nw15ldb708rf76y731"
+
+["golang.org/x/xerrors"]
+  sumVersion = "v0.0.0-20200804184101-5ec99f83aff1"
+  ["golang.org/x/xerrors".fetch]
+    type = "git"
+    url = "https://go.googlesource.com/xerrors"
+    rev = "5ec99f83aff198f5fbd629d6c8d8eb38a04218ca"
+    sha256 = "1dbzc3gmf2haazpv7cgmv97rq40g2xzwbglc17vas8dwhgwgwrzb"
+
+["gopkg.in/check.v1"]
+  sumVersion = "v1.0.0-20200227125254-8fa46927fb4f"
+  ["gopkg.in/check.v1".fetch]
+    type = "git"
+    url = "https://gopkg.in/check.v1"
+    rev = "8fa46927fb4f5b54d48bde78c6c08db205b2298c"
+    sha256 = "0fx03x0nx9mjwnqphnx852q9p76qg7cazrachvgr1bj357lplrcw"
+
+["gopkg.in/yaml.v2"]
+  sumVersion = "v2.2.8"
+  ["gopkg.in/yaml.v2".fetch]
+    type = "git"
+    url = "https://gopkg.in/yaml.v2"
+    rev = "53403b58ad1b561927d19068c655246f2db79d48"
+    sha256 = "1inf7svydzscwv9fcjd2rm61a4xjk6jkswknybmns2n58shimapw"
+
+["gopkg.in/yaml.v3"]
+  sumVersion = "v3.0.0-20210107192922-496545a6307b"
+  ["gopkg.in/yaml.v3".fetch]
+    type = "git"
+    url = "https://gopkg.in/yaml.v3"
+    rev = "496545a6307b2a7d7a710fd516e5e16e8ab62dbc"
+    sha256 = "06f4lnrp494wqaygv09dggr2dwf3z2bawqhnlnnwiamg5y787k4g"

@@ -100,6 +100,12 @@ fetch.github = "uetchy/gst"
 # [deepsea]
 # src.manual= "b48e9302d079ed9f53a9123a805096a845d2c6a5"
 # fetch.github = "dsnezhkov/deepsea:b48e9302d079ed9f53a9123a805096a845d2c6a5"
+[go-nfsd]
+src.git = "https://github.com/mit-pdos/go-nfsd"
+fetch.github = "mit-pdos/go-nfsd"
+
+
+
 [zed]
 src.git = "https://github.com/brimdata/zed"
 fetch.github = "brimdata/zed"
