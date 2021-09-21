@@ -123,14 +123,14 @@
   };
   elastalert2 = {
     pname = "elastalert2";
-    version = "c4fd2399bcbe904615208317af36775063c6d535";
+    version = "6b3237637cdc1b05293dce75fa127d95e0beab3a";
     src = fetchgit {
       url = "https://github.com/jertel/elastalert2";
-      rev = "c4fd2399bcbe904615208317af36775063c6d535";
+      rev = "6b3237637cdc1b05293dce75fa127d95e0beab3a";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "0z5gkhz7ibspclgrw3mp8gdavq8mhanibg78m7hmcfbs9prxmyg3";
+      sha256 = "144i9nw8w7wb288acbgnp7gq4k08byfj3pims3jdqpcja98g2bl8";
     };
   };
   fastai = {
