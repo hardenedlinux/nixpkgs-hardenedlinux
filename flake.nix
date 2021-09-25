@@ -7,7 +7,7 @@
     stable.url = "nixpkgs/release-20.09";
     nvfetcher = { url = "github:berberman/nvfetcher"; };
     flake-compat = { url = "github:edolstra/flake-compat"; flake = false; };
-    devshell-flake = { url = "github:numtide/devshell"; flake = false; };
+    devshell = { url = "github:numtide/devshell"; };
     gomod2nix = { url = "github:tweag/gomod2nix"; inputs.nixpkgs.follows = "nixpkgs"; };
     mach-nix = { url = "github:DavHau/mach-nix"; inputs.pypi-deps-db.follows = "pypi-deps-db"; };
     pypi-deps-db = {
@@ -19,7 +19,7 @@
 
   outputs = inputs: with builtins; with inputs;
     let
-      inherit (utils.lib.exporters) internalOverlays fromOverlays modulesFromList;
+      inherit (utils.lib) exportOverlays exportPackages exportModules;
       inherit (nixpkgs) lib;
       inherit (builtins) attrValues;
       inherit (utils-lib) pathsToImportedAttrs overlayPaths;
@@ -60,7 +60,7 @@
 
         sharedOverlays = [
           gomod2nix.overlay
-          (import "${devshell-flake}/overlay.nix")
+          devshell.overlay
           (final: prev:
             {
               __dontExport = true;
@@ -72,49 +72,15 @@
             })
         ] ++ (attrValues (pathsToImportedAttrs overlayPaths));
 
-        # export overlays automatically for all packages defined in overlaysBuilder of each channel
-        overlays = internalOverlays
-          {
-            inherit (self) pkgs inputs;
-          };
+        # exportOverlays automatically for all packages defined in overlaysBuilder of each channel
+        overlays = exportOverlays {
+          inherit (self) pkgs inputs;
+        };
 
         outputsBuilder = channels: {
-          # construct packagesBuilder to export all packages defined in overlays
-          packages = fromOverlays self.overlays channels;
-          devShell = with channels.nixpkgs; devshell.mkShell {
-            name = "devShell";
-            imports = [
-              (devshell.importTOML ./devshell.toml)
-              (devshell.importTOML ./packages/updates.toml)
-            ];
-            # tempfix: remove when merged https://github.com/numtide/devshell/pull/123
-            devshell.startup.load_profiles = pkgs.lib.mkForce (pkgs.lib.noDepEntry ''
-              # PATH is devshell's exorbitant privilige:
-              # fence against its pollution
-              _PATH=''${PATH}
-              # Load installed profiles
-              for file in "$DEVSHELL_DIR/etc/profile.d/"*.sh; do
-                # If that folder doesn't exist, bash loves to return the whole glob
-                [[ -f "$file" ]] && source "$file"
-              done
-              # Exert exorbitant privilige and leave no trace
-              export PATH=''${_PATH}
-              unset _PATH
-            '');
-
-            commands = [
-              {
-                name = nixpkgs-fmt.pname;
-                help = nixpkgs-fmt.meta.description;
-                package = nixpkgs-fmt;
-              }
-              {
-                name = nvfetcher-bin.pname;
-                help = nvfetcher-bin.meta.description;
-                command = "cd $DEVSHELL_ROOT/packages; ${nvfetcher-bin}/bin/nvfetcher -c ./sources.toml --no-output $@";
-              }
-            ];
-          };
+          # construct exportPackages to export all packages defined in overlays
+          packages = exportPackages self.overlays channels;
+          devShell = import ./shell { pkgs = channels.nixpkgs; };
         };
       } // {
       overlay = final: prev:
