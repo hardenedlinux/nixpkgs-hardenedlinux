@@ -15,7 +15,7 @@ function fetch_repo () {
     fi
 }
 
-GIT_CACHE="$DEVSHELL_ROOT/.direnv/update/git"
+GIT_CACHE="$PRJ_ROOT/.direnv/update/git"
 
 mkcd () {
     echo "asdas"

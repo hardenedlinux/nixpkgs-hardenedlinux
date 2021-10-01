@@ -30,7 +30,7 @@ devshell.mkShell {
     {
       name = nvfetcher-bin.pname;
       help = nvfetcher-bin.meta.description;
-      command = "cd $DEVSHELL_ROOT/packages; ${nvfetcher-bin}/bin/nvfetcher -c ./sources.toml --no-output $@";
+      command = "cd $PRJ_ROOT/packages; ${nvfetcher-bin}/bin/nvfetcher -c ./sources.toml $@";
     }
   ];
 }

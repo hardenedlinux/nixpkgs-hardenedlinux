@@ -2,11 +2,6 @@
 packages = ["zed"]
 
 [[commands]]
-name = "repl-local"
-command = "repl $DEVSHELL_ROOT/flake.nix"
-help = "run nix repl with flake"
-
-[[commands]]
 name = "only-x86-64_linux"
 category = "tests"
 command = '''
