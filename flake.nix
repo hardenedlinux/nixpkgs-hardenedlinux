@@ -107,7 +107,7 @@
                 };
                 volumes = [{
                   mountpoint = "/var";
-                  image = "tests/osquery-microvm.img";
+                  image = "/tmp/osquery-microvm.img";
                   size = 256;
                 }];
                 socket = "control.socket";
