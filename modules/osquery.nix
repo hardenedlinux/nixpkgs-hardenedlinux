@@ -111,7 +111,6 @@ in
         '';
 
         serviceConfig = {
-          Type = "notify";
           User = "root";
           Group = "root";
           WorkingDirectory = "${cfg.dataDir}";

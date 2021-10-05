@@ -10,6 +10,8 @@
     devshell = { url = "github:numtide/devshell"; };
     gomod2nix = { url = "github:tweag/gomod2nix"; inputs.nixpkgs.follows = "nixpkgs"; };
     mach-nix = { url = "github:DavHau/mach-nix"; inputs.pypi-deps-db.follows = "pypi-deps-db"; };
+    zeek2nix = { url = "github:hardenedlinux/zeek2nix"; };
+    microvm.follows = "zeek2nix/microvm";
     pypi-deps-db = {
       url = "github:DavHau/pypi-deps-db";
       flake = false;
@@ -79,7 +81,38 @@
 
         outputsBuilder = channels: {
           # construct exportPackages to export all packages defined in overlays
-          packages = exportPackages self.overlays channels;
+          packages = exportPackages self.overlays channels // {
+            osquery-microvm = microvm.lib.runner
+              {
+                system = "x86_64-linux";
+                hypervisor = "qemu";
+                nixosConfig = { pkgs, ... }: {
+                  networking.hostName = "osquery-microvm";
+                  users.users.root.password = "";
+                  users.defaultUserShell = pkgs.zsh;
+                  programs.zsh = {
+                    enable = true;
+                    enableCompletion = true;
+                    autosuggestions.enable = true;
+                    syntaxHighlighting = {
+                      enable = true;
+                    };
+                  };
+                  imports = [
+                    self.nixosModules.osquery-bin
+                  ];
+                  services.osquery-bin = {
+                    enable = true;
+                  };
+                };
+                volumes = [{
+                  mountpoint = "/var";
+                  image = "tests/osquery-microvm.img";
+                  size = 256;
+                }];
+                socket = "control.socket";
+              };
+          };
           devShell = import ./shell {
             pkgs = channels.nixpkgs;
           };
