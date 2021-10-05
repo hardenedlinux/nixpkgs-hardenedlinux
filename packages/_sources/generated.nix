@@ -79,14 +79,14 @@
   };
   cudf = {
     pname = "cudf";
-    version = "e5203dcc53181ad33fe4c9dc0b13886cf89a07c9";
+    version = "fb184914fd9ffb73341751c7f0239b3f20bcc60d";
     src = fetchgit {
       url = "https://github.com/rapidsai/cudf";
-      rev = "e5203dcc53181ad33fe4c9dc0b13886cf89a07c9";
+      rev = "fb184914fd9ffb73341751c7f0239b3f20bcc60d";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "11fy2avsami6yx54j1xkdv9jhz5x3qr47m3vx8vzgcj2jzvpmf9j";
+      sha256 = "0x4rdr387kgvxvg0lxvrq5ap7jam6gwh88mh5wg2qf1mmllmia75";
     };
   };
   durationpy = {
@@ -213,6 +213,14 @@
       sha256 = "0k02v1fjg5g53jyqv00lybl8kfkfgkbxyc2jmm2675cbbzjjhx8h";
     };
   };
+  osquery = {
+    pname = "osquery";
+    version = "5.0.1";
+    src = fetchurl {
+      url = "https://github.com/osquery/osquery/releases/download/5.0.1/osquery_5.0.1-1.linux_amd64.deb";
+      sha256 = "1d0mrf8sfh0xpjf0x4vrq089vmrl8nqq6vl12i3c4mfr69h1hg6r";
+    };
+  };
   rmm = {
     pname = "rmm";
     version = "c6bc8db6c61946616cf6ad0eb7748ca9cb4ca4b0";
@@ -251,14 +259,14 @@
   };
   zed = {
     pname = "zed";
-    version = "a559781f0a2585047191ce37ced01dd60c66e1e9";
+    version = "a7022af383ff12fff02a539dfa0748c65f77e392";
     src = fetchgit {
       url = "https://github.com/brimdata/zed";
-      rev = "a559781f0a2585047191ce37ced01dd60c66e1e9";
+      rev = "a7022af383ff12fff02a539dfa0748c65f77e392";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "1xjy44n7ya4binyv73hrqzx64ji6xd8rlm482b0iidzapd91vxi4";
+      sha256 = "0hsgnwbqs87ncd4q4jd4a7mzi38vnv48j8wnf6ih0rljw1gzbwwa";
     };
   };
 }

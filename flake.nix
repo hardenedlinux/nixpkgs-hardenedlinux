@@ -80,7 +80,9 @@
         outputsBuilder = channels: {
           # construct exportPackages to export all packages defined in overlays
           packages = exportPackages self.overlays channels;
-          devShell = import ./shell { pkgs = channels.nixpkgs; };
+          devShell = import ./shell {
+            pkgs = channels.nixpkgs;
+          };
         };
       } // {
       overlay = final: prev:
@@ -105,12 +107,29 @@
                 name = pkgDir;
               })
               pkgsDirNames)
-        )
-        // { nixpkgs-hardenedlinux-sources = prev.callPackage ./packages/_sources/generated.nix { }; };
+        ) // {
+          nixpkgs-hardenedlinux-sources = prev.callPackage ./packages/_sources/generated.nix { };
+          osquery-vm-tests = prev.lib.optionalAttrs prev.stdenv.isLinux (import ./tests/osquery
+            {
+              makeTest = (import (prev.path + "/nixos/tests/make-test-python.nix"));
+              pkgs = final;
+              inherit self;
+            });
+        };
     } //
     {
       nixosModules = {
         honeygrove = import ./modules/honeygrove.nix;
+        osquery-bin = { ... }: {
+          imports = [
+            {
+              nixpkgs.config.packageOverrides = pkgs: {
+                inherit (self.packages.${pkgs.system}) osquery-bin;
+              };
+            }
+            ./modules/osquery.nix
+          ];
+        };
       };
     };
 }
