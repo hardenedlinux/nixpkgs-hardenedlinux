@@ -3,10 +3,10 @@
 {
   brim = {
     pname = "brim";
-    version = "0.25.0";
+    version = "0.26.0";
     src = fetchurl {
-      url = "https://github.com/brimdata/brim/releases/download/v0.25.0/Brim-0.25.0.deb";
-      sha256 = "1vgrn12klljbkdci2wvnma6k86ij9lccnpgr0w5vkdirqr7v4raw";
+      url = "https://github.com/brimdata/brim/releases/download/v0.26.0/Brim-0.26.0.deb";
+      sha256 = "15srxv0lylgp4qalar2c2wp8mjy9pnws6ylfyhsk478ajlk67603";
     };
   };
   broker = {
@@ -259,14 +259,14 @@
   };
   zed = {
     pname = "zed";
-    version = "a7022af383ff12fff02a539dfa0748c65f77e392";
+    version = "674691723c8d9ec171a4bb786f6aee098ed6d621";
     src = fetchgit {
       url = "https://github.com/brimdata/zed";
-      rev = "a7022af383ff12fff02a539dfa0748c65f77e392";
+      rev = "674691723c8d9ec171a4bb786f6aee098ed6d621";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "0hsgnwbqs87ncd4q4jd4a7mzi38vnv48j8wnf6ih0rljw1gzbwwa";
+      sha256 = "1cv0i9wjk9r73l9fggshf7fxwag9bkwbm0c6xzfsw4c298myglpq";
     };
   };
 }
