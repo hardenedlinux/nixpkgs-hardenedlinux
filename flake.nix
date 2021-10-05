@@ -10,14 +10,15 @@
     devshell = { url = "github:numtide/devshell"; };
     gomod2nix = { url = "github:tweag/gomod2nix"; inputs.nixpkgs.follows = "nixpkgs"; };
     mach-nix = { url = "github:DavHau/mach-nix"; inputs.pypi-deps-db.follows = "pypi-deps-db"; };
-    zeek2nix = { url = "github:hardenedlinux/zeek2nix"; };
-    microvm.follows = "zeek2nix/microvm";
+    microvm = {
+      url = "github:astro/microvm.nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     pypi-deps-db = {
       url = "github:DavHau/pypi-deps-db";
       flake = false;
     };
   };
-
 
   outputs = inputs: with builtins; with inputs;
     let
