@@ -20,6 +20,7 @@
       testScript = ''
         start_all()
         machine.wait_for_unit("network-online.target")
+        machine.sleep(2)
         print(machine.succeed("cat /var/lib/osquery/log/osqueryd.results.log"))
       '';
     }
