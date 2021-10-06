@@ -2,35 +2,24 @@
 with lib;
 let
   cfg = config.services.osquery-bin;
-  osuqerycfg = "${cfg.dataDir}/osquery.conf";
-  # configFile = pkgs.writeText "osquery.conf" (builtins.toJSON (
-  #   recursiveUpdate
-  #     {
-  #       options = {
-  #         config_plugin = "filesystem";
-  #         logger_plugin = "filesystem";
-  #         logger_path = cfg.loggerPath;
-  #         database_path = cfg.databasePath;
-  #         utc = cfg.utc;
-  #       };
-  #     }
-  #     cfg.extraConfig
-  # ));
-
-  configFile = pkgs.writeText "osquery.conf" ''
+  configFile = pkgs.writeText "osquery.conf" (builtins.toJSON (recursiveUpdate
     {
-      "schedule": {
-        "time_again": {"query": "select * from time;", "interval": 1}
-      },
-      "options":{
-        "custom_optionA" : "optiona-val",
-        "custom_optionB" : "optionb-val"
-      },
-      "additional_monitoring" : {
-        "other_thing" : {"element" : "key"}
-      }
+      schedule = {
+        time_again = {
+          query = "select * from time;";
+          interval = 1;
+        };
+      };
+      options = {
+        config_plugin = "filesystem";
+        logger_plugin = "filesystem";
+        logger_path = cfg.loggerPath;
+        database_path = cfg.databasePath;
+        utc = cfg.utc;
+      };
     }
-  '';
+    cfg.extraConfig
+  ));
 in
 {
   options = {
@@ -97,42 +86,43 @@ in
 
   };
 
-  config = mkIf cfg.enable
-    {
-      systemd.services.osquery = {
-        after = [ "network.target" "syslog.service" ];
-        wantedBy = [ "multi-user.target" ];
-        path = [ pkgs.osquery-bin ];
+  config = mkIf cfg.enable {
+    environment.systemPackages = [ cfg.package ];
 
-        script = ''
-          if [[ ! -d "${cfg.dataDir}/log" ]];then
-             mkdir -p ${cfg.dataDir}/log
-          fi
-          cp -rf ${configFile} ${cfg.dataDir}/osquery.conf
-          ${cfg.package}/bin/osqueryd --database_path ${cfg.databasePath} \
-          --logger_path ${cfg.loggerPath} \
-          --pidfile ${cfg.pidfile} \
-          --database_path ${cfg.databasePath} \
-          --extensions_socket  ${cfg.extensionsPath} \
-          --config_path ${osuqerycfg} ${toString cfg.flagsOption}
-        '';
+    systemd.services.osquery = {
+      after = [ "network.target" "syslog.service" ];
+      wantedBy = [ "multi-user.target" ];
+      path = [ pkgs.osquery-bin ];
 
-        serviceConfig = {
-          User = "root";
-          Group = "root";
-          WorkingDirectory = "${cfg.dataDir}";
-          ReadWritePaths = "${cfg.dataDir}";
-          RuntimeDirectory = "osquery";
-          CacheDirectory = "osquery";
-          StateDirectory = "osquery";
-          Restart = "always";
-          # FIXME:
-          # PrivateTmp = true;
-          # PrivateUsers = true;
-          # PrivateDevices = true; #block BPF
-          # ProtectClock = true;
-          # ProtectKernelLogs = true;
-        };
+      script = ''
+        if [[ ! -d "${cfg.dataDir}/log" ]];then
+           mkdir -p ${cfg.dataDir}/log
+        fi
+        cp -rf ${configFile} ${cfg.dataDir}/osquery.conf
+        ${cfg.package}/bin/osqueryd --database_path ${cfg.databasePath} \
+        --logger_path ${cfg.loggerPath} \
+        --pidfile ${cfg.pidfile} \
+        --database_path ${cfg.databasePath} \
+        --extensions_socket  ${cfg.extensionsPath} \
+        --config_path ${configFile} ${toString cfg.flagsOption}
+      '';
+
+      serviceConfig = {
+        User = "root";
+        Group = "root";
+        WorkingDirectory = "${cfg.dataDir}";
+        ReadWritePaths = "${cfg.dataDir}";
+        RuntimeDirectory = "osquery";
+        CacheDirectory = "osquery";
+        StateDirectory = "osquery";
+        Restart = "always";
+        # FIXME:
+        # PrivateTmp = true;
+        # PrivateUsers = true;
+        # PrivateDevices = true; #block BPF
+        # ProtectClock = true;
+        # ProtectKernelLogs = true;
       };
     };
+  };
 }
