@@ -90,6 +90,10 @@
                 nixosConfig = { pkgs, ... }: {
                   networking.hostName = "osquery-microvm";
                   users.users.root.password = "";
+                  imports = [
+                    self.nixosModules.osquery-bin
+                    ./tests/osquery/service.nix
+                  ];
                   users.defaultUserShell = pkgs.zsh;
                   programs.zsh = {
                     enable = true;
@@ -98,12 +102,6 @@
                     syntaxHighlighting = {
                       enable = true;
                     };
-                  };
-                  imports = [
-                    self.nixosModules.osquery-bin
-                  ];
-                  services.osquery-bin = {
-                    enable = true;
                   };
                 };
                 volumes = [{

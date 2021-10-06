@@ -45,6 +45,13 @@ in
         default = "${cfg.dataDir}/log";
       };
 
+      flagsOption = mkOption {
+        type = types.listOf types.str;
+        description = "enable the feature with the corresponding CLI flags";
+        default = [ ];
+        example = [ "--enable_file_events=true" ];
+      };
+
       dataDir = mkOption {
         type = types.path;
         description = "Path used for pid file.";
@@ -107,7 +114,7 @@ in
           --pidfile ${cfg.pidfile} \
           --database_path ${cfg.databasePath} \
           --extensions_socket  ${cfg.extensionsPath} \
-          --config_path ${osuqerycfg}
+          --config_path ${osuqerycfg} ${toString cfg.flagsOption}
         '';
 
         serviceConfig = {
@@ -119,6 +126,12 @@ in
           CacheDirectory = "osquery";
           StateDirectory = "osquery";
           Restart = "always";
+          # FIXME:
+          # PrivateTmp = true;
+          # PrivateUsers = true;
+          # PrivateDevices = true; #block BPF
+          # ProtectClock = true;
+          # ProtectKernelLogs = true;
         };
       };
     };

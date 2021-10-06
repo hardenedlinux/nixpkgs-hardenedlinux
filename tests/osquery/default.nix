@@ -3,18 +3,14 @@
   osquery-vm-systemd = makeTest
     {
       name = "osquery-systemd";
-      machine = { config, pkgs, ... }: {
+      machine = { ... }: {
         imports = [
           self.nixosModules.osquery-bin
+          ./service.nix
         ];
-
         virtualisation = {
           memorySize = 4048;
           cores = 2;
-        };
-
-        services.osquery-bin = {
-          enable = true;
         };
       };
       testScript = ''
