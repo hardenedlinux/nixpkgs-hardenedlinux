@@ -79,14 +79,14 @@
   };
   cudf = {
     pname = "cudf";
-    version = "187ab658beea5749e31ee50a6d4654fde79fb3a6";
+    version = "8a18d7a79caf67905e5ad3ff7ea05595d8dd1c8d";
     src = fetchgit {
       url = "https://github.com/rapidsai/cudf";
-      rev = "187ab658beea5749e31ee50a6d4654fde79fb3a6";
+      rev = "8a18d7a79caf67905e5ad3ff7ea05595d8dd1c8d";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "1gmikm6wdglzjr2bngd53y0ywjxjldxn13a4wlyjg19fbrslw4fr";
+      sha256 = "0s5siyry68w2lc8ss2kx8px89sgbhd15g3h39y6yylbx7v63rlzp";
     };
   };
   durationpy = {
@@ -123,26 +123,26 @@
   };
   elastalert2 = {
     pname = "elastalert2";
-    version = "503aea412cb75adc2e7f508f0be679ae33927cbb";
+    version = "cfa0d2c801c0d10017bd7f61bb1510c99b4b5d10";
     src = fetchgit {
       url = "https://github.com/jertel/elastalert2";
-      rev = "503aea412cb75adc2e7f508f0be679ae33927cbb";
+      rev = "cfa0d2c801c0d10017bd7f61bb1510c99b4b5d10";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "0m98r0q3gams36yh8ab65vkj2x641i6yfs3vww2cpip19lz3lx6a";
+      sha256 = "0l3k3ay6iss023c6v60z8svpzsivi85dg08sdfxvicn0ba8cs24g";
     };
   };
   fastai = {
     pname = "fastai";
-    version = "5786eba2a3d09f2fbcac0852e176c502ca8cee95";
+    version = "e80adfc3786464b38c487a0382424c6197166499";
     src = fetchgit {
       url = "https://github.com/fastai/fastai";
-      rev = "5786eba2a3d09f2fbcac0852e176c502ca8cee95";
+      rev = "e80adfc3786464b38c487a0382424c6197166499";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "10m32rdf5x4ac5dlkszvgh664x8m0mn6ajx9i1a2nr6jkxa1af6k";
+      sha256 = "1i3xv8f30jpgd3lr9wjxxafcy6b8g5ydwf0j240ph9qqnvfk52v7";
     };
   };
   fastcore = {
@@ -223,14 +223,14 @@
   };
   rmm = {
     pname = "rmm";
-    version = "c6bc8db6c61946616cf6ad0eb7748ca9cb4ca4b0";
+    version = "c781527db4ec62168ca483febf2c1dcc15e16aa2";
     src = fetchgit {
       url = "https://github.com/rapidsai/rmm";
-      rev = "c6bc8db6c61946616cf6ad0eb7748ca9cb4ca4b0";
+      rev = "c781527db4ec62168ca483febf2c1dcc15e16aa2";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "1lyy7pi8672qs03v53wcjxnkglk4g6xxjb58bg9nzxvvcq7063xr";
+      sha256 = "105ripa7gak8vdg19dsgxrg0yl549431g4wpzkd4pmyz7nkkah17";
     };
   };
   sybilhunter = {
@@ -259,14 +259,14 @@
   };
   zed = {
     pname = "zed";
-    version = "17e41cc599b48ee3f48ddd8c0702ef632fb41219";
+    version = "938ca0dba449de4f45062627eda58e96de529169";
     src = fetchgit {
       url = "https://github.com/brimdata/zed";
-      rev = "17e41cc599b48ee3f48ddd8c0702ef632fb41219";
+      rev = "938ca0dba449de4f45062627eda58e96de529169";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "16hcfbvn0nraasmgvf41md3dmhfvk4n3i85hmzcxgkf2m2sx2758";
+      sha256 = "03jg3dvr439x8aq8sq2hq04ddczc3vj086icccvyf8gidq8a1brd";
     };
   };
 }
