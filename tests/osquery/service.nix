@@ -9,6 +9,6 @@
       "--enable_bpf_events=true"
       "--disable_audit=false"
     ];
-    extraConfig = { } // (builtins.fromJSON (builtins.readFile ./osquery.json));
+    extraConfig = { } // (builtins.fromJSON (builtins.readFile ./osquery-default.json));
   };
 }
