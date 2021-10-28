@@ -38,7 +38,9 @@ jobs:
           nix flake show
 
       - name: Run Nix Flake Check
-        run: nix -Lv flake check
+        run: |
+          nix -Lv flake check
+          git reset --hard
 
       - name: Run nvfetcher
         run: |

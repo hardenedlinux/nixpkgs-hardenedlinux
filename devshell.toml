@@ -5,6 +5,6 @@ packages = ["zed"]
 name = "only-x86-64_linux"
 category = "tests"
 command = '''
-        sed -i 's|\#supportedSystems|supportedSystems|' flake.nix
+        sed -i 's|\# supportedSystems|supportedSystems|' flake.nix
         '''
 help = "lock rev for bindary cache build"
