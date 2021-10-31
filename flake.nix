@@ -18,6 +18,9 @@
       url = "github:DavHau/pypi-deps-db";
       flake = false;
     };
+
+    # packages inputs
+    check_journal = { url = "github:GTrunSec/check_journal/flake"; };
   };
 
   outputs = inputs: with builtins; with inputs;
@@ -46,7 +49,7 @@
             overlaysBuilder = channels:
               [
                 self.overlay
-                (final: prev: { nvfetcher-bin = nvfetcher.defaultPackage."${final.system}"; })
+                nvfetcher.overlay
               ];
           };
           stable = {
@@ -147,7 +150,7 @@
               pkgs = final;
               inherit self;
             });
-        };
+        } // import ./packages/inputs-packages.nix inputs final prev;
     } //
     {
       nixosModules = {
