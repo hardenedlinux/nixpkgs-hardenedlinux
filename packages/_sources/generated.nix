@@ -52,13 +52,13 @@
   };
   clx = {
     pname = "clx";
-    version = "c95bc791439e4ef4abf5771f06c5573722a5c516";
+    version = "1c2c5f9e776d6b2e8399f422cd9a2fc4394828bf";
     src = fetchFromGitHub ({
       owner = "rapidsai";
       repo = "clx";
-      rev = "c95bc791439e4ef4abf5771f06c5573722a5c516";
+      rev = "1c2c5f9e776d6b2e8399f422cd9a2fc4394828bf";
       fetchSubmodules = false;
-      sha256 = "sha256-UmC4afzPz8lhfO8zF9P+ymgrLhha8+bI7G620QCcYvc=";
+      sha256 = "sha256-GHnlMQuTJ4oxZ4unMKfvnf16ipsmjTo6xE7tXN/iD1I=";
     });
   };
   cnmem = {
@@ -74,13 +74,13 @@
   };
   cudf = {
     pname = "cudf";
-    version = "8e0e70d8c6bd8c472ca7939454297fd3ee4c44af";
+    version = "77c6f1d0e0509f62688147a33408485062ab0ab3";
     src = fetchFromGitHub ({
       owner = "rapidsai";
       repo = "cudf";
-      rev = "8e0e70d8c6bd8c472ca7939454297fd3ee4c44af";
+      rev = "77c6f1d0e0509f62688147a33408485062ab0ab3";
       fetchSubmodules = false;
-      sha256 = "sha256-tVcxKdhech87Aa0aM2RhScryiT81vXSlwehZ5B6uBFU=";
+      sha256 = "sha256-eiCE33K0RflB8tsNl+t/y+3YhfDBYYf5fngcBTUWEcI=";
     });
   };
   durationpy = {
@@ -126,24 +126,24 @@
   };
   fastai = {
     pname = "fastai";
-    version = "1a49e334f6ed5b982b241b063b57a18fe0c20504";
+    version = "f8b74ef5b320512a2bb4a6c3cb17a5e917b7d6a3";
     src = fetchFromGitHub ({
       owner = "fastai";
       repo = "fastai";
-      rev = "1a49e334f6ed5b982b241b063b57a18fe0c20504";
+      rev = "f8b74ef5b320512a2bb4a6c3cb17a5e917b7d6a3";
       fetchSubmodules = false;
-      sha256 = "sha256-DbTdSuipVK3Kj12HwGnuNeRLdjFv18gRxiLeyaFli9E=";
+      sha256 = "sha256-BijfokHrSN3JmbLjKrBUf8/h3KSWrKHftmlVcNjjHww=";
     });
   };
   fastcore = {
     pname = "fastcore";
-    version = "7728f7e12ad90b13fe3e82645876b521ca9d2e5a";
+    version = "5093ae0d42c1db9d685f5600442c1dd7e183edc3";
     src = fetchFromGitHub ({
       owner = "fastai";
       repo = "fastcore";
-      rev = "7728f7e12ad90b13fe3e82645876b521ca9d2e5a";
+      rev = "5093ae0d42c1db9d685f5600442c1dd7e183edc3";
       fetchSubmodules = false;
-      sha256 = "sha256-zB3l5VTDaZc/weP1uXZpDwQB9s2SS9nt6K5BT1YhTSo=";
+      sha256 = "sha256-FJnmuPLKo0CsdVU28kAKKo4RCfH8ixE5VjfmvlDUO2Y=";
     });
   };
   fastprogress = {
@@ -241,13 +241,13 @@
   };
   zed = {
     pname = "zed";
-    version = "85fb6d640f90846f0c05b3607d60ed4202c18c57";
+    version = "eaf43a6d3af6e0cb0cef75d0dcd1cfb7ffe1ac13";
     src = fetchFromGitHub ({
       owner = "brimdata";
       repo = "zed";
-      rev = "85fb6d640f90846f0c05b3607d60ed4202c18c57";
+      rev = "eaf43a6d3af6e0cb0cef75d0dcd1cfb7ffe1ac13";
       fetchSubmodules = false;
-      sha256 = "sha256-z1xqd7BdI0nZ/Etx7okpbdUIvm3rX00+bohfJ3/I2mg=";
+      sha256 = "sha256-3uzhWMZSs9roUpwtcMDLnr3t3EBYEmkPx1gLkeLaKbc=";
     });
   };
 }
