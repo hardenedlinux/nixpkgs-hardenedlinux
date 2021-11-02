@@ -4,6 +4,11 @@ src.github = "osquery/osquery"
 fetch.url = "https://github.com/osquery/osquery/releases/download/$ver/osquery_$ver-1.linux_amd64.deb"
 src.prefix = "v"
 
+[nix-unstable-installer]
+src.github = "numtide/nix-unstable-installer"
+fetch.url = "https://github.com/numtide/nix-unstable-installer/releases/download/$ver/install"
+src.prefix = "v"
+
 
 [brim]
 src.github = "brimdata/brim"

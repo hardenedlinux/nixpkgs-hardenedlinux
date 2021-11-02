@@ -33,10 +33,10 @@
   };
   btest = {
     pname = "btest";
-    version = "0.70";
+    version = "0.71";
     src = fetchurl {
-      url = "https://pypi.io/packages/source/b/btest/btest-0.70.tar.gz";
-      sha256 = "sha256-JKyCnUyXM+O6C8W5loe9aDDWgF/6lZocvRCNJpz6ULk=";
+      url = "https://pypi.io/packages/source/b/btest/btest-0.71.tar.gz";
+      sha256 = "sha256-17JpGNgq917qNp1snF2I6teeid9RxCaM6nSYiQh9Ocw=";
     };
   };
   choochoo = {
@@ -52,13 +52,13 @@
   };
   clx = {
     pname = "clx";
-    version = "1c2c5f9e776d6b2e8399f422cd9a2fc4394828bf";
+    version = "664b852f00238fa7cc7b66f7faf2e4228822db0f";
     src = fetchFromGitHub ({
       owner = "rapidsai";
       repo = "clx";
-      rev = "1c2c5f9e776d6b2e8399f422cd9a2fc4394828bf";
+      rev = "664b852f00238fa7cc7b66f7faf2e4228822db0f";
       fetchSubmodules = false;
-      sha256 = "sha256-GHnlMQuTJ4oxZ4unMKfvnf16ipsmjTo6xE7tXN/iD1I=";
+      sha256 = "sha256-kUGS2VM7AhY1vw+veuduJYlMkrgNl8pDw6x+TcXzj3o=";
     });
   };
   cnmem = {
@@ -74,13 +74,13 @@
   };
   cudf = {
     pname = "cudf";
-    version = "77c6f1d0e0509f62688147a33408485062ab0ab3";
+    version = "e632f97ccef9ba579501659bc4e6caa920937093";
     src = fetchFromGitHub ({
       owner = "rapidsai";
       repo = "cudf";
-      rev = "77c6f1d0e0509f62688147a33408485062ab0ab3";
+      rev = "e632f97ccef9ba579501659bc4e6caa920937093";
       fetchSubmodules = false;
-      sha256 = "sha256-eiCE33K0RflB8tsNl+t/y+3YhfDBYYf5fngcBTUWEcI=";
+      sha256 = "sha256-CgBrpuCEiuOKVytQIQJe5X11lJYX3uOmOJ+bJu4qvNo=";
     });
   };
   durationpy = {
@@ -126,24 +126,24 @@
   };
   fastai = {
     pname = "fastai";
-    version = "f8b74ef5b320512a2bb4a6c3cb17a5e917b7d6a3";
+    version = "b0e6c3e7dcbb72695a7cf0547293df2348012e78";
     src = fetchFromGitHub ({
       owner = "fastai";
       repo = "fastai";
-      rev = "f8b74ef5b320512a2bb4a6c3cb17a5e917b7d6a3";
+      rev = "b0e6c3e7dcbb72695a7cf0547293df2348012e78";
       fetchSubmodules = false;
-      sha256 = "sha256-BijfokHrSN3JmbLjKrBUf8/h3KSWrKHftmlVcNjjHww=";
+      sha256 = "sha256-AwOPVX1rjhOst2gm016zxmvOCAxed/5cbKent+sHxPc=";
     });
   };
   fastcore = {
     pname = "fastcore";
-    version = "5093ae0d42c1db9d685f5600442c1dd7e183edc3";
+    version = "b1c5359b2c2d2f5e32468ca536984e8bb9bc9e19";
     src = fetchFromGitHub ({
       owner = "fastai";
       repo = "fastcore";
-      rev = "5093ae0d42c1db9d685f5600442c1dd7e183edc3";
+      rev = "b1c5359b2c2d2f5e32468ca536984e8bb9bc9e19";
       fetchSubmodules = false;
-      sha256 = "sha256-FJnmuPLKo0CsdVU28kAKKo4RCfH8ixE5VjfmvlDUO2Y=";
+      sha256 = "sha256-6ea2D+dAqS1Dkf+eMB3dTLAbfBsAkrzDz7qUs7nKLwo=";
     });
   };
   fastprogress = {
@@ -187,6 +187,14 @@
       sha256 = "sha256-NhbGHTYucfqCloVirkaDlAtQfhWP2cw4I+t/ysvvkR0=";
     });
   };
+  nix-unstable-installer = {
+    pname = "nix-unstable-installer";
+    version = "nix-2.5pre20211026_5667822";
+    src = fetchurl {
+      url = "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.5pre20211026_5667822/install";
+      sha256 = "sha256-evYrVQ4Pvf3VuAxNlmbb+ZCds+lk6H2HMOg4sTaRSvQ=";
+    };
+  };
   nvdtools = {
     pname = "nvdtools";
     version = "e3af1166b05d4773b7aa4eb83e0ccd93e928eb3a";
@@ -208,13 +216,13 @@
   };
   rmm = {
     pname = "rmm";
-    version = "c07f1c8a38394bd60dea28a8bbaad439172e6f29";
+    version = "d8c3fb7e8fb7dde1f274b165be73d77492bea732";
     src = fetchFromGitHub ({
       owner = "rapidsai";
       repo = "rmm";
-      rev = "c07f1c8a38394bd60dea28a8bbaad439172e6f29";
+      rev = "d8c3fb7e8fb7dde1f274b165be73d77492bea732";
       fetchSubmodules = false;
-      sha256 = "sha256-Tn1RSVfS4ipDV5z6hrLIV0SdujnNcmEdBzJprnSbXCc=";
+      sha256 = "sha256-OS3Lqm6GYcWXXy0TmOERYNpzu6UhH5h/ePh+P7CHYX8=";
     });
   };
   sybilhunter = {
