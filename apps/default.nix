@@ -4,7 +4,7 @@ with inputs.utils.lib;
   gh-nix-update = with channels.nixpkgs;mkApp
     {
       drv = writeShellScriptBin "gh-nix-update" ''
-        sed -i 's|https://github.com/numtide/nix-unstable-installer/releases/download/nix-.*.*|https://github.com/numtide/nix-unstable-installer/releases/download/${nixpkgs-hardenedlinux-sources.nix-unstable-installer.version}/install|' .github/workflows/checks.yaml
+        sed -i 's|https://github.com/numtide/nix-.*./releases/download/nix-.*.|${toString nixpkgs-hardenedlinux-sources.nix-unstable-installer.src.urls}|' .github/workflows/checks.yaml
       '';
     };
 }
