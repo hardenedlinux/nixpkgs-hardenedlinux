@@ -28,13 +28,12 @@
       inherit (utils.lib) exportOverlays exportPackages exportModules;
       inherit (nixpkgs) lib;
       inherit (builtins) attrValues;
-      inherit (utils-lib) pathsToImportedAttrs overlayPaths;
-      utils-lib = import ./lib/utils-ext.nix { inherit lib; };
+      inherit (utilsLib) pathsToImportedAttrs overlayPaths;
+      utilsLib = import ./lib/utils-extend.nix { inherit lib; };
     in
     utils.lib.mkFlake
       {
         inherit self inputs;
-
         # supportedSystems = [ "x86_64-linux" ];
 
         channelsConfig = {
@@ -122,28 +121,8 @@
         };
       } // {
       overlay = final: prev:
-        let
-          pythonDirNames = builtins.attrNames (builtins.readDir ./packages/python-pkgs);
-          pkgsDirNames = builtins.attrNames (builtins.readDir ./packages/pkgs);
-        in
-        (
-          builtins.listToAttrs
-            (map
-              (pkgDir: {
-                value = prev.python3Packages.callPackage (./packages/python-pkgs + "/${pkgDir}") { };
-                name = pkgDir;
-              })
-              pythonDirNames)
-        ) //
-        (
-          builtins.listToAttrs
-            (map
-              (pkgDir: {
-                value = prev.callPackage (./packages/pkgs + "/${pkgDir}") { };
-                name = pkgDir;
-              })
-              pkgsDirNames)
-        ) // {
+        (utilsLib.dirToCallPkgs ./packages/python-pkgs prev) //
+        (utilsLib.dirToCallPkgs ./packages/pkgs prev) // {
           nixpkgs-hardenedlinux-sources = prev.callPackage ./packages/_sources/generated.nix { };
           osquery-vm-tests = prev.lib.optionalAttrs prev.stdenv.isLinux (import ./tests/osquery
             {

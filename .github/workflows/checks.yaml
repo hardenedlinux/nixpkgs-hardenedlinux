@@ -45,9 +45,8 @@ jobs:
       - name: Run nvfetcher
         run: |
           nix -Lv develop --command nvfetcher -l changelog
-      - name: Update nix of GH verison
-        run: |
-          nix run .\#gh-nix-update
+      - name: Update nix verison of GH
+        run: nix -Lv run .\#gh-nix-update
 
       - name: Build Packages
         run: |
