@@ -136,7 +136,7 @@
     {
       nixosModules = {
         honeygrove = import ./modules/honeygrove.nix;
-        osquery-bin = _: {
+        osquery-bin = {
           imports = [
             {
               nixpkgs.config.packageOverrides = pkgs: {

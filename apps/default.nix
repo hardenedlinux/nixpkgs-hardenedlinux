@@ -11,7 +11,7 @@ with inputs.utils.lib;
     {
       drv = writeShellScriptBin "nix-lint" ''
         set -euo pipefail
-        export PATH=${statix}/bin:${findutils}/bin:$PATH
+        export PATH=${inputs.statix.defaultPackage."x86_64-linux"}/bin:${findutils}/bin:$PATH
         for path in $(find "$PRJ_ROOT" -name '*.nix'  -not -name 'generated.nix')
         do
            statix "$@" "$path"
