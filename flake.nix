@@ -22,6 +22,7 @@
     # packages inputs
     check_journal = { url = "github:GTrunSec/check_journal/flake"; };
     statix = { url = "github:nerdypepper/statix"; };
+    nix-script' = { url = "github:BrianHicks/nix-script"; };
   };
 
   outputs = inputs: with builtins; with inputs;
@@ -30,7 +31,7 @@
       inherit (nixpkgs) lib;
       inherit (builtins) attrValues;
       inherit (utilsLib) pathsToImportedAttrs overlayPaths;
-      utilsLib = import ./lib/utils-extend.nix { inherit lib; };
+      utilsLib = import ./lib/utils-extend.nix { inherit lib inputs; };
     in
     utils.lib.mkFlake
       {
@@ -50,6 +51,7 @@
               [
                 self.overlay
                 nvfetcher.overlay
+                nix-script'.overlay
               ];
           };
           stable = {
@@ -71,6 +73,10 @@
             {
               __dontExport = true;
               #python
+              lib = prev.lib.extend
+                (lfinal: lprev: {
+                  utils-extend = import ./lib/utils-extend.nix { inherit lib inputs; };
+                });
               machlib = import mach-nix {
                 pkgs = prev;
                 pypiData = pypi-deps-db;
@@ -122,8 +128,8 @@
         };
       } // {
       overlay = final: prev:
-        (utilsLib.dirToCallPkgs ./packages/python-pkgs prev) //
-        (utilsLib.dirToCallPkgs ./packages/pkgs prev) // {
+        (utilsLib.pathsToCallPkgs ./packages/python-pkgs prev) //
+        (utilsLib.pathsToCallPkgs ./packages/pkgs prev) // {
           nixpkgs-hardenedlinux-sources = prev.callPackage ./packages/_sources/generated.nix { };
           osquery-vm-tests = prev.lib.optionalAttrs prev.stdenv.isLinux (import ./tests/osquery
             {

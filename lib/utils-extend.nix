@@ -1,4 +1,4 @@
-{ lib, ... }:
+{ lib, inputs, ... }:
 let
   inherit (builtins) attrNames isAttrs readDir listToAttrs;
 
@@ -11,9 +11,15 @@ let
       name = removeSuffix ".nix" (baseNameOf path);
       value = import path;
     });
+  filterBash =
+    let a = key: value: value == "regular" && lib.hasSuffix ".bash" key && key != "default.nix"; in
+    lib.filterAttrs a (builtins.readDir ../apps);
+  filterHaskell =
+    let a = key: value: value == "regular" && lib.hasSuffix ".hs" key && key != "default.nix"; in
+    lib.filterAttrs a (builtins.readDir ../apps);
 in
-{
-  inherit genAttrs' pathsToImportedAttrs;
+rec {
+  inherit genAttrs' pathsToImportedAttrs filterBash filterHaskell;
 
   overlayPaths =
     let
@@ -22,11 +28,27 @@ in
     in
     map fullPath (attrNames (readDir overlayDir));
 
-  dirToCallPkgs = path: pkgs: builtins.listToAttrs
+  pathsToCallPkgs = path: pkgs: builtins.listToAttrs
     (map
       (pkgName: {
         value = pkgs.python3Packages.callPackage (path + "/${pkgName}") { };
         name = pkgName;
       })
+
       (builtins.attrNames (builtins.readDir path)));
+
+  pathsToNixScript = pkgs: f: s: builtins.listToAttrs
+    (map
+      (pkgName: {
+        value = inputs.utils.lib.mkApp {
+          drv = pkgs.writeShellScriptBin "nix-script" ''
+            export PATH=${lib.makeBinPath [ pkgs.nix-script-bash pkgs.nix-script
+                                          pkgs.nix-script-haskell
+                                          ] }
+            ${../apps + "/${pkgName}"}
+          '';
+        };
+        name = lib.removeSuffix ("." + s) pkgName;
+      })
+      (builtins.attrNames f));
 }
