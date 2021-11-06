@@ -1,5 +1,6 @@
 inputs: final: prev:
-
+with inputs;
 {
-  check_journal = inputs.check_journal.defaultPackage.${prev.system};
+  check_journal = check_journal.defaultPackage."${prev.system}";
+  statix = statix.defaultPackage."x86_64-linux";
 }

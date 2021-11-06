@@ -31,7 +31,7 @@ python35Packages.buildPythonPackage rec {
   '';
 
   meta = with lib; {
-    homepage = http://www.sqlalchemy.org/;
+    homepage = "http://www.sqlalchemy.org/";
     description = "A Python SQL toolkit and Object Relational Mapper";
     license = licenses.mit;
   };

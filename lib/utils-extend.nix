@@ -22,11 +22,11 @@ in
     in
     map fullPath (attrNames (readDir overlayDir));
 
-  dirToCallPkgs = dir: pkgs: builtins.listToAttrs
+  dirToCallPkgs = path: pkgs: builtins.listToAttrs
     (map
-      (pkgDir: {
-        value = pkgs.python3Packages.callPackage (dir + "/${pkgDir}") { };
-        name = pkgDir;
+      (pkgName: {
+        value = pkgs.python3Packages.callPackage (path + "/${pkgName}") { };
+        name = pkgName;
       })
-      (builtins.attrNames (builtins.readDir dir)));
+      (builtins.attrNames (builtins.readDir path)));
 }

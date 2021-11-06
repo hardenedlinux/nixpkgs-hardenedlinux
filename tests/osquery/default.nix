@@ -3,7 +3,7 @@
   osquery-vm-systemd = makeTest
     {
       name = "osquery-systemd";
-      machine = { ... }: {
+      machine = {
         imports = [
           self.nixosModules.osquery-bin
           ./service.nix

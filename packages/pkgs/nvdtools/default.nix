@@ -2,9 +2,6 @@
 , buildGoPackage
 , nixpkgs-hardenedlinux-sources
 }:
-let
-
-in
 buildGoPackage rec {
   inherit (nixpkgs-hardenedlinux-sources.nvdtools) pname version src;
 

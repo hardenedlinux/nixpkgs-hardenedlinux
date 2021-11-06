@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
 
   meta = with lib; {
     description = "Zeek's Messaging Library";
-    homepage = http://zeek.org;
+    homepage = "http://zeek.org";
     license = licenses.bsd3;
     platforms = with platforms; unix;
   };

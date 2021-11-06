@@ -21,6 +21,7 @@
 
     # packages inputs
     check_journal = { url = "github:GTrunSec/check_journal/flake"; };
+    statix = { url = "github:nerdypepper/statix"; };
   };
 
   outputs = inputs: with builtins; with inputs;
@@ -126,7 +127,7 @@
           nixpkgs-hardenedlinux-sources = prev.callPackage ./packages/_sources/generated.nix { };
           osquery-vm-tests = prev.lib.optionalAttrs prev.stdenv.isLinux (import ./tests/osquery
             {
-              makeTest = (import (prev.path + "/nixos/tests/make-test-python.nix"));
+              makeTest = import (prev.path + "/nixos/tests/make-test-python.nix");
               pkgs = final;
               inherit self;
             });
@@ -135,11 +136,11 @@
     {
       nixosModules = {
         honeygrove = import ./modules/honeygrove.nix;
-        osquery-bin = { ... }: {
+        osquery-bin = _: {
           imports = [
             {
               nixpkgs.config.packageOverrides = pkgs: {
-                inherit (self.packages.${pkgs.system}) osquery-bin;
+                inherit (self.packages."${pkgs.system}") osquery-bin;
               };
             }
             ./modules/osquery.nix

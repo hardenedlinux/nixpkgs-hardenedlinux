@@ -15,7 +15,7 @@ let
         logger_plugin = "filesystem";
         logger_path = cfg.loggerPath;
         database_path = cfg.databasePath;
-        utc = cfg.utc;
+        inherit (cfg) utc;
       };
     }
     cfg.extraConfig
