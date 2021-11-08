@@ -41,23 +41,6 @@ src.git = "https://github.com/esnet/eZeeKonfigurator"
 fetch.github = "esnet/eZeeKonfigurator"
 
 
-[rmm]
-src.git = "https://github.com/rapidsai/rmm"
-fetch.github = "rapidsai/rmm"
-
-
-[cudf]
-src.git = "https://github.com/rapidsai/cudf"
-fetch.github = "rapidsai/cudf"
-
-[clx]
-src.git = "https://github.com/rapidsai/clx"
-fetch.github = "rapidsai/clx"
-
-[cnmem]
-src.git = "https://github.com/NVIDIA/cnmem"
-fetch.github = "NVIDIA/cnmem"
-
 
 [eZeeKonfigurator_client]
 src.git = "https://github.com/esnet/eZeeKonfigurator_client"

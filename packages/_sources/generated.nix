@@ -50,39 +50,6 @@
       sha256 = "sha256-/PjfY1thoILxpu3/PTmFRfzR4eFgraLbTXpVM54GXJk=";
     });
   };
-  clx = {
-    pname = "clx";
-    version = "664b852f00238fa7cc7b66f7faf2e4228822db0f";
-    src = fetchFromGitHub ({
-      owner = "rapidsai";
-      repo = "clx";
-      rev = "664b852f00238fa7cc7b66f7faf2e4228822db0f";
-      fetchSubmodules = false;
-      sha256 = "sha256-kUGS2VM7AhY1vw+veuduJYlMkrgNl8pDw6x+TcXzj3o=";
-    });
-  };
-  cnmem = {
-    pname = "cnmem";
-    version = "37896cc9bfc6536a8c878a1e675835c22d827821";
-    src = fetchFromGitHub ({
-      owner = "NVIDIA";
-      repo = "cnmem";
-      rev = "37896cc9bfc6536a8c878a1e675835c22d827821";
-      fetchSubmodules = false;
-      sha256 = "sha256-Xpr0idhBhCxFC0yDWpZwwD29FRMGdTrD5RzgluwuonM=";
-    });
-  };
-  cudf = {
-    pname = "cudf";
-    version = "4cba672c1737e9102dd5ec4ef8e98421ce3ab5c3";
-    src = fetchFromGitHub ({
-      owner = "rapidsai";
-      repo = "cudf";
-      rev = "4cba672c1737e9102dd5ec4ef8e98421ce3ab5c3";
-      fetchSubmodules = false;
-      sha256 = "sha256-ORpf+gjRocEwkacUBr0wS0X7/V45OY6vzPAwVdvmWuI=";
-    });
-  };
   durationpy = {
     pname = "durationpy";
     version = "0.5";
@@ -213,17 +180,6 @@
       url = "https://github.com/osquery/osquery/releases/download/5.0.1/osquery_5.0.1-1.linux_amd64.deb";
       sha256 = "sha256-2TwYYDLZVcJGFIFug7FFNNedEMB5kw6cvB1Ap5HLFbQ=";
     };
-  };
-  rmm = {
-    pname = "rmm";
-    version = "76ae62207bd083dfd43b7f755f2934458dd7d8bc";
-    src = fetchFromGitHub ({
-      owner = "rapidsai";
-      repo = "rmm";
-      rev = "76ae62207bd083dfd43b7f755f2934458dd7d8bc";
-      fetchSubmodules = false;
-      sha256 = "sha256-y9p60SPSuVu4CGNYZW4KLQmUiz7sJwOJYFw7V4ZcyfY=";
-    });
   };
   sybilhunter = {
     pname = "sybilhunter";
