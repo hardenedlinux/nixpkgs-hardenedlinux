@@ -10,6 +10,7 @@ fetch.url = "https://github.com/numtide/nix-unstable-installer/releases/download
 src.prefix = "v"
 
 
+
 [brim]
 src.github = "brimdata/brim"
 fetch.url = "https://github.com/brimdata/brim/releases/download/v$ver/Brim-$ver.deb"
@@ -26,6 +27,9 @@ git.fetchSubmodules = true
 src.github = "grigorescu/broker-to-json"
 fetch.github = "grigorescu/broker-to-json"
 
+[vailyn]
+src.github = "VainlyStrain/Vailyn"
+fetch.github = "VainlyStrain/Vailyn"
 
 [sybilhunter]
 src.git = "https://github.com/NullHypothesis/sybilhunter"
