@@ -1,7 +1,10 @@
 { pkgs }:
 with pkgs;
-paths: script:
+paths: script: extra:
 pkgs.writers.writeBash (builtins.baseNameOf script) ''
   export PATH="${lib.makeBinPath paths}"
-  source ${script}
+  set -xeuo pipefail
+
+  ${extra}
+  ${lib.fileContents script}
 ''

@@ -282,7 +282,7 @@
         "type": "github"
       }
     },
-    "nix-script'": {
+    "nix_script": {
       "inputs": {
         "flake-compat": "flake-compat_3",
         "nixpkgs": "nixpkgs_3",
@@ -441,7 +441,7 @@
         "gomod2nix": "gomod2nix",
         "mach-nix": "mach-nix",
         "microvm": "microvm",
-        "nix-script'": "nix-script'",
+        "nix_script": "nix_script",
         "nixpkgs": "nixpkgs_4",
         "nvfetcher": "nvfetcher",
         "pypi-deps-db": "pypi-deps-db",

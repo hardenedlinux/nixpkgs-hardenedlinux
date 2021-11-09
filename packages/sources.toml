@@ -40,8 +40,6 @@ fetch.github = "NullHypothesis/sybilhunter"
 src.git = "https://github.com/esnet/eZeeKonfigurator"
 fetch.github = "esnet/eZeeKonfigurator"
 
-
-
 [eZeeKonfigurator_client]
 src.git = "https://github.com/esnet/eZeeKonfigurator_client"
 fetch.github = "esnet/eZeeKonfigurator_client"

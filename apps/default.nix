@@ -5,7 +5,7 @@ let
   writeBashWithPaths = import ../lib/writeBashWithPaths.nix { pkgs = channels.nixpkgs; };
 in
 (
-  lib.utils-extend.pathsToNixScript channels.nixpkgs lib.utils-extend.filterBash "bash"
+  (lib.utils-extend.pathsToNixScript ./.) channels.nixpkgs (lib.utils-extend.filterBash ./.) "bash"
 ) // {
   gh-nix-update = with channels.nixpkgs;mkApp
     {
@@ -17,7 +17,7 @@ in
     drv = writeBashWithPaths [
       inputs.statix.defaultPackage."x86_64-linux"
       findutils
-    ] ./nix-lint.sh;
+    ] ./nix-lint.sh "";
     exePath = "";
   };
 }
