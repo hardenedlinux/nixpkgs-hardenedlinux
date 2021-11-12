@@ -160,6 +160,7 @@
     {
       budModules = {
         nixpkgs-hardenedlinux = import ./shell/nixpkgs-hardenedlinux;
+        update = import ./shell/update;
       };
       nixosModules = {
         honeygrove = import ./modules/honeygrove.nix;

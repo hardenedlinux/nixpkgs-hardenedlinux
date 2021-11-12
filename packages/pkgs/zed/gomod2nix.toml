@@ -199,14 +199,6 @@
     rev = "bf010a705d213ede5d5f4c89e3e70390c001313e"
     sha256 = "0z234gcqh0cjikdlmawlkck8xh7bmij6i5g98n22rjr02qv7dmq8"
 
-["github.com/go-resty/resty/v2"]
-  sumVersion = "v2.2.0"
-  ["github.com/go-resty/resty/v2".fetch]
-    type = "git"
-    url = "https://github.com/go-resty/resty"
-    rev = "bcec4e0910e82afff8e1e159e83e734739e9229f"
-    sha256 = "0khfcq07kq6z2vq0i42an8fd16pl1rc980rlf7c1x4szsf8qcajm"
-
 ["github.com/go-stack/stack"]
   sumVersion = "v1.8.0"
   ["github.com/go-stack/stack".fetch]
@@ -552,6 +544,14 @@
     rev = "d4b98448f6e99d551e417e2f519ac304c0fadf4e"
     sha256 = "0l2yhyk74xmhbygm4xl70fps8gj8w7q470c7rv2pvgpha2psr0nh"
 
+["github.com/pkg/browser"]
+  sumVersion = "v0.0.0-20210911075715-681adbf594b8"
+  ["github.com/pkg/browser".fetch]
+    type = "git"
+    url = "https://github.com/pkg/browser"
+    rev = "681adbf594b8314eb76d83a271f4a1c152d057d9"
+    sha256 = "1d40cz35x6f5hhals00d2h08l2r9vchpdmc9742s80qbl9fmr615"
+
 ["github.com/pkg/errors"]
   sumVersion = "v0.9.1"
   ["github.com/pkg/errors".fetch]
@@ -826,12 +826,12 @@
     sha256 = "093p4panc808ak5bamzz7m9nb0xxib7778jpnr6f0xkz1n4fzyw5"
 
 ["golang.org/x/sys"]
-  sumVersion = "v0.0.0-20210105210732-16f7687f5001"
+  sumVersion = "v0.0.0-20210616045830-e2b7044e8c71"
   ["golang.org/x/sys".fetch]
     type = "git"
     url = "https://go.googlesource.com/sys"
-    rev = "16f7687f5001b816ff9f6b586071238941e88a9d"
-    sha256 = "11ba9dwm8pq0rrf5r41cv6lgvjypyfbqfyr74balpxj9f4fynhcg"
+    rev = "e2b7044e8c71f792bd8e9e8d249139992f81344a"
+    sha256 = "1n4pw269id59qj5746cncd82v5gwdgmxxiqkr1gch76k7yik5qvd"
 
 ["golang.org/x/term"]
   sumVersion = "v0.0.0-20210317153231-de623e64d2a6"

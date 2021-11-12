@@ -7,7 +7,6 @@ devshell.mkShell {
   name = "Hardenedlinux-devShell";
   imports = [
     (devshell.importTOML ../devshell.toml)
-    (devshell.importTOML ../packages/updates.toml)
   ];
   # tempfix: remove when merged https://github.com/numtide/devshell/pull/123
   devshell.startup.load_profiles = pkgs.lib.mkForce (pkgs.lib.noDepEntry ''
@@ -31,6 +30,15 @@ devshell.mkShell {
         inherit pkgs inputs;
         name = "nixpkgs-hardenedlinux";
         description = "nixpkgs-hardenedlinux customizable system ctl";
+        budStdProfile = false;
+      };
+    }
+    {
+      category = "Bumpup";
+      package = reboudBud {
+        inherit pkgs inputs;
+        name = "update";
+        description = "Updating packages in nixpkgs-hardenedlinux";
         budStdProfile = false;
       };
     }

@@ -1,5 +1,5 @@
 [devshell]
-packages = ["zed"]
+packages = []
 
 [[commands]]
 name = "only-x86-64_linux"

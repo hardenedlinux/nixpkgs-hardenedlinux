@@ -48,6 +48,9 @@ jobs:
       - name: Update nix verison of GH
         run: |
           nix -Lv develop -c nixpkgs-hardenedlinux gh-nix-update
+      - name: bumpup commands
+        run: |
+          nix -Lv develop -c update gomod2nix
       - name: Build Packages
         run: |
           nix -Lv build .\#broker
