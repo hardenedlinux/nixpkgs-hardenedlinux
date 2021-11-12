@@ -46,8 +46,8 @@ jobs:
         run: |
           nix -Lv develop --command nvfetcher -l changelog
       - name: Update nix verison of GH
-        run: nix -Lv run .\#gh-nix-update
-
+        run: |
+          nix -Lv develop -c nixpkgs-hardenedlinux gh-nix-update
       - name: Build Packages
         run: |
           nix -Lv build .\#broker

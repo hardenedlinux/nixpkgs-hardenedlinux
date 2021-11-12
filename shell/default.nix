@@ -28,7 +28,7 @@ devshell.mkShell {
     {
       category = "general commands";
       package = reboudBud {
-        inherit pkgs;
+        inherit pkgs inputs;
         name = "nixpkgs-hardenedlinux";
         description = "nixpkgs-hardenedlinux customizable system ctl";
         budStdProfile = false;
