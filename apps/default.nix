@@ -1,12 +1,7 @@
 inputs: channels:
 with inputs.utils.lib;
 with channels.nixpkgs;
-let
-  writeBashWithPaths = import ../lib/writeBashWithPaths.nix { pkgs = channels.nixpkgs; };
-in
-(
-  (lib.utils-extend.pathsToNixScript ./.) channels.nixpkgs (lib.utils-extend.filterBash ./.) "bash"
-) // {
+{
   gh-nix-update = with channels.nixpkgs;mkApp
     {
       drv = writeShellScriptBin "gh-nix-update" ''
@@ -14,10 +9,10 @@ in
       '';
     };
   nix-lint = with channels.nixpkgs;mkApp {
-    drv = writeBashWithPaths [
-      inputs.statix.defaultPackage."x86_64-linux"
-      findutils
-    ] ./nix-lint.sh "";
-    exePath = "";
+    drv = writeShellScriptBin "nix-lint" ''
+      export PATH=${pkgs.lib.strings.makeBinPath [ inputs.statix.defaultPackage."x86_64-linux"
+        findutils]}
+      source ${./nix-lint.bash}
+    '';
   };
 }

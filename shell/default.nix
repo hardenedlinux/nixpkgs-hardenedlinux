@@ -1,5 +1,8 @@
-{ pkgs, ... }:
+{ pkgs, inputs, self, ... }:
 with pkgs;
+let
+  reboudBud = inputs.bud self;
+in
 devshell.mkShell {
   name = "Hardenedlinux-devShell";
   imports = [
@@ -22,6 +25,15 @@ devshell.mkShell {
   '');
 
   commands = [
+    {
+      category = "general commands";
+      package = reboudBud {
+        inherit pkgs;
+        name = "nixpkgs-hardenedlinux";
+        description = "nixpkgs-hardenedlinux customizable system ctl";
+        budStdProfile = false;
+      };
+    }
     {
       name = nixpkgs-fmt.pname;
       help = nixpkgs-fmt.meta.description;

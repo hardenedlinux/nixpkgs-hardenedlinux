@@ -3,6 +3,7 @@
 
   inputs = {
     utils.url = "github:gytis-ivaskevicius/flake-utils-plus";
+    latest.url = "nixpkgs/nixos-unstable";
     nixpkgs.url = "nixpkgs/release-21.05";
     stable.url = "nixpkgs/release-20.09";
     nvfetcher = { url = "github:berberman/nvfetcher"; };
@@ -23,6 +24,11 @@
     check_journal = { url = "github:GTrunSec/check_journal/flake"; };
     statix = { url = "github:nerdypepper/statix"; };
     nix_script = { url = "github:BrianHicks/nix-script"; };
+    bud = {
+      url = "github:GTrunSec/bud/custom";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.devshell.follows = "devshell";
+    };
   };
 
   outputs = inputs: with builtins; with inputs;
@@ -52,6 +58,10 @@
                 self.overlay
                 nvfetcher.overlay
                 nix_script.overlay
+                (final: prev: {
+                  inherit (channels.latest)
+                    ;
+                })
               ];
           };
           stable = {
@@ -64,6 +74,12 @@
               })
             ];
           };
+          latest = {
+            input = latest;
+            overlaysBuilder = channels: [
+              statix.overlay
+            ];
+          };
         };
 
         sharedOverlays = [
@@ -72,7 +88,7 @@
           (final: prev:
             {
               __dontExport = true;
-              #python
+              #Python overlay
               machlib = import mach-nix {
                 pkgs = prev;
                 pypiData = pypi-deps-db;
@@ -120,6 +136,7 @@
           };
           devShell = import ./shell {
             pkgs = channels.nixpkgs;
+            inherit inputs self;
           };
         };
       } // {
@@ -141,6 +158,9 @@
         } // import ./packages/inputs-packages.nix inputs final prev;
     } //
     {
+      budModules = {
+        nixpkgs-hardenedlinux = import ./shell/nixpkgs-hardenedlinux;
+      };
       nixosModules = {
         honeygrove = import ./modules/honeygrove.nix;
         osquery-bin = {
@@ -154,6 +174,5 @@
           ];
         };
       };
-
     };
 }
