@@ -7,10 +7,13 @@
         coreutils
       ];
       synopsis = "gomod2nix";
-      help = "linting check for your nix code";
+      help = "updating gomod2nix.toml for packages";
       extraScript = ''
         export zed_url="${pkgs.zed.meta.homepage}"
         export gonfsd_url="${pkgs.go-nfsd.meta.homepage}"
+
+        urls=("$zed_url" "$gonfs_url")
+        names=("zed" "go-nfsd")
       '';
       script = ./gomod2nix.bash;
     };

@@ -18,7 +18,7 @@
 , fontconfig
 , expat
 , lib
-, mesa
+, mesa_drivers
 , wrapGAppsHook
 , autoPatchelfHook
 , makeWrapper
@@ -34,7 +34,7 @@ stdenv.mkDerivation rec {
   buildInputs = [
     gnome3.gsettings_desktop_schemas
     libdrm
-    mesa
+    mesa_drivers.dev
     glib
     gtk3
     cairo
@@ -71,8 +71,6 @@ stdenv.mkDerivation rec {
   ];
 
 
-  runtimeLibs = lib.makeLibraryPath [ libudev0-shim glibc libsecret ];
-
   unpackPhase = "dpkg-deb --fsys-tarfile $src | tar -x --no-same-permissions --no-same-owner";
 
   installPhase = ''
@@ -83,7 +81,6 @@ stdenv.mkDerivation rec {
     mv opt/Brim/* $out/share/Brim
     mv $out/share/Brim/*.so $out/lib/
     mv usr/share/* $out/share/
-    ln -s $out/share/Brim/brim $out/bin/brim
 
     substituteInPlace $out/share/applications/brim.desktop  \
       --replace "/opt/Brim/brim %U" "$out/bin/brim $U"
@@ -91,8 +88,14 @@ stdenv.mkDerivation rec {
     runHook postInstall
   '';
 
+  dontWrapGApps = true;
+
+  runtimeLibs = lib.makeLibraryPath [ libudev0-shim glibc libsecret ];
+
   preFixup = ''
-    gappsWrapperArgs+=(--prefix LD_LIBRARY_PATH : "${runtimeLibs}" )
+    makeWrapper $out/share/Brim/brim $out/bin/brim \
+      --prefix LD_LIBRARY_PATH : "${runtimeLibs}" \
+      "''${gappsWrapperArgs[@]}"
   '';
 
   enableParallelBuilding = true;

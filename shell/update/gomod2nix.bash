@@ -1,5 +1,3 @@
-names=("zed" "go-nfsd")
-urls=("$zed_url" "$gonfs_url")
 for name in "${names[@]}"; do
     for url in in "${urls[@]}"; do
         if [[ ! -d "/tmp/$name-gomod2nix" ]]; then

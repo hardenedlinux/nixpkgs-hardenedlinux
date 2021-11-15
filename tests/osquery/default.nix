@@ -1,11 +1,11 @@
-{ makeTest, pkgs, self }:
+{ makeTest, pkgs }:
 {
   osquery-vm-systemd = makeTest
     {
       name = "osquery-systemd";
       machine = {
         imports = [
-          self.nixosModules.osquery-bin
+          ../../modules/osquery.nix
           ./service.nix
         ];
         virtualisation = {

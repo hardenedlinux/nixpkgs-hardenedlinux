@@ -3,7 +3,7 @@
 
   inputs = {
     utils.url = "github:gytis-ivaskevicius/flake-utils-plus";
-    latest.url = "nixpkgs/nixos-unstable";
+    latest.url = "nixpkgs";
     nixpkgs.url = "nixpkgs/release-21.05";
     stable.url = "nixpkgs/release-20.09";
     nvfetcher = { url = "github:berberman/nvfetcher"; };
@@ -149,12 +149,6 @@
               utils-extend = import ./lib/utils-extend.nix { inherit lib inputs; };
             });
           nixpkgs-hardenedlinux-sources = prev.callPackage ./packages/_sources/generated.nix { };
-          osquery-vm-tests = prev.lib.optionalAttrs prev.stdenv.isLinux (import ./tests/osquery
-            {
-              makeTest = import (prev.path + "/nixos/tests/make-test-python.nix");
-              pkgs = final;
-              inherit self;
-            });
         } // import ./packages/inputs-packages.nix inputs final prev;
     } //
     {

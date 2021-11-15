@@ -21,13 +21,6 @@
       "description": "File events collected from file integrity monitoring",
       "removed": false
     },
-    "apt_sources": {
-      "query": "SELECT * FROM apt_sources;",
-      "interval": 8,
-      "description": "Display apt package manager sources.",
-      "snapshot": true,
-      "platform": "ubuntu"
-    },
     "authorized_keys": {
       "query": "SELECT * FROM users CROSS JOIN authorized_keys USING (uid);",
       "interval": 8,
@@ -230,13 +223,6 @@
       "interval": 8,
       "description": "Local system users.",
       "snapshot": true
-    },
-    "yum_sources": {
-      "query": "SELECT name, baseurl, enabled, gpgcheck FROM yum_sources;",
-      "interval": 8,
-      "description": "Display yum package manager sources",
-      "snapshot": true,
-      "platform": "centos"
     }
   },
   "file_paths": {
