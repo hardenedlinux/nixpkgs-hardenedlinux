@@ -3,9 +3,9 @@
 
   inputs = {
     utils.url = "github:gytis-ivaskevicius/flake-utils-plus";
-    latest.url = "nixpkgs";
-    nixpkgs.url = "nixpkgs/release-21.11";
-    stable.url = "nixpkgs/release-20.09";
+    latest.url = "github:NixOS/nixpkgs/master";
+    nixpkgs.url = "github:NixOS/nixpkgs/release-21.11";
+    stable.url = "github:NixOS/nixpkgs/release-20.09";
     nvfetcher = { url = "github:berberman/nvfetcher"; };
     flake-compat = { url = "github:edolstra/flake-compat"; flake = false; };
     devshell = { url = "github:numtide/devshell"; };
