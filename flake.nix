@@ -4,7 +4,7 @@
   inputs = {
     utils.url = "github:gytis-ivaskevicius/flake-utils-plus";
     latest.url = "nixpkgs";
-    nixpkgs.url = "nixpkgs/release-21.05";
+    nixpkgs.url = "nixpkgs/release-21.11";
     stable.url = "nixpkgs/release-20.09";
     nvfetcher = { url = "github:berberman/nvfetcher"; };
     flake-compat = { url = "github:edolstra/flake-compat"; flake = false; };
