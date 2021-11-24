@@ -3,18 +3,15 @@
 
   inputs = {
     utils.url = "github:gytis-ivaskevicius/flake-utils-plus";
-    latest.url = "github:NixOS/nixpkgs/master";
-    nixpkgs.url = "github:NixOS/nixpkgs/release-21.11";
-    stable.url = "github:NixOS/nixpkgs/release-20.09";
+    latest.url = "nixpkgs/master";
+    nixpkgs.url = "nixpkgs/release-21.11";
+    stable.url = "nixpkgs/release-20.09";
     nvfetcher = { url = "github:berberman/nvfetcher"; };
     flake-compat = { url = "github:edolstra/flake-compat"; flake = false; };
     devshell = { url = "github:numtide/devshell"; };
     gomod2nix = { url = "github:tweag/gomod2nix"; inputs.nixpkgs.follows = "nixpkgs"; };
     mach-nix = { url = "github:DavHau/mach-nix"; inputs.pypi-deps-db.follows = "pypi-deps-db"; };
-    microvm = {
-      url = "github:astro/microvm.nix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    microvm = { url = "github:astro/microvm.nix"; };
     pypi-deps-db = {
       url = "github:DavHau/pypi-deps-db";
       flake = false;
