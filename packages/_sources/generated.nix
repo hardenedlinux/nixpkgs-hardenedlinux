@@ -3,10 +3,10 @@
 {
   brim = {
     pname = "brim";
-    version = "0.27.0";
+    version = "0.28.0";
     src = fetchurl {
-      url = "https://github.com/brimdata/brim/releases/download/v0.27.0/Brim-0.27.0.deb";
-      sha256 = "sha256-pTG1ZbstXMhlHGYe6nADUzCrHEO7vgi5fozktR7Rm+s=";
+      url = "https://github.com/brimdata/brim/releases/download/v0.28.0/Brim-0.28.0.deb";
+      sha256 = "sha256-p0PnebxPoS1zFVjLe9brqr1fjJKxCMVU9BzaMUfz7z8=";
     };
   };
   broker = {
@@ -82,13 +82,13 @@
   };
   elastalert2 = {
     pname = "elastalert2";
-    version = "ab9a1d013d391f184b1678f1b567c31139884fed";
+    version = "133b76d2338820a4a00eaebbe9743d52ef85ad40";
     src = fetchFromGitHub ({
       owner = "jertel";
       repo = "elastalert2";
-      rev = "ab9a1d013d391f184b1678f1b567c31139884fed";
+      rev = "133b76d2338820a4a00eaebbe9743d52ef85ad40";
       fetchSubmodules = false;
-      sha256 = "sha256-QHcGrOMjpVkLu1ago+Cw+slrvejxJVgrk/LmpQgSczM=";
+      sha256 = "sha256-c8x75nw57jkZWPF5Gwaa07WsVLJHVxileHADbljmP5A=";
     });
   };
   fastai = {
@@ -216,13 +216,13 @@
   };
   zed = {
     pname = "zed";
-    version = "f0655a540a83650f6cac72b63ae5ab7f357ffd88";
+    version = "9aa2ba94496b7809c0a25e8bf55284aa65d98ca3";
     src = fetchFromGitHub ({
       owner = "brimdata";
       repo = "zed";
-      rev = "f0655a540a83650f6cac72b63ae5ab7f357ffd88";
+      rev = "9aa2ba94496b7809c0a25e8bf55284aa65d98ca3";
       fetchSubmodules = false;
-      sha256 = "sha256-RCLhqzbvWW9GKTit3hpLfMyG7dD9//aLMsqRhRkSmRc=";
+      sha256 = "sha256-IlSgFTzxX6Ytc+0vZ/+az0PooeqtqmMYRt2dMNAcPoM=";
     });
   };
 }
