@@ -3,7 +3,7 @@
 
   inputs = {
     utils.url = "github:gytis-ivaskevicius/flake-utils-plus";
-    latest.url = "github:NixOS/nixpkgs/master";
+    latest.url = "nixpkgs/nixos-unstable";
     nixpkgs.url = "nixpkgs/release-21.11";
     stable.url = "nixpkgs/release-20.09";
     nvfetcher = { url = "github:berberman/nvfetcher"; };
@@ -104,6 +104,7 @@
           packages = exportPackages self.overlays channels // {
             osquery-microvm = microvm.lib.runner
               {
+
                 system = "x86_64-linux";
                 hypervisor = "qemu";
                 nixosConfig = { pkgs, ... }: {
