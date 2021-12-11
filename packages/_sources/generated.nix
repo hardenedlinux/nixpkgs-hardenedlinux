@@ -11,13 +11,13 @@
   };
   broker = {
     pname = "broker";
-    version = "07842d8bcdd4cf90fb7355be53fa3d14146147dd";
+    version = "36339ad8c9844f1758f8e9d0da4645047f480c34";
     src = fetchFromGitHub ({
       owner = "zeek";
       repo = "broker";
-      rev = "07842d8bcdd4cf90fb7355be53fa3d14146147dd";
+      rev = "36339ad8c9844f1758f8e9d0da4645047f480c34";
       fetchSubmodules = true;
-      sha256 = "sha256-ZxsneYI6VkKYzSvunDorLA6f2FWej+fZfk4Q98IIBQU=";
+      sha256 = "sha256-76UiCS/vus9vMQubiTVDEGFB/CO8Lgc1DUtt2vDs4/I=";
     });
   };
   broker-to-json = {
