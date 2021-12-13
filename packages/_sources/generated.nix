@@ -134,13 +134,13 @@
   };
   go-nfsd = {
     pname = "go-nfsd";
-    version = "cc2916878dd43ef8929a0dd0258b0214f08f58f3";
+    version = "b6921d9292b79e5d5543fb8117df2a8e7891976b";
     src = fetchFromGitHub ({
       owner = "mit-pdos";
       repo = "go-nfsd";
-      rev = "cc2916878dd43ef8929a0dd0258b0214f08f58f3";
+      rev = "b6921d9292b79e5d5543fb8117df2a8e7891976b";
       fetchSubmodules = false;
-      sha256 = "sha256-RkDj/ep9bvzz5UNjw6487ppjZiVPrSCxum7gn+sJrP4=";
+      sha256 = "sha256-yOGG+vj1x7oJR7z9umeWHzsOW51VrnofB3kSrfPntMQ=";
     });
   };
   gst = {
@@ -216,13 +216,13 @@
   };
   zed = {
     pname = "zed";
-    version = "6b88c6db8381085e05b1e35cd1a0852eaaf49d9c";
+    version = "77e0b1f0600dec53519119dd36433daff159499c";
     src = fetchFromGitHub ({
       owner = "brimdata";
       repo = "zed";
-      rev = "6b88c6db8381085e05b1e35cd1a0852eaaf49d9c";
+      rev = "77e0b1f0600dec53519119dd36433daff159499c";
       fetchSubmodules = false;
-      sha256 = "sha256-sj8cEhk2gmUlAfJ9btpFBBF6pyV0KrKhODABQYEq7ZQ=";
+      sha256 = "sha256-+pFPfQyE6a2NJcuFljwy/zvSpbt0fshQ06t+p1fh+Pc=";
     });
   };
 }
