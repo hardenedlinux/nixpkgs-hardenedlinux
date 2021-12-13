@@ -104,7 +104,6 @@
           packages = exportPackages self.overlays channels // {
             osquery-microvm = microvm.lib.runner
               {
-
                 system = "x86_64-linux";
                 hypervisor = "qemu";
                 nixosConfig = { pkgs, ... }: {

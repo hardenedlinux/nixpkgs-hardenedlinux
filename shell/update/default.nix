@@ -17,5 +17,18 @@
       '';
       script = ./gomod2nix.bash;
     };
+    nvfetcher = {
+      writer = budUtils.writeBashWithPaths [
+        git
+        nvfetcher-bin
+        coreutils
+      ];
+      synopsis = "nvfetcher";
+      help = "updating nvfetcher sources.toml";
+      extraScript = ''
+        export NIX_PATH=nixpkgs=${pkgs.path}
+      '';
+      script = ./nvfetcher.bash;
+    };
   };
 }
