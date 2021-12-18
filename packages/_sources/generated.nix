@@ -82,13 +82,13 @@
   };
   elastalert2 = {
     pname = "elastalert2";
-    version = "2bdd36a8c638667fa1f10130e72be178ec2b803f";
+    version = "48bc11a1f681b360d8f7e31daee2fbd72d30e82b";
     src = fetchFromGitHub ({
       owner = "jertel";
       repo = "elastalert2";
-      rev = "2bdd36a8c638667fa1f10130e72be178ec2b803f";
+      rev = "48bc11a1f681b360d8f7e31daee2fbd72d30e82b";
       fetchSubmodules = false;
-      sha256 = "sha256-D3z5N/y2KxpbrWhwcw6R//45YZIsqUXD57x3apjZ5KU=";
+      sha256 = "sha256-de5g6biqt+ML9SQC/8moQ/t0k564EM/eB8gVI4XWDM8=";
     });
   };
   fastai = {
@@ -216,13 +216,13 @@
   };
   zed = {
     pname = "zed";
-    version = "77e0b1f0600dec53519119dd36433daff159499c";
+    version = "c87ede488cf569f0690a7fcfc073d6429a25d798";
     src = fetchFromGitHub ({
       owner = "brimdata";
       repo = "zed";
-      rev = "77e0b1f0600dec53519119dd36433daff159499c";
+      rev = "c87ede488cf569f0690a7fcfc073d6429a25d798";
       fetchSubmodules = false;
-      sha256 = "sha256-+pFPfQyE6a2NJcuFljwy/zvSpbt0fshQ06t+p1fh+Pc=";
+      sha256 = "sha256-dqJp2hQw3yuTzf7AnfHSGzeSJVn1g+iGTPWRIcluUQo=";
     });
   };
 }
