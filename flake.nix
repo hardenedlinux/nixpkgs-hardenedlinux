@@ -1,25 +1,21 @@
 {
   description = "Hardenedlinux Nixpkgs Collection -> Nix Flakes ";
 
+  nixConfig = {
+    flake-registry = "https://github.com/hardenedlinux/flake-registry/raw/main/flake-registry.json";
+  };
+
   inputs = {
-    utils.url = "github:gytis-ivaskevicius/flake-utils-plus";
-    latest.url = "github:nixos/nixpkgs/nixos-unstable";
-    nixpkgs.url = "github:nixos/nixpkgs/release-21.11";
     stable.url = "github:nixos/nixpkgs/release-20.09";
-    nvfetcher = { url = "github:berberman/nvfetcher"; };
-    flake-compat = { url = "github:edolstra/flake-compat"; flake = false; };
-    devshell = { url = "github:numtide/devshell"; };
+    flake-compat.flake = false;
     gomod2nix = { url = "github:tweag/gomod2nix"; inputs.nixpkgs.follows = "nixpkgs"; };
-    mach-nix = { url = "github:DavHau/mach-nix"; inputs.pypi-deps-db.follows = "pypi-deps-db"; };
-    microvm = { url = "github:astro/microvm.nix"; };
+    mach-nix = { inputs.pypi-deps-db.follows = "pypi-deps-db"; };
     pypi-deps-db = {
       url = "github:DavHau/pypi-deps-db";
       flake = false;
     };
-
     # packages inputs
     check_journal = { url = "github:GTrunSec/check_journal/flake"; };
-    statix = { url = "github:nerdypepper/statix"; };
     nix_script = { url = "github:BrianHicks/nix-script"; };
     bud = {
       url = "github:GTrunSec/bud/custom";
@@ -28,7 +24,22 @@
     };
   };
 
-  outputs = inputs: with builtins; with inputs;
+  outputs =
+    { self
+    , nixpkgs
+    , utils
+    , devshell
+    , latest
+    , statix
+    , stable
+    , nvfetcher
+    , nix_script
+    , gomod2nix
+    , mach-nix
+    , pypi-deps-db
+    , microvm
+    , ...
+    }@inputs:
     let
       inherit (utils.lib) exportOverlays exportPackages exportModules;
       inherit (nixpkgs) lib;
