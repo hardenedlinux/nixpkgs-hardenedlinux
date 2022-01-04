@@ -356,7 +356,7 @@
         "type": "indirect"
       }
     },
-    "nix_script": {
+    "nix-script": {
       "inputs": {
         "flake-compat": "flake-compat_3",
         "nixpkgs": "nixpkgs_7",
@@ -451,6 +451,20 @@
         "owner": "NixOS",
         "repo": "nixpkgs",
         "type": "github"
+      }
+    },
+    "nixpkgs_20": {
+      "locked": {
+        "lastModified": 1636935165,
+        "narHash": "sha256-J4smKTYTp8wJ57znUerWlS/QRgp0jcm/StcfIhsa5eA=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "f7949198dcff52265b322ca8abf7450610e7e49e",
+        "type": "github"
+      },
+      "original": {
+        "id": "nixpkgs_20",
+        "type": "indirect"
       }
     },
     "nixpkgs_3": {
@@ -625,11 +639,11 @@
         "latest": "latest",
         "mach-nix": "mach-nix",
         "microvm": "microvm",
-        "nix_script": "nix_script",
+        "nix-script": "nix-script",
         "nixpkgs": "nixpkgs_8",
+        "nixpkgs_20": "nixpkgs_20",
         "nvfetcher": "nvfetcher",
         "pypi-deps-db": "pypi-deps-db",
-        "stable": "stable",
         "statix": "statix",
         "utils": "utils_3"
       }
@@ -648,22 +662,6 @@
         "owner": "rust-analyzer",
         "ref": "nightly",
         "repo": "rust-analyzer",
-        "type": "github"
-      }
-    },
-    "stable": {
-      "locked": {
-        "lastModified": 1636935165,
-        "narHash": "sha256-J4smKTYTp8wJ57znUerWlS/QRgp0jcm/StcfIhsa5eA=",
-        "owner": "nixos",
-        "repo": "nixpkgs",
-        "rev": "f7949198dcff52265b322ca8abf7450610e7e49e",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nixos",
-        "ref": "release-20.09",
-        "repo": "nixpkgs",
         "type": "github"
       }
     },

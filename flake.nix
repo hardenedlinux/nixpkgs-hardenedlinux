@@ -2,18 +2,17 @@
   description = "Hardenedlinux Nixpkgs Collection -> Nix Flakes ";
 
   nixConfig = {
-    flake-registry = "https://github.com/hardenedlinux/flake-registry/raw/main/flake-registry.json";
-    #flake-registry = "/home/gtrun/ghq/github.com/hardenedlinux/flake-registry/flake-registry.json";
+    #flake-registry = "https://github.com/hardenedlinux/flake-registry/raw/main/flake-registry.json";
+    flake-registry = "/home/gtrun/ghq/github.com/hardenedlinux/flake-registry/flake-registry.json";
   };
 
   inputs = {
-    stable.url = "github:nixos/nixpkgs/release-20.09";
     flake-compat.flake = false;
     mach-nix = { inputs.pypi-deps-db.follows = "pypi-deps-db"; };
     pypi-deps-db = { flake = false; };
     # packages inputs
     check_journal = { url = "github:GTrunSec/check_journal/flake"; };
-    nix_script = { url = "github:BrianHicks/nix-script"; };
+    nix-script = { url = "github:BrianHicks/nix-script"; };
     bud = {
       url = "github:GTrunSec/bud/custom";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -28,9 +27,9 @@
     , devshell
     , latest
     , statix
-    , stable
+    , nixpkgs_20
     , nvfetcher
-    , nix_script
+    , nix-script
     , gomod2nix
     , mach-nix
     , pypi-deps-db
@@ -62,15 +61,15 @@
               [
                 self.overlay
                 nvfetcher.overlay
-                nix_script.overlay
+                nix-script.overlay
                 (final: prev: {
                   inherit (channels.latest)
                     ;
                 })
               ];
           };
-          stable = {
-            input = stable;
+          nixpkgs_20 = {
+            input = nixpkgs_20;
             overlaysBuilder = channels: [
               (final: prev: {
                 broker = prev.callPackage ./packages/pkgs/broker { };
