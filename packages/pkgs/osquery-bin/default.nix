@@ -33,7 +33,7 @@ stdenv.mkDerivation rec {
     mkdir -p $out
 
     mv opt/osquery/* $out
-    mv {etc,var,usr/*} $out
+    mv {etc,var,usr/lib} $out
 
     runHook postInstall
   '';

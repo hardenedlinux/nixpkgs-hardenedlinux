@@ -2,8 +2,8 @@
   description = "Hardenedlinux Nixpkgs Collection -> Nix Flakes ";
 
   nixConfig = {
-    #flake-registry = "https://github.com/hardenedlinux/flake-registry/raw/main/flake-registry.json";
-    flake-registry = "/home/gtrun/ghq/github.com/hardenedlinux/flake-registry/flake-registry.json";
+    flake-registry = "https://github.com/hardenedlinux/flake-registry/raw/main/flake-registry.json";
+    #flake-registry = "/home/gtrun/ghq/github.com/hardenedlinux/flake-registry/flake-registry.json";
   };
 
   inputs = {
@@ -153,6 +153,11 @@
               utils-extend = import ./lib/utils-extend.nix { inherit lib inputs; };
             });
           nixpkgs-hardenedlinux-sources = prev.callPackage ./packages/_sources/generated.nix { };
+          osquery-vm-tests = prev.lib.optionalAttrs prev.stdenv.isLinux (import ./tests/osquery {
+            makeTest = import (prev.path + "/nixos/tests/make-test-python.nix");
+            pkgs = final;
+            inherit self;
+          });
         } // import ./packages/inputs-packages.nix inputs final prev;
     } //
     {
@@ -166,7 +171,7 @@
           imports = [
             {
               nixpkgs.config.packageOverrides = pkgs: {
-                inherit (self.packages."${pkgs.system}") osquery-bin;
+                inherit (self.packages."${pkgs.stdenv.hostPlatform.system}") osquery-bin;
               };
             }
             ./modules/osquery.nix

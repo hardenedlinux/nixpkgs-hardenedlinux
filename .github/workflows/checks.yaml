@@ -59,9 +59,9 @@ jobs:
           nix -Lv build .\#zed
           nix -Lv build .\#btest
 
-      - name: Build Microvm Images
+      - name: Check Osquery-vm-systemd
         run: |
-          nix -Lv build .\#osquery-microvm
+          nix build .\#osquery-bin.tests.osquery-vm-systemd
 
       - name: Build Package GoPackages
         run: |

@@ -1,6 +1,7 @@
 # nvfetcher.toml
 [osquery]
-src.github = "osquery/osquery"
+#src.github = "osquery/osquery"
+src.manual= "5.2.0"
 fetch.url = "https://github.com/osquery/osquery/releases/download/$ver/osquery_$ver-1.linux_amd64.deb"
 src.prefix = "v"
 
@@ -8,7 +9,6 @@ src.prefix = "v"
 src.github = "numtide/nix-unstable-installer"
 fetch.url = "https://github.com/numtide/nix-unstable-installer/releases/download/$ver/install"
 src.prefix = "v"
-
 
 
 [brim]

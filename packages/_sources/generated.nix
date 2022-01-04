@@ -175,10 +175,10 @@
   };
   osquery = {
     pname = "osquery";
-    version = "5.1.0";
+    version = "5.2.0";
     src = fetchurl {
-      url = "https://github.com/osquery/osquery/releases/download/5.1.0/osquery_5.1.0-1.linux_amd64.deb";
-      sha256 = "sha256-wh2HLst08Hq/Ocweyje3LjFoPnIjJmfvQThyk8Vhilc=";
+      url = "https://github.com/osquery/osquery/releases/download/5.2.0/osquery_5.2.0-1.linux_amd64.deb";
+      sha256 = "sha256-lwNxy/+IxkWJ27Nw3in4QHtZVuW/sDuErSJ2Y3WSN9Q=";
     };
   };
   sybilhunter = {
@@ -216,13 +216,13 @@
   };
   zed = {
     pname = "zed";
-    version = "60f2dbcf2d6b90ad4386a90dbcaac278b6f12af1";
+    version = "785b439482a5f1801d7f9a2b5bd2c0ef10e54869";
     src = fetchFromGitHub ({
       owner = "brimdata";
       repo = "zed";
-      rev = "60f2dbcf2d6b90ad4386a90dbcaac278b6f12af1";
+      rev = "785b439482a5f1801d7f9a2b5bd2c0ef10e54869";
       fetchSubmodules = false;
-      sha256 = "sha256-rY2lpXbtU6dveFuscrDKK5jHF5X52u6e5gvAy3wYrr4=";
+      sha256 = "sha256-eySerADHiH81erWu1KLrNpsV3xBkx75+Yq+nePaqljI=";
     });
   };
 }

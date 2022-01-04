@@ -54,7 +54,7 @@ in
       };
 
       package = mkOption {
-        description = "Zeek package to use.";
+        description = "osquery package to use.";
         default = pkgs.osquery-bin;
         type = types.package;
       };
