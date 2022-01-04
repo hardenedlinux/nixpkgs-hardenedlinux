@@ -3,17 +3,14 @@
 
   nixConfig = {
     flake-registry = "https://github.com/hardenedlinux/flake-registry/raw/main/flake-registry.json";
+    #flake-registry = "/home/gtrun/ghq/github.com/hardenedlinux/flake-registry/flake-registry.json";
   };
 
   inputs = {
     stable.url = "github:nixos/nixpkgs/release-20.09";
     flake-compat.flake = false;
-    gomod2nix = { url = "github:tweag/gomod2nix"; inputs.nixpkgs.follows = "nixpkgs"; };
     mach-nix = { inputs.pypi-deps-db.follows = "pypi-deps-db"; };
-    pypi-deps-db = {
-      url = "github:DavHau/pypi-deps-db";
-      flake = false;
-    };
+    pypi-deps-db = { flake = false; };
     # packages inputs
     check_journal = { url = "github:GTrunSec/check_journal/flake"; };
     nix_script = { url = "github:BrianHicks/nix-script"; };
