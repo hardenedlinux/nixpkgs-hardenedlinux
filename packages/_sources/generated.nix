@@ -11,13 +11,13 @@
   };
   broker = {
     pname = "broker";
-    version = "07f42c7c772b1fd79385466584f8322905f981d8";
+    version = "fd0dd674e3c514546483108c660be3e69370a6fb";
     src = fetchFromGitHub ({
       owner = "zeek";
       repo = "broker";
-      rev = "07f42c7c772b1fd79385466584f8322905f981d8";
+      rev = "fd0dd674e3c514546483108c660be3e69370a6fb";
       fetchSubmodules = true;
-      sha256 = "sha256-eh9NNJwROz4DuiYNX4PTnU1PKvOk4YOg7SI1YTAAt1A=";
+      sha256 = "sha256-HBjig4wUW1yBFK75+M3vj/WmtBsVYCNsthFcwbT2R2Y=";
     });
   };
   broker-to-json = {
@@ -48,6 +48,17 @@
       rev = "29750cdb9f87dc7a4b6e423df6e805e14ecae5e1";
       fetchSubmodules = false;
       sha256 = "sha256-/PjfY1thoILxpu3/PTmFRfzR4eFgraLbTXpVM54GXJk=";
+    });
+  };
+  cliche = {
+    pname = "cliche";
+    version = "e9434b814e281d688aed8b666052b00a8ce68dd4";
+    src = fetchFromGitHub ({
+      owner = "kootenpv";
+      repo = "cliche";
+      rev = "e9434b814e281d688aed8b666052b00a8ce68dd4";
+      fetchSubmodules = false;
+      sha256 = "sha256-g/TskbdxEtyRniIhcpL2N69eZ+NZK5uRWhj5xGL01VY=";
     });
   };
   durationpy = {
@@ -82,13 +93,13 @@
   };
   elastalert2 = {
     pname = "elastalert2";
-    version = "7a2f1486b2c4625b829972f853587ebcf0938e3a";
+    version = "7ed98bb98704a8b72af1fc37349d9c5042855b27";
     src = fetchFromGitHub ({
       owner = "jertel";
       repo = "elastalert2";
-      rev = "7a2f1486b2c4625b829972f853587ebcf0938e3a";
+      rev = "7ed98bb98704a8b72af1fc37349d9c5042855b27";
       fetchSubmodules = false;
-      sha256 = "sha256-2ZgkGY+T4HvpkRV1DmPSS+bAFSmFkiYoHwQ1etj8hjM=";
+      sha256 = "sha256-U1GiTXCXMi4CJMe44c76NH5duzhRZkARUTDQMTcSvOM=";
     });
   };
   fastai = {
@@ -156,10 +167,10 @@
   };
   nix-unstable-installer = {
     pname = "nix-unstable-installer";
-    version = "nix-2.6.0pre20211228_ed3bc63";
+    version = "nix-2.6.0pre20220106_f71d846";
     src = fetchurl {
-      url = "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.6.0pre20211228_ed3bc63/install";
-      sha256 = "sha256-Y94s22ZilWhH2y9JV+QnACUhzA5oldc358XZcHFaGRM=";
+      url = "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.6.0pre20220106_f71d846/install";
+      sha256 = "sha256-EuutPsDl1UAyVemwgb3ALok1o9Gh7lPaIlOz15cLo3s=";
     };
   };
   nvdtools = {
@@ -216,13 +227,13 @@
   };
   zed = {
     pname = "zed";
-    version = "785b439482a5f1801d7f9a2b5bd2c0ef10e54869";
+    version = "9076f1cbc23cc72b1c2e17ba10ee06722bce2e8d";
     src = fetchFromGitHub ({
       owner = "brimdata";
       repo = "zed";
-      rev = "785b439482a5f1801d7f9a2b5bd2c0ef10e54869";
+      rev = "9076f1cbc23cc72b1c2e17ba10ee06722bce2e8d";
       fetchSubmodules = false;
-      sha256 = "sha256-eySerADHiH81erWu1KLrNpsV3xBkx75+Yq+nePaqljI=";
+      sha256 = "sha256-WmDf8ilBw5e1jqhnHTrly7l7j8/4A5F3Vq9gatPGTZk=";
     });
   };
 }

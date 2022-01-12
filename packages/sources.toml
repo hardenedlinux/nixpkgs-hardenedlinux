@@ -72,6 +72,12 @@ fetch.pypi = "fastprogress"
 src.git = "https://github.com/SuperCowPowers/zat"
 fetch.github = "SuperCowPowers/zat"
 
+[cliche]
+src.git = "https://github.com/kootenpv/cliche"
+fetch.github = "kootenpv/cliche"
+
+
+
 #Python Packages
 [btest]
 src.pypi = "btest"
