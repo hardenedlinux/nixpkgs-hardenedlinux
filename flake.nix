@@ -14,7 +14,7 @@
     check_journal = { url = "github:GTrunSec/check_journal/flake"; };
     nix-script = { url = "github:BrianHicks/nix-script"; };
     bud = {
-      url = "github:GTrunSec/bud/custom";
+      url = "github:GTrunSec/bud/extend";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.devshell.follows = "devshell";
     };
@@ -138,10 +138,25 @@
                 socket = "control.socket";
               };
           };
-          devShell = import ./shell {
-            pkgs = channels.nixpkgs;
-            inherit inputs self;
-          };
+          devShell =
+            let
+              eval = import "${devshell}/modules" channels.nixpkgs;
+              configuration = {
+                name = channels.nixpkgs.lib.mkDefault "devshell";
+                imports =
+                  let
+                    devshell = import ./shell {
+                      inherit self inputs;
+                      pkgs = channels.nixpkgs;
+                    };
+                  in
+                  devshell.modules ++ devshell.exportedModules;
+              };
+            in
+            (eval {
+              inherit configuration;
+              extraSpecialArgs = { inherit self inputs; };
+            }).shell;
         };
       } // {
       overlay = final: prev:
@@ -162,8 +177,8 @@
     } //
     {
       budModules = {
-        nixpkgs-hardenedlinux = import ./shell/nixpkgs-hardenedlinux;
-        update = import ./shell/update;
+        nixpkgs-hardenedlinux = { category = "general commands"; description = "highly customizable system ctl for nixpkgs-hardenedlinux"; path = import ./shell/nixpkgs-hardenedlinux; };
+        update = { category = "update"; description = "Updating the packages of nested commands"; path = import ./shell/update; };
       };
       nixosModules = {
         honeygrove = import ./modules/honeygrove.nix;

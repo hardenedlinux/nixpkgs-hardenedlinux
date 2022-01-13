@@ -17,7 +17,7 @@ jobs:
 
       - uses: cachix/install-nix-action@v16
         with:
-          install_url: https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.5pre20211026_5667822/install
+          install_url: https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.6.0pre20220106_f71d846/install
           extra_nix_config: |
             experimental-features = nix-command flakes
             system-features = nixos-test benchmark big-parallel kvm recursive-nix
@@ -45,9 +45,7 @@ jobs:
       - name: Run nvfetcher
         run: |
           nix -Lv develop --command nvfetcher -l changelog
-      - name: Update nix verison of GH
-        run: |
-          nix -Lv develop -c nixpkgs-hardenedlinux gh-nix-update
+
       - name: bumpup commands
         run: |
           nix -Lv develop -c update gomod2nix
