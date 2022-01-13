@@ -82,10 +82,7 @@
     },
     "fenix": {
       "inputs": {
-        "nixpkgs": [
-          "statix",
-          "nixpkgs"
-        ],
+        "nixpkgs": "nixpkgs_10",
         "rust-analyzer-src": "rust-analyzer-src"
       },
       "locked": {
@@ -272,10 +269,7 @@
     },
     "gitignore": {
       "inputs": {
-        "nixpkgs": [
-          "statix",
-          "nixpkgs"
-        ]
+        "nixpkgs": "nixpkgs_11"
       },
       "locked": {
         "lastModified": 1635165013,
@@ -369,11 +363,11 @@
         "utils": "utils_2"
       },
       "locked": {
-        "lastModified": 1640311042,
-        "narHash": "sha256-TLbWoibN8Qd8NaZDi9Nlb34aRL3Wf0hHmuNoqw4COsE=",
+        "lastModified": 1642082589,
+        "narHash": "sha256-LORiuOZ5X2CJntqv8g4AmotiTiydaf6GUTmUPbOvmAw=",
         "owner": "BrianHicks",
         "repo": "nix-script",
-        "rev": "c44ed13876548aec481756c6159e49f1f6017f51",
+        "rev": "7ac74d056ec56d5cda895b7b323bf09919025646",
         "type": "github"
       },
       "original": {
@@ -399,6 +393,36 @@
       }
     },
     "nixpkgs_10": {
+      "locked": {
+        "lastModified": 1641887635,
+        "narHash": "sha256-kDGpufwzVaiGe5e1sBUBPo9f1YN+nYHJlYqCaVpZTQQ=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "b2737d4980a17cc2b7d600d7d0b32fd7333aca88",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_11": {
+      "locked": {
+        "lastModified": 1641969095,
+        "narHash": "sha256-WCiFqG6+E5NmeI6xnw/fxuKHgdsfb8xjL8N9Gxu4/hU=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "b458e5133fba2c873649f071f7a8dfeae52ebd17",
+        "type": "github"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "nixpkgs_12": {
       "locked": {
         "lastModified": 1638036523,
         "narHash": "sha256-ZL6gogsuBmhBvIro+YwRKrypYhwVPCOOO7FmhOV/xyE=",
@@ -645,7 +669,7 @@
       "inputs": {
         "fenix": "fenix",
         "gitignore": "gitignore",
-        "nixpkgs": "nixpkgs_10"
+        "nixpkgs": "nixpkgs_12"
       },
       "locked": {
         "lastModified": 1639455627,
