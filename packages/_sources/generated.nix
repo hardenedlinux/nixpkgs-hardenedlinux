@@ -227,13 +227,13 @@
   };
   zed = {
     pname = "zed";
-    version = "c40965efd77ad10d063d205e0b688b7e00998e37";
+    version = "0b6233ba43b8ae48585af9e1f4e7b93c97195411";
     src = fetchFromGitHub ({
       owner = "brimdata";
       repo = "zed";
-      rev = "c40965efd77ad10d063d205e0b688b7e00998e37";
+      rev = "0b6233ba43b8ae48585af9e1f4e7b93c97195411";
       fetchSubmodules = false;
-      sha256 = "sha256-z2urLqS/yNP76PfbYKJY8IKucqrEB4OwNBZB7llj5Ns=";
+      sha256 = "sha256-dFxXEvNcjaqB6lfOXTlXnCJxu8whZkfapQq2jHr61Bk=";
     });
   };
 }
