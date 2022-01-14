@@ -106,7 +106,7 @@
         };
 
         outputsBuilder = channels: {
-          apps = import ./apps inputs channels;
+          # apps = import ./apps inputs channels;
           # construct exportPackages to export all packages defined in overlays
           packages = exportPackages self.overlays channels // {
             osquery-microvm = microvm.lib.runner

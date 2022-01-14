@@ -44,7 +44,7 @@ jobs:
 
       - name: Run nvfetcher
         run: |
-          nix -Lv develop --command nvfetcher -l changelog
+          nix develop -c -- update nvfetcher-github ./packages/sources.toml
 
       - name: bumpup commands
         run: |

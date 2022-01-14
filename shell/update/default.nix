@@ -18,7 +18,7 @@
       script = ./gomod2nix.bash;
     };
 
-    nvfetcher = {
+    nvfetcher-github = {
       writer = budUtils.runner [
         git
         nvfetcher-bin
@@ -29,7 +29,7 @@
       preScript = ''
         export NIX_PATH=nixpkgs=${pkgs.path}
       '';
-      script = ./nvfetcher.bash;
+      script = ./nvfetcher-github.bash;
     };
 
     gh-nix-update = {
