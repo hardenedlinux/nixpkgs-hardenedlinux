@@ -39,9 +39,7 @@
     let
       inherit (utils.lib) exportOverlays exportPackages exportModules;
       inherit (nixpkgs) lib;
-      inherit (builtins) attrValues;
-      inherit (utilsLib) pathsToImportedAttrs overlayPaths;
-      utilsLib = import ./lib/utils-extend.nix { inherit lib inputs; };
+      selfLib = import ./lib/self.nix { inherit lib inputs; };
     in
     utils.lib.mkFlake
       {
@@ -98,7 +96,7 @@
                 pypiData = pypi-deps-db;
               };
             })
-        ] ++ (attrValues (pathsToImportedAttrs overlayPaths));
+        ] ++ (selfLib.importOverlays ./overlays);
 
         # exportOverlays automatically for all packages defined in overlaysBuilder of each channel
         overlays = exportOverlays {
@@ -160,24 +158,24 @@
         };
       } // {
       overlay = final: prev:
-        (utilsLib.pathsToCallPkgs ./packages/python-pkgs prev) //
-        (utilsLib.pathsToCallPkgs ./packages/pkgs prev) // {
-          # lib
-          lib = prev.lib.extend
-            (lfinal: lprev: {
-              utils-extend = import ./lib/utils-extend.nix { inherit lib inputs; };
-            });
+        (selfLib.pathsToCallPkgs ./packages/python-pkgs prev) //
+        (selfLib.pathsToPythonCallPkgs ./packages/pkgs prev) //
+        {
           nixpkgs-hardenedlinux-sources = prev.callPackage ./packages/_sources/generated.nix { };
           osquery-vm-tests = prev.lib.optionalAttrs prev.stdenv.isLinux (import ./tests/osquery {
             makeTest = import (prev.path + "/nixos/tests/make-test-python.nix");
             pkgs = final;
             inherit self;
           });
-        } // import ./packages/inputs-packages.nix inputs final prev;
+        } // import ./packages/inputs-packages.nix inputs prev final;
     } //
     {
       budModules = {
-        nixpkgs-hardenedlinux = { category = "general commands"; description = "highly customizable system ctl for nixpkgs-hardenedlinux"; path = import ./shell/nixpkgs-hardenedlinux; };
+        nixpkgs-hardenedlinux = {
+          category = "general commands";
+          description = "highly customizable system ctl for nixpkgs-hardenedlinux";
+          path = import ./shell/nixpkgs-hardenedlinux;
+        };
         update = { category = "update"; description = "Updating the packages of nested commands"; path = import ./shell/update; };
       };
       nixosModules = {

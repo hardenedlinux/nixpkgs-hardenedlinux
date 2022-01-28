@@ -35,7 +35,8 @@
     gh-nix-update = {
       writer = budUtils.runner [ gnused findutils ];
       synopsis = "gh-nix-update";
-      help = "update your nix verison of Github Action";
+      help = "nix develop github:hardenedlinux/nixpkgs-hardenedlinux -c update nvfetcher --no-write-lock-file";
+      description = "update your nix verison of Github Action";
       preScript = ''
         export nix_version=${toString nixpkgs-hardenedlinux-sources.nix-unstable-installer.src.urls}
       '';

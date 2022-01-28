@@ -14,19 +14,20 @@ let
   filterBash = path:
     let a = key: value: value == "regular" && lib.hasSuffix ".bash" key && key != "default.nix"; in
     lib.filterAttrs a (builtins.readDir path);
-  filterHaskell =
+  filterHaskell = path:
     let a = key: value: value == "regular" && lib.hasSuffix ".hs" key && key != "default.nix"; in
-    lib.filterAttrs a (builtins.readDir ../apps);
+    lib.filterAttrs a (builtins.readDir path);
+
+  overlayPaths = dir:
+    let
+      fullPath = name: dir + "/${name}";
+    in
+    map fullPath (attrNames (readDir dir));
 in
 rec {
   inherit genAttrs' pathsToImportedAttrs filterBash filterHaskell;
 
-  overlayPaths =
-    let
-      overlayDir = ../overlays;
-      fullPath = name: overlayDir + "/${name}";
-    in
-    map fullPath (attrNames (readDir overlayDir));
+  importOverlays = dir: lib.attrValues (pathsToImportedAttrs (overlayPaths dir));
 
   pathsToCallPkgs = path: pkgs: builtins.listToAttrs
     (map
@@ -34,8 +35,17 @@ rec {
         value = pkgs.python3Packages.callPackage (path + "/${pkgName}") { };
         name = pkgName;
       })
-
       (builtins.attrNames (builtins.readDir path)));
+
+
+  pathsToPythonCallPkgs = path: pkgs: builtins.listToAttrs
+    (map
+      (pkgName: {
+        value = pkgs.callPackage (path + "/${pkgName}") { };
+        name = pkgName;
+      })
+      (builtins.attrNames (builtins.readDir path)));
+
 
   pathsToNixScript = path: pkgs: f: s: builtins.listToAttrs
     (map
