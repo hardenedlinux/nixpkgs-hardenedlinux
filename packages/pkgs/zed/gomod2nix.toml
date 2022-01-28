@@ -158,6 +158,14 @@
     rev = "9f7001d12a5f0021fd3283525f888b5814ccee27"
     sha256 = "0hhdbsm5k19kh1fyxs4aibza9jylils4p3555lr8xalhj2iz3zlz"
 
+["github.com/dvyukov/go-fuzz"]
+  sumVersion = "v0.0.0-20210103155950-6a8e9d1f2415"
+  ["github.com/dvyukov/go-fuzz".fetch]
+    type = "git"
+    url = "https://github.com/dvyukov/go-fuzz"
+    rev = "6a8e9d1f2415cf672ddbe864c2d4092287b33a21"
+    sha256 = "1bpiiqpyvp11jig55pygq4mgcc2076i2jj1y2dzx3hvqh28k1k23"
+
 ["github.com/fraugster/parquet-go"]
   sumVersion = "v0.3.1"
   vendorPath = "github.com/brimdata/parquet-go"
@@ -849,6 +857,22 @@
     rev = "404189cf44aea95b0cd9bddcb0242dd4cf88c510"
     sha256 = "05ix5wg1r8pgi7fb6084lg4x7mrkvzkh1nxa7zj337w5b9xj0myr"
 
+["go4.org/intern"]
+  sumVersion = "v0.0.0-20211027215823-ae77deb06f29"
+  ["go4.org/intern".fetch]
+    type = "git"
+    url = "https://github.com/go4org/intern"
+    rev = "ae77deb06f29e343429d7bc81b4f4d78810baeb6"
+    sha256 = "1xna5bgzhjkqlq3az8pb4zh6g0m89vvfv4kc5v0199ppd667y6g2"
+
+["go4.org/unsafe/assume-no-moving-gc"]
+  sumVersion = "v0.0.0-20211027215541-db492cf91b37"
+  ["go4.org/unsafe/assume-no-moving-gc".fetch]
+    type = "git"
+    url = "https://github.com/go4org/unsafe-assume-no-moving-gc"
+    rev = "db492cf91b37c0d691a99786a720a6fd9f8003b3"
+    sha256 = "08vqnb9xza2bpmshk1b46cmjj65z4zj1f2bbrhv94vpqmck6vg3a"
+
 ["golang.org/x/crypto"]
   sumVersion = "v0.0.0-20200622213623-75b288015ac9"
   ["golang.org/x/crypto".fetch]
@@ -914,12 +938,12 @@
     sha256 = "11jdvix83xcl5xnb039y4zrz4x5skzsps0w1jryp6wrar53cydvz"
 
 ["golang.org/x/tools"]
-  sumVersion = "v0.0.0-20201229013931-929a8494cf60"
+  sumVersion = "v0.1.0"
   ["golang.org/x/tools".fetch]
     type = "git"
     url = "https://go.googlesource.com/tools"
-    rev = "929a8494cf60267d89035bc211b797a67b65a6b9"
-    sha256 = "1qjpzwdi51yy7nff7hfaa9cra851lnda3frnmcvp9jdmrrm1pzyw"
+    rev = "fe37c9e135b934191089b245ac29325091462508"
+    sha256 = "1asrm22kv5x891qkbpap8alg612k321jbs1akc0vwsan251gm507"
 
 ["golang.org/x/xerrors"]
   sumVersion = "v0.0.0-20200804184101-5ec99f83aff1"
@@ -1024,3 +1048,11 @@
     url = "https://github.com/dominikh/go-tools"
     rev = "c5b83c7d52ec0e1e12b8e776612955ef710247fb"
     sha256 = "1qqpr481rx6n75xp1racsjjyn2fa8f28pcb0r9kd56qq890h3qgj"
+
+["inet.af/netaddr"]
+  sumVersion = "v0.0.0-20211027220019-c74959edd3b6"
+  ["inet.af/netaddr".fetch]
+    type = "git"
+    url = "https://github.com/inetaf/netaddr"
+    rev = "c74959edd3b6ab3e864c55fd889ca8c13a835a81"
+    sha256 = "088wsiqnwf7cxbi4kvx9d8yj8cxnvlfvj5hjz8wydsrw08dw57j6"
