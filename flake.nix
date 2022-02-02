@@ -144,7 +144,7 @@
                 imports =
                   let
                     devshell = import ./shell {
-                      inherit self inputs;
+                      inherit inputs;
                       pkgs = channels.nixpkgs;
                     };
                   in

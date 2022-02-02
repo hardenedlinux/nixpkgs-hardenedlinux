@@ -1,4 +1,4 @@
-{ self, inputs, pkgs, ... }:
+{ inputs, pkgs, ... }:
 {
   modules = with inputs; [
     bud.devshellModules.bud
