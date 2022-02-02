@@ -12,7 +12,6 @@
     pypi-deps-db = { flake = false; };
     # packages inputs
     check_journal = { url = "github:GTrunSec/check_journal/flake"; };
-    nix-script = { url = "github:BrianHicks/nix-script"; };
     bud = {
       url = "github:GTrunSec/bud/extend";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -29,7 +28,6 @@
     , statix
     , nixpkgs_20
     , nvfetcher
-    , nix-script
     , gomod2nix
     , mach-nix
     , pypi-deps-db
@@ -59,7 +57,6 @@
               [
                 self.overlay
                 nvfetcher.overlay
-                nix-script.overlay
                 (final: prev: {
                   inherit (channels.latest)
                     ;

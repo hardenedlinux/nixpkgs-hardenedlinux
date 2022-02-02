@@ -47,18 +47,18 @@ rec {
       (builtins.attrNames (builtins.readDir path)));
 
 
-  pathsToNixScript = path: pkgs: f: s: builtins.listToAttrs
-    (map
-      (scriptName: {
-        value = inputs.utils.lib.mkApp {
-          drv = pkgs.writeShellScriptBin scriptName ''
-             export PATH=${lib.makeBinPath [ pkgs.nix-script-bash pkgs.nix-script
-                                             pkgs.nix-script-haskell
-                                           ]}
-            ${path + "/${scriptName}"}
-          '';
-        };
-        name = lib.removeSuffix ("." + s) scriptName;
-      })
-      (builtins.attrNames f));
+  # pathsToNixScript = path: pkgs: f: s: builtins.listToAttrs
+  #   (map
+  #     (scriptName: {
+  #       value = inputs.utils.lib.mkApp {
+  #         drv = pkgs.writeShellScriptBin scriptName ''
+  #            export PATH=${lib.makeBinPath [ pkgs.nix-script-bash pkgs.nix-script
+  #                                            pkgs.nix-script-haskell
+  #                                          ]}
+  #           ${path + "/${scriptName}"}
+  #         '';
+  #       };
+  #       name = lib.removeSuffix ("." + s) scriptName;
+  #     })
+  #     (builtins.attrNames f));
 }
