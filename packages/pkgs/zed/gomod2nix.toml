@@ -31,20 +31,20 @@
     sha256 = "0js37zlgv37y61j4a2d46jh72xm5kxmpaiw0ya9v944bjpc386my"
 
 ["github.com/apache/thrift"]
-  sumVersion = "v0.13.0"
+  sumVersion = "v0.15.0"
   ["github.com/apache/thrift".fetch]
     type = "git"
     url = "https://github.com/apache/thrift"
-    rev = "cecee50308fc7e6f77f55b3fd906c1c6c471fa2f"
-    sha256 = "17ckl7p7s3ga33yrjisilsimp80ansqxl54wvpkv0j7vx2zvc13y"
+    rev = "8317ec43ea2425b6f8e24e4dc4f5b2360f717eb4"
+    sha256 = "0aihfxib3mvdjskk2pp57mafka00lx6vsqlk3n24rb1siz7gykap"
 
 ["github.com/araddon/dateparse"]
-  sumVersion = "v0.0.0-20210207001429-0eec95c9db7e"
+  sumVersion = "v0.0.0-20210429162001-6b43995a97de"
   ["github.com/araddon/dateparse".fetch]
     type = "git"
     url = "https://github.com/araddon/dateparse"
-    rev = "0eec95c9db7e40737864608615f5aff4cac78680"
-    sha256 = "10lgc2clpzbz3g260pq213m4id3pqww4da0azz9ldxjhy14an3s8"
+    rev = "6b43995a97dee4b2c7fc0bdff8e124da9f31a57e"
+    sha256 = "0p60rdbfk7d97hb1kk225lvnqvhw04d822782hn66i4yfvigrraj"
 
 ["github.com/armon/consul-api"]
   sumVersion = "v0.0.0-20180202201655-eb2c6b5be1b6"
@@ -167,13 +167,12 @@
     sha256 = "1bpiiqpyvp11jig55pygq4mgcc2076i2jj1y2dzx3hvqh28k1k23"
 
 ["github.com/fraugster/parquet-go"]
-  sumVersion = "v0.3.1"
-  vendorPath = "github.com/brimdata/parquet-go"
+  sumVersion = "v0.6.2-0.20220131193144-6b338e4e068d"
   ["github.com/fraugster/parquet-go".fetch]
     type = "git"
-    url = "https://github.com/brimdata/parquet-go"
-    rev = "870cfd20dbdec45133183c835cf75afe613510d3"
-    sha256 = "0ws6cn0k6hhh53cs613j55c5syfm2dx8a7smcyl60z2xc5dqb1z2"
+    url = "https://github.com/fraugster/parquet-go"
+    rev = "6b338e4e068d8ac64b2c60c5050ca8c6cfd3e47b"
+    sha256 = "0n2v6952nkbr41q1p1fp6kzxhid33kznx455gpdmfa0lnnf9mmn1"
 
 ["github.com/fsnotify/fsnotify"]
   sumVersion = "v1.4.9"
@@ -264,12 +263,12 @@
     sha256 = "1k6mrhf2gbs018xazgi01jklnnwqhqx0d0qa4dwx5gsxqxh8q6lm"
 
 ["github.com/golang/mock"]
-  sumVersion = "v1.4.4"
+  sumVersion = "v1.5.0"
   ["github.com/golang/mock".fetch]
     type = "git"
     url = "https://github.com/golang/mock"
-    rev = "f7b1909c82a8958747e5c87c6a5c3b2eaed8a33d"
-    sha256 = "1lj0dvd6div4jaq1s0afpwqaq9ah8cxhkq93wii2ably1xmp2l0a"
+    rev = "a23c5e7c8f7bb73c8ae5d8711815bbd30f3cfac8"
+    sha256 = "12l7p08pwwk3xn70w7rlm28nz6jf4szlzgjxjfmbssyirxxxy8v1"
 
 ["github.com/golang/protobuf"]
   sumVersion = "v1.4.3"
