@@ -9,7 +9,6 @@
       sha256 = "0wr8z2xk72ai2j9rrvy9c651ld7ygyyyma26wvp4iisb5ms5js4a";
     };
   }
-
   {
     goPackagePath = "github.com/DataWraith/vptree";
     fetch = {
@@ -19,7 +18,6 @@
       sha256 = "13h7xfqfa72a25y3d2c52gw2kb2dh8c03pkgqlnx03aw1392m4id";
     };
   }
-
   {
     goPackagePath = "github.com/NullHypothesis/mlgo";
     fetch = {
@@ -29,7 +27,6 @@
       sha256 = "0kfa63kzq8dj7k571dxcyljm1yzvr9qzvq3qz7gp43kj40yl44hs";
     };
   }
-
   {
     goPackagePath = "github.com/arbovm/levenshtein";
     fetch = {
@@ -39,7 +36,6 @@
       sha256 = "0nmx2iip8xpnbmy6gvqpc9ikizr33dr40xgv746h0b0by8n7rv7y";
     };
   }
-
   {
     goPackagePath = "github.com/mcgrew/gostats";
     fetch = {

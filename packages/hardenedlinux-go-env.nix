@@ -7,16 +7,8 @@ let
 in
 pkgs.stdenv.mkDerivation rec {
   name = "hardenedlinux-go";
-  buildInputs = [
-    pkgs.makeWrapper
-    deepsea
-    nvdtools
-    sybilhunter
-    zq
-  ];
-
+  buildInputs = [ pkgs.makeWrapper deepsea nvdtools sybilhunter zq ];
   phases = [ "installPhase" ];
-
   installPhase = ''
     makeWrapper ${deepsea}/bin/deepsea $out/bin/deepsea
     makeWrapper ${nvdtools}/bin/cpe2cve $out/bin/cpe2cve

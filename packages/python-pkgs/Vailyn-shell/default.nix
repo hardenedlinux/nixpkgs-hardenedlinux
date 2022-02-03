@@ -10,10 +10,7 @@
 }:
 let
   vailyn-requirements = machlib.mkPython rec {
-    providers = {
-      PyQt5 = "nixpkgs";
-    };
-
+    providers = { PyQt5 = "nixpkgs"; };
     requirements = ''
       treelib
       requests
@@ -37,14 +34,9 @@ let
       setproctitle
       notify2
     '';
-
   };
 in
 mkShell {
   name = "vailyn-shell";
-  buildInputs = [
-    vailyn-requirements
-    pyqt5
-    twisted
-  ];
+  buildInputs = [ vailyn-requirements pyqt5 twisted ];
 }

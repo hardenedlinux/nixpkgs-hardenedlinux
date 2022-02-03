@@ -11,24 +11,18 @@ let
 in
 python3Packages.buildPythonPackage rec {
   pname = "zqd";
-
   inherit (nixpkgs-hardenedlinux-sources.zed) src version;
-
-  propagatedBuildInputs = with python3Packages; [
-    requests
-    python-dateutil
-    durationpy
-  ];
-
+  propagatedBuildInputs =
+    with python3Packages; [ requests python-dateutil durationpy ];
   doCheck = false;
-
   postPatch = ''
     cd python/zqd
   '';
-
-  meta = with lib; {
-    description = "Search and analysis tooling for structured logs";
-    homepage = "https://github.com/brimdata/zed/python/zqd";
-    license = licenses.bsd3;
-  };
+  meta =
+    with lib;
+    {
+      description = "Search and analysis tooling for structured logs";
+      homepage = "https://github.com/brimdata/zed/python/zqd";
+      license = licenses.bsd3;
+    };
 }

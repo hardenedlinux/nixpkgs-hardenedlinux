@@ -1,6 +1,5 @@
 # file generated from go.mod using vgo2nix (https://github.com/adisbladis/vgo2nix)
 [
-
   {
     goPackagePath = "deepsea";
     fetch = {
@@ -19,7 +18,6 @@
       sha256 = "0gaadcmfbq18jfmagkzabw516hqdrggjnswmfw49fyc9q2l7m9kz";
     };
   }
-
   {
     goPackagePath = "cloud.google.com/go";
     fetch = {

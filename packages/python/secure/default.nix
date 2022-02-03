@@ -12,5 +12,4 @@ python3Packages.buildPythonPackage rec {
   };
   doCheck = false;
   propagatedBuildInputs = with python3Packages; [ ];
-
 }

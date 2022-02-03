@@ -30,7 +30,6 @@
 }:
 stdenv.mkDerivation rec {
   inherit (nixpkgs-hardenedlinux-sources.brim) pname version src;
-
   buildInputs = [
     gnome3.gsettings_desktop_schemas
     libdrm
@@ -62,17 +61,8 @@ stdenv.mkDerivation rec {
     fontconfig
     expat
   ];
-
-  nativeBuildInputs = [
-    wrapGAppsHook
-    autoPatchelfHook
-    makeWrapper
-    dpkg
-  ];
-
-
+  nativeBuildInputs = [ wrapGAppsHook autoPatchelfHook makeWrapper dpkg ];
   unpackPhase = "dpkg-deb --fsys-tarfile $src | tar -x --no-same-permissions --no-same-owner";
-
   installPhase = ''
     runHook preInstall
 
@@ -87,23 +77,20 @@ stdenv.mkDerivation rec {
 
     runHook postInstall
   '';
-
   dontWrapGApps = true;
-
   runtimeLibs = lib.makeLibraryPath [ libudev0-shim glibc libsecret ];
-
   preFixup = ''
     makeWrapper $out/share/Brim/brim $out/bin/brim \
       --prefix LD_LIBRARY_PATH : "${runtimeLibs}" \
       "''${gappsWrapperArgs[@]}"
   '';
-
   enableParallelBuilding = true;
-
-  meta = with lib; {
-    description = "Desktop application to efficiently search large packet captures and Zeek logs.";
-    homepage = "https://github.com/brimdata/brim";
-    license = licenses.bsd3;
-    platforms = with platforms; linux;
-  };
+  meta =
+    with lib;
+    {
+      description = "Desktop application to efficiently search large packet captures and Zeek logs.";
+      homepage = "https://github.com/brimdata/brim";
+      license = licenses.bsd3;
+      platforms = with platforms; linux;
+    };
 }

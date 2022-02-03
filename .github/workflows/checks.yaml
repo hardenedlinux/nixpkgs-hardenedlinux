@@ -57,6 +57,10 @@ jobs:
           nix -Lv build .\#zed
           nix -Lv build .\#btest
 
+      - name: Build microvm kernel
+        run: |
+          nix build .\#microvm-kernel
+
       - name: Check Osquery-vm-systemd
         run: |
           nix build .\#osquery-bin.tests.osquery-vm-systemd

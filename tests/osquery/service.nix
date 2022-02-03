@@ -1,4 +1,7 @@
-{ pkgs, config, ... }:
+{ pkgs
+, config
+, ...
+}:
 {
   services.osquery-bin = {
     enable = true;
@@ -9,6 +12,7 @@
       "--enable_bpf_events=true"
       "--disable_audit=false"
     ];
-    extraConfig = { } // (builtins.fromJSON (builtins.readFile ./osquery-default.json));
+    extraConfig =
+      { } // (builtins.fromJSON (builtins.readFile ./osquery-default.json));
   };
 }

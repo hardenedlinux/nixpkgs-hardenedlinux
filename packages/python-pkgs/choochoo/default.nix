@@ -36,23 +36,24 @@ python3Packages.buildPythonPackage rec {
   preConfigure = ''
     cd py
   '';
-
-  propagatedBuildInputs = with python3Packages; [
-    choochoo-requirements
-    (shapely.overridePythonAttrs (oldAttrs: { propagatedBuildInputs = [ ]; }))
-  ];
-
+  propagatedBuildInputs =
+    with python3Packages;
+    [
+      choochoo-requirements
+      (
+        shapely.overridePythonAttrs (oldAttrs: { propagatedBuildInputs = [ ]; })
+      )
+    ];
   postPatch = ''
     substituteInPlace py/setup.py \
     --replace "jupyter" "jupyterlab"
   '';
-
   doCheck = false;
-
-  meta = with lib; {
-    description = "Data Science for Training'";
-    homepage = "https://github.com/andrewcooke/choochoo";
-    license = licenses.asl20;
-  };
-
+  meta =
+    with lib;
+    {
+      description = "Data Science for Training'";
+      homepage = "https://github.com/andrewcooke/choochoo";
+      license = licenses.asl20;
+    };
 }

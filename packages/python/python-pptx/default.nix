@@ -11,9 +11,5 @@ python3Packages.buildPythonPackage rec {
     sha256 = "a857d69e52d7e8a8fb32fca8182fdd4a3c68c689de8d4e4460e9b4a95efa7bc4";
   };
   doCheck = false;
-  propagatedBuildInputs = with python3Packages; [
-    lxml
-    XlsxWriter
-    pillow
-  ];
+  propagatedBuildInputs = with python3Packages; [ lxml XlsxWriter pillow ];
 }
