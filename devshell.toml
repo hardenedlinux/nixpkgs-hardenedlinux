@@ -1,5 +1,5 @@
 [devshell]
-packages = ["nixpkgs-fmt"]
+packages = []
 
 [[commands]]
 name = "only-x86-64_linux"

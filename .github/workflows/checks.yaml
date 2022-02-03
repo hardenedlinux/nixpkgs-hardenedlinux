@@ -29,9 +29,6 @@ jobs:
           authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
 
       # CI workflows
-      - name: Run Nix Format Check
-        run: nix -Lv develop -c nixpkgs-fmt --check .
-
       - name: Run Nix Flake Show
         run: |
           nix develop -c only-x86-64_linux
