@@ -58,10 +58,6 @@ jobs:
         run: |
           nix build .\#microvm-kernel
 
-      - name: Check Osquery-vm-systemd
-        run: |
-          nix build .\#osquery-bin.tests.osquery-vm-systemd
-
       - name: Build Package GoPackages
         run: |
           nix -Lv build .\#gst
