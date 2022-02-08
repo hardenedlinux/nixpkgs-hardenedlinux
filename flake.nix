@@ -22,7 +22,6 @@
     , utils
     , devshell
     , latest
-    , statix
     , nixpkgs_20
     , nvfetcher
     , gomod2nix

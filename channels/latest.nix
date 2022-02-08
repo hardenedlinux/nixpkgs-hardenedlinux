@@ -4,7 +4,5 @@
 }:
 {
   input = inputs.latest;
-  overlaysBuilder = channels: [
-    inputs.statix.overlay
-  ];
+  overlaysBuilder = channels: [  ];
 }
