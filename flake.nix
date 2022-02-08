@@ -33,11 +33,12 @@
     @ inputs:
     let
       inherit (utils.lib) exportOverlays exportPackages exportModules;
-      inherit (nixpkgs) lib;
-      selfLib = import ./lib/self.nix { inherit lib inputs; };
     in
       utils.lib.mkFlake {
         inherit self inputs;
+
+        lib = import ./lib/self.nix { lib = nixpkgs.lib; };
+
         # supportedSystems = [ "x86_64-linux" ];
         channelsConfig = {
           allowUnsupportedSystem = true;
@@ -51,7 +52,7 @@
           [
             gomod2nix.overlay
             (import ./overlays/share { inherit inputs; })
-          ] ++ (selfLib.importOverlays ./overlays/share);
+          ] ++ (self.lib.importOverlays ./overlays/share);
         # exportOverlays automatically for all packages defined in overlaysBuilder of each channel
         overlays = exportOverlays { inherit (self) pkgs inputs; };
         outputsBuilder = channels: {

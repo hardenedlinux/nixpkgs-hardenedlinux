@@ -1,7 +1,4 @@
-{ lib
-, inputs
-, ...
-}:
+{ lib }:
 let
   inherit (builtins) attrNames isAttrs readDir listToAttrs;
   inherit (lib) removeSuffix;

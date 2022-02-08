@@ -10,5 +10,5 @@
     (import ../packages/pkgs/nixos-tests.nix { inherit inputs; })
     (import ../packages/pkgs)
     (import ../packages/python-pkgs)
-  ];
+  ] ++ (self.lib.importOverlays ../overlays/nixpkgs);
 }
