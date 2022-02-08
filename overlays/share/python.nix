@@ -1,11 +1,8 @@
-final: prev:
-{
+final: prev: {
   python3 = prev.python3.override (
-    old:
-    {
+    old: {
       packageOverrides = prev.lib.composeExtensions (old.packageOverrides or (_: _: { })) (
-        selfPythonPackages: pythonPackages:
-        {
+        selfPythonPackages: pythonPackages: {
           scikit-learn = pythonPackages.scikit-learn.overridePythonAttrs (oldAttrs: { doCheck = false; });
         }
       );

@@ -1,12 +1,12 @@
-{ makeTest
+{ makeTest ? import (pkgs.path + "/nixos/tests/make-test-python.nix")
 , pkgs
-, self
+, inputs
 }:
 {
   osquery-vm-systemd = makeTest {
     name = "osquery-systemd";
     machine = {
-      imports = [ self.nixosModules.osquery-bin ./service.nix ];
+      imports = [ inputs.self.nixosModules.osquery-bin ./service.nix ];
       virtualisation = {
         memorySize = 4048;
         cores = 2;

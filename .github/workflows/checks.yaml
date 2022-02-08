@@ -34,18 +34,13 @@ jobs:
           nix develop -c only-x86-64_linux
           nix flake show
 
-      - name: Run Nix Flake Check
-        run: |
-          nix -Lv flake check
-          git reset --hard
-
       - name: Run nvfetcher-github
         run: |
           nix develop -c -- update nvfetcher ./packages/sources.toml
 
-      - name: bumpup commands
-        run: |
-          nix -Lv develop -c update gomod2nix
+      # - name: bumpup commands
+      #   run: |
+      #     nix -Lv develop -c update gomod2nix
       - name: Build Packages
         run: |
           nix -Lv build .\#broker
@@ -58,10 +53,8 @@ jobs:
         run: |
           nix build .\#microvm-kernel
 
-      - name: Build Package GoPackages
-        run: |
-          nix -Lv build .\#gst
-          nix -Lv build .\#ghq
+      # - name: Build Package GoPackages
+      #   run: |
 
       - name: Commit changes
         if: ${{ env.COMMIT_MSG != null }}

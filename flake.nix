@@ -45,136 +45,21 @@
           allowBroken = true;
           allowUnfree = true;
         };
-        channels = {
-          nixpkgs = {
-            input = nixpkgs;
-            overlaysBuilder =
-              channels:
-              [
-                self.overlay
-                nvfetcher.overlay
-                (final: prev: { inherit (channels.latest); })
-              ];
-          };
-          nixpkgs_20 = {
-            input = nixpkgs_20;
-            overlaysBuilder =
-              channels:
-              [
-                (
-                  final: prev:
-                  {
-                    broker = prev.callPackage ./packages/pkgs/broker { };
-                    broker-json = prev.callPackage ./packages/python-pkgs/broker-json { };
-                    eZeeKonfigurator-release = prev.callPackage ./packages/python-pkgs/eZeeKonfigurator { };
-                  }
-                )
-              ];
-          };
-          latest = {
-            input = latest;
-            overlaysBuilder = channels: [ statix.overlay ];
-          };
-        };
+
+        channels = import ./channels { inherit self inputs; };
+
         sharedOverlays =
           [
             gomod2nix.overlay
-            devshell.overlay
-            (
-              final: prev:
-              {
-                __dontExport = true;
-                #Python overlay
-                machlib = import mach-nix {
-                  pkgs = prev;
-                  pypiData = pypi-deps-db;
-                };
-              }
-            )
-          ]
-          ++ (selfLib.importOverlays ./overlays);
+            (import ./overlays/share { inherit inputs; })
+          ] ++ (selfLib.importOverlays ./overlays/share);
         # exportOverlays automatically for all packages defined in overlaysBuilder of each channel
         overlays = exportOverlays { inherit (self) pkgs inputs; };
-        outputsBuilder =
-          channels:
-          {
-            # apps = import ./apps inputs channels;
-            # construct exportPackages to export all packages defined in overlays
-            packages =
-              exportPackages self.overlays channels
-              // {
-                osquery-microvm = microvm.lib.runner {
-                  system = "x86_64-linux";
-                  hypervisor = "qemu";
-                  nixosConfig =
-                    { pkgs
-                    , ...
-                    }:
-                    {
-                      networking.hostName = "osquery-microvm";
-                      users.users.root.password = "";
-                      imports = [
-                        self.nixosModules.osquery-bin
-                        ./tests/osquery/service.nix
-                      ];
-                      users.defaultUserShell = pkgs.zsh;
-                      programs.zsh = {
-                        enable = true;
-                        enableCompletion = true;
-                        autosuggestions.enable = true;
-                        syntaxHighlighting = { enable = true; };
-                      };
-                    };
-                  volumes = [
-                    {
-                      mountpoint = "/var";
-                      image = "/tmp/osquery-microvm.img";
-                      size = 256;
-                    }
-                  ];
-                  socket = "control.socket";
-                };
-              };
-            devShell =
-              let
-                eval = import "${devshell}/modules" channels.nixpkgs;
-                configuration = {
-                  name = channels.nixpkgs.lib.mkDefault "devshell";
-                  imports =
-                    let
-                      devshell = import ./shell {
-                        inherit inputs;
-                        pkgs = channels.nixpkgs;
-                      };
-                    in
-                      devshell.modules ++ devshell.exportedModules;
-                };
-              in
-                (
-                  eval {
-                    inherit configuration;
-                    extraSpecialArgs = { inherit self inputs; };
-                  }
-                )
-                .shell;
-          };
-      }
-      // {
-        overlay =
-          final: prev:
-          (selfLib.pathsToCallPkgs ./packages/python-pkgs prev)
-          // (selfLib.pathsToPythonCallPkgs ./packages/pkgs prev)
-          // {
-            nixpkgs-hardenedlinux-sources = prev.callPackage ./packages/_sources/generated.nix { };
-            osquery-vm-tests = prev.lib.optionalAttrs prev.stdenv.isLinux (
-              import ./tests/osquery {
-                makeTest = import (prev.path + "/nixos/tests/make-test-python.nix");
-                pkgs = final;
-                inherit self;
-              }
-            );
-          }
-          // import ./packages/inputs-packages.nix inputs prev final;
+        outputsBuilder = channels: {
+          # apps = import ./apps inputs channels;
+          packages = exportPackages self.overlays channels;
+          devShell = import ./shell/devshell.nix { inherit self inputs channels; };
+        };
       }
       // {
         budModules = {
@@ -194,14 +79,12 @@
           osquery-bin = {
             imports = [
               {
-                nixpkgs.config.packageOverrides =
-                  pkgs:
-                  {
-                    inherit
-                      (self.packages."${pkgs.stdenv.hostPlatform.system}")
-                      osquery-bin
-                      ;
-                  };
+                nixpkgs.config.packageOverrides = pkgs: {
+                  inherit
+                    (self.packages."${pkgs.stdenv.hostPlatform.system}")
+                    osquery-bin
+                    ;
+                };
               }
               ./modules/osquery.nix
             ];

@@ -3,7 +3,7 @@
 , python3Packages
 , nixpkgs-hardenedlinux-sources
 , machlib
-, broker
+, broker38
 }:
 let
   eZeeKonfigurator_client-requirements = machlib.mkPython rec {
@@ -25,7 +25,7 @@ python3Packages.buildPythonPackage rec {
     src
     ;
   propagatedBuildInputs =
-    with python3Packages; [ eZeeKonfigurator_client-requirements broker ];
+    with python3Packages; [ eZeeKonfigurator_client-requirements broker38 ];
   patches = [ ./version.patch ];
   postPatch = ''
   '';

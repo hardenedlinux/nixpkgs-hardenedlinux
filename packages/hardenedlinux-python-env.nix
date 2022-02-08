@@ -2,8 +2,7 @@
 let
   custom-python-packages = (
     pkgs.python3.withPackages (
-      ps:
-      [
+      ps: [
         ps.pandas
         ps.beakerx
         ps.elastalert

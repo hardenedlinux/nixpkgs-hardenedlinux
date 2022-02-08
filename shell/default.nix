@@ -4,5 +4,5 @@
 }:
 {
   modules = with inputs; [ bud.devshellModules.bud ];
-  exportedModules = [ (pkgs.devshell.importTOML ../devshell.toml) ];
+  exportedModules = [ (inputs.devshell.lib.importTOML ../devshell.toml) ];
 }
