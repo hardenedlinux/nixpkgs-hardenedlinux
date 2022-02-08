@@ -11,13 +11,13 @@
   };
   broker = {
     pname = "broker";
-    version = "f79a328d6404e10eefeeead1fe9eb18d61ff11a0";
+    version = "8493e1734c639ea9b3c66547ba26ebea972e102b";
     src = fetchFromGitHub ({
       owner = "zeek";
       repo = "broker";
-      rev = "f79a328d6404e10eefeeead1fe9eb18d61ff11a0";
+      rev = "8493e1734c639ea9b3c66547ba26ebea972e102b";
       fetchSubmodules = true;
-      sha256 = "sha256-X++tD/F4ZJMKozS5rNRN/mM/VfyC5BT/uWMYZTQ/YLs=";
+      sha256 = "sha256-IQMOBHnjzJUI7QckYn7IQ4sFqPaSZYIbS360Z61T9NY=";
     });
   };
   broker-to-json = {
@@ -93,13 +93,13 @@
   };
   elastalert2 = {
     pname = "elastalert2";
-    version = "bc3f386e0ff83f8a968dfbab1f9191eea3e427bc";
+    version = "2d403918514d7c6e8aa24658c4c1f683dd143d89";
     src = fetchFromGitHub ({
       owner = "jertel";
       repo = "elastalert2";
-      rev = "bc3f386e0ff83f8a968dfbab1f9191eea3e427bc";
+      rev = "2d403918514d7c6e8aa24658c4c1f683dd143d89";
       fetchSubmodules = false;
-      sha256 = "sha256-Yz4k5KNoSpF/u12b6EW7ff95BJCTv9A0AX87mr0yMK8=";
+      sha256 = "sha256-1ZDXnoHbJB21w1lW0XHMMF+e/yvtmogR/36Lz+Ty1iQ=";
     });
   };
   fastai = {
@@ -167,10 +167,10 @@
   };
   nix-unstable-installer = {
     pname = "nix-unstable-installer";
-    version = "nix-2.7.0pre20220127_558c4ee";
+    version = "nix-2.7.0pre20220203_bd383d1";
     src = fetchurl {
-      url = "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.7.0pre20220127_558c4ee/install";
-      sha256 = "sha256-0//pVLWUe0mpdKqJt7PNUIi1dncsZz6gyE5lOkuJiG4=";
+      url = "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.7.0pre20220203_bd383d1/install";
+      sha256 = "sha256-orw91X6OMBe5KkmWu0nTY45pwlratypGoZvKDp3ruHk=";
     };
   };
   nvdtools = {
@@ -227,13 +227,13 @@
   };
   zed = {
     pname = "zed";
-    version = "507e646621fdd2e50a4972f573dcd77097ce7632";
+    version = "8cc524301b31f8e4a2bc06a9dc30a952d12bf832";
     src = fetchFromGitHub ({
       owner = "brimdata";
       repo = "zed";
-      rev = "507e646621fdd2e50a4972f573dcd77097ce7632";
+      rev = "8cc524301b31f8e4a2bc06a9dc30a952d12bf832";
       fetchSubmodules = false;
-      sha256 = "sha256-ODRagzHcRFEAD1REITThwM3S+xR+2Ltdu6A9i3bpJOs=";
+      sha256 = "sha256-1WS+7h3oRIIxFtBi5xD3chIa97KTsP3UbtwvPN2wDsk=";
     });
   };
 }
