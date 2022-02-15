@@ -1,13 +1,14 @@
-{ stdenv
-, lib
-, fetchFromGitHub
-, cmake
-, gcc
-, openssl
-, caf
-, python3
-, ncurses5
-, nixpkgs-hardenedlinux-sources
+{
+  stdenv,
+  lib,
+  fetchFromGitHub,
+  cmake,
+  gcc,
+  openssl,
+  caf,
+  python3,
+  ncurses5,
+  nixpkgs-hardenedlinux-sources,
 }:
 stdenv.mkDerivation rec {
   name = "broker";
@@ -24,8 +25,7 @@ stdenv.mkDerivation rec {
   '';
   enableParallelBuilding = true;
   meta =
-    with lib;
-    {
+    with lib; {
       description = "Zeek's Messaging Library";
       homepage = "http://zeek.org";
       license = licenses.bsd3;

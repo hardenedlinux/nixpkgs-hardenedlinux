@@ -1,7 +1,8 @@
-{ stdenv
-, lib
-, python3Packages
-, fetchurl
+{
+  stdenv,
+  lib,
+  python3Packages,
+  fetchurl,
 }:
 python3Packages.buildPythonPackage rec {
   pname = "editdistance";
@@ -13,8 +14,7 @@ python3Packages.buildPythonPackage rec {
   propagatedBuildInputs = with python3Packages; [ twine ];
   doCheck = false;
   meta =
-    with lib;
-    {
+    with lib; {
       description = "Fast implementation of the edit distance(Levenshtein distance)";
       homepage = "https://github.com/aflc/editdistance";
       license = licenses.asl20;

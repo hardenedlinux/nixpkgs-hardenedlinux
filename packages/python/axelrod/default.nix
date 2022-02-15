@@ -1,8 +1,9 @@
-{ stdenv
-, lib
-, python3Packages
-, python3
-, fetchurl
+{
+  stdenv,
+  lib,
+  python3Packages,
+  python3,
+  fetchurl,
 }:
 python3Packages.buildPythonPackage rec {
   pname = "Axelrod";
@@ -14,8 +15,7 @@ python3Packages.buildPythonPackage rec {
   propagatedBuildInputs = with python3Packages; [ pathlib ];
   doCheck = false;
   meta =
-    with lib;
-    {
+    with lib; {
       description = "https://github.com/Axelrod-Python/Axelrod";
       license = licenses.asl20;
     };

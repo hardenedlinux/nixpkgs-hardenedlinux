@@ -1,7 +1,8 @@
-{ stdenv
-, lib
-, python3Packages
-, fetchurl
+{
+  stdenv,
+  lib,
+  python3Packages,
+  fetchurl,
 }:
 python3Packages.buildPythonPackage rec {
   pname = "tldextract";
@@ -13,8 +14,7 @@ python3Packages.buildPythonPackage rec {
   propagatedBuildInputs = with python3Packages; [ requests requests-file ];
   doCheck = false;
   meta =
-    with lib;
-    {
+    with lib; {
       description = "Accurately separate the TLD from the registered domain and subdomains of a URL, using the Public Suffix List.";
       homepage = "https://github.com/john-kurkowski/tldextract/releases";
       license = licenses.asl20;

@@ -1,7 +1,8 @@
-{ lib
-, python3Packages
-, nixpkgs-hardenedlinux-sources
-, machlib
+{
+  lib,
+  python3Packages,
+  nixpkgs-hardenedlinux-sources,
+  machlib,
 }:
 let
   choochoo-requirements = machlib.mkPython rec {
@@ -37,8 +38,7 @@ python3Packages.buildPythonPackage rec {
     cd py
   '';
   propagatedBuildInputs =
-    with python3Packages;
-    [
+    with python3Packages; [
       choochoo-requirements
       (
         shapely.overridePythonAttrs (oldAttrs: { propagatedBuildInputs = [ ]; })
@@ -50,8 +50,7 @@ python3Packages.buildPythonPackage rec {
   '';
   doCheck = false;
   meta =
-    with lib;
-    {
+    with lib; {
       description = "Data Science for Training'";
       homepage = "https://github.com/andrewcooke/choochoo";
       license = licenses.asl20;

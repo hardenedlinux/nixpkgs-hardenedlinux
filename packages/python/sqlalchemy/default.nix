@@ -1,10 +1,11 @@
-{ lib
-, python35Packages
-, fetchurl
-, isPy3k
-, mock
-, pysqlite
-, pytest
+{
+  lib,
+  python35Packages,
+  fetchurl,
+  isPy3k,
+  mock,
+  pysqlite,
+  pytest,
 }:
 python35Packages.buildPythonPackage rec {
   pname = "SQLAlchemy";
@@ -22,8 +23,7 @@ python35Packages.buildPythonPackage rec {
     pytest test
   '';
   meta =
-    with lib;
-    {
+    with lib; {
       homepage = "http://www.sqlalchemy.org/";
       description = "A Python SQL toolkit and Object Relational Mapper";
       license = licenses.mit;

@@ -1,6 +1,7 @@
-{ stdenv
-, buildGoPackage
-, nixpkgs-hardenedlinux-sources
+{
+  stdenv,
+  buildGoPackage,
+  nixpkgs-hardenedlinux-sources,
 }:
 buildGoPackage rec {
   inherit (nixpkgs-hardenedlinux-sources.nvdtools) pname version src;

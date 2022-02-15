@@ -1,9 +1,9 @@
-{ python3Packages
-, python3
-, fetchgit
+{
+  python3Packages,
+  python3,
+  fetchgit,
 }:
-with python3.pkgs;
-let
+with python3.pkgs; let
   beakerx-tabledisplay = python3Packages.buildPythonPackage rec {
     pname = "beakerx_tabledisplay";
     version = "master";
@@ -17,8 +17,7 @@ let
       cd beakerx_tabledisplay
     '';
     propagatedBuildInputs =
-      with python3Packages;
-      [
+      with python3Packages; [
         setuptools
         (
           let
@@ -38,8 +37,7 @@ let
 
               '';
               propagatedBuildInputs =
-                with python3Packages;
-                [
+                with python3Packages; [
                   setuptools
                   py4j
                   ipywidgets
@@ -88,17 +86,17 @@ let
   #                                                ];
   #  };
 in
-python3Packages.buildPythonPackage rec {
-  pname = "beakerx";
-  version = "master";
-  src = fetchgit {
-    url = "https://github.com/twosigma/beakerx";
-    rev = "b527ac462b1e7569fe939a7fd09ec74fbbf96b07";
-    sha256 = "0pm2ac9wrxflzv5y552qc075diiyp1ihznxrkl3vzd5gm1hf0f0x";
-  };
-  doCheck = false;
-  propagatedBuildInputs = with python3Packages; [ beakerx-tabledisplay ];
-  postPatch = ''
-    cd beakerx
-  '';
-}
+  python3Packages.buildPythonPackage rec {
+    pname = "beakerx";
+    version = "master";
+    src = fetchgit {
+      url = "https://github.com/twosigma/beakerx";
+      rev = "b527ac462b1e7569fe939a7fd09ec74fbbf96b07";
+      sha256 = "0pm2ac9wrxflzv5y552qc075diiyp1ihznxrkl3vzd5gm1hf0f0x";
+    };
+    doCheck = false;
+    propagatedBuildInputs = with python3Packages; [ beakerx-tabledisplay ];
+    postPatch = ''
+      cd beakerx
+    '';
+  }

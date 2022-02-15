@@ -1,6 +1,7 @@
-{ makeTest ? import (pkgs.path + "/nixos/tests/make-test-python.nix")
-, pkgs
-, inputs
+{
+  makeTest ? import (pkgs.path + "/nixos/tests/make-test-python.nix"),
+  pkgs,
+  inputs,
 }:
 {
   osquery-vm-systemd = makeTest {

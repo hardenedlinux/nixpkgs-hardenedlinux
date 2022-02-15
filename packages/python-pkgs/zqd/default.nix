@@ -1,6 +1,7 @@
-{ lib
-, python3Packages
-, nixpkgs-hardenedlinux-sources
+{
+  lib,
+  python3Packages,
+  nixpkgs-hardenedlinux-sources,
 }:
 let
   durationpy = python3Packages.buildPythonPackage {
@@ -19,8 +20,7 @@ python3Packages.buildPythonPackage rec {
     cd python/zqd
   '';
   meta =
-    with lib;
-    {
+    with lib; {
       description = "Search and analysis tooling for structured logs";
       homepage = "https://github.com/brimdata/zed/python/zqd";
       license = licenses.bsd3;

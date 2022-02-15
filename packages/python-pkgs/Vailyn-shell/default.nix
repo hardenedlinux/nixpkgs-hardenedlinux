@@ -1,12 +1,13 @@
-{ lib
-, fetchFromGitHub
-, python3Packages
-, nixpkgs-hardenedlinux-sources
-, machlib
-, makeWrapper
-, mkShell
-, pyqt5
-, twisted
+{
+  lib,
+  fetchFromGitHub,
+  python3Packages,
+  nixpkgs-hardenedlinux-sources,
+  machlib,
+  makeWrapper,
+  mkShell,
+  pyqt5,
+  twisted,
 }:
 let
   vailyn-requirements = machlib.mkPython rec {

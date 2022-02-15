@@ -1,5 +1,6 @@
-{ buildGoApplication
-, nixpkgs-hardenedlinux-sources
+{
+  buildGoApplication,
+  nixpkgs-hardenedlinux-sources,
 }:
 buildGoApplication rec {
   inherit (nixpkgs-hardenedlinux-sources.go-nfsd) pname src version;

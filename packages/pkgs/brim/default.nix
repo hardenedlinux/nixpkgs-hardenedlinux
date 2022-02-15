@@ -1,32 +1,33 @@
-{ stdenv
-, fetchurl
-, gnome3
-, libdrm
-, glib
-, gtk3
-, cairo
-, atk
-, gdk-pixbuf
-, at-spi2-atk
-, dbus
-, dconf
-, xorg
-, nss
-, nspr
-, alsaLib
-, cups
-, fontconfig
-, expat
-, lib
-, mesa_drivers
-, wrapGAppsHook
-, autoPatchelfHook
-, makeWrapper
-, dpkg
-, libudev0-shim
-, glibc
-, libsecret
-, nixpkgs-hardenedlinux-sources
+{
+  stdenv,
+  fetchurl,
+  gnome3,
+  libdrm,
+  glib,
+  gtk3,
+  cairo,
+  atk,
+  gdk-pixbuf,
+  at-spi2-atk,
+  dbus,
+  dconf,
+  xorg,
+  nss,
+  nspr,
+  alsaLib,
+  cups,
+  fontconfig,
+  expat,
+  lib,
+  mesa_drivers,
+  wrapGAppsHook,
+  autoPatchelfHook,
+  makeWrapper,
+  dpkg,
+  libudev0-shim,
+  glibc,
+  libsecret,
+  nixpkgs-hardenedlinux-sources,
 }:
 stdenv.mkDerivation rec {
   inherit (nixpkgs-hardenedlinux-sources.brim) pname version src;
@@ -86,8 +87,7 @@ stdenv.mkDerivation rec {
   '';
   enableParallelBuilding = true;
   meta =
-    with lib;
-    {
+    with lib; {
       description = "Desktop application to efficiently search large packet captures and Zeek logs.";
       homepage = "https://github.com/brimdata/brim";
       license = licenses.bsd3;

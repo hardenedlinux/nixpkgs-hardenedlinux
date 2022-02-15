@@ -1,7 +1,8 @@
-{ stdenv
-, lib
-, python3Packages
-, fetchurl
+{
+  stdenv,
+  lib,
+  python3Packages,
+  fetchurl,
 }:
 python3Packages.buildPythonPackage rec {
   pname = "pyshark";
@@ -14,8 +15,7 @@ python3Packages.buildPythonPackage rec {
   propagatedBuildInputs = with python3Packages; [ py pytest mock lxml ];
   doCheck = false;
   meta =
-    with lib;
-    {
+    with lib; {
       description = "Python wrapper for tshark, allowing python packet parsing using wireshark dissectors";
       homepage = "https://github.com/KimiNewt/pyshark";
       license = licenses.asl20;

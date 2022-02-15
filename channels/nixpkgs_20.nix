@@ -1,6 +1,7 @@
-{ self
-, inputs
-, ...
+{
+  self,
+  inputs,
+  ...
 }:
 {
   input = inputs.nixpkgs_20;

@@ -1,9 +1,10 @@
-{ lib
-, fetchFromGitHub
-, python3Packages
-, nixpkgs-hardenedlinux-sources
-, machlib
-, broker38
+{
+  lib,
+  fetchFromGitHub,
+  python3Packages,
+  nixpkgs-hardenedlinux-sources,
+  machlib,
+  broker38,
 }:
 let
   eZeeKonfigurator_client-requirements = machlib.mkPython rec {
@@ -30,8 +31,7 @@ python3Packages.buildPythonPackage rec {
   postPatch = ''
   '';
   meta =
-    with lib;
-    {
+    with lib; {
       description = "client-side half of eZeeKonfigurator";
       homepage = "https://github.com/esnet/eZeeKonfigurator_client";
     };

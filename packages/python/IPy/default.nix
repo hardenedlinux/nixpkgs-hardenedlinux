@@ -1,7 +1,8 @@
-{ stdenv
-, lib
-, python3Packages
-, fetchurl
+{
+  stdenv,
+  lib,
+  python3Packages,
+  fetchurl,
 }:
 python3Packages.buildPythonPackage rec {
   pname = "IPy";
@@ -13,8 +14,7 @@ python3Packages.buildPythonPackage rec {
   propagatedBuildInputs = with python3Packages; [ ];
   doCheck = false;
   meta =
-    with lib;
-    {
+    with lib; {
       description = "IPy are a Python class and tools for handling of IPv4 and IPv6 addresses and networks. It is similar to Net::IP Perl module.";
       homepage = "https://github.com/autocracy/python-ipy";
       license = licenses.asl20;
