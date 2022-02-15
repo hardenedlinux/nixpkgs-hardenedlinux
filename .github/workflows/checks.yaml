@@ -33,26 +33,18 @@ jobs:
 
       # CI workflows
       - name: Run Nix Flake Show
-        run: |
-          nix develop -c CI-flake-show
+        run: nix develop -c CI-flake-show
 
       - name: Run nvfetcher-github
-        run: |
-          nix develop -c -- update nvfetcher ./packages/sources.toml
+        run: nix develop -c -- nvfetcher-update ./packages/sources.toml
 
-      # - name: bumpup commands
+      # - name: Build Packages
       #   run: |
-      #     nix -Lv develop -c update gomod2nix
-      - name: Build Packages
-        run: |
-          nix -Lv build .\#broker
-          nix -Lv build .\#elastalert2
-          nix -Lv build .\#zat
-          nix -Lv build .\#zed
-          nix -Lv build .\#btest
-
-      # - name: Build Package GoPackages
-      #   run: |
+      #     nix -Lv build .\#broker
+      #     nix -Lv build .\#elastalert2
+      #     nix -Lv build .\#zat
+      #     nix -Lv build .\#zed
+      #     nix -Lv build .\#btest
 
       - name: Commit changes
         if: ${{ env.COMMIT_MSG != null }}

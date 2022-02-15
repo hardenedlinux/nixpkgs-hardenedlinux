@@ -1,7 +1,7 @@
 # nvfetcher.toml
 [osquery]
 #src.github = "osquery/osquery"
-src.manual= "5.2.0"
+src.manual= "5.2.2"
 fetch.url = "https://github.com/osquery/osquery/releases/download/$ver/osquery_$ver-1.linux_amd64.deb"
 src.prefix = "v"
 

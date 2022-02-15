@@ -3,7 +3,9 @@
 in
 channels.nixpkgs.devshell.mkShell {
   name = "Hardenedlinux";
-  imports = [ cellsProfiles.cliche ];
+  imports = [ cellsProfiles.common
+              (channels.nixpkgs.devshell.importTOML ./devshell.toml)
+            ];
   commands = [ ];
   packages = with channels.nixpkgs;[
     shfmt
