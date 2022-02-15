@@ -10,11 +10,7 @@
     pypi-deps-db = { flake = false; };
     # packages inputs
     check_journal = { url = "github:GTrunSec/check_journal/flake"; };
-    bud = {
-      url = "github:GTrunSec/bud/extend";
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.devshell.follows = "devshell";
-    };
+    bud = { url = "github:GTrunSec/bud/extend"; };
   };
   outputs =
     { self
