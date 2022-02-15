@@ -6,8 +6,7 @@
   };
   inputs = {
     flake-compat.flake = false;
-    mach-nix = { inputs.pypi-deps-db.follows = "pypi-deps-db"; };
-    pypi-deps-db = { flake = false; };
+    pypi-deps-db.flake = false;
     # packages inputs
     check_journal = { url = "github:GTrunSec/check_journal/flake"; };
     bud = { url = "github:GTrunSec/bud/extend"; };
