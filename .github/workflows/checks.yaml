@@ -31,8 +31,7 @@ jobs:
       # CI workflows
       - name: Run Nix Flake Show
         run: |
-          nix develop -c only-x86-64_linux
-          nix flake show
+          nix develop -c CI-flake-show
 
       - name: Run nvfetcher-github
         run: |

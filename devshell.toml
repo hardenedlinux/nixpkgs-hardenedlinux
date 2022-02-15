@@ -2,9 +2,11 @@
 packages = []
 
 [[commands]]
-name = "only-x86-64_linux"
+name = "CI-flake-show"
 category = "tests"
 command = '''
         sed -i 's|\# supportedSystems|supportedSystems|' flake.nix
+        nix -Lv flake show
+        git stash save --keep-index --include-untracked
         '''
 help = "lock rev for bindary cache build"

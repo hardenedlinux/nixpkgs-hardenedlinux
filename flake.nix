@@ -34,7 +34,7 @@
 
         lib = import ./lib/self.nix { lib = nixpkgs.lib; };
 
-        supportedSystems = [ "x86_64-linux" ];
+        # supportedSystems = [ "x86_64-linux" ];
         channelsConfig = {
           allowUnsupportedSystem = true;
           allowBroken = true;
