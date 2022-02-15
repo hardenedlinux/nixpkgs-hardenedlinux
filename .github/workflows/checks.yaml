@@ -1,7 +1,10 @@
 name: "CI"
 on:
-  pull_request:
   push:
+    branches:
+      - main
+      - trying
+      - staging
   schedule:
     - cron: "0 0 * * SAT" # every sunday
 
