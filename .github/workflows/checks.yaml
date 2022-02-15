@@ -48,10 +48,6 @@ jobs:
           nix -Lv build .\#zed
           nix -Lv build .\#btest
 
-      - name: Build microvm kernel
-        run: |
-          nix build .\#microvm-kernel
-
       # - name: Build Package GoPackages
       #   run: |
 
