@@ -3,14 +3,14 @@
   fetchFromGitHub,
   python3Packages,
   nixpkgs-hardenedlinux-sources,
-  machlib,
+  mach-nix,
   makeWrapper,
   mkShell,
   pyqt5,
   twisted,
 }:
 let
-  vailyn-requirements = machlib.mkPython rec {
+  vailyn-requirements = mach-nix.mkPython rec {
     providers = { PyQt5 = "nixpkgs"; };
     requirements = ''
       treelib

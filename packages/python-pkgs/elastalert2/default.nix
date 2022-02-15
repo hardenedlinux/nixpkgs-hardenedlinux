@@ -4,10 +4,10 @@
   fetchgit,
   python3,
   nixpkgs-hardenedlinux-sources,
-  machlib,
+  mach-nix,
 }:
 let
-  elastalert2-requirements = machlib.mkPython rec {
+  elastalert2-requirements = mach-nix.mkPython rec {
     requirements = builtins.readFile (nixpkgs-hardenedlinux-sources.elastalert2.src + "/requirements.txt");
   };
 in

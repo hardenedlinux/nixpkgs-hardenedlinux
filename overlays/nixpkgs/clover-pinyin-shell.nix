@@ -1,5 +1,5 @@
 final: prev: let
-  pythonDeps = final.machlib.mkPython rec {
+  pythonDeps = final.mach-nix.mkPython rec {
     requirements = ''
       OpenCC
       jieba

@@ -2,10 +2,10 @@
   lib,
   python3Packages,
   nixpkgs-hardenedlinux-sources,
-  machlib,
+  mach-nix,
 }:
 let
-  choochoo-requirements = machlib.mkPython rec {
+  choochoo-requirements = mach-nix.mkPython rec {
     requirements = ''
       bokeh
       cachetools

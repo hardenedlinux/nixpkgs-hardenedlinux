@@ -6,7 +6,6 @@
   };
   inputs = {
     flake-compat.flake = false;
-    pypi-deps-db.flake = false;
     # packages inputs
     std.url = "github:divnix/std";
     cells.url = "/home/gtrun/ghq/github.com/GTrunSec/DevSecOps-cells";
@@ -20,15 +19,12 @@
       nixpkgs,
       utils,
       std,
-      blank,
       devshell,
       latest,
       nixpkgs_20,
       cells,
       gomod2nix,
       mach-nix,
-      pypi-deps-db,
-      microvm,
       ...
     }
     @ inputs:

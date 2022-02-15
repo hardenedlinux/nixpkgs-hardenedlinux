@@ -3,12 +3,12 @@
   fetchFromGitHub,
   python3Packages,
   nixpkgs-hardenedlinux-sources,
-  machlib,
+  mach-nix,
   broker-json,
   broker38,
 }:
 let
-  eZeeKonfigurator-requirements = machlib.mkPython rec {
+  eZeeKonfigurator-requirements = mach-nix.mkPython rec {
     #requirements = builtins.readFile (nixpkgs-hardenedlinux-sources.eZeeKonfigurator.src + "/requirements_common.txt") + ''
     requirements = ''
       setuptools-rust

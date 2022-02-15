@@ -3,11 +3,11 @@
   fetchFromGitHub,
   python3Packages,
   nixpkgs-hardenedlinux-sources,
-  machlib,
+  mach-nix,
   broker38,
 }:
 let
-  eZeeKonfigurator_client-requirements = machlib.mkPython rec {
+  eZeeKonfigurator_client-requirements = mach-nix.mkPython rec {
     requirements =
       builtins.readFile (
         nixpkgs-hardenedlinux-sources.eZeeKonfigurator_client.src
