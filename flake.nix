@@ -8,8 +8,8 @@
     flake-compat.flake = false;
     # packages inputs
     # cells.url = "github:GTrunSec/DevSecOps-cells";
-    # cells.inputs.nixpkgs-hardenedlinux.inputs.cells.url = "github:divnix/blank";
-    #cells.url = "github:GTrunSec/DevSecOps-cells";
+    cells.url = "github:GTrunSec/DevSecOps-cells";
+    cells.inputs.std.url = "github:divnix/std";
     check_journal = { url = "github:flyingcircusio/check_journal"; };
   };
   outputs =
