@@ -6,6 +6,7 @@
   };
   inputs = {
     flake-compat.flake = false;
+    mach-nix = { inputs.pypi-deps-db.url = "github:DavHau/pypi-deps-db"; };
     check_journal = { url = "github:flyingcircusio/check_journal"; };
   };
   outputs =
