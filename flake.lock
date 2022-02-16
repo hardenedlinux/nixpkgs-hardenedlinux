@@ -1,17 +1,5 @@
 {
   "nodes": {
-    "cells": {
-      "flake": false,
-      "locked": {
-        "narHash": "sha256-uSOlllTnZx3nLRKmTUjU7X4xDuTkP2qd8nCEU+PkAM8=",
-        "path": "/home/gtrun/ghq/github.com/GTrunSec/DevSecOps-cells",
-        "type": "path"
-      },
-      "original": {
-        "path": "/home/gtrun/ghq/github.com/GTrunSec/DevSecOps-cells",
-        "type": "path"
-      }
-    },
     "check_journal": {
       "inputs": {
         "flake-compat": "flake-compat",
@@ -142,11 +130,11 @@
     },
     "latest": {
       "locked": {
-        "lastModified": 1641252179,
-        "narHash": "sha256-mASUAFRbfD/wLgNW7vDoG5WjM3G/7LGRzFse0B39PM4=",
+        "lastModified": 1644972330,
+        "narHash": "sha256-6V2JFpTUzB9G+KcqtUR1yl7f6rd9495YrFECslEmbGw=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "988f3adf009672bb2a5b749123ff3e8846a5f3a8",
+        "rev": "19574af0af3ffaf7c9e359744ed32556f34536bd",
         "type": "github"
       },
       "original": {
@@ -175,12 +163,13 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1644525281,
-        "narHash": "sha256-D3VuWLdnLmAXIkooWAtbTGSQI9Fc1lkvAr94wTxhnTU=",
-        "owner": "NixOS",
-        "repo": "nixpkgs",
-        "rev": "48d63e924a2666baf37f4f14a18f19347fbd54a2",
-        "type": "github"
+        "lastModified": 1635403963,
+        "narHash": "sha256-0actzfzBAXvvDJ/EvPSGbtCPXUwSObQrcq0RpsPWZgA=",
+        "ref": "nixos-unstable",
+        "rev": "2deb07f3ac4eeb5de1c12c4ba2911a2eb1f6ed61",
+        "revCount": 325810,
+        "type": "git",
+        "url": "file:///nix/nixpkgs"
       },
       "original": {
         "id": "nixpkgs",
@@ -235,11 +224,11 @@
     },
     "nixpkgs_4": {
       "locked": {
-        "lastModified": 1644266748,
-        "narHash": "sha256-MYu0HoMYAXX08wQ8C4maxOyXrVwKYy+rESak2c3V3Pc=",
+        "lastModified": 1644960916,
+        "narHash": "sha256-L2XuHZfyUZ5AeSbaRy2DOcLJ+KV6cLw2jGTSS7KyJ4Q=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "df6de0bb8b8b3e9f61967eb59b736ab41185151c",
+        "rev": "cdc68dca91aa9685f9a7f70574cfac17a5f40453",
         "type": "github"
       },
       "original": {
@@ -265,7 +254,6 @@
     },
     "root": {
       "inputs": {
-        "cells": "cells",
         "check_journal": "check_journal",
         "devshell": "devshell",
         "flake-compat": "flake-compat_2",

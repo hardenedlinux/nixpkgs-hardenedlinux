@@ -7,8 +7,9 @@
   inputs = {
     flake-compat.flake = false;
     # packages inputs
-    #cells.url = "/home/gtrun/ghq/github.com/GTrunSec/DevSecOps-cells";
-    cells.url = "github:GTrunSec/DevSecOps-cells";
+    # cells.url = "github:GTrunSec/DevSecOps-cells";
+    # cells.inputs.nixpkgs-hardenedlinux.inputs.cells.url = "github:divnix/blank";
+    #cells.url = "github:GTrunSec/DevSecOps-cells";
     check_journal = { url = "github:flyingcircusio/check_journal"; };
   };
   outputs =
@@ -19,7 +20,7 @@
       devshell,
       latest,
       nixpkgs_20,
-      cells,
+      #cells,
       gomod2nix,
       mach-nix,
       ...
