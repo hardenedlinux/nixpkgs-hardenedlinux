@@ -32,6 +32,9 @@ jobs:
           authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
 
       # CI workflows
+      - name: Run Update Cells
+        run: nix flake lock --update-input cells ./devshell
+
       - name: Run Nix Flake Show
         run: nix develop ./devshell -c CI-flake-show
 
