@@ -6,10 +6,6 @@
   };
   inputs = {
     flake-compat.flake = false;
-    # packages inputs
-    # cells.url = "github:GTrunSec/DevSecOps-cells";
-    cells.url = "github:GTrunSec/DevSecOps-cells";
-    cells.inputs.std.url = "github:divnix/std";
     check_journal = { url = "github:flyingcircusio/check_journal"; };
   };
   outputs =
@@ -17,10 +13,8 @@
       self,
       nixpkgs,
       utils,
-      devshell,
       latest,
       nixpkgs_20,
-      #cells,
       gomod2nix,
       mach-nix,
       ...
@@ -54,9 +48,7 @@
         outputsBuilder = channels: {
           # apps = import ./apps inputs channels;
           packages = exportPackages self.overlays channels;
-          devShell = import ./shell{ inherit self inputs channels; };
         };
-
       }
       // {
         nixosModules = {

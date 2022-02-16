@@ -33,10 +33,10 @@ jobs:
 
       # CI workflows
       - name: Run Nix Flake Show
-        run: nix develop -c CI-flake-show
+        run: nix develop ./devshell -c CI-flake-show
 
       - name: Run nvfetcher-github
-        run: nix develop -c -- nvfetcher-update ./packages/sources.toml
+        run: nix develop ./devshell -c -- nvfetcher-update ./packages/sources.toml
 
       # - name: Build Packages
       #   run: |

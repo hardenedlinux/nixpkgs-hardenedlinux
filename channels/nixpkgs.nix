@@ -7,7 +7,6 @@
   input = inputs.nixpkgs;
   overlaysBuilder = channels:
     [
-      inputs.devshell.overlay
       (import ../packages/inputs-packages.nix { inherit inputs; })
       (import ../packages/pkgs/nixos-tests.nix { inherit inputs; })
       (import ../packages/pkgs)
