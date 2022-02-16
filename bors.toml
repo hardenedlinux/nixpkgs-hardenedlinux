@@ -1,3 +1,4 @@
 status = [ "checks" ]
-
-up_to_date_approvals = true
+required_approvals = 0
+timeout_sec = 7200
+delete_merged_branches = true
