@@ -338,7 +338,7 @@
         "pinned": false,
         "cargoLock": null,
         "name": "fastai",
-        "version": "ac905f74297296fd0d3a15282104bd33e978b4fc",
+        "version": "ca9c60d65fdcc33c82ee8b93b144c9f5b4e0e3f3",
         "passthru": null,
         "src": {
             "deepClone": false,
@@ -348,8 +348,8 @@
             "name": null,
             "repo": "fastai",
             "type": "github",
-            "sha256": "sha256-ht3vgXC5jLFaZLjlyQsTnGrnyQvhKTWT8BEi6/03W/A=",
-            "rev": "ac905f74297296fd0d3a15282104bd33e978b4fc"
+            "sha256": "sha256-vw1Y5GfXlTsIDji4BpL43KFl7q4r+Bht1GLxMQL8Ybs=",
+            "rev": "ca9c60d65fdcc33c82ee8b93b144c9f5b4e0e3f3"
         },
         "extract": null,
         "rustGitDeps": null
@@ -378,7 +378,7 @@
         "pinned": false,
         "cargoLock": null,
         "name": "zed",
-        "version": "5e2b93b4aa497169dab1a43c3e6967270fb68905",
+        "version": "6e3928cbdd08344eb08d9ee1a6c325b6d108c585",
         "passthru": null,
         "src": {
             "deepClone": false,
@@ -388,8 +388,8 @@
             "name": null,
             "repo": "zed",
             "type": "github",
-            "sha256": "sha256-S78prUQ3T7dJ96D1HgiG10wsYdfMYb3lVFinXzyqYww=",
-            "rev": "5e2b93b4aa497169dab1a43c3e6967270fb68905"
+            "sha256": "sha256-4IAsJ5XHL0LwJoYM6TQ5Q2bcScvmA1D5LqMc9v3GR/0=",
+            "rev": "6e3928cbdd08344eb08d9ee1a6c325b6d108c585"
         },
         "extract": null,
         "rustGitDeps": null
