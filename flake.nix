@@ -7,18 +7,15 @@
   inputs = {
     flake-compat.flake = false;
     # packages inputs
-    std.url = "github:divnix/std";
-    cells.url = "/home/gtrun/ghq/github.com/GTrunSec/DevSecOps-cells";
-
+    #cells.url = "/home/gtrun/ghq/github.com/GTrunSec/DevSecOps-cells";
+    cells.url = "github:GTrunSec/DevSecOps-cells";
     check_journal = { url = "github:flyingcircusio/check_journal"; };
-    check_journal.inputs.nixpkgs.follows = "nixpkgs";
   };
   outputs =
     {
       self,
       nixpkgs,
       utils,
-      std,
       devshell,
       latest,
       nixpkgs_20,
