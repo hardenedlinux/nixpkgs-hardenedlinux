@@ -6,7 +6,11 @@
   };
   inputs = {
     flake-compat.flake = false;
-    mach-nix = { inputs.pypi-deps-db.url = "github:DavHau/pypi-deps-db"; };
+    pypi-deps-db = {
+      url =  "github:DavHau/pypi-deps-db";
+      flake = false;
+    };
+    mach-nix = { inputs.pypi-deps-db.follows = "pypi-deps-db";};
     check_journal = { url = "github:flyingcircusio/check_journal"; };
   };
   outputs =
@@ -15,6 +19,7 @@
       nixpkgs,
       utils,
       devshell,
+      pypi-deps-db,
       latest,
       nixpkgs_20,
       gomod2nix,
