@@ -58,6 +58,7 @@
           packages = exportPackages self.overlays channels;
           devShell = import ./shell{ inherit self inputs channels; };
         };
+
       }
       // {
         nixosModules = {

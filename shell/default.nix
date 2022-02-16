@@ -1,5 +1,5 @@
 { inputs, channels, self }:let
-  cellsProfiles = inputs.cells.devshellProfiles.${channels.nixpkgs.stdenv.hostPlatform.system};
+  cellsProfiles = inputs.cells.devshellProfiles."x86_64-linux";
 in
 channels.nixpkgs.devshell.mkShell {
   name = "Hardenedlinux";
