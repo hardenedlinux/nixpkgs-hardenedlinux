@@ -11,13 +11,13 @@ let
   };
 in
 python3Packages.buildPythonPackage rec {
-  pname = "zqd";
+  pname = "python-zed";
   inherit (nixpkgs-hardenedlinux-sources.zed) src version;
   propagatedBuildInputs =
     with python3Packages; [ requests python-dateutil durationpy ];
   doCheck = false;
   postPatch = ''
-    cd python/zqd
+    cd python/zed
   '';
   meta =
     with lib; {
