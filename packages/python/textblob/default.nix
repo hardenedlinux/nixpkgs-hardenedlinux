@@ -1,6 +1,7 @@
-{ stdenv
-, python3Packages
-, python3
+{
+  stdenv,
+  python3Packages,
+  python3,
 }:
 with python3.pkgs;
 python3Packages.buildPythonPackage rec {

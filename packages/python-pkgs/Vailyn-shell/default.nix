@@ -1,15 +1,16 @@
-{ lib
-, fetchFromGitHub
-, python3Packages
-, nixpkgs-hardenedlinux-sources
-, machlib
-, makeWrapper
-, mkShell
-, pyqt5
-, twisted
+{
+  lib,
+  fetchFromGitHub,
+  python3Packages,
+  nixpkgs-hardenedlinux-sources,
+  mach-nix,
+  makeWrapper,
+  mkShell,
+  pyqt5,
+  twisted,
 }:
 let
-  vailyn-requirements = machlib.mkPython rec {
+  vailyn-requirements = mach-nix.mkPython rec {
     providers = { PyQt5 = "nixpkgs"; };
     requirements = ''
       treelib

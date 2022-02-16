@@ -1,6 +1,7 @@
-{ stdenv
-, python3Packages
-, python3
+{
+  stdenv,
+  python3Packages,
+  python3,
 }:
 with python3.pkgs;
 python3Packages.buildPythonPackage rec {
@@ -12,8 +13,7 @@ python3Packages.buildPythonPackage rec {
   };
   doCheck = false;
   propagatedBuildInputs =
-    with python3Packages;
-    [
+    with python3Packages; [
       setuptools_scm
       more-itertools
       cheroot

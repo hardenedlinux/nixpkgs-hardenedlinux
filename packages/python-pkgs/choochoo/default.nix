@@ -1,10 +1,11 @@
-{ lib
-, python3Packages
-, nixpkgs-hardenedlinux-sources
-, machlib
+{
+  lib,
+  python3Packages,
+  nixpkgs-hardenedlinux-sources,
+  mach-nix,
 }:
 let
-  choochoo-requirements = machlib.mkPython rec {
+  choochoo-requirements = mach-nix.mkPython rec {
     requirements = ''
       bokeh
       cachetools
@@ -37,8 +38,7 @@ python3Packages.buildPythonPackage rec {
     cd py
   '';
   propagatedBuildInputs =
-    with python3Packages;
-    [
+    with python3Packages; [
       choochoo-requirements
       (
         shapely.overridePythonAttrs (oldAttrs: { propagatedBuildInputs = [ ]; })
@@ -50,8 +50,7 @@ python3Packages.buildPythonPackage rec {
   '';
   doCheck = false;
   meta =
-    with lib;
-    {
+    with lib; {
       description = "Data Science for Training'";
       homepage = "https://github.com/andrewcooke/choochoo";
       license = licenses.asl20;

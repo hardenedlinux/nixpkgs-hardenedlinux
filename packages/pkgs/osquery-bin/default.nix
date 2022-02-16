@@ -1,12 +1,13 @@
-{ stdenv
-, lib
-, wrapGAppsHook
-, autoPatchelfHook
-, makeWrapper
-, dpkg
-, osquery-vm-tests
-, syslogng
-, nixpkgs-hardenedlinux-sources
+{
+  stdenv,
+  lib,
+  wrapGAppsHook,
+  autoPatchelfHook,
+  makeWrapper,
+  dpkg,
+  osquery-vm-tests,
+  syslogng,
+  nixpkgs-hardenedlinux-sources,
 }:
 stdenv.mkDerivation rec {
   inherit (nixpkgs-hardenedlinux-sources.osquery) pname version src;
@@ -30,8 +31,7 @@ stdenv.mkDerivation rec {
   enableParallelBuilding = true;
   passthru.tests = osquery-vm-tests;
   meta =
-    with lib;
-    {
+    with lib; {
       description = "SQL powered operating system instrumentation, monitoring, and analytics.";
       homepage = "https://github.com/osquery/osquery";
       license = "SPDX-License-Identifier: Apache-2.0 OR GPL-2.0-only";

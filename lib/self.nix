@@ -3,18 +3,20 @@ let
   inherit (builtins) attrNames isAttrs readDir listToAttrs;
   inherit (lib) removeSuffix;
   genAttrs' = values: f: listToAttrs (map f values);
-  pathsToImportedAttrs = paths: genAttrs' paths (
-    path: {
-      name = removeSuffix ".nix" (baseNameOf path);
-      value = import path;
-    }
-  );
+  pathsToImportedAttrs = paths:
+    genAttrs' paths (
+      path: {
+        name = removeSuffix ".nix" (baseNameOf path);
+        value = import path;
+      }
+    );
 
   filterFiles = path: name: let
-    a = key: value: value
-    == "regular"
-    && lib.hasSuffix ".${name}" key
-    && key != "default.nix";
+    a = key: value:
+      value
+      == "regular"
+      && lib.hasSuffix ".${name}" key
+      && key != "default.nix";
   in
     lib.filterAttrs a (builtins.readDir path);
 

@@ -1,7 +1,8 @@
-{ lib
-, fetchPypi
-, python3Packages
-, fetchgit
+{
+  lib,
+  fetchPypi,
+  python3Packages,
+  fetchgit,
 }:
 python3Packages.buildPythonPackage rec {
   pname = "service_identity";
@@ -14,8 +15,7 @@ python3Packages.buildPythonPackage rec {
     with python3Packages; [ bcrypt pyopenssl pyasn1-modules attrs ];
   doCheck = false;
   meta =
-    with lib;
-    {
+    with lib; {
       description = "Service identity verification for pyOpenSSL & cryptography.";
       homepage = "https://service-identity.readthedocs.io/en/stable/";
       license = licenses.asl20;

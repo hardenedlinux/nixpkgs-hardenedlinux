@@ -1,6 +1,7 @@
-{ lib
-, python3Packages
-, python3
+{
+  lib,
+  python3Packages,
+  python3,
 }:
 with python3.pkgs;
 python3Packages.buildPythonPackage rec {
@@ -14,8 +15,7 @@ python3Packages.buildPythonPackage rec {
     with python3Packages; [ jinja2 ipython networkx jsonpickle ];
   doCheck = false;
   meta =
-    with lib;
-    {
+    with lib; {
       description = "A Python network visualization library";
       license = licenses.asl20;
     };

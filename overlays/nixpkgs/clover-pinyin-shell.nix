@@ -1,18 +1,16 @@
-final: prev:
-let
-  pythonDeps = final.machlib.mkPython rec {
+final: prev: let
+  pythonDeps = final.mach-nix.mkPython rec {
     requirements = ''
-    OpenCC
-    jieba
-    pypinyin
-    requests
+      OpenCC
+      jieba
+      pypinyin
+      requests
     '';
   };
-
 in
-{
-  # https://github.com/fkxxyz/rime-cloverpinyin
-  clover-pinyin-shell = prev.mkShell rec {
-    buildInputs = [ pythonDeps prev.librime ];
-  };
-}
+  {
+    # https://github.com/fkxxyz/rime-cloverpinyin
+    clover-pinyin-shell = prev.mkShell rec {
+      buildInputs = [ pythonDeps prev.librime ];
+    };
+  }
