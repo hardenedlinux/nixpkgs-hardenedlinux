@@ -13,6 +13,7 @@
       self,
       nixpkgs,
       utils,
+      devshell,
       latest,
       nixpkgs_20,
       gomod2nix,
@@ -48,6 +49,7 @@
         outputsBuilder = channels: {
           # apps = import ./apps inputs channels;
           packages = exportPackages self.overlays channels;
+          #devShell = import ./shell { inherit self inputs channels; };
         };
       }
       // {

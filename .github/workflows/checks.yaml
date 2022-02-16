@@ -38,13 +38,12 @@ jobs:
       - name: Run nvfetcher-github
         run: nix develop ./devshell -c -- nvfetcher-update ./packages/sources.toml
 
-      # - name: Build Packages
-      #   run: |
-      #     nix -Lv build .\#broker
-      #     nix -Lv build .\#elastalert2
-      #     nix -Lv build .\#zat
-      #     nix -Lv build .\#zed
-      #     nix -Lv build .\#btest
+      - name: Build Packages
+        run: |
+          nix -Lv build .\#broker
+          nix -Lv build .\#elastalert2
+          nix -Lv build .\#zed
+          nix -Lv build .\#btest
 
       - name: Commit changes
         if: ${{ env.COMMIT_MSG != null }}

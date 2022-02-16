@@ -20,6 +20,20 @@
         "type": "github"
       }
     },
+    "devshell": {
+      "locked": {
+        "lastModified": 1640301433,
+        "narHash": "sha256-eplae8ZNiEmxbOgwUn9IihaJfEUxoUilkwciRPGskYE=",
+        "owner": "numtide",
+        "repo": "devshell",
+        "rev": "f87fb932740abe1c1b46f6edd8a36ade17881666",
+        "type": "github"
+      },
+      "original": {
+        "id": "devshell",
+        "type": "indirect"
+      }
+    },
     "flake-compat": {
       "flake": false,
       "locked": {
@@ -116,11 +130,11 @@
     },
     "latest": {
       "locked": {
-        "lastModified": 1644992370,
-        "narHash": "sha256-6UmwHOboRwAUMyGNA+vBihf8mDW+paeKXtJkIPXQTog=",
+        "lastModified": 1644994982,
+        "narHash": "sha256-SvXFMwBIs3tuKRnJHYzjZK0w3qCytLn0eFqAFI4bWiw=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "4687b2ed82c90c135595cc0487b12d643991d542",
+        "rev": "6d5e3764dd3802fe55d8753e27daeb14a76ce0e0",
         "type": "github"
       },
       "original": {
@@ -241,6 +255,7 @@
     "root": {
       "inputs": {
         "check_journal": "check_journal",
+        "devshell": "devshell",
         "flake-compat": "flake-compat_2",
         "gomod2nix": "gomod2nix",
         "latest": "latest",
