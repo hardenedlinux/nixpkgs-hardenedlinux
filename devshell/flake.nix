@@ -4,7 +4,6 @@
   inputs.devshell.url = "github:numtide/devshell?ref=refs/pull/169/head";
   inputs.flake-utils.url = "github:numtide/flake-utils";
   inputs.cells.url = "github:GTrunSec/DevSecOps-cells";
-  inputs.cells.inputs.std.url = "github:divnix/std";
   outputs = inputs:
     inputs.flake-utils.lib.eachSystem [ "x86_64-linux" ] (
       system: let
