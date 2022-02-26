@@ -167,10 +167,10 @@
   };
   nix-unstable-installer = {
     pname = "nix-unstable-installer";
-    version = "nix-2.7.0pre20220203_bd383d1";
+    version = "nix-2.7.0pre20220209_52f5231";
     src = fetchurl {
-      url = "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.7.0pre20220203_bd383d1/install";
-      sha256 = "sha256-orw91X6OMBe5KkmWu0nTY45pwlratypGoZvKDp3ruHk=";
+      url = "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.7.0pre20220209_52f5231/install";
+      sha256 = "sha256-dujtZsSkLOqU4MayzRpn9SwT6wZP63T6bim6cmYvMIk=";
     };
   };
   nvdtools = {
@@ -227,13 +227,13 @@
   };
   zed = {
     pname = "zed";
-    version = "ab83631ac394e69c9fc8bdd694a6d23cae19d956";
+    version = "691f40564050898c45722ee323f57da523bd71aa";
     src = fetchFromGitHub ({
       owner = "brimdata";
       repo = "zed";
-      rev = "ab83631ac394e69c9fc8bdd694a6d23cae19d956";
+      rev = "691f40564050898c45722ee323f57da523bd71aa";
       fetchSubmodules = false;
-      sha256 = "sha256-oJNW1Ivlrft1qCgIRhclQs6sNG57w3kY9quFpP8uVVI=";
+      sha256 = "sha256-wi8o+/bTt5fn91JkSHyU5K1nh5LMHtcmj9lN4nYjgBc=";
     });
   };
 }
