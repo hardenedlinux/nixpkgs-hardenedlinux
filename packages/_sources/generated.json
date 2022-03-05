@@ -53,13 +53,13 @@
         "pinned": false,
         "cargoLock": null,
         "name": "nix-unstable-installer",
-        "version": "nix-2.7.0pre20220209_52f5231",
+        "version": "nix-2.7.0pre20220225_fd4b693",
         "passthru": null,
         "src": {
-            "url": "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.7.0pre20220209_52f5231/install",
+            "url": "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.7.0pre20220225_fd4b693/install",
             "name": null,
             "type": "url",
-            "sha256": "sha256-dujtZsSkLOqU4MayzRpn9SwT6wZP63T6bim6cmYvMIk="
+            "sha256": "sha256-i1jOSN6F1ByzKlWEK832eN7IaUdBO3268bfG0ojwviA="
         },
         "extract": null,
         "rustGitDeps": null
@@ -148,7 +148,7 @@
         "pinned": false,
         "cargoLock": null,
         "name": "fastcore",
-        "version": "4eaf92cb011ef891e6fea6a5a69b4be02f80d145",
+        "version": "75614b2a75c8128c79c02a61a2bb1a4ef87f3bb6",
         "passthru": null,
         "src": {
             "deepClone": false,
@@ -158,8 +158,8 @@
             "name": null,
             "repo": "fastcore",
             "type": "github",
-            "sha256": "sha256-Z+6Z7G6aL3/iiKGN0lPy1CE/zrirqvU4QsBQ005XHys=",
-            "rev": "4eaf92cb011ef891e6fea6a5a69b4be02f80d145"
+            "sha256": "sha256-mINB1TLNiyY1z4oIZZjzV7y9IqnhgJjK3yfhhHUEsSY=",
+            "rev": "75614b2a75c8128c79c02a61a2bb1a4ef87f3bb6"
         },
         "extract": null,
         "rustGitDeps": null
@@ -168,7 +168,7 @@
         "pinned": false,
         "cargoLock": null,
         "name": "elastalert2",
-        "version": "0ba5a5f2640b75ba1d848318545b742998fb6f6a",
+        "version": "7d80a6bed6ce3ff09a5ebd51052a7243488f17fd",
         "passthru": null,
         "src": {
             "deepClone": false,
@@ -178,8 +178,8 @@
             "name": null,
             "repo": "elastalert2",
             "type": "github",
-            "sha256": "sha256-m+GUIZte2Ii6k1ED7oV/+ROKLXB28mpInJw111/839E=",
-            "rev": "0ba5a5f2640b75ba1d848318545b742998fb6f6a"
+            "sha256": "sha256-mCuNbNCLvhUy9C7DVY9p9EH/EcC9lrvPGBiROOAJuGQ=",
+            "rev": "7d80a6bed6ce3ff09a5ebd51052a7243488f17fd"
         },
         "extract": null,
         "rustGitDeps": null
@@ -338,7 +338,7 @@
         "pinned": false,
         "cargoLock": null,
         "name": "fastai",
-        "version": "91b2dfeb771b547099ff61c1fad3d3f0f82eb83f",
+        "version": "d84b426e2afe17b3af09b33f49c77bd692625f0d",
         "passthru": null,
         "src": {
             "deepClone": false,
@@ -348,8 +348,8 @@
             "name": null,
             "repo": "fastai",
             "type": "github",
-            "sha256": "sha256-bDAdLfQdjqt6DT1xK0gGH0W8/oCQkPDyeM/Qv7uK76Q=",
-            "rev": "91b2dfeb771b547099ff61c1fad3d3f0f82eb83f"
+            "sha256": "sha256-HGRZSkLllN8Fd9odPnj8YN4qY+aRdt8a7A7S/bNYF9Q=",
+            "rev": "d84b426e2afe17b3af09b33f49c77bd692625f0d"
         },
         "extract": null,
         "rustGitDeps": null
@@ -378,7 +378,7 @@
         "pinned": false,
         "cargoLock": null,
         "name": "zed",
-        "version": "691f40564050898c45722ee323f57da523bd71aa",
+        "version": "6b54025682fbb3fca4669bec514dda0b9171f4e5",
         "passthru": null,
         "src": {
             "deepClone": false,
@@ -388,8 +388,8 @@
             "name": null,
             "repo": "zed",
             "type": "github",
-            "sha256": "sha256-wi8o+/bTt5fn91JkSHyU5K1nh5LMHtcmj9lN4nYjgBc=",
-            "rev": "691f40564050898c45722ee323f57da523bd71aa"
+            "sha256": "sha256-Jq11xt+3c6l4rd9vdeP9YImayRDmrcgVHZBcbNkQEtw=",
+            "rev": "6b54025682fbb3fca4669bec514dda0b9171f4e5"
         },
         "extract": null,
         "rustGitDeps": null
@@ -398,7 +398,7 @@
         "pinned": false,
         "cargoLock": null,
         "name": "broker",
-        "version": "d1dfac142d8b42bc0b6dcfcd06d0cfc5c23290a7",
+        "version": "7ce46b87501298642fc8d1a1fa673a5598e9f463",
         "passthru": null,
         "src": {
             "deepClone": false,
@@ -408,8 +408,8 @@
             "name": null,
             "repo": "broker",
             "type": "github",
-            "sha256": "sha256-Hh7JEWAzMZBfHMy5bHjNI5VaEoH913N+6FIlqsDesT8=",
-            "rev": "d1dfac142d8b42bc0b6dcfcd06d0cfc5c23290a7"
+            "sha256": "sha256-CGS10AmEFZPPHvsMAcmeDH/yn0tBNNAHcG8jOoiF7fI=",
+            "rev": "7ce46b87501298642fc8d1a1fa673a5598e9f463"
         },
         "extract": null,
         "rustGitDeps": null
