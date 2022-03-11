@@ -1,5 +1,4 @@
-{ lib }:
-let
+{lib}: let
   inherit (builtins) attrNames isAttrs readDir listToAttrs;
   inherit (lib) removeSuffix;
   genAttrs' = values: f: listToAttrs (map f values);
@@ -24,8 +23,7 @@ let
     fullPath = name: dir + "/${name}";
   in
     map fullPath (attrNames (filterFiles dir "nix"));
-in
-rec {
+in rec {
   inherit genAttrs' pathsToImportedAttrs filterFiles;
   importOverlays = dir: lib.attrValues (pathsToImportedAttrs (overlayPaths dir));
   # pathsToNixScript = path: pkgs: f: s: builtins.listToAttrs

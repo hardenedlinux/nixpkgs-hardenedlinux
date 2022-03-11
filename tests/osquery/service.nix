@@ -2,8 +2,7 @@
   pkgs,
   config,
   ...
-}:
-{
+}: {
   services.osquery-bin = {
     enable = true;
     flagsOption = [
@@ -14,6 +13,6 @@
       "--disable_audit=false"
     ];
     extraConfig =
-      { } // (builtins.fromJSON (builtins.readFile ./osquery-default.json));
+      {} // (builtins.fromJSON (builtins.readFile ./osquery-default.json));
   };
 }

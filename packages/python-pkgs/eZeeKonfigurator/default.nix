@@ -6,8 +6,7 @@
   mach-nix,
   broker-json,
   broker38,
-}:
-let
+}: let
   eZeeKonfigurator-requirements = mach-nix.mkPython rec {
     #requirements = builtins.readFile (nixpkgs-hardenedlinux-sources.eZeeKonfigurator.src + "/requirements_common.txt") + ''
     requirements = ''
@@ -27,19 +26,17 @@ let
     '';
   };
 in
-python3Packages.buildPythonPackage rec {
-  inherit (nixpkgs-hardenedlinux-sources.eZeeKonfigurator) pname version src;
-  nativeBuildInputs = [ ];
-  propagatedBuildInputs =
-    with python3Packages; [ eZeeKonfigurator-requirements broker-json broker38 ];
-  postPatch = ''
-    substituteInPlace requirements_common.txt \
-    --replace "broker_json==0.2" ""
-  '';
-  doCheck = false;
-  meta =
-    with lib; {
+  python3Packages.buildPythonPackage rec {
+    inherit (nixpkgs-hardenedlinux-sources.eZeeKonfigurator) pname version src;
+    nativeBuildInputs = [];
+    propagatedBuildInputs = with python3Packages; [eZeeKonfigurator-requirements broker-json broker38];
+    postPatch = ''
+      substituteInPlace requirements_common.txt \
+      --replace "broker_json==0.2" ""
+    '';
+    doCheck = false;
+    meta = with lib; {
       description = "Web-based configuration for your Zeek clusters";
       homepage = "https://github.com/esnet/eZeeKonfigurator";
     };
-}
+  }

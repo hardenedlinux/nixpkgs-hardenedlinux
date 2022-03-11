@@ -12,11 +12,10 @@ python3Packages.buildPythonPackage rec {
     url = "https://github.com/Axelrod-Python/Axelrod/archive/${version}.tar.gz";
     sha256 = "01v0vc7hqfmyyrmd5w7bqb7nifa1wx468gxlh9hya2ccd5pmpgf3";
   };
-  propagatedBuildInputs = with python3Packages; [ pathlib ];
+  propagatedBuildInputs = with python3Packages; [pathlib];
   doCheck = false;
-  meta =
-    with lib; {
-      description = "https://github.com/Axelrod-Python/Axelrod";
-      license = licenses.asl20;
-    };
+  meta = with lib; {
+    description = "https://github.com/Axelrod-Python/Axelrod";
+    license = licenses.asl20;
+  };
 }

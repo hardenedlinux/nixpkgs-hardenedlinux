@@ -12,12 +12,11 @@ python3Packages.buildPythonPackage rec {
     sha256 = "0jlpbk0w9xlir1f82z6512v54214c555q6zcn8v1nkm0xkdgsna3";
   };
   preConfigure = "cd src";
-  propagatedBuildInputs = with python3Packages; [ py pytest mock lxml ];
+  propagatedBuildInputs = with python3Packages; [py pytest mock lxml];
   doCheck = false;
-  meta =
-    with lib; {
-      description = "Python wrapper for tshark, allowing python packet parsing using wireshark dissectors";
-      homepage = "https://github.com/KimiNewt/pyshark";
-      license = licenses.asl20;
-    };
+  meta = with lib; {
+    description = "Python wrapper for tshark, allowing python packet parsing using wireshark dissectors";
+    homepage = "https://github.com/KimiNewt/pyshark";
+    license = licenses.asl20;
+  };
 }

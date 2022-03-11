@@ -10,3 +10,14 @@ command = '''
         git stash save --keep-index --include-untracked
         '''
 help = "lock rev for bindary cache build"
+
+[[commands]]
+name = "nvfetcher-update"
+category = "Update"
+command = "nix develop -Lv 'github:GTrunSec/DevSecOps-Cells-Lab?dir=devshell#update' --no-write-lock-file -c nvfetcher-update ./nix/sources.toml"
+help = "run nvfetcher with local repo's sources.toml"
+
+[[commands]]
+name = "nix-github-update "
+category = "Update"
+command = "nix develop -Lv 'github:GTrunSec/DevSecOps-Cells-Lab?dir=devshell#update' --no-write-lock-file -c nix-github-update"

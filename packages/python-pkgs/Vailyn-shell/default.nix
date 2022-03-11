@@ -8,10 +8,9 @@
   mkShell,
   pyqt5,
   twisted,
-}:
-let
+}: let
   vailyn-requirements = mach-nix.mkPython rec {
-    providers = { PyQt5 = "nixpkgs"; };
+    providers = {PyQt5 = "nixpkgs";};
     requirements = ''
       treelib
       requests
@@ -37,7 +36,7 @@ let
     '';
   };
 in
-mkShell {
-  name = "vailyn-shell";
-  buildInputs = [ vailyn-requirements pyqt5 twisted ];
-}
+  mkShell {
+    name = "vailyn-shell";
+    buildInputs = [vailyn-requirements pyqt5 twisted];
+  }
