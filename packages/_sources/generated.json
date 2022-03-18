@@ -99,12 +99,12 @@
             "name": null,
             "repo": "zed",
             "type": "github",
-            "sha256": "sha256-m8AoxwhP4ba6nanwEC66Ww6uH/7MIFeV3cNxU3GHpZw=",
-            "rev": "be53a583b284b34cfc25334633dad26139a8aa49",
+            "sha256": "sha256-FBwc/Cg3u4FBKuVTDV72z0UrrSu1340YBbA1qO8mFWs=",
+            "rev": "89924ced3c4099f8b820589a22d3d532c1c5f0ce",
             "leaveDotGit": false,
             "fetchSubmodules": false
         },
-        "version": "be53a583b284b34cfc25334633dad26139a8aa49",
+        "version": "89924ced3c4099f8b820589a22d3d532c1c5f0ce",
         "passthru": null,
         "extract": null,
         "rustGitDeps": null
@@ -184,12 +184,12 @@
         "cargoLock": null,
         "name": "nix-unstable-installer",
         "src": {
-            "url": "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.7.0pre20220303_b09baf6/install",
+            "url": "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.8.0pre20220311_d532269/install",
             "name": null,
             "type": "url",
-            "sha256": "sha256-0oHJ+y4kOTFwhj5Nub7+qu1aXVTosxTBDNxFkJtjaJA="
+            "sha256": "sha256-XvZ7m11Q+VlGio/HxYH+xO0mNPbhaFZitBG00aaARLQ="
         },
-        "version": "nix-2.7.0pre20220303_b09baf6",
+        "version": "nix-2.8.0pre20220311_d532269",
         "passthru": null,
         "extract": null,
         "rustGitDeps": null
@@ -254,6 +254,26 @@
         "extract": null,
         "rustGitDeps": null
     },
+    "zeekscript": {
+        "pinned": false,
+        "cargoLock": null,
+        "name": "zeekscript",
+        "src": {
+            "deepClone": false,
+            "owner": "zeek",
+            "name": null,
+            "repo": "zeekscript",
+            "type": "github",
+            "sha256": "sha256-YRJHFNttuvCOjB4X8iy9zAYW2NPECSroAt/dU4uDEoU=",
+            "rev": "05f8bdb90dd2ef69c4c12f06b35dc5196c193cd3",
+            "leaveDotGit": false,
+            "fetchSubmodules": true
+        },
+        "version": "05f8bdb90dd2ef69c4c12f06b35dc5196c193cd3",
+        "passthru": null,
+        "extract": null,
+        "rustGitDeps": null
+    },
     "ghq": {
         "pinned": false,
         "cargoLock": null,
@@ -305,6 +325,26 @@
             "sha256": "sha256-XvlBa1J7UNci80ZVvs+3Xkkijrgvh7hV7RkRszFLVAg="
         },
         "version": "0.5",
+        "passthru": null,
+        "extract": null,
+        "rustGitDeps": null
+    },
+    "py-tree-sitter": {
+        "pinned": false,
+        "cargoLock": null,
+        "name": "py-tree-sitter",
+        "src": {
+            "deepClone": false,
+            "owner": "tree-sitter",
+            "name": null,
+            "repo": "py-tree-sitter",
+            "type": "github",
+            "sha256": "sha256-cxJrsmfce+Hc+L0ypHyF5Mn0EiIZGhdDdCNYzrLjFEU=",
+            "rev": "620acebb61987ca28ac3b8bd1ad78a6b46d6f1e0",
+            "leaveDotGit": false,
+            "fetchSubmodules": true
+        },
+        "version": "620acebb61987ca28ac3b8bd1ad78a6b46d6f1e0",
         "passthru": null,
         "extract": null,
         "rustGitDeps": null
@@ -379,12 +419,12 @@
             "name": null,
             "repo": "fastai",
             "type": "github",
-            "sha256": "sha256-HGRZSkLllN8Fd9odPnj8YN4qY+aRdt8a7A7S/bNYF9Q=",
-            "rev": "d84b426e2afe17b3af09b33f49c77bd692625f0d",
+            "sha256": "sha256-bhm17VXGTSOShLZ4xE8AW0dL75/Mggw99KUYknaVXa4=",
+            "rev": "40a43f11b13e629916e386ff205a1b1d47c11669",
             "leaveDotGit": false,
             "fetchSubmodules": false
         },
-        "version": "d84b426e2afe17b3af09b33f49c77bd692625f0d",
+        "version": "40a43f11b13e629916e386ff205a1b1d47c11669",
         "passthru": null,
         "extract": null,
         "rustGitDeps": null
@@ -399,12 +439,12 @@
             "name": null,
             "repo": "cliche",
             "type": "github",
-            "sha256": "sha256-lr4M/dDM97M6mNpciJC8EVYAavf4Asbzoic/jgSt29c=",
-            "rev": "8e6eb57f1145aee4c43f2bc4e6a508b8922a152e",
+            "sha256": "sha256-kIFp7VHZDWQAT6ypOrmqBzkEXQw2dd96RMXnlhDeK4U=",
+            "rev": "ec501e2db92b4e87e7858b09149deb45dd88018c",
             "leaveDotGit": false,
             "fetchSubmodules": false
         },
-        "version": "8e6eb57f1145aee4c43f2bc4e6a508b8922a152e",
+        "version": "ec501e2db92b4e87e7858b09149deb45dd88018c",
         "passthru": null,
         "extract": null,
         "rustGitDeps": null
@@ -419,12 +459,12 @@
             "name": null,
             "repo": "broker",
             "type": "github",
-            "sha256": "sha256-CGS10AmEFZPPHvsMAcmeDH/yn0tBNNAHcG8jOoiF7fI=",
-            "rev": "7ce46b87501298642fc8d1a1fa673a5598e9f463",
+            "sha256": "sha256-+ORD7oe2tcAcyi3l+J8FXjsv0gLa1qdol9YStU0kQfk=",
+            "rev": "2b9fe9a5128ea16ebf5a7e2753147ab517f053ac",
             "leaveDotGit": false,
             "fetchSubmodules": true
         },
-        "version": "7ce46b87501298642fc8d1a1fa673a5598e9f463",
+        "version": "2b9fe9a5128ea16ebf5a7e2753147ab517f053ac",
         "passthru": null,
         "extract": null,
         "rustGitDeps": null
