@@ -99,12 +99,12 @@
             "name": null,
             "repo": "zed",
             "type": "github",
-            "sha256": "sha256-FBwc/Cg3u4FBKuVTDV72z0UrrSu1340YBbA1qO8mFWs=",
-            "rev": "89924ced3c4099f8b820589a22d3d532c1c5f0ce",
+            "sha256": "sha256-z1xr1dN0QRNCahA1hLGJEeqyK++VT2x0m3dU+EGA7D0=",
+            "rev": "f24ab19adfa951aed96733fd0fbe97fa4ec58b79",
             "leaveDotGit": false,
             "fetchSubmodules": false
         },
-        "version": "89924ced3c4099f8b820589a22d3d532c1c5f0ce",
+        "version": "f24ab19adfa951aed96733fd0fbe97fa4ec58b79",
         "passthru": null,
         "extract": null,
         "rustGitDeps": null
