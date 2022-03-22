@@ -73,6 +73,11 @@ git.fetchSubmodules = true
 src.git = "https://github.com/fastai/fastcore"
 fetch.github = "fastai/fastcore"
 
+[cowait]
+src.git = "https://github.com/backtick-se/cowait"
+fetch.github = "backtick-se/cowait"
+
+
 [fastprogress]
 src.pypi = "fastprogress"
 fetch.pypi = "fastprogress"

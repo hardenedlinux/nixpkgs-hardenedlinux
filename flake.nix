@@ -5,24 +5,30 @@
     #flake-registry = "/home/gtrun/ghq/github.com/hardenedlinux/flake-registry/flake-registry.json";
   };
   inputs = {
+    flake-compat.url = "github:edolstra/flake-compat";
     flake-compat.flake = false;
-    pypi-deps-db = {
-      url = "github:DavHau/pypi-deps-db";
-      flake = false;
-    };
+
+    devshell.url = "github:numtide/devshell";
+    devshell.inputs.nixpkgs.follows = "nixpkgs";
+
+    pypi-deps-db.url = "github:DavHau/pypi-deps-db";
+    pypi-deps-db.flake = false;
+
     mach-nix = {inputs.pypi-deps-db.follows = "pypi-deps-db";};
     check_journal = {url = "github:flyingcircusio/check_journal";};
+
+    poetry2nix = {url = "github:nix-community/poetry2nix";};
+    poetry2nix.inputs.nixpkgs.follows = "nixpkgs";
+
+    gomod2nix = {url = "github:tweag/gomod2nix";};
+    gomod2nix.inputs.nixpkgs.follows = "nixpkgs";
   };
   outputs = {
     self,
     nixpkgs,
-    utils,
-    devshell,
-    pypi-deps-db,
     latest,
+    utils,
     nixpkgs_20,
-    gomod2nix,
-    mach-nix,
     ...
   } @ inputs: let
     inherit (utils.lib) exportOverlays exportPackages exportModules;
@@ -43,8 +49,9 @@
 
       sharedOverlays =
         [
-          gomod2nix.overlay
-          devshell.overlay
+          inputs.gomod2nix.overlay
+          inputs.devshell.overlay
+          inputs.poetry2nix.overlay
           (import ./overlays/share {inherit inputs;})
         ]
         ++ (self.lib.importOverlays ./overlays/share);
