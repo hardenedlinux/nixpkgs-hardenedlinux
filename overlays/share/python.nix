@@ -1,4 +1,5 @@
 final: prev: {
+  __dontExport = true;
   python3 = prev.python3.override (
     old: {
       packageOverrides = prev.lib.composeExtensions (old.packageOverrides or (_: _: {})) (
