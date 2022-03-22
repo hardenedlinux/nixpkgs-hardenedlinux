@@ -1,7 +1,7 @@
 # nvfetcher.toml
 [osquery]
 #src.github = "osquery/osquery"
-src.manual= "5.2.2"
+src.manual = "5.2.2"
 fetch.url = "https://github.com/osquery/osquery/releases/download/$ver/osquery_$ver-1.linux_amd64.deb"
 src.prefix = "v"
 
@@ -10,18 +10,15 @@ src.github = "numtide/nix-unstable-installer"
 fetch.url = "https://github.com/numtide/nix-unstable-installer/releases/download/$ver/install"
 src.prefix = "v"
 
-
 [brim]
 src.github = "brimdata/brim"
 fetch.url = "https://github.com/brimdata/brim/releases/download/v$ver/Brim-$ver.deb"
 src.prefix = "v"
 
-
 [broker]
 src.git = "https://github.com/zeek/broker"
 fetch.github = "zeek/broker"
 git.fetchSubmodules = true
-
 
 [broker-to-json]
 src.github = "grigorescu/broker-to-json"
@@ -34,7 +31,6 @@ fetch.github = "VainlyStrain/Vailyn"
 [sybilhunter]
 src.git = "https://github.com/NullHypothesis/sybilhunter"
 fetch.github = "NullHypothesis/sybilhunter"
-
 
 [eZeeKonfigurator]
 src.git = "https://github.com/esnet/eZeeKonfigurator"
@@ -77,11 +73,9 @@ fetch.github = "fastai/fastcore"
 src.git = "https://github.com/backtick-se/cowait"
 fetch.github = "backtick-se/cowait"
 
-
 [fastprogress]
 src.pypi = "fastprogress"
 fetch.pypi = "fastprogress"
-
 
 [zat]
 src.git = "https://github.com/SuperCowPowers/zat"
@@ -90,8 +84,6 @@ fetch.github = "SuperCowPowers/zat"
 [cliche]
 src.git = "https://github.com/kootenpv/cliche"
 fetch.github = "kootenpv/cliche"
-
-
 
 #Python Packages
 [btest]
@@ -102,8 +94,6 @@ fetch.pypi = "btest"
 src.pypi = "durationpy"
 fetch.pypi = "durationpy"
 
-
-
 #Go Pkgs
 [ghq]
 src.git = "https://github.com/x-motemen/ghq"
@@ -113,15 +103,12 @@ fetch.github = "x-motemen/ghq"
 src.git = "https://github.com/uetchy/gst"
 fetch.github = "uetchy/gst"
 
-
 # [deepsea]
 # src.manual= "b48e9302d079ed9f53a9123a805096a845d2c6a5"
 # fetch.github = "dsnezhkov/deepsea:b48e9302d079ed9f53a9123a805096a845d2c6a5"
 [go-nfsd]
 src.git = "https://github.com/mit-pdos/go-nfsd"
 fetch.github = "mit-pdos/go-nfsd"
-
-
 
 [zed]
 src.git = "https://github.com/brimdata/zed"

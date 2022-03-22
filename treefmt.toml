@@ -1,0 +1,25 @@
+[formatter.nix]
+command = "alejandra"
+includes = ["*.nix"]
+excludes = ["./packags/_sources/*"]
+
+[formatter.prettier]
+command = "prettier"
+options = ["--plugin", "prettier-plugin-toml", "--write"]
+includes = ["*.md", "*.yaml", "*.toml", "*.json"]
+excludes = ["./packages/*", "gomod2nix.toml"]
+
+[formatter.black]
+command = "black"
+includes = ["*.py"]
+
+[formatter.shell]
+command = "shfmt"
+options = [
+  "-i",
+  "2", # indent 2
+  "-s", # simplify the code
+  "-w", # write back to the file
+
+]
+includes = ["*.sh"]

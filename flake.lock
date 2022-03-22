@@ -171,11 +171,11 @@
     },
     "latest": {
       "locked": {
-        "lastModified": 1645695090,
-        "narHash": "sha256-q3FYGic9v062MeHGh0MdfUVmIp3qJU16PwAsA/zXigA=",
+        "lastModified": 1647921675,
+        "narHash": "sha256-Ntwdo1dwwoYaksCZvzbYC+Rq9QeNEs44FqxPDweLaD8=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "3b2d630a2a859375fcc8945b324a9107caef80e0",
+        "rev": "1cec41b727197f8df4f203cb3dfffed80706ca45",
         "type": "github"
       },
       "original": {
@@ -200,8 +200,9 @@
         "type": "github"
       },
       "original": {
-        "id": "mach-nix",
-        "type": "indirect"
+        "owner": "DavHau",
+        "repo": "mach-nix",
+        "type": "github"
       }
     },
     "nixpkgs": {

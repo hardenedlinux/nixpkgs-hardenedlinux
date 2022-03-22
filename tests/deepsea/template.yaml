@@ -3,7 +3,6 @@
 ##
 ## (Required) Mail Client
 mailclient:
-
   ##
   ## Connection
   ##
@@ -29,7 +28,6 @@ mailclient:
   ##
   ## (Required) How email message is constructed
   message:
-
     ## Required) Subject:
     Subject: "What is the meaning of life?"
 
@@ -117,7 +115,6 @@ storage:
 ##
 ## (Optional) content: a list of tools to help with email content templating
 content:
-
   ## Helps generate email templates by merging markdown with styling
   generate:
     ## [In] Markdown file with email content

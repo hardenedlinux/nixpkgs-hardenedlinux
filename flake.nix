@@ -13,11 +13,12 @@
 
     pypi-deps-db.url = "github:DavHau/pypi-deps-db";
     pypi-deps-db.flake = false;
+    mach-nix.url = "github:DavHau/mach-nix";
+    mach-nix.inputs.pypi-deps-db.follows = "pypi-deps-db";
 
-    mach-nix = {inputs.pypi-deps-db.follows = "pypi-deps-db";};
-    check_journal = {url = "github:flyingcircusio/check_journal";};
+    check_journal.url = "github:flyingcircusio/check_journal";
 
-    poetry2nix = {url = "github:nix-community/poetry2nix";};
+    poetry2nix.url = "github:nix-community/poetry2nix";
     poetry2nix.inputs.nixpkgs.follows = "nixpkgs";
 
     gomod2nix = {url = "github:tweag/gomod2nix";};
