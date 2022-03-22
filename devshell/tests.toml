@@ -1,0 +1,5 @@
+[[commands]]
+name = "osquery-nixos"
+category = "tests"
+command = "nix build .#osquery-bin.passthru.tests.osquery-vm-systemd --print-build-logs"
+help = "Test: osquery-bin module"

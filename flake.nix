@@ -39,7 +39,8 @@
 
       lib = import ./lib/self.nix {lib = nixpkgs.lib;};
 
-      supportedSystems = [ "x86_64-linux" ];
+      # supportedSystems = [ "x86_64-linux" ];
+
       channelsConfig = {
         allowUnsupportedSystem = true;
         allowBroken = true;
@@ -69,12 +70,7 @@
         honeygrove = import ./modules/honeygrove.nix;
         osquery-bin = {
           imports = [./modules/osquery.nix];
-          nixpkgs.config.packageOverrides = pkgs: {
-            inherit
-              (self.packages."${pkgs.stdenv.hostPlatform.system}")
-              osquery-bin
-              ;
-          };
+          nixpkgs.config.packageOverrides = pkgs: {} // self.packages."${pkgs.stdenv.hostPlatform.system}";
         };
       };
     };

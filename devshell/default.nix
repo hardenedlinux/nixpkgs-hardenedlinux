@@ -8,7 +8,8 @@ with channels;
   nixpkgs.devshell.mkShell {
     name = "nixpkgs-hardenendlinux";
     imports = [
-      (channels.nixpkgs.devshell.importTOML ./devshell.toml)
+      (nixpkgs.devshell.importTOML ./devshell.toml)
+      (nixpkgs.devshell.importTOML ./tests.toml)
     ];
     packages = [
       nixpkgs.treefmt
@@ -18,7 +19,7 @@ with channels;
       nixpkgs.python3Packages.black
     ];
     commands = [];
-    devshell.startup.nodejs-setuphook = channels.nixpkgs.lib.stringsWithDeps.noDepEntry ''
-      export NODE_PATH=${channels.nixpkgs.nodePackages.prettier-plugin-toml}/lib/node_modules:$NODE_PATH
+    devshell.startup.nodejs-setuphook = nixpkgs.lib.stringsWithDeps.noDepEntry ''
+      export NODE_PATH=${nixpkgs.nodePackages.prettier-plugin-toml}/lib/node_modules:$NODE_PATH
     '';
   }
