@@ -61,6 +61,17 @@
       sha256 = "sha256-kIFp7VHZDWQAT6ypOrmqBzkEXQw2dd96RMXnlhDeK4U=";
     });
   };
+  cowait = {
+    pname = "cowait";
+    version = "f535a117dbfbc9a3886bbdf4862844dbce9aeaa8";
+    src = fetchFromGitHub ({
+      owner = "backtick-se";
+      repo = "cowait";
+      rev = "f535a117dbfbc9a3886bbdf4862844dbce9aeaa8";
+      fetchSubmodules = false;
+      sha256 = "sha256-ZTNXvNkSGOXzrIDr68O1pWACl5+/V6AR85svIt/BjVI=";
+    });
+  };
   durationpy = {
     pname = "durationpy";
     version = "0.5";
@@ -104,13 +115,13 @@
   };
   fastai = {
     pname = "fastai";
-    version = "40a43f11b13e629916e386ff205a1b1d47c11669";
+    version = "773d5b536c42234a58731a372228ade846804745";
     src = fetchFromGitHub ({
       owner = "fastai";
       repo = "fastai";
-      rev = "40a43f11b13e629916e386ff205a1b1d47c11669";
+      rev = "773d5b536c42234a58731a372228ade846804745";
       fetchSubmodules = false;
-      sha256 = "sha256-bhm17VXGTSOShLZ4xE8AW0dL75/Mggw99KUYknaVXa4=";
+      sha256 = "sha256-DESoc6asyAOUFYLFl+UnP3tej4YfDONpOjUsAH3vbeA=";
     });
   };
   fastcore = {
@@ -167,10 +178,10 @@
   };
   nix-unstable-installer = {
     pname = "nix-unstable-installer";
-    version = "nix-2.8.0pre20220311_d532269";
+    version = "nix-2.8.0pre20220314_a618097";
     src = fetchurl {
-      url = "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.8.0pre20220311_d532269/install";
-      sha256 = "sha256-XvZ7m11Q+VlGio/HxYH+xO0mNPbhaFZitBG00aaARLQ=";
+      url = "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.8.0pre20220314_a618097/install";
+      sha256 = "sha256-cqYoXbu77nHeZ/vXZ2uMUrJRpxCf5WLQPoGz8dfkNig=";
     };
   };
   nvdtools = {
@@ -238,13 +249,13 @@
   };
   zed = {
     pname = "zed";
-    version = "f24ab19adfa951aed96733fd0fbe97fa4ec58b79";
+    version = "f6a634a360cab62356de6e492c6a8e75f24d548e";
     src = fetchFromGitHub ({
       owner = "brimdata";
       repo = "zed";
-      rev = "f24ab19adfa951aed96733fd0fbe97fa4ec58b79";
+      rev = "f6a634a360cab62356de6e492c6a8e75f24d548e";
       fetchSubmodules = false;
-      sha256 = "sha256-z1xr1dN0QRNCahA1hLGJEeqyK++VT2x0m3dU+EGA7D0=";
+      sha256 = "sha256-zSZubIliZPqNC5dMv3KeSUVFu/wfvLtFUT592BarRvA=";
     });
   };
   zeekscript = {
