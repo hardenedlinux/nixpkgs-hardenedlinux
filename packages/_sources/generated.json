@@ -119,12 +119,12 @@
             "name": null,
             "repo": "zed",
             "type": "github",
-            "sha256": "sha256-zSZubIliZPqNC5dMv3KeSUVFu/wfvLtFUT592BarRvA=",
-            "rev": "f6a634a360cab62356de6e492c6a8e75f24d548e",
+            "sha256": "sha256-cK5dsCNm/3w7DmX6ChghBjwoJUZhJ8RTppc+dGIxZpM=",
+            "rev": "4e09ace85d9b3c1bb37db41d600084df517ff0d9",
             "leaveDotGit": false,
             "fetchSubmodules": false
         },
-        "version": "f6a634a360cab62356de6e492c6a8e75f24d548e",
+        "version": "4e09ace85d9b3c1bb37db41d600084df517ff0d9",
         "passthru": null,
         "extract": null,
         "rustGitDeps": null
@@ -190,11 +190,11 @@
             "repo": "zat",
             "type": "github",
             "sha256": "sha256-LHxBzb2glKaseC4RIS501qjKVSKY8zv9dl+llmY6P84=",
-            "rev": "7f0de8bb052e8c84ab9bd00f195514d957eac9ec",
+            "rev": "9f4d41d57344880a472db6f8d7caa41be0274f45",
             "leaveDotGit": false,
             "fetchSubmodules": false
         },
-        "version": "7f0de8bb052e8c84ab9bd00f195514d957eac9ec",
+        "version": "9f4d41d57344880a472db6f8d7caa41be0274f45",
         "passthru": null,
         "extract": null,
         "rustGitDeps": null
@@ -224,12 +224,12 @@
             "name": null,
             "repo": "go-nfsd",
             "type": "github",
-            "sha256": "sha256-x4ua6sITDWlrvECcIys4wiFeKkxjcQq1oSVvubY4owI=",
-            "rev": "098c29ca8420a6a7064005ad403df663accdd087",
+            "sha256": "sha256-wn4+DuJureR+qnVjf7ZvM+bfFPslKNiUkaMluFuMchE=",
+            "rev": "5120b7c39ab40b694c0d43ce8c29a81507c0e9b6",
             "leaveDotGit": false,
             "fetchSubmodules": false
         },
-        "version": "098c29ca8420a6a7064005ad403df663accdd087",
+        "version": "5120b7c39ab40b694c0d43ce8c29a81507c0e9b6",
         "passthru": null,
         "extract": null,
         "rustGitDeps": null
@@ -264,12 +264,12 @@
             "name": null,
             "repo": "elastalert2",
             "type": "github",
-            "sha256": "sha256-4UKtBB0l+S+aYAmEo/emgzhof64k+/kY7X+uYL26yOQ=",
-            "rev": "4d9da4d738a324683f484382238c1e233922788c",
+            "sha256": "sha256-mxYtUXJ34BHbUOc6hR9s2kx/shLWTGhlG8z9JdEdM0U=",
+            "rev": "56c8099eec3859a08e373498de98b98458424210",
             "leaveDotGit": false,
             "fetchSubmodules": false
         },
-        "version": "4d9da4d738a324683f484382238c1e233922788c",
+        "version": "56c8099eec3859a08e373498de98b98458424210",
         "passthru": null,
         "extract": null,
         "rustGitDeps": null
@@ -439,12 +439,12 @@
             "name": null,
             "repo": "fastai",
             "type": "github",
-            "sha256": "sha256-DESoc6asyAOUFYLFl+UnP3tej4YfDONpOjUsAH3vbeA=",
-            "rev": "773d5b536c42234a58731a372228ade846804745",
+            "sha256": "sha256-iUZC6vRphVbB3/a4wftI5g0KZrfA7eusYAq37dXqM2g=",
+            "rev": "01d7f879d3efe14530243e1074c1c5efbd717195",
             "leaveDotGit": false,
             "fetchSubmodules": false
         },
-        "version": "773d5b536c42234a58731a372228ade846804745",
+        "version": "01d7f879d3efe14530243e1074c1c5efbd717195",
         "passthru": null,
         "extract": null,
         "rustGitDeps": null
@@ -459,12 +459,12 @@
             "name": null,
             "repo": "cliche",
             "type": "github",
-            "sha256": "sha256-kIFp7VHZDWQAT6ypOrmqBzkEXQw2dd96RMXnlhDeK4U=",
-            "rev": "ec501e2db92b4e87e7858b09149deb45dd88018c",
+            "sha256": "sha256-x09eZDcxljWA86+lXij6DIz0R3HYH18JNA37hEoIbqM=",
+            "rev": "2b0369de9473a832974c623724ba4e314e3af8f4",
             "leaveDotGit": false,
             "fetchSubmodules": false
         },
-        "version": "ec501e2db92b4e87e7858b09149deb45dd88018c",
+        "version": "2b0369de9473a832974c623724ba4e314e3af8f4",
         "passthru": null,
         "extract": null,
         "rustGitDeps": null
