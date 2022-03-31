@@ -61,6 +61,17 @@
       sha256 = "sha256-x09eZDcxljWA86+lXij6DIz0R3HYH18JNA37hEoIbqM=";
     });
   };
+  container-structure-test = {
+    pname = "container-structure-test";
+    version = "59c5221e5a4e7e2c8680c273c25cb405d8f8eb8b";
+    src = fetchFromGitHub ({
+      owner = "GoogleContainerTools";
+      repo = "container-structure-test";
+      rev = "59c5221e5a4e7e2c8680c273c25cb405d8f8eb8b";
+      fetchSubmodules = false;
+      sha256 = "sha256-+7GuTV6a3a+fG4Kqwcq4Ro4MPCeWb0PvY3mFbsCklVc=";
+    });
+  };
   cowait = {
     pname = "cowait";
     version = "f535a117dbfbc9a3886bbdf4862844dbce9aeaa8";
@@ -104,35 +115,35 @@
   };
   elastalert2 = {
     pname = "elastalert2";
-    version = "56c8099eec3859a08e373498de98b98458424210";
+    version = "677a26156b2776421f93a99e549b0e51eb1af997";
     src = fetchFromGitHub ({
       owner = "jertel";
       repo = "elastalert2";
-      rev = "56c8099eec3859a08e373498de98b98458424210";
+      rev = "677a26156b2776421f93a99e549b0e51eb1af997";
       fetchSubmodules = false;
-      sha256 = "sha256-mxYtUXJ34BHbUOc6hR9s2kx/shLWTGhlG8z9JdEdM0U=";
+      sha256 = "sha256-hj4domRukH/UfhHqghvuDMY1NqhHdr1dDsWIV1PBCnc=";
     });
   };
   fastai = {
     pname = "fastai";
-    version = "01d7f879d3efe14530243e1074c1c5efbd717195";
+    version = "f91e058f500fdcebb9af74654bf14a2edc430cc0";
     src = fetchFromGitHub ({
       owner = "fastai";
       repo = "fastai";
-      rev = "01d7f879d3efe14530243e1074c1c5efbd717195";
+      rev = "f91e058f500fdcebb9af74654bf14a2edc430cc0";
       fetchSubmodules = false;
-      sha256 = "sha256-iUZC6vRphVbB3/a4wftI5g0KZrfA7eusYAq37dXqM2g=";
+      sha256 = "sha256-bKmDUuoMfJPeFi7XRtcl27bgeSgMjtze0YMipfkSvpc=";
     });
   };
   fastcore = {
     pname = "fastcore";
-    version = "75614b2a75c8128c79c02a61a2bb1a4ef87f3bb6";
+    version = "3985c1dae2d4fbd98d004d6b77bea68720c1d4d0";
     src = fetchFromGitHub ({
       owner = "fastai";
       repo = "fastcore";
-      rev = "75614b2a75c8128c79c02a61a2bb1a4ef87f3bb6";
+      rev = "3985c1dae2d4fbd98d004d6b77bea68720c1d4d0";
       fetchSubmodules = false;
-      sha256 = "sha256-mINB1TLNiyY1z4oIZZjzV7y9IqnhgJjK3yfhhHUEsSY=";
+      sha256 = "sha256-IV8tFfCMQd4UiNQDHlA7U6l7D4Y+G2q8Zx2H2Y9aXIc=";
     });
   };
   fastprogress = {
@@ -156,13 +167,13 @@
   };
   go-nfsd = {
     pname = "go-nfsd";
-    version = "5120b7c39ab40b694c0d43ce8c29a81507c0e9b6";
+    version = "297918dc3d4c7913a0ba91841556a7f0506a1ae2";
     src = fetchFromGitHub ({
       owner = "mit-pdos";
       repo = "go-nfsd";
-      rev = "5120b7c39ab40b694c0d43ce8c29a81507c0e9b6";
+      rev = "297918dc3d4c7913a0ba91841556a7f0506a1ae2";
       fetchSubmodules = false;
-      sha256 = "sha256-wn4+DuJureR+qnVjf7ZvM+bfFPslKNiUkaMluFuMchE=";
+      sha256 = "sha256-/RoFQ+EMmOQyI8vHQH40PIbhfOUHq5hJAwfzsVZqE1k=";
     });
   };
   gst = {
@@ -238,24 +249,24 @@
   };
   zat = {
     pname = "zat";
-    version = "9f4d41d57344880a472db6f8d7caa41be0274f45";
+    version = "2088124ba1ba564079c89c96c17e32a0727b76f6";
     src = fetchFromGitHub ({
       owner = "SuperCowPowers";
       repo = "zat";
-      rev = "9f4d41d57344880a472db6f8d7caa41be0274f45";
+      rev = "2088124ba1ba564079c89c96c17e32a0727b76f6";
       fetchSubmodules = false;
-      sha256 = "sha256-LHxBzb2glKaseC4RIS501qjKVSKY8zv9dl+llmY6P84=";
+      sha256 = "sha256-UH0xZNuqVY79OaO2dRjiD4SqvuJHx4EOTjMn1zSWPVQ=";
     });
   };
   zed = {
     pname = "zed";
-    version = "4e09ace85d9b3c1bb37db41d600084df517ff0d9";
+    version = "076e53b5a85a48bab573c5425d895cabca078eae";
     src = fetchFromGitHub ({
       owner = "brimdata";
       repo = "zed";
-      rev = "4e09ace85d9b3c1bb37db41d600084df517ff0d9";
+      rev = "076e53b5a85a48bab573c5425d895cabca078eae";
       fetchSubmodules = false;
-      sha256 = "sha256-cK5dsCNm/3w7DmX6ChghBjwoJUZhJ8RTppc+dGIxZpM=";
+      sha256 = "sha256-njK/qf8irgTy3mhpAtvt0xdipQCzOhhcD0BhhEwlG6w=";
     });
   };
   zeekscript = {

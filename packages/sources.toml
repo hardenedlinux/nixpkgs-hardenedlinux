@@ -117,3 +117,7 @@ fetch.github = "brimdata/zed"
 [nvdtools]
 src.git = "https://github.com/facebookincubator/nvdtools"
 fetch.github = "facebookincubator/nvdtools"
+
+[container-structure-test]
+src.git = "https://github.com/GoogleContainerTools/container-structure-test"
+fetch.github = "GoogleContainerTools/container-structure-test"

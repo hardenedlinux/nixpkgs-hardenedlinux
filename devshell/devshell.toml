@@ -1,5 +1,5 @@
 [devshell]
-packages = ["treefmt"]
+packages = ["treefmt", "cowait"]
 
 [[commands]]
 name = "CI-flake-show"

@@ -14,7 +14,6 @@
   };
 in
   poetry2nix.mkPoetryApplication rec {
-    python = python3;
     projectDir = ./.;
     src = nixpkgs-hardenedlinux-sources.cowait.src;
     overrides = [poetry2nix.defaultPoetryOverrides customOverrides];

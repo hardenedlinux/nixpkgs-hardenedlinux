@@ -1,4 +1,24 @@
 {
+    "container-structure-test": {
+        "pinned": false,
+        "cargoLock": null,
+        "name": "container-structure-test",
+        "src": {
+            "deepClone": false,
+            "owner": "GoogleContainerTools",
+            "name": null,
+            "repo": "container-structure-test",
+            "type": "github",
+            "sha256": "sha256-+7GuTV6a3a+fG4Kqwcq4Ro4MPCeWb0PvY3mFbsCklVc=",
+            "rev": "59c5221e5a4e7e2c8680c273c25cb405d8f8eb8b",
+            "leaveDotGit": false,
+            "fetchSubmodules": false
+        },
+        "version": "59c5221e5a4e7e2c8680c273c25cb405d8f8eb8b",
+        "passthru": null,
+        "extract": null,
+        "rustGitDeps": null
+    },
     "brim": {
         "pinned": false,
         "cargoLock": null,
@@ -44,12 +64,12 @@
             "name": null,
             "repo": "fastcore",
             "type": "github",
-            "sha256": "sha256-mINB1TLNiyY1z4oIZZjzV7y9IqnhgJjK3yfhhHUEsSY=",
-            "rev": "75614b2a75c8128c79c02a61a2bb1a4ef87f3bb6",
+            "sha256": "sha256-IV8tFfCMQd4UiNQDHlA7U6l7D4Y+G2q8Zx2H2Y9aXIc=",
+            "rev": "3985c1dae2d4fbd98d004d6b77bea68720c1d4d0",
             "leaveDotGit": false,
             "fetchSubmodules": false
         },
-        "version": "75614b2a75c8128c79c02a61a2bb1a4ef87f3bb6",
+        "version": "3985c1dae2d4fbd98d004d6b77bea68720c1d4d0",
         "passthru": null,
         "extract": null,
         "rustGitDeps": null
@@ -119,12 +139,12 @@
             "name": null,
             "repo": "zed",
             "type": "github",
-            "sha256": "sha256-cK5dsCNm/3w7DmX6ChghBjwoJUZhJ8RTppc+dGIxZpM=",
-            "rev": "4e09ace85d9b3c1bb37db41d600084df517ff0d9",
+            "sha256": "sha256-njK/qf8irgTy3mhpAtvt0xdipQCzOhhcD0BhhEwlG6w=",
+            "rev": "076e53b5a85a48bab573c5425d895cabca078eae",
             "leaveDotGit": false,
             "fetchSubmodules": false
         },
-        "version": "4e09ace85d9b3c1bb37db41d600084df517ff0d9",
+        "version": "076e53b5a85a48bab573c5425d895cabca078eae",
         "passthru": null,
         "extract": null,
         "rustGitDeps": null
@@ -189,12 +209,12 @@
             "name": null,
             "repo": "zat",
             "type": "github",
-            "sha256": "sha256-LHxBzb2glKaseC4RIS501qjKVSKY8zv9dl+llmY6P84=",
-            "rev": "9f4d41d57344880a472db6f8d7caa41be0274f45",
+            "sha256": "sha256-UH0xZNuqVY79OaO2dRjiD4SqvuJHx4EOTjMn1zSWPVQ=",
+            "rev": "2088124ba1ba564079c89c96c17e32a0727b76f6",
             "leaveDotGit": false,
             "fetchSubmodules": false
         },
-        "version": "9f4d41d57344880a472db6f8d7caa41be0274f45",
+        "version": "2088124ba1ba564079c89c96c17e32a0727b76f6",
         "passthru": null,
         "extract": null,
         "rustGitDeps": null
@@ -224,12 +244,12 @@
             "name": null,
             "repo": "go-nfsd",
             "type": "github",
-            "sha256": "sha256-wn4+DuJureR+qnVjf7ZvM+bfFPslKNiUkaMluFuMchE=",
-            "rev": "5120b7c39ab40b694c0d43ce8c29a81507c0e9b6",
+            "sha256": "sha256-/RoFQ+EMmOQyI8vHQH40PIbhfOUHq5hJAwfzsVZqE1k=",
+            "rev": "297918dc3d4c7913a0ba91841556a7f0506a1ae2",
             "leaveDotGit": false,
             "fetchSubmodules": false
         },
-        "version": "5120b7c39ab40b694c0d43ce8c29a81507c0e9b6",
+        "version": "297918dc3d4c7913a0ba91841556a7f0506a1ae2",
         "passthru": null,
         "extract": null,
         "rustGitDeps": null
@@ -264,12 +284,12 @@
             "name": null,
             "repo": "elastalert2",
             "type": "github",
-            "sha256": "sha256-mxYtUXJ34BHbUOc6hR9s2kx/shLWTGhlG8z9JdEdM0U=",
-            "rev": "56c8099eec3859a08e373498de98b98458424210",
+            "sha256": "sha256-hj4domRukH/UfhHqghvuDMY1NqhHdr1dDsWIV1PBCnc=",
+            "rev": "677a26156b2776421f93a99e549b0e51eb1af997",
             "leaveDotGit": false,
             "fetchSubmodules": false
         },
-        "version": "56c8099eec3859a08e373498de98b98458424210",
+        "version": "677a26156b2776421f93a99e549b0e51eb1af997",
         "passthru": null,
         "extract": null,
         "rustGitDeps": null
@@ -439,12 +459,12 @@
             "name": null,
             "repo": "fastai",
             "type": "github",
-            "sha256": "sha256-iUZC6vRphVbB3/a4wftI5g0KZrfA7eusYAq37dXqM2g=",
-            "rev": "01d7f879d3efe14530243e1074c1c5efbd717195",
+            "sha256": "sha256-bKmDUuoMfJPeFi7XRtcl27bgeSgMjtze0YMipfkSvpc=",
+            "rev": "f91e058f500fdcebb9af74654bf14a2edc430cc0",
             "leaveDotGit": false,
             "fetchSubmodules": false
         },
-        "version": "01d7f879d3efe14530243e1074c1c5efbd717195",
+        "version": "f91e058f500fdcebb9af74654bf14a2edc430cc0",
         "passthru": null,
         "extract": null,
         "rustGitDeps": null
