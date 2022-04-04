@@ -2,8 +2,8 @@
   description = "Hardenedlinux Nixpkgs Collection -> Nix Flakes ";
   nixConfig = {
     flake-registry = "https://github.com/hardenedlinux/flake-registry/raw/main/flake-registry.json";
-    #flake-registry = "/home/gtrun/ghq/github.com/hardenedlinux/flake-registry/flake-registry.json";
   };
+
   inputs = {
     flake-compat.url = "github:edolstra/flake-compat";
     flake-compat.flake = false;
@@ -21,7 +21,7 @@
     poetry2nix.url = "github:nix-community/poetry2nix";
     poetry2nix.inputs.nixpkgs.follows = "nixpkgs";
 
-    gomod2nix = {url = "github:tweag/gomod2nix";};
+    gomod2nix.url = "github:tweag/gomod2nix";
     gomod2nix.inputs.nixpkgs.follows = "nixpkgs";
   };
   outputs = {

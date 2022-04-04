@@ -5,5 +5,4 @@ final: prev: rec {
   btest = prev.python3Packages.callPackage ./btest {};
   zeekscript = prev.python3Packages.callPackage ./zeekscript {inherit py-tree-sitter;};
   py-tree-sitter = prev.python3Packages.callPackage ./py-tree-sitter {};
-  cowait = prev.python3Packages.callPackage ./cowait {};
 }

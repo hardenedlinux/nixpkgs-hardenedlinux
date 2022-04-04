@@ -3,10 +3,10 @@
 {
   brim = {
     pname = "brim";
-    version = "0.28.0";
+    version = "0.29.0";
     src = fetchurl {
-      url = "https://github.com/brimdata/brim/releases/download/v0.28.0/Brim-0.28.0.deb";
-      sha256 = "sha256-p0PnebxPoS1zFVjLe9brqr1fjJKxCMVU9BzaMUfz7z8=";
+      url = "https://github.com/brimdata/brim/releases/download/v0.29.0/Brim-0.29.0.deb";
+      sha256 = "sha256-cPjNZgzz9SyVr2NO3ZV0NfiO0i/jxHr5v4fAkTnz5CM=";
     };
   };
   broker = {
@@ -72,17 +72,6 @@
       sha256 = "sha256-+7GuTV6a3a+fG4Kqwcq4Ro4MPCeWb0PvY3mFbsCklVc=";
     });
   };
-  cowait = {
-    pname = "cowait";
-    version = "f535a117dbfbc9a3886bbdf4862844dbce9aeaa8";
-    src = fetchFromGitHub ({
-      owner = "backtick-se";
-      repo = "cowait";
-      rev = "f535a117dbfbc9a3886bbdf4862844dbce9aeaa8";
-      fetchSubmodules = false;
-      sha256 = "sha256-ZTNXvNkSGOXzrIDr68O1pWACl5+/V6AR85svIt/BjVI=";
-    });
-  };
   durationpy = {
     pname = "durationpy";
     version = "0.5";
@@ -115,35 +104,35 @@
   };
   elastalert2 = {
     pname = "elastalert2";
-    version = "677a26156b2776421f93a99e549b0e51eb1af997";
+    version = "e155b8d1ac449ba2df7899ce4a6e48b3ece0e204";
     src = fetchFromGitHub ({
       owner = "jertel";
       repo = "elastalert2";
-      rev = "677a26156b2776421f93a99e549b0e51eb1af997";
+      rev = "e155b8d1ac449ba2df7899ce4a6e48b3ece0e204";
       fetchSubmodules = false;
-      sha256 = "sha256-hj4domRukH/UfhHqghvuDMY1NqhHdr1dDsWIV1PBCnc=";
+      sha256 = "sha256-6c9+zge6NFPANPP/N5SGt60SvS6/6oYhsfkSEYE1kwQ=";
     });
   };
   fastai = {
     pname = "fastai";
-    version = "f91e058f500fdcebb9af74654bf14a2edc430cc0";
+    version = "409a22a487a7807bb2d00bd688a1bfe7ccb8d01c";
     src = fetchFromGitHub ({
       owner = "fastai";
       repo = "fastai";
-      rev = "f91e058f500fdcebb9af74654bf14a2edc430cc0";
+      rev = "409a22a487a7807bb2d00bd688a1bfe7ccb8d01c";
       fetchSubmodules = false;
-      sha256 = "sha256-bKmDUuoMfJPeFi7XRtcl27bgeSgMjtze0YMipfkSvpc=";
+      sha256 = "sha256-GaPyBJjMZQZLKu7FOtGhcwIVMP3RfSlVsB1agiu648o=";
     });
   };
   fastcore = {
     pname = "fastcore";
-    version = "3985c1dae2d4fbd98d004d6b77bea68720c1d4d0";
+    version = "d543f6cb26dbd23b56ebb5d75aefaccd3c607194";
     src = fetchFromGitHub ({
       owner = "fastai";
       repo = "fastcore";
-      rev = "3985c1dae2d4fbd98d004d6b77bea68720c1d4d0";
+      rev = "d543f6cb26dbd23b56ebb5d75aefaccd3c607194";
       fetchSubmodules = false;
-      sha256 = "sha256-IV8tFfCMQd4UiNQDHlA7U6l7D4Y+G2q8Zx2H2Y9aXIc=";
+      sha256 = "sha256-GQAvJ56uE9uo1H1bRG5FUuC9wRVJ1MtFD6sZNGs2K04=";
     });
   };
   fastprogress = {
@@ -216,13 +205,13 @@
   };
   py-tree-sitter = {
     pname = "py-tree-sitter";
-    version = "620acebb61987ca28ac3b8bd1ad78a6b46d6f1e0";
+    version = "e973edc8c071aaa863687ace8e388cbd3cae016d";
     src = fetchFromGitHub ({
       owner = "tree-sitter";
       repo = "py-tree-sitter";
-      rev = "620acebb61987ca28ac3b8bd1ad78a6b46d6f1e0";
+      rev = "e973edc8c071aaa863687ace8e388cbd3cae016d";
       fetchSubmodules = true;
-      sha256 = "sha256-cxJrsmfce+Hc+L0ypHyF5Mn0EiIZGhdDdCNYzrLjFEU=";
+      sha256 = "sha256-n2RBt+zhkahT6MgPsq+BlAmKam+slYEjXInKDIyFwtc=";
     });
   };
   sybilhunter = {
@@ -260,13 +249,13 @@
   };
   zed = {
     pname = "zed";
-    version = "076e53b5a85a48bab573c5425d895cabca078eae";
+    version = "9f2ea8a47a40981b96c06ef359ba36d532a3a7fc";
     src = fetchFromGitHub ({
       owner = "brimdata";
       repo = "zed";
-      rev = "076e53b5a85a48bab573c5425d895cabca078eae";
+      rev = "9f2ea8a47a40981b96c06ef359ba36d532a3a7fc";
       fetchSubmodules = false;
-      sha256 = "sha256-njK/qf8irgTy3mhpAtvt0xdipQCzOhhcD0BhhEwlG6w=";
+      sha256 = "sha256-gvxjHOnui3yc+ZOTyfh+HyQJictrkPkYXnkfcHn0d6A=";
     });
   };
   zeekscript = {
