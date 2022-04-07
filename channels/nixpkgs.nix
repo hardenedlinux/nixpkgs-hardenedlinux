@@ -9,7 +9,7 @@
       (import ../packages/inputs-packages.nix {inherit inputs;})
       (import ../packages/pkgs/nixos-tests.nix {inherit inputs;})
       (import ../packages/pkgs)
-      (import ../packages/python-pkgs)
+      (import ../packages/python)
       (
         final: prev: {
           inherit
