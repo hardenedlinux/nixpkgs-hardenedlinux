@@ -77,6 +77,10 @@ fetch.pypi = "fastprogress"
 src.git = "https://github.com/SuperCowPowers/zat"
 fetch.github = "SuperCowPowers/zat"
 
+[vault-cli]
+src.git = "https://github.com/peopledoc/vault-cli"
+fetch.github = "peopledoc/vault-cli"
+
 [cliche]
 src.git = "https://github.com/kootenpv/cliche"
 fetch.github = "kootenpv/cliche"
