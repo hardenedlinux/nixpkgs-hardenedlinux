@@ -10,6 +10,7 @@
       (import ../packages/pkgs/nixos-tests.nix {inherit inputs;})
       (import ../packages/pkgs)
       (import ../packages/python)
+      (import ../packages/go)
       (
         final: prev: {
           inherit
@@ -19,5 +20,5 @@
         }
       )
     ]
-    ++ (self.lib.importOverlays ../overlays/nixpkgs);
+    ++ (self.lib.importOverlays ./overlays/nixpkgs);
 }

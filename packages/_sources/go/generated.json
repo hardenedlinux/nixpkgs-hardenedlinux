@@ -1,0 +1,22 @@
+{
+    "tc-redirect-tap": {
+        "pinned": false,
+        "cargoLock": null,
+        "name": "tc-redirect-tap",
+        "src": {
+            "deepClone": false,
+            "owner": "awslabs",
+            "name": null,
+            "repo": "tc-redirect-tap",
+            "type": "github",
+            "sha256": "sha256-sGYxO/LxkyazANOdBLEsCLb5y/9K8PNAWkmxGKWa6CE=",
+            "rev": "c02cef088b3b7f8d2c65271aace7b3de076294e3",
+            "leaveDotGit": false,
+            "fetchSubmodules": false
+        },
+        "version": "c02cef088b3b7f8d2c65271aace7b3de076294e3",
+        "passthru": null,
+        "extract": null,
+        "rustGitDeps": null
+    }
+}

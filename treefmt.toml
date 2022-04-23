@@ -1,7 +1,7 @@
 [formatter.nix]
 command = "alejandra"
 includes = ["*.nix"]
-excludes = ["./packags/_sources/*"]
+excludes = ["./packages/_sources/*"]
 
 [formatter.prettier]
 command = "prettier"
@@ -22,4 +22,4 @@ options = [
   "-w", # write back to the file
 
 ]
-includes = ["*.sh"]
+includes = ["*.sh", "*.bash"]

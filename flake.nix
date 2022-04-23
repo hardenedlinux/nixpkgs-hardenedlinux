@@ -5,6 +5,8 @@
   };
 
   inputs = {
+    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+
     flake-compat.url = "github:edolstra/flake-compat";
     flake-compat.flake = false;
 
@@ -54,9 +56,9 @@
           inputs.gomod2nix.overlay
           inputs.devshell.overlay
           inputs.poetry2nix.overlay
-          (import ./overlays/share {inherit inputs;})
+          (import ./channels/overlays/shared {inherit inputs;})
         ]
-        ++ (self.lib.importOverlays ./overlays/share);
+        ++ (self.lib.importOverlays ./channels/overlays/shared);
       # exportOverlays automatically for all packages defined in overlaysBuilder of each channel
       overlays = exportOverlays {inherit (self) pkgs inputs;};
       outputsBuilder = channels: {

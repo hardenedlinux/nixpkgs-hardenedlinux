@@ -52,13 +52,13 @@
   };
   cliche = {
     pname = "cliche";
-    version = "363c301afc11e739bec5a1798dd5e9216c7181be";
+    version = "176a120bd90c5359e3dd6086da2807f7234925df";
     src = fetchFromGitHub ({
       owner = "kootenpv";
       repo = "cliche";
-      rev = "363c301afc11e739bec5a1798dd5e9216c7181be";
+      rev = "176a120bd90c5359e3dd6086da2807f7234925df";
       fetchSubmodules = false;
-      sha256 = "sha256-HzBzS8GKZLOPaWv68nieZqo7E4xNGIEQsis4CrLDXiA=";
+      sha256 = "sha256-5SOhiqZUX8yVMx7BgnXre93XbPhZTeKdMmAq8GRNN2g=";
     });
   };
   container-structure-test = {
@@ -104,35 +104,35 @@
   };
   elastalert2 = {
     pname = "elastalert2";
-    version = "cc3e5d0c3ad5789242f92cd8f27cdccd221e880d";
+    version = "4c0afcb7f3e08be4b47889f1f83e2dd4e7eaa514";
     src = fetchFromGitHub ({
       owner = "jertel";
       repo = "elastalert2";
-      rev = "cc3e5d0c3ad5789242f92cd8f27cdccd221e880d";
+      rev = "4c0afcb7f3e08be4b47889f1f83e2dd4e7eaa514";
       fetchSubmodules = false;
-      sha256 = "sha256-zojKoGAZhBqw7tb978khGifjZx6AEU7KMx5sVI0KqCE=";
+      sha256 = "sha256-UvyqQ9GhZoRmXfRXCzlh9IdomE7Ziqpi1LZ0ECbQ8JY=";
     });
   };
   fastai = {
     pname = "fastai";
-    version = "c47022bf0f8e106868d8b422801ecf18e9903d89";
+    version = "6d5fbd849c9cafacd4588d841eccd27284c482f7";
     src = fetchFromGitHub ({
       owner = "fastai";
       repo = "fastai";
-      rev = "c47022bf0f8e106868d8b422801ecf18e9903d89";
+      rev = "6d5fbd849c9cafacd4588d841eccd27284c482f7";
       fetchSubmodules = false;
-      sha256 = "sha256-efYj3uGvk06kvAm+VKbKBvV0zPF2Ib6kTkffju+FuG0=";
+      sha256 = "sha256-Yul6edZAXIdbJzGsOm8OpSuHESv8C95oP5gQ6+ovjJU=";
     });
   };
   fastcore = {
     pname = "fastcore";
-    version = "d543f6cb26dbd23b56ebb5d75aefaccd3c607194";
+    version = "cced1ec2b267d125cb3c49590475783f29a0343c";
     src = fetchFromGitHub ({
       owner = "fastai";
       repo = "fastcore";
-      rev = "d543f6cb26dbd23b56ebb5d75aefaccd3c607194";
+      rev = "cced1ec2b267d125cb3c49590475783f29a0343c";
       fetchSubmodules = false;
-      sha256 = "sha256-GQAvJ56uE9uo1H1bRG5FUuC9wRVJ1MtFD6sZNGs2K04=";
+      sha256 = "sha256-py3pVDIZiRvc8rGrQyPduPdSDPaU1b/m/nPrJB5ocnc=";
     });
   };
   fastprogress = {
@@ -178,21 +178,21 @@
   };
   nix-unstable-installer = {
     pname = "nix-unstable-installer";
-    version = "nix-2.8.0pre20220314_a618097";
+    version = "nix-2.8.0pre20220415_b135de2";
     src = fetchurl {
-      url = "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.8.0pre20220314_a618097/install";
-      sha256 = "sha256-cqYoXbu77nHeZ/vXZ2uMUrJRpxCf5WLQPoGz8dfkNig=";
+      url = "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.8.0pre20220415_b135de2/install";
+      sha256 = "sha256-SgIqm1IaEnNn5FNt4BnxDrxEF/nuUzsekmBAzF9ea9g=";
     };
   };
   nvdtools = {
     pname = "nvdtools";
-    version = "d3c1402e869cbf76ea00caed7693721bb5c63ef0";
+    version = "22daa55f30c8aa6a78565cc6b4c160c41b867636";
     src = fetchFromGitHub ({
       owner = "facebookincubator";
       repo = "nvdtools";
-      rev = "d3c1402e869cbf76ea00caed7693721bb5c63ef0";
+      rev = "22daa55f30c8aa6a78565cc6b4c160c41b867636";
       fetchSubmodules = false;
-      sha256 = "sha256-cwXw5WxTZJPfh3SEgCToBfeWMM6u20Ur66RG/N3oBKo=";
+      sha256 = "sha256-uB7dfqGaoP9Xx04BykscIFQ2rckaMaj93gh5mhgMqfw=";
     });
   };
   osquery = {
@@ -205,13 +205,13 @@
   };
   py-tree-sitter = {
     pname = "py-tree-sitter";
-    version = "e973edc8c071aaa863687ace8e388cbd3cae016d";
+    version = "3eb2058081f204ed39a259fe7dc3df259a887567";
     src = fetchFromGitHub ({
       owner = "tree-sitter";
       repo = "py-tree-sitter";
-      rev = "e973edc8c071aaa863687ace8e388cbd3cae016d";
+      rev = "3eb2058081f204ed39a259fe7dc3df259a887567";
       fetchSubmodules = true;
-      sha256 = "sha256-n2RBt+zhkahT6MgPsq+BlAmKam+slYEjXInKDIyFwtc=";
+      sha256 = "sha256-hHfitDKcuPDFoSaM8FILU1ackwv2Lml4jjlOK5TlbcQ=";
     });
   };
   sybilhunter = {
@@ -260,24 +260,24 @@
   };
   zed = {
     pname = "zed";
-    version = "7543cb4d887ae2cb9167a72f9e33fa13aedf1cd8";
+    version = "f9b51836c0279a038b909ef5ed0f2a987dfdce6d";
     src = fetchFromGitHub ({
       owner = "brimdata";
       repo = "zed";
-      rev = "7543cb4d887ae2cb9167a72f9e33fa13aedf1cd8";
+      rev = "f9b51836c0279a038b909ef5ed0f2a987dfdce6d";
       fetchSubmodules = false;
-      sha256 = "sha256-RCI01fGG5nzkAPYU569nKnA9/3n6fAObjB0i5sszNW8=";
+      sha256 = "sha256-a5Nm71p1nQnrZ4DyQJ0kOX5ROaLaEni9/LkPMwDvfrE=";
     });
   };
   zeekscript = {
     pname = "zeekscript";
-    version = "05f8bdb90dd2ef69c4c12f06b35dc5196c193cd3";
+    version = "ef6ea8440cd79f4284d9e686ec9520cf8b8cd7c4";
     src = fetchFromGitHub ({
       owner = "zeek";
       repo = "zeekscript";
-      rev = "05f8bdb90dd2ef69c4c12f06b35dc5196c193cd3";
+      rev = "ef6ea8440cd79f4284d9e686ec9520cf8b8cd7c4";
       fetchSubmodules = true;
-      sha256 = "sha256-YRJHFNttuvCOjB4X8iy9zAYW2NPECSroAt/dU4uDEoU=";
+      sha256 = "sha256-ReiP4ZpNXH2XDaWmIq8uJc13M+6/qnbvGsAX2ik/kTQ=";
     });
   };
 }
