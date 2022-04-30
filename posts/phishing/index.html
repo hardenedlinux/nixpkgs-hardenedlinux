@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html><title>Posts</title>
+<html><title>Phishing</title>
 
 
 <meta charset="utf-8">
@@ -24,19 +24,75 @@
 
 <div class="grid-container">
   <div class="grid">
-    <div class="page">
+    <div class="page" data-level="1">
       <div class="content">
-        
-        <li><a href="/nixpkgs-hardenedlinux/posts/data-science/">Data Science</a></li>
-        
-        <li><a href="/nixpkgs-hardenedlinux/posts/package/">Package List</a></li>
-        
-        <li><a href="/nixpkgs-hardenedlinux/posts/phishing/">Phishing</a></li>
-        
+        <h1>Phishing</h1>
+        <h2 id="smtp-email">SMTP/email</h2>
+<h3 id="deepsea">Deepsea</h3>
+<ul>
+<li>quickly test commmands</li>
+</ul>
+<!--listend-->
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>- Tow methods: templated and hand-rolled
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#007020">cd</span> ./test/deepsea
+</span></span><span style="display:flex;"><span>nix run github:hardenedlinux/nixpkgs-hardenedlinux#deepsea -- --config template.yaml content inline
+</span></span><span style="display:flex;"><span>nix run github:hardenedlinux/nixpkgs-hardenedlinux#deepsea -- --config template.yaml content multipart
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>-  create DB and load from CSV
+</span></span><span style="display:flex;"><span>./result/bin/deepsea -t
+</span></span><span style="display:flex;"><span>nix run github:hardenedlinux/nixpkgs-hardenedlinux#deepsea -- --config template.yaml storage -D test/deepsea/template.db manager  -T createtable
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> - load CSV
+</span></span><span style="display:flex;"><span>nix run github:hardenedlinux/nixpkgs-hardenedlinux#deepsea -- --config template.yaml storage  -d ./template.db load -s ./marks.csv
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>- show loaded marks of table
+</span></span><span style="display:flex;"><span>nix run github:hardenedlinux/nixpkgs-hardenedlinux#deepsea -- --config template.yaml  storage  -d ./template.db manager  -T showmarks
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>- Mail Campaign
+</span></span><span style="display:flex;"><span>nix run github:hardenedlinux/nixpkgs-hardenedlinux#deepsea -- --config template.yaml  mailclient --config template.yaml
+</span></span></code></pre></div>
       </div>
+      
+
+
+   
+
+   
+
+   
+
+   
+      
+   
+
+   
+
+   
+
+   
+
+
+
+  <div class="bl-section">
+    <h4>Links to this note</h4>
+    <div class="backlinks">
+      <ul>
+       
+          <li><a href="/nixpkgs-hardenedlinux/posts/package/">Package List</a></li>
+       
+     </ul>
     </div>
   </div>
+
+
+      </div>
+   </div>
 </div>
+
+<script src="https://hardenedlinux.github.io/nixpkgs-hardenedlinux/js/URI.js" type="text/javascript"></script>
+
+<script src="https://hardenedlinux.github.io/nixpkgs-hardenedlinux/js/page.js" type="text/javascript"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </body>
 </html>
