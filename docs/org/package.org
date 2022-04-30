@@ -1,20 +1,11 @@
 #+TITLE: Package List
-#+AUTHOR: GTrunSec
-#+EMAIL: gtrunsec@hardenedlinux.org
 #+DATE: 26 September 2019
-#+DESCRIPTION:
-#+KEYWORDS:
-#+LANGUAGE:  en cn
-#+SETUPFILE: ~/Documents/my-blog/public/theme/org-html-themes/setup/theme-readtheorg.setup
-#+hugo_publishdate: (0 5)
-#+hugo_auto_set_lastmod: t
-#+HUGO_categories: 
-#+HUGO_tags: 
-#+OPTIONS:   H:3 num:t toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
-#+SELECT_TAGS: export
-#+EXCLUDE_TAGS: noexport
+
 * Data Analysis Library
+
 ** python
+- [2022-04-29 Fri 19:28] -> [[id:15b75c2c-4e70-4006-b8fd-75d8363f77db][aim]]
+
 *** [[https://pandas.pydata.org/][Python Data Analysis Library — pandas: Python Data Analysis Library]]
 *** [[https://docs.python.org/3/library/urllib.html#module-urllib][urllib — URL handling modules — Python 3.7.4 documentation]]
 *** [[https://pypi.org/project/IPy/][IPy · PyPI]]

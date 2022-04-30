@@ -56,7 +56,7 @@ in
       "setup.py"
     '';
 
-    makeWrapperArgs = [ "--prefix" "LD_LIBRARY_PATH" ":" (lib.makeLibraryPath [  ]) ];
+    makeWrapperArgs = [ "--prefix" "LD_LIBRARY_PATH" ":" (lib.makeLibraryPath [ ]) ];
 
     doCheck = false;
 

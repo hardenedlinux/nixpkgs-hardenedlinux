@@ -4,6 +4,3 @@
 #+title: Data Science
 
 * [[https://github.com/aimhubio/aim][aim]]
-:PROPERTIES:
-:ID:       15b75c2c-4e70-4006-b8fd-75d8363f77db
-:END:
