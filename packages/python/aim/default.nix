@@ -4,6 +4,7 @@
   python3Packages,
   nixpkgs-hardenedlinux-sources,
   mach-nix,
+  stdenv,
 }: let
   aim-requirements = mach-nix.mkPython rec {
     requirements = ''
@@ -40,15 +41,25 @@
   };
 in
   python3Packages.buildPythonPackage rec {
+
     inherit (nixpkgs-hardenedlinux-sources.aim) pname version src;
+
     nativeBuildInputs = with python3Packages; [];
+
     propagatedBuildInputs = with python3Packages; [aim-requirements];
+
     postPatch = ''
-      substituteInPlace setup.py \
-      --replace "aim-ui=={__version__}" "aim-ui" \
-      --replace "fastapi>=0.65.0,<0.68.0" "fastapi"
+    sed -i \
+      -e "s:'aim-ui=={__version__}':'aim-ui':" \
+      -e "s:'fastapi.*':'fastapi':" \
+      -e "s:'jinja2.*':'jinja2':" \
+      "setup.py"
     '';
+
+    makeWrapperArgs = [ "--prefix" "LD_LIBRARY_PATH" ":" (lib.makeLibraryPath [  ]) ];
+
     doCheck = false;
+
     meta = with lib; {
       description = "Aim — an easy-to-use and performant open-source experiment tracker.";
       homepage = "https://github.com/aimhubio/aim";
