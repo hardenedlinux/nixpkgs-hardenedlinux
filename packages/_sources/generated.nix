@@ -126,13 +126,13 @@
   };
   fastai = {
     pname = "fastai";
-    version = "0a4bb287c8d3914e7e33364f0823cec8a0a938ad";
+    version = "b66100c4b9ff95b8acbc89106c5c35e29f27c90f";
     src = fetchFromGitHub ({
       owner = "fastai";
       repo = "fastai";
-      rev = "0a4bb287c8d3914e7e33364f0823cec8a0a938ad";
+      rev = "b66100c4b9ff95b8acbc89106c5c35e29f27c90f";
       fetchSubmodules = false;
-      sha256 = "sha256-O4u8BZKOYO8tA3dVTw1zXP0qu07vgf6N9Z8jwGhSa6E=";
+      sha256 = "sha256-WnFp9UYOHYDG8VDlHVg5oPULBbC+/d1s3q2FdzEVx90=";
     });
   };
   fastcore = {
