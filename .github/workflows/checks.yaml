@@ -39,11 +39,8 @@ jobs:
         run: nix develop -c nvfetcher-update
 
       - name: Build Packages
-        run: |
-          nix -Lv build .\#broker
-          nix -Lv build .\#elastalert2
-          nix -Lv build .\#zed
-          nix -Lv build .\#btest
+        run: nix develop -c packages-build
+
 
       - name: Commit changes
         if: ${{ env.COMMIT_MSG != null }}

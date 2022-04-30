@@ -21,3 +21,12 @@ help = "run nvfetcher with local repo's sources.toml"
 name = "nix-github-update"
 category = "Update"
 command = "nix develop -Lv 'github:GTrunSec/DevSecOps-Cells-Lab?dir=devshell#update' --no-write-lock-file -c nix-github-update"
+
+[[commands]]
+name = "packages-build"
+category = "Build"
+command = '''
+        nix -Lv build .#broker --no-link
+        nix -Lv build .#zed --no-link
+        '''
+help = "Build Packages with nix build"
