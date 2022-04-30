@@ -454,12 +454,12 @@
             "name": null,
             "repo": "fastai",
             "type": "github",
-            "sha256": "sha256-HyNtjnbDcSX2PfToNx17yov/2VbwpSB4lPjJXxZWtYI=",
-            "rev": "1c10d4743535be64f573668178edc634a6115f27",
+            "sha256": "sha256-O4u8BZKOYO8tA3dVTw1zXP0qu07vgf6N9Z8jwGhSa6E=",
+            "rev": "0a4bb287c8d3914e7e33364f0823cec8a0a938ad",
             "leaveDotGit": false,
             "fetchSubmodules": false
         },
-        "version": "1c10d4743535be64f573668178edc634a6115f27",
+        "version": "0a4bb287c8d3914e7e33364f0823cec8a0a938ad",
         "passthru": null,
         "extract": null
     },
