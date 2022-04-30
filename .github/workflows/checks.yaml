@@ -20,7 +20,7 @@ jobs:
 
       - uses: cachix/install-nix-action@v17
         with:
-          install_url: https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.8.0pre20220311_d532269/install
+          install_url: https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.8.0pre20220415_b135de2/install
           extra_nix_config: |
             experimental-features = nix-command flakes
             system-features = nixos-test benchmark big-parallel kvm recursive-nix
@@ -50,3 +50,13 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: ${{ env.COMMIT_MSG }}
+
+
+      - name: Build Packages
+        run: nix -Lv develop -c doc-publish
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        with:
+          branch: gh-pages
+          folder: ./docs/publish/public

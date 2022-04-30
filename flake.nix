@@ -23,6 +23,8 @@
     poetry2nix.url = "github:nix-community/poetry2nix";
     poetry2nix.inputs.nixpkgs.follows = "nixpkgs";
 
+    org-roam-book-template.url = "github:gtrunsec/org-roam-book-template";
+
     gomod2nix.url = "github:tweag/gomod2nix";
     gomod2nix.inputs.nixpkgs.follows = "nixpkgs";
   };

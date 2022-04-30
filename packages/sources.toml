@@ -24,6 +24,10 @@ git.fetchSubmodules = true
 src.github = "grigorescu/broker-to-json"
 fetch.github = "grigorescu/broker-to-json"
 
+[aim]
+src.github = "aimhubio/aim"
+fetch.github = "aimhubio/aim"
+
 [vailyn]
 src.github = "VainlyStrain/Vailyn"
 fetch.github = "VainlyStrain/Vailyn"
@@ -121,3 +125,7 @@ fetch.github = "facebookincubator/nvdtools"
 [container-structure-test]
 src.git = "https://github.com/GoogleContainerTools/container-structure-test"
 fetch.github = "GoogleContainerTools/container-structure-test"
+
+[tc-redirect-tap]
+src.git = "https://github.com/awslabs/tc-redirect-tap"
+fetch.github = "awslabs/tc-redirect-tap"

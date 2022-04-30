@@ -42,12 +42,31 @@
             "name": null,
             "repo": "eZeeKonfigurator",
             "type": "github",
-            "sha256": "sha256-bLQPzxH9yIzZEO9W7tnxEsxYb6c1QwhyXdY1urQLnHA=",
-            "rev": "523af9490b1f403dfabad42c6b8b2800483fd6a3",
+            "sha256": "sha256-DBrdLaRvjH9lckAJwpSkyN6OlBuGZwsVoNWTK2uWsUA=",
+            "rev": "bd6de2ee9d7129cc0428e8c6b58111f651561305",
             "leaveDotGit": false,
             "fetchSubmodules": false
         },
-        "version": "523af9490b1f403dfabad42c6b8b2800483fd6a3",
+        "version": "bd6de2ee9d7129cc0428e8c6b58111f651561305",
+        "passthru": null,
+        "extract": null
+    },
+    "aim": {
+        "cargoLocks": null,
+        "pinned": false,
+        "name": "aim",
+        "src": {
+            "deepClone": false,
+            "owner": "aimhubio",
+            "name": null,
+            "repo": "aim",
+            "type": "github",
+            "sha256": "sha256-00RENDC/4BsPmhB9Csp6t8UYwlR8HJBXC9G0ZwqHGq0=",
+            "rev": "v3.9.2",
+            "leaveDotGit": false,
+            "fetchSubmodules": false
+        },
+        "version": "v3.9.2",
         "passthru": null,
         "extract": null
     },
@@ -113,12 +132,12 @@
             "name": null,
             "repo": "zed",
             "type": "github",
-            "sha256": "sha256-O2+cWTFurJUGAv40x7b4LM/+Lu4RXMFTOOSzIzRLAEg=",
-            "rev": "1023450545ec2ae7033619e133a1dfc86e997c88",
+            "sha256": "sha256-P/0YAJBh3knSCsBBNaj2MNx2gccHgn3NNjR6IWqYRys=",
+            "rev": "6288fa9e68b32c04ec2ade1c592287d880b86dc7",
             "leaveDotGit": false,
             "fetchSubmodules": false
         },
-        "version": "1023450545ec2ae7033619e133a1dfc86e997c88",
+        "version": "6288fa9e68b32c04ec2ade1c592287d880b86dc7",
         "passthru": null,
         "extract": null
     },
@@ -212,12 +231,12 @@
             "name": null,
             "repo": "go-nfsd",
             "type": "github",
-            "sha256": "sha256-/RoFQ+EMmOQyI8vHQH40PIbhfOUHq5hJAwfzsVZqE1k=",
-            "rev": "297918dc3d4c7913a0ba91841556a7f0506a1ae2",
+            "sha256": "sha256-+wJq7tZhU9xvCvo/Ryl17RGAU23HbqoK8fUJTQytdCM=",
+            "rev": "59c4f28954705e7fde44241ab51e864780ce600f",
             "leaveDotGit": false,
             "fetchSubmodules": false
         },
-        "version": "297918dc3d4c7913a0ba91841556a7f0506a1ae2",
+        "version": "59c4f28954705e7fde44241ab51e864780ce600f",
         "passthru": null,
         "extract": null
     },
@@ -250,12 +269,12 @@
             "name": null,
             "repo": "elastalert2",
             "type": "github",
-            "sha256": "sha256-UvyqQ9GhZoRmXfRXCzlh9IdomE7Ziqpi1LZ0ECbQ8JY=",
-            "rev": "4c0afcb7f3e08be4b47889f1f83e2dd4e7eaa514",
+            "sha256": "sha256-BD6DADcyuvyHI5FpxztoRbLhOcyCa/spTq52lh4E1f0=",
+            "rev": "b894269f690a8b9f479e6ec261ba39f34476b45f",
             "leaveDotGit": false,
             "fetchSubmodules": false
         },
-        "version": "4c0afcb7f3e08be4b47889f1f83e2dd4e7eaa514",
+        "version": "b894269f690a8b9f479e6ec261ba39f34476b45f",
         "passthru": null,
         "extract": null
     },
@@ -269,12 +288,12 @@
             "name": null,
             "repo": "zeekscript",
             "type": "github",
-            "sha256": "sha256-3tdF6UblLgHM59XIuHrsJODVME3J4KffAqbAGhrkAuo=",
-            "rev": "c3d39ed223512a82acb71110a9be3a498b9edb35",
+            "sha256": "sha256-pwCrOM8mLts0/If2XEDrOtwgmyLaqFOlPbFql/+e4kg=",
+            "rev": "2fc431beedd719976e381ff69125360622e49b22",
             "leaveDotGit": false,
             "fetchSubmodules": true
         },
-        "version": "c3d39ed223512a82acb71110a9be3a498b9edb35",
+        "version": "2fc431beedd719976e381ff69125360622e49b22",
         "passthru": null,
         "extract": null
     },
@@ -463,6 +482,25 @@
         "passthru": null,
         "extract": null
     },
+    "tc-redirect-tap": {
+        "cargoLocks": null,
+        "pinned": false,
+        "name": "tc-redirect-tap",
+        "src": {
+            "deepClone": false,
+            "owner": "awslabs",
+            "name": null,
+            "repo": "tc-redirect-tap",
+            "type": "github",
+            "sha256": "sha256-sGYxO/LxkyazANOdBLEsCLb5y/9K8PNAWkmxGKWa6CE=",
+            "rev": "c02cef088b3b7f8d2c65271aace7b3de076294e3",
+            "leaveDotGit": false,
+            "fetchSubmodules": false
+        },
+        "version": "c02cef088b3b7f8d2c65271aace7b3de076294e3",
+        "passthru": null,
+        "extract": null
+    },
     "broker": {
         "cargoLocks": null,
         "pinned": false,
@@ -473,12 +511,12 @@
             "name": null,
             "repo": "broker",
             "type": "github",
-            "sha256": "sha256-+ORD7oe2tcAcyi3l+J8FXjsv0gLa1qdol9YStU0kQfk=",
-            "rev": "2b9fe9a5128ea16ebf5a7e2753147ab517f053ac",
+            "sha256": "sha256-A3J1WZIE8ZyWabrJYva6L9RiNXsRSxnuTON88Q3jLwE=",
+            "rev": "9f2f16c1da94b03790bc8b9f69bc2688e97b781f",
             "leaveDotGit": false,
             "fetchSubmodules": true
         },
-        "version": "2b9fe9a5128ea16ebf5a7e2753147ab517f053ac",
+        "version": "9f2f16c1da94b03790bc8b9f69bc2688e97b781f",
         "passthru": null,
         "extract": null
     }

@@ -17,6 +17,9 @@
             (channels.latest)
             treefmt
             ;
+          org-roam-publish = inputs.org-roam-book-template.packages.${prev.system}.default.override {
+            org = ../docs/org;
+          };
         }
       )
     ]

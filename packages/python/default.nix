@@ -6,4 +6,5 @@ final: prev: rec {
   zeekscript = prev.python3Packages.callPackage ./zeekscript {inherit py-tree-sitter;};
   py-tree-sitter = prev.python3Packages.callPackage ./py-tree-sitter {};
   vault-cli = prev.python3Packages.callPackage ./vault-cli {};
+  aim = prev.python3Packages.callPackage ./aim {};
 }

@@ -18,6 +18,6 @@ command = "nix develop -Lv 'github:GTrunSec/DevSecOps-Cells-Lab?dir=devshell#upd
 help = "run nvfetcher with local repo's sources.toml"
 
 [[commands]]
-name = "nix-github-update "
+name = "nix-github-update"
 category = "Update"
 command = "nix develop -Lv 'github:GTrunSec/DevSecOps-Cells-Lab?dir=devshell#update' --no-write-lock-file -c nix-github-update"
