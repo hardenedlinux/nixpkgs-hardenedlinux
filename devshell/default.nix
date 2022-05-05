@@ -21,13 +21,13 @@ with channels;
     ];
     commands = [
       {
-        name = "doc-publish";
+        name = "mkdoc";
         command = ''
-          cp -rf ${nixpkgs.org-roam-publish} $PRJ_ROOT/docs/publish
-          chmod +rw $PRJ_ROOT/docs/publish
-          cd $PRJ_ROOT/docs/publish && cp ../config.toml .
+          rsync -avzh ${nixpkgs.org-roam-publish}/* docs/publish
+          cd docs/publish && cp ../config.toml .
           hugo
-          cp -rf public/posts/index.html ./public/
+          cp -rf --no-preserve=mode,ownership public/posts/index.html ./public/
+          "$@"
         '';
       }
     ];

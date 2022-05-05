@@ -50,7 +50,7 @@ jobs:
 
 
       - name: Build Packages
-        run: nix -Lv develop -c doc-publish
+        run: nix -Lv develop -c mkdoc
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.3.3

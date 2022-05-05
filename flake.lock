@@ -369,11 +369,11 @@
         "nixpkgs": "nixpkgs_4"
       },
       "locked": {
-        "lastModified": 1651281868,
-        "narHash": "sha256-1Dvh4xK2WsSV2V8vjeYIxeEeQ1nwRx86Kwoea4MEV64=",
+        "lastModified": 1651628481,
+        "narHash": "sha256-Oc74ZXf7hXPfeDBwBIexEwKQQeBnILg50AwugsplSZ0=",
         "owner": "gtrunsec",
         "repo": "org-roam-book-template",
-        "rev": "418d7f374cf9c7be8ddc39a94df36a0871794a44",
+        "rev": "d742e719aa84a1f9778308774ad27b40ae037c5b",
         "type": "github"
       },
       "original": {

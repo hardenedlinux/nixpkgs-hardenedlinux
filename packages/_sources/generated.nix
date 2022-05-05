@@ -22,13 +22,13 @@
   };
   broker = {
     pname = "broker";
-    version = "9f2f16c1da94b03790bc8b9f69bc2688e97b781f";
+    version = "18b070fe1e8f9e141da2a8393779abc5e4fca886";
     src = fetchFromGitHub ({
       owner = "zeek";
       repo = "broker";
-      rev = "9f2f16c1da94b03790bc8b9f69bc2688e97b781f";
+      rev = "18b070fe1e8f9e141da2a8393779abc5e4fca886";
       fetchSubmodules = true;
-      sha256 = "sha256-A3J1WZIE8ZyWabrJYva6L9RiNXsRSxnuTON88Q3jLwE=";
+      sha256 = "sha256-rTLY5yQ8j0753YKjDv5T3qmy/knzZI1Fewje4884f2o=";
     });
   };
   broker-to-json = {
@@ -115,24 +115,24 @@
   };
   elastalert2 = {
     pname = "elastalert2";
-    version = "b894269f690a8b9f479e6ec261ba39f34476b45f";
+    version = "dfa786669b7ddabb838cadcc72dc6a04417a261b";
     src = fetchFromGitHub ({
       owner = "jertel";
       repo = "elastalert2";
-      rev = "b894269f690a8b9f479e6ec261ba39f34476b45f";
+      rev = "dfa786669b7ddabb838cadcc72dc6a04417a261b";
       fetchSubmodules = false;
-      sha256 = "sha256-BD6DADcyuvyHI5FpxztoRbLhOcyCa/spTq52lh4E1f0=";
+      sha256 = "sha256-r0UG/6/KHKQ5FTY+RrV9lYFdS3ErrTKEHi60eAGZBkM=";
     });
   };
   fastai = {
     pname = "fastai";
-    version = "b66100c4b9ff95b8acbc89106c5c35e29f27c90f";
+    version = "58dde7217001b05efee870c1890cd6c9eb926369";
     src = fetchFromGitHub ({
       owner = "fastai";
       repo = "fastai";
-      rev = "b66100c4b9ff95b8acbc89106c5c35e29f27c90f";
+      rev = "58dde7217001b05efee870c1890cd6c9eb926369";
       fetchSubmodules = false;
-      sha256 = "sha256-WnFp9UYOHYDG8VDlHVg5oPULBbC+/d1s3q2FdzEVx90=";
+      sha256 = "sha256-UZx4O6stZ+2CdNu6cmyQvgNu1g5bU5hsXg91wg+B6ZY=";
     });
   };
   fastcore = {
@@ -167,13 +167,13 @@
   };
   go-nfsd = {
     pname = "go-nfsd";
-    version = "59c4f28954705e7fde44241ab51e864780ce600f";
+    version = "058ed5e8868ba7dbe66208cda48c45d96555049f";
     src = fetchFromGitHub ({
       owner = "mit-pdos";
       repo = "go-nfsd";
-      rev = "59c4f28954705e7fde44241ab51e864780ce600f";
+      rev = "058ed5e8868ba7dbe66208cda48c45d96555049f";
       fetchSubmodules = false;
-      sha256 = "sha256-+wJq7tZhU9xvCvo/Ryl17RGAU23HbqoK8fUJTQytdCM=";
+      sha256 = "sha256-bZhC0FO+5pKL1rCsUGdMs7kAyTcQWkXpFLkCwfyQNco=";
     });
   };
   gst = {
@@ -189,10 +189,10 @@
   };
   nix-unstable-installer = {
     pname = "nix-unstable-installer";
-    version = "nix-2.9.0pre20220422_7f814d6";
+    version = "nix-2.9.0pre20220428_660835d";
     src = fetchurl {
-      url = "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.9.0pre20220422_7f814d6/install";
-      sha256 = "sha256-XoiNdNIpj2PQRsjvJZZla78i6b0aD69Xpni6zK2FWHY=";
+      url = "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.9.0pre20220428_660835d/install";
+      sha256 = "sha256-imBtN/ovOqVmjhKhIapFo3vbyX3UGOMVtSKnW3xkx0w=";
     };
   };
   nvdtools = {
@@ -282,13 +282,13 @@
   };
   zed = {
     pname = "zed";
-    version = "6288fa9e68b32c04ec2ade1c592287d880b86dc7";
+    version = "ed8cc213f5c6dc2805e74c4adedf3c58654d1f73";
     src = fetchFromGitHub ({
       owner = "brimdata";
       repo = "zed";
-      rev = "6288fa9e68b32c04ec2ade1c592287d880b86dc7";
+      rev = "ed8cc213f5c6dc2805e74c4adedf3c58654d1f73";
       fetchSubmodules = false;
-      sha256 = "sha256-P/0YAJBh3knSCsBBNaj2MNx2gccHgn3NNjR6IWqYRys=";
+      sha256 = "sha256-OzC4qFWABO4KXs/8jE9K784lhsqpEmy1dxNaKjacrpM=";
     });
   };
   zeekscript = {

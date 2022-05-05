@@ -14,7 +14,7 @@ help = "lock rev for bindary cache build"
 [[commands]]
 name = "nvfetcher-update"
 category = "Update"
-command = "nix develop -Lv 'github:GTrunSec/DevSecOps-Cells-Lab?dir=devshell#update' --no-write-lock-file -c nvfetcher-update ./packages/sources.toml"
+command = "nix develop -Lv 'github:GTrunSec/DevSecOps-Cells-Lab#devShells.x86_64-linux.update ' --no-write-lock-file -c nvfetcher-update ./packages/sources.toml"
 help = "run nvfetcher with local repo's sources.toml"
 
 [[commands]]
