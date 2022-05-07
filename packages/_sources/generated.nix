@@ -126,13 +126,13 @@
   };
   fastai = {
     pname = "fastai";
-    version = "58dde7217001b05efee870c1890cd6c9eb926369";
+    version = "d71167430957f093e50a1643e22535c0e8364887";
     src = fetchFromGitHub ({
       owner = "fastai";
       repo = "fastai";
-      rev = "58dde7217001b05efee870c1890cd6c9eb926369";
+      rev = "d71167430957f093e50a1643e22535c0e8364887";
       fetchSubmodules = false;
-      sha256 = "sha256-UZx4O6stZ+2CdNu6cmyQvgNu1g5bU5hsXg91wg+B6ZY=";
+      sha256 = "sha256-+qglBz0BjiZq3wgK7JKoGfh1QH5loe9fDEwfZSMAuDM=";
     });
   };
   fastcore = {
@@ -156,24 +156,24 @@
   };
   ghq = {
     pname = "ghq";
-    version = "0e02db0b9a7a6773e503dd99bdabca49bfdf67af";
+    version = "ccbbc18efc1802a5f9bf50d9fbb6b8b020c3f8f7";
     src = fetchFromGitHub ({
       owner = "x-motemen";
       repo = "ghq";
-      rev = "0e02db0b9a7a6773e503dd99bdabca49bfdf67af";
+      rev = "ccbbc18efc1802a5f9bf50d9fbb6b8b020c3f8f7";
       fetchSubmodules = false;
-      sha256 = "sha256-chpaac01Wbdp+sA38O50iGVGt6zxA2N3/NUzhsptSVs=";
+      sha256 = "sha256-tGublfC6EeY3T/45lxmsm5zsmlgq/guS64OutAWy6AY=";
     });
   };
   go-nfsd = {
     pname = "go-nfsd";
-    version = "058ed5e8868ba7dbe66208cda48c45d96555049f";
+    version = "e2411db4c53506796d3bafa3f10fe7746c4cd374";
     src = fetchFromGitHub ({
       owner = "mit-pdos";
       repo = "go-nfsd";
-      rev = "058ed5e8868ba7dbe66208cda48c45d96555049f";
+      rev = "e2411db4c53506796d3bafa3f10fe7746c4cd374";
       fetchSubmodules = false;
-      sha256 = "sha256-bZhC0FO+5pKL1rCsUGdMs7kAyTcQWkXpFLkCwfyQNco=";
+      sha256 = "sha256-7cb+Exz+qwBgDqJ6TvYjlzudynDeGknkWVZ/L8Z2GrY=";
     });
   };
   gst = {
@@ -216,13 +216,13 @@
   };
   py-tree-sitter = {
     pname = "py-tree-sitter";
-    version = "3eb2058081f204ed39a259fe7dc3df259a887567";
+    version = "7dc704fa37057c685fe2d86611f318146c95c34d";
     src = fetchFromGitHub ({
       owner = "tree-sitter";
       repo = "py-tree-sitter";
-      rev = "3eb2058081f204ed39a259fe7dc3df259a887567";
+      rev = "7dc704fa37057c685fe2d86611f318146c95c34d";
       fetchSubmodules = true;
-      sha256 = "sha256-hHfitDKcuPDFoSaM8FILU1ackwv2Lml4jjlOK5TlbcQ=";
+      sha256 = "sha256-fjol52OEWNC+fXqbZ9EoQuJw1Ns+MafpUjpTkze1n1k=";
     });
   };
   sybilhunter = {
@@ -282,13 +282,13 @@
   };
   zed = {
     pname = "zed";
-    version = "ed8cc213f5c6dc2805e74c4adedf3c58654d1f73";
+    version = "8b5476695d10af987e034adcd42076ee039ad83c";
     src = fetchFromGitHub ({
       owner = "brimdata";
       repo = "zed";
-      rev = "ed8cc213f5c6dc2805e74c4adedf3c58654d1f73";
+      rev = "8b5476695d10af987e034adcd42076ee039ad83c";
       fetchSubmodules = false;
-      sha256 = "sha256-OzC4qFWABO4KXs/8jE9K784lhsqpEmy1dxNaKjacrpM=";
+      sha256 = "sha256-o/KIKurviVG6k1+EkOOAgD8UXl0uE3H9kMFKpo/A77M=";
     });
   };
   zeekscript = {
