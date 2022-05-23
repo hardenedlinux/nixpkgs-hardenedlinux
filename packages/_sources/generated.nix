@@ -126,13 +126,13 @@
   };
   fastai = {
     pname = "fastai";
-    version = "26f12325951eca7c3a228a2c296d6f46a4d8debd";
+    version = "7f1a430f152775bbbdfa6c1a8f6a466f72d822fa";
     src = fetchFromGitHub ({
       owner = "fastai";
       repo = "fastai";
-      rev = "26f12325951eca7c3a228a2c296d6f46a4d8debd";
+      rev = "7f1a430f152775bbbdfa6c1a8f6a466f72d822fa";
       fetchSubmodules = false;
-      sha256 = "sha256-GOrysD5vkj9r+b9cyYs83D6VsGYOGJ4tyKCyFiFOr9o=";
+      sha256 = "sha256-IMTYwCleaL0a8xg1F8qwh1tIpuP4z8HCwINdtg0GSQE=";
     });
   };
   fastcore = {
@@ -189,10 +189,10 @@
   };
   nix-unstable-installer = {
     pname = "nix-unstable-installer";
-    version = "nix-2.9.0pre20220513_bf89cd9";
+    version = "nix-2.9.0pre20220519_5aeda91";
     src = fetchurl {
-      url = "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.9.0pre20220513_bf89cd9/install";
-      sha256 = "sha256-7smwZQR13vORBYn7lB5P57J8y/LqHg4GFe0bMS8Ihak=";
+      url = "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.9.0pre20220519_5aeda91/install";
+      sha256 = "sha256-+mQ3zEl+NmmJ89Xi6co9jRmlYWF7NnWKWcUTQR0D4LQ=";
     };
   };
   nvdtools = {
