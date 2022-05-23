@@ -2,8 +2,9 @@
   self,
   inputs,
   ...
-}: {
-  nixpkgs = import ./nixpkgs.nix {inherit self inputs;};
-  latest = import ./latest.nix {inherit self inputs;};
-  # nixpkgs_21_05 = import ./nixpkgs_21_05.nix { inherit self inputs; };
+} @ args: {
+  nixpkgs = import ./nixpkgs.nix args;
+  latest = import ./latest.nix args;
+  nixpkgs_20 = import ./nixpkgs_20.nix args;
+  nixpkgs_21 = import ./nixpkgs_21.nix args;
 }

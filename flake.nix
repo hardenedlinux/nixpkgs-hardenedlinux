@@ -6,6 +6,7 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+    nixpkgs_21.url = "github:NixOS/nixpkgs/release-21.11";
 
     flake-compat.url = "github:edolstra/flake-compat";
     flake-compat.flake = false;

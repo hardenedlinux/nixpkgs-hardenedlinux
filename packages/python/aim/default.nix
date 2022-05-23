@@ -41,7 +41,6 @@
   };
 in
   python3Packages.buildPythonPackage rec {
-
     inherit (nixpkgs-hardenedlinux-sources.aim) pname version src;
 
     nativeBuildInputs = with python3Packages; [];
@@ -49,14 +48,14 @@ in
     propagatedBuildInputs = with python3Packages; [aim-requirements];
 
     postPatch = ''
-    sed -i \
-      -e "s:'aim-ui=={__version__}':'aim-ui':" \
-      -e "s:'fastapi.*':'fastapi':" \
-      -e "s:'jinja2.*':'jinja2':" \
-      "setup.py"
+      sed -i \
+        -e "s:'aim-ui=={__version__}':'aim-ui':" \
+        -e "s:'fastapi.*':'fastapi':" \
+        -e "s:'jinja2.*':'jinja2':" \
+        "setup.py"
     '';
 
-    makeWrapperArgs = [ "--prefix" "LD_LIBRARY_PATH" ":" (lib.makeLibraryPath [ ]) ];
+    makeWrapperArgs = ["--prefix" "LD_LIBRARY_PATH" ":" (lib.makeLibraryPath [])];
 
     doCheck = false;
 

@@ -327,6 +327,22 @@
         "type": "indirect"
       }
     },
+    "nixpkgs_21": {
+      "locked": {
+        "lastModified": 1653229824,
+        "narHash": "sha256-klSCYMpR4TqWYoTD/xZ2qM9UIPRFC6pK+S/kJuVLbFw=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "06db2e2197401b74fcf82d4e84be15b0b5851c7b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "release-21.11",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "nixpkgs_3": {
       "locked": {
         "lastModified": 1651634615,
@@ -415,6 +431,7 @@
         "mach-nix": "mach-nix",
         "nixpkgs": "nixpkgs_3",
         "nixpkgs_20": "nixpkgs_20",
+        "nixpkgs_21": "nixpkgs_21",
         "org-roam-book-template": "org-roam-book-template",
         "poetry2nix": "poetry2nix",
         "pypi-deps-db": "pypi-deps-db",

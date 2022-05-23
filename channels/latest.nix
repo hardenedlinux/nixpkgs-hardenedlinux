@@ -4,5 +4,8 @@
   ...
 }: {
   input = inputs.latest;
-  overlaysBuilder = channels: [];
+  overlaysBuilder = channels: [
+    (final: prev: rec {
+    })
+  ];
 }
