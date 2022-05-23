@@ -32,7 +32,7 @@
 stdenv.mkDerivation rec {
   inherit (nixpkgs-hardenedlinux-sources.brim) pname version src;
   buildInputs = [
-    gnome3.gsettings_desktop_schemas
+    gnome3.gsettings-desktop-schemas
     libdrm
     mesa_drivers.dev
     glib
