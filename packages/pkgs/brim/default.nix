@@ -55,6 +55,7 @@ stdenv.mkDerivation rec {
     xorg.libXrender
     xorg.libXtst
     xorg.libXScrnSaver
+    xorg.libxshmfence
     nss
     nspr
     alsaLib
