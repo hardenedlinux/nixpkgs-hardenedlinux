@@ -25,10 +25,19 @@ with channels;
         command = ''
           rsync -avzh ${nixpkgs.org-roam-publish}/* docs/publish
           cd docs/publish && cp ../config.toml .
-          hugo
+          hugo "$@"
           cp -rf --no-preserve=mode,ownership public/posts/index.html ./public/
-          "$@"
         '';
+      }
+      {
+        name = "nvfetcher-update";
+        command = "nix develop github:GTrunSec/cells-lab#devShells.x86_64-linux.update --no-write-lock-file --command nvfetcher-update ./nix/sources.toml";
+        help = "run nvfetcher-update with your sources.toml";
+      }
+      {
+        name = "nix-github-update";
+        command = "nix develop github:GTrunSec/cells-lab#devShells.x86_64-linux.update --no-write-lock-file --command nix-github-update";
+        help = "run nix-github-update";
       }
     ];
     devshell.startup.nodejs-setuphook = nixpkgs.lib.stringsWithDeps.noDepEntry ''

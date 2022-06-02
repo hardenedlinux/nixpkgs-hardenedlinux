@@ -19,8 +19,6 @@
     mach-nix.url = "github:DavHau/mach-nix";
     mach-nix.inputs.pypi-deps-db.follows = "pypi-deps-db";
 
-    check_journal.url = "github:flyingcircusio/check_journal";
-
     poetry2nix.url = "github:nix-community/poetry2nix";
     poetry2nix.inputs.nixpkgs.follows = "nixpkgs";
 
@@ -57,7 +55,7 @@
 
       sharedOverlays =
         [
-          inputs.gomod2nix.overlay
+          inputs.gomod2nix.overlays.default
           inputs.devshell.overlay
           inputs.poetry2nix.overlay
           (import ./channels/overlays/shared {inherit inputs;})
