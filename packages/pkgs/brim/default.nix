@@ -80,7 +80,7 @@ stdenv.mkDerivation rec {
     runHook postInstall
   '';
   dontWrapGApps = true;
-  runtimeLibs = lib.makeLibraryPath [libudev0-shim glibc libsecret];
+  runtimeLibs = lib.makeLibraryPath [libudev0-shim glibc libsecret nss];
   preFixup = ''
     makeWrapper $out/share/Brim/brim $out/bin/brim \
       --prefix LD_LIBRARY_PATH : "${runtimeLibs}" \
