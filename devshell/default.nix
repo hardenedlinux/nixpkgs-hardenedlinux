@@ -4,7 +4,8 @@
   channels,
   ...
 }:
-with channels;
+with channels; let
+in
   nixpkgs.devshell.mkShell {
     name = "nixpkgs-hardenendlinux";
     imports = [
@@ -21,13 +22,7 @@ with channels;
     ];
     commands = [
       {
-        name = "mkdoc";
-        command = ''
-          rsync -avzh ${nixpkgs.org-roam-publish}/* docs/publish
-          cd docs/publish && cp ../config.toml .
-          hugo "$@"
-          cp -rf --no-preserve=mode,ownership public/posts/index.html ./public/
-        '';
+        package = nixpkgs.mkdoc;
       }
       {
         name = "nvfetcher-update";
