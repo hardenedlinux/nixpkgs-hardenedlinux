@@ -206,11 +206,11 @@
             "name": null,
             "owner": "jertel",
             "repo": "elastalert2",
-            "rev": "2dcc95695316e17111eddc11bca445c0348c1506",
-            "sha256": "sha256-14bDw2Ih7lDXBR6Er7DieYDv9LV6RdKDzp67ezMxbso=",
+            "rev": "d903f3b642e6e0509c9f8d3d754799db12b60bb9",
+            "sha256": "sha256-0JHzFvEtDH2nYNNaJ8b0I5NITu+hNpOrFUduD61AbFM=",
             "type": "github"
         },
-        "version": "2dcc95695316e17111eddc11bca445c0348c1506"
+        "version": "d903f3b642e6e0509c9f8d3d754799db12b60bb9"
     },
     "fastai": {
         "cargoLocks": null,
@@ -225,11 +225,11 @@
             "name": null,
             "owner": "fastai",
             "repo": "fastai",
-            "rev": "85258502eff144708d657aa4b4d2ab4c2a2b3a0b",
-            "sha256": "sha256-3zaFIjq4B3sfJrHU1Cyw9PC2Up6zq4YF7QdzLiYmHH0=",
+            "rev": "76b039c3abcfbe0fcb338d630ac9b4468f466aca",
+            "sha256": "sha256-87H0dVIRn4KvSjcNq6ZQw2o37Mre7tiN41azk63Re4M=",
             "type": "github"
         },
-        "version": "85258502eff144708d657aa4b4d2ab4c2a2b3a0b"
+        "version": "76b039c3abcfbe0fcb338d630ac9b4468f466aca"
     },
     "fastcore": {
         "cargoLocks": null,
@@ -244,11 +244,11 @@
             "name": null,
             "owner": "fastai",
             "repo": "fastcore",
-            "rev": "52c54861ba1def0fbb25b9306075189b4b3e0dbf",
-            "sha256": "sha256-vUSbwpP9afmjWWT8q5sfjc+1hADGRFVyJokxSL8Uzy0=",
+            "rev": "d66eadff51331b0a283863c0ace977325abe866a",
+            "sha256": "sha256-WAZWv+NwJIY1AzAq1RWeYY6gd27nKWFs7L6wNUda9R0=",
             "type": "github"
         },
-        "version": "52c54861ba1def0fbb25b9306075189b4b3e0dbf"
+        "version": "d66eadff51331b0a283863c0ace977325abe866a"
     },
     "fastprogress": {
         "cargoLocks": null,
@@ -495,11 +495,11 @@
             "name": null,
             "owner": "brimdata",
             "repo": "zed",
-            "rev": "4a06bcbd4b8c9b7ce2ace619267bc7db781bc8c9",
-            "sha256": "sha256-fLd+GF3So5fZLXvNzOkdXNVObAW+8UGtSnvFvdtsRqI=",
+            "rev": "59c1f6d2ce93457dfa44ea7d57d19efe62a9092a",
+            "sha256": "sha256-rLnB2ynyZqCQiKdJGd33+zgaCJc5bnFrVK4shOGvktU=",
             "type": "github"
         },
-        "version": "4a06bcbd4b8c9b7ce2ace619267bc7db781bc8c9"
+        "version": "59c1f6d2ce93457dfa44ea7d57d19efe62a9092a"
     },
     "zeekscript": {
         "cargoLocks": null,

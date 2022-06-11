@@ -115,35 +115,35 @@
   };
   elastalert2 = {
     pname = "elastalert2";
-    version = "2dcc95695316e17111eddc11bca445c0348c1506";
+    version = "d903f3b642e6e0509c9f8d3d754799db12b60bb9";
     src = fetchFromGitHub ({
       owner = "jertel";
       repo = "elastalert2";
-      rev = "2dcc95695316e17111eddc11bca445c0348c1506";
+      rev = "d903f3b642e6e0509c9f8d3d754799db12b60bb9";
       fetchSubmodules = false;
-      sha256 = "sha256-14bDw2Ih7lDXBR6Er7DieYDv9LV6RdKDzp67ezMxbso=";
+      sha256 = "sha256-0JHzFvEtDH2nYNNaJ8b0I5NITu+hNpOrFUduD61AbFM=";
     });
   };
   fastai = {
     pname = "fastai";
-    version = "85258502eff144708d657aa4b4d2ab4c2a2b3a0b";
+    version = "76b039c3abcfbe0fcb338d630ac9b4468f466aca";
     src = fetchFromGitHub ({
       owner = "fastai";
       repo = "fastai";
-      rev = "85258502eff144708d657aa4b4d2ab4c2a2b3a0b";
+      rev = "76b039c3abcfbe0fcb338d630ac9b4468f466aca";
       fetchSubmodules = false;
-      sha256 = "sha256-3zaFIjq4B3sfJrHU1Cyw9PC2Up6zq4YF7QdzLiYmHH0=";
+      sha256 = "sha256-87H0dVIRn4KvSjcNq6ZQw2o37Mre7tiN41azk63Re4M=";
     });
   };
   fastcore = {
     pname = "fastcore";
-    version = "52c54861ba1def0fbb25b9306075189b4b3e0dbf";
+    version = "d66eadff51331b0a283863c0ace977325abe866a";
     src = fetchFromGitHub ({
       owner = "fastai";
       repo = "fastcore";
-      rev = "52c54861ba1def0fbb25b9306075189b4b3e0dbf";
+      rev = "d66eadff51331b0a283863c0ace977325abe866a";
       fetchSubmodules = false;
-      sha256 = "sha256-vUSbwpP9afmjWWT8q5sfjc+1hADGRFVyJokxSL8Uzy0=";
+      sha256 = "sha256-WAZWv+NwJIY1AzAq1RWeYY6gd27nKWFs7L6wNUda9R0=";
     });
   };
   fastprogress = {
@@ -282,13 +282,13 @@
   };
   zed = {
     pname = "zed";
-    version = "4a06bcbd4b8c9b7ce2ace619267bc7db781bc8c9";
+    version = "59c1f6d2ce93457dfa44ea7d57d19efe62a9092a";
     src = fetchFromGitHub ({
       owner = "brimdata";
       repo = "zed";
-      rev = "4a06bcbd4b8c9b7ce2ace619267bc7db781bc8c9";
+      rev = "59c1f6d2ce93457dfa44ea7d57d19efe62a9092a";
       fetchSubmodules = false;
-      sha256 = "sha256-fLd+GF3So5fZLXvNzOkdXNVObAW+8UGtSnvFvdtsRqI=";
+      sha256 = "sha256-rLnB2ynyZqCQiKdJGd33+zgaCJc5bnFrVK4shOGvktU=";
     });
   };
   zeekscript = {
