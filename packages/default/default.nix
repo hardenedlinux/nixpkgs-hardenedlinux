@@ -6,4 +6,5 @@ final: prev: {
   deepsea = prev.callPackage ./deepsea {};
   container-structure-test = prev.callPackage ./container-structure-test {};
   tuc = prev.callPackage ./tuc {};
+  update-package = prev.callPackage ./update-package {};
 }

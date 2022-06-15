@@ -1,6 +1,7 @@
 {
   buildGoApplication,
   nixpkgs-hardenedlinux-sources,
+  update-package,
 }:
 buildGoApplication rec {
   inherit (nixpkgs-hardenedlinux-sources.container-structure-test) pname src version;
@@ -10,4 +11,9 @@ buildGoApplication rec {
     description = "validate the structure of your container images";
     homepage = "https://github.com/GoogleContainerTools/container-structure-test";
   };
+  passthru.update = update-package.gomod2nix {
+    src = nixpkgs-hardenedlinux-sources.container-structure-test.src;
+    path = "default/container-structure-test";
+  };
+  a = dirOf ./.;
 }
