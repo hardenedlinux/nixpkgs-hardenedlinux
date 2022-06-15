@@ -24,6 +24,8 @@
 
           dream2nix = inputs.dream2nix.lib;
 
+          crane = inputs.crane.mkLib final;
+
           mkdoc = prev.writeShellScriptBin "mkdoc" ''
             rsync -avzh ${final.org-roam-publish}/* docs/publish
             cd docs/publish && cp ../config.toml .

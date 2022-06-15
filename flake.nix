@@ -33,6 +33,9 @@
 
     xnlib.url = "github:gtrunsec/xnlib";
     xnlib.inputs.nixpkgs.follows = "nixpkgs";
+
+    crane.url = "github:ipetkov/crane";
+    crane.inputs.nixpkgs.follows = "nixpkgs";
   };
   outputs = {
     self,
