@@ -12,8 +12,7 @@ buildGoApplication rec {
     homepage = "https://github.com/GoogleContainerTools/container-structure-test";
   };
   passthru.update = update-package.gomod2nix {
-    src = nixpkgs-hardenedlinux-sources.container-structure-test.src;
-    path = "default/container-structure-test";
+    inherit src;
+    path = "default/" + builtins.baseNameOf ./.;
   };
-  a = dirOf ./.;
 }
