@@ -45,11 +45,11 @@
             "name": null,
             "owner": "zeek",
             "repo": "broker",
-            "rev": "d74955590ebd4406a36f971e44cdcda9a949099c",
-            "sha256": "sha256-u9QCR1+sgRlvbfv8XMAUbQjy0eeHNZrnGJEH8PvK3iA=",
+            "rev": "62bb454cbc6ebba60531c849303ba16e95fb8a6a",
+            "sha256": "sha256-Sp1wKLG0wEQxReU4pQevsV6qv0LKtn06i1U0Vqj4ZMg=",
             "type": "github"
         },
-        "version": "d74955590ebd4406a36f971e44cdcda9a949099c"
+        "version": "62bb454cbc6ebba60531c849303ba16e95fb8a6a"
     },
     "broker-to-json": {
         "cargoLocks": null,
@@ -225,11 +225,11 @@
             "name": null,
             "owner": "fastai",
             "repo": "fastai",
-            "rev": "76b039c3abcfbe0fcb338d630ac9b4468f466aca",
-            "sha256": "sha256-87H0dVIRn4KvSjcNq6ZQw2o37Mre7tiN41azk63Re4M=",
+            "rev": "7dd70d4fd9ff1091557e09c9f00c8894b818544e",
+            "sha256": "sha256-OG4Z1gFk16RgHStZxe+PKFiBUQRew+FXLq+v1PYfB5E=",
             "type": "github"
         },
-        "version": "76b039c3abcfbe0fcb338d630ac9b4468f466aca"
+        "version": "7dd70d4fd9ff1091557e09c9f00c8894b818544e"
     },
     "fastcore": {
         "cargoLocks": null,
@@ -329,11 +329,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-NWuHQ0jajhebKgKlFcWK3g495WM0GGEtb1s0hTM94mg=",
+            "sha256": "sha256-iIAXsPO3sgqqFp7hMnP2E0/l0Jibj4r36D/MR2lZXlA=",
             "type": "url",
-            "url": "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.10.0pre20220603_1dd7253/install"
+            "url": "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.10.0pre20220611_37fc4d7/install"
         },
-        "version": "nix-2.10.0pre20220603_1dd7253"
+        "version": "nix-2.10.0pre20220611_37fc4d7"
     },
     "nvdtools": {
         "cargoLocks": null,
@@ -425,6 +425,25 @@
         },
         "version": "c02cef088b3b7f8d2c65271aace7b3de076294e3"
     },
+    "tuc": {
+        "cargoLocks": null,
+        "extract": null,
+        "name": "tuc",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "riquito",
+            "repo": "tuc",
+            "rev": "d8bd0a8f24dd43d2523b2742e13009b1289170d2",
+            "sha256": "sha256-2ACwIn7HJdxAIn4c2l3gWTrGQgdht+8UGqA8XIAsjwg=",
+            "type": "github"
+        },
+        "version": "d8bd0a8f24dd43d2523b2742e13009b1289170d2"
+    },
     "vailyn": {
         "cargoLocks": null,
         "extract": null,
@@ -495,11 +514,11 @@
             "name": null,
             "owner": "brimdata",
             "repo": "zed",
-            "rev": "59c1f6d2ce93457dfa44ea7d57d19efe62a9092a",
-            "sha256": "sha256-rLnB2ynyZqCQiKdJGd33+zgaCJc5bnFrVK4shOGvktU=",
+            "rev": "10c23881741df5f9974b76fd8f6c6dfb19b29cb5",
+            "sha256": "sha256-oQGT3vb+5VN7GYQ2uj0qK0mgaiaBBxYl5+5EGWqwGkM=",
             "type": "github"
         },
-        "version": "59c1f6d2ce93457dfa44ea7d57d19efe62a9092a"
+        "version": "10c23881741df5f9974b76fd8f6c6dfb19b29cb5"
     },
     "zeekscript": {
         "cargoLocks": null,

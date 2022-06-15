@@ -129,3 +129,7 @@ fetch.github = "GoogleContainerTools/container-structure-test"
 [tc-redirect-tap]
 src.git = "https://github.com/awslabs/tc-redirect-tap"
 fetch.github = "awslabs/tc-redirect-tap"
+
+[tuc]
+src.git = "https://github.com/riquito/tuc"
+fetch.github = "riquito/tuc"

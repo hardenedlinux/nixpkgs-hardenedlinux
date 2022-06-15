@@ -7,8 +7,8 @@
   overlaysBuilder = channels:
     [
       (import ../packages/inputs-packages.nix {inherit inputs;})
-      (import ../packages/pkgs/nixos-tests.nix {inherit inputs;})
-      (import ../packages/pkgs)
+      (import ../packages/default/nixos-tests.nix {inherit inputs;})
+      (import ../packages/default)
       (import ../packages/python)
       (import ../packages/go)
       (
@@ -21,6 +21,8 @@
           org-roam-publish = inputs.org-roam-book-template.packages.${prev.system}.default.override {
             org = ../docs/org;
           };
+
+          dream2nix = inputs.dream2nix.lib;
 
           mkdoc = prev.writeShellScriptBin "mkdoc" ''
             rsync -avzh ${final.org-roam-publish}/* docs/publish

@@ -27,6 +27,9 @@
 
     gomod2nix.url = "github:tweag/gomod2nix";
     gomod2nix.inputs.nixpkgs.follows = "nixpkgs";
+
+    dream2nix.url = "github:nix-community/dream2nix";
+    dream2nix.inputs.nixpkgs.follows = "nixpkgs";
   };
   outputs = {
     self,
@@ -62,7 +65,9 @@
         ]
         ++ (self.lib.importOverlays ./channels/overlays/shared);
       # exportOverlays automatically for all packages defined in overlaysBuilder of each channel
+
       overlays = exportOverlays {inherit (self) pkgs inputs;};
+
       outputsBuilder = channels: {
         # apps = import ./apps inputs channels;
         packages = exportPackages self.overlays channels;

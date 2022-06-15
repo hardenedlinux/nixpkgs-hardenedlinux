@@ -22,13 +22,13 @@
   };
   broker = {
     pname = "broker";
-    version = "d74955590ebd4406a36f971e44cdcda9a949099c";
+    version = "62bb454cbc6ebba60531c849303ba16e95fb8a6a";
     src = fetchFromGitHub ({
       owner = "zeek";
       repo = "broker";
-      rev = "d74955590ebd4406a36f971e44cdcda9a949099c";
+      rev = "62bb454cbc6ebba60531c849303ba16e95fb8a6a";
       fetchSubmodules = true;
-      sha256 = "sha256-u9QCR1+sgRlvbfv8XMAUbQjy0eeHNZrnGJEH8PvK3iA=";
+      sha256 = "sha256-Sp1wKLG0wEQxReU4pQevsV6qv0LKtn06i1U0Vqj4ZMg=";
     });
   };
   broker-to-json = {
@@ -126,13 +126,13 @@
   };
   fastai = {
     pname = "fastai";
-    version = "76b039c3abcfbe0fcb338d630ac9b4468f466aca";
+    version = "7dd70d4fd9ff1091557e09c9f00c8894b818544e";
     src = fetchFromGitHub ({
       owner = "fastai";
       repo = "fastai";
-      rev = "76b039c3abcfbe0fcb338d630ac9b4468f466aca";
+      rev = "7dd70d4fd9ff1091557e09c9f00c8894b818544e";
       fetchSubmodules = false;
-      sha256 = "sha256-87H0dVIRn4KvSjcNq6ZQw2o37Mre7tiN41azk63Re4M=";
+      sha256 = "sha256-OG4Z1gFk16RgHStZxe+PKFiBUQRew+FXLq+v1PYfB5E=";
     });
   };
   fastcore = {
@@ -189,10 +189,10 @@
   };
   nix-unstable-installer = {
     pname = "nix-unstable-installer";
-    version = "nix-2.10.0pre20220603_1dd7253";
+    version = "nix-2.10.0pre20220611_37fc4d7";
     src = fetchurl {
-      url = "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.10.0pre20220603_1dd7253/install";
-      sha256 = "sha256-NWuHQ0jajhebKgKlFcWK3g495WM0GGEtb1s0hTM94mg=";
+      url = "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.10.0pre20220611_37fc4d7/install";
+      sha256 = "sha256-iIAXsPO3sgqqFp7hMnP2E0/l0Jibj4r36D/MR2lZXlA=";
     };
   };
   nvdtools = {
@@ -247,6 +247,17 @@
       sha256 = "sha256-sGYxO/LxkyazANOdBLEsCLb5y/9K8PNAWkmxGKWa6CE=";
     });
   };
+  tuc = {
+    pname = "tuc";
+    version = "d8bd0a8f24dd43d2523b2742e13009b1289170d2";
+    src = fetchFromGitHub ({
+      owner = "riquito";
+      repo = "tuc";
+      rev = "d8bd0a8f24dd43d2523b2742e13009b1289170d2";
+      fetchSubmodules = false;
+      sha256 = "sha256-2ACwIn7HJdxAIn4c2l3gWTrGQgdht+8UGqA8XIAsjwg=";
+    });
+  };
   vailyn = {
     pname = "vailyn";
     version = "v3.3.2-1";
@@ -282,13 +293,13 @@
   };
   zed = {
     pname = "zed";
-    version = "59c1f6d2ce93457dfa44ea7d57d19efe62a9092a";
+    version = "10c23881741df5f9974b76fd8f6c6dfb19b29cb5";
     src = fetchFromGitHub ({
       owner = "brimdata";
       repo = "zed";
-      rev = "59c1f6d2ce93457dfa44ea7d57d19efe62a9092a";
+      rev = "10c23881741df5f9974b76fd8f6c6dfb19b29cb5";
       fetchSubmodules = false;
-      sha256 = "sha256-rLnB2ynyZqCQiKdJGd33+zgaCJc5bnFrVK4shOGvktU=";
+      sha256 = "sha256-oQGT3vb+5VN7GYQ2uj0qK0mgaiaBBxYl5+5EGWqwGkM=";
     });
   };
   zeekscript = {
