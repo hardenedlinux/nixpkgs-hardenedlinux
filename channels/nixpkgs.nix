@@ -33,5 +33,5 @@
         }
       )
     ]
-    ++ (self.lib.importOverlays ./overlays/nixpkgs);
+    ++ (self.lib.importers.importOverlays ../overlays/nixpkgs);
 }

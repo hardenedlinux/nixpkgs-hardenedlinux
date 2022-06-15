@@ -30,6 +30,9 @@
 
     dream2nix.url = "github:nix-community/dream2nix";
     dream2nix.inputs.nixpkgs.follows = "nixpkgs";
+
+    xnlib.url = "github:gtrunsec/xnlib";
+    xnlib.inputs.nixpkgs.follows = "nixpkgs";
   };
   outputs = {
     self,
@@ -44,7 +47,7 @@
     utils.lib.mkFlake {
       inherit self inputs;
 
-      lib = import ./lib/self.nix {lib = nixpkgs.lib;};
+      lib = import ./lib {lib = inputs.xnlib.lib;};
 
       # supportedSystems = [ "x86_64-linux" ];
 
@@ -61,9 +64,9 @@
           inputs.gomod2nix.overlays.default
           inputs.devshell.overlay
           inputs.poetry2nix.overlay
-          (import ./channels/overlays/shared {inherit inputs;})
+          (import ./overlays/shared {inherit inputs;})
         ]
-        ++ (self.lib.importOverlays ./channels/overlays/shared);
+        ++ (inputs.xnlib.lib.importers.importOverlays ./overlays/shared);
       # exportOverlays automatically for all packages defined in overlaysBuilder of each channel
 
       overlays = exportOverlays {inherit (self) pkgs inputs;};
