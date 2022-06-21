@@ -23,7 +23,7 @@ in
     commands = [
       {
         name = "mkdoc";
-        command = "${nixpkgs.mkdoc}";
+        command = "${nixpkgs.mkdoc}/bin/mkdoc";
       }
       {
         name = "nvfetcher-update";
