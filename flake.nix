@@ -28,9 +28,6 @@
     gomod2nix.url = "github:tweag/gomod2nix";
     gomod2nix.inputs.nixpkgs.follows = "nixpkgs";
 
-    dream2nix.url = "github:nix-community/dream2nix";
-    dream2nix.inputs.nixpkgs.follows = "nixpkgs";
-
     xnlib.url = "github:gtrunsec/xnlib";
     xnlib.inputs.nixpkgs.follows = "nixpkgs";
 

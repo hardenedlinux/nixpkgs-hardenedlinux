@@ -22,11 +22,12 @@ in
     ];
     commands = [
       {
-        package = nixpkgs.mkdoc;
+        name = "mkdoc";
+        command = "${nixpkgs.mkdoc}";
       }
       {
         name = "nvfetcher-update";
-        command = "nix develop github:GTrunSec/cells-lab#devShells.x86_64-linux.update --no-write-lock-file --command nvfetcher-update ./packages/sources.toml";
+        command = "nix develop github:GTrunSec/cells-lab#devShells.x86_64-linux.update --no-write-lock-file --command nvfetcher-update ./pkgs/sources.toml";
         help = "run nvfetcher-update with your sources.toml";
       }
       {

@@ -133,3 +133,9 @@ fetch.github = "awslabs/tc-redirect-tap"
 [tuc]
 src.git = "https://github.com/riquito/tuc"
 fetch.github = "riquito/tuc"
+
+[caretaker]
+src.github = "grego/caretaker"
+fetch.github = "grego/caretaker"
+# Pull the contents of `Cargo.lock` into generated nix expr
+cargo_locks = ["Cargo.lock"]

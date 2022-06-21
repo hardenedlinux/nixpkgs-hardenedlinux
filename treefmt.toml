@@ -1,13 +1,13 @@
 [formatter.nix]
 command = "alejandra"
 includes = ["*.nix"]
-excludes = ["./packages/_sources/*"]
+excludes = ["./pkgs/_sources/*"]
 
 [formatter.prettier]
 command = "prettier"
 options = ["--plugin", "prettier-plugin-toml", "--write"]
 includes = ["*.md", "*.yaml", "*.toml", "*.json"]
-excludes = ["./packages/_sources/*", "gomod2nix.toml"]
+excludes = ["./pkgs/_sources/*", "gomod2nix.toml"]
 
 [formatter.black]
 command = "black"

@@ -6,11 +6,11 @@
   input = inputs.nixpkgs;
   overlaysBuilder = channels:
     [
-      (import ../packages/inputs-packages.nix {inherit inputs;})
-      (import ../packages/default/nixos-tests.nix {inherit inputs;})
-      (import ../packages/default)
-      (import ../packages/python)
-      (import ../packages/go)
+      (import ../pkgs/inputs-packages.nix {inherit inputs;})
+      (import ../pkgs/top-level/nixos-tests.nix {inherit inputs;})
+      (import ../pkgs/top-level)
+      (import ../pkgs/python)
+      (import ../pkgs/go)
       (
         final: prev: {
           __dontExport = true;
@@ -18,6 +18,7 @@
             (channels.latest)
             treefmt
             ;
+
           org-roam-publish = inputs.org-roam-book-template.packages.${prev.system}.default.override {
             org = ../docs/org;
           };
