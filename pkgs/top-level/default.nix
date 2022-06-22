@@ -9,4 +9,5 @@ final: prev: {
   feishu = prev.callPackage ./feishu {};
   update-package = prev.callPackage ./update-package {};
   caretaker = prev.callPackage ./caretaker {};
+  watchexec-simple = prev.callPackage ./watchexec-simple {};
 }

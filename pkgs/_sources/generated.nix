@@ -297,6 +297,17 @@
       sha256 = "sha256-/YNBI1IknygmqKy5JMCS63AX581YY5wqE1KN75rBPH0=";
     });
   };
+  watchexec-simple = {
+    pname = "watchexec-simple";
+    version = "61387ab273eb6e71503c3e7d042e1a319fb6cfa5";
+    src = fetchFromGitHub ({
+      owner = "kurtbuilds";
+      repo = "watchexec-simple";
+      rev = "61387ab273eb6e71503c3e7d042e1a319fb6cfa5";
+      fetchSubmodules = false;
+      sha256 = "sha256-okQ/63hDC/KiBanHq4CiuEfH3y45mTShNfRG2DOqrMc=";
+    });
+  };
   zat = {
     pname = "zat";
     version = "fed88c4310cf70c8b01c9a7eb0918b8c4d117e77";

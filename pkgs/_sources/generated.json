@@ -506,6 +506,25 @@
         },
         "version": "0142476bcfda52876951f49b0990ac1d85377d3a"
     },
+    "watchexec-simple": {
+        "cargoLocks": null,
+        "extract": null,
+        "name": "watchexec-simple",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "kurtbuilds",
+            "repo": "watchexec-simple",
+            "rev": "61387ab273eb6e71503c3e7d042e1a319fb6cfa5",
+            "sha256": "sha256-okQ/63hDC/KiBanHq4CiuEfH3y45mTShNfRG2DOqrMc=",
+            "type": "github"
+        },
+        "version": "61387ab273eb6e71503c3e7d042e1a319fb6cfa5"
+    },
     "zat": {
         "cargoLocks": null,
         "extract": null,
