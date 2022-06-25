@@ -22,13 +22,13 @@
   };
   broker = {
     pname = "broker";
-    version = "635820e05a98af391c1eb3793ca939f8b37d7868";
+    version = "d3b43ac67dc9b299f8ef43a220cfca68e7139be6";
     src = fetchFromGitHub ({
       owner = "zeek";
       repo = "broker";
-      rev = "635820e05a98af391c1eb3793ca939f8b37d7868";
+      rev = "d3b43ac67dc9b299f8ef43a220cfca68e7139be6";
       fetchSubmodules = true;
-      sha256 = "sha256-zgpumY9QcQupcPX+aZAC5Hu+mroTWHvpvBxT/xNPtdg=";
+      sha256 = "sha256-KKdzIUHWzmLRdqy5mV6slmIQ8eyyGkdNkTmRScFnY4c=";
     });
   };
   broker-to-json = {
@@ -266,13 +266,13 @@
   };
   tuc = {
     pname = "tuc";
-    version = "5ae4cb325695bd19a8df8bc6efc9756a6f088b25";
+    version = "05a646ae1f3ef8373ae274726f60177d1859787c";
     src = fetchFromGitHub ({
       owner = "riquito";
       repo = "tuc";
-      rev = "5ae4cb325695bd19a8df8bc6efc9756a6f088b25";
+      rev = "05a646ae1f3ef8373ae274726f60177d1859787c";
       fetchSubmodules = false;
-      sha256 = "sha256-M2SK6KF8R0WcyFf8eTyYNK5oXj/DfCrAkUZJ3J2LF6U=";
+      sha256 = "sha256-MSA4StVuStZwRs792iXdm1yXL2CmR9Hqw62Zj8JLD3g=";
     });
   };
   vailyn = {
@@ -321,24 +321,24 @@
   };
   zed = {
     pname = "zed";
-    version = "8bbfbf1895710158bb89a34326d635e37be4ddb1";
+    version = "d932b230538a3fc9845f2ba0dfaa47f4d9694530";
     src = fetchFromGitHub ({
       owner = "brimdata";
       repo = "zed";
-      rev = "8bbfbf1895710158bb89a34326d635e37be4ddb1";
+      rev = "d932b230538a3fc9845f2ba0dfaa47f4d9694530";
       fetchSubmodules = false;
-      sha256 = "sha256-L136hnO2GYybVUHYi6Tm7ZxJxEnrRob/ttJZrtaZWrA=";
+      sha256 = "sha256-m1Hr+7GY2j7S/ZISzEplI4yqZp1umMlyFsnz3hXCpN0=";
     });
   };
   zeekscript = {
     pname = "zeekscript";
-    version = "22ecc621a6a6a9b93b3b61eb8b97b39ac0969ab6";
+    version = "9f48f8912c7f157e082d3d0ddfd9d749d9bb7592";
     src = fetchFromGitHub ({
       owner = "zeek";
       repo = "zeekscript";
-      rev = "22ecc621a6a6a9b93b3b61eb8b97b39ac0969ab6";
+      rev = "9f48f8912c7f157e082d3d0ddfd9d749d9bb7592";
       fetchSubmodules = true;
-      sha256 = "sha256-zi9lPcdSQtniHod9Fjb5j5a59xTZJH2JjouYpETH0rY=";
+      sha256 = "sha256-gXXbsvKUmenO+0biPEV4n+ZynZyoeAk8ghKxtc3C0zc=";
     });
   };
 }
