@@ -214,13 +214,13 @@
   };
   nvdtools = {
     pname = "nvdtools";
-    version = "22daa55f30c8aa6a78565cc6b4c160c41b867636";
+    version = "70c91dcb7410dfe95be5f08d20020fb25c007068";
     src = fetchFromGitHub ({
       owner = "facebookincubator";
       repo = "nvdtools";
-      rev = "22daa55f30c8aa6a78565cc6b4c160c41b867636";
+      rev = "70c91dcb7410dfe95be5f08d20020fb25c007068";
       fetchSubmodules = false;
-      sha256 = "sha256-uB7dfqGaoP9Xx04BykscIFQ2rckaMaj93gh5mhgMqfw=";
+      sha256 = "sha256-OgEWFrN8YOiMxfUVbloyPQD0Y51SyJ07/88yL7U798s=";
     });
   };
   osquery = {
