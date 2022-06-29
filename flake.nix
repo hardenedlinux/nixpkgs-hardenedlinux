@@ -5,7 +5,8 @@
   };
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+    #nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+    nixpkgs.url = "/home/gtrun/ghq/github.com/NixOS/nixpkgs";
     nixpkgs_21.url = "github:NixOS/nixpkgs/release-21.05";
 
     flake-compat.url = "github:edolstra/flake-compat";

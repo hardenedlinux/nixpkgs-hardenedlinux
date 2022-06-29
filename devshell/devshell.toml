@@ -17,5 +17,6 @@ category = "Build"
 command = '''
         nix -Lv build .#broker --no-link
         nix -Lv build .#zed --no-link
+        nix -Lv build .#zeek-language-server --no-link
         '''
 help = "Build Packages with nix build"

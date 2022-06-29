@@ -1,5 +1,4 @@
 {
-  dream2nix,
   system,
   nixpkgs-hardenedlinux-sources,
   crane,

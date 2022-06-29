@@ -10,4 +10,5 @@ final: prev: {
   update-package = prev.callPackage ./update-package {};
   caretaker = prev.callPackage ./caretaker {};
   watchexec-simple = prev.callPackage ./watchexec-simple {};
+  zeek-language-server = prev.callPackage ./zeek-language-server {};
 }

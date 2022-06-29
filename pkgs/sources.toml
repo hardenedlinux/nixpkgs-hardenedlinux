@@ -143,3 +143,8 @@ cargo_locks = ["Cargo.lock"]
 [watchexec-simple]
 src.git = "https://github.com/kurtbuilds/watchexec-simple"
 fetch.github = "kurtbuilds/watchexec-simple"
+
+[zeek-language-server]
+src.git = "https://github.com/bbannier/zeek-language-server"
+fetch.github = "bbannier/zeek-language-server"
+git.fetchSubmodules = true
