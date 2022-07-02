@@ -143,24 +143,24 @@
   };
   fastai = {
     pname = "fastai";
-    version = "87bb9f936d880b451758b3a2c12e6472821c3092";
+    version = "62de7d0ceaf37ad539ab6596812e7ba84b1a23be";
     src = fetchFromGitHub ({
       owner = "fastai";
       repo = "fastai";
-      rev = "87bb9f936d880b451758b3a2c12e6472821c3092";
+      rev = "62de7d0ceaf37ad539ab6596812e7ba84b1a23be";
       fetchSubmodules = false;
-      sha256 = "sha256-LgbKsLP1jlL5+QBUnNeJ7d/IGR0FHYe7MPAianwRXF8=";
+      sha256 = "sha256-M4xnHuSaaaZK+XjVNcmwBeOGwAb3IiCBgC8pJsbbFVA=";
     });
   };
   fastcore = {
     pname = "fastcore";
-    version = "2fa2a63c323b5093c2b241b6aa066f32e828c259";
+    version = "c9932a29d21e0a8cb2a4cba1a6d2dc6e1e8d0e06";
     src = fetchFromGitHub ({
       owner = "fastai";
       repo = "fastcore";
-      rev = "2fa2a63c323b5093c2b241b6aa066f32e828c259";
+      rev = "c9932a29d21e0a8cb2a4cba1a6d2dc6e1e8d0e06";
       fetchSubmodules = false;
-      sha256 = "sha256-rvBW1F9xlXXPnlYVPTrWx5AYIzYGgbc9Zv4A2SQ/Hvk=";
+      sha256 = "sha256-XkL6Sh7KIMIs/xZvnRAnNTGkPw1wN2UOTm+FTLBolYg=";
     });
   };
   fastprogress = {
@@ -321,13 +321,13 @@
   };
   zed = {
     pname = "zed";
-    version = "c1fe5675e1b1c9f3cbe4bbdd0e026bb9bee0bf20";
+    version = "28029f0660bbefb7f1d17b19e4acf8cf31ae1de1";
     src = fetchFromGitHub ({
       owner = "brimdata";
       repo = "zed";
-      rev = "c1fe5675e1b1c9f3cbe4bbdd0e026bb9bee0bf20";
+      rev = "28029f0660bbefb7f1d17b19e4acf8cf31ae1de1";
       fetchSubmodules = false;
-      sha256 = "sha256-CQSJ9Ap58qCDHYNGz2t6llReXRdN6w/uMioSHchioIk=";
+      sha256 = "sha256-dXkRr7p1I85nbkJTSIoB9/pUI0CmAf3a3vhHiRZVLuw=";
     });
   };
   zeek-language-server = {
