@@ -249,11 +249,11 @@
             "name": null,
             "owner": "fastai",
             "repo": "fastai",
-            "rev": "c63fd86338daa1cf58924f6c1494cbe721577a8f",
-            "sha256": "sha256-UlEmtRRQhm7szI7Pk9sJghSHPb5xCXkwhzDkUj/Y35c=",
+            "rev": "42513e562b23bd9e7e36241b78ef61b083613402",
+            "sha256": "sha256-4uR/JDDOWYJQ5YohJ7st6/oFtMlaaaMdnKL6JqG6fdk=",
             "type": "github"
         },
-        "version": "c63fd86338daa1cf58924f6c1494cbe721577a8f"
+        "version": "42513e562b23bd9e7e36241b78ef61b083613402"
     },
     "fastcore": {
         "cargoLocks": null,
@@ -268,11 +268,11 @@
             "name": null,
             "owner": "fastai",
             "repo": "fastcore",
-            "rev": "cafd1d7db55298556381b3191b7ea568b2dd5219",
-            "sha256": "sha256-VEiG2m9rCla6i8Q2KrO+0pnhxyFh4o/eCU5rDlbTAbs=",
+            "rev": "8c632ba708f77a1b4e6cd284fdcc274b42b92739",
+            "sha256": "sha256-YzpGi9WHSWwYa1N5DmlB1q6csJkpBIztI/b/t60xQ2I=",
             "type": "github"
         },
-        "version": "cafd1d7db55298556381b3191b7ea568b2dd5219"
+        "version": "8c632ba708f77a1b4e6cd284fdcc274b42b92739"
     },
     "fastprogress": {
         "cargoLocks": null,

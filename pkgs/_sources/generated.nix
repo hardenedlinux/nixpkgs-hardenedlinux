@@ -143,24 +143,24 @@
   };
   fastai = {
     pname = "fastai";
-    version = "c63fd86338daa1cf58924f6c1494cbe721577a8f";
+    version = "42513e562b23bd9e7e36241b78ef61b083613402";
     src = fetchFromGitHub ({
       owner = "fastai";
       repo = "fastai";
-      rev = "c63fd86338daa1cf58924f6c1494cbe721577a8f";
+      rev = "42513e562b23bd9e7e36241b78ef61b083613402";
       fetchSubmodules = false;
-      sha256 = "sha256-UlEmtRRQhm7szI7Pk9sJghSHPb5xCXkwhzDkUj/Y35c=";
+      sha256 = "sha256-4uR/JDDOWYJQ5YohJ7st6/oFtMlaaaMdnKL6JqG6fdk=";
     });
   };
   fastcore = {
     pname = "fastcore";
-    version = "cafd1d7db55298556381b3191b7ea568b2dd5219";
+    version = "8c632ba708f77a1b4e6cd284fdcc274b42b92739";
     src = fetchFromGitHub ({
       owner = "fastai";
       repo = "fastcore";
-      rev = "cafd1d7db55298556381b3191b7ea568b2dd5219";
+      rev = "8c632ba708f77a1b4e6cd284fdcc274b42b92739";
       fetchSubmodules = false;
-      sha256 = "sha256-VEiG2m9rCla6i8Q2KrO+0pnhxyFh4o/eCU5rDlbTAbs=";
+      sha256 = "sha256-YzpGi9WHSWwYa1N5DmlB1q6csJkpBIztI/b/t60xQ2I=";
     });
   };
   fastprogress = {
