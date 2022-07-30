@@ -557,11 +557,11 @@
             "name": null,
             "owner": "brimdata",
             "repo": "zed",
-            "rev": "c0c909d388233de36a19874a36d9a466a0ffdfe3",
-            "sha256": "sha256-3sLLyDhdwmW4U6HgB5QkVOYMfcAduKjqE7auw2E4N4o=",
+            "rev": "ae1ac60a485d4be3896afbf81b3d6c7f0f76078f",
+            "sha256": "sha256-+XvcpczVpHK5zJI0llaPg010hDx5Ecd+b7sLnnymNG4=",
             "type": "github"
         },
-        "version": "c0c909d388233de36a19874a36d9a466a0ffdfe3"
+        "version": "ae1ac60a485d4be3896afbf81b3d6c7f0f76078f"
     },
     "zeek-language-server": {
         "cargoLocks": null,
