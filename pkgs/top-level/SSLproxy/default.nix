@@ -17,8 +17,6 @@ gnustep.gsmakeDerivation rec {
 
   LIBNET_BASE = libnet;
 
-  doCheck = false;
-
   PREFIX = "${placeholder "out"}";
 
   buildInputs = [libevent libpcap sqlite];
