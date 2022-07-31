@@ -132,24 +132,24 @@
   };
   elastalert2 = {
     pname = "elastalert2";
-    version = "7de71556bf5f965de96fc9efb790ab595a774e06";
+    version = "ccbff512007c59f205e0746085aa553800ce899a";
     src = fetchFromGitHub ({
       owner = "jertel";
       repo = "elastalert2";
-      rev = "7de71556bf5f965de96fc9efb790ab595a774e06";
+      rev = "ccbff512007c59f205e0746085aa553800ce899a";
       fetchSubmodules = false;
-      sha256 = "sha256-NX8WbtUST/RGEB8W0dMi0dR2PsbRBTdZDhdlNXAVn4k=";
+      sha256 = "sha256-fmF2VF6+Cjye8VSq8XdJlkeEH+jqC0cgTPGV+XQ/phM=";
     });
   };
   fastai = {
     pname = "fastai";
-    version = "42513e562b23bd9e7e36241b78ef61b083613402";
+    version = "5b6786a3cf4f98b86dcfed8b30738455ede2c640";
     src = fetchFromGitHub ({
       owner = "fastai";
       repo = "fastai";
-      rev = "42513e562b23bd9e7e36241b78ef61b083613402";
+      rev = "5b6786a3cf4f98b86dcfed8b30738455ede2c640";
       fetchSubmodules = false;
-      sha256 = "sha256-4uR/JDDOWYJQ5YohJ7st6/oFtMlaaaMdnKL6JqG6fdk=";
+      sha256 = "sha256-BVDD59clak954bTd4SVBki1EUeS1I5hDhnd9YCUtm0U=";
     });
   };
   fastcore = {
@@ -206,10 +206,10 @@
   };
   nix-unstable-installer = {
     pname = "nix-unstable-installer";
-    version = "nix-2.10.0pre20220715_0621e99";
+    version = "nix-2.10.0pre20220728_86fcd4f";
     src = fetchurl {
-      url = "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.10.0pre20220715_0621e99/install";
-      sha256 = "sha256-D+TswPqN4Ehy2y78SZttekyX6Y22tnrVCa6gB3z6mkQ=";
+      url = "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.10.0pre20220728_86fcd4f/install";
+      sha256 = "sha256-bK8XLDO+YZtvCu9izpKj69dLq30yntIlNLKonDt3Is0=";
     };
   };
   nvdtools = {
@@ -240,6 +240,17 @@
       rev = "7dc704fa37057c685fe2d86611f318146c95c34d";
       fetchSubmodules = true;
       sha256 = "sha256-fjol52OEWNC+fXqbZ9EoQuJw1Ns+MafpUjpTkze1n1k=";
+    });
+  };
+  sslproxy = {
+    pname = "sslproxy";
+    version = "e456f56001e4dd99972a0430122a5782538a60fd";
+    src = fetchFromGitHub ({
+      owner = "sonertari";
+      repo = "SSLproxy";
+      rev = "e456f56001e4dd99972a0430122a5782538a60fd";
+      fetchSubmodules = false;
+      sha256 = "sha256-HH2QMBfX907oqdd+OlY0Wai/fOsrA5tI/BWW5Vj6pmo=";
     });
   };
   sybilhunter = {
