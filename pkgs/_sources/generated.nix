@@ -3,32 +3,32 @@
 {
   aim = {
     pname = "aim";
-    version = "v3.12.0";
+    version = "v3.12.2";
     src = fetchFromGitHub ({
       owner = "aimhubio";
       repo = "aim";
-      rev = "v3.12.0";
+      rev = "v3.12.2";
       fetchSubmodules = false;
-      sha256 = "sha256-X9ckVAgul5vmngOJ5ojhlFCCzToiDTUSnhn9EFjgS60=";
+      sha256 = "sha256-HqLjN3WvVks/gJpUMB38RM+IQxJvqrgbhpuPM+j7u38=";
     });
   };
   brim = {
     pname = "brim";
-    version = "0.30.0";
+    version = "0.31.0";
     src = fetchurl {
-      url = "https://github.com/brimdata/brim/releases/download/v0.30.0/Brim-0.30.0.deb";
-      sha256 = "sha256-sN3w3M9DtVPQi+He7ZXZJr2K6vKHpdz9PJrKoNjrGJo=";
+      url = "https://github.com/brimdata/brim/releases/download/v0.31.0/Brim-0.31.0.deb";
+      sha256 = "sha256-ouJB8DHK5IZdPCZ9/r7ah7qaSWh5L05EHvklaBhfz1A=";
     };
   };
   broker = {
     pname = "broker";
-    version = "dc7b266e8289472096828ad51547237f49a91841";
+    version = "1084bd43ce92483450d3e47ee5dcf172252e814a";
     src = fetchFromGitHub ({
       owner = "zeek";
       repo = "broker";
-      rev = "dc7b266e8289472096828ad51547237f49a91841";
+      rev = "1084bd43ce92483450d3e47ee5dcf172252e814a";
       fetchSubmodules = true;
-      sha256 = "sha256-VOSJ8G4vw3sTmyH+wSxRZPeSf/9FEMAEPwc55anH844=";
+      sha256 = "sha256-NwNdGf+HLrxAlNxDIWBIbgekqr631w338/ZSOIDo6Aw=";
     });
   };
   broker-to-json = {
@@ -143,24 +143,24 @@
   };
   fastai = {
     pname = "fastai";
-    version = "5b6786a3cf4f98b86dcfed8b30738455ede2c640";
+    version = "c593c3bea3b9205d921728b99f19e8e5007da91f";
     src = fetchFromGitHub ({
       owner = "fastai";
       repo = "fastai";
-      rev = "5b6786a3cf4f98b86dcfed8b30738455ede2c640";
+      rev = "c593c3bea3b9205d921728b99f19e8e5007da91f";
       fetchSubmodules = false;
-      sha256 = "sha256-BVDD59clak954bTd4SVBki1EUeS1I5hDhnd9YCUtm0U=";
+      sha256 = "sha256-9uIbW+NE4lageuKE4nvT3zzpFmS+v8x2HgTaNV7+t4k=";
     });
   };
   fastcore = {
     pname = "fastcore";
-    version = "8c632ba708f77a1b4e6cd284fdcc274b42b92739";
+    version = "6c726a0b303b0f3caeee46ddf08a81f8d2eefec9";
     src = fetchFromGitHub ({
       owner = "fastai";
       repo = "fastcore";
-      rev = "8c632ba708f77a1b4e6cd284fdcc274b42b92739";
+      rev = "6c726a0b303b0f3caeee46ddf08a81f8d2eefec9";
       fetchSubmodules = false;
-      sha256 = "sha256-YzpGi9WHSWwYa1N5DmlB1q6csJkpBIztI/b/t60xQ2I=";
+      sha256 = "sha256-910D1Syk8BT9EKKb5CDpTidF7uNa+n3thwaL5ritcd0=";
     });
   };
   fastprogress = {
@@ -277,13 +277,13 @@
   };
   tuc = {
     pname = "tuc";
-    version = "18433b97b85eb13f9ae316b20c6502c56c050c29";
+    version = "845227542aaa0e2adc4ba10b1c12e8a18ca88b91";
     src = fetchFromGitHub ({
       owner = "riquito";
       repo = "tuc";
-      rev = "18433b97b85eb13f9ae316b20c6502c56c050c29";
+      rev = "845227542aaa0e2adc4ba10b1c12e8a18ca88b91";
       fetchSubmodules = false;
-      sha256 = "sha256-AovxfaaqKcazUHHFXIjIz7Fjq0goFeurVMETyYc2iS0=";
+      sha256 = "sha256-YRw5hBkvUY7X6Dv6rOyEYFccsY2a5mtYsq9+cR5Xj3w=";
     });
   };
   vailyn = {
