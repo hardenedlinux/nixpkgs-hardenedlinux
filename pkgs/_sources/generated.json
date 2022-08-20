@@ -45,11 +45,11 @@
             "name": null,
             "owner": "zeek",
             "repo": "broker",
-            "rev": "1084bd43ce92483450d3e47ee5dcf172252e814a",
-            "sha256": "sha256-NwNdGf+HLrxAlNxDIWBIbgekqr631w338/ZSOIDo6Aw=",
+            "rev": "bc9e47c3efbf9ddc9dad9cb918b5007f4433b1c0",
+            "sha256": "sha256-vg7I4u19abNF/n0WUAlnRqAmwEkWI70cIkjcNUW72wE=",
             "type": "github"
         },
-        "version": "1084bd43ce92483450d3e47ee5dcf172252e814a"
+        "version": "bc9e47c3efbf9ddc9dad9cb918b5007f4433b1c0"
     },
     "broker-to-json": {
         "cargoLocks": null,
@@ -230,11 +230,11 @@
             "name": null,
             "owner": "jertel",
             "repo": "elastalert2",
-            "rev": "ccbff512007c59f205e0746085aa553800ce899a",
-            "sha256": "sha256-fmF2VF6+Cjye8VSq8XdJlkeEH+jqC0cgTPGV+XQ/phM=",
+            "rev": "91b59675b895c536f2907714ff8c1db8727deac4",
+            "sha256": "sha256-lHwBIzsyfDK+ODqoVulV5rIUWh15vMqF/Ghc3gJz3qM=",
             "type": "github"
         },
-        "version": "ccbff512007c59f205e0746085aa553800ce899a"
+        "version": "91b59675b895c536f2907714ff8c1db8727deac4"
     },
     "fastai": {
         "cargoLocks": null,
@@ -249,11 +249,11 @@
             "name": null,
             "owner": "fastai",
             "repo": "fastai",
-            "rev": "c593c3bea3b9205d921728b99f19e8e5007da91f",
-            "sha256": "sha256-9uIbW+NE4lageuKE4nvT3zzpFmS+v8x2HgTaNV7+t4k=",
+            "rev": "2c515fc9ad6428645d509ac3f8795c61db3a76d9",
+            "sha256": "sha256-UdJMFNK6+T290xLcl4ViysKDirceu+fWB/YtvfCG6zI=",
             "type": "github"
         },
-        "version": "c593c3bea3b9205d921728b99f19e8e5007da91f"
+        "version": "2c515fc9ad6428645d509ac3f8795c61db3a76d9"
     },
     "fastcore": {
         "cargoLocks": null,
@@ -268,11 +268,11 @@
             "name": null,
             "owner": "fastai",
             "repo": "fastcore",
-            "rev": "6c726a0b303b0f3caeee46ddf08a81f8d2eefec9",
-            "sha256": "sha256-910D1Syk8BT9EKKb5CDpTidF7uNa+n3thwaL5ritcd0=",
+            "rev": "4ffcf5cb1e4aa6467b0f5d0aa38b658309bf86f3",
+            "sha256": "sha256-Tuc+gvaspCGi0wXW7QU7PdMqKBzNC8i8upYZUcR8Qzo=",
             "type": "github"
         },
-        "version": "6c726a0b303b0f3caeee46ddf08a81f8d2eefec9"
+        "version": "4ffcf5cb1e4aa6467b0f5d0aa38b658309bf86f3"
     },
     "fastprogress": {
         "cargoLocks": null,
@@ -353,11 +353,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-bK8XLDO+YZtvCu9izpKj69dLq30yntIlNLKonDt3Is0=",
+            "sha256": "sha256-4IPtFq5NWgp2nVKrsCcGouvypk00oNdfRVZxe1NBVDU=",
             "type": "url",
-            "url": "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.10.0pre20220728_86fcd4f/install"
+            "url": "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.10.0pre20220811_80a9609/install"
         },
-        "version": "nix-2.10.0pre20220728_86fcd4f"
+        "version": "nix-2.10.0pre20220811_80a9609"
     },
     "nvdtools": {
         "cargoLocks": null,
@@ -405,11 +405,11 @@
             "name": null,
             "owner": "tree-sitter",
             "repo": "py-tree-sitter",
-            "rev": "7dc704fa37057c685fe2d86611f318146c95c34d",
-            "sha256": "sha256-fjol52OEWNC+fXqbZ9EoQuJw1Ns+MafpUjpTkze1n1k=",
+            "rev": "82f9af6fc243fd3deb3f4a1264127b8e53bc19d3",
+            "sha256": "sha256-FU1nEOkcNvnFkQBfH0xritXtcZCycgcUNBBc8SlaDzQ=",
             "type": "github"
         },
-        "version": "7dc704fa37057c685fe2d86611f318146c95c34d"
+        "version": "82f9af6fc243fd3deb3f4a1264127b8e53bc19d3"
     },
     "sslproxy": {
         "cargoLocks": null,
@@ -481,11 +481,11 @@
             "name": null,
             "owner": "riquito",
             "repo": "tuc",
-            "rev": "845227542aaa0e2adc4ba10b1c12e8a18ca88b91",
-            "sha256": "sha256-YRw5hBkvUY7X6Dv6rOyEYFccsY2a5mtYsq9+cR5Xj3w=",
+            "rev": "5c5c1428355f52646e6655845131416aad9a55f8",
+            "sha256": "sha256-coTYSzHFlJQO/kT0xs/IPknF2MFVLw7p004JgK8yutE=",
             "type": "github"
         },
-        "version": "845227542aaa0e2adc4ba10b1c12e8a18ca88b91"
+        "version": "5c5c1428355f52646e6655845131416aad9a55f8"
     },
     "vailyn": {
         "cargoLocks": null,
@@ -576,11 +576,11 @@
             "name": null,
             "owner": "brimdata",
             "repo": "zed",
-            "rev": "ae1ac60a485d4be3896afbf81b3d6c7f0f76078f",
-            "sha256": "sha256-+XvcpczVpHK5zJI0llaPg010hDx5Ecd+b7sLnnymNG4=",
+            "rev": "56d5de4082c4ecc895cec5237a3197a4ecbe65cb",
+            "sha256": "sha256-iIJzIhI1YHq64R9WQoC5w26OnufIOkiz+anxdGWMTSc=",
             "type": "github"
         },
-        "version": "ae1ac60a485d4be3896afbf81b3d6c7f0f76078f"
+        "version": "56d5de4082c4ecc895cec5237a3197a4ecbe65cb"
     },
     "zeek-language-server": {
         "cargoLocks": null,
@@ -595,11 +595,11 @@
             "name": null,
             "owner": "bbannier",
             "repo": "zeek-language-server",
-            "rev": "c5ca0e3d6d7fe047595363ed48f60b56b76971f0",
-            "sha256": "sha256-kHAxd1gMm0Cx1UwjsU8fr09cZyrdhSlJb0e/D6bgaNU=",
+            "rev": "070abe349d4bc848d7ef107562850b39e344041f",
+            "sha256": "sha256-GcO+byVckNtQe5jXV2Fe1zSEY6+kHoV6B2pAL9ZiyMQ=",
             "type": "github"
         },
-        "version": "c5ca0e3d6d7fe047595363ed48f60b56b76971f0"
+        "version": "070abe349d4bc848d7ef107562850b39e344041f"
     },
     "zeekscript": {
         "cargoLocks": null,
