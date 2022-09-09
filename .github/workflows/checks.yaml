@@ -20,7 +20,7 @@ jobs:
 
       - uses: cachix/install-nix-action@v17
         with:
-          install_url: https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.9.0pre20220519_5aeda91/install
+          install_url: https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.10.0pre20220822_7c3ab57/install
           extra_nix_config: |
             experimental-features = nix-command flakes
             system-features = nixos-test benchmark big-parallel kvm recursive-nix
