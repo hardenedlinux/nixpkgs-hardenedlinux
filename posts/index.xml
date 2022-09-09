@@ -16,6 +16,15 @@
     </item>
     
     <item>
+      <title>Package List</title>
+      <link>https://hardenedlinux.github.io/nixpkgs-hardenedlinux/posts/package/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hardenedlinux.github.io/nixpkgs-hardenedlinux/posts/package/</guid>
+      <description>Data Analysis Library python [2022-04-29 Fri 19:28] -&amp;gt; aim Python Data Analysis Library — pandas: Python Data Analysis Library urllib — URL handling modules — Python 3.7.4 documentation IPy · PyPI drkjam/netaddr: A network address manipulation library for Python john-kurkowski/tldextract: Accurately separate the TLD from the registered domain and subdomains of a URL, using the Public Suffix List. networkx/networkx: Official NetworkX source code repository. format parse python SuperCowPowers/bat: Bro Analysis Tools (BAT): Processing and analysis of Bro network data with Pandas, scikit-learn, and Spark Zeek Visualizations R Create Elegant Data Visualisations Using the Grammar of Graphics • ggplot2 yutannihilation/gghighlight: Highlight points and lines in ggplot2 business-science/anomalize: Tidy anomaly detection teunbrand/ggnomics: A small project to add ggplot2 extensions r-spatial/sf: Simple Features for R - Brave time R xts function | R Documentation business-science/timetk: A toolkit for working with time series in R Distance/ Geoip python [[https://github.</description>
+    </item>
+    
+    <item>
       <title>Phishing</title>
       <link>https://hardenedlinux.github.io/nixpkgs-hardenedlinux/posts/phishing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
