@@ -1,89 +1,38 @@
 {
-  description = "Hardenedlinux Nixpkgs Collection -> Nix Flakes ";
-  nixConfig = {
-    flake-registry = "https://github.com/hardenedlinux/flake-registry/raw/main/flake-registry.json";
+  inputs = {
+    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+    nixpkgs-lock.follows = "nixpkgs";
+
+    cells-lab.url = "github:GTrunSec/cells-lab";
+    std.follows = "cells-lab/std";
   };
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
-    nixpkgs_21.url = "github:NixOS/nixpkgs/release-21.05";
-
-    flake-compat.url = "github:edolstra/flake-compat";
-    flake-compat.flake = false;
-
-    devshell.url = "github:numtide/devshell";
-    devshell.inputs.nixpkgs.follows = "nixpkgs";
-
-    pypi-deps-db.url = "github:DavHau/pypi-deps-db";
-    pypi-deps-db.flake = false;
-    mach-nix.url = "github:DavHau/mach-nix";
-    mach-nix.inputs.pypi-deps-db.follows = "pypi-deps-db";
-
-    poetry2nix.url = "github:nix-community/poetry2nix";
-    poetry2nix.inputs.nixpkgs.follows = "nixpkgs";
-
-    org-roam-book-template.url = "github:gtrunsec/org-roam-book-template";
-    org-roam-book-template.inputs.nixpkgs.follows = "nixpkgs";
-
-    gomod2nix.url = "github:tweag/gomod2nix";
-    gomod2nix.inputs.nixpkgs.follows = "nixpkgs";
-
-    xnlib.url = "github:gtrunsec/xnlib";
-    xnlib.inputs.nixpkgs.follows = "nixpkgs";
-
-    crane.url = "github:ipetkov/crane";
-    crane.inputs.nixpkgs.follows = "nixpkgs";
+    nixos.url = "github:NixOS/nixpkgs/nixos-22.05";
   };
-  outputs = {
-    self,
-    nixpkgs,
-    latest,
-    utils,
-    nixpkgs_20,
-    ...
-  } @ inputs: let
-    inherit (utils.lib) exportOverlays exportPackages exportModules;
-  in
-    utils.lib.mkFlake {
-      inherit self inputs;
 
-      lib = import ./lib {lib = inputs.xnlib.lib;};
+  outputs = {std, ...} @ inputs:
+    std.growOn {
+      inherit inputs;
+      cellsFrom = ./nix;
 
-      # supportedSystems = [ "x86_64-linux" ];
+      cellBlocks = [
+        (std.blockTypes.installables "packages")
 
-      channelsConfig = {
-        allowUnsupportedSystem = true;
-        allowBroken = true;
-        allowUnfree = true;
-      };
+        (std.blockTypes.functions "devshellProfiles")
+        (std.blockTypes.devshells "devshells")
 
-      channels = import ./channels {inherit self inputs;};
+        (std.blockTypes.runnables "entrypoints")
 
-      sharedOverlays =
-        [
-          inputs.gomod2nix.overlays.default
-          inputs.devshell.overlay
-          inputs.poetry2nix.overlay
-          (import ./overlays/shared {inherit inputs;})
-        ]
-        ++ (inputs.xnlib.lib.importers.importOverlays ./overlays/shared);
-      # exportOverlays automatically for all packages defined in overlaysBuilder of each channel
+        (std.blockTypes.functions "lib")
 
-      overlays = exportOverlays {inherit (self) pkgs inputs;};
+        (std.blockTypes.functions "packages")
 
-      outputsBuilder = channels: {
-        # apps = import ./apps inputs channels;
-        packages = exportPackages self.overlays channels;
-        devShell = import ./devshell {inherit self inputs channels;};
-      };
-    }
-    // {
-      nixosModules = {
-        honeygrove = import ./modules/honeygrove.nix;
-        osquery-bin = {
-          imports = [./modules/osquery.nix];
-          nixpkgs.config.packageOverrides = pkgs: {} // self.packages."${pkgs.stdenv.hostPlatform.system}";
-        };
-      };
+        (std.blockTypes.functions "overlays")
+
+        (std.blockTypes.nixago "nixago")
+      ];
+    } {
+      devShells = inputs.std.harvest inputs.self ["main" "devshells"];
     };
 }
