@@ -2,10 +2,10 @@
   stdenv,
   lib,
   python3Packages,
-  nixpkgs-hardenedlinux-sources,
+  nixpkgs-hardenedlinux-python-sources,
 }:
 python3Packages.buildPythonPackage rec {
-  inherit (nixpkgs-hardenedlinux-sources.vault-cli) pname src version;
+  inherit (nixpkgs-hardenedlinux-python-sources.vault-cli) pname src version;
   propagatedBuildInputs = with python3Packages; [click pyyaml jinja2 requests hvac];
   checkInputs = with python3Packages; [pytest];
   postPatch = ''

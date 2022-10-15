@@ -2,11 +2,11 @@
   stdenv,
   lib,
   python3Packages,
-  nixpkgs-hardenedlinux-sources,
+  nixpkgs-hardenedlinux-python-sources,
   tree-sitter,
 }:
 python3Packages.buildPythonPackage rec {
-  inherit (nixpkgs-hardenedlinux-sources.py-tree-sitter) pname src version;
+  inherit (nixpkgs-hardenedlinux-python-sources.py-tree-sitter) pname src version;
   propagatedBuildInputs = with python3Packages; [tree-sitter];
   doCheck = false;
   meta = with lib; {

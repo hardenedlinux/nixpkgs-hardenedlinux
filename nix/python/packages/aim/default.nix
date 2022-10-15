@@ -2,13 +2,13 @@
   lib,
   fetchFromGitHub,
   python3Packages,
-  nixpkgs-hardenedlinux-sources,
+  nixpkgs-hardenedlinux-python-sources,
   machlib,
   stdenv,
 }: let
   aim-requirements = machlib.mkPython rec {
     requirements = ''
-      # aim-ui==${nixpkgs-hardenedlinux-sources.aim.version}
+      # aim-ui==${nixpkgs-hardenedlinux-python-sources.aim.version}
       aim-ui
       Cython==3.0.0a9
       aimrecords==0.0.7
@@ -41,7 +41,7 @@
   };
 in
   python3Packages.buildPythonPackage rec {
-    inherit (nixpkgs-hardenedlinux-sources.aim) pname version src;
+    inherit (nixpkgs-hardenedlinux-python-sources.aim) pname version src;
 
     nativeBuildInputs = with python3Packages; [];
 

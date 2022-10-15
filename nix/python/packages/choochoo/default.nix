@@ -1,7 +1,7 @@
 {
   lib,
   python3Packages,
-  nixpkgs-hardenedlinux-sources,
+  nixpkgs-hardenedlinux-python-sources,
   machlib,
 }: let
   choochoo-requirements = machlib.mkPython rec {
@@ -32,7 +32,7 @@
   };
 in
   python3Packages.buildPythonPackage rec {
-    inherit (nixpkgs-hardenedlinux-sources.choochoo) pname version src;
+    inherit (nixpkgs-hardenedlinux-python-sources.choochoo) pname version src;
     preConfigure = ''
       cd py
     '';

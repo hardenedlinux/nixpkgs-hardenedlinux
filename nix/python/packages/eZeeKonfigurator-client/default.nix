@@ -2,14 +2,14 @@
   lib,
   fetchFromGitHub,
   python3Packages,
-  nixpkgs-hardenedlinux-sources,
+  nixpkgs-hardenedlinux-python-sources,
   machlib,
   broker38,
 }: let
   eZeeKonfigurator_client-requirements = machlib.mkPython rec {
     requirements =
       builtins.readFile (
-        nixpkgs-hardenedlinux-sources.eZeeKonfigurator_client.src
+        nixpkgs-hardenedlinux-python-sources.eZeeKonfigurator_client.src
         + "/brokerd/requirements.txt"
       )
       + ''
@@ -19,7 +19,7 @@
 in
   python3Packages.buildPythonPackage rec {
     inherit
-      (nixpkgs-hardenedlinux-sources.eZeeKonfigurator_client)
+      (nixpkgs-hardenedlinux-python-sources.eZeeKonfigurator_client)
       pname
       version
       src

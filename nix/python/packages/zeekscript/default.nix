@@ -2,11 +2,11 @@
   stdenv,
   lib,
   python3Packages,
-  nixpkgs-hardenedlinux-sources,
+  nixpkgs-hardenedlinux-python-sources,
   py-tree-sitter,
 }:
 python3Packages.buildPythonPackage rec {
-  inherit (nixpkgs-hardenedlinux-sources.zeekscript) pname src version;
+  inherit (nixpkgs-hardenedlinux-python-sources.zeekscript) pname src version;
   propagatedBuildInputs = with python3Packages; [py-tree-sitter];
   doCheck = false;
   meta = with lib; {

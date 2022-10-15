@@ -2,13 +2,13 @@
   lib,
   fetchFromGitHub,
   python3Packages,
-  nixpkgs-hardenedlinux-sources,
+  nixpkgs-hardenedlinux-python-sources,
   machlib,
   broker-json,
   broker38,
 }: let
   eZeeKonfigurator-requirements = machlib.mkPython rec {
-    #requirements = builtins.readFile (nixpkgs-hardenedlinux-sources.eZeeKonfigurator.src + "/requirements_common.txt") + ''
+    #requirements = builtins.readFile (nixpkgs-hardenedlinux-python-sources.eZeeKonfigurator.src + "/requirements_common.txt") + ''
     requirements = ''
       setuptools-rust
       multidict==4.7.6
@@ -27,7 +27,7 @@
   };
 in
   python3Packages.buildPythonPackage rec {
-    inherit (nixpkgs-hardenedlinux-sources.eZeeKonfigurator) pname version src;
+    inherit (nixpkgs-hardenedlinux-python-sources.eZeeKonfigurator) pname version src;
     nativeBuildInputs = [];
     propagatedBuildInputs = with python3Packages; [eZeeKonfigurator-requirements broker-json broker38];
     postPatch = ''

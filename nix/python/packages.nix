@@ -6,7 +6,7 @@
   nixpkgs = inputs.cells._main.lib.nixpkgs.appendOverlays [
     cell.overlays.default
     (final: prev: {
-      nixpkgs-hardenedlinux-sources = prev.callPackage ./packages/_sources/generated.nix {};
+      nixpkgs-hardenedlinux-python-sources = prev.callPackage ./packages/_sources/generated.nix {};
     })
   ];
 in

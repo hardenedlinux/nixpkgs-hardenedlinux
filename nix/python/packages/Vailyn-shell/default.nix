@@ -2,7 +2,7 @@
   lib,
   fetchFromGitHub,
   python3Packages,
-  nixpkgs-hardenedlinux-sources,
+  nixpkgs-hardenedlinux-python-sources,
   machlib,
   makeWrapper,
   mkShell,

@@ -2,10 +2,10 @@
   stdenv,
   lib,
   python3Packages,
-  nixpkgs-hardenedlinux-sources,
+  nixpkgs-hardenedlinux-python-sources,
 }:
 python3Packages.buildPythonPackage rec {
-  inherit (nixpkgs-hardenedlinux-sources.zat) pname src version;
+  inherit (nixpkgs-hardenedlinux-python-sources.zat) pname src version;
   propagatedBuildInputs = with python3Packages; [pandas scikitlearn pyarrow requests watchdog numpy pyspark];
   doCheck = false;
   meta = with lib; {

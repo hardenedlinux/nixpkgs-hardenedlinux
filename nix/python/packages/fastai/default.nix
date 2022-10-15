@@ -3,22 +3,22 @@
   fetchFromGitHub,
   python3,
   python3Packages,
-  nixpkgs-hardenedlinux-sources,
+  nixpkgs-hardenedlinux-python-sources,
 }:
 with python3.pkgs; let
   fastcore = python3Packages.buildPythonPackage rec {
-    inherit (nixpkgs-hardenedlinux-sources.fastcore) pname version src;
+    inherit (nixpkgs-hardenedlinux-python-sources.fastcore) pname version src;
     propagatedBuildInputs = with python3Packages; [numpy packaging];
     dontUseSetuptoolsCheck = true;
   };
   fastprogress = python3Packages.buildPythonPackage rec {
-    inherit (nixpkgs-hardenedlinux-sources.fastprogress) pname version src;
+    inherit (nixpkgs-hardenedlinux-python-sources.fastprogress) pname version src;
     doCheck = false;
     propagatedBuildInputs = with python3Packages; [numpy];
   };
 in
   python3Packages.buildPythonPackage rec {
-    inherit (nixpkgs-hardenedlinux-sources.fastai) pname version src;
+    inherit (nixpkgs-hardenedlinux-python-sources.fastai) pname version src;
     propagatedBuildInputs = with python3Packages; [
       pytorch
       torchvision

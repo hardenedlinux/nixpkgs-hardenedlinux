@@ -1,10 +1,10 @@
 {
   lib,
   pythonPackages,
-  nixpkgs-hardenedlinux-sources,
+  nixpkgs-hardenedlinux-python-sources,
 }:
 pythonPackages.buildPythonPackage rec {
-  inherit (nixpkgs-hardenedlinux-sources.cliche) pname version src;
+  inherit (nixpkgs-hardenedlinux-python-sources.cliche) pname version src;
   doCheck = false;
   propagatedBuildInputs = with pythonPackages; [ipdb];
   meta = with lib; {

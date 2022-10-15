@@ -1,11 +1,11 @@
 {
   lib,
   python3Packages,
-  nixpkgs-hardenedlinux-sources,
+  nixpkgs-hardenedlinux-python-sources,
   broker38,
 }:
 python3Packages.buildPythonPackage rec {
-  inherit (nixpkgs-hardenedlinux-sources.broker-to-json) pname version src;
+  inherit (nixpkgs-hardenedlinux-python-sources.broker-to-json) pname version src;
   doCheck = false;
   nativeBuildInputs = [broker38];
   meta = with lib; {
