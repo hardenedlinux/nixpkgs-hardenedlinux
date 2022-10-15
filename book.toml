@@ -2,7 +2,7 @@
 language = "en"
 multilingual = false
 src = "docs"
-title = "Std Template"
+title = "nixpkgs hardenedlinux"
 
 [build]
 build-dir = "docs/book"

@@ -47,7 +47,7 @@ jobs:
 
 
       - name: Build Packages
-        run: nix -Lv develop -c mkdoc
+        run: nix -Lv develop .#mkdoc -c mkdoc
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.4.0

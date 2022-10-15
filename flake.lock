@@ -437,6 +437,10 @@
         "nixpkgs-lock": [
           "nixpkgs"
         ],
+        "org-roam-book-template": [
+          "cells-lab",
+          "org-roam-book-template"
+        ],
         "std": [
           "cells-lab",
           "std"

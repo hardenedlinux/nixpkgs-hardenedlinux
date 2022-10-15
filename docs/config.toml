@@ -1,10 +1,10 @@
-baseURL = "https://<username>.github.io/<repo>"
+baseURL = "https://hardenedlinux.github.io/nixpkgs-hardenedlinux"
 languageCode = "en-us"
-title = "Cells Lab"
+title = "nixpkgs-hardenedlinux"
 theme = "cortex"
 
 [params]
-email = "<email>"
+email = "gtrunsec@hardenedlinux.org"
 footer = "Icon by Freepik. Built with ♥ with Org-mode and Hugo."
 
 [markup]

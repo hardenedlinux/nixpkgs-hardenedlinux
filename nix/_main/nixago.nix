@@ -6,7 +6,7 @@
 in {
   mdbook = std.presets.nixago.mdbook {
     configData = {
-      book.title = "Std Template";
+      book.title = "nixpkgs hardenedlinux";
     };
   };
 
