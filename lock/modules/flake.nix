@@ -16,6 +16,8 @@
     pypi-deps-db.flake = false;
     mach-nix.url = "github:DavHau/mach-nix";
     mach-nix.inputs.pypi-deps-db.follows = "pypi-deps-db";
+
+    rust-overlay.url = "github:oxalica/rust-overlay";
   };
   outputs = {self, ...}: {};
 }

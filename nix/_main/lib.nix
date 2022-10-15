@@ -11,6 +11,7 @@
   };
   nixpkgs = inputs.nixpkgs.appendOverlays [
     __modules__.gomod2nix.overlays.default
+    __modules__.rust-overlay.overlays.default
     (final: prev: {
       machlib = import __modules__.mach-nix {
         pkgs = prev;
