@@ -3,8 +3,7 @@
   cell,
 }: {
   default = final: prev: rec {
-    zat = prev.python3Packages.callPackage ./packages/zat {};
-    python-zed = prev.python3Packages.callPackage ./packages/zed {};
+    zed-python = prev.python3Packages.callPackage ./packages/zed {};
     elastalert2 = prev.python3Packages.callPackage ./packages/elastalert2 {};
     btest = prev.python3Packages.callPackage ./packages/btest {};
     # zeekscript = prev.python3Packages.callPackage ./packages/zeekscript {inherit py-tree-sitter;};

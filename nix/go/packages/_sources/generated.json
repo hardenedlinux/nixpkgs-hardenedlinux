@@ -1,0 +1,142 @@
+{
+    "container-structure-test": {
+        "cargoLocks": null,
+        "date": "2022-08-31",
+        "extract": null,
+        "name": "container-structure-test",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "GoogleContainerTools",
+            "repo": "container-structure-test",
+            "rev": "3e6fe0f52eeebfe9cd2962b27d40cc2927fe30ec",
+            "sha256": "sha256-hMbBPNbrAlDt401rZqIg1t+3p3DYSI6JeeZ3bQI1z1E=",
+            "type": "github"
+        },
+        "version": "3e6fe0f52eeebfe9cd2962b27d40cc2927fe30ec"
+    },
+    "ghq": {
+        "cargoLocks": null,
+        "date": "2022-05-08",
+        "extract": null,
+        "name": "ghq",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "x-motemen",
+            "repo": "ghq",
+            "rev": "8f948f2d8b69cd346afc6331f58e673230df5b5e",
+            "sha256": "sha256-jxqTM4nn5PpIDkCttRI6WzJ5eAhuM8Z2fIBsO6IJ2YA=",
+            "type": "github"
+        },
+        "version": "8f948f2d8b69cd346afc6331f58e673230df5b5e"
+    },
+    "go-nfsd": {
+        "cargoLocks": null,
+        "date": "2022-05-12",
+        "extract": null,
+        "name": "go-nfsd",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "mit-pdos",
+            "repo": "go-nfsd",
+            "rev": "a019f4d17fe0c5d02404788dbef39bc9f885e521",
+            "sha256": "sha256-+bcRGlJhQSWPLVgSmAbP0Kh6mqCgmnZZksmQV7cVG3g=",
+            "type": "github"
+        },
+        "version": "a019f4d17fe0c5d02404788dbef39bc9f885e521"
+    },
+    "gst": {
+        "cargoLocks": null,
+        "date": "2021-10-27",
+        "extract": null,
+        "name": "gst",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "uetchy",
+            "repo": "gst",
+            "rev": "b4af138c9a2dfc6bb04d853cd045eff9a5d8b608",
+            "sha256": "sha256-NhbGHTYucfqCloVirkaDlAtQfhWP2cw4I+t/ysvvkR0=",
+            "type": "github"
+        },
+        "version": "b4af138c9a2dfc6bb04d853cd045eff9a5d8b608"
+    },
+    "nvdtools": {
+        "cargoLocks": null,
+        "date": "2022-10-10",
+        "extract": null,
+        "name": "nvdtools",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "facebookincubator",
+            "repo": "nvdtools",
+            "rev": "7280ba547acb31be077423560a89b453acae07d4",
+            "sha256": "sha256-hX20yeHA8wZyrChHD1RH2Qtz+46hirVVbo8n3IIh//A=",
+            "type": "github"
+        },
+        "version": "7280ba547acb31be077423560a89b453acae07d4"
+    },
+    "tc-redirect-tap": {
+        "cargoLocks": null,
+        "date": "2022-10-04",
+        "extract": null,
+        "name": "tc-redirect-tap",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "awslabs",
+            "repo": "tc-redirect-tap",
+            "rev": "9f2f6be89079d4f3ffc179138cbff36542669809",
+            "sha256": "sha256-OuacH5SPt0whVbcvmzlRhExcOERBFSfAy/49T2Unw+A=",
+            "type": "github"
+        },
+        "version": "9f2f6be89079d4f3ffc179138cbff36542669809"
+    },
+    "zed": {
+        "cargoLocks": null,
+        "date": "2022-10-13",
+        "extract": null,
+        "name": "zed",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "brimdata",
+            "repo": "zed",
+            "rev": "c7564408f866550c192d0a14c8d770f942f060e1",
+            "sha256": "sha256-mtz/Nrr9Cp6TEFGv9iSIOSXQK5QYGXQV8WntIsdBCfI=",
+            "type": "github"
+        },
+        "version": "c7564408f866550c192d0a14c8d770f942f060e1"
+    }
+}
