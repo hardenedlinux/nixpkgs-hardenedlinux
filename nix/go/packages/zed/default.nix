@@ -19,6 +19,6 @@ buildGoApplication rec {
 
   passthru.update = update-package.gomod2nix {
     inherit src;
-    path = "go/" + builtins.baseNameOf ./.;
+    path = builtins.baseNameOf ./.;
   };
 }
