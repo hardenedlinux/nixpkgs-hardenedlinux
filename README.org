@@ -14,6 +14,6 @@ nix build github:hardenedlinux/nixpkgs-hardenedlinux#<package name>
 For Example: (Build Spicy)
 
 #+begin_src sh :async t :exports both :results output
-nix build github:hardenedlinux/nixpkgs-hardenedlinux#spicy
+nix build github:hardenedlinux/nixpkgs-hardenedlinux#btest
 #+end_src
 

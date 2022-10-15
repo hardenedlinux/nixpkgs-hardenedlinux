@@ -33,14 +33,11 @@ jobs:
 
       # CI workflows
       - name: Run Nix Flake Show
-        run: nix develop -c CI-flake-show
+        run: nix flake show
 
       - name: Run nvfetcher-github
-        run: nix develop -c nvfetcher-update
-
-      - name: Build Packages
-        run: nix develop -c packages-build
-
+        run: |
+          nix develop -c nvfetcher-pkgs
 
       - name: Commit changes
         if: ${{ env.COMMIT_MSG != null }}
