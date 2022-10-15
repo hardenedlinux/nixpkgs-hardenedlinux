@@ -1,7 +1,7 @@
 {
   buildGoApplication,
   nixpkgs-hardenedlinux-go-sources,
-  update
+  update,
 }:
 buildGoApplication rec {
   inherit (nixpkgs-hardenedlinux-go-sources.tc-redirect-tap) pname src version;

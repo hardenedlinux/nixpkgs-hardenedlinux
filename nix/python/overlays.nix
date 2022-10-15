@@ -2,7 +2,9 @@
   inputs,
   cell,
 }: {
-  default = final: prev: rec {
+  default = final: prev: {
+    nixpkgs-hardenedlinux-python-sources = prev.callPackage ./packages/_sources/generated.nix {};
+
     zed-python = prev.python3Packages.callPackage ./packages/zed {};
     elastalert2 = prev.python3Packages.callPackage ./packages/elastalert2 {};
     btest = prev.python3Packages.callPackage ./packages/btest {};

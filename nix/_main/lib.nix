@@ -7,6 +7,7 @@
     nixpkgs.locked = inputs.nixpkgs-lock.sourceInfo;
 
     crane.inputs.nixpkgs = "nixpkgs";
+    dream2nix.inputs.nixpkgs = "nixpkgs";
   };
   nixpkgs = inputs.nixpkgs.appendOverlays [
     __modules__.gomod2nix.overlays.default
@@ -15,6 +16,8 @@
         pkgs = prev;
         pypiData = __modules__.pypi-deps-db;
       };
+      dream2nix = __modules__.dream2nix.lib;
+      crane = __modules__.crane.mkLib final;
     })
   ];
 in {

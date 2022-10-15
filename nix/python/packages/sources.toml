@@ -11,10 +11,6 @@ fetch.github = "aimhubio/aim"
 src.github = "VainlyStrain/Vailyn"
 fetch.github = "VainlyStrain/Vailyn"
 
-[sslproxy]
-src.git = "https://github.com/sonertari/SSLproxy"
-fetch.github = "sonertari/SSLproxy"
-
 [sybilhunter]
 src.git = "https://github.com/NullHypothesis/sybilhunter"
 fetch.github = "NullHypothesis/sybilhunter"
@@ -84,4 +80,3 @@ fetch.pypi = "btest"
 [durationpy]
 src.pypi = "durationpy"
 fetch.pypi = "durationpy"
-

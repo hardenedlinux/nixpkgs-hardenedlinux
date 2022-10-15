@@ -15,6 +15,7 @@ in
         inputs.cells-lab.main.devshellProfiles.default
         inputs.cells.python.devshellProfiles.default
         inputs.cells.go.devshellProfiles.default
+        inputs.cells.pkgs.devshellProfiles.default
       ];
 
       nixago = [

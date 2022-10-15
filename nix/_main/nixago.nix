@@ -19,6 +19,7 @@ in {
     configData.formatter.prettier = {
       excludes = [
         "generated.json"
+        "gomod2nix.toml"
       ];
     };
   };

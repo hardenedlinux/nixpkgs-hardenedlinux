@@ -1,0 +1,43 @@
+[osquery]
+#src.github = "osquery/osquery"
+src.manual = "5.2.2"
+fetch.url = "https://github.com/osquery/osquery/releases/download/$ver/osquery_$ver-1.linux_amd64.deb"
+src.prefix = "v"
+
+[nix-unstable-installer]
+src.github = "numtide/nix-unstable-installer"
+fetch.url = "https://github.com/numtide/nix-unstable-installer/releases/download/$ver/install"
+src.prefix = "v"
+
+[brim]
+src.github = "brimdata/brim"
+fetch.url = "https://github.com/brimdata/brim/releases/download/v$ver/Brim-$ver.deb"
+src.prefix = "v"
+
+[broker]
+src.git = "https://github.com/zeek/broker"
+fetch.github = "zeek/broker"
+git.fetchSubmodules = true
+
+[tuc]
+src.git = "https://github.com/riquito/tuc"
+fetch.github = "riquito/tuc"
+
+[caretaker]
+src.github = "grego/caretaker"
+fetch.github = "grego/caretaker"
+# Pull the contents of `Cargo.lock` into generated nix expr
+cargo_locks = ["Cargo.lock"]
+
+[watchexec-simple]
+src.git = "https://github.com/kurtbuilds/watchexec-simple"
+fetch.github = "kurtbuilds/watchexec-simple"
+
+[zeek-language-server]
+src.git = "https://github.com/bbannier/zeek-language-server"
+fetch.github = "bbannier/zeek-language-server"
+git.fetchSubmodules = true
+
+[sslproxy]
+src.git = "https://github.com/sonertari/SSLproxy"
+fetch.github = "sonertari/SSLproxy"

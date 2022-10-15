@@ -30,9 +30,24 @@
 
         (std.blockTypes.functions "overlays")
 
+        (std.blockTypes.functions "nixosModules")
+
         (std.blockTypes.nixago "nixago")
       ];
     } {
-      devShells = inputs.std.harvest inputs.self ["main" "devshells"];
+      devShells = inputs.std.harvest inputs.self ["_main" "devshells"];
+      overlays = builtins.getAttr "x86_64-linux" (inputs.std.harvest inputs.self [
+        ["python" "overlays"]
+        ["go" "overlays"]
+        ["pkgs" "overlays"]
+      ]);
+      nixosModules = builtins.getAttr "x86_64-linux" (inputs.std.harvest inputs.self [
+        ["pkgs" "nixosModules"]
+      ]);
+      packages = inputs.std.harvest inputs.self [
+        ["python" "packages"]
+        ["go" "packages"]
+        ["pkgs" "packages"]
+      ];
     };
 }
