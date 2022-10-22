@@ -16,7 +16,7 @@
     },
     "broker": {
         "cargoLocks": null,
-        "date": "2022-10-02",
+        "date": "2022-10-20",
         "extract": null,
         "name": "broker",
         "passthru": null,
@@ -28,11 +28,11 @@
             "name": null,
             "owner": "zeek",
             "repo": "broker",
-            "rev": "97f55a8466428a247a177f9598506a235966bb04",
-            "sha256": "sha256-NilFfL4NQiR6yH4OOM7KTh9vviPP+PlYckTYm4xOwKk=",
+            "rev": "7af4e0f65619958afb40036e145da759824864a7",
+            "sha256": "sha256-+ZhCjARkEAW6QxeyeNqKciotc9O5p1FWI2E9ZdE7hn4=",
             "type": "github"
         },
-        "version": "97f55a8466428a247a177f9598506a235966bb04"
+        "version": "7af4e0f65619958afb40036e145da759824864a7"
     },
     "caretaker": {
         "cargoLocks": {
@@ -68,11 +68,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-TA1HD2tB85aqEsAHWRUvtuwXmqtsQGtwnv6PaZxsCuQ=",
+            "sha256": "sha256-pAXHrrdBZLz3zOEH/ZAw6zi9T6aQwKR/L9EqRgpu9gA=",
             "type": "url",
-            "url": "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.12.0pre20221005_ac0fb38/install"
+            "url": "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.12.0pre20221014_3093bd3/install"
         },
-        "version": "nix-2.12.0pre20221005_ac0fb38"
+        "version": "nix-2.12.0pre20221014_3093bd3"
     },
     "osquery": {
         "cargoLocks": null,
@@ -111,7 +111,7 @@
     },
     "tuc": {
         "cargoLocks": null,
-        "date": "2022-08-11",
+        "date": "2022-10-21",
         "extract": null,
         "name": "tuc",
         "passthru": null,
@@ -123,11 +123,11 @@
             "name": null,
             "owner": "riquito",
             "repo": "tuc",
-            "rev": "5c5c1428355f52646e6655845131416aad9a55f8",
-            "sha256": "sha256-coTYSzHFlJQO/kT0xs/IPknF2MFVLw7p004JgK8yutE=",
+            "rev": "2b73054dde91e7efb0985cca322acd7c5f1093e0",
+            "sha256": "sha256-xzBseHMejxPFqQf3dmxoFv+dfxMrLUJA762latUp9TM=",
             "type": "github"
         },
-        "version": "5c5c1428355f52646e6655845131416aad9a55f8"
+        "version": "2b73054dde91e7efb0985cca322acd7c5f1093e0"
     },
     "watchexec-simple": {
         "cargoLocks": null,
