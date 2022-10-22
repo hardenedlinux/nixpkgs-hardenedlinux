@@ -4,7 +4,7 @@
 }: let
   inherit (inputs) std self;
   __modules__ = inputs.cells-lab.main.lib.callFlake "${(std.incl self ["lock"])}/lock/modules" {
-    nixpkgs.locked = inputs.nixpkgs-lock.sourceInfo;
+    nixpkgs.locked = inputs.nixpkgs.sourceInfo;
 
     crane.inputs.nixpkgs = "nixpkgs";
     dream2nix.inputs.nixpkgs = "nixpkgs";

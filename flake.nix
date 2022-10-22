@@ -1,7 +1,6 @@
 {
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
-    nixpkgs-lock.follows = "nixpkgs";
 
     org-roam-book-template.follows = "cells-lab/org-roam-book-template";
     cells-lab.url = "github:GTrunSec/cells-lab";

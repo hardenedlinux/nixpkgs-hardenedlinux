@@ -20,19 +20,15 @@
         "latest": "latest",
         "nixos": "nixos",
         "nixpkgs": "nixpkgs",
-        "nixpkgs-lock": [
-          "cells-lab",
-          "nixpkgs"
-        ],
         "org-roam-book-template": "org-roam-book-template",
         "std": "std"
       },
       "locked": {
-        "lastModified": 1665591997,
-        "narHash": "sha256-fGW5DQ/PrWMG2an5TtthXjGf/tVEefW3BySxOIo728Q=",
+        "lastModified": 1666456127,
+        "narHash": "sha256-uA+Qy8Zww1xeGWaWJpV9dsUIUg+3y3KVirmC3hOhdak=",
         "owner": "GTrunSec",
         "repo": "cells-lab",
-        "rev": "7306566ad61b93b7a009d057962c1d039f5f324f",
+        "rev": "8482738bd522e38cd03d44d47d82a9f8b6f1e6e6",
         "type": "github"
       },
       "original": {
@@ -191,21 +187,6 @@
         "type": "github"
       }
     },
-    "flake-utils_4": {
-      "locked": {
-        "lastModified": 1653893745,
-        "narHash": "sha256-0jntwV3Z8//YwuOjzhV2sgJJPt+HY6KhU7VZUL0fKZQ=",
-        "owner": "numtide",
-        "repo": "flake-utils",
-        "rev": "1ed9fb1935d260de5fe1c2f7ee0ebaae17ed2fa1",
-        "type": "github"
-      },
-      "original": {
-        "owner": "numtide",
-        "repo": "flake-utils",
-        "type": "github"
-      }
-    },
     "latest": {
       "locked": {
         "lastModified": 1665426037,
@@ -240,7 +221,11 @@
     },
     "n2c": {
       "inputs": {
-        "flake-utils": "flake-utils_4",
+        "flake-utils": [
+          "cells-lab",
+          "std",
+          "flake-utils"
+        ],
         "nixpkgs": [
           "cells-lab",
           "std",
@@ -434,9 +419,6 @@
         "cells-lab": "cells-lab",
         "nixos": "nixos_2",
         "nixpkgs": "nixpkgs_3",
-        "nixpkgs-lock": [
-          "nixpkgs"
-        ],
         "org-roam-book-template": [
           "cells-lab",
           "org-roam-book-template"
@@ -473,11 +455,11 @@
         "yants": "yants"
       },
       "locked": {
-        "lastModified": 1665513321,
-        "narHash": "sha256-D6Pacw9yf/HMs84KYuCxHXnNDL7v43gtcka5URagFqE=",
+        "lastModified": 1666375192,
+        "narHash": "sha256-YX6h6Ifs8LE8p1DOdij/oNWGxI5W9V7sAt0DEuJtqUM=",
         "owner": "divnix",
         "repo": "std",
-        "rev": "94a90eedb9cfc115b12ae8f6622d9904788559e4",
+        "rev": "6f4ef53901f07815bce4c54f5890ae2fef7cc21c",
         "type": "github"
       },
       "original": {

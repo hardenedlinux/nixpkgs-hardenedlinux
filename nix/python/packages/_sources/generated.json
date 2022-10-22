@@ -151,7 +151,7 @@
     },
     "elastalert2": {
         "cargoLocks": null,
-        "date": "2022-10-13",
+        "date": "2022-10-21",
         "extract": null,
         "name": "elastalert2",
         "passthru": null,
@@ -163,15 +163,15 @@
             "name": null,
             "owner": "jertel",
             "repo": "elastalert2",
-            "rev": "c61496210d0908f634a04ed2b0f991d4ccbfd864",
-            "sha256": "sha256-AtV3ExzJokH/Mc9ofyrwjHgmWOUGZaFlxyqdNNMzk4Y=",
+            "rev": "3ea105ff6d25a1e353e939d96c5ab7d383481576",
+            "sha256": "sha256-bVK52IcmXLmcfnUOhW55zIsU3GKTlii5asc2Sn4DRC4=",
             "type": "github"
         },
-        "version": "c61496210d0908f634a04ed2b0f991d4ccbfd864"
+        "version": "3ea105ff6d25a1e353e939d96c5ab7d383481576"
     },
     "fastai": {
         "cargoLocks": null,
-        "date": "2022-10-08",
+        "date": "2022-10-22",
         "extract": null,
         "name": "fastai",
         "passthru": null,
@@ -183,15 +183,15 @@
             "name": null,
             "owner": "fastai",
             "repo": "fastai",
-            "rev": "77d07c6a289f2426bf8a80c5f18d3af07f972773",
-            "sha256": "sha256-/o/4tkudZuWYL1JldVLzIPErr1MYOxbFDLVK3xyeNT0=",
+            "rev": "6929df902fe52069b098eaad044ebb1afbdf29a0",
+            "sha256": "sha256-Ouk81PmBZA6kk3MP1GKY27Tk5K58X0zC1Veoshj6LjI=",
             "type": "github"
         },
-        "version": "77d07c6a289f2426bf8a80c5f18d3af07f972773"
+        "version": "6929df902fe52069b098eaad044ebb1afbdf29a0"
     },
     "fastcore": {
         "cargoLocks": null,
-        "date": "2022-09-18",
+        "date": "2022-10-17",
         "extract": null,
         "name": "fastcore",
         "passthru": null,
@@ -203,11 +203,11 @@
             "name": null,
             "owner": "fastai",
             "repo": "fastcore",
-            "rev": "f2e438d280a2de798edeba445d78f5721194084a",
-            "sha256": "sha256-ljTt3vV0gEQQ5mLJ2R3vDaPwfM5UNOoUYMDMZsgCMeU=",
+            "rev": "91cdf9930914d0043b958cbdc040ab39db29a762",
+            "sha256": "sha256-BbjxXvAPNDZjlQQE5hN30SUcI2rRIjJMEvS6cwDqpno=",
             "type": "github"
         },
-        "version": "f2e438d280a2de798edeba445d78f5721194084a"
+        "version": "91cdf9930914d0043b958cbdc040ab39db29a762"
     },
     "fastprogress": {
         "cargoLocks": null,
@@ -243,26 +243,6 @@
             "type": "github"
         },
         "version": "d3016edac2c33ce647653d896fbfb435ac2a6245"
-    },
-    "sslproxy": {
-        "cargoLocks": null,
-        "date": "2022-05-02",
-        "extract": null,
-        "name": "sslproxy",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "sonertari",
-            "repo": "SSLproxy",
-            "rev": "e456f56001e4dd99972a0430122a5782538a60fd",
-            "sha256": "sha256-HH2QMBfX907oqdd+OlY0Wai/fOsrA5tI/BWW5Vj6pmo=",
-            "type": "github"
-        },
-        "version": "e456f56001e4dd99972a0430122a5782538a60fd"
     },
     "sybilhunter": {
         "cargoLocks": null,
@@ -346,7 +326,7 @@
     },
     "zed": {
         "cargoLocks": null,
-        "date": "2022-10-13",
+        "date": "2022-10-21",
         "extract": null,
         "name": "zed",
         "passthru": null,
@@ -358,11 +338,11 @@
             "name": null,
             "owner": "brimdata",
             "repo": "zed",
-            "rev": "c7564408f866550c192d0a14c8d770f942f060e1",
-            "sha256": "sha256-mtz/Nrr9Cp6TEFGv9iSIOSXQK5QYGXQV8WntIsdBCfI=",
+            "rev": "0b61d603b8b5d908f1d5dc3bb04c0326a2e73bc2",
+            "sha256": "sha256-JwkijzE/ptiBvA6kL7em8VbMB7lR30XuujypkwnQk0Y=",
             "type": "github"
         },
-        "version": "c7564408f866550c192d0a14c8d770f942f060e1"
+        "version": "0b61d603b8b5d908f1d5dc3bb04c0326a2e73bc2"
     },
     "zeekscript": {
         "cargoLocks": null,
