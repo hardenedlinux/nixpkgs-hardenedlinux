@@ -36,7 +36,7 @@
         (std.blockTypes.nixago "nixago")
       ];
     } {
-      devShells = inputs.std.harvest inputs.self ["_main" "devshells"];
+      devShells = inputs.std.harvest inputs.self ["_automation" "devshells"];
       overlays = builtins.getAttr "x86_64-linux" (inputs.std.harvest inputs.self [
         ["python" "overlays"]
         ["go" "overlays"]
