@@ -16,7 +16,7 @@
     },
     "broker": {
         "cargoLocks": null,
-        "date": "2022-10-29",
+        "date": "2022-11-02",
         "extract": null,
         "name": "broker",
         "passthru": null,
@@ -28,11 +28,11 @@
             "name": null,
             "owner": "zeek",
             "repo": "broker",
-            "rev": "ac0a7202f4ec131ff93f8703f181b44aa9d3eec4",
-            "sha256": "sha256-CvdUb30wQNZbztNWV4fX+P9bDTlFhy6sM+5+86EOfno=",
+            "rev": "ca6050ee98a82b1e8a50743bd9ccfe47a8854e1f",
+            "sha256": "sha256-4ARgo3kWVjDFPLl+BDMOaEiQseDQiVT2bdc4TSi+Bv8=",
             "type": "github"
         },
-        "version": "ac0a7202f4ec131ff93f8703f181b44aa9d3eec4"
+        "version": "ca6050ee98a82b1e8a50743bd9ccfe47a8854e1f"
     },
     "caretaker": {
         "cargoLocks": {
