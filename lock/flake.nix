@@ -16,6 +16,9 @@
     crane.url = "github:ipetkov/crane";
     crane.inputs.nixpkgs.follows = "nixpkgs";
 
+    nix-npm-buildpackage.url = "github:serokell/nix-npm-buildpackage";
+    nix-npm-buildpackage.inputs.nixpkgs.follows = "nixpkgs";
+
     dream2nix.url = "github:nix-community/dream2nix";
     dream2nix.inputs.nixpkgs.follows = "nixpkgs";
 
