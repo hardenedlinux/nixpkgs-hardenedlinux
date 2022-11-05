@@ -16,23 +16,23 @@
       inherit inputs;
       cellsFrom = ./nix;
 
-      cellBlocks = [
-        (std.blockTypes.installables "packages")
+      cellBlocks = with std.blockTypes; [
+        (installables "packages")
 
-        (std.blockTypes.functions "devshellProfiles")
-        (std.blockTypes.devshells "devshells")
+        (functions "devshellProfiles")
+        (devshells "devshells")
 
-        (std.blockTypes.runnables "entrypoints")
+        (runnables "entrypoints")
 
-        (std.blockTypes.functions "lib")
+        (functions "lib")
 
-        (std.blockTypes.functions "packages")
+        (functions "packages")
 
-        (std.blockTypes.functions "overlays")
+        (functions "overlays")
 
-        (std.blockTypes.functions "nixosModules")
+        (functions "nixosModules")
 
-        (std.blockTypes.nixago "nixago")
+        (nixago "nixago")
       ];
     } {
       devShells = inputs.std.harvest inputs.self ["_automation" "devshells"];

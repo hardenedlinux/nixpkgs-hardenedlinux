@@ -31,11 +31,11 @@ xHTML = false
 
 [markup.highlight]
 codeFences = true
-guessSyntax = false
+guessSyntax = true
 hl_Lines = ""
 lineNoStart = 1
 lineNos = false
 lineNumbersInTable = true
-noClasses = true
 style = "friendly"
 tabWidth = "4"
+pygmentsCodefences = true
