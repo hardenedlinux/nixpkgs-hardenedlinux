@@ -12,7 +12,7 @@
     feishu = prev.callPackage ./packages/feishu {};
     caretaker = prev.callPackage ./packages/caretaker {};
     watchexec-simple = prev.callPackage ./packages/watchexec-simple {};
-    # zeek-language-server = prev.callPackage ./packages/zeek-language-server {};
+    zeek-language-server = prev.callPackage ./packages/zeek-language-server {};
     sslproxy = prev.callPackage ./packages/SSLproxy {};
   };
   tests = final: prev: {

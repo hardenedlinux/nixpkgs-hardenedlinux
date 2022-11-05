@@ -3,24 +3,24 @@
   cell,
 }: let
   inherit (inputs) std self;
-  __modules__ = inputs.cells-lab.main.lib.callFlake "${(std.incl self ["lock"])}/lock/modules" {
+  __inputs__ = inputs.cells-lab.common.lib.callFlake "${(std.incl self ["lock"])}/lock" {
     nixpkgs.locked = inputs.nixpkgs.sourceInfo;
 
     crane.inputs.nixpkgs = "nixpkgs";
     dream2nix.inputs.nixpkgs = "nixpkgs";
   };
   nixpkgs = inputs.nixpkgs.appendOverlays [
-    __modules__.gomod2nix.overlays.default
-    __modules__.rust-overlay.overlays.default
+    __inputs__.gomod2nix.overlays.default
+    __inputs__.rust-overlay.overlays.default
     (final: prev: {
-      machlib = import __modules__.mach-nix {
+      machlib = import __inputs__.mach-nix {
         pkgs = prev;
-        pypiData = __modules__.pypi-deps-db;
+        pypiData = __inputs__.pypi-deps-db;
       };
-      dream2nix = __modules__.dream2nix.lib;
-      crane = __modules__.crane.mkLib final;
+      dream2nix = __inputs__.dream2nix.lib;
+      crane = __inputs__.crane.mkLib final;
     })
   ];
 in {
-  inherit __modules__ nixpkgs;
+  inherit __inputs__ nixpkgs;
 }
