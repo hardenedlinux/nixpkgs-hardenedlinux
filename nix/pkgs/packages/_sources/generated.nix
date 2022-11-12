@@ -11,15 +11,15 @@
   };
   broker = {
     pname = "broker";
-    version = "ca6050ee98a82b1e8a50743bd9ccfe47a8854e1f";
+    version = "42bf36d8dcb084cb67c1034efe2be2ad1d2c88db";
     src = fetchFromGitHub ({
       owner = "zeek";
       repo = "broker";
-      rev = "ca6050ee98a82b1e8a50743bd9ccfe47a8854e1f";
+      rev = "42bf36d8dcb084cb67c1034efe2be2ad1d2c88db";
       fetchSubmodules = true;
-      sha256 = "sha256-4ARgo3kWVjDFPLl+BDMOaEiQseDQiVT2bdc4TSi+Bv8=";
+      sha256 = "sha256-rWWH7kWuVr/e38kHXVjWd9KFZmx8+uyeJsQ0tFR21GY=";
     });
-    date = "2022-11-02";
+    date = "2022-11-09";
   };
   caretaker = {
     pname = "caretaker";
@@ -40,10 +40,10 @@
   };
   nix-unstable-installer = {
     pname = "nix-unstable-installer";
-    version = "nix-2.12.0pre20221026_bf2e6bc";
+    version = "nix-2.12.0pre20221102_dd1970c";
     src = fetchurl {
-      url = "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.12.0pre20221026_bf2e6bc/install";
-      sha256 = "sha256-2nwsPykWhFo74cWi9kjhqqTxrIPdJa3qG/7cLgUzDJA=";
+      url = "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.12.0pre20221102_dd1970c/install";
+      sha256 = "sha256-AGP4NlYBgRMajDw+YGxnHVSwFnsdZkAZYJ8cKWSj8Zk=";
     };
   };
   osquery = {
