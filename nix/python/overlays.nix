@@ -13,5 +13,6 @@
     py-tree-sitter = prev.python3Packages.callPackage ./packages/py-tree-sitter {};
     vault-cli = prev.python3Packages.callPackage ./packages/vault-cli {};
     aim = prev.python3Packages.callPackage ./packages/aim {};
+    sh = prev.python3Packages.callPackage ./packages/sh {};
   };
 }

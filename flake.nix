@@ -8,7 +8,7 @@
   };
 
   inputs = {
-    nixos.url = "github:NixOS/nixpkgs/nixos-22.05";
+    nixos.follows = "cells-lab/nixos";
   };
 
   outputs = {std, ...} @ inputs:
