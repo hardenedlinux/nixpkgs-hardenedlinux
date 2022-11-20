@@ -2,7 +2,7 @@
   inputs,
   cell,
 }: {
-  nixpkgs = inputs.cells._common.lib.nixpkgs.appendOverlays [
+  nixpkgs = inputs.cells.common.lib.nixpkgs.appendOverlays [
     cell.overlays.default
     (final: prev: {})
   ];

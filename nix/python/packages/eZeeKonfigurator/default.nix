@@ -8,7 +8,7 @@
   broker38,
 }: let
   eZeeKonfigurator-requirements = machlib.mkPython rec {
-    #requirements = builtins.readFile (nixpkgs-hardenedlinux-python-sources.eZeeKonfigurator.src + "/requirements_common.txt") + ''
+    #requirements = builtins.readFile (nixpkgs-hardenedlinux-python-sources.eZeeKonfigurator.src + "/requirementscommon.txt") + ''
     requirements = ''
       setuptools-rust
       multidict==4.7.6
@@ -31,7 +31,7 @@ in
     nativeBuildInputs = [];
     propagatedBuildInputs = with python3Packages; [eZeeKonfigurator-requirements broker-json broker38];
     postPatch = ''
-      substituteInPlace requirements_common.txt \
+      substituteInPlace requirementscommon.txt \
       --replace "broker_json==0.2" ""
     '';
     doCheck = false;
