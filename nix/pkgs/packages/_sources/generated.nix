@@ -40,10 +40,10 @@
   };
   nix-unstable-installer = {
     pname = "nix-unstable-installer";
-    version = "nix-2.12.0pre20221111_302ddee";
+    version = "nix-2.12.0pre20221116_62960f3";
     src = fetchurl {
-      url = "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.12.0pre20221111_302ddee/install";
-      sha256 = "sha256-85MHN8dQcy0Xq16zLoGTYP9aaVNLIzTYVZZwFx2sLqE=";
+      url = "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.12.0pre20221116_62960f3/install";
+      sha256 = "sha256-MiXE29UKFGzCQF0ZIWsQH05Jp4jeaj8g4et4SrovBCU=";
     };
   };
   osquery = {
