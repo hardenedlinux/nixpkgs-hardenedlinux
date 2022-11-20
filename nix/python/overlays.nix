@@ -34,4 +34,5 @@ in {
         }
       );
   };
+  inherit packages;
 }

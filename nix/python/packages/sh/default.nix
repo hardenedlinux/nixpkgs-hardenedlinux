@@ -9,7 +9,6 @@
   glibcLocales,
 }:
 buildPythonPackage rec {
-
   inherit (nixpkgs-hardenedlinux-python-sources.sh) pname src version;
 
   postPatch = ''
@@ -22,7 +21,6 @@ buildPythonPackage rec {
     export LC_ALL="en_US.UTF-8"
     HOME=$(mktemp -d)
   '';
-
 
   doCheck = false;
 
