@@ -16,7 +16,7 @@
     },
     "broker": {
         "cargoLocks": null,
-        "date": "2022-11-15",
+        "date": "2022-11-22",
         "extract": null,
         "name": "broker",
         "passthru": null,
@@ -28,11 +28,11 @@
             "name": null,
             "owner": "zeek",
             "repo": "broker",
-            "rev": "111623cb8aa8490ba5d3553935d42c52657c3090",
-            "sha256": "sha256-MCWxcG6GqIsR7iwCQ6UOIqSALW41Gv+pnRpT1Wb1f04=",
+            "rev": "28e48116eb40c72b1d9b76b43b48e292671b8642",
+            "sha256": "sha256-7dZwGQZCOABJ/gWXt90vqmiczT+zpIDNp1MvsQnoGds=",
             "type": "github"
         },
-        "version": "111623cb8aa8490ba5d3553935d42c52657c3090"
+        "version": "28e48116eb40c72b1d9b76b43b48e292671b8642"
     },
     "caretaker": {
         "cargoLocks": {
@@ -131,7 +131,7 @@
     },
     "watchexec-simple": {
         "cargoLocks": null,
-        "date": "2022-05-26",
+        "date": "2022-11-24",
         "extract": null,
         "name": "watchexec-simple",
         "passthru": null,
@@ -143,15 +143,15 @@
             "name": null,
             "owner": "kurtbuilds",
             "repo": "watchexec-simple",
-            "rev": "61387ab273eb6e71503c3e7d042e1a319fb6cfa5",
-            "sha256": "sha256-okQ/63hDC/KiBanHq4CiuEfH3y45mTShNfRG2DOqrMc=",
+            "rev": "2ce685a1804d6ffed2c1c20abff2a9cf648c7188",
+            "sha256": "sha256-AOweMMWuJx9mtSss5Iett0fTVBoZrjCaDGnzOO8RrMw=",
             "type": "github"
         },
-        "version": "61387ab273eb6e71503c3e7d042e1a319fb6cfa5"
+        "version": "2ce685a1804d6ffed2c1c20abff2a9cf648c7188"
     },
     "zeek-language-server": {
         "cargoLocks": null,
-        "date": "2022-11-14",
+        "date": "2022-11-25",
         "extract": null,
         "name": "zeek-language-server",
         "passthru": null,
@@ -163,10 +163,10 @@
             "name": null,
             "owner": "bbannier",
             "repo": "zeek-language-server",
-            "rev": "0622881a5d9e30f479b9b8d924cfa142fc778dd3",
-            "sha256": "sha256-SQRaaPETqGt8Mm1oLZ0Kpy7DQvOw0XtKzL3YgZLsU3g=",
+            "rev": "c520b8303372c49260d358b1b84f1c94af3c2810",
+            "sha256": "sha256-Hw2neSZXrCOiAPu4LjVCzTdBWj7oLJpgSuTTMqp3boY=",
             "type": "github"
         },
-        "version": "0622881a5d9e30f479b9b8d924cfa142fc778dd3"
+        "version": "c520b8303372c49260d358b1b84f1c94af3c2810"
     }
 }

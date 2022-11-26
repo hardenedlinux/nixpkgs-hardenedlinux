@@ -11,15 +11,15 @@
   };
   broker = {
     pname = "broker";
-    version = "111623cb8aa8490ba5d3553935d42c52657c3090";
+    version = "28e48116eb40c72b1d9b76b43b48e292671b8642";
     src = fetchFromGitHub ({
       owner = "zeek";
       repo = "broker";
-      rev = "111623cb8aa8490ba5d3553935d42c52657c3090";
+      rev = "28e48116eb40c72b1d9b76b43b48e292671b8642";
       fetchSubmodules = true;
-      sha256 = "sha256-MCWxcG6GqIsR7iwCQ6UOIqSALW41Gv+pnRpT1Wb1f04=";
+      sha256 = "sha256-7dZwGQZCOABJ/gWXt90vqmiczT+zpIDNp1MvsQnoGds=";
     });
-    date = "2022-11-15";
+    date = "2022-11-22";
   };
   caretaker = {
     pname = "caretaker";
@@ -80,26 +80,26 @@
   };
   watchexec-simple = {
     pname = "watchexec-simple";
-    version = "61387ab273eb6e71503c3e7d042e1a319fb6cfa5";
+    version = "2ce685a1804d6ffed2c1c20abff2a9cf648c7188";
     src = fetchFromGitHub ({
       owner = "kurtbuilds";
       repo = "watchexec-simple";
-      rev = "61387ab273eb6e71503c3e7d042e1a319fb6cfa5";
+      rev = "2ce685a1804d6ffed2c1c20abff2a9cf648c7188";
       fetchSubmodules = false;
-      sha256 = "sha256-okQ/63hDC/KiBanHq4CiuEfH3y45mTShNfRG2DOqrMc=";
+      sha256 = "sha256-AOweMMWuJx9mtSss5Iett0fTVBoZrjCaDGnzOO8RrMw=";
     });
-    date = "2022-05-26";
+    date = "2022-11-24";
   };
   zeek-language-server = {
     pname = "zeek-language-server";
-    version = "0622881a5d9e30f479b9b8d924cfa142fc778dd3";
+    version = "c520b8303372c49260d358b1b84f1c94af3c2810";
     src = fetchFromGitHub ({
       owner = "bbannier";
       repo = "zeek-language-server";
-      rev = "0622881a5d9e30f479b9b8d924cfa142fc778dd3";
+      rev = "c520b8303372c49260d358b1b84f1c94af3c2810";
       fetchSubmodules = true;
-      sha256 = "sha256-SQRaaPETqGt8Mm1oLZ0Kpy7DQvOw0XtKzL3YgZLsU3g=";
+      sha256 = "sha256-Hw2neSZXrCOiAPu4LjVCzTdBWj7oLJpgSuTTMqp3boY=";
     });
-    date = "2022-11-14";
+    date = "2022-11-25";
   };
 }
