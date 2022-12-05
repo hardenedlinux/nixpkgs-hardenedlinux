@@ -11,6 +11,13 @@ with python3.pkgs; let
     propagatedBuildInputs = with python3Packages; [numpy packaging];
     dontUseSetuptoolsCheck = true;
   };
+
+  fastdownload = python3Packages.buildPythonPackage rec {
+    inherit (nixpkgs-hardenedlinux-python-sources.fastdownload) pname version src;
+    propagatedBuildInputs = with python3Packages; [packaging fastcore fastprogress];
+    dontUseSetuptoolsCheck = true;
+  };
+
   fastprogress = python3Packages.buildPythonPackage rec {
     inherit (nixpkgs-hardenedlinux-python-sources.fastprogress) pname version src;
     doCheck = false;
@@ -32,6 +39,7 @@ in
       spacy
       fastcore
       fastprogress
+      fastdownload
     ];
     postPatch = ''
       substituteInPlace settings.ini \

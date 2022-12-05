@@ -209,6 +209,26 @@
         },
         "version": "86337bad16a65f23c5335286ab73cd4d6425c586"
     },
+    "fastdownload": {
+        "cargoLocks": null,
+        "date": "2022-07-08",
+        "extract": null,
+        "name": "fastdownload",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "fastai",
+            "repo": "fastdownload",
+            "rev": "9c729f96be9b930054dadfc1598964e61664f434",
+            "sha256": "sha256-LCI5eP7SYKp2RP+Mk8mfm4sNITgCn1tkqXXpNdqenqc=",
+            "type": "github"
+        },
+        "version": "9c729f96be9b930054dadfc1598964e61664f434"
+    },
     "fastprogress": {
         "cargoLocks": null,
         "date": null,
@@ -353,11 +373,11 @@
             "name": null,
             "owner": "brimdata",
             "repo": "zed",
-            "rev": "e7b16ed1336b417699bd81eea337a7b58254d2d3",
-            "sha256": "sha256-ZG6D7Lg3TQwuMb0RTj3dy5s5QZmFEP881UaXgzTQhmU=",
+            "rev": "22f640e75cd87bb17621adafc526f02579e05733",
+            "sha256": "sha256-oXSoKvl6VWf5AwYmrQslo2/gw7ib8jE2gEIubrmB57Q=",
             "type": "github"
         },
-        "version": "e7b16ed1336b417699bd81eea337a7b58254d2d3"
+        "version": "22f640e75cd87bb17621adafc526f02579e05733"
     },
     "zeekscript": {
         "cargoLocks": null,

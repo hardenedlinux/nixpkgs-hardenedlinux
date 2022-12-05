@@ -123,6 +123,18 @@
     });
     date = "2022-11-06";
   };
+  fastdownload = {
+    pname = "fastdownload";
+    version = "9c729f96be9b930054dadfc1598964e61664f434";
+    src = fetchFromGitHub ({
+      owner = "fastai";
+      repo = "fastdownload";
+      rev = "9c729f96be9b930054dadfc1598964e61664f434";
+      fetchSubmodules = false;
+      sha256 = "sha256-LCI5eP7SYKp2RP+Mk8mfm4sNITgCn1tkqXXpNdqenqc=";
+    });
+    date = "2022-07-08";
+  };
   fastprogress = {
     pname = "fastprogress";
     version = "1.0.3";
@@ -200,13 +212,13 @@
   };
   zed = {
     pname = "zed";
-    version = "e7b16ed1336b417699bd81eea337a7b58254d2d3";
+    version = "22f640e75cd87bb17621adafc526f02579e05733";
     src = fetchFromGitHub ({
       owner = "brimdata";
       repo = "zed";
-      rev = "e7b16ed1336b417699bd81eea337a7b58254d2d3";
+      rev = "22f640e75cd87bb17621adafc526f02579e05733";
       fetchSubmodules = false;
-      sha256 = "sha256-ZG6D7Lg3TQwuMb0RTj3dy5s5QZmFEP881UaXgzTQhmU=";
+      sha256 = "sha256-oXSoKvl6VWf5AwYmrQslo2/gw7ib8jE2gEIubrmB57Q=";
     });
     date = "2022-12-05";
   };
