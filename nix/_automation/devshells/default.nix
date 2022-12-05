@@ -12,7 +12,7 @@ in
       name = "nixpkgs-hardenedlinux";
 
       imports = [
-        inputs.cells-lab._automation.devshellProfiles.default
+        inputs.cells-lab.automation.devshellProfiles.default
 
         inputs.cells.python.devshellProfiles.default
         inputs.cells.go.devshellProfiles.default
@@ -29,7 +29,7 @@ in
       commands = [
         {
           name = "mkdoc";
-          command = "nix run $PRJ_ROOT#x86_64-linux._automation.entrypoints.mkdoc -- $@";
+          command = "nix run $PRJ_ROOT#x86_64-linux.automation.entrypoints.mkdoc -- $@";
           help = "mkdoc with org-roam-book";
           category = "docs";
         }

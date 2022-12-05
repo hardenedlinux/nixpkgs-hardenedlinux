@@ -44,12 +44,14 @@ git.fetchSubmodules = true
 #################
 # Python fastai #
 #################
-# [fastai]
-# src.git = "https://github.com/fastai/fastai"
-# fetch.github = "fastai/fastai"
-# [fastcore]
-# src.git = "https://github.com/fastai/fastcore"
-# fetch.github = "fastai/fastcore"
+[fastai]
+src.git = "https://github.com/fastai/fastai"
+fetch.github = "fastai/fastai"
+
+[fastcore]
+src.git = "https://github.com/fastai/fastcore"
+fetch.github = "fastai/fastcore"
+
 [fastprogress]
 src.pypi = "fastprogress"
 fetch.pypi = "fastprogress"

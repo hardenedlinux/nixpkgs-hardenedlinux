@@ -11,6 +11,7 @@
     py-tree-sitter = selfPythonPackages.callPackage ./packages/py-tree-sitter {};
     vault-cli = selfPythonPackages.callPackage ./packages/vault-cli {};
     aim = selfPythonPackages.callPackage ./packages/aim {};
+    fastai = selfPythonPackages.callPackage ./packages/fastai {};
     sh = selfPythonPackages.callPackage ./packages/sh {};
   };
 in {

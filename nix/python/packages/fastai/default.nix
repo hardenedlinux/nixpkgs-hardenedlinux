@@ -20,14 +20,14 @@ in
   python3Packages.buildPythonPackage rec {
     inherit (nixpkgs-hardenedlinux-python-sources.fastai) pname version src;
     propagatedBuildInputs = with python3Packages; [
-      pytorch
+      torch
       torchvision
       matplotlib
       pandas
       requests
       pyyaml
       pillow
-      scikitlearn
+      scikit-learn
       scipy
       spacy
       fastcore
@@ -35,10 +35,12 @@ in
     ];
     postPatch = ''
       substituteInPlace settings.ini \
-       --replace "torch>=1.7.0,<1.8" "torch" \
-       --replace "torchvision>=0.8,<0.9" "torchvision"
+       --replace "torch>=1.7,<1.14" "torch" \
+       --replace "torchvision>=0.8.2" "torchvision"
     '';
+
     dontUseSetuptoolsCheck = true;
+
     meta = with lib; {
       description = "The fastai deep learning library";
       homepage = "https://github.com/fastai/fastai";
