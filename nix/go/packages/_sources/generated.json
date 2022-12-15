@@ -1,7 +1,7 @@
 {
     "container-structure-test": {
         "cargoLocks": null,
-        "date": "2022-08-31",
+        "date": "2022-11-22",
         "extract": null,
         "name": "container-structure-test",
         "passthru": null,
@@ -13,11 +13,11 @@
             "name": null,
             "owner": "GoogleContainerTools",
             "repo": "container-structure-test",
-            "rev": "3e6fe0f52eeebfe9cd2962b27d40cc2927fe30ec",
-            "sha256": "sha256-hMbBPNbrAlDt401rZqIg1t+3p3DYSI6JeeZ3bQI1z1E=",
+            "rev": "5388c503b404d1eaf910b5638549ae8bc1710470",
+            "sha256": "sha256-xme0PxfqFJF2a4h9TVpWszNeZz/BTm0SVAZW0kEYwR0=",
             "type": "github"
         },
-        "version": "3e6fe0f52eeebfe9cd2962b27d40cc2927fe30ec"
+        "version": "5388c503b404d1eaf910b5638549ae8bc1710470"
     },
     "ghq": {
         "cargoLocks": null,
@@ -81,7 +81,7 @@
     },
     "nvdtools": {
         "cargoLocks": null,
-        "date": "2022-10-10",
+        "date": "2022-12-14",
         "extract": null,
         "name": "nvdtools",
         "passthru": null,
@@ -93,15 +93,15 @@
             "name": null,
             "owner": "facebookincubator",
             "repo": "nvdtools",
-            "rev": "7280ba547acb31be077423560a89b453acae07d4",
-            "sha256": "sha256-hX20yeHA8wZyrChHD1RH2Qtz+46hirVVbo8n3IIh//A=",
+            "rev": "adaf938e36934e64dbff042b0205ee13eb381d77",
+            "sha256": "sha256-9GlcjR8nBIXzYEllMc4LK9yOdI2RPCyiQXIZqexTFNw=",
             "type": "github"
         },
-        "version": "7280ba547acb31be077423560a89b453acae07d4"
+        "version": "adaf938e36934e64dbff042b0205ee13eb381d77"
     },
     "tc-redirect-tap": {
         "cargoLocks": null,
-        "date": "2022-10-04",
+        "date": "2022-12-02",
         "extract": null,
         "name": "tc-redirect-tap",
         "passthru": null,
@@ -113,15 +113,15 @@
             "name": null,
             "owner": "awslabs",
             "repo": "tc-redirect-tap",
-            "rev": "9f2f6be89079d4f3ffc179138cbff36542669809",
-            "sha256": "sha256-OuacH5SPt0whVbcvmzlRhExcOERBFSfAy/49T2Unw+A=",
+            "rev": "8dcd1aa8c7a77b4bd4f47ec0976d17d65758b447",
+            "sha256": "sha256-sHyQzjthlADbFCGRtqMtHJV+PsyhaUwENlSc33EKkPo=",
             "type": "github"
         },
-        "version": "9f2f6be89079d4f3ffc179138cbff36542669809"
+        "version": "8dcd1aa8c7a77b4bd4f47ec0976d17d65758b447"
     },
     "zed": {
         "cargoLocks": null,
-        "date": "2022-10-13",
+        "date": "2022-12-15",
         "extract": null,
         "name": "zed",
         "passthru": null,
@@ -133,10 +133,10 @@
             "name": null,
             "owner": "brimdata",
             "repo": "zed",
-            "rev": "c7564408f866550c192d0a14c8d770f942f060e1",
-            "sha256": "sha256-mtz/Nrr9Cp6TEFGv9iSIOSXQK5QYGXQV8WntIsdBCfI=",
+            "rev": "5f4c4e818d2404cb8f6f6d2b914b93d5fae4a3a0",
+            "sha256": "sha256-WnP1ZHWGlK5kq/KHlwRtCK7N82JvP0XVCZr/2GZtZPA=",
             "type": "github"
         },
-        "version": "c7564408f866550c192d0a14c8d770f942f060e1"
+        "version": "5f4c4e818d2404cb8f6f6d2b914b93d5fae4a3a0"
     }
 }

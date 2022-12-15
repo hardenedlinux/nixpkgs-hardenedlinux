@@ -56,7 +56,6 @@ fetch.github = "fastai/fastcore"
 src.git = "https://github.com/fastai/fastdownload"
 fetch.github = "fastai/fastdownload"
 
-
 [fastprogress]
 src.pypi = "fastprogress"
 fetch.pypi = "fastprogress"

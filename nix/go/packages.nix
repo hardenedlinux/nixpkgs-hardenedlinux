@@ -9,4 +9,4 @@
     })
   ];
 in
-  l.removeAttrs (cell.overlays.default nixpkgs nixpkgs) ["nixpkgs-hardenedlinux-go-sources" "update"]
+  inputs.cells.common.lib.filterDerivations (cell.overlays.default nixpkgs nixpkgs)

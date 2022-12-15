@@ -76,7 +76,7 @@
     },
     "cliche": {
         "cargoLocks": null,
-        "date": "2022-05-09",
+        "date": "2022-12-13",
         "extract": null,
         "name": "cliche",
         "passthru": null,
@@ -88,11 +88,11 @@
             "name": null,
             "owner": "kootenpv",
             "repo": "cliche",
-            "rev": "a13b7e9bf0c0e4f4073da03ae7f2273055232711",
-            "sha256": "sha256-wGBDylebd8DREU8LxgAy+r1MvuXlWbMRSspmMN466jQ=",
+            "rev": "750a143311549965ce11571f014e7991def283e5",
+            "sha256": "sha256-tCylDFAo+HWRVJdrC3Go0qSgUOWJmXxisyyBaoHlGfU=",
             "type": "github"
         },
-        "version": "a13b7e9bf0c0e4f4073da03ae7f2273055232711"
+        "version": "750a143311549965ce11571f014e7991def283e5"
     },
     "durationpy": {
         "cargoLocks": null,
@@ -151,7 +151,7 @@
     },
     "elastalert2": {
         "cargoLocks": null,
-        "date": "2022-12-02",
+        "date": "2022-12-15",
         "extract": null,
         "name": "elastalert2",
         "passthru": null,
@@ -163,15 +163,15 @@
             "name": null,
             "owner": "jertel",
             "repo": "elastalert2",
-            "rev": "89d705378e82b5702b80c7e5b2ce707ea361d1e2",
-            "sha256": "sha256-EjIpma6eu6pzU0UxZmd+/KlY4vZt6y0ftCeZaS+petQ=",
+            "rev": "ebd467be4d3503ff7faf62b504a729b3ce7908f6",
+            "sha256": "sha256-r80u0xf+t/f9lUCb9jKrYYMPwHz66HbuSQ9b98g75sU=",
             "type": "github"
         },
-        "version": "89d705378e82b5702b80c7e5b2ce707ea361d1e2"
+        "version": "ebd467be4d3503ff7faf62b504a729b3ce7908f6"
     },
     "fastai": {
         "cargoLocks": null,
-        "date": "2022-11-02",
+        "date": "2022-12-15",
         "extract": null,
         "name": "fastai",
         "passthru": null,
@@ -183,11 +183,11 @@
             "name": null,
             "owner": "fastai",
             "repo": "fastai",
-            "rev": "6fc2502d7c4a25773840c68074d4e1748bde53bf",
-            "sha256": "sha256-/clCR8oUNMwflSYjjDjJloDSS1rpW5kSXJZZ96Bcz1Y=",
+            "rev": "c48e245d07713292a9029d6a469624d897ce20dc",
+            "sha256": "sha256-EHGjSkav0i548tlWJjzWYLI1UAQ+Dfu8UWFTSL3K1zc=",
             "type": "github"
         },
-        "version": "6fc2502d7c4a25773840c68074d4e1748bde53bf"
+        "version": "c48e245d07713292a9029d6a469624d897ce20dc"
     },
     "fastcore": {
         "cargoLocks": null,
@@ -361,7 +361,7 @@
     },
     "zed": {
         "cargoLocks": null,
-        "date": "2022-12-05",
+        "date": "2022-12-15",
         "extract": null,
         "name": "zed",
         "passthru": null,
@@ -373,11 +373,11 @@
             "name": null,
             "owner": "brimdata",
             "repo": "zed",
-            "rev": "22f640e75cd87bb17621adafc526f02579e05733",
-            "sha256": "sha256-oXSoKvl6VWf5AwYmrQslo2/gw7ib8jE2gEIubrmB57Q=",
+            "rev": "5f4c4e818d2404cb8f6f6d2b914b93d5fae4a3a0",
+            "sha256": "sha256-WnP1ZHWGlK5kq/KHlwRtCK7N82JvP0XVCZr/2GZtZPA=",
             "type": "github"
         },
-        "version": "22f640e75cd87bb17621adafc526f02579e05733"
+        "version": "5f4c4e818d2404cb8f6f6d2b914b93d5fae4a3a0"
     },
     "zeekscript": {
         "cargoLocks": null,

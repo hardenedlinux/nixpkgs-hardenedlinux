@@ -5,4 +5,4 @@
   l = inputs.nixpkgs.lib // builtins;
   nixpkgs = cell.lib.nixpkgs;
 in
-  l.removeAttrs (cell.overlays.default nixpkgs nixpkgs) ["nixpkgs-hardenedlinux-pkgs-sources"]
+  inputs.cells.common.lib.filterDerivations (cell.overlays.default nixpkgs nixpkgs)

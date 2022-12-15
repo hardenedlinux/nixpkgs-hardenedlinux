@@ -45,15 +45,15 @@
   };
   cliche = {
     pname = "cliche";
-    version = "a13b7e9bf0c0e4f4073da03ae7f2273055232711";
+    version = "750a143311549965ce11571f014e7991def283e5";
     src = fetchFromGitHub ({
       owner = "kootenpv";
       repo = "cliche";
-      rev = "a13b7e9bf0c0e4f4073da03ae7f2273055232711";
+      rev = "750a143311549965ce11571f014e7991def283e5";
       fetchSubmodules = false;
-      sha256 = "sha256-wGBDylebd8DREU8LxgAy+r1MvuXlWbMRSspmMN466jQ=";
+      sha256 = "sha256-tCylDFAo+HWRVJdrC3Go0qSgUOWJmXxisyyBaoHlGfU=";
     });
-    date = "2022-05-09";
+    date = "2022-12-13";
   };
   durationpy = {
     pname = "durationpy";
@@ -89,27 +89,27 @@
   };
   elastalert2 = {
     pname = "elastalert2";
-    version = "89d705378e82b5702b80c7e5b2ce707ea361d1e2";
+    version = "ebd467be4d3503ff7faf62b504a729b3ce7908f6";
     src = fetchFromGitHub ({
       owner = "jertel";
       repo = "elastalert2";
-      rev = "89d705378e82b5702b80c7e5b2ce707ea361d1e2";
+      rev = "ebd467be4d3503ff7faf62b504a729b3ce7908f6";
       fetchSubmodules = false;
-      sha256 = "sha256-EjIpma6eu6pzU0UxZmd+/KlY4vZt6y0ftCeZaS+petQ=";
+      sha256 = "sha256-r80u0xf+t/f9lUCb9jKrYYMPwHz66HbuSQ9b98g75sU=";
     });
-    date = "2022-12-02";
+    date = "2022-12-15";
   };
   fastai = {
     pname = "fastai";
-    version = "6fc2502d7c4a25773840c68074d4e1748bde53bf";
+    version = "c48e245d07713292a9029d6a469624d897ce20dc";
     src = fetchFromGitHub ({
       owner = "fastai";
       repo = "fastai";
-      rev = "6fc2502d7c4a25773840c68074d4e1748bde53bf";
+      rev = "c48e245d07713292a9029d6a469624d897ce20dc";
       fetchSubmodules = false;
-      sha256 = "sha256-/clCR8oUNMwflSYjjDjJloDSS1rpW5kSXJZZ96Bcz1Y=";
+      sha256 = "sha256-EHGjSkav0i548tlWJjzWYLI1UAQ+Dfu8UWFTSL3K1zc=";
     });
-    date = "2022-11-02";
+    date = "2022-12-15";
   };
   fastcore = {
     pname = "fastcore";
@@ -212,15 +212,15 @@
   };
   zed = {
     pname = "zed";
-    version = "22f640e75cd87bb17621adafc526f02579e05733";
+    version = "5f4c4e818d2404cb8f6f6d2b914b93d5fae4a3a0";
     src = fetchFromGitHub ({
       owner = "brimdata";
       repo = "zed";
-      rev = "22f640e75cd87bb17621adafc526f02579e05733";
+      rev = "5f4c4e818d2404cb8f6f6d2b914b93d5fae4a3a0";
       fetchSubmodules = false;
-      sha256 = "sha256-oXSoKvl6VWf5AwYmrQslo2/gw7ib8jE2gEIubrmB57Q=";
+      sha256 = "sha256-WnP1ZHWGlK5kq/KHlwRtCK7N82JvP0XVCZr/2GZtZPA=";
     });
-    date = "2022-12-05";
+    date = "2022-12-15";
   };
   zeekscript = {
     pname = "zeekscript";
