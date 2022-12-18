@@ -121,7 +121,7 @@
     },
     "zed": {
         "cargoLocks": null,
-        "date": "2022-12-15",
+        "date": "2022-12-17",
         "extract": null,
         "name": "zed",
         "passthru": null,
@@ -133,10 +133,10 @@
             "name": null,
             "owner": "brimdata",
             "repo": "zed",
-            "rev": "5f4c4e818d2404cb8f6f6d2b914b93d5fae4a3a0",
-            "sha256": "sha256-WnP1ZHWGlK5kq/KHlwRtCK7N82JvP0XVCZr/2GZtZPA=",
+            "rev": "348aeacc806126d45a329200f752c96e0740ffbb",
+            "sha256": "sha256-ka1ZPNoVQl8LDL2micwdqa/EXK5Q8DVd8B70nq33i5c=",
             "type": "github"
         },
-        "version": "5f4c4e818d2404cb8f6f6d2b914b93d5fae4a3a0"
+        "version": "348aeacc806126d45a329200f752c96e0740ffbb"
     }
 }
