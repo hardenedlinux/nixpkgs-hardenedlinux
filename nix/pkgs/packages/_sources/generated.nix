@@ -38,12 +38,20 @@
       };
     };
   };
+  koodo-reader-appimage = {
+    pname = "koodo-reader-appimage";
+    version = "1.5.1";
+    src = fetchurl {
+      url = "https://github.com/troyeguo/koodo-reader/releases/download/v1.5.1/Koodo-Reader-1.5.1.AppImage";
+      sha256 = "sha256-fpkX6vgp7EtIyMIc4EWnpsI4mxGGDwAHO6kAco0Gi38=";
+    };
+  };
   nix-unstable-installer = {
     pname = "nix-unstable-installer";
-    version = "nix-2.13.0pre20221207_c710aa1";
+    version = "nix-2.13.0pre20221215_26c7602";
     src = fetchurl {
-      url = "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.13.0pre20221207_c710aa1/install";
-      sha256 = "sha256-ga6z4X9GLbVIdym+ea+xhmhLENvWSMNmSrQFmMt9zAw=";
+      url = "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.13.0pre20221215_26c7602/install";
+      sha256 = "sha256-zn52EqpdWns1rbbkrF+mxnFrq0KWlMRNNZpzsaPY9YM=";
     };
   };
   osquery = {

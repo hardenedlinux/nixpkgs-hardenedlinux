@@ -14,6 +14,7 @@
     watchexec-simple = prev.callPackage ./packages/watchexec-simple {};
     zeek-language-server = prev.callPackage ./packages/zeek-language-server {};
     sslproxy = prev.callPackage ./packages/SSLproxy {};
+    koodo-reader-appimage = prev.callPackage ./packages/koodo-reader/appimage.nix {};
   };
   tests = final: prev: {
     osquery-vm-tests = prev.callPackage ./nixosModules/osquery/nixos-test.nix {

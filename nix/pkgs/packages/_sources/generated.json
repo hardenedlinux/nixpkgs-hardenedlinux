@@ -59,6 +59,21 @@
         },
         "version": "v0.2.4"
     },
+    "koodo-reader-appimage": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "koodo-reader-appimage",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-fpkX6vgp7EtIyMIc4EWnpsI4mxGGDwAHO6kAco0Gi38=",
+            "type": "url",
+            "url": "https://github.com/troyeguo/koodo-reader/releases/download/v1.5.1/Koodo-Reader-1.5.1.AppImage"
+        },
+        "version": "1.5.1"
+    },
     "nix-unstable-installer": {
         "cargoLocks": null,
         "date": null,
@@ -68,11 +83,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-ga6z4X9GLbVIdym+ea+xhmhLENvWSMNmSrQFmMt9zAw=",
+            "sha256": "sha256-zn52EqpdWns1rbbkrF+mxnFrq0KWlMRNNZpzsaPY9YM=",
             "type": "url",
-            "url": "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.13.0pre20221207_c710aa1/install"
+            "url": "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.13.0pre20221215_26c7602/install"
         },
-        "version": "nix-2.13.0pre20221207_c710aa1"
+        "version": "nix-2.13.0pre20221215_26c7602"
     },
     "osquery": {
         "cargoLocks": null,

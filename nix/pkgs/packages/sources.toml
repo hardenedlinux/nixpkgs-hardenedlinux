@@ -14,6 +14,11 @@ src.github = "brimdata/brim"
 fetch.url = "https://github.com/brimdata/brim/releases/download/v$ver/Brim-$ver.deb"
 src.prefix = "v"
 
+[koodo-reader-appimage]
+src.github = "troyeguo/koodo-reader"
+fetch.url = "https://github.com/troyeguo/koodo-reader/releases/download/v$ver/Koodo-Reader-$ver.AppImage"
+src.prefix = "v"
+
 [broker]
 src.git = "https://github.com/zeek/broker"
 fetch.github = "zeek/broker"
