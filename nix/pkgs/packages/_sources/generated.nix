@@ -38,6 +38,18 @@
       };
     };
   };
+  koodo-reader = {
+    pname = "koodo-reader";
+    version = "acf539e62f09bce87d02e1894bd8c8e0cc1678d2";
+    src = fetchFromGitHub ({
+      owner = "troyeguo";
+      repo = "koodo-reader";
+      rev = "acf539e62f09bce87d02e1894bd8c8e0cc1678d2";
+      fetchSubmodules = false;
+      sha256 = "sha256-cAt5XHd58Rh23X6v3clb2oGiBPGttzebSXbXCNZ0F10=";
+    });
+    date = "2022-12-17";
+  };
   koodo-reader-appimage = {
     pname = "koodo-reader-appimage";
     version = "1.5.1";

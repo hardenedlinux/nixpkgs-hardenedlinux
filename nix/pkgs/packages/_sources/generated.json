@@ -59,6 +59,26 @@
         },
         "version": "v0.2.4"
     },
+    "koodo-reader": {
+        "cargoLocks": null,
+        "date": "2022-12-17",
+        "extract": null,
+        "name": "koodo-reader",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "troyeguo",
+            "repo": "koodo-reader",
+            "rev": "acf539e62f09bce87d02e1894bd8c8e0cc1678d2",
+            "sha256": "sha256-cAt5XHd58Rh23X6v3clb2oGiBPGttzebSXbXCNZ0F10=",
+            "type": "github"
+        },
+        "version": "acf539e62f09bce87d02e1894bd8c8e0cc1678d2"
+    },
     "koodo-reader-appimage": {
         "cargoLocks": null,
         "date": null,
