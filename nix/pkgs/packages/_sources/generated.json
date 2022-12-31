@@ -103,11 +103,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-zn52EqpdWns1rbbkrF+mxnFrq0KWlMRNNZpzsaPY9YM=",
+            "sha256": "sha256-25qrrN77moU177SznTaYIxfNLQZqnEv/+wVEKt1JnG4=",
             "type": "url",
-            "url": "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.13.0pre20221215_26c7602/install"
+            "url": "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.13.0pre20221223_14f7dae/install"
         },
-        "version": "nix-2.13.0pre20221215_26c7602"
+        "version": "nix-2.13.0pre20221223_14f7dae"
     },
     "osquery": {
         "cargoLocks": null,
@@ -126,7 +126,7 @@
     },
     "sslproxy": {
         "cargoLocks": null,
-        "date": "2022-05-02",
+        "date": "2022-12-26",
         "extract": null,
         "name": "sslproxy",
         "passthru": null,
@@ -138,11 +138,11 @@
             "name": null,
             "owner": "sonertari",
             "repo": "SSLproxy",
-            "rev": "e456f56001e4dd99972a0430122a5782538a60fd",
-            "sha256": "sha256-HH2QMBfX907oqdd+OlY0Wai/fOsrA5tI/BWW5Vj6pmo=",
+            "rev": "30ed5b420002c8f1ac6f5c865373baa1e46bc4b8",
+            "sha256": "sha256-aUU21Blcn5mT40O090BybN2nnxnCLLayKFY0PC+tHmw=",
             "type": "github"
         },
-        "version": "e456f56001e4dd99972a0430122a5782538a60fd"
+        "version": "30ed5b420002c8f1ac6f5c865373baa1e46bc4b8"
     },
     "tuc": {
         "cargoLocks": null,
@@ -186,7 +186,7 @@
     },
     "zeek-language-server": {
         "cargoLocks": null,
-        "date": "2022-12-10",
+        "date": "2022-12-27",
         "extract": null,
         "name": "zeek-language-server",
         "passthru": null,
@@ -198,10 +198,10 @@
             "name": null,
             "owner": "bbannier",
             "repo": "zeek-language-server",
-            "rev": "999c65ef7e2ecf7b692cf19d54880ef63e3b8c4b",
-            "sha256": "sha256-bB/XCfr/uMQupi7ps21s/vYZx1AgI+25q95L+C2TfEI=",
+            "rev": "fcd0ac0bbe9fe1c3d85d4c13aad369ff90715c1d",
+            "sha256": "sha256-n5v1TMUoFIPgA+BmVmyIOZ94f6m8cEmEpbbUu+wDECg=",
             "type": "github"
         },
-        "version": "999c65ef7e2ecf7b692cf19d54880ef63e3b8c4b"
+        "version": "fcd0ac0bbe9fe1c3d85d4c13aad369ff90715c1d"
     }
 }

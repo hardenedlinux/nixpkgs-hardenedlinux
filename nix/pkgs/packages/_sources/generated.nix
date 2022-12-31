@@ -60,10 +60,10 @@
   };
   nix-unstable-installer = {
     pname = "nix-unstable-installer";
-    version = "nix-2.13.0pre20221215_26c7602";
+    version = "nix-2.13.0pre20221223_14f7dae";
     src = fetchurl {
-      url = "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.13.0pre20221215_26c7602/install";
-      sha256 = "sha256-zn52EqpdWns1rbbkrF+mxnFrq0KWlMRNNZpzsaPY9YM=";
+      url = "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.13.0pre20221223_14f7dae/install";
+      sha256 = "sha256-25qrrN77moU177SznTaYIxfNLQZqnEv/+wVEKt1JnG4=";
     };
   };
   osquery = {
@@ -76,15 +76,15 @@
   };
   sslproxy = {
     pname = "sslproxy";
-    version = "e456f56001e4dd99972a0430122a5782538a60fd";
+    version = "30ed5b420002c8f1ac6f5c865373baa1e46bc4b8";
     src = fetchFromGitHub ({
       owner = "sonertari";
       repo = "SSLproxy";
-      rev = "e456f56001e4dd99972a0430122a5782538a60fd";
+      rev = "30ed5b420002c8f1ac6f5c865373baa1e46bc4b8";
       fetchSubmodules = false;
-      sha256 = "sha256-HH2QMBfX907oqdd+OlY0Wai/fOsrA5tI/BWW5Vj6pmo=";
+      sha256 = "sha256-aUU21Blcn5mT40O090BybN2nnxnCLLayKFY0PC+tHmw=";
     });
-    date = "2022-05-02";
+    date = "2022-12-26";
   };
   tuc = {
     pname = "tuc";
@@ -112,14 +112,14 @@
   };
   zeek-language-server = {
     pname = "zeek-language-server";
-    version = "999c65ef7e2ecf7b692cf19d54880ef63e3b8c4b";
+    version = "fcd0ac0bbe9fe1c3d85d4c13aad369ff90715c1d";
     src = fetchFromGitHub ({
       owner = "bbannier";
       repo = "zeek-language-server";
-      rev = "999c65ef7e2ecf7b692cf19d54880ef63e3b8c4b";
+      rev = "fcd0ac0bbe9fe1c3d85d4c13aad369ff90715c1d";
       fetchSubmodules = true;
-      sha256 = "sha256-bB/XCfr/uMQupi7ps21s/vYZx1AgI+25q95L+C2TfEI=";
+      sha256 = "sha256-n5v1TMUoFIPgA+BmVmyIOZ94f6m8cEmEpbbUu+wDECg=";
     });
-    date = "2022-12-10";
+    date = "2022-12-27";
   };
 }
