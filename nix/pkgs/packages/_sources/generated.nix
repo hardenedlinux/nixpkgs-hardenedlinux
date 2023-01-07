@@ -11,15 +11,15 @@
   };
   broker = {
     pname = "broker";
-    version = "88bd9d55239699283162686f0d56586190b5410b";
+    version = "7cf8ce4be1de2169f41860aab51e0840f89d3e9c";
     src = fetchFromGitHub ({
       owner = "zeek";
       repo = "broker";
-      rev = "88bd9d55239699283162686f0d56586190b5410b";
+      rev = "7cf8ce4be1de2169f41860aab51e0840f89d3e9c";
       fetchSubmodules = true;
-      sha256 = "sha256-dGKsFXQgdglACpcR083FkBl4MSArGNKJQdOH3ejIAYU=";
+      sha256 = "sha256-61lS8swEnh9DRSLMHt8OiZBjOnGgW6cMD4lHMYLZ5t8=";
     });
-    date = "2022-11-29";
+    date = "2023-01-05";
   };
   caretaker = {
     pname = "caretaker";
