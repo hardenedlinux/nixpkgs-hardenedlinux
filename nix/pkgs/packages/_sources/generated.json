@@ -16,7 +16,7 @@
     },
     "broker": {
         "cargoLocks": null,
-        "date": "2023-01-05",
+        "date": "2023-01-10",
         "extract": null,
         "name": "broker",
         "passthru": null,
@@ -28,11 +28,11 @@
             "name": null,
             "owner": "zeek",
             "repo": "broker",
-            "rev": "7cf8ce4be1de2169f41860aab51e0840f89d3e9c",
-            "sha256": "sha256-61lS8swEnh9DRSLMHt8OiZBjOnGgW6cMD4lHMYLZ5t8=",
+            "rev": "bb0bcada363c9b8aa8763076dd130d72cdf6edab",
+            "sha256": "sha256-dEYQHVNHeAmqFm+X7bvDVTT7ct4oEaYlCZc2Upawplg=",
             "type": "github"
         },
-        "version": "7cf8ce4be1de2169f41860aab51e0840f89d3e9c"
+        "version": "bb0bcada363c9b8aa8763076dd130d72cdf6edab"
     },
     "caretaker": {
         "cargoLocks": {
@@ -186,7 +186,7 @@
     },
     "zeek-language-server": {
         "cargoLocks": null,
-        "date": "2022-12-27",
+        "date": "2023-01-07",
         "extract": null,
         "name": "zeek-language-server",
         "passthru": null,
@@ -198,10 +198,10 @@
             "name": null,
             "owner": "bbannier",
             "repo": "zeek-language-server",
-            "rev": "fcd0ac0bbe9fe1c3d85d4c13aad369ff90715c1d",
-            "sha256": "sha256-n5v1TMUoFIPgA+BmVmyIOZ94f6m8cEmEpbbUu+wDECg=",
+            "rev": "5bc41a6534f9edb040f201e012f216bf9c471a3e",
+            "sha256": "sha256-hLrlrVSlEa+w6RUPOItTYf8GX5yr2SDc4HNFM1xaBYU=",
             "type": "github"
         },
-        "version": "fcd0ac0bbe9fe1c3d85d4c13aad369ff90715c1d"
+        "version": "5bc41a6534f9edb040f201e012f216bf9c471a3e"
     }
 }
