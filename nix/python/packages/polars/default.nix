@@ -11,12 +11,12 @@
   fetchFromGitHub,
   ...
 }: let
-  version = "0.14.18";
+  version = "0.15.9";
   source = fetchFromGitHub {
     owner = "pola-rs";
     repo = "polars";
-    rev = "py-v${version}";
-    sha256 = "sha256-nXYQ7vwVD4WJrSsBATuqj5cGdpFKLvi1S4EpjBoSIKA=";
+    rev = "py-${version}";
+    sha256 = "sha256-WE/Wt+yoV30OUXBsEaVGKYNo8IMB/Ixibe2JAUt4Wpw=";
   };
   rustPlatform = makeRustPlatform {
     rustc = rust;
@@ -38,11 +38,8 @@ in
       src = source;
       sourceRoot = "source/py-polars";
       name = "polars";
-      sha256 = "sha256-AEoXHT74RRYC1hCNtnJQJHV8UMf7Rfni4s+cCdyn2mk=";
-      patches = [./polars.patch];
+      sha256 = "sha256-vvbvT2mr/hr/r5tOQdMOtr6Z0PO+UC2ZzvanL3LIEhw=";
     };
-
-    patches = [./polars.patch];
 
     nativeBuildInputs = with rustPlatform; [
       cargoSetupHook

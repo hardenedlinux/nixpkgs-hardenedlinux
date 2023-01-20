@@ -40,15 +40,15 @@
   };
   koodo-reader = {
     pname = "koodo-reader";
-    version = "acf539e62f09bce87d02e1894bd8c8e0cc1678d2";
+    version = "2db88a59fdee9705a68242fefae4960c482a69a5";
     src = fetchFromGitHub ({
       owner = "troyeguo";
       repo = "koodo-reader";
-      rev = "acf539e62f09bce87d02e1894bd8c8e0cc1678d2";
+      rev = "2db88a59fdee9705a68242fefae4960c482a69a5";
       fetchSubmodules = false;
-      sha256 = "sha256-cAt5XHd58Rh23X6v3clb2oGiBPGttzebSXbXCNZ0F10=";
+      sha256 = "sha256-MMv7RQ3DgqvRZ0TUZfN1CGHRyNnowPldRpz3NFnAt0U=";
     });
-    date = "2022-12-17";
+    date = "2023-01-14";
   };
   koodo-reader-appimage = {
     pname = "koodo-reader-appimage";
