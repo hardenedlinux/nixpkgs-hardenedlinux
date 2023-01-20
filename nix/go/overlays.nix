@@ -10,6 +10,7 @@
     update = prev.callPackage ./packages/update {};
     container-structure-test = prev.callPackage ./packages/container-structure-test {};
     nvdtools = prev.callPackage ./packages/nvdtools {};
+    zitadel-bin = prev.callPackage ./packages/zitadel/bin.nix {};
     # firecracker-task-driver = prev.callPackage ./packages/firecracker-task-driver {};
   };
 }

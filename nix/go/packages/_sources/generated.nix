@@ -51,38 +51,46 @@
   };
   nvdtools = {
     pname = "nvdtools";
-    version = "adaf938e36934e64dbff042b0205ee13eb381d77";
+    version = "9b28e1273b3fb66bae61bb9b11960bdd1c8104d5";
     src = fetchFromGitHub ({
       owner = "facebookincubator";
       repo = "nvdtools";
-      rev = "adaf938e36934e64dbff042b0205ee13eb381d77";
+      rev = "9b28e1273b3fb66bae61bb9b11960bdd1c8104d5";
       fetchSubmodules = false;
-      sha256 = "sha256-9GlcjR8nBIXzYEllMc4LK9yOdI2RPCyiQXIZqexTFNw=";
+      sha256 = "sha256-mMdhd7UALp7+EOu05qGg+iOagAmSEGKWwCkiQHVVX88=";
     });
-    date = "2022-12-14";
+    date = "2022-12-22";
   };
   tc-redirect-tap = {
     pname = "tc-redirect-tap";
-    version = "8dcd1aa8c7a77b4bd4f47ec0976d17d65758b447";
+    version = "21aa6181a4c7c6b9626c271fa0f47f91e4f4a0c9";
     src = fetchFromGitHub ({
       owner = "awslabs";
       repo = "tc-redirect-tap";
-      rev = "8dcd1aa8c7a77b4bd4f47ec0976d17d65758b447";
+      rev = "21aa6181a4c7c6b9626c271fa0f47f91e4f4a0c9";
       fetchSubmodules = false;
-      sha256 = "sha256-sHyQzjthlADbFCGRtqMtHJV+PsyhaUwENlSc33EKkPo=";
+      sha256 = "sha256-qrYZ242LB04riDVS90mGrQNNPnBYEB4COa8TuUEnkQ8=";
     });
-    date = "2022-12-02";
+    date = "2023-01-17";
   };
   zed = {
     pname = "zed";
-    version = "348aeacc806126d45a329200f752c96e0740ffbb";
+    version = "e4c9580806eab352ec00b2e54c7339d2444dc35e";
     src = fetchFromGitHub ({
       owner = "brimdata";
       repo = "zed";
-      rev = "348aeacc806126d45a329200f752c96e0740ffbb";
+      rev = "e4c9580806eab352ec00b2e54c7339d2444dc35e";
       fetchSubmodules = false;
-      sha256 = "sha256-ka1ZPNoVQl8LDL2micwdqa/EXK5Q8DVd8B70nq33i5c=";
+      sha256 = "sha256-u+zE+h+Yh3/jLuJ1T9yNNcLlTHq+tJ3ShHZbsXCmZxs=";
     });
-    date = "2022-12-17";
+    date = "2023-01-17";
+  };
+  zitadel-bin = {
+    pname = "zitadel-bin";
+    version = "v2.18.0";
+    src = fetchurl {
+      url = "https://github.com/zitadel/zitadel/releases/download/v2.18.0/zitadel_Linux_x86_64.tar.gz";
+      sha256 = "sha256-zlp1tUOfmzp7l3dC8d7uVI8uMKUVQixfZzC0I6FmXzo=";
+    };
   };
 }
