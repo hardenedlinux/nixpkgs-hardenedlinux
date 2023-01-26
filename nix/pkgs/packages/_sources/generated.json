@@ -103,11 +103,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-25qrrN77moU177SznTaYIxfNLQZqnEv/+wVEKt1JnG4=",
+            "sha256": "sha256-bdEKNFrlvdbqW2OqKm4Vaag5kJs6pv21fhyjqkBNVDY=",
             "type": "url",
-            "url": "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.13.0pre20221223_14f7dae/install"
+            "url": "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.14.0pre20230120_04de0dd/install"
         },
-        "version": "nix-2.13.0pre20221223_14f7dae"
+        "version": "nix-2.14.0pre20230120_04de0dd"
     },
     "osquery": {
         "cargoLocks": null,
@@ -186,7 +186,7 @@
     },
     "zeek-language-server": {
         "cargoLocks": null,
-        "date": "2023-01-07",
+        "date": "2023-01-22",
         "extract": null,
         "name": "zeek-language-server",
         "passthru": null,
@@ -198,10 +198,10 @@
             "name": null,
             "owner": "bbannier",
             "repo": "zeek-language-server",
-            "rev": "5bc41a6534f9edb040f201e012f216bf9c471a3e",
-            "sha256": "sha256-hLrlrVSlEa+w6RUPOItTYf8GX5yr2SDc4HNFM1xaBYU=",
+            "rev": "461895646cf89e58ce68d9fbd35a1ca4011046de",
+            "sha256": "sha256-w9uRKdoyEZJ556Tup07iNalAXUUoVoxCzebitewfjig=",
             "type": "github"
         },
-        "version": "5bc41a6534f9edb040f201e012f216bf9c471a3e"
+        "version": "461895646cf89e58ce68d9fbd35a1ca4011046de"
     }
 }
