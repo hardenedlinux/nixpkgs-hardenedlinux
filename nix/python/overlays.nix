@@ -13,10 +13,11 @@
         name = "${pname}-${version}";
         sha256 = "sha256-tmGhSNpp7fQdVTfB65eHeoyKBIdn8E24DTzjuZNKaec=";
       };
+      enableParallelBuilding = true;
       preBuild = ''
-      cd py-polars
-      sed -i 's/version = "0.15.17"/version = "0.15.18"/g' Cargo.lock
-  '';
+        cd py-polars
+        sed -i 's/version = "0.15.17"/version = "0.15.18"/g' Cargo.lock
+      '';
     });
     zed-python = selfPythonPackages.callPackage ./packages/zed {};
     elastalert2 = selfPythonPackages.callPackage ./packages/elastalert2 {};
