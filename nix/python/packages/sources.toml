@@ -11,6 +11,12 @@ fetch.github = "aimhubio/aim"
 src.github = "VainlyStrain/Vailyn"
 fetch.github = "VainlyStrain/Vailyn"
 
+
+[polars]
+src.github = "pola-rs/polars"
+fetch.github = "pola-rs/polars"
+extract = ["py-polars/Cargo.lock"]
+
 [sybilhunter]
 src.git = "https://github.com/NullHypothesis/sybilhunter"
 fetch.github = "NullHypothesis/sybilhunter"

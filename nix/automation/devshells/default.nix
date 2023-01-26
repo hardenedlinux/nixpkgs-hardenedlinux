@@ -20,7 +20,6 @@ in
       ];
 
       nixago = [
-        cell.nixago.mdbook
         cell.nixago.treefmt
       ];
     };

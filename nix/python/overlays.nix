@@ -3,7 +3,21 @@
   cell,
 }: let
   packages = selfPythonPackages: pythonPackages: {
-    polars = selfPythonPackages.callPackage ./packages/polars {};
+    polars = pythonPackages.polars.overridePythonAttrs (old: rec {
+      inherit (pythonPackages.pkgs.nixpkgs-hardenedlinux-python-sources.polars) src version pname;
+      cargoDeps = pythonPackages.pkgs.rustPlatform.fetchCargoTarball {
+        inherit src;
+        preBuild = ''
+          cd py-polars
+        '';
+        name = "${pname}-${version}";
+        sha256 = "sha256-tmGhSNpp7fQdVTfB65eHeoyKBIdn8E24DTzjuZNKaec=";
+      };
+      preBuild = ''
+      cd py-polars
+      sed -i 's/version = "0.15.17"/version = "0.15.18"/g' Cargo.lock
+  '';
+    });
     zed-python = selfPythonPackages.callPackage ./packages/zed {};
     elastalert2 = selfPythonPackages.callPackage ./packages/elastalert2 {};
     btest = selfPythonPackages.callPackage ./packages/btest {};

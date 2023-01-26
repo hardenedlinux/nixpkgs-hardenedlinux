@@ -45,15 +45,15 @@
   };
   cliche = {
     pname = "cliche";
-    version = "750a143311549965ce11571f014e7991def283e5";
+    version = "80a9ae2e90f4493880b669d5db51f1d4038589df";
     src = fetchFromGitHub ({
       owner = "kootenpv";
       repo = "cliche";
-      rev = "750a143311549965ce11571f014e7991def283e5";
+      rev = "80a9ae2e90f4493880b669d5db51f1d4038589df";
       fetchSubmodules = false;
-      sha256 = "sha256-tCylDFAo+HWRVJdrC3Go0qSgUOWJmXxisyyBaoHlGfU=";
+      sha256 = "sha256-7/icSneLQzwdkRL/mS4RjsgnKa6YIVvGCmdS6pB6r5Y=";
     });
-    date = "2022-12-13";
+    date = "2023-01-23";
   };
   durationpy = {
     pname = "durationpy";
@@ -89,39 +89,39 @@
   };
   elastalert2 = {
     pname = "elastalert2";
-    version = "759f19f13501fad9dd12d6dd89b064ddd542009c";
+    version = "02858ea65b4331870891359636364fc4abd8f0df";
     src = fetchFromGitHub ({
       owner = "jertel";
       repo = "elastalert2";
-      rev = "759f19f13501fad9dd12d6dd89b064ddd542009c";
+      rev = "02858ea65b4331870891359636364fc4abd8f0df";
       fetchSubmodules = false;
-      sha256 = "sha256-llYaTqKdkTkdqTXIO3550VZ1bVP6o8b4wyf1eAH8A6w=";
+      sha256 = "sha256-7oYUwH0+odbSo/a37FHXzAOUI3Jiw/M3lFT/c83WrDw=";
     });
-    date = "2022-12-30";
+    date = "2023-01-25";
   };
   fastai = {
     pname = "fastai";
-    version = "0d952d3c234629ec6d6a909186e79af3c5a9a1b8";
+    version = "dedec6be9334b1c3abfcdc9a70fe43898a74e39e";
     src = fetchFromGitHub ({
       owner = "fastai";
       repo = "fastai";
-      rev = "0d952d3c234629ec6d6a909186e79af3c5a9a1b8";
+      rev = "dedec6be9334b1c3abfcdc9a70fe43898a74e39e";
       fetchSubmodules = false;
-      sha256 = "sha256-GmCgQY6jLfCsq+jS8C3crQfH1CuaKZnbdjSgDnB3cDE=";
+      sha256 = "sha256-hXvl9kKtw+u8MPkB12ONoDIlQWIuJ4V7Kz24sygOOSc=";
     });
-    date = "2022-12-24";
+    date = "2023-01-22";
   };
   fastcore = {
     pname = "fastcore";
-    version = "86337bad16a65f23c5335286ab73cd4d6425c586";
+    version = "8185a912b2a9ffc7884d0d8ae16c589856bfad7e";
     src = fetchFromGitHub ({
       owner = "fastai";
       repo = "fastcore";
-      rev = "86337bad16a65f23c5335286ab73cd4d6425c586";
+      rev = "8185a912b2a9ffc7884d0d8ae16c589856bfad7e";
       fetchSubmodules = false;
-      sha256 = "sha256-541E2Zk1UPXZi9uZh7WeLmXkzwmqtD53lTcmZ0Riue8=";
+      sha256 = "sha256-dChabr10a+FH/9i6imuLSOvykjbtRLkl8RDEz27oO0I=";
     });
-    date = "2022-11-06";
+    date = "2023-01-26";
   };
   fastdownload = {
     pname = "fastdownload";
@@ -142,6 +142,18 @@
       url = "https://pypi.io/packages/source/f/fastprogress/fastprogress-1.0.3.tar.gz";
       sha256 = "sha256-ehfStDiJD4OMBI7vzjLE3tRxl+zI6gQs7MM9PeuAIvU=";
     };
+  };
+  polars = {
+    pname = "polars";
+    version = "py-0.15.18";
+    src = fetchFromGitHub ({
+      owner = "pola-rs";
+      repo = "polars";
+      rev = "py-0.15.18";
+      fetchSubmodules = false;
+      sha256 = "sha256-eIUQpv1+k4nV9pq0X38Fg1kc/4FLVK443lSpgxv5KM0=";
+    });
+    "py-polars/Cargo.lock" = builtins.readFile ./polars-py-0.15.18/py-polars/Cargo.lock;
   };
   py-tree-sitter = {
     pname = "py-tree-sitter";
@@ -200,27 +212,27 @@
   };
   zat = {
     pname = "zat";
-    version = "e458123cd7a02336102147bba7f34c5a641f45c3";
+    version = "175d2d5e7b469ece889776160946116a697c65e5";
     src = fetchFromGitHub ({
       owner = "SuperCowPowers";
       repo = "zat";
-      rev = "e458123cd7a02336102147bba7f34c5a641f45c3";
+      rev = "175d2d5e7b469ece889776160946116a697c65e5";
       fetchSubmodules = false;
-      sha256 = "sha256-8kI1Lz1zJIIXMhddnw0b132bvApChNSzWGJRri2ElDc=";
+      sha256 = "sha256-XkL8B+V/KHCxXByNVrRPLpRDIAYmuY3d28O/pKGsSTo=";
     });
-    date = "2022-11-12";
+    date = "2023-01-26";
   };
   zed = {
     pname = "zed";
-    version = "5ee342cbd6d87dd25138f5b72be3da7e0e4f34d8";
+    version = "3ca4b8ac766f8f95cd8d8794b812121fadb950c7";
     src = fetchFromGitHub ({
       owner = "brimdata";
       repo = "zed";
-      rev = "5ee342cbd6d87dd25138f5b72be3da7e0e4f34d8";
+      rev = "3ca4b8ac766f8f95cd8d8794b812121fadb950c7";
       fetchSubmodules = false;
-      sha256 = "sha256-aFHMI9pGXtbzlsQ1wq9xmKhP4vpVqNz6ZfVX7U3ltDU=";
+      sha256 = "sha256-rx1zUbqrK+T/aXHzwEtokHOgh3WRKFxQ6TxXKVXf7L4=";
     });
-    date = "2022-12-30";
+    date = "2023-01-26";
   };
   zeekscript = {
     pname = "zeekscript";
