@@ -4,6 +4,7 @@
 }: {
   default = final: prev: {
     nixpkgs-hardenedlinux-pkgs-sources = prev.callPackage ./packages/_sources/generated.nix {};
+    gptcommit = prev.callPackage ./packages/gptcommit {};
     broker = prev.callPackage ./packages/broker {};
     brim = prev.callPackage ./packages/brim {};
     osquery-bin = prev.callPackage ./packages/osquery-bin {};

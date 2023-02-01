@@ -38,6 +38,10 @@ fetch.github = "grego/caretaker"
 # Pull the contents of `Cargo.lock` into generated nix expr
 cargo_locks = ["Cargo.lock"]
 
+[gptcommit]
+src.github = "zurawiki/gptcommit"
+fetch.github = "zurawiki/gptcommit"
+
 [watchexec-simple]
 src.git = "https://github.com/kurtbuilds/watchexec-simple"
 fetch.github = "kurtbuilds/watchexec-simple"

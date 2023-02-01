@@ -11,15 +11,15 @@
   };
   broker = {
     pname = "broker";
-    version = "bb0bcada363c9b8aa8763076dd130d72cdf6edab";
+    version = "073ba53082d9667d94502d146f483034a78fd254";
     src = fetchFromGitHub ({
       owner = "zeek";
       repo = "broker";
-      rev = "bb0bcada363c9b8aa8763076dd130d72cdf6edab";
+      rev = "073ba53082d9667d94502d146f483034a78fd254";
       fetchSubmodules = true;
-      sha256 = "sha256-dEYQHVNHeAmqFm+X7bvDVTT7ct4oEaYlCZc2Upawplg=";
+      sha256 = "sha256-DDEC3I/E6Fsx25ZnFdw7+qPeVUi4Be3mrn2s3vlSl9A=";
     });
-    date = "2023-01-10";
+    date = "2023-01-31";
   };
   caretaker = {
     pname = "caretaker";
@@ -37,6 +37,17 @@
         
       };
     };
+  };
+  gptcommit = {
+    pname = "gptcommit";
+    version = "v0.1.13";
+    src = fetchFromGitHub ({
+      owner = "zurawiki";
+      repo = "gptcommit";
+      rev = "v0.1.13";
+      fetchSubmodules = false;
+      sha256 = "sha256-66ry8HP0My7rsTLoArvtnZkhbEfVV7S66/PdPyGIG5k=";
+    });
   };
   koodo-reader = {
     pname = "koodo-reader";
@@ -60,10 +71,10 @@
   };
   nix-unstable-installer = {
     pname = "nix-unstable-installer";
-    version = "nix-2.14.0pre20230120_04de0dd";
+    version = "nix-2.14.0pre20230127_ccaadc9";
     src = fetchurl {
-      url = "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.14.0pre20230120_04de0dd/install";
-      sha256 = "sha256-bdEKNFrlvdbqW2OqKm4Vaag5kJs6pv21fhyjqkBNVDY=";
+      url = "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.14.0pre20230127_ccaadc9/install";
+      sha256 = "sha256-6jLck9J1SnMNHlVlRDcKtqNh2xYWpyh85KvwhSAmGj0=";
     };
   };
   osquery = {
@@ -112,14 +123,14 @@
   };
   zeek-language-server = {
     pname = "zeek-language-server";
-    version = "461895646cf89e58ce68d9fbd35a1ca4011046de";
+    version = "e64d862ddf4ec92db1d58333e00bfe01b2c9db8e";
     src = fetchFromGitHub ({
       owner = "bbannier";
       repo = "zeek-language-server";
-      rev = "461895646cf89e58ce68d9fbd35a1ca4011046de";
+      rev = "e64d862ddf4ec92db1d58333e00bfe01b2c9db8e";
       fetchSubmodules = true;
-      sha256 = "sha256-w9uRKdoyEZJ556Tup07iNalAXUUoVoxCzebitewfjig=";
+      sha256 = "sha256-Ttslj/bQ2Ifl+aUhC7oW37PBPW1VJbJRu89gEsprl1I=";
     });
-    date = "2023-01-22";
+    date = "2023-01-31";
   };
 }
