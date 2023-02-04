@@ -16,7 +16,7 @@
     },
     "broker": {
         "cargoLocks": null,
-        "date": "2023-01-31",
+        "date": "2023-02-01",
         "extract": null,
         "name": "broker",
         "passthru": null,
@@ -28,11 +28,11 @@
             "name": null,
             "owner": "zeek",
             "repo": "broker",
-            "rev": "073ba53082d9667d94502d146f483034a78fd254",
-            "sha256": "sha256-DDEC3I/E6Fsx25ZnFdw7+qPeVUi4Be3mrn2s3vlSl9A=",
+            "rev": "bc0205ce1fc06ddb91abb6744cb79c7eb846c23e",
+            "sha256": "sha256-o4VKBHiReARgkGRSSBot3lFxaq9nM9v56AQglw3G+Zc=",
             "type": "github"
         },
-        "version": "073ba53082d9667d94502d146f483034a78fd254"
+        "version": "bc0205ce1fc06ddb91abb6744cb79c7eb846c23e"
     },
     "caretaker": {
         "cargoLocks": {
@@ -73,11 +73,11 @@
             "name": null,
             "owner": "zurawiki",
             "repo": "gptcommit",
-            "rev": "v0.1.13",
-            "sha256": "sha256-66ry8HP0My7rsTLoArvtnZkhbEfVV7S66/PdPyGIG5k=",
+            "rev": "v0.1.14",
+            "sha256": "sha256-2w7FYr43uR5O2Tr1rZutcg1cjQQwQmmSRbZvT8OfvsM=",
             "type": "github"
         },
-        "version": "v0.1.13"
+        "version": "v0.1.14"
     },
     "koodo-reader": {
         "cargoLocks": null,

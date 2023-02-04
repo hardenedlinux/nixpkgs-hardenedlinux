@@ -11,15 +11,15 @@
   };
   broker = {
     pname = "broker";
-    version = "073ba53082d9667d94502d146f483034a78fd254";
+    version = "bc0205ce1fc06ddb91abb6744cb79c7eb846c23e";
     src = fetchFromGitHub ({
       owner = "zeek";
       repo = "broker";
-      rev = "073ba53082d9667d94502d146f483034a78fd254";
+      rev = "bc0205ce1fc06ddb91abb6744cb79c7eb846c23e";
       fetchSubmodules = true;
-      sha256 = "sha256-DDEC3I/E6Fsx25ZnFdw7+qPeVUi4Be3mrn2s3vlSl9A=";
+      sha256 = "sha256-o4VKBHiReARgkGRSSBot3lFxaq9nM9v56AQglw3G+Zc=";
     });
-    date = "2023-01-31";
+    date = "2023-02-01";
   };
   caretaker = {
     pname = "caretaker";
@@ -40,13 +40,13 @@
   };
   gptcommit = {
     pname = "gptcommit";
-    version = "v0.1.13";
+    version = "v0.1.14";
     src = fetchFromGitHub ({
       owner = "zurawiki";
       repo = "gptcommit";
-      rev = "v0.1.13";
+      rev = "v0.1.14";
       fetchSubmodules = false;
-      sha256 = "sha256-66ry8HP0My7rsTLoArvtnZkhbEfVV7S66/PdPyGIG5k=";
+      sha256 = "sha256-2w7FYr43uR5O2Tr1rZutcg1cjQQwQmmSRbZvT8OfvsM=";
     });
   };
   koodo-reader = {
