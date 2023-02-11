@@ -40,13 +40,13 @@
   };
   gptcommit = {
     pname = "gptcommit";
-    version = "v0.1.14";
+    version = "v0.1.16";
     src = fetchFromGitHub ({
       owner = "zurawiki";
       repo = "gptcommit";
-      rev = "v0.1.14";
+      rev = "v0.1.16";
       fetchSubmodules = false;
-      sha256 = "sha256-2w7FYr43uR5O2Tr1rZutcg1cjQQwQmmSRbZvT8OfvsM=";
+      sha256 = "sha256-ZlrGbN6px33WuYJZAoF90egrj1xBSdbMGamuBINUiig=";
     });
   };
   koodo-reader = {
@@ -123,14 +123,14 @@
   };
   zeek-language-server = {
     pname = "zeek-language-server";
-    version = "e64d862ddf4ec92db1d58333e00bfe01b2c9db8e";
+    version = "392d5e7a22d38a95a6c40a580172c89774b018d9";
     src = fetchFromGitHub ({
       owner = "bbannier";
       repo = "zeek-language-server";
-      rev = "e64d862ddf4ec92db1d58333e00bfe01b2c9db8e";
+      rev = "392d5e7a22d38a95a6c40a580172c89774b018d9";
       fetchSubmodules = true;
-      sha256 = "sha256-Ttslj/bQ2Ifl+aUhC7oW37PBPW1VJbJRu89gEsprl1I=";
+      sha256 = "sha256-QKqNsIuUr3p6vcRmIXvwu5jXFxzfAX6OkwAILv3RnXs=";
     });
-    date = "2023-01-31";
+    date = "2023-02-06";
   };
 }

@@ -73,11 +73,11 @@
             "name": null,
             "owner": "zurawiki",
             "repo": "gptcommit",
-            "rev": "v0.1.14",
-            "sha256": "sha256-2w7FYr43uR5O2Tr1rZutcg1cjQQwQmmSRbZvT8OfvsM=",
+            "rev": "v0.1.16",
+            "sha256": "sha256-ZlrGbN6px33WuYJZAoF90egrj1xBSdbMGamuBINUiig=",
             "type": "github"
         },
-        "version": "v0.1.14"
+        "version": "v0.1.16"
     },
     "koodo-reader": {
         "cargoLocks": null,
@@ -206,7 +206,7 @@
     },
     "zeek-language-server": {
         "cargoLocks": null,
-        "date": "2023-01-31",
+        "date": "2023-02-06",
         "extract": null,
         "name": "zeek-language-server",
         "passthru": null,
@@ -218,10 +218,10 @@
             "name": null,
             "owner": "bbannier",
             "repo": "zeek-language-server",
-            "rev": "e64d862ddf4ec92db1d58333e00bfe01b2c9db8e",
-            "sha256": "sha256-Ttslj/bQ2Ifl+aUhC7oW37PBPW1VJbJRu89gEsprl1I=",
+            "rev": "392d5e7a22d38a95a6c40a580172c89774b018d9",
+            "sha256": "sha256-QKqNsIuUr3p6vcRmIXvwu5jXFxzfAX6OkwAILv3RnXs=",
             "type": "github"
         },
-        "version": "e64d862ddf4ec92db1d58333e00bfe01b2c9db8e"
+        "version": "392d5e7a22d38a95a6c40a580172c89774b018d9"
     }
 }
