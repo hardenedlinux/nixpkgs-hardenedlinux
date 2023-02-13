@@ -7,8 +7,6 @@
 in
   l.mapAttrs (_: std.lib.dev.mkShell) {
     default = {...}: {
-      std.adr.enable = false;
-
       name = "nixpkgs-hardenedlinux";
 
       imports = [

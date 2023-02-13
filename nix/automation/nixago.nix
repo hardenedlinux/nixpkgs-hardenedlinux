@@ -2,7 +2,7 @@
   inputs,
   cell,
 }: let
-  inherit (inputs) std;
+  inherit (inputs) std-data-collection;
 in {
   # mdbook = std.presets.nixago.mdbook {
   #   configData = {
@@ -10,13 +10,13 @@ in {
   #   };
   # };
 
-  treefmt = std.presets.nixago.treefmt {
-    configData.formatter.nix = {
+  treefmt = std-data-collection.data.configs.treefmt {
+    data.formatter.nix = {
       excludes = [
         "generated.nix"
       ];
     };
-    configData.formatter.prettier = {
+    data.formatter.prettier = {
       excludes = [
         "generated.json"
         "gomod2nix.toml"

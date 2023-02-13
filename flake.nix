@@ -4,6 +4,7 @@
 
     org-roam-book-template.follows = "cells-lab/org-roam-book-template";
     cells-lab.url = "github:GTrunSec/cells-lab";
+    std-data-collection.follows = "cells-lab/std-data-collection";
     std.follows = "cells-lab/std";
   };
 
