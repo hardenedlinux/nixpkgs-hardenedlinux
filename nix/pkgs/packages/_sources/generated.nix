@@ -40,13 +40,13 @@
   };
   gptcommit = {
     pname = "gptcommit";
-    version = "v0.1.16";
+    version = "v0.1.17";
     src = fetchFromGitHub ({
       owner = "zurawiki";
       repo = "gptcommit";
-      rev = "v0.1.16";
+      rev = "v0.1.17";
       fetchSubmodules = false;
-      sha256 = "sha256-ZlrGbN6px33WuYJZAoF90egrj1xBSdbMGamuBINUiig=";
+      sha256 = "sha256-+KP/pXxEfQSnbfqLgmHzfJJ6GjeNhl/rMUmtHmh0yMs=";
     });
   };
   koodo-reader = {

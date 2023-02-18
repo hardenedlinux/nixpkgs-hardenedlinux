@@ -73,11 +73,11 @@
             "name": null,
             "owner": "zurawiki",
             "repo": "gptcommit",
-            "rev": "v0.1.16",
-            "sha256": "sha256-ZlrGbN6px33WuYJZAoF90egrj1xBSdbMGamuBINUiig=",
+            "rev": "v0.1.17",
+            "sha256": "sha256-+KP/pXxEfQSnbfqLgmHzfJJ6GjeNhl/rMUmtHmh0yMs=",
             "type": "github"
         },
-        "version": "v0.1.16"
+        "version": "v0.1.17"
     },
     "koodo-reader": {
         "cargoLocks": null,
