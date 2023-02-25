@@ -4,7 +4,6 @@
   lib,
 }:
 stdenv.mkDerivation {
-
   inherit (nixpkgs-hardenedlinux-go-sources.zitadel-bin) pname src version;
 
   sourceRoot = ".";

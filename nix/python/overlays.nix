@@ -20,14 +20,17 @@
       '';
     });
     zed-python = selfPythonPackages.callPackage ./packages/zed {};
-    elastalert2 = selfPythonPackages.callPackage ./packages/elastalert2 {};
+    # elastalert2 = selfPythonPackages.callPackage ./packages/elastalert2 {};
     btest = selfPythonPackages.callPackage ./packages/btest {};
     zeekscript = selfPythonPackages.callPackage ./packages/zeekscript {};
     py-tree-sitter = selfPythonPackages.callPackage ./packages/py-tree-sitter {};
     vault-cli = selfPythonPackages.callPackage ./packages/vault-cli {};
-    aim = selfPythonPackages.callPackage ./packages/aim {};
+    # aim = selfPythonPackages.callPackage ./packages/aim {};
     fastai = selfPythonPackages.callPackage ./packages/fastai {};
-    sh = selfPythonPackages.callPackage ./packages/sh {};
+    pysh = selfPythonPackages.callPackage ./packages/sh {};
+    tinycudann = selfPythonPackages.callPackage ./packages/tinycudann {
+      torch = pythonPackages.torch.override {cudaSupport = true;};
+    };
   };
 in {
   default = final: prev: {

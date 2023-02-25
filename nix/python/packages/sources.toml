@@ -1,4 +1,8 @@
 # nvfetcher.toml
+[tiny-cuda-nn]
+src.github = "NVlabs/tiny-cuda-nn"
+fetch.github = "NVlabs/tiny-cuda-nn"
+
 [broker-to-json]
 src.github = "grigorescu/broker-to-json"
 fetch.github = "grigorescu/broker-to-json"
@@ -10,7 +14,6 @@ fetch.github = "aimhubio/aim"
 [vailyn]
 src.github = "VainlyStrain/Vailyn"
 fetch.github = "VainlyStrain/Vailyn"
-
 
 [polars]
 src.github = "pola-rs/polars"

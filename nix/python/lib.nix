@@ -2,8 +2,14 @@
   inputs,
   cell,
 }: {
-  nixpkgs = inputs.cells.common.lib.nixpkgs.appendOverlays [
-    cell.overlays.default
-    (final: prev: {})
-  ];
+  nixpkgs = import inputs.cells.common.lib.nixpkgs.path {
+    config = {
+      allowUnfree = true;
+    };
+    inherit (inputs.nixpkgs) system;
+    overlays = [
+      cell.overlays.default
+      (final: prev: {})
+    ];
+  };
 }
