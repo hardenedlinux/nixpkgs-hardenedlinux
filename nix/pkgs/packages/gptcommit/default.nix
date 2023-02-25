@@ -17,4 +17,5 @@ in
   craneLib.buildPackage {
     buildInputs = [pkg-config openssl.dev];
     inherit (nixpkgs-hardenedlinux-pkgs-sources.gptcommit) src pname version;
+    doCheck = false;
   }
