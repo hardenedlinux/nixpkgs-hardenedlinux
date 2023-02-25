@@ -73,15 +73,15 @@
             "name": null,
             "owner": "zurawiki",
             "repo": "gptcommit",
-            "rev": "v0.1.17",
-            "sha256": "sha256-+KP/pXxEfQSnbfqLgmHzfJJ6GjeNhl/rMUmtHmh0yMs=",
+            "rev": "v0.2.0",
+            "sha256": "sha256-m63OspwNGnkYj9Vf0LeRh5D9rdpGPhM7LlVjcw3NrBE=",
             "type": "github"
         },
-        "version": "v0.1.17"
+        "version": "v0.2.0"
     },
     "koodo-reader": {
         "cargoLocks": null,
-        "date": "2023-01-14",
+        "date": "2023-02-19",
         "extract": null,
         "name": "koodo-reader",
         "passthru": null,
@@ -93,11 +93,11 @@
             "name": null,
             "owner": "troyeguo",
             "repo": "koodo-reader",
-            "rev": "2db88a59fdee9705a68242fefae4960c482a69a5",
-            "sha256": "sha256-MMv7RQ3DgqvRZ0TUZfN1CGHRyNnowPldRpz3NFnAt0U=",
+            "rev": "8e8d0693659fe0c62c13865054250aeca429f83c",
+            "sha256": "sha256-ZM+ALDJ6jG9JRUyo+C3W9AAfv41y6+QhKVN6lmwE9uM=",
             "type": "github"
         },
-        "version": "2db88a59fdee9705a68242fefae4960c482a69a5"
+        "version": "8e8d0693659fe0c62c13865054250aeca429f83c"
     },
     "koodo-reader-appimage": {
         "cargoLocks": null,
@@ -108,11 +108,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-fpkX6vgp7EtIyMIc4EWnpsI4mxGGDwAHO6kAco0Gi38=",
+            "sha256": "sha256-mP+uYcaUfa9nFnDa/GQtiO5bqVAa1cuMKajmDGglBY0=",
             "type": "url",
-            "url": "https://github.com/troyeguo/koodo-reader/releases/download/v1.5.1/Koodo-Reader-1.5.1.AppImage"
+            "url": "https://github.com/troyeguo/koodo-reader/releases/download/v1.5.2/Koodo-Reader-1.5.2.AppImage"
         },
-        "version": "1.5.1"
+        "version": "1.5.2"
     },
     "nix-unstable-installer": {
         "cargoLocks": null,
@@ -166,7 +166,7 @@
     },
     "tuc": {
         "cargoLocks": null,
-        "date": "2022-10-21",
+        "date": "2023-02-20",
         "extract": null,
         "name": "tuc",
         "passthru": null,
@@ -178,11 +178,11 @@
             "name": null,
             "owner": "riquito",
             "repo": "tuc",
-            "rev": "2b73054dde91e7efb0985cca322acd7c5f1093e0",
-            "sha256": "sha256-xzBseHMejxPFqQf3dmxoFv+dfxMrLUJA762latUp9TM=",
+            "rev": "17096820096b0699b1b1155aa5f9d62fe863f852",
+            "sha256": "sha256-44zoeaGZE2QlyLxTczKccYfeYSFShKZUAuoup4aKuJA=",
             "type": "github"
         },
-        "version": "2b73054dde91e7efb0985cca322acd7c5f1093e0"
+        "version": "17096820096b0699b1b1155aa5f9d62fe863f852"
     },
     "watchexec-simple": {
         "cargoLocks": null,

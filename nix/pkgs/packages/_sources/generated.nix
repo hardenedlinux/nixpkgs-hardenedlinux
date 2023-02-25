@@ -40,33 +40,33 @@
   };
   gptcommit = {
     pname = "gptcommit";
-    version = "v0.1.17";
+    version = "v0.2.0";
     src = fetchFromGitHub ({
       owner = "zurawiki";
       repo = "gptcommit";
-      rev = "v0.1.17";
+      rev = "v0.2.0";
       fetchSubmodules = false;
-      sha256 = "sha256-+KP/pXxEfQSnbfqLgmHzfJJ6GjeNhl/rMUmtHmh0yMs=";
+      sha256 = "sha256-m63OspwNGnkYj9Vf0LeRh5D9rdpGPhM7LlVjcw3NrBE=";
     });
   };
   koodo-reader = {
     pname = "koodo-reader";
-    version = "2db88a59fdee9705a68242fefae4960c482a69a5";
+    version = "8e8d0693659fe0c62c13865054250aeca429f83c";
     src = fetchFromGitHub ({
       owner = "troyeguo";
       repo = "koodo-reader";
-      rev = "2db88a59fdee9705a68242fefae4960c482a69a5";
+      rev = "8e8d0693659fe0c62c13865054250aeca429f83c";
       fetchSubmodules = false;
-      sha256 = "sha256-MMv7RQ3DgqvRZ0TUZfN1CGHRyNnowPldRpz3NFnAt0U=";
+      sha256 = "sha256-ZM+ALDJ6jG9JRUyo+C3W9AAfv41y6+QhKVN6lmwE9uM=";
     });
-    date = "2023-01-14";
+    date = "2023-02-19";
   };
   koodo-reader-appimage = {
     pname = "koodo-reader-appimage";
-    version = "1.5.1";
+    version = "1.5.2";
     src = fetchurl {
-      url = "https://github.com/troyeguo/koodo-reader/releases/download/v1.5.1/Koodo-Reader-1.5.1.AppImage";
-      sha256 = "sha256-fpkX6vgp7EtIyMIc4EWnpsI4mxGGDwAHO6kAco0Gi38=";
+      url = "https://github.com/troyeguo/koodo-reader/releases/download/v1.5.2/Koodo-Reader-1.5.2.AppImage";
+      sha256 = "sha256-mP+uYcaUfa9nFnDa/GQtiO5bqVAa1cuMKajmDGglBY0=";
     };
   };
   nix-unstable-installer = {
@@ -99,15 +99,15 @@
   };
   tuc = {
     pname = "tuc";
-    version = "2b73054dde91e7efb0985cca322acd7c5f1093e0";
+    version = "17096820096b0699b1b1155aa5f9d62fe863f852";
     src = fetchFromGitHub ({
       owner = "riquito";
       repo = "tuc";
-      rev = "2b73054dde91e7efb0985cca322acd7c5f1093e0";
+      rev = "17096820096b0699b1b1155aa5f9d62fe863f852";
       fetchSubmodules = false;
-      sha256 = "sha256-xzBseHMejxPFqQf3dmxoFv+dfxMrLUJA762latUp9TM=";
+      sha256 = "sha256-44zoeaGZE2QlyLxTczKccYfeYSFShKZUAuoup4aKuJA=";
     });
-    date = "2022-10-21";
+    date = "2023-02-20";
   };
   watchexec-simple = {
     pname = "watchexec-simple";
