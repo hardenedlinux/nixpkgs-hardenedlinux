@@ -22,11 +22,6 @@
     dream2nix.url = "github:nix-community/dream2nix";
     dream2nix.inputs.nixpkgs.follows = "nixpkgs";
 
-    pypi-deps-db.url = "github:DavHau/pypi-deps-db";
-    pypi-deps-db.flake = false;
-    mach-nix.url = "github:DavHau/mach-nix";
-    mach-nix.inputs.pypi-deps-db.follows = "pypi-deps-db";
-
     rust-overlay.url = "github:oxalica/rust-overlay";
     rust-overlay.inputs.nixpkgs.follows = "nixpkgs";
   };

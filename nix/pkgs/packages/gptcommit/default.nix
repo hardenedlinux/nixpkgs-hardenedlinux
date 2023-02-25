@@ -15,7 +15,6 @@
   });
 in
   craneLib.buildPackage {
-    cargoLock = ./Cargo.lock;
     buildInputs = [pkg-config openssl.dev];
     inherit (nixpkgs-hardenedlinux-pkgs-sources.gptcommit) src pname version;
   }
