@@ -2,14 +2,14 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
 
-    org-roam-book-template.follows = "cells-lab/org-roam-book-template";
-    cells-lab.url = "github:GTrunSec/cells-lab";
-    std-data-collection.follows = "cells-lab/std-data-collection";
-    std.follows = "cells-lab/std";
+    org-roam-book-template.follows = "std-ext/org-roam-book-template";
+    std-ext.url = "github:GTrunSec/std-ext";
+    std-data-collection.follows = "std-ext/std-data-collection";
+    std.follows = "std-ext/std";
   };
 
   inputs = {
-    nixos.follows = "cells-lab/nixos";
+    nixos.follows = "std-ext/nixos";
   };
 
   outputs = {std, ...} @ inputs:

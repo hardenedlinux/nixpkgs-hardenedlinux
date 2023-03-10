@@ -10,7 +10,7 @@ in
       name = "nixpkgs-hardenedlinux";
 
       imports = [
-        inputs.cells-lab.automation.devshellProfiles.default
+        inputs.std-ext.automation.devshellProfiles.default
 
         inputs.cells.python.devshellProfiles.default
         inputs.cells.go.devshellProfiles.default

@@ -30,7 +30,7 @@
   nixpkgs-hardenedlinux-pkgs-sources,
 }:
 stdenv.mkDerivation rec {
-  inherit (nixpkgs-hardenedlinux-pkgs-sources.brim) pname version src;
+  inherit (nixpkgs-hardenedlinux-pkgs-sources.zui) pname version src;
   buildInputs = [
     gsettings-desktop-schemas
     libdrm
@@ -68,28 +68,28 @@ stdenv.mkDerivation rec {
   installPhase = ''
     runHook preInstall
 
-    mkdir -p $out/{bin,share/Brim,lib}
+    mkdir -p $out/{bin,share/Zui,lib}
 
-    mv opt/Brim/* $out/share/Brim
-    mv $out/share/Brim/*.so $out/lib/
+    mv opt/Zui/* $out/share/Zui
+    mv $out/share/Zui/*.so $out/lib/
     mv usr/share/* $out/share/
 
-    substituteInPlace $out/share/applications/brim.desktop  \
-      --replace "/opt/Brim/brim %U" "$out/bin/brim $U"
+    substituteInPlace $out/share/applications/zui.desktop  \
+      --replace "/opt/Zui/zui %U" "$out/bin/zui $U"
 
     runHook postInstall
   '';
   dontWrapGApps = true;
   runtimeLibs = lib.makeLibraryPath [libudev0-shim glibc libsecret nss];
   preFixup = ''
-    makeWrapper $out/share/Brim/brim $out/bin/brim \
+    makeWrapper $out/share/Zui/zui $out/bin/zui \
       --prefix LD_LIBRARY_PATH : "${runtimeLibs}" \
       "''${gappsWrapperArgs[@]}"
   '';
   enableParallelBuilding = true;
   meta = with lib; {
     description = "Desktop application to efficiently search large packet captures and Zeek logs.";
-    homepage = "https://github.com/brimdata/brim";
+    homepage = "https://github.com/zuidata/zui";
     license = licenses.bsd3;
     platforms = with platforms; linux;
   };
