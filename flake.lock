@@ -88,7 +88,7 @@
     "emacs-overlay": {
       "inputs": {
         "flake-utils": "flake-utils",
-        "nixpkgs": "nixpkgs_3"
+        "nixpkgs": "nixpkgs_2"
       },
       "locked": {
         "lastModified": 1676258056,
@@ -279,22 +279,6 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1677229269,
-        "narHash": "sha256-awE2w6oi9rzQ8qj1lwKEDm6qIA0a239fiB+AyPjXR2w=",
-        "owner": "NixOS",
-        "repo": "nixpkgs",
-        "rev": "7d0ed7f2e5aea07ab22ccb338d27fbe347ed2f11",
-        "type": "github"
-      },
-      "original": {
-        "owner": "NixOS",
-        "ref": "nixpkgs-unstable",
-        "repo": "nixpkgs",
-        "type": "github"
-      }
-    },
-    "nixpkgs_2": {
-      "locked": {
         "lastModified": 1675940568,
         "narHash": "sha256-epG6pOT9V0kS+FUqd7R6/CWkgnZx2DMT5Veqo+y6G3c=",
         "owner": "NixOS",
@@ -309,7 +293,7 @@
         "type": "github"
       }
     },
-    "nixpkgs_3": {
+    "nixpkgs_2": {
       "locked": {
         "lastModified": 1673540789,
         "narHash": "sha256-xqnxBOK3qctIeUVxecydrEDbEXjsvHCPGPbvsl63M/U=",
@@ -443,7 +427,10 @@
           "std-ext",
           "nixos"
         ],
-        "nixpkgs": "nixpkgs",
+        "nixpkgs": [
+          "std-ext",
+          "nixpkgs"
+        ],
         "org-roam-book-template": [
           "std-ext",
           "org-roam-book-template"
@@ -533,7 +520,7 @@
     "std-ext": {
       "inputs": {
         "nixos": "nixos",
-        "nixpkgs": "nixpkgs_2",
+        "nixpkgs": "nixpkgs",
         "org-roam-book-template": "org-roam-book-template",
         "std": "std",
         "std-data-collection": "std-data-collection"
