@@ -1,4 +1,24 @@
 {
+    "chatgpt-web": {
+        "cargoLocks": null,
+        "date": "2023-03-13",
+        "extract": null,
+        "name": "chatgpt-web",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "869413421",
+            "repo": "chatgpt-web",
+            "rev": "ac1f8db3e6e7ecdf4ce6a36216d27bc83a074349",
+            "sha256": "sha256-Vw13S7lzkoygb5tS/91KgcKrCqeXZ1WqgWiPNAREtZs=",
+            "type": "github"
+        },
+        "version": "ac1f8db3e6e7ecdf4ce6a36216d27bc83a074349"
+    },
     "container-structure-test": {
         "cargoLocks": null,
         "date": "2022-11-22",
@@ -21,7 +41,7 @@
     },
     "ghq": {
         "cargoLocks": null,
-        "date": "2022-05-08",
+        "date": "2023-02-23",
         "extract": null,
         "name": "ghq",
         "passthru": null,
@@ -33,11 +53,11 @@
             "name": null,
             "owner": "x-motemen",
             "repo": "ghq",
-            "rev": "8f948f2d8b69cd346afc6331f58e673230df5b5e",
-            "sha256": "sha256-jxqTM4nn5PpIDkCttRI6WzJ5eAhuM8Z2fIBsO6IJ2YA=",
+            "rev": "67a22bf1f7ce997082fbea36ec0ca98f0d60b3fb",
+            "sha256": "sha256-uUhYqfVj35/Y/Jj0t4hiAT8uknS2Tal+wvnLYTag4i0=",
             "type": "github"
         },
-        "version": "8f948f2d8b69cd346afc6331f58e673230df5b5e"
+        "version": "67a22bf1f7ce997082fbea36ec0ca98f0d60b3fb"
     },
     "go-nfsd": {
         "cargoLocks": null,
@@ -81,7 +101,7 @@
     },
     "nvdtools": {
         "cargoLocks": null,
-        "date": "2022-12-22",
+        "date": "2023-02-14",
         "extract": null,
         "name": "nvdtools",
         "passthru": null,
@@ -93,15 +113,15 @@
             "name": null,
             "owner": "facebookincubator",
             "repo": "nvdtools",
-            "rev": "9b28e1273b3fb66bae61bb9b11960bdd1c8104d5",
-            "sha256": "sha256-mMdhd7UALp7+EOu05qGg+iOagAmSEGKWwCkiQHVVX88=",
+            "rev": "c0d18738cde5864576f073af99669edc92e87fb4",
+            "sha256": "sha256-NNI1IGuj6IBPgjAfMedRDZECNnzc7B2Sem6Z6kh++Uc=",
             "type": "github"
         },
-        "version": "9b28e1273b3fb66bae61bb9b11960bdd1c8104d5"
+        "version": "c0d18738cde5864576f073af99669edc92e87fb4"
     },
     "tc-redirect-tap": {
         "cargoLocks": null,
-        "date": "2023-01-17",
+        "date": "2023-02-28",
         "extract": null,
         "name": "tc-redirect-tap",
         "passthru": null,
@@ -113,15 +133,15 @@
             "name": null,
             "owner": "awslabs",
             "repo": "tc-redirect-tap",
-            "rev": "21aa6181a4c7c6b9626c271fa0f47f91e4f4a0c9",
-            "sha256": "sha256-qrYZ242LB04riDVS90mGrQNNPnBYEB4COa8TuUEnkQ8=",
+            "rev": "70412ed40429a56722183d1785e716765922f25a",
+            "sha256": "sha256-l8+kj5W2bVF1+oPg2+1J2PeUx43waDgm/cS67XS4qn0=",
             "type": "github"
         },
-        "version": "21aa6181a4c7c6b9626c271fa0f47f91e4f4a0c9"
+        "version": "70412ed40429a56722183d1785e716765922f25a"
     },
     "zed": {
         "cargoLocks": null,
-        "date": "2023-01-17",
+        "date": "2023-03-07",
         "extract": null,
         "name": "zed",
         "passthru": null,
@@ -133,11 +153,11 @@
             "name": null,
             "owner": "brimdata",
             "repo": "zed",
-            "rev": "e4c9580806eab352ec00b2e54c7339d2444dc35e",
-            "sha256": "sha256-u+zE+h+Yh3/jLuJ1T9yNNcLlTHq+tJ3ShHZbsXCmZxs=",
+            "rev": "7882cee3168c7ba8046f7d025a6f79b85730277f",
+            "sha256": "sha256-U7tdntJha3dZkpOfe94NPWOPCWBckKFoobClx/6zCgU=",
             "type": "github"
         },
-        "version": "e4c9580806eab352ec00b2e54c7339d2444dc35e"
+        "version": "7882cee3168c7ba8046f7d025a6f79b85730277f"
     },
     "zitadel-bin": {
         "cargoLocks": null,
@@ -148,10 +168,10 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-zlp1tUOfmzp7l3dC8d7uVI8uMKUVQixfZzC0I6FmXzo=",
+            "sha256": "sha256-NvvIWgBh42ZNnI1VQ0xhJ0e3PLthdHJRyilyzyCYmXM=",
             "type": "url",
-            "url": "https://github.com/zitadel/zitadel/releases/download/v2.18.0/zitadel_Linux_x86_64.tar.gz"
+            "url": "https://github.com/zitadel/zitadel/releases/download/v2.21.2/zitadel_Linux_x86_64.tar.gz"
         },
-        "version": "v2.18.0"
+        "version": "v2.21.2"
     }
 }

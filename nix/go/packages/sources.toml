@@ -1,3 +1,7 @@
+[chatgpt-web]
+src.git = "https://github.com/869413421/chatgpt-web"
+fetch.github = "869413421/chatgpt-web"
+
 [ghq]
 src.git = "https://github.com/x-motemen/ghq"
 fetch.github = "x-motemen/ghq"

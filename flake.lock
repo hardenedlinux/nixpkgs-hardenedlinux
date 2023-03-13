@@ -382,11 +382,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1677437285,
-        "narHash": "sha256-YGfMothgUq1T9wMJYEhOSvdIiD/8gLXO1YcZA6hyIWU=",
+        "lastModified": 1678562978,
+        "narHash": "sha256-GaPyKdB0RvSBIgPxKkdJHTG/FyKsT0Ku5zifLEjr3QQ=",
         "owner": "paisano-nix",
         "repo": "core",
-        "rev": "5f2fc05e98e001cb1cf9535ded09e05d90cec131",
+        "rev": "f71a2db9414d66663c03a65ade97a9f353fb6d55",
         "type": "github"
       },
       "original": {
@@ -479,11 +479,11 @@
         "yants": "yants"
       },
       "locked": {
-        "lastModified": 1677774371,
-        "narHash": "sha256-yBL98bPnnN50fFN48PgyZf7tBMpARCwQrBq3Awh/nLw=",
+        "lastModified": 1678594870,
+        "narHash": "sha256-nVj1q5IzIvfPln3P5LIqP0x1i9XemBFHXGMswJdjgI4=",
         "owner": "divnix",
         "repo": "std",
-        "rev": "01ced7d1415f8a62e9b608bece1f81f95a9d09ca",
+        "rev": "c8425e9ed7bd03cc7552f37690ba1ea54a875bb7",
         "type": "github"
       },
       "original": {
@@ -526,11 +526,11 @@
         "std-data-collection": "std-data-collection"
       },
       "locked": {
-        "lastModified": 1678411389,
-        "narHash": "sha256-GwptvblvL/xGZ6Rmkyzu72NI6s+S4vsJVUhudZz6fGY=",
+        "lastModified": 1678660504,
+        "narHash": "sha256-qMWO9xNqqvlw8UuRsy1Waffu2MYmGmergeaKEVS+omE=",
         "owner": "GTrunSec",
         "repo": "std-ext",
-        "rev": "6119b565f1a2eeb64c157ff9709ae3f830f312b1",
+        "rev": "0e7308f8a00cfe6bcd701b3649fda89f0403413c",
         "type": "github"
       },
       "original": {
