@@ -705,11 +705,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1678771716,
-        "narHash": "sha256-+Ns44+o/iHuMuWBD/Jht9KzBjbREOnc0HC4Xlolz+MY=",
+        "lastModified": 1678772262,
+        "narHash": "sha256-MN6YU31bYFePeaACHW3WwPVIbA4vyZ9BNo/Born5qME=",
         "owner": "nzbr",
         "repo": "pnpm2nix-nzbr",
-        "rev": "ffd3619f64cc6f8313cb9239b74e2e35bc5fd8fd",
+        "rev": "c93f3631e7df3f11fc11d58e530fec530570bcb9",
         "type": "github"
       },
       "original": {
