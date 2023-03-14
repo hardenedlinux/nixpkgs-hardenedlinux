@@ -26,15 +26,15 @@
   };
   chatgpt-web = {
     pname = "chatgpt-web";
-    version = "cf788b190a323a453173c08cab46de7a0c5356bc";
+    version = "3a1466baceb4113eb2bea48ae183f2dd20923efe";
     src = fetchFromGitHub ({
       owner = "Chanzhaoyu";
       repo = "chatgpt-web";
-      rev = "cf788b190a323a453173c08cab46de7a0c5356bc";
+      rev = "3a1466baceb4113eb2bea48ae183f2dd20923efe";
       fetchSubmodules = false;
-      sha256 = "sha256-BD15eLxJy9FSWobJEtSQSZOfdVpOvgdzn42apMML9/s=";
+      sha256 = "sha256-9CMiGsHUHzUzYxzoSu6oWAeU1yh9jF1blbSYNWdRlKo=";
     });
-    date = "2023-03-13";
+    date = "2023-03-14";
   };
   gptcommit = {
     pname = "gptcommit";
