@@ -1,24 +1,4 @@
 {
-    "chatgpt-web": {
-        "cargoLocks": null,
-        "date": "2023-03-13",
-        "extract": null,
-        "name": "chatgpt-web",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "869413421",
-            "repo": "chatgpt-web",
-            "rev": "ac1f8db3e6e7ecdf4ce6a36216d27bc83a074349",
-            "sha256": "sha256-Vw13S7lzkoygb5tS/91KgcKrCqeXZ1WqgWiPNAREtZs=",
-            "type": "github"
-        },
-        "version": "ac1f8db3e6e7ecdf4ce6a36216d27bc83a074349"
-    },
     "container-structure-test": {
         "cargoLocks": null,
         "date": "2022-11-22",
@@ -58,6 +38,26 @@
             "type": "github"
         },
         "version": "67a22bf1f7ce997082fbea36ec0ca98f0d60b3fb"
+    },
+    "go-chatgpt-web": {
+        "cargoLocks": null,
+        "date": "2023-03-14",
+        "extract": null,
+        "name": "go-chatgpt-web",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "869413421",
+            "repo": "chatgpt-web",
+            "rev": "f77c2b2a63f16b130c6d394b5a4465db6cb21fd3",
+            "sha256": "sha256-G9O2d14zj6FnMQUP9FTdGsraYWFrTSxEj0H/GSkJ1y4=",
+            "type": "github"
+        },
+        "version": "f77c2b2a63f16b130c6d394b5a4465db6cb21fd3"
     },
     "go-nfsd": {
         "cargoLocks": null,
