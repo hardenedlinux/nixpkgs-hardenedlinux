@@ -8,7 +8,8 @@ with lib; let
   cfg = config.services.osquery-bin;
   configFile = pkgs.writeText "osquery.conf" (
     builtins.toJSON (
-      recursiveUpdate {
+      recursiveUpdate
+      {
         schedule = {
           time_again = {
             query = "select * from time;";

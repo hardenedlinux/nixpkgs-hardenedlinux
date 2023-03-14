@@ -1,7 +1,7 @@
 {
     "broker": {
         "cargoLocks": null,
-        "date": "2023-03-04",
+        "date": "2023-03-12",
         "extract": null,
         "name": "broker",
         "passthru": null,
@@ -13,19 +13,14 @@
             "name": null,
             "owner": "zeek",
             "repo": "broker",
-            "rev": "4923e5c50654ddc0f353c4408933a304f3ff4575",
-            "sha256": "sha256-okqZLNJcdNp3fPqxiJ3VbKg4rbeVu0J16TjDhImKifw=",
+            "rev": "78498fefb7142b47c3a59ec75ca66e73186bbbee",
+            "sha256": "sha256-WKNJF5zTgzQFm74hMtcXaY6GdpeUitguxQrmO+xq8H0=",
             "type": "github"
         },
-        "version": "4923e5c50654ddc0f353c4408933a304f3ff4575"
+        "version": "78498fefb7142b47c3a59ec75ca66e73186bbbee"
     },
     "caretaker": {
-        "cargoLocks": {
-            "Cargo.lock": [
-                "./caretaker-v0.2.4/Cargo.lock",
-                {}
-            ]
-        },
+        "cargoLocks": null,
         "date": null,
         "extract": null,
         "name": "caretaker",
@@ -43,6 +38,26 @@
             "type": "github"
         },
         "version": "v0.2.4"
+    },
+    "chatgpt-web": {
+        "cargoLocks": null,
+        "date": "2023-03-13",
+        "extract": null,
+        "name": "chatgpt-web",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "Chanzhaoyu",
+            "repo": "chatgpt-web",
+            "rev": "cf788b190a323a453173c08cab46de7a0c5356bc",
+            "sha256": "sha256-BD15eLxJy9FSWobJEtSQSZOfdVpOvgdzn42apMML9/s=",
+            "type": "github"
+        },
+        "version": "cf788b190a323a453173c08cab46de7a0c5356bc"
     },
     "gptcommit": {
         "cargoLocks": null,
@@ -108,11 +123,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-dSivKdyvh+awSii5dGNAFG/q/YInLMiG2rsBQmxiJCc=",
+            "sha256": "sha256-nRg4nDp0Z+2Q6OPDGQIs4EBd6GoXCM2SPuFngr0yzMM=",
             "type": "url",
-            "url": "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.15.0pre20230302_85dbf9d/install"
+            "url": "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.15.0pre20230310_208c855/install"
         },
-        "version": "nix-2.15.0pre20230302_85dbf9d"
+        "version": "nix-2.15.0pre20230310_208c855"
     },
     "osquery": {
         "cargoLocks": null,

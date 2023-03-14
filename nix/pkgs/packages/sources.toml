@@ -1,3 +1,7 @@
+[chatgpt-web]
+src.git = "https://github.com/Chanzhaoyu/chatgpt-web"
+fetch.github = "Chanzhaoyu/chatgpt-web"
+
 [osquery]
 #src.github = "osquery/osquery"
 src.manual = "5.2.2"
@@ -35,9 +39,9 @@ fetch.github = "riquito/tuc"
 [caretaker]
 src.github = "grego/caretaker"
 fetch.github = "grego/caretaker"
-# Pull the contents of `Cargo.lock` into generated nix expr
-cargo_locks = ["Cargo.lock"]
 
+# Pull the contents of `Cargo.lock` into generated nix expr
+# cargo_locks = ["Cargo.lock"]
 [gptcommit]
 src.github = "zurawiki/gptcommit"
 fetch.github = "zurawiki/gptcommit"

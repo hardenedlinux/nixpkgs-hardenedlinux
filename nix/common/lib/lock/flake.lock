@@ -319,6 +319,21 @@
     },
     "flake-utils_3": {
       "locked": {
+        "lastModified": 1676283394,
+        "narHash": "sha256-XX2f9c3iySLCw54rJ/CZs+ZK6IQy7GXNY4nSOyu2QG4=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "3db36a8b464d0c4532ba1c7dda728f4576d6d073",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "flake-utils_4": {
+      "locked": {
         "lastModified": 1659877975,
         "narHash": "sha256-zllb8aq3YO3h8B/U0/J1WBgAL8EX5yWf5pMj3G0NAmc=",
         "owner": "numtide",
@@ -332,7 +347,7 @@
         "type": "github"
       }
     },
-    "flake-utils_4": {
+    "flake-utils_5": {
       "locked": {
         "lastModified": 1659877975,
         "narHash": "sha256-zllb8aq3YO3h8B/U0/J1WBgAL8EX5yWf5pMj3G0NAmc=",
@@ -682,6 +697,27 @@
         "type": "github"
       }
     },
+    "pnpm2nix": {
+      "inputs": {
+        "flake-utils": "flake-utils_2",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1678771716,
+        "narHash": "sha256-+Ns44+o/iHuMuWBD/Jht9KzBjbREOnc0HC4Xlolz+MY=",
+        "owner": "nzbr",
+        "repo": "pnpm2nix-nzbr",
+        "rev": "ffd3619f64cc6f8313cb9239b74e2e35bc5fd8fd",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nzbr",
+        "repo": "pnpm2nix-nzbr",
+        "type": "github"
+      }
+    },
     "poetry2nix": {
       "flake": false,
       "locked": {
@@ -701,7 +737,7 @@
     },
     "poetry2nix_2": {
       "inputs": {
-        "flake-utils": "flake-utils_2",
+        "flake-utils": "flake-utils_3",
         "nixpkgs": [
           "nixpkgs"
         ]
@@ -795,6 +831,7 @@
         "gomod2nix": "gomod2nix_2",
         "nix-npm-buildpackage": "nix-npm-buildpackage",
         "nixpkgs": "nixpkgs",
+        "pnpm2nix": "pnpm2nix",
         "poetry2nix": "poetry2nix_2",
         "rust-overlay": "rust-overlay_2",
         "xnlib": "xnlib"
@@ -844,7 +881,7 @@
     },
     "rust-overlay_2": {
       "inputs": {
-        "flake-utils": "flake-utils_3",
+        "flake-utils": "flake-utils_4",
         "nixpkgs": [
           "nixpkgs"
         ]
@@ -873,7 +910,7 @@
         "blank": "blank_2",
         "devshell": "devshell_2",
         "dmerge": "dmerge",
-        "flake-utils": "flake-utils_4",
+        "flake-utils": "flake-utils_5",
         "incl": "incl",
         "makes": [
           "xnlib",

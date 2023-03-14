@@ -11,7 +11,6 @@
     container-structure-test = prev.callPackage ./packages/container-structure-test {};
     nvdtools = prev.callPackage ./packages/nvdtools {};
     zitadel-bin = prev.callPackage ./packages/zitadel/bin.nix {};
-    chatgpt-web = prev.callPackage ./packages/chatgpt-web {};
     # firecracker-task-driver = prev.callPackage ./packages/firecracker-task-driver {};
   };
 }

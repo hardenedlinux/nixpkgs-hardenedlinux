@@ -8,7 +8,8 @@
 }: let
   eZeeKonfigurator_client-requirements = machlib.mkPython rec {
     requirements =
-      builtins.readFile (
+      builtins.readFile
+      (
         nixpkgs-hardenedlinux-python-sources.eZeeKonfigurator_client.src
         + "/brokerd/requirements.txt"
       )

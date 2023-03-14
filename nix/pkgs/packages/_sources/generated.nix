@@ -3,15 +3,15 @@
 {
   broker = {
     pname = "broker";
-    version = "4923e5c50654ddc0f353c4408933a304f3ff4575";
+    version = "78498fefb7142b47c3a59ec75ca66e73186bbbee";
     src = fetchFromGitHub ({
       owner = "zeek";
       repo = "broker";
-      rev = "4923e5c50654ddc0f353c4408933a304f3ff4575";
+      rev = "78498fefb7142b47c3a59ec75ca66e73186bbbee";
       fetchSubmodules = true;
-      sha256 = "sha256-okqZLNJcdNp3fPqxiJ3VbKg4rbeVu0J16TjDhImKifw=";
+      sha256 = "sha256-WKNJF5zTgzQFm74hMtcXaY6GdpeUitguxQrmO+xq8H0=";
     });
-    date = "2023-03-04";
+    date = "2023-03-12";
   };
   caretaker = {
     pname = "caretaker";
@@ -23,12 +23,18 @@
       fetchSubmodules = false;
       sha256 = "sha256-xP3AfwD9Er0TolAN65NfC2GkC1KlpcyV1J68KjBBEwU=";
     });
-    cargoLock."Cargo.lock" = {
-      lockFile = ./caretaker-v0.2.4/Cargo.lock;
-      outputHashes = {
-        
-      };
-    };
+  };
+  chatgpt-web = {
+    pname = "chatgpt-web";
+    version = "cf788b190a323a453173c08cab46de7a0c5356bc";
+    src = fetchFromGitHub ({
+      owner = "Chanzhaoyu";
+      repo = "chatgpt-web";
+      rev = "cf788b190a323a453173c08cab46de7a0c5356bc";
+      fetchSubmodules = false;
+      sha256 = "sha256-BD15eLxJy9FSWobJEtSQSZOfdVpOvgdzn42apMML9/s=";
+    });
+    date = "2023-03-13";
   };
   gptcommit = {
     pname = "gptcommit";
@@ -63,10 +69,10 @@
   };
   nix-unstable-installer = {
     pname = "nix-unstable-installer";
-    version = "nix-2.15.0pre20230302_85dbf9d";
+    version = "nix-2.15.0pre20230310_208c855";
     src = fetchurl {
-      url = "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.15.0pre20230302_85dbf9d/install";
-      sha256 = "sha256-dSivKdyvh+awSii5dGNAFG/q/YInLMiG2rsBQmxiJCc=";
+      url = "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.15.0pre20230310_208c855/install";
+      sha256 = "sha256-nRg4nDp0Z+2Q6OPDGQIs4EBd6GoXCM2SPuFngr0yzMM=";
     };
   };
   osquery = {

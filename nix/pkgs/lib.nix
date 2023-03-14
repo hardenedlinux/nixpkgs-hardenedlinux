@@ -8,6 +8,7 @@ in {
     cell.overlays.default
     cell.overlays.tests
     __inputs__.nix-npm-buildpackage.overlays.default
+    __inputs__.pnpm2nix.overlays.default
     (final: prev: {})
   ];
 }
