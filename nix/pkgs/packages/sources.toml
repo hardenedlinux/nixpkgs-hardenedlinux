@@ -1,3 +1,7 @@
+[openproject]
+src.git = "https://github.com/opf/openproject"
+fetch.github = "opf/openproject"
+
 [chatgpt-web]
 src.git = "https://github.com/Chanzhaoyu/chatgpt-web"
 fetch.github = "Chanzhaoyu/chatgpt-web"

@@ -26,25 +26,25 @@
   };
   chatgpt-web = {
     pname = "chatgpt-web";
-    version = "3a1466baceb4113eb2bea48ae183f2dd20923efe";
+    version = "25692f83719ffb05e06864c02c19aab7469fdb8e";
     src = fetchFromGitHub ({
       owner = "Chanzhaoyu";
       repo = "chatgpt-web";
-      rev = "3a1466baceb4113eb2bea48ae183f2dd20923efe";
+      rev = "25692f83719ffb05e06864c02c19aab7469fdb8e";
       fetchSubmodules = false;
-      sha256 = "sha256-9CMiGsHUHzUzYxzoSu6oWAeU1yh9jF1blbSYNWdRlKo=";
+      sha256 = "sha256-HIc09HIdFvfDP6FFoEdkkthjWAyczRsiEy4LJWS0OS8=";
     });
-    date = "2023-03-14";
+    date = "2023-03-15";
   };
   gptcommit = {
     pname = "gptcommit";
-    version = "v0.3.0";
+    version = "v0.3.1";
     src = fetchFromGitHub ({
       owner = "zurawiki";
       repo = "gptcommit";
-      rev = "v0.3.0";
+      rev = "v0.3.1";
       fetchSubmodules = false;
-      sha256 = "sha256-9ExlInX1DbuywexxzuhxD/dmr5yKk3/NyxbZj/uBOCY=";
+      sha256 = "sha256-n5/qaq3KA5LGds8FvRcTD13tyRx5yNPnMd6iNXYdNYQ=";
     });
   };
   koodo-reader = {
@@ -74,6 +74,18 @@
       url = "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.15.0pre20230310_208c855/install";
       sha256 = "sha256-nRg4nDp0Z+2Q6OPDGQIs4EBd6GoXCM2SPuFngr0yzMM=";
     };
+  };
+  openproject = {
+    pname = "openproject";
+    version = "ff974cce418bdb980678db37d962694a32132121";
+    src = fetchFromGitHub ({
+      owner = "opf";
+      repo = "openproject";
+      rev = "ff974cce418bdb980678db37d962694a32132121";
+      fetchSubmodules = false;
+      sha256 = "sha256-IsBBJ9jd0Mbq3XaD0/aulug32PpS9V9eHsYJ9E59nJU=";
+    });
+    date = "2023-03-15";
   };
   osquery = {
     pname = "osquery";

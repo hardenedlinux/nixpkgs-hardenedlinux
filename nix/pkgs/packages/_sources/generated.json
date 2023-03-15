@@ -41,7 +41,7 @@
     },
     "chatgpt-web": {
         "cargoLocks": null,
-        "date": "2023-03-14",
+        "date": "2023-03-15",
         "extract": null,
         "name": "chatgpt-web",
         "passthru": null,
@@ -53,11 +53,11 @@
             "name": null,
             "owner": "Chanzhaoyu",
             "repo": "chatgpt-web",
-            "rev": "3a1466baceb4113eb2bea48ae183f2dd20923efe",
-            "sha256": "sha256-9CMiGsHUHzUzYxzoSu6oWAeU1yh9jF1blbSYNWdRlKo=",
+            "rev": "25692f83719ffb05e06864c02c19aab7469fdb8e",
+            "sha256": "sha256-HIc09HIdFvfDP6FFoEdkkthjWAyczRsiEy4LJWS0OS8=",
             "type": "github"
         },
-        "version": "3a1466baceb4113eb2bea48ae183f2dd20923efe"
+        "version": "25692f83719ffb05e06864c02c19aab7469fdb8e"
     },
     "gptcommit": {
         "cargoLocks": null,
@@ -73,11 +73,11 @@
             "name": null,
             "owner": "zurawiki",
             "repo": "gptcommit",
-            "rev": "v0.3.0",
-            "sha256": "sha256-9ExlInX1DbuywexxzuhxD/dmr5yKk3/NyxbZj/uBOCY=",
+            "rev": "v0.3.1",
+            "sha256": "sha256-n5/qaq3KA5LGds8FvRcTD13tyRx5yNPnMd6iNXYdNYQ=",
             "type": "github"
         },
-        "version": "v0.3.0"
+        "version": "v0.3.1"
     },
     "koodo-reader": {
         "cargoLocks": null,
@@ -128,6 +128,26 @@
             "url": "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.15.0pre20230310_208c855/install"
         },
         "version": "nix-2.15.0pre20230310_208c855"
+    },
+    "openproject": {
+        "cargoLocks": null,
+        "date": "2023-03-15",
+        "extract": null,
+        "name": "openproject",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "opf",
+            "repo": "openproject",
+            "rev": "ff974cce418bdb980678db37d962694a32132121",
+            "sha256": "sha256-IsBBJ9jd0Mbq3XaD0/aulug32PpS9V9eHsYJ9E59nJU=",
+            "type": "github"
+        },
+        "version": "ff974cce418bdb980678db37d962694a32132121"
     },
     "osquery": {
         "cargoLocks": null,

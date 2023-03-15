@@ -17,7 +17,7 @@
     sslproxy = prev.callPackage ./packages/SSLproxy {};
     koodo-reader-appimage = prev.callPackage ./packages/koodo-reader/appimage.nix {};
     koodo-reader = prev.callPackage ./packages/koodo-reader {};
-    chatgpt-web = prev.callPackage ./packages/chatgpt-web {};
+    openproject = prev.callPackage ./packages/openproject {};
   };
   tests = final: prev: {
     osquery-vm-tests = prev.callPackage ./nixosModules/osquery/nixos-test.nix {
