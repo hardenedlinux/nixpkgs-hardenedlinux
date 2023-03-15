@@ -143,11 +143,11 @@
             "name": null,
             "owner": "opf",
             "repo": "openproject",
-            "rev": "13b5e69e12ded484fb01c8df5573b796dced716e",
-            "sha256": "sha256-qI5tp9v9LH6AzIcFmhbVn+rwLLWaMr3UnZmj9lSbz9Y=",
+            "rev": "ca06cae13fa04759f9aadc711861eb52421b189e",
+            "sha256": "sha256-5xsQsipdkFFt1j7E/y5VwGlWgQdgeaItQd8S4Q3Ioic=",
             "type": "github"
         },
-        "version": "13b5e69e12ded484fb01c8df5573b796dced716e"
+        "version": "ca06cae13fa04759f9aadc711861eb52421b189e"
     },
     "osquery": {
         "cargoLocks": null,

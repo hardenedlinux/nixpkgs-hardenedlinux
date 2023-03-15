@@ -77,13 +77,13 @@
   };
   openproject = {
     pname = "openproject";
-    version = "13b5e69e12ded484fb01c8df5573b796dced716e";
+    version = "ca06cae13fa04759f9aadc711861eb52421b189e";
     src = fetchFromGitHub ({
       owner = "opf";
       repo = "openproject";
-      rev = "13b5e69e12ded484fb01c8df5573b796dced716e";
+      rev = "ca06cae13fa04759f9aadc711861eb52421b189e";
       fetchSubmodules = false;
-      sha256 = "sha256-qI5tp9v9LH6AzIcFmhbVn+rwLLWaMr3UnZmj9lSbz9Y=";
+      sha256 = "sha256-5xsQsipdkFFt1j7E/y5VwGlWgQdgeaItQd8S4Q3Ioic=";
     });
     date = "2023-03-15";
   };
