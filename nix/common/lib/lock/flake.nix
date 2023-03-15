@@ -5,7 +5,7 @@
     nixpkgs.url = "github:NixOS/nixpkgs/6ccc4a59c3f1b56d039d93da52696633e641bc71";
   };
   inputs = {
-    pnpm2nix.url = "github:nzbr/pnpm2nix-nzbr";
+    pnpm2nix.url = "github:nzbr/pnpm2nix-nzbr?ref=pull/6/head";
     pnpm2nix.inputs.nixpkgs.follows = "nixpkgs";
 
     poetry2nix.url = "github:nix-community/poetry2nix";
