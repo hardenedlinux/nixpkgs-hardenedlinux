@@ -27,7 +27,7 @@
   libudev0-shim,
   glibc,
   libsecret,
-  nixpkgs-hardenedlinux-pkgs-sources,
+  nixpkgs-hardenedlinux-sources,
 }: let
   version = "5.9.18";
 in

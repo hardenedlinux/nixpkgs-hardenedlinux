@@ -8,11 +8,11 @@
   caf,
   python3,
   ncurses5,
-  nixpkgs-hardenedlinux-pkgs-sources,
+  nixpkgs-hardenedlinux-sources,
 }:
 stdenv.mkDerivation rec {
   name = "broker";
-  inherit (nixpkgs-hardenedlinux-pkgs-sources.broker) pname version src;
+  inherit (nixpkgs-hardenedlinux-sources.broker) pname version src;
   nativeBuildInputs = [cmake openssl];
   buildInputs = [cmake gcc openssl caf ncurses5];
   cmakeFlags = [

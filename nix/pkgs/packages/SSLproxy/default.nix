@@ -8,10 +8,10 @@
   libpcap,
   sqlite,
   libnet,
-  nixpkgs-hardenedlinux-pkgs-sources,
+  nixpkgs-hardenedlinux-sources,
 }:
 gnustep.gsmakeDerivation rec {
-  inherit (nixpkgs-hardenedlinux-pkgs-sources.sslproxy) pname version src;
+  inherit (nixpkgs-hardenedlinux-sources.sslproxy) pname version src;
 
   nativeBuildInputs = [openssl pkg-config];
 

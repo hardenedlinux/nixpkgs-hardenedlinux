@@ -1,7 +1,7 @@
 {
   stdenv,
   lib,
-  nixpkgs-hardenedlinux-pkgs-sources,
+  nixpkgs-hardenedlinux-sources,
   bundlerEnv,
   ruby,
   mkPnpmPackage,
@@ -9,7 +9,7 @@
   nodejs-16_x,
   buildNpmPackage,
 }: let
-  inherit (nixpkgs-hardenedlinux-pkgs-sources.openproject) pname version src;
+  inherit (nixpkgs-hardenedlinux-sources.openproject) pname version src;
   src' = runCommand "frontend" {} ''
     cp -RL --no-preserve=mode ${src}/frontend $out
     cp ${./pnpm-lock.yaml} $out/pnpm-lock.yaml

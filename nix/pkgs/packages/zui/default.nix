@@ -27,10 +27,10 @@
   libudev0-shim,
   glibc,
   libsecret,
-  nixpkgs-hardenedlinux-pkgs-sources,
+  nixpkgs-hardenedlinux-sources,
 }:
 stdenv.mkDerivation rec {
-  inherit (nixpkgs-hardenedlinux-pkgs-sources.zui) pname version src;
+  inherit (nixpkgs-hardenedlinux-sources.zui) pname version src;
   buildInputs = [
     gsettings-desktop-schemas
     libdrm

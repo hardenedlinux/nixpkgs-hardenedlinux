@@ -1,0 +1,177 @@
+{
+    "container-structure-test": {
+        "cargoLocks": null,
+        "date": "2023-03-15",
+        "extract": null,
+        "name": "container-structure-test",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "GoogleContainerTools",
+            "repo": "container-structure-test",
+            "rev": "be4664be19d5968386a2801fe61d80ddffe29d46",
+            "sha256": "sha256-jUus2BRijt5pMlrHuRlZr54XgarT4k4OGUMWi4kUxpc=",
+            "type": "github"
+        },
+        "version": "be4664be19d5968386a2801fe61d80ddffe29d46"
+    },
+    "ghq": {
+        "cargoLocks": null,
+        "date": "2023-02-23",
+        "extract": null,
+        "name": "ghq",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "x-motemen",
+            "repo": "ghq",
+            "rev": "67a22bf1f7ce997082fbea36ec0ca98f0d60b3fb",
+            "sha256": "sha256-uUhYqfVj35/Y/Jj0t4hiAT8uknS2Tal+wvnLYTag4i0=",
+            "type": "github"
+        },
+        "version": "67a22bf1f7ce997082fbea36ec0ca98f0d60b3fb"
+    },
+    "go-chatgpt-web": {
+        "cargoLocks": null,
+        "date": "2023-03-14",
+        "extract": null,
+        "name": "go-chatgpt-web",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "869413421",
+            "repo": "chatgpt-web",
+            "rev": "f77c2b2a63f16b130c6d394b5a4465db6cb21fd3",
+            "sha256": "sha256-G9O2d14zj6FnMQUP9FTdGsraYWFrTSxEj0H/GSkJ1y4=",
+            "type": "github"
+        },
+        "version": "f77c2b2a63f16b130c6d394b5a4465db6cb21fd3"
+    },
+    "go-nfsd": {
+        "cargoLocks": null,
+        "date": "2022-05-12",
+        "extract": null,
+        "name": "go-nfsd",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "mit-pdos",
+            "repo": "go-nfsd",
+            "rev": "a019f4d17fe0c5d02404788dbef39bc9f885e521",
+            "sha256": "sha256-+bcRGlJhQSWPLVgSmAbP0Kh6mqCgmnZZksmQV7cVG3g=",
+            "type": "github"
+        },
+        "version": "a019f4d17fe0c5d02404788dbef39bc9f885e521"
+    },
+    "gst": {
+        "cargoLocks": null,
+        "date": "2021-10-27",
+        "extract": null,
+        "name": "gst",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "uetchy",
+            "repo": "gst",
+            "rev": "b4af138c9a2dfc6bb04d853cd045eff9a5d8b608",
+            "sha256": "sha256-NhbGHTYucfqCloVirkaDlAtQfhWP2cw4I+t/ysvvkR0=",
+            "type": "github"
+        },
+        "version": "b4af138c9a2dfc6bb04d853cd045eff9a5d8b608"
+    },
+    "nvdtools": {
+        "cargoLocks": null,
+        "date": "2023-02-14",
+        "extract": null,
+        "name": "nvdtools",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "facebookincubator",
+            "repo": "nvdtools",
+            "rev": "c0d18738cde5864576f073af99669edc92e87fb4",
+            "sha256": "sha256-NNI1IGuj6IBPgjAfMedRDZECNnzc7B2Sem6Z6kh++Uc=",
+            "type": "github"
+        },
+        "version": "c0d18738cde5864576f073af99669edc92e87fb4"
+    },
+    "tc-redirect-tap": {
+        "cargoLocks": null,
+        "date": "2023-02-28",
+        "extract": null,
+        "name": "tc-redirect-tap",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "awslabs",
+            "repo": "tc-redirect-tap",
+            "rev": "70412ed40429a56722183d1785e716765922f25a",
+            "sha256": "sha256-l8+kj5W2bVF1+oPg2+1J2PeUx43waDgm/cS67XS4qn0=",
+            "type": "github"
+        },
+        "version": "70412ed40429a56722183d1785e716765922f25a"
+    },
+    "zed": {
+        "cargoLocks": null,
+        "date": "2023-03-14",
+        "extract": null,
+        "name": "zed",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "brimdata",
+            "repo": "zed",
+            "rev": "de1134da86e66809e556fc2a218a21b37344a374",
+            "sha256": "sha256-2ISz428UDQeoh+2xnXr5LCnj/9mIApcJ3J90sgyP//o=",
+            "type": "github"
+        },
+        "version": "de1134da86e66809e556fc2a218a21b37344a374"
+    },
+    "zitadel-bin": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "zitadel-bin",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-NvvIWgBh42ZNnI1VQ0xhJ0e3PLthdHJRyilyzyCYmXM=",
+            "type": "url",
+            "url": "https://github.com/zitadel/zitadel/releases/download/v2.21.2/zitadel_Linux_x86_64.tar.gz"
+        },
+        "version": "v2.21.2"
+    }
+}

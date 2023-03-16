@@ -1,11 +1,11 @@
 {
   dream2nix,
   system,
-  nixpkgs-hardenedlinux-pkgs-sources,
+  nixpkgs-hardenedlinux-sources,
   crane,
 }: let
   craneLib = crane.overrideScope' (final: prev: {});
 in
   craneLib.buildPackage {
-    inherit (nixpkgs-hardenedlinux-pkgs-sources.caretaker) src pname version;
+    inherit (nixpkgs-hardenedlinux-sources.caretaker) src pname version;
   }

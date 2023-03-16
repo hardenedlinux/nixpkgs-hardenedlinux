@@ -26,15 +26,15 @@
   };
   chatgpt-web = {
     pname = "chatgpt-web";
-    version = "25692f83719ffb05e06864c02c19aab7469fdb8e";
+    version = "c797ff5cb3f80c54f309f084ac3d22a965228de3";
     src = fetchFromGitHub ({
       owner = "Chanzhaoyu";
       repo = "chatgpt-web";
-      rev = "25692f83719ffb05e06864c02c19aab7469fdb8e";
+      rev = "c797ff5cb3f80c54f309f084ac3d22a965228de3";
       fetchSubmodules = false;
-      sha256 = "sha256-HIc09HIdFvfDP6FFoEdkkthjWAyczRsiEy4LJWS0OS8=";
+      sha256 = "sha256-Lq761hvtICfOxgO3qxjzaBuD8eYTYpat5xxIVgpD0Ok=";
     });
-    date = "2023-03-15";
+    date = "2023-03-16";
   };
   gptcommit = {
     pname = "gptcommit";
@@ -77,15 +77,15 @@
   };
   openproject = {
     pname = "openproject";
-    version = "ca06cae13fa04759f9aadc711861eb52421b189e";
+    version = "4621c10d4a3e17a2f7d5bdfca74d6237223fa38d";
     src = fetchFromGitHub ({
       owner = "opf";
       repo = "openproject";
-      rev = "ca06cae13fa04759f9aadc711861eb52421b189e";
+      rev = "4621c10d4a3e17a2f7d5bdfca74d6237223fa38d";
       fetchSubmodules = false;
-      sha256 = "sha256-5xsQsipdkFFt1j7E/y5VwGlWgQdgeaItQd8S4Q3Ioic=";
+      sha256 = "sha256-dP9+p5i6PNgEJI678K68urtGqof6Df1E+50XwFAtsh4=";
     });
-    date = "2023-03-15";
+    date = "2023-03-16";
   };
   osquery = {
     pname = "osquery";

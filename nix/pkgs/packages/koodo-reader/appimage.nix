@@ -3,17 +3,17 @@
   stdenv,
   fetchurl,
   appimageTools,
-  nixpkgs-hardenedlinux-pkgs-sources,
+  nixpkgs-hardenedlinux-sources,
 }: let
   pname = "koodo-reader";
   appimageContents = appimageTools.extractType2 {
     inherit pname;
-    inherit (nixpkgs-hardenedlinux-pkgs-sources.koodo-reader-appimage) version src;
+    inherit (nixpkgs-hardenedlinux-sources.koodo-reader-appimage) version src;
   };
 in
   appimageTools.wrapType2 rec {
     inherit pname;
-    inherit (nixpkgs-hardenedlinux-pkgs-sources.koodo-reader-appimage) version src;
+    inherit (nixpkgs-hardenedlinux-sources.koodo-reader-appimage) version src;
 
     extraPkgs = pkgs:
       with pkgs; [];

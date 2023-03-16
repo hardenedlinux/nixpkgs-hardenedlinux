@@ -1,11 +1,11 @@
 {
   stdenv,
   buildGoApplication,
-  nixpkgs-hardenedlinux-go-sources,
+  nixpkgs-hardenedlinux-sources,
   update,
 }:
 buildGoApplication rec {
-  inherit (nixpkgs-hardenedlinux-go-sources.nvdtools) pname version src;
+  inherit (nixpkgs-hardenedlinux-sources.nvdtools) pname version src;
   modules = ./gomod2nix.toml;
 
   subPackages = ["cmd/*"];

@@ -7,10 +7,10 @@
   dpkg,
   osquery-vm-tests,
   syslogng,
-  nixpkgs-hardenedlinux-pkgs-sources,
+  nixpkgs-hardenedlinux-sources,
 }:
 stdenv.mkDerivation rec {
-  inherit (nixpkgs-hardenedlinux-pkgs-sources.osquery) pname version src;
+  inherit (nixpkgs-hardenedlinux-sources.osquery) pname version src;
   buildInputs = [syslogng];
   nativeBuildInputs = [wrapGAppsHook autoPatchelfHook makeWrapper dpkg];
   runtimeLibs = lib.makeLibraryPath [];

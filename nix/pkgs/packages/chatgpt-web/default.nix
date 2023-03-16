@@ -1,38 +1,20 @@
 {
-  lib,
-  nixpkgs-hardenedlinux-pkgs-sources,
-  mkPnpmPackage,
-  runCommand,
-}: let
-  meta = with lib; {
-    description = "用 Express 和 Vue3 搭建的 ChatGPT 演示网页";
-    homepage = "https://github.com/Chanzhaoyu/chatgpt-web";
-    license = licenses.mit;
-    platforms = platforms.linux;
+  buildGoApplication,
+  nixpkgs-hardenedlinux-sources,
+  update,
+}:
+buildGoApplication rec {
+  inherit (nixpkgs-hardenedlinux-sources.go-chatgpt-web) pname version src;
+
+  modules = ./gomod2nix.toml;
+
+  subPackages = ["."];
+
+  passthru.update = update.gomod2nix {
+    inherit src;
+    path = builtins.baseNameOf ./.;
   };
-  app = mkPnpmPackage {
-    inherit (nixpkgs-hardenedlinux-pkgs-sources.chatgpt-web) pname src version;
-    inherit meta;
+  meta = {
+    homepage = "https://github.com/869413421/chatgpt-web";
   };
-  service =
-    (mkPnpmPackage {
-      inherit (nixpkgs-hardenedlinux-pkgs-sources.chatgpt-web) pname version;
-      src = nixpkgs-hardenedlinux-pkgs-sources.chatgpt-web.src + "/service";
-      inherit meta;
-      copyPnpmStore = true;
-      distDir = "build";
-    })
-    .overrideAttrs (old: {
-      postInstall = ''
-        mkdir -p $out
-        cp -r node_modules $out/node_modules
-      '';
-    });
-in
-  runCommand "chatgpt-web" {} ''
-    mkdir -p $out
-    cp -r ${app}/ $out/public
-    cp -r ${service} $out/build
-    cp -r ${service}/node_modules $out/node_modules
-    cp -r ${nixpkgs-hardenedlinux-pkgs-sources.chatgpt-web.src}/service/* $out/.
-  ''
+}

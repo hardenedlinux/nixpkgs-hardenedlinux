@@ -3,7 +3,14 @@
   cell,
 }: {
   default = final: prev: {
-    nixpkgs-hardenedlinux-pkgs-sources = prev.callPackage ./packages/_sources/generated.nix {};
+    nixpkgs-hardenedlinux-sources =
+      (import ./packages/_sources/pkgs/generated.nix {
+        inherit (prev) fetchgit fetchurl fetchFromGitHub dockerTools;
+      })
+      // (import ./packages/_sources/go/generated.nix {
+        inherit (prev) fetchgit fetchurl fetchFromGitHub dockerTools;
+      });
+
     gptcommit = prev.callPackage ./packages/gptcommit {};
     broker = prev.callPackage ./packages/broker {};
     zui = prev.callPackage ./packages/zui {};
@@ -19,6 +26,15 @@
     koodo-reader = prev.callPackage ./packages/koodo-reader {};
     chatgpt-web = prev.callPackage ./packages/chatgpt-web {};
     openproject = prev.callPackage ./packages/openproject {};
+
+    go-nfsd = prev.callPackage ./packages/go-nfsd {};
+    tc-redirect-tap = prev.callPackage ./packages/tc-redirect-tap {};
+    zed = prev.callPackage ./packages/zed {};
+    update = prev.callPackage ./packages/update {};
+    container-structure-test = prev.callPackage ./packages/container-structure-test {};
+    nvdtools = prev.callPackage ./packages/nvdtools {};
+    zitadel-bin = prev.callPackage ./packages/zitadel/bin.nix {};
+    go-chatgpt-web = prev.callPackage ./packages/chatgpt-web {};
   };
   tests = final: prev: {
     osquery-vm-tests = prev.callPackage ./nixosModules/osquery/nixos-test.nix {

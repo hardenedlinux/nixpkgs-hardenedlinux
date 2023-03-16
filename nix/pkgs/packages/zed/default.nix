@@ -1,11 +1,11 @@
 {
   buildGoApplication,
-  nixpkgs-hardenedlinux-go-sources,
+  nixpkgs-hardenedlinux-sources,
   go_1_19,
   update,
 }:
 buildGoApplication rec {
-  inherit (nixpkgs-hardenedlinux-go-sources.zed) pname src version;
+  inherit (nixpkgs-hardenedlinux-sources.zed) pname src version;
   modules = ./gomod2nix.toml;
   subPackages = ["cmd/*"];
   go = go_1_19;

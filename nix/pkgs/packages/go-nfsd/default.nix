@@ -1,9 +1,9 @@
 {
   buildGoApplication,
-  nixpkgs-hardenedlinux-go-sources,
+  nixpkgs-hardenedlinux-sources,
 }:
 buildGoApplication rec {
-  inherit (nixpkgs-hardenedlinux-go-sources.go-nfsd) pname src version;
+  inherit (nixpkgs-hardenedlinux-sources.go-nfsd) pname src version;
   modules = ./gomod2nix.toml;
   subPackages = ["cmd/*"];
   # https://discourse.nixos.org/t/patchelf-called-with-dontpatchelf-flag-set/4140/4

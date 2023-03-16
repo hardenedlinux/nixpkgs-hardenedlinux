@@ -1,7 +1,7 @@
 {
   dream2nix,
   system,
-  nixpkgs-hardenedlinux-pkgs-sources,
+  nixpkgs-hardenedlinux-sources,
   crane,
   pkg-config,
   openssl,
@@ -16,6 +16,6 @@
 in
   craneLib.buildPackage {
     buildInputs = [pkg-config openssl.dev];
-    inherit (nixpkgs-hardenedlinux-pkgs-sources.gptcommit) src pname version;
+    inherit (nixpkgs-hardenedlinux-sources.gptcommit) src pname version;
     doCheck = false;
   }

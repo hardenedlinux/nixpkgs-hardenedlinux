@@ -1,10 +1,10 @@
 {
   buildGoApplication,
-  nixpkgs-hardenedlinux-go-sources,
+  nixpkgs-hardenedlinux-sources,
   update,
 }:
 buildGoApplication rec {
-  inherit (nixpkgs-hardenedlinux-go-sources.tc-redirect-tap) pname src version;
+  inherit (nixpkgs-hardenedlinux-sources.tc-redirect-tap) pname src version;
   modules = ./gomod2nix.toml;
   subPackages = ["cmd/tc-redirect-tap"];
   passthru.update = update.gomod2nix {

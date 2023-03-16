@@ -1,10 +1,10 @@
 {
   buildGoApplication,
-  nixpkgs-hardenedlinux-go-sources,
+  nixpkgs-hardenedlinux-sources,
   update,
 }:
 buildGoApplication rec {
-  inherit (nixpkgs-hardenedlinux-go-sources.firecracker-task-driver) pname src version;
+  inherit (nixpkgs-hardenedlinux-sources.firecracker-task-driver) pname src version;
   modules = ./gomod2nix.toml;
   meta = {
     description = "nomad task driver that uses firecracker to start micro-vms";

@@ -1,10 +1,10 @@
 {
   buildGoApplication,
-  nixpkgs-hardenedlinux-go-sources,
+  nixpkgs-hardenedlinux-sources,
   update,
 }:
 buildGoApplication rec {
-  inherit (nixpkgs-hardenedlinux-go-sources.container-structure-test) pname src version;
+  inherit (nixpkgs-hardenedlinux-sources.container-structure-test) pname src version;
   modules = ./gomod2nix.toml;
   subPackages = ["cmd/*"];
   meta = {

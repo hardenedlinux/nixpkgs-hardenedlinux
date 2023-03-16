@@ -34,7 +34,9 @@
   };
 in {
   default = final: prev: {
-    nixpkgs-hardenedlinux-python-sources = prev.callPackage ./packages/_sources/generated.nix {};
+    nixpkgs-hardenedlinux-python-sources = import ./packages/_sources/generated.nix {
+      inherit (prev) fetchgit fetchurl fetchFromGitHub dockerTools;
+    };
 
     python3 =
       prev.python3.override

@@ -39,17 +39,19 @@
     }
     {
       devShells = inputs.std.harvest inputs.self ["automation" "devshells"];
-      overlays = builtins.getAttr "x86_64-linux" (inputs.std.harvest inputs.self [
-        ["python" "overlays"]
-        ["go" "overlays"]
-        ["pkgs" "overlays"]
-      ]);
-      nixosModules = builtins.getAttr "x86_64-linux" (inputs.std.harvest inputs.self [
-        ["pkgs" "nixosModules"]
-      ]);
+      overlays =
+        (inputs.std.harvest inputs.self [
+          ["python" "overlays"]
+          ["pkgs" "overlays"]
+        ])
+        .x86_64-linux;
+      nixosModules =
+        (inputs.std.harvest inputs.self [
+          ["pkgs" "nixosModules"]
+        ])
+        .x86_64-linux;
       packages = inputs.std.harvest inputs.self [
         ["python" "packages"]
-        ["go" "packages"]
         ["pkgs" "packages"]
       ];
     };
