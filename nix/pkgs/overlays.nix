@@ -30,7 +30,7 @@
     go-nfsd = prev.callPackage ./packages/go-nfsd {};
     tc-redirect-tap = prev.callPackage ./packages/tc-redirect-tap {};
     zed = prev.callPackage ./packages/zed {};
-    update = prev.callPackage ./packages/update {};
+    update-scripts = prev.callPackage ./packages/update-scripts {};
     container-structure-test = prev.callPackage ./packages/container-structure-test {};
     nvdtools = prev.callPackage ./packages/nvdtools {};
     zitadel-bin = prev.callPackage ./packages/zitadel/bin.nix {};

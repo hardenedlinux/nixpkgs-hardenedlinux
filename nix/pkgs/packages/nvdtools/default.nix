@@ -2,7 +2,7 @@
   stdenv,
   buildGoApplication,
   nixpkgs-hardenedlinux-sources,
-  update,
+  update-scripts,
 }:
 buildGoApplication rec {
   inherit (nixpkgs-hardenedlinux-sources.nvdtools) pname version src;
@@ -10,7 +10,7 @@ buildGoApplication rec {
 
   subPackages = ["cmd/*"];
 
-  passthru.update = update.gomod2nix {
+  passthru.update = update-scripts.gomod2nix {
     inherit src;
     path = builtins.baseNameOf ./.;
   };

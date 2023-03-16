@@ -1,7 +1,7 @@
 {
   buildGoApplication,
   nixpkgs-hardenedlinux-sources,
-  update,
+  update-scripts,
 }:
 buildGoApplication rec {
   inherit (nixpkgs-hardenedlinux-sources.container-structure-test) pname src version;
@@ -11,7 +11,7 @@ buildGoApplication rec {
     description = "validate the structure of your container images";
     homepage = "https://github.com/GoogleContainerTools/container-structure-test";
   };
-  passthru.update = update.gomod2nix {
+  passthru.update = update-scripts.gomod2nix {
     inherit src;
     path = builtins.baseNameOf ./.;
   };

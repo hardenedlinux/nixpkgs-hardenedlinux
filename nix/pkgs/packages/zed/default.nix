@@ -2,7 +2,7 @@
   buildGoApplication,
   nixpkgs-hardenedlinux-sources,
   go_1_19,
-  update,
+  update-scripts,
 }:
 buildGoApplication rec {
   inherit (nixpkgs-hardenedlinux-sources.zed) pname src version;
@@ -17,7 +17,7 @@ buildGoApplication rec {
     homepage = "https://github.com/brimdata/zed";
   };
 
-  passthru.update = update.gomod2nix {
+  passthru.update = update-scripts.gomod2nix {
     inherit src;
     path = builtins.baseNameOf ./.;
   };

@@ -1,7 +1,7 @@
 {
   buildGoApplication,
   nixpkgs-hardenedlinux-sources,
-  update,
+  update-scripts,
 }:
 buildGoApplication rec {
   inherit (nixpkgs-hardenedlinux-sources.firecracker-task-driver) pname src version;
@@ -10,7 +10,7 @@ buildGoApplication rec {
     description = "nomad task driver that uses firecracker to start micro-vms";
     homepage = "https://github.com/cneira/firecracker-task-driver";
   };
-  passthru.update = update.gomod2nix {
+  passthru.update = update-scripts.gomod2nix {
     inherit src;
     path = builtins.baseNameOf ./.;
   };
