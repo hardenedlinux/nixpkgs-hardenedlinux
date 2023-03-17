@@ -24,7 +24,7 @@
     sslproxy = prev.callPackage ./packages/SSLproxy {};
     koodo-reader-appimage = prev.callPackage ./packages/koodo-reader/appimage.nix {};
     koodo-reader = prev.callPackage ./packages/koodo-reader {};
-    chatgpt-web = prev.callPackage ./packages/chatgpt-web {};
+    go-chatgpt-web = prev.callPackage ./packages/go-chatgpt-web {};
     openproject = prev.callPackage ./packages/openproject {};
 
     go-nfsd = prev.callPackage ./packages/go-nfsd {};
@@ -34,7 +34,7 @@
     container-structure-test = prev.callPackage ./packages/container-structure-test {};
     nvdtools = prev.callPackage ./packages/nvdtools {};
     zitadel-bin = prev.callPackage ./packages/zitadel/bin.nix {};
-    go-chatgpt-web = prev.callPackage ./packages/chatgpt-web {};
+    vue-chatgpt-web = prev.callPackage ./packages/vue-chatgpt-web {};
   };
   tests = final: prev: {
     osquery-vm-tests = prev.callPackage ./nixosModules/osquery/nixos-test.nix {
