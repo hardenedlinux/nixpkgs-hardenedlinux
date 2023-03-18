@@ -3,15 +3,15 @@
 {
   broker = {
     pname = "broker";
-    version = "78498fefb7142b47c3a59ec75ca66e73186bbbee";
+    version = "02d1d6a63fda41bde9ad9275f07ccec72459298e";
     src = fetchFromGitHub ({
       owner = "zeek";
       repo = "broker";
-      rev = "78498fefb7142b47c3a59ec75ca66e73186bbbee";
+      rev = "02d1d6a63fda41bde9ad9275f07ccec72459298e";
       fetchSubmodules = true;
-      sha256 = "sha256-WKNJF5zTgzQFm74hMtcXaY6GdpeUitguxQrmO+xq8H0=";
+      sha256 = "sha256-lXbn5Rha/jIgEGvRT3bNNyR2uhaM/t3UsbHO75LL6pY=";
     });
-    date = "2023-03-12";
+    date = "2023-03-17";
   };
   caretaker = {
     pname = "caretaker";
@@ -26,25 +26,25 @@
   };
   chatgpt-web = {
     pname = "chatgpt-web";
-    version = "95ce0268135f3622ca3eed46a7a0e11a90843a5f";
+    version = "d422a805f609f20a5b5a350b28d25c62bdb35a4c";
     src = fetchFromGitHub ({
       owner = "Chanzhaoyu";
       repo = "chatgpt-web";
-      rev = "95ce0268135f3622ca3eed46a7a0e11a90843a5f";
+      rev = "d422a805f609f20a5b5a350b28d25c62bdb35a4c";
       fetchSubmodules = false;
-      sha256 = "sha256-ZL8F1H3+M3sckJ0UPz1XERmyP82hT4VpMDzimFMdgDE=";
+      sha256 = "sha256-ybG0vGMgL5mEdclocps86ro5gmGC3OdGt+s9iHv9phI=";
     });
     date = "2023-03-17";
   };
   gptcommit = {
     pname = "gptcommit";
-    version = "v0.3.1";
+    version = "v0.3.2";
     src = fetchFromGitHub ({
       owner = "zurawiki";
       repo = "gptcommit";
-      rev = "v0.3.1";
+      rev = "v0.3.2";
       fetchSubmodules = false;
-      sha256 = "sha256-n5/qaq3KA5LGds8FvRcTD13tyRx5yNPnMd6iNXYdNYQ=";
+      sha256 = "sha256-c2mm17uHfvsY5H0qbtEcDPb289RgCnnQdaYgFrRhx/Y=";
     });
   };
   koodo-reader = {
@@ -77,13 +77,13 @@
   };
   openproject = {
     pname = "openproject";
-    version = "d779679e79b34e8e99e19ff331bd7d1253bf5984";
+    version = "f94d06290590a456a7299da159ad903ad251d001";
     src = fetchFromGitHub ({
       owner = "opf";
       repo = "openproject";
-      rev = "d779679e79b34e8e99e19ff331bd7d1253bf5984";
+      rev = "f94d06290590a456a7299da159ad903ad251d001";
       fetchSubmodules = false;
-      sha256 = "sha256-JLzoQV8gSsKeXY6xJcvUZJ8crs3fjRg1cfoQ78lmcxU=";
+      sha256 = "sha256-GHRM22UVHGno7VwsfO6WZs+BB2M/VO5hCyxTf70eIcs=";
     });
     date = "2023-03-17";
   };
