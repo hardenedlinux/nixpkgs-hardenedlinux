@@ -1,7 +1,7 @@
 {
     "broker": {
         "cargoLocks": null,
-        "date": "2023-03-17",
+        "date": "2023-03-19",
         "extract": null,
         "name": "broker",
         "passthru": null,
@@ -13,11 +13,11 @@
             "name": null,
             "owner": "zeek",
             "repo": "broker",
-            "rev": "02d1d6a63fda41bde9ad9275f07ccec72459298e",
-            "sha256": "sha256-lXbn5Rha/jIgEGvRT3bNNyR2uhaM/t3UsbHO75LL6pY=",
+            "rev": "05c2185fd39b00a5f1a27ef7a2b08d89e4ccb825",
+            "sha256": "sha256-uC8BX/jj+llJF+7mjcaWQ8wzVjHHAXi6xN5DRGtT+5Y=",
             "type": "github"
         },
-        "version": "02d1d6a63fda41bde9ad9275f07ccec72459298e"
+        "version": "05c2185fd39b00a5f1a27ef7a2b08d89e4ccb825"
     },
     "caretaker": {
         "cargoLocks": null,
@@ -41,7 +41,7 @@
     },
     "chatgpt-web": {
         "cargoLocks": null,
-        "date": "2023-03-17",
+        "date": "2023-03-22",
         "extract": null,
         "name": "chatgpt-web",
         "passthru": null,
@@ -53,11 +53,11 @@
             "name": null,
             "owner": "Chanzhaoyu",
             "repo": "chatgpt-web",
-            "rev": "d422a805f609f20a5b5a350b28d25c62bdb35a4c",
-            "sha256": "sha256-ybG0vGMgL5mEdclocps86ro5gmGC3OdGt+s9iHv9phI=",
+            "rev": "5fee11323b82e1b68a9a35c5fab9e42a2e0dce24",
+            "sha256": "sha256-SgdjWKiZxodXgAL3JVgN9odVB7cxJF5X/YN95IE/WcQ=",
             "type": "github"
         },
-        "version": "d422a805f609f20a5b5a350b28d25c62bdb35a4c"
+        "version": "5fee11323b82e1b68a9a35c5fab9e42a2e0dce24"
     },
     "gptcommit": {
         "cargoLocks": null,
@@ -73,15 +73,15 @@
             "name": null,
             "owner": "zurawiki",
             "repo": "gptcommit",
-            "rev": "v0.3.2",
-            "sha256": "sha256-c2mm17uHfvsY5H0qbtEcDPb289RgCnnQdaYgFrRhx/Y=",
+            "rev": "v0.4.1",
+            "sha256": "sha256-spkyFWll/CRfsIhrZ58KK77peiB9w2hAdTuIdrewJlg=",
             "type": "github"
         },
-        "version": "v0.3.2"
+        "version": "v0.4.1"
     },
     "koodo-reader": {
         "cargoLocks": null,
-        "date": "2023-02-19",
+        "date": "2023-03-19",
         "extract": null,
         "name": "koodo-reader",
         "passthru": null,
@@ -93,26 +93,11 @@
             "name": null,
             "owner": "troyeguo",
             "repo": "koodo-reader",
-            "rev": "8e8d0693659fe0c62c13865054250aeca429f83c",
-            "sha256": "sha256-ZM+ALDJ6jG9JRUyo+C3W9AAfv41y6+QhKVN6lmwE9uM=",
+            "rev": "ccb8da34811584406050fcb0e03a045b04ae8262",
+            "sha256": "sha256-rUEXzrN9NA2abvyWBef3Z/dHLV7W3QJwHCq0sKefgxU=",
             "type": "github"
         },
-        "version": "8e8d0693659fe0c62c13865054250aeca429f83c"
-    },
-    "koodo-reader-appimage": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "koodo-reader-appimage",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-mP+uYcaUfa9nFnDa/GQtiO5bqVAa1cuMKajmDGglBY0=",
-            "type": "url",
-            "url": "https://github.com/troyeguo/koodo-reader/releases/download/v1.5.2/Koodo-Reader-1.5.2.AppImage"
-        },
-        "version": "1.5.2"
+        "version": "ccb8da34811584406050fcb0e03a045b04ae8262"
     },
     "nix-unstable-installer": {
         "cargoLocks": null,
@@ -123,15 +108,15 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-nRg4nDp0Z+2Q6OPDGQIs4EBd6GoXCM2SPuFngr0yzMM=",
+            "sha256": "sha256-QYmmNGU212thO1yEqeGBvScE5FMYGEMB0ARYAaMLDB4=",
             "type": "url",
-            "url": "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.15.0pre20230310_208c855/install"
+            "url": "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.15.0pre20230315_eb56cb7/install"
         },
-        "version": "nix-2.15.0pre20230310_208c855"
+        "version": "nix-2.15.0pre20230315_eb56cb7"
     },
     "openproject": {
         "cargoLocks": null,
-        "date": "2023-03-17",
+        "date": "2023-03-23",
         "extract": null,
         "name": "openproject",
         "passthru": null,
@@ -143,11 +128,11 @@
             "name": null,
             "owner": "opf",
             "repo": "openproject",
-            "rev": "f94d06290590a456a7299da159ad903ad251d001",
-            "sha256": "sha256-GHRM22UVHGno7VwsfO6WZs+BB2M/VO5hCyxTf70eIcs=",
+            "rev": "844465cb6fe7177457ec0c92a35507b5cf16208e",
+            "sha256": "sha256-0aq3ZdQIAMySCIz3KRT3EBjJqePqvzCxlEWppfwbbBU=",
             "type": "github"
         },
-        "version": "f94d06290590a456a7299da159ad903ad251d001"
+        "version": "844465cb6fe7177457ec0c92a35507b5cf16208e"
     },
     "osquery": {
         "cargoLocks": null,
@@ -226,7 +211,7 @@
     },
     "zeek-language-server": {
         "cargoLocks": null,
-        "date": "2023-03-06",
+        "date": "2023-03-19",
         "extract": null,
         "name": "zeek-language-server",
         "passthru": null,
@@ -238,11 +223,11 @@
             "name": null,
             "owner": "bbannier",
             "repo": "zeek-language-server",
-            "rev": "e78a3334579f54ca3e1ea86ddead323db24ad11c",
-            "sha256": "sha256-yPVXPPvU322bPHKriTYKiJyeyUpoH0hnqU4cUEmvBkA=",
+            "rev": "5a6b30b1669c7ee99aea96a88bde6f3f4f2f35db",
+            "sha256": "sha256-nUEWIa85lPJgEE906+57WQoCDiN9rtnl1WKSRRYq2+c=",
             "type": "github"
         },
-        "version": "e78a3334579f54ca3e1ea86ddead323db24ad11c"
+        "version": "5a6b30b1669c7ee99aea96a88bde6f3f4f2f35db"
     },
     "zui": {
         "cargoLocks": null,

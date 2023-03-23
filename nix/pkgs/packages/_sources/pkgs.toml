@@ -22,10 +22,10 @@ src.github = "brimdata/zui"
 fetch.url = "https://github.com/brimdata/zui/releases/download/v$ver/zui_$ver_amd64.deb"
 src.prefix = "v"
 
-[koodo-reader-appimage]
-src.github = "troyeguo/koodo-reader"
-fetch.url = "https://github.com/troyeguo/koodo-reader/releases/download/v$ver/Koodo-Reader-$ver.AppImage"
-src.prefix = "v"
+# [koodo-reader-appimage]
+# src.github = "troyeguo/koodo-reader"
+# fetch.url = "https://github.com/troyeguo/koodo-reader/releases/download/v$ver/Koodo-Reader-$ver.AppImage"
+# src.prefix = "v"
 
 [koodo-reader]
 src.git = "https://github.com/troyeguo/koodo-reader"
