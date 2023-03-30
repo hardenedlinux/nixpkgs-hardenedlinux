@@ -99,21 +99,6 @@
         },
         "version": "ccb8da34811584406050fcb0e03a045b04ae8262"
     },
-    "koodo-reader-appimage": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "koodo-reader-appimage",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-KA1AmwwD6CiO1P+T9vcFmbJSIEy7qL3wVD0Be/mqDNM=",
-            "type": "url",
-            "url": "https://github.com/troyeguo/koodo-reader/releases/download/v1.5.3/Koodo-Reader-1.5.3-arm64.AppImage"
-        },
-        "version": "1.5.3"
-    },
     "nix-unstable-installer": {
         "cargoLocks": null,
         "date": null,

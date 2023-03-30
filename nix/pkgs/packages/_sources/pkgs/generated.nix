@@ -59,14 +59,6 @@
     });
     date = "2023-03-19";
   };
-  koodo-reader-appimage = {
-    pname = "koodo-reader-appimage";
-    version = "1.5.3";
-    src = fetchurl {
-      url = "https://github.com/troyeguo/koodo-reader/releases/download/v1.5.3/Koodo-Reader-1.5.3-arm64.AppImage";
-      sha256 = "sha256-KA1AmwwD6CiO1P+T9vcFmbJSIEy7qL3wVD0Be/mqDNM=";
-    };
-  };
   nix-unstable-installer = {
     pname = "nix-unstable-installer";
     version = "nix-2.15.0pre20230323_fbc296e";
