@@ -22,7 +22,7 @@
     watchexec-simple = prev.callPackage ./packages/watchexec-simple {};
     zeek-language-server = prev.callPackage ./packages/zeek-language-server {};
     sslproxy = prev.callPackage ./packages/SSLproxy {};
-    koodo-reader-appimage = prev.callPackage ./packages/koodo-reader/appimage.nix {};
+    # koodo-reader-appimage = prev.callPackage ./packages/koodo-reader/appimage.nix {};
     koodo-reader = prev.callPackage ./packages/koodo-reader {};
     go-chatgpt-web = prev.callPackage ./packages/go-chatgpt-web {};
     openproject = prev.callPackage ./packages/openproject {};

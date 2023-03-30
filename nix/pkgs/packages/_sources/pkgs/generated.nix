@@ -3,15 +3,15 @@
 {
   broker = {
     pname = "broker";
-    version = "05c2185fd39b00a5f1a27ef7a2b08d89e4ccb825";
+    version = "d3cb8e3376aff9135ec2cd785abe1a0866c216f9";
     src = fetchFromGitHub ({
       owner = "zeek";
       repo = "broker";
-      rev = "05c2185fd39b00a5f1a27ef7a2b08d89e4ccb825";
+      rev = "d3cb8e3376aff9135ec2cd785abe1a0866c216f9";
       fetchSubmodules = true;
-      sha256 = "sha256-uC8BX/jj+llJF+7mjcaWQ8wzVjHHAXi6xN5DRGtT+5Y=";
+      sha256 = "sha256-svkvX1dyLJXSNYptQHRyfZQByEbPUIR8Axu70cpbrC4=";
     });
-    date = "2023-03-19";
+    date = "2023-03-30";
   };
   caretaker = {
     pname = "caretaker";
@@ -26,25 +26,25 @@
   };
   chatgpt-web = {
     pname = "chatgpt-web";
-    version = "5fee11323b82e1b68a9a35c5fab9e42a2e0dce24";
+    version = "aa0487edc40b61ab0c3088506facfd76f4abb1d3";
     src = fetchFromGitHub ({
       owner = "Chanzhaoyu";
       repo = "chatgpt-web";
-      rev = "5fee11323b82e1b68a9a35c5fab9e42a2e0dce24";
+      rev = "aa0487edc40b61ab0c3088506facfd76f4abb1d3";
       fetchSubmodules = false;
-      sha256 = "sha256-SgdjWKiZxodXgAL3JVgN9odVB7cxJF5X/YN95IE/WcQ=";
+      sha256 = "sha256-3AQPS1FD0Es8Q82pZZe9NLWTMTwz62nH4gS/9i17yYw=";
     });
-    date = "2023-03-22";
+    date = "2023-03-29";
   };
   gptcommit = {
     pname = "gptcommit";
-    version = "v0.4.1";
+    version = "v0.5.4";
     src = fetchFromGitHub ({
       owner = "zurawiki";
       repo = "gptcommit";
-      rev = "v0.4.1";
+      rev = "v0.5.4";
       fetchSubmodules = false;
-      sha256 = "sha256-spkyFWll/CRfsIhrZ58KK77peiB9w2hAdTuIdrewJlg=";
+      sha256 = "sha256-ejnXavqnX1GSSqXZHvbmngCCkZXYX3R/69HUCX/GJik=";
     });
   };
   koodo-reader = {
@@ -59,25 +59,33 @@
     });
     date = "2023-03-19";
   };
+  koodo-reader-appimage = {
+    pname = "koodo-reader-appimage";
+    version = "1.5.3";
+    src = fetchurl {
+      url = "https://github.com/troyeguo/koodo-reader/releases/download/v1.5.3/Koodo-Reader-1.5.3-arm64.AppImage";
+      sha256 = "sha256-KA1AmwwD6CiO1P+T9vcFmbJSIEy7qL3wVD0Be/mqDNM=";
+    };
+  };
   nix-unstable-installer = {
     pname = "nix-unstable-installer";
-    version = "nix-2.15.0pre20230315_eb56cb7";
+    version = "nix-2.15.0pre20230323_fbc296e";
     src = fetchurl {
-      url = "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.15.0pre20230315_eb56cb7/install";
-      sha256 = "sha256-QYmmNGU212thO1yEqeGBvScE5FMYGEMB0ARYAaMLDB4=";
+      url = "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.15.0pre20230323_fbc296e/install";
+      sha256 = "sha256-qKXxpMPxQc/YGJscuCprxWYXjZYYaA8weoczVoXXEnU=";
     };
   };
   openproject = {
     pname = "openproject";
-    version = "844465cb6fe7177457ec0c92a35507b5cf16208e";
+    version = "839f3151b637e83bbdbc422df3f8465f2a81617c";
     src = fetchFromGitHub ({
       owner = "opf";
       repo = "openproject";
-      rev = "844465cb6fe7177457ec0c92a35507b5cf16208e";
+      rev = "839f3151b637e83bbdbc422df3f8465f2a81617c";
       fetchSubmodules = false;
-      sha256 = "sha256-0aq3ZdQIAMySCIz3KRT3EBjJqePqvzCxlEWppfwbbBU=";
+      sha256 = "sha256-6XenM8JRO64TV8cp8KhhRbuD2lqofyd/M0ub1DpwtdQ=";
     });
-    date = "2023-03-23";
+    date = "2023-03-30";
   };
   osquery = {
     pname = "osquery";
@@ -125,22 +133,22 @@
   };
   zeek-language-server = {
     pname = "zeek-language-server";
-    version = "5a6b30b1669c7ee99aea96a88bde6f3f4f2f35db";
+    version = "6bb43669f0f789539d9aa297661300c4075434eb";
     src = fetchFromGitHub ({
       owner = "bbannier";
       repo = "zeek-language-server";
-      rev = "5a6b30b1669c7ee99aea96a88bde6f3f4f2f35db";
+      rev = "6bb43669f0f789539d9aa297661300c4075434eb";
       fetchSubmodules = true;
-      sha256 = "sha256-nUEWIa85lPJgEE906+57WQoCDiN9rtnl1WKSRRYq2+c=";
+      sha256 = "sha256-L/THcvH2+IJ7utvdOh+Zk+LN4+gui23v6ACPe1pT7wU=";
     });
-    date = "2023-03-19";
+    date = "2023-03-30";
   };
   zui = {
     pname = "zui";
-    version = "1.0.0";
+    version = "1.0.1";
     src = fetchurl {
-      url = "https://github.com/brimdata/zui/releases/download/v1.0.0/zui_1.0.0_amd64.deb";
-      sha256 = "sha256-QIjpf3CDUcLS2RUL0veqTxoBzipqQH6MHKDbFa9eEFY=";
+      url = "https://github.com/brimdata/zui/releases/download/v1.0.1/zui_1.0.1_amd64.deb";
+      sha256 = "sha256-gdCqZqsagBOYSYsOFsxF44G+0IBaQyX/gDimddOhnlM=";
     };
   };
 }
