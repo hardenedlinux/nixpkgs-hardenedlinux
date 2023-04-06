@@ -26,25 +26,25 @@
   };
   chatgpt-web = {
     pname = "chatgpt-web";
-    version = "aa0487edc40b61ab0c3088506facfd76f4abb1d3";
+    version = "1187d88593c75a15147306124a3dc023063d64a3";
     src = fetchFromGitHub ({
       owner = "Chanzhaoyu";
       repo = "chatgpt-web";
-      rev = "aa0487edc40b61ab0c3088506facfd76f4abb1d3";
+      rev = "1187d88593c75a15147306124a3dc023063d64a3";
       fetchSubmodules = false;
-      sha256 = "sha256-3AQPS1FD0Es8Q82pZZe9NLWTMTwz62nH4gS/9i17yYw=";
+      sha256 = "sha256-tLYdbzcEOp16MDIUYKUldOuCPAYnntMFJZ+v98E52XI=";
     });
-    date = "2023-03-29";
+    date = "2023-04-04";
   };
   gptcommit = {
     pname = "gptcommit";
-    version = "v0.5.4";
+    version = "v0.5.6";
     src = fetchFromGitHub ({
       owner = "zurawiki";
       repo = "gptcommit";
-      rev = "v0.5.4";
+      rev = "v0.5.6";
       fetchSubmodules = false;
-      sha256 = "sha256-ejnXavqnX1GSSqXZHvbmngCCkZXYX3R/69HUCX/GJik=";
+      sha256 = "sha256-ZrJRXmtwHLUqaYhoAD9lo9k9t06TMGMLf33kgvbC0m8=";
     });
   };
   koodo-reader = {
@@ -61,23 +61,23 @@
   };
   nix-unstable-installer = {
     pname = "nix-unstable-installer";
-    version = "nix-2.15.0pre20230323_fbc296e";
+    version = "nix-2.15.0pre20230331_cf76b38";
     src = fetchurl {
-      url = "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.15.0pre20230323_fbc296e/install";
-      sha256 = "sha256-qKXxpMPxQc/YGJscuCprxWYXjZYYaA8weoczVoXXEnU=";
+      url = "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.15.0pre20230331_cf76b38/install";
+      sha256 = "sha256-sDrOTqjylj8wtVcF60b9tQYmu/cdJhd3kHXlsFQ65YQ=";
     };
   };
   openproject = {
     pname = "openproject";
-    version = "839f3151b637e83bbdbc422df3f8465f2a81617c";
+    version = "ce658701101225f0449f97a8e994c409d6530ac8";
     src = fetchFromGitHub ({
       owner = "opf";
       repo = "openproject";
-      rev = "839f3151b637e83bbdbc422df3f8465f2a81617c";
+      rev = "ce658701101225f0449f97a8e994c409d6530ac8";
       fetchSubmodules = false;
-      sha256 = "sha256-6XenM8JRO64TV8cp8KhhRbuD2lqofyd/M0ub1DpwtdQ=";
+      sha256 = "sha256-wlFu9QOQRIw86NbSedXtihAslviLbhGHlLoTnJGEbI4=";
     });
-    date = "2023-03-30";
+    date = "2023-04-05";
   };
   osquery = {
     pname = "osquery";
@@ -101,15 +101,15 @@
   };
   tuc = {
     pname = "tuc";
-    version = "6dc3db10b8139d3197f864390056db677694558a";
+    version = "6c1418b02bc1fcbe2104c06365333261327b7bc4";
     src = fetchFromGitHub ({
       owner = "riquito";
       repo = "tuc";
-      rev = "6dc3db10b8139d3197f864390056db677694558a";
+      rev = "6c1418b02bc1fcbe2104c06365333261327b7bc4";
       fetchSubmodules = false;
-      sha256 = "sha256-cjL9Mn8hrIQbHqt5M/DZ3oJQVVZTicrq5U4sRkWjyG8=";
+      sha256 = "sha256-CUHgDD7ltvbD7hOCeeSfQfiF0T+QzYTvWvZ9w1N7oKA=";
     });
-    date = "2023-03-01";
+    date = "2023-04-01";
   };
   watchexec-simple = {
     pname = "watchexec-simple";
