@@ -10,7 +10,7 @@ buildYarnPackage {
   installPhase = ''
     cp -r $src $out
     chmod -R u+w $out
-    cp -r {node_modules,next-env.d.ts} $out
+    cp -r {node_modules,next-env.d.ts,.next} $out
   '';
   # NODE_OPTIONS = "--openssl-legacy-provider";
   yarnBuild = ''
