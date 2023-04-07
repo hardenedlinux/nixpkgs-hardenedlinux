@@ -6,7 +6,7 @@
   pkg-config,
   openssl,
   rust-bin,
-  python3
+  python3,
 }: let
   craneLib = crane.overrideScope' (final: prev: let
     rust = rust-bin.nightly.latest.default;

@@ -3,15 +3,15 @@
 {
   broker = {
     pname = "broker";
-    version = "d3cb8e3376aff9135ec2cd785abe1a0866c216f9";
+    version = "5fb9e1ebc54d7a36fee77ef67f9cab8d84cb4654";
     src = fetchFromGitHub ({
       owner = "zeek";
       repo = "broker";
-      rev = "d3cb8e3376aff9135ec2cd785abe1a0866c216f9";
+      rev = "5fb9e1ebc54d7a36fee77ef67f9cab8d84cb4654";
       fetchSubmodules = true;
-      sha256 = "sha256-svkvX1dyLJXSNYptQHRyfZQByEbPUIR8Axu70cpbrC4=";
+      sha256 = "sha256-OsHLkxmPEXSodlMY1jRy8MHzfjUMkvewAmzGGg7eB7I=";
     });
-    date = "2023-03-30";
+    date = "2023-04-06";
   };
   caretaker = {
     pname = "caretaker";
@@ -38,13 +38,13 @@
   };
   gptcommit = {
     pname = "gptcommit";
-    version = "v0.5.6";
+    version = "v0.5.7";
     src = fetchFromGitHub ({
       owner = "zurawiki";
       repo = "gptcommit";
-      rev = "v0.5.6";
+      rev = "v0.5.7";
       fetchSubmodules = false;
-      sha256 = "sha256-ZrJRXmtwHLUqaYhoAD9lo9k9t06TMGMLf33kgvbC0m8=";
+      sha256 = "sha256-ymG0D/geYH0o4fBzggeJH41fwZnO3THUV8ipk5GfwQc=";
     });
   };
   koodo-reader = {
@@ -69,15 +69,15 @@
   };
   openproject = {
     pname = "openproject";
-    version = "ce658701101225f0449f97a8e994c409d6530ac8";
+    version = "bb214033a99ac6120886ee622818ef5c731514bd";
     src = fetchFromGitHub ({
       owner = "opf";
       repo = "openproject";
-      rev = "ce658701101225f0449f97a8e994c409d6530ac8";
+      rev = "bb214033a99ac6120886ee622818ef5c731514bd";
       fetchSubmodules = false;
-      sha256 = "sha256-wlFu9QOQRIw86NbSedXtihAslviLbhGHlLoTnJGEbI4=";
+      sha256 = "sha256-+3Gof3+knG9RLr1m4w5h3shew9OepygNFaZ3d/L9+bA=";
     });
-    date = "2023-04-05";
+    date = "2023-04-06";
   };
   osquery = {
     pname = "osquery";
@@ -122,6 +122,18 @@
       sha256 = "sha256-AOweMMWuJx9mtSss5Iett0fTVBoZrjCaDGnzOO8RrMw=";
     });
     date = "2022-11-24";
+  };
+  yakgpt = {
+    pname = "yakgpt";
+    version = "c43363d45cdad1d4e16892788f68a26923d95882";
+    src = fetchFromGitHub ({
+      owner = "yakGPT";
+      repo = "yakGPT";
+      rev = "c43363d45cdad1d4e16892788f68a26923d95882";
+      fetchSubmodules = false;
+      sha256 = "sha256-OWFYUm3oqFRhuG5WM1ckQt5jWwVB2Tv/PXPu0iGhWTQ=";
+    });
+    date = "2023-04-05";
   };
   zeek-language-server = {
     pname = "zeek-language-server";

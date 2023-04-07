@@ -26,7 +26,6 @@ src.prefix = "v"
 # src.github = "troyeguo/koodo-reader"
 # fetch.url = "https://github.com/troyeguo/koodo-reader/releases/download/v$ver/Koodo-Reader-$ver.AppImage"
 # src.prefix = "v"
-
 [koodo-reader]
 src.git = "https://github.com/troyeguo/koodo-reader"
 fetch.github = "troyeguo/koodo-reader"
@@ -62,3 +61,7 @@ git.fetchSubmodules = true
 [sslproxy]
 src.git = "https://github.com/sonertari/SSLproxy"
 fetch.github = "sonertari/SSLproxy"
+
+[yakgpt]
+src.git = "https://github.com/yakGPT/yakGPT"
+fetch.github = "yakGPT/yakGPT"

@@ -25,6 +25,7 @@
     # koodo-reader-appimage = prev.callPackage ./packages/koodo-reader/appimage.nix {};
     koodo-reader = prev.callPackage ./packages/koodo-reader {};
     go-chatgpt-web = prev.callPackage ./packages/go-chatgpt-web {};
+    yakgpt = prev.callPackage ./packages/yakGPT {};
     openproject = prev.callPackage ./packages/openproject {};
 
     go-nfsd = prev.callPackage ./packages/go-nfsd {};
