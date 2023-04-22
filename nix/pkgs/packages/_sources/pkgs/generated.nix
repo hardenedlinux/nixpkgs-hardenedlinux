@@ -26,15 +26,15 @@
   };
   chatgpt-web = {
     pname = "chatgpt-web";
-    version = "eed33fbb0e38f7d1555d20f4f12ea384d471162b";
+    version = "226ce2bdedaca0abca5eb8014044a375932c3710";
     src = fetchFromGitHub ({
       owner = "Chanzhaoyu";
       repo = "chatgpt-web";
-      rev = "eed33fbb0e38f7d1555d20f4f12ea384d471162b";
+      rev = "226ce2bdedaca0abca5eb8014044a375932c3710";
       fetchSubmodules = false;
-      sha256 = "sha256-0o0yPr1b4DVkOHShPCzV2q9EJHjDqEU90IUYiLeyQms=";
+      sha256 = "sha256-OBZqwpc1YYn9KymYjJbuhgFz8QUQIbyPPiOMn+T4fls=";
     });
-    date = "2023-04-12";
+    date = "2023-04-17";
   };
   gptcommit = {
     pname = "gptcommit";
@@ -49,35 +49,35 @@
   };
   koodo-reader = {
     pname = "koodo-reader";
-    version = "ccb8da34811584406050fcb0e03a045b04ae8262";
+    version = "fb78037ca50a5969e2ed4cc5499ba5bfa4f3ab6a";
     src = fetchFromGitHub ({
       owner = "troyeguo";
       repo = "koodo-reader";
-      rev = "ccb8da34811584406050fcb0e03a045b04ae8262";
+      rev = "fb78037ca50a5969e2ed4cc5499ba5bfa4f3ab6a";
       fetchSubmodules = false;
-      sha256 = "sha256-rUEXzrN9NA2abvyWBef3Z/dHLV7W3QJwHCq0sKefgxU=";
+      sha256 = "sha256-pV5DG533tlL/GWS3y+0ehuaZCEF5Q80qHpwLhhPy2bs=";
     });
-    date = "2023-03-19";
+    date = "2023-04-16";
   };
   nix-unstable-installer = {
     pname = "nix-unstable-installer";
-    version = "nix-2.15.0pre20230403_acc3314";
+    version = "nix-2.16.0pre20230414_92346d1";
     src = fetchurl {
-      url = "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.15.0pre20230403_acc3314/install";
-      sha256 = "sha256-5dXcsTjs7pMuWQQLLPS1WTRVwL5Xbh3j//e6GqVelso=";
+      url = "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.16.0pre20230414_92346d1/install";
+      sha256 = "sha256-WofjlJZeioULBdP2aiPMgN0DNnW0mvFlqs5QYkH9+yc=";
     };
   };
   openproject = {
     pname = "openproject";
-    version = "237acb23e81a5d7919dfca3fc36c8562a30b8323";
+    version = "f3782f5071ae25aeea15a0c3647701817645af09";
     src = fetchFromGitHub ({
       owner = "opf";
       repo = "openproject";
-      rev = "237acb23e81a5d7919dfca3fc36c8562a30b8323";
+      rev = "f3782f5071ae25aeea15a0c3647701817645af09";
       fetchSubmodules = false;
-      sha256 = "sha256-XNBNs7VttfYpAHSr6+TNCY7Zj+Z7z/g9KBC/t2lNQQc=";
+      sha256 = "sha256-uWzxy1ndXdq0lRIi7kEU63uh2UxSqozk+iHmss4TtGc=";
     });
-    date = "2023-04-13";
+    date = "2023-04-21";
   };
   osquery = {
     pname = "osquery";
@@ -125,15 +125,15 @@
   };
   yakgpt = {
     pname = "yakgpt";
-    version = "b98ee49dcdbe79a5f571ebcbcea8fafc5d081c46";
+    version = "ef4ff333affb1173e902cac3930db6592dc698f2";
     src = fetchFromGitHub ({
       owner = "yakGPT";
       repo = "yakGPT";
-      rev = "b98ee49dcdbe79a5f571ebcbcea8fafc5d081c46";
+      rev = "ef4ff333affb1173e902cac3930db6592dc698f2";
       fetchSubmodules = false;
-      sha256 = "sha256-D1wA+isp3dMt883lE39onue4ns+O8Tc2hkQ+aWZPfUc=";
+      sha256 = "sha256-9HM00RCM5awg1QvoUXVwhCMGxZ4gkOJhAoUrEXqpw2M=";
     });
-    date = "2023-04-10";
+    date = "2023-04-16";
   };
   zeek-language-server = {
     pname = "zeek-language-server";
