@@ -1,7 +1,7 @@
 {
     "broker": {
         "cargoLocks": null,
-        "date": "2023-04-14",
+        "date": "2023-05-09",
         "extract": null,
         "name": "broker",
         "passthru": null,
@@ -13,11 +13,11 @@
             "name": null,
             "owner": "zeek",
             "repo": "broker",
-            "rev": "58114204003c32b6bdd2e6c473ba9c8b5c9361b6",
-            "sha256": "sha256-ZeKIeIOJirBj2TqBv9xWkosEj8lt8J0+mj9guYBH078=",
+            "rev": "000834f60ab7540041c431a3657c23c7476e368d",
+            "sha256": "sha256-nrgia7Rc2jYqHBdMEGoReaXjouipjkUML7gAZxQQNQ4=",
             "type": "github"
         },
-        "version": "58114204003c32b6bdd2e6c473ba9c8b5c9361b6"
+        "version": "000834f60ab7540041c431a3657c23c7476e368d"
     },
     "caretaker": {
         "cargoLocks": null,
@@ -41,7 +41,7 @@
     },
     "chatgpt-web": {
         "cargoLocks": null,
-        "date": "2023-05-04",
+        "date": "2023-05-06",
         "extract": null,
         "name": "chatgpt-web",
         "passthru": null,
@@ -53,11 +53,11 @@
             "name": null,
             "owner": "Chanzhaoyu",
             "repo": "chatgpt-web",
-            "rev": "0f51e51827a8ff53f78ad40ddcaa652c2b454b6c",
+            "rev": "1cb5393b91d188d4906dbf9fa72bb1143de75df7",
             "sha256": "sha256-tK1DGJAOBypg9dPnW5AUEcTTpDq7zLZ81o+WP47z9e0=",
             "type": "github"
         },
-        "version": "0f51e51827a8ff53f78ad40ddcaa652c2b454b6c"
+        "version": "1cb5393b91d188d4906dbf9fa72bb1143de75df7"
     },
     "gptcommit": {
         "cargoLocks": null,
@@ -78,6 +78,21 @@
             "type": "github"
         },
         "version": "v0.5.8"
+    },
+    "ilograph-dmg": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "ilograph-dmg",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-xKwDRD9v3WwKDIo5FU1l1RDEhUFS5IKS1hCISn7q/CE=",
+            "type": "url",
+            "url": "https://www.ilograph.com/desktop/release/Ilograph%20Desktop-1.5.3-arm64.dmg"
+        },
+        "version": "1.5.3"
     },
     "koodo-reader": {
         "cargoLocks": null,
@@ -108,31 +123,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-ul8fRiYneh0C3BlHuV9OfCyX+nop6J+3JQx8rydsxqU=",
+            "sha256": "sha256-NEp8dxcgBi9ojk4TRTxagBEqm29cLGUgTvjKtdaIZFg=",
             "type": "url",
-            "url": "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.16.0pre20230428_89d3cc5/install"
+            "url": "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.16.0pre20230503_b17c429/install"
         },
-        "version": "nix-2.16.0pre20230428_89d3cc5"
-    },
-    "openproject": {
-        "cargoLocks": null,
-        "date": "2023-05-05",
-        "extract": null,
-        "name": "openproject",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "opf",
-            "repo": "openproject",
-            "rev": "62c66867bdbdb3c99c09f49057a9b7495bbc825c",
-            "sha256": "sha256-pA6hxw2C3WHuCQ5n8ecKcjJEllgd1wYN7uwoyYxYRX8=",
-            "type": "github"
-        },
-        "version": "62c66867bdbdb3c99c09f49057a9b7495bbc825c"
+        "version": "nix-2.16.0pre20230503_b17c429"
     },
     "osquery": {
         "cargoLocks": null,

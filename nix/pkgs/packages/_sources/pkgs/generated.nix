@@ -3,15 +3,15 @@
 {
   broker = {
     pname = "broker";
-    version = "58114204003c32b6bdd2e6c473ba9c8b5c9361b6";
+    version = "000834f60ab7540041c431a3657c23c7476e368d";
     src = fetchFromGitHub ({
       owner = "zeek";
       repo = "broker";
-      rev = "58114204003c32b6bdd2e6c473ba9c8b5c9361b6";
+      rev = "000834f60ab7540041c431a3657c23c7476e368d";
       fetchSubmodules = true;
-      sha256 = "sha256-ZeKIeIOJirBj2TqBv9xWkosEj8lt8J0+mj9guYBH078=";
+      sha256 = "sha256-nrgia7Rc2jYqHBdMEGoReaXjouipjkUML7gAZxQQNQ4=";
     });
-    date = "2023-04-14";
+    date = "2023-05-09";
   };
   caretaker = {
     pname = "caretaker";
@@ -26,15 +26,15 @@
   };
   chatgpt-web = {
     pname = "chatgpt-web";
-    version = "0f51e51827a8ff53f78ad40ddcaa652c2b454b6c";
+    version = "1cb5393b91d188d4906dbf9fa72bb1143de75df7";
     src = fetchFromGitHub ({
       owner = "Chanzhaoyu";
       repo = "chatgpt-web";
-      rev = "0f51e51827a8ff53f78ad40ddcaa652c2b454b6c";
+      rev = "1cb5393b91d188d4906dbf9fa72bb1143de75df7";
       fetchSubmodules = false;
       sha256 = "sha256-tK1DGJAOBypg9dPnW5AUEcTTpDq7zLZ81o+WP47z9e0=";
     });
-    date = "2023-05-04";
+    date = "2023-05-06";
   };
   gptcommit = {
     pname = "gptcommit";
@@ -46,6 +46,14 @@
       fetchSubmodules = false;
       sha256 = "sha256-K4A0np8+gpFpSU4jBv6PAw4RyUWmIB7dTgWvpy36CYY=";
     });
+  };
+  ilograph-dmg = {
+    pname = "ilograph-dmg";
+    version = "1.5.3";
+    src = fetchurl {
+      url = "https://www.ilograph.com/desktop/release/Ilograph%20Desktop-1.5.3-arm64.dmg";
+      sha256 = "sha256-xKwDRD9v3WwKDIo5FU1l1RDEhUFS5IKS1hCISn7q/CE=";
+    };
   };
   koodo-reader = {
     pname = "koodo-reader";
@@ -61,23 +69,11 @@
   };
   nix-unstable-installer = {
     pname = "nix-unstable-installer";
-    version = "nix-2.16.0pre20230428_89d3cc5";
+    version = "nix-2.16.0pre20230503_b17c429";
     src = fetchurl {
-      url = "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.16.0pre20230428_89d3cc5/install";
-      sha256 = "sha256-ul8fRiYneh0C3BlHuV9OfCyX+nop6J+3JQx8rydsxqU=";
+      url = "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.16.0pre20230503_b17c429/install";
+      sha256 = "sha256-NEp8dxcgBi9ojk4TRTxagBEqm29cLGUgTvjKtdaIZFg=";
     };
-  };
-  openproject = {
-    pname = "openproject";
-    version = "62c66867bdbdb3c99c09f49057a9b7495bbc825c";
-    src = fetchFromGitHub ({
-      owner = "opf";
-      repo = "openproject";
-      rev = "62c66867bdbdb3c99c09f49057a9b7495bbc825c";
-      fetchSubmodules = false;
-      sha256 = "sha256-pA6hxw2C3WHuCQ5n8ecKcjJEllgd1wYN7uwoyYxYRX8=";
-    });
-    date = "2023-05-05";
   };
   osquery = {
     pname = "osquery";

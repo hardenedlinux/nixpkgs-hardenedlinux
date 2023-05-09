@@ -2,15 +2,17 @@
   inputs,
   cell,
 }: let
-  inherit (inputs) std self;
+  inherit (inputs) std-ext;
+  inherit (inputs.std-ext.inputs) flops;
   l = inputs.nixpkgs.lib // builtins;
 
-  __inputs__ = inputs.std-ext.common.lib.callFlake ./lib/lock {
-    nixpkgs.locked = inputs.nixpkgs.sourceInfo;
+  callInputs =
+    (flops.lib.flake.pops.default.setInitInputs ./lib/lock)
+    .setSystem
+    inputs.nixpkgs.system;
 
-    crane.inputs.nixpkgs = "nixpkgs";
-    dream2nix.inputs.nixpkgs = "nixpkgs";
-  };
+  __inputs__ = callInputs.outputsForInputsCompat;
+
   nixpkgs = inputs.nixpkgs.appendOverlays [
     __inputs__.gomod2nix.overlays.default
     __inputs__.rust-overlay.overlays.default
@@ -23,28 +25,8 @@
       crane = __inputs__.crane.mkLib final;
     })
   ];
-in rec {
-  inherit __inputs__ nixpkgs;
+in {
+  inherit __inputs__ nixpkgs callInputs;
 
-  filterDerivations = filterAttrsOnlyRecursive (n: attrs: l.isDerivation attrs || attrs.recurseForDerivations or false);
-
-  filterAttrsOnlyRecursive = pred: set:
-    l.listToAttrs (
-      l.concatMap
-      (
-        name: let
-          v = set.${name};
-        in
-          if pred name v
-          then [
-            (l.nameValuePair name (
-              if builtins.isAttrs v && !l.isDerivation v
-              then filterAttrsOnlyRecursive pred v
-              else v
-            ))
-          ]
-          else []
-      )
-      (builtins.attrNames set)
-    );
+  filterDerivations = std-ext.lib.attrsets.filterDerivations;
 }

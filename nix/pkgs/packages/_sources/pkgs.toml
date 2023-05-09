@@ -1,7 +1,3 @@
-[openproject]
-src.git = "https://github.com/opf/openproject"
-fetch.github = "opf/openproject"
-
 [chatgpt-web]
 src.git = "https://github.com/Chanzhaoyu/chatgpt-web"
 fetch.github = "Chanzhaoyu/chatgpt-web"
@@ -65,3 +61,7 @@ fetch.github = "sonertari/SSLproxy"
 [yakgpt]
 src.git = "https://github.com/yakGPT/yakGPT"
 fetch.github = "yakGPT/yakGPT"
+
+[ilograph-dmg]
+src.manual = "1.5.3"
+fetch.url = "https://www.ilograph.com/desktop/release/Ilograph%20Desktop-$ver-arm64.dmg"

@@ -23,10 +23,11 @@
     zeek-language-server = prev.callPackage ./packages/zeek-language-server {};
     sslproxy = prev.callPackage ./packages/SSLproxy {};
     # koodo-reader-appimage = prev.callPackage ./packages/koodo-reader/appimage.nix {};
+    ilograph-dmg = prev.callPackage ./packages/ilograph/dmg.nix {};
     koodo-reader = prev.callPackage ./packages/koodo-reader {};
     go-chatgpt-web = prev.callPackage ./packages/go-chatgpt-web {};
     yakgpt = prev.callPackage ./packages/yakGPT {};
-    openproject = prev.callPackage ./packages/openproject {};
+    # openproject = prev.callPackage ./packages/openproject {};
 
     go-nfsd = prev.callPackage ./packages/go-nfsd {};
     tc-redirect-tap = prev.callPackage ./packages/tc-redirect-tap {};
@@ -36,6 +37,10 @@
     nvdtools = prev.callPackage ./packages/nvdtools {};
     zitadel-bin = prev.callPackage ./packages/zitadel/bin.nix {};
     vue-chatgpt-web = prev.callPackage ./packages/vue-chatgpt-web {};
+
+    export-ilograph = (prev.callPackage ./packages/ilograph {}).export-ilograph;
+
+    installApp = prev.callPackage ./packages/installApp.nix {};
   };
   tests = final: prev: {
     osquery-vm-tests = prev.callPackage ./nixosModules/osquery/nixos-test.nix {
