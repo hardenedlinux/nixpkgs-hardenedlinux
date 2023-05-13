@@ -3,15 +3,15 @@
 {
   broker = {
     pname = "broker";
-    version = "3dd913bacfc394f8108bf8306be0a60c253a3d13";
+    version = "dc53c000192a40ace58ecd54ae86dedaa7eada30";
     src = fetchFromGitHub ({
       owner = "zeek";
       repo = "broker";
-      rev = "3dd913bacfc394f8108bf8306be0a60c253a3d13";
+      rev = "dc53c000192a40ace58ecd54ae86dedaa7eada30";
       fetchSubmodules = true;
-      sha256 = "sha256-lS2L5CpQZ4E5dDfP2zM9SARS6+6c04Uuruwm46bPcxw=";
+      sha256 = "sha256-B92B+D5SDPrpLrbwe7JvNbeV3wQwRJHCS6dGsaXj7os=";
     });
-    date = "2023-05-11";
+    date = "2023-05-12";
   };
   caretaker = {
     pname = "caretaker";
