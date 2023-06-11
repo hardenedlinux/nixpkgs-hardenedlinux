@@ -1,7 +1,7 @@
 {
     "broker": {
         "cargoLocks": null,
-        "date": "2023-05-12",
+        "date": "2023-05-31",
         "extract": null,
         "name": "broker",
         "passthru": null,
@@ -13,11 +13,11 @@
             "name": null,
             "owner": "zeek",
             "repo": "broker",
-            "rev": "dc53c000192a40ace58ecd54ae86dedaa7eada30",
-            "sha256": "sha256-B92B+D5SDPrpLrbwe7JvNbeV3wQwRJHCS6dGsaXj7os=",
+            "rev": "3df48de38ef75a5d274c2fa59ad3f798a62c6bfc",
+            "sha256": "sha256-C9lnLQqzzeAIcft863AKtQg26dXSKvIw0f64ENaQVHA=",
             "type": "github"
         },
-        "version": "dc53c000192a40ace58ecd54ae86dedaa7eada30"
+        "version": "3df48de38ef75a5d274c2fa59ad3f798a62c6bfc"
     },
     "caretaker": {
         "cargoLocks": null,
@@ -41,7 +41,7 @@
     },
     "chatgpt-web": {
         "cargoLocks": null,
-        "date": "2023-05-06",
+        "date": "2023-05-31",
         "extract": null,
         "name": "chatgpt-web",
         "passthru": null,
@@ -53,11 +53,11 @@
             "name": null,
             "owner": "Chanzhaoyu",
             "repo": "chatgpt-web",
-            "rev": "1cb5393b91d188d4906dbf9fa72bb1143de75df7",
-            "sha256": "sha256-tK1DGJAOBypg9dPnW5AUEcTTpDq7zLZ81o+WP47z9e0=",
+            "rev": "bc390ef09deb391c8d3f5a16aa9c45cc44082818",
+            "sha256": "sha256-1CFWZRS2at6jelTfobQy26Q2uzKrvCT+zMMALEx2JN4=",
             "type": "github"
         },
-        "version": "1cb5393b91d188d4906dbf9fa72bb1143de75df7"
+        "version": "bc390ef09deb391c8d3f5a16aa9c45cc44082818"
     },
     "gptcommit": {
         "cargoLocks": null,
@@ -96,7 +96,7 @@
     },
     "koodo-reader": {
         "cargoLocks": null,
-        "date": "2023-04-16",
+        "date": "2023-06-03",
         "extract": null,
         "name": "koodo-reader",
         "passthru": null,
@@ -108,11 +108,11 @@
             "name": null,
             "owner": "troyeguo",
             "repo": "koodo-reader",
-            "rev": "fb78037ca50a5969e2ed4cc5499ba5bfa4f3ab6a",
-            "sha256": "sha256-pV5DG533tlL/GWS3y+0ehuaZCEF5Q80qHpwLhhPy2bs=",
+            "rev": "c79600315a7e7c107c9ef26be8727c99f64ab4f2",
+            "sha256": "sha256-pfXUMLet34I9SV5WGtefB39lhaA7TP/UiGM7Sl76sQ0=",
             "type": "github"
         },
-        "version": "fb78037ca50a5969e2ed4cc5499ba5bfa4f3ab6a"
+        "version": "c79600315a7e7c107c9ef26be8727c99f64ab4f2"
     },
     "nix-unstable-installer": {
         "cargoLocks": null,
@@ -123,11 +123,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-NEp8dxcgBi9ojk4TRTxagBEqm29cLGUgTvjKtdaIZFg=",
+            "sha256": "sha256-o8W8XJZ8NmN1K8f4VfVvAOtJINAGFDamcrGNj5NK0JY=",
             "type": "url",
-            "url": "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.16.0pre20230503_b17c429/install"
+            "url": "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.17.0pre20230609_03f9ff6/install"
         },
-        "version": "nix-2.16.0pre20230503_b17c429"
+        "version": "nix-2.17.0pre20230609_03f9ff6"
     },
     "osquery": {
         "cargoLocks": null,
@@ -166,7 +166,7 @@
     },
     "tuc": {
         "cargoLocks": null,
-        "date": "2023-05-01",
+        "date": "2023-06-01",
         "extract": null,
         "name": "tuc",
         "passthru": null,
@@ -178,11 +178,11 @@
             "name": null,
             "owner": "riquito",
             "repo": "tuc",
-            "rev": "98fa9d8889f9764b0f0332bda30d84a3b40659ce",
-            "sha256": "sha256-XC8jGgtfDR4SV8yZLiVSHT0nNtIrZnpPbQXl/aCw0Mc=",
+            "rev": "80f46f3124fb1929af262b654f63ca9abdf81130",
+            "sha256": "sha256-p+W0cN4BOEailg9+9hns44GIfG4ddO7JRWX2rPv780s=",
             "type": "github"
         },
-        "version": "98fa9d8889f9764b0f0332bda30d84a3b40659ce"
+        "version": "80f46f3124fb1929af262b654f63ca9abdf81130"
     },
     "watchexec-simple": {
         "cargoLocks": null,
@@ -243,20 +243,5 @@
             "type": "github"
         },
         "version": "29933140f42007d0f93fec77aa63e5288215af83"
-    },
-    "zui": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "zui",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-gdCqZqsagBOYSYsOFsxF44G+0IBaQyX/gDimddOhnlM=",
-            "type": "url",
-            "url": "https://github.com/brimdata/zui/releases/download/v1.0.1/zui_1.0.1_amd64.deb"
-        },
-        "version": "1.0.1"
     }
 }

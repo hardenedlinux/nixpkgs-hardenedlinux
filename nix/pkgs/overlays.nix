@@ -13,7 +13,6 @@
 
     gptcommit = prev.callPackage ./packages/gptcommit {};
     broker = prev.callPackage ./packages/broker {};
-    zui = prev.callPackage ./packages/zui {};
     osquery-bin = prev.callPackage ./packages/osquery-bin {};
     deepsea = prev.callPackage ./packages/deepsea {};
     tuc = prev.callPackage ./packages/tuc {};
