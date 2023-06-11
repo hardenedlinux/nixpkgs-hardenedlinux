@@ -11,7 +11,7 @@
     .setSystem
     inputs.nixpkgs.system;
 
-  __inputs__ = callInputs.outputsForInputsCompat;
+  __inputs__ = callInputs.outputsForInputs;
 
   nixpkgs = inputs.nixpkgs.appendOverlays [
     __inputs__.gomod2nix.overlays.default
