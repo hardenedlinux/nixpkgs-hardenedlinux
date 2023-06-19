@@ -17,10 +17,6 @@
     __inputs__.gomod2nix.overlays.default
     __inputs__.rust-overlay.overlays.default
     (final: prev: {
-      machlib = import __inputs__.mach-nix {
-        pkgs = prev;
-        pypiData = __inputs__.pypi-deps-db;
-      };
       dream2nix = __inputs__.dream2nix.lib;
       crane = __inputs__.crane.mkLib final;
     })

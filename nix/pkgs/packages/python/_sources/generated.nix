@@ -3,258 +3,258 @@
 {
   aim = {
     pname = "aim";
-    version = "v3.16.0";
-    src = fetchFromGitHub ({
+    version = "v3.17.5";
+    src = fetchFromGitHub {
       owner = "aimhubio";
       repo = "aim";
-      rev = "v3.16.0";
+      rev = "v3.17.5";
       fetchSubmodules = false;
-      sha256 = "sha256-gHp508bMZqi5ATnsFkeXq++lLZ8iNYpWbOpGmlxA2kA=";
-    });
+      sha256 = "sha256-IGA2Ol2LkRQvWqjwIv1+ymqDoobQmQjRvnBie41OL+Q=";
+    };
   };
   broker-to-json = {
     pname = "broker-to-json";
     version = "v_02";
-    src = fetchFromGitHub ({
+    src = fetchFromGitHub {
       owner = "grigorescu";
       repo = "broker-to-json";
       rev = "v_02";
       fetchSubmodules = false;
       sha256 = "sha256-SROcIR2P5ixk4yDVwkUJczdbuU4STpmTyLNBCj6dEtg=";
-    });
+    };
   };
   btest = {
     pname = "btest";
-    version = "0.71";
+    version = "1.0";
     src = fetchurl {
-      url = "https://pypi.io/packages/source/b/btest/btest-0.71.tar.gz";
-      sha256 = "sha256-17JpGNgq917qNp1snF2I6teeid9RxCaM6nSYiQh9Ocw=";
+      url = "https://pypi.org/packages/source/b/btest/btest-1.0.tar.gz";
+      sha256 = "sha256-FhZo+ELZpIcxqtB8tK5+r3c89xWykAlH1lygkPiq5aQ=";
     };
   };
   choochoo = {
     pname = "choochoo";
     version = "29750cdb9f87dc7a4b6e423df6e805e14ecae5e1";
-    src = fetchFromGitHub ({
+    src = fetchFromGitHub {
       owner = "andrewcooke";
       repo = "choochoo";
       rev = "29750cdb9f87dc7a4b6e423df6e805e14ecae5e1";
       fetchSubmodules = false;
       sha256 = "sha256-/PjfY1thoILxpu3/PTmFRfzR4eFgraLbTXpVM54GXJk=";
-    });
+    };
     date = "2021-09-12";
   };
   cliche = {
     pname = "cliche";
     version = "80a9ae2e90f4493880b669d5db51f1d4038589df";
-    src = fetchFromGitHub ({
+    src = fetchFromGitHub {
       owner = "kootenpv";
       repo = "cliche";
       rev = "80a9ae2e90f4493880b669d5db51f1d4038589df";
       fetchSubmodules = false;
       sha256 = "sha256-7/icSneLQzwdkRL/mS4RjsgnKa6YIVvGCmdS6pB6r5Y=";
-    });
+    };
     date = "2023-01-23";
   };
   durationpy = {
     pname = "durationpy";
     version = "0.5";
     src = fetchurl {
-      url = "https://pypi.io/packages/source/d/durationpy/durationpy-0.5.tar.gz";
+      url = "https://pypi.org/packages/source/d/durationpy/durationpy-0.5.tar.gz";
       sha256 = "sha256-XvlBa1J7UNci80ZVvs+3Xkkijrgvh7hV7RkRszFLVAg=";
     };
   };
   eZeeKonfigurator = {
     pname = "eZeeKonfigurator";
     version = "d4b0d2382be550e2af46aeaf0ac02aab9b694668";
-    src = fetchFromGitHub ({
+    src = fetchFromGitHub {
       owner = "esnet";
       repo = "eZeeKonfigurator";
       rev = "d4b0d2382be550e2af46aeaf0ac02aab9b694668";
       fetchSubmodules = false;
       sha256 = "sha256-K7PLVVesjv27dhYyRaWItfnsh+p6FTMFOXVE576a01I=";
-    });
+    };
     date = "2022-07-05";
   };
   eZeeKonfigurator_client = {
     pname = "eZeeKonfigurator_client";
     version = "efbe39bb1e40a0332d37c3291ee3c8af1ff7678e";
-    src = fetchFromGitHub ({
+    src = fetchFromGitHub {
       owner = "esnet";
       repo = "eZeeKonfigurator_client";
       rev = "efbe39bb1e40a0332d37c3291ee3c8af1ff7678e";
       fetchSubmodules = false;
       sha256 = "sha256-b2QqmduoyohAIOJnZP/Vnt9FdmoOebDfmaTs5SNVoAg=";
-    });
+    };
     date = "2021-07-01";
   };
   elastalert2 = {
     pname = "elastalert2";
-    version = "48e875a34bc2f964a423d661f2bbb003d219e8dd";
-    src = fetchFromGitHub ({
+    version = "59162fdf8955085437cda9ed978d88e66a206c87";
+    src = fetchFromGitHub {
       owner = "jertel";
       repo = "elastalert2";
-      rev = "48e875a34bc2f964a423d661f2bbb003d219e8dd";
+      rev = "59162fdf8955085437cda9ed978d88e66a206c87";
       fetchSubmodules = false;
-      sha256 = "sha256-2lmvy6sSFd7yc/j0hZnFs7VR+dfVx8qfW8THqsCXBYI=";
-    });
-    date = "2023-02-15";
+      sha256 = "sha256-CUtOnFLMM7saNWCJzmTAm7gCWPQAkFkwuFVCT/uLces=";
+    };
+    date = "2023-06-16";
   };
   fastai = {
     pname = "fastai";
-    version = "5ca290c18546dff06f125a0cea69ffb59b701ce6";
-    src = fetchFromGitHub ({
+    version = "b4d8ac0fecc4bd32da9411c055cf4b86a037e73e";
+    src = fetchFromGitHub {
       owner = "fastai";
       repo = "fastai";
-      rev = "5ca290c18546dff06f125a0cea69ffb59b701ce6";
+      rev = "b4d8ac0fecc4bd32da9411c055cf4b86a037e73e";
       fetchSubmodules = false;
-      sha256 = "sha256-PnMRqMAYDBzrsvTpzyd6N3Df8SHC/EfiJ2kE9LZnkLI=";
-    });
-    date = "2023-02-25";
+      sha256 = "sha256-S6/cv7hxiz/C0/2oqHjlS1Vl/0LrfJ5XZzeRR2WLKyA=";
+    };
+    date = "2023-05-27";
   };
   fastcore = {
     pname = "fastcore";
-    version = "f7fea257626106e2016d4a55d280f8b876f6dcb4";
-    src = fetchFromGitHub ({
+    version = "1f6844d44d6e0e26b393cecd37818dbb4d391aca";
+    src = fetchFromGitHub {
       owner = "fastai";
       repo = "fastcore";
-      rev = "f7fea257626106e2016d4a55d280f8b876f6dcb4";
+      rev = "1f6844d44d6e0e26b393cecd37818dbb4d391aca";
       fetchSubmodules = false;
-      sha256 = "sha256-EeLgJeF2/nLz95IFG3fPWu+MkfZu4zHTBuhvynGisJE=";
-    });
-    date = "2023-02-03";
+      sha256 = "sha256-p1ACbrUGp8ezdjIlkIaoWrVBSvwtVFVusfSuYPn1v5E=";
+    };
+    date = "2023-03-29";
   };
   fastdownload = {
     pname = "fastdownload";
     version = "9c729f96be9b930054dadfc1598964e61664f434";
-    src = fetchFromGitHub ({
+    src = fetchFromGitHub {
       owner = "fastai";
       repo = "fastdownload";
       rev = "9c729f96be9b930054dadfc1598964e61664f434";
       fetchSubmodules = false;
       sha256 = "sha256-LCI5eP7SYKp2RP+Mk8mfm4sNITgCn1tkqXXpNdqenqc=";
-    });
+    };
     date = "2022-07-08";
   };
   fastprogress = {
     pname = "fastprogress";
     version = "1.0.3";
     src = fetchurl {
-      url = "https://pypi.io/packages/source/f/fastprogress/fastprogress-1.0.3.tar.gz";
+      url = "https://pypi.org/packages/source/f/fastprogress/fastprogress-1.0.3.tar.gz";
       sha256 = "sha256-ehfStDiJD4OMBI7vzjLE3tRxl+zI6gQs7MM9PeuAIvU=";
     };
   };
   polars = {
     pname = "polars";
-    version = "py-0.16.8";
-    src = fetchFromGitHub ({
+    version = "py-0.18.3";
+    src = fetchFromGitHub {
       owner = "pola-rs";
       repo = "polars";
-      rev = "py-0.16.8";
+      rev = "py-0.18.3";
       fetchSubmodules = false;
-      sha256 = "sha256-h7Biz/pWvR6UDUSGZWcXw1jXvnA3d6o5qbfB+ibufDU=";
-    });
-    "py-polars/Cargo.lock" = builtins.readFile ./polars-py-0.16.8/py-polars/Cargo.lock;
+      sha256 = "sha256-Wh16wu92yHSQr/Mn+h2yEwxhx3QIHz/P77Qqg3HZdbE=";
+    };
+    "py-polars/Cargo.lock" = builtins.readFile ./polars-py-0.18.3/py-polars/Cargo.lock;
   };
   py-tree-sitter = {
     pname = "py-tree-sitter";
     version = "d3016edac2c33ce647653d896fbfb435ac2a6245";
-    src = fetchFromGitHub ({
+    src = fetchFromGitHub {
       owner = "tree-sitter";
       repo = "py-tree-sitter";
       rev = "d3016edac2c33ce647653d896fbfb435ac2a6245";
       fetchSubmodules = true;
       sha256 = "sha256-mdV5zGvVI1MltmOD1BtXxsKB/yigk8d56WwLlX6Uizg=";
-    });
+    };
     date = "2022-09-05";
   };
   sh = {
     pname = "sh";
-    version = "2.0.2";
+    version = "2.0.4";
     src = fetchurl {
-      url = "https://pypi.io/packages/source/s/sh/sh-2.0.2.tar.gz";
-      sha256 = "sha256-NkolzSOAwxcMRnGP48xv/JSzZyHjAZagZL5Qj5sxYvQ=";
+      url = "https://pypi.org/packages/source/s/sh/sh-2.0.4.tar.gz";
+      sha256 = "sha256-oYkg8IOZkbyd/dttzABsNgsQZLqWJXNZ8Oo1bp+nWmA=";
     };
   };
   sybilhunter = {
     pname = "sybilhunter";
     version = "2f0a8f09308f7de51ce1095353f4af82a8a15f88";
-    src = fetchFromGitHub ({
+    src = fetchFromGitHub {
       owner = "NullHypothesis";
       repo = "sybilhunter";
       rev = "2f0a8f09308f7de51ce1095353f4af82a8a15f88";
       fetchSubmodules = false;
       sha256 = "sha256-vIOibQuMauVhkxgR9QaL+pbocY7xgyamMeOhtKmye70=";
-    });
+    };
     date = "2019-03-26";
   };
   tiny-cuda-nn = {
     pname = "tiny-cuda-nn";
     version = "v1.6";
-    src = fetchFromGitHub ({
+    src = fetchFromGitHub {
       owner = "NVlabs";
       repo = "tiny-cuda-nn";
       rev = "v1.6";
       fetchSubmodules = false;
       sha256 = "sha256-5qNVMK0PCH8E1kQqDcGCs+i787Vidq4y436LnH36yD0=";
-    });
+    };
   };
   vailyn = {
     pname = "vailyn";
     version = "v3.3.2-1";
-    src = fetchFromGitHub ({
+    src = fetchFromGitHub {
       owner = "VainlyStrain";
       repo = "Vailyn";
       rev = "v3.3.2-1";
       fetchSubmodules = false;
       sha256 = "sha256-eHnqfL6Nt0FDyIoZ4RhwB29h3r6ctVQKAGCeZkOk5yo=";
-    });
+    };
   };
   vault-cli = {
     pname = "vault-cli";
     version = "0142476bcfda52876951f49b0990ac1d85377d3a";
-    src = fetchFromGitHub ({
+    src = fetchFromGitHub {
       owner = "peopledoc";
       repo = "vault-cli";
       rev = "0142476bcfda52876951f49b0990ac1d85377d3a";
       fetchSubmodules = false;
       sha256 = "sha256-/YNBI1IknygmqKy5JMCS63AX581YY5wqE1KN75rBPH0=";
-    });
+    };
     date = "2022-01-27";
   };
   zat = {
     pname = "zat";
-    version = "47304e6bf9779879ffa3423ad8e3f502628d6b40";
-    src = fetchFromGitHub ({
+    version = "1d83a44a4d171b1f99a48b6706da4f495c9f63f9";
+    src = fetchFromGitHub {
       owner = "SuperCowPowers";
       repo = "zat";
-      rev = "47304e6bf9779879ffa3423ad8e3f502628d6b40";
+      rev = "1d83a44a4d171b1f99a48b6706da4f495c9f63f9";
       fetchSubmodules = false;
-      sha256 = "sha256-y1QFd9b7wh86/sqJ2Rn7kQXmYnqgbOU61zW2+hhOC3s=";
-    });
-    date = "2023-02-14";
+      sha256 = "sha256-nR95p4sWz9ur23fryTzV6is0QmQ9Nz6I/FAH2q58cLY=";
+    };
+    date = "2023-04-02";
   };
   zed = {
     pname = "zed";
-    version = "f9994c5a5e9a777f098af4a3605dd859d7516212";
-    src = fetchFromGitHub ({
+    version = "45f3a378ed0f129f61fb7cd3297cfd26b5a52457";
+    src = fetchFromGitHub {
       owner = "brimdata";
       repo = "zed";
-      rev = "f9994c5a5e9a777f098af4a3605dd859d7516212";
+      rev = "45f3a378ed0f129f61fb7cd3297cfd26b5a52457";
       fetchSubmodules = false;
-      sha256 = "sha256-3K8swsiHT+gXKQniGVf7fZAq/Nu2CWtgMDGaH6SLIyY=";
-    });
-    date = "2023-02-22";
+      sha256 = "sha256-Eb7UUnVTF2spgUnq7gl7qYbNKIH057G9KnjEZKNJf7s=";
+    };
+    date = "2023-06-16";
   };
   zeekscript = {
     pname = "zeekscript";
-    version = "4a3512dd114e2709d6738016176c27a65f3f1492";
-    src = fetchFromGitHub ({
+    version = "2cb453e243d69b27fc903f6b8ce39dfa10aa466e";
+    src = fetchFromGitHub {
       owner = "zeek";
       repo = "zeekscript";
-      rev = "4a3512dd114e2709d6738016176c27a65f3f1492";
+      rev = "2cb453e243d69b27fc903f6b8ce39dfa10aa466e";
       fetchSubmodules = true;
-      sha256 = "sha256-fg+rchWG2pV8BT0+XwiLvItKWacxJvjNQOELRGvBxN8=";
-    });
-    date = "2022-12-15";
+      sha256 = "sha256-4TkIRMSq5CnSpP3GTrjl0JU1qEkXcmZAAHLLsQ4dFgw=";
+    };
+    date = "2023-05-30";
   };
 }

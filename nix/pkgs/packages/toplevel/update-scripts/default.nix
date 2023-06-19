@@ -7,6 +7,6 @@
     path,
   }:
     writeScriptBin "gomo2nix-update" ''
-      ${gomod2nix}/bin/gomod2nix --dir ${src} --outdir $PRJ_ROOT/nix/pkgs/packages/${path}
+      ${gomod2nix}/bin/gomod2nix --dir ${src} --outdir $PRJ_ROOT/nix/pkgs/packages/toplevel/${path}
     '';
 }

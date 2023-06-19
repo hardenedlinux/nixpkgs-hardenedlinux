@@ -1,7 +1,7 @@
 {
     "broker": {
         "cargoLocks": null,
-        "date": "2023-05-31",
+        "date": "2023-06-15",
         "extract": null,
         "name": "broker",
         "passthru": null,
@@ -13,11 +13,11 @@
             "name": null,
             "owner": "zeek",
             "repo": "broker",
-            "rev": "3df48de38ef75a5d274c2fa59ad3f798a62c6bfc",
-            "sha256": "sha256-C9lnLQqzzeAIcft863AKtQg26dXSKvIw0f64ENaQVHA=",
+            "rev": "302137df89bbfebb4f6b921b15e76b5a65eb84e4",
+            "sha256": "sha256-9tIT2PJ41tsgGdh2snU76RPDwVii7hHpHsnnH2RceXY=",
             "type": "github"
         },
-        "version": "3df48de38ef75a5d274c2fa59ad3f798a62c6bfc"
+        "version": "302137df89bbfebb4f6b921b15e76b5a65eb84e4"
     },
     "caretaker": {
         "cargoLocks": null,
@@ -41,7 +41,7 @@
     },
     "chatgpt-web": {
         "cargoLocks": null,
-        "date": "2023-05-31",
+        "date": "2023-06-19",
         "extract": null,
         "name": "chatgpt-web",
         "passthru": null,
@@ -53,11 +53,31 @@
             "name": null,
             "owner": "Chanzhaoyu",
             "repo": "chatgpt-web",
-            "rev": "bc390ef09deb391c8d3f5a16aa9c45cc44082818",
-            "sha256": "sha256-1CFWZRS2at6jelTfobQy26Q2uzKrvCT+zMMALEx2JN4=",
+            "rev": "847a2d4d8ccd8215e32723ef348f4e16a3a52027",
+            "sha256": "sha256-k6l0BxDtJWwGSav9VF9I/9xCyv1GAf2sb46Bkfb9xqM=",
             "type": "github"
         },
-        "version": "bc390ef09deb391c8d3f5a16aa9c45cc44082818"
+        "version": "847a2d4d8ccd8215e32723ef348f4e16a3a52027"
+    },
+    "firecracker-task-driver": {
+        "cargoLocks": null,
+        "date": "2022-10-06",
+        "extract": null,
+        "name": "firecracker-task-driver",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "cneira",
+            "repo": "firecracker-task-driver",
+            "rev": "dbfdebbfff78794006eed9736a27b49c34278508",
+            "sha256": "sha256-gMaMZHEXnyx9DlkOx4pZ93UhANisRXDxGhKCV9HndHU=",
+            "type": "github"
+        },
+        "version": "dbfdebbfff78794006eed9736a27b49c34278508"
     },
     "gptcommit": {
         "cargoLocks": null,
@@ -73,11 +93,11 @@
             "name": null,
             "owner": "zurawiki",
             "repo": "gptcommit",
-            "rev": "v0.5.8",
-            "sha256": "sha256-K4A0np8+gpFpSU4jBv6PAw4RyUWmIB7dTgWvpy36CYY=",
+            "rev": "v0.5.9",
+            "sha256": "sha256-3kcbtV1NnBoAlGdAIjttqfXVlPhkOz1z+ZR+bH97a70=",
             "type": "github"
         },
-        "version": "v0.5.8"
+        "version": "v0.5.9"
     },
     "ilograph-dmg": {
         "cargoLocks": null,

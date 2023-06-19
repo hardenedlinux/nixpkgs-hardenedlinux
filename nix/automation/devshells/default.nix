@@ -12,7 +12,6 @@ in
       imports = [
         inputs.std-ext.automation.devshellProfiles.default
 
-        inputs.cells.python.devshellProfiles.default
         inputs.cells.pkgs.devshellProfiles.default
       ];
 

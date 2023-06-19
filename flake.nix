@@ -6,10 +6,7 @@
     std-ext.url = "github:GTrunSec/std-ext";
     std-data-collection.follows = "std-ext/std-data-collection";
     std.follows = "std-ext/std";
-  };
-
-  inputs = {
-    nixos.follows = "std-ext/nixos";
+    flops.follows = "std-ext/flops";
   };
 
   outputs = {std, ...} @ inputs:

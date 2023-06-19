@@ -2,6 +2,10 @@
 src.git = "https://github.com/Chanzhaoyu/chatgpt-web"
 fetch.github = "Chanzhaoyu/chatgpt-web"
 
+[firecracker-task-driver]
+src.git = "https://github.com/cneira/firecracker-task-driver"
+fetch.github = "cneira/firecracker-task-driver"
+
 [osquery]
 #src.github = "osquery/osquery"
 src.manual = "5.2.2"

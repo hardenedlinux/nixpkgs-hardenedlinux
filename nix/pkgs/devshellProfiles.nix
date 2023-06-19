@@ -5,6 +5,14 @@
   default = {
     commands = [
       {
+        name = "nvfetcher-python";
+        command = ''
+          nix develop github:GTrunSec/std-ext#update \
+          --refresh --command \
+          nvfetcher-update nix/pkgs/packages/python/python.toml
+        '';
+      }
+      {
         name = "nvfetcher-pkgs";
         command = ''
           nix develop github:GTrunSec/std-ext#update \

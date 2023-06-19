@@ -3,15 +3,15 @@
 {
   broker = {
     pname = "broker";
-    version = "3df48de38ef75a5d274c2fa59ad3f798a62c6bfc";
+    version = "302137df89bbfebb4f6b921b15e76b5a65eb84e4";
     src = fetchFromGitHub {
       owner = "zeek";
       repo = "broker";
-      rev = "3df48de38ef75a5d274c2fa59ad3f798a62c6bfc";
+      rev = "302137df89bbfebb4f6b921b15e76b5a65eb84e4";
       fetchSubmodules = true;
-      sha256 = "sha256-C9lnLQqzzeAIcft863AKtQg26dXSKvIw0f64ENaQVHA=";
+      sha256 = "sha256-9tIT2PJ41tsgGdh2snU76RPDwVii7hHpHsnnH2RceXY=";
     };
-    date = "2023-05-31";
+    date = "2023-06-15";
   };
   caretaker = {
     pname = "caretaker";
@@ -26,25 +26,37 @@
   };
   chatgpt-web = {
     pname = "chatgpt-web";
-    version = "bc390ef09deb391c8d3f5a16aa9c45cc44082818";
+    version = "847a2d4d8ccd8215e32723ef348f4e16a3a52027";
     src = fetchFromGitHub {
       owner = "Chanzhaoyu";
       repo = "chatgpt-web";
-      rev = "bc390ef09deb391c8d3f5a16aa9c45cc44082818";
+      rev = "847a2d4d8ccd8215e32723ef348f4e16a3a52027";
       fetchSubmodules = false;
-      sha256 = "sha256-1CFWZRS2at6jelTfobQy26Q2uzKrvCT+zMMALEx2JN4=";
+      sha256 = "sha256-k6l0BxDtJWwGSav9VF9I/9xCyv1GAf2sb46Bkfb9xqM=";
     };
-    date = "2023-05-31";
+    date = "2023-06-19";
+  };
+  firecracker-task-driver = {
+    pname = "firecracker-task-driver";
+    version = "dbfdebbfff78794006eed9736a27b49c34278508";
+    src = fetchFromGitHub {
+      owner = "cneira";
+      repo = "firecracker-task-driver";
+      rev = "dbfdebbfff78794006eed9736a27b49c34278508";
+      fetchSubmodules = false;
+      sha256 = "sha256-gMaMZHEXnyx9DlkOx4pZ93UhANisRXDxGhKCV9HndHU=";
+    };
+    date = "2022-10-06";
   };
   gptcommit = {
     pname = "gptcommit";
-    version = "v0.5.8";
+    version = "v0.5.9";
     src = fetchFromGitHub {
       owner = "zurawiki";
       repo = "gptcommit";
-      rev = "v0.5.8";
+      rev = "v0.5.9";
       fetchSubmodules = false;
-      sha256 = "sha256-K4A0np8+gpFpSU4jBv6PAw4RyUWmIB7dTgWvpy36CYY=";
+      sha256 = "sha256-3kcbtV1NnBoAlGdAIjttqfXVlPhkOz1z+ZR+bH97a70=";
     };
   };
   ilograph-dmg = {
