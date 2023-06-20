@@ -28,7 +28,7 @@ buildYarnPackage {
   meta = with lib; {
     description = "A well-designed cross-platform ChatGPT UI (Web / PWA / Linux / Win / MacOS). 一键拥有你自己的跨平台 ChatGPT 应用";
     homepage = "https://github.com/Yidadaa/ChatGPT-Next-Web";
-    license = licenses.mit;
+    license.fullName = "Anti 996 License Version 1.0";
     platforms = platforms.all;
   };
 }
