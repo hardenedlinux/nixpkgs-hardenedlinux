@@ -39,6 +39,26 @@
         },
         "version": "v0.2.4"
     },
+    "chatgpt-next-web": {
+        "cargoLocks": null,
+        "date": "2023-06-20",
+        "extract": null,
+        "name": "chatgpt-next-web",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "Yidadaa",
+            "repo": "ChatGPT-Next-Web",
+            "rev": "daeb8a67a38eca25565a387242eb1bf980aed88e",
+            "sha256": "sha256-y3Is/5BrSSglffW3pkqqyFbP4p+ALSAYPGFyDduII9s=",
+            "type": "github"
+        },
+        "version": "daeb8a67a38eca25565a387242eb1bf980aed88e"
+    },
     "chatgpt-web": {
         "cargoLocks": null,
         "date": "2023-06-19",
@@ -98,21 +118,6 @@
             "type": "github"
         },
         "version": "v0.5.9"
-    },
-    "ilograph-dmg": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "ilograph-dmg",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-xKwDRD9v3WwKDIo5FU1l1RDEhUFS5IKS1hCISn7q/CE=",
-            "type": "url",
-            "url": "https://www.ilograph.com/desktop/release/Ilograph%20Desktop-1.5.3-arm64.dmg"
-        },
-        "version": "1.5.3"
     },
     "koodo-reader": {
         "cargoLocks": null,

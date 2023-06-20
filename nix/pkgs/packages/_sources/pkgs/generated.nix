@@ -24,6 +24,18 @@
       sha256 = "sha256-xP3AfwD9Er0TolAN65NfC2GkC1KlpcyV1J68KjBBEwU=";
     };
   };
+  chatgpt-next-web = {
+    pname = "chatgpt-next-web";
+    version = "daeb8a67a38eca25565a387242eb1bf980aed88e";
+    src = fetchFromGitHub {
+      owner = "Yidadaa";
+      repo = "ChatGPT-Next-Web";
+      rev = "daeb8a67a38eca25565a387242eb1bf980aed88e";
+      fetchSubmodules = false;
+      sha256 = "sha256-y3Is/5BrSSglffW3pkqqyFbP4p+ALSAYPGFyDduII9s=";
+    };
+    date = "2023-06-20";
+  };
   chatgpt-web = {
     pname = "chatgpt-web";
     version = "847a2d4d8ccd8215e32723ef348f4e16a3a52027";
@@ -57,14 +69,6 @@
       rev = "v0.5.9";
       fetchSubmodules = false;
       sha256 = "sha256-3kcbtV1NnBoAlGdAIjttqfXVlPhkOz1z+ZR+bH97a70=";
-    };
-  };
-  ilograph-dmg = {
-    pname = "ilograph-dmg";
-    version = "1.5.3";
-    src = fetchurl {
-      url = "https://www.ilograph.com/desktop/release/Ilograph%20Desktop-1.5.3-arm64.dmg";
-      sha256 = "sha256-xKwDRD9v3WwKDIo5FU1l1RDEhUFS5IKS1hCISn7q/CE=";
     };
   };
   koodo-reader = {

@@ -1,1 +1,19 @@
+:PROPERTIES:
+:ID:       f6113a2d-0778-403c-abfc-e95645a1183a
+:header-args:bash: :session bash :async yes :exports both :dir ../../
+:header-args:json: exports both
+:END:
 #+title: Test
+
+
+#+begin_src bash :dir ../../. :async t :results outputs
+nix flake show --json | jq -r ''
+#+end_src
+
+#+RESULTS:
+: /home/guangtao/ghq/github.com/hardenedlinux/nixpkgs-hardenedlinux
+
+#+begin_src bash :results output :wrap SRC json
+nix flake show --json | jq -e '.packages'
+#+end_src
+
