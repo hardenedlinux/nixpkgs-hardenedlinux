@@ -12,7 +12,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://hardenedlinux.github.io/nixpkgs-hardenedlinux/posts/test/</guid>
-      <description></description>
+      <description>nix flake show --json | jq -r &amp;#39;&amp;#39; /home/guangtao/ghq/github.com/hardenedlinux/nixpkgs-hardenedlinux nix flake show --json | jq -e &amp;#39;.packages&amp;#39; </description>
     </item>
     
   </channel>
