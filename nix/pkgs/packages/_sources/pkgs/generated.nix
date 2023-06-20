@@ -26,13 +26,13 @@
   };
   chatgpt-next-web = {
     pname = "chatgpt-next-web";
-    version = "daeb8a67a38eca25565a387242eb1bf980aed88e";
+    version = "078b039cf1735fa0cd1c2de680c55e721015c3d8";
     src = fetchFromGitHub {
       owner = "Yidadaa";
       repo = "ChatGPT-Next-Web";
-      rev = "daeb8a67a38eca25565a387242eb1bf980aed88e";
+      rev = "078b039cf1735fa0cd1c2de680c55e721015c3d8";
       fetchSubmodules = false;
-      sha256 = "sha256-y3Is/5BrSSglffW3pkqqyFbP4p+ALSAYPGFyDduII9s=";
+      sha256 = "sha256-XlZDT3c1tvWNbWI8vDlHIRZdHseIkNxS3iTILV15csc=";
     };
     date = "2023-06-20";
   };
