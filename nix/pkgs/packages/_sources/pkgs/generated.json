@@ -1,7 +1,7 @@
 {
     "broker": {
         "cargoLocks": null,
-        "date": "2023-06-15",
+        "date": "2023-06-21",
         "extract": null,
         "name": "broker",
         "passthru": null,
@@ -13,11 +13,11 @@
             "name": null,
             "owner": "zeek",
             "repo": "broker",
-            "rev": "302137df89bbfebb4f6b921b15e76b5a65eb84e4",
-            "sha256": "sha256-9tIT2PJ41tsgGdh2snU76RPDwVii7hHpHsnnH2RceXY=",
+            "rev": "2a1d3232b75b530a0cd7df4b376ca3608fe8b9df",
+            "sha256": "sha256-f6CySAvasYrvpdis23iblDMb+QXKMRd3Vx3lfxlQntM=",
             "type": "github"
         },
-        "version": "302137df89bbfebb4f6b921b15e76b5a65eb84e4"
+        "version": "2a1d3232b75b530a0cd7df4b376ca3608fe8b9df"
     },
     "caretaker": {
         "cargoLocks": null,
@@ -41,7 +41,7 @@
     },
     "chatgpt-next-web": {
         "cargoLocks": null,
-        "date": "2023-06-20",
+        "date": "2023-06-21",
         "extract": null,
         "name": "chatgpt-next-web",
         "passthru": null,
@@ -53,11 +53,11 @@
             "name": null,
             "owner": "Yidadaa",
             "repo": "ChatGPT-Next-Web",
-            "rev": "078b039cf1735fa0cd1c2de680c55e721015c3d8",
-            "sha256": "sha256-XlZDT3c1tvWNbWI8vDlHIRZdHseIkNxS3iTILV15csc=",
+            "rev": "57447c24c8315254ac606126c4c8d9a3140e5d1f",
+            "sha256": "sha256-N3EHOZumRprKa0yhabLTOIZGCmFFd9RXkoJwxuOytsI=",
             "type": "github"
         },
-        "version": "078b039cf1735fa0cd1c2de680c55e721015c3d8"
+        "version": "57447c24c8315254ac606126c4c8d9a3140e5d1f"
     },
     "chatgpt-web": {
         "cargoLocks": null,
