@@ -1,0 +1,27 @@
+diff --git a/cliche/install_generator.py b/cliche/install_generator.py
+index b9b3b81..9b5c050 100644
+--- a/cliche/install_generator.py
++++ b/cliche/install_generator.py
+@@ -7,7 +7,9 @@ import re
+ import time
+ import json
+ import glob
++from pathlib import Path
+ 
++os.environ["PATH"] += os.pathsep + os.pathsep.join("{{runtimeInputs}}".split(":"))
+ sys.cliche_loaded_modules__ = set(sys.modules)
+ sys.cliche_ts__ = time.time()
+ use_timing = "--timing" in sys.argv
+@@ -61,7 +63,11 @@ if use_timing:
+ 
+ if any_change:
+     cache = new_cache
+-    with open("{{bin_name}}.json", "w") as f:
++    filename = os.path.basename("{{bin_name}}.json")
++    cachePath = str(Path.home()) + "/.cache/cliche"
++    if not os.path.exists(cachePath):
++        os.makedirs(cachePath)
++    with open(str(Path.home()) + "/.cache/cliche/" + filename, "w") as f:
+         json.dump(cache, f)
+ 
+ function_to_imports = {}

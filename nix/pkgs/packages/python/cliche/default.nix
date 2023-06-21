@@ -5,8 +5,19 @@
 }:
 pythonPackages.buildPythonPackage rec {
   inherit (nixpkgs-hardenedlinux-python-sources.cliche) pname version src;
-  doCheck = false;
-  propagatedBuildInputs = with pythonPackages; [ipdb];
+
+  checkInputs = with pythonPackages; [pytestCheckHook];
+
+  patches = [./nix-cliche.patch];
+
+  doCheck = true;
+
+  propagatedBuildInputs = with pythonPackages; [ipdb argcomplete];
+
+  postPatch = ''
+    substituteInPlace setup.py \
+      --replace "ipdb == 0.13.9" "ipdb"
+  '';
   meta = with lib; {
     description = "Build a simple command-line interface from your functions 💻";
     homepage = "https://github.com/kootenpv/cliche";
