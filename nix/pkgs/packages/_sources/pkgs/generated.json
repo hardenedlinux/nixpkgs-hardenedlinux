@@ -1,4 +1,24 @@
 {
+    "broker": {
+        "cargoLocks": null,
+        "date": "2023-07-02",
+        "extract": null,
+        "name": "broker",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": true,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "zeek",
+            "repo": "broker",
+            "rev": "f338a5f6db54d0cf8db4708d6656b1856c8d59b4",
+            "sha256": "sha256-4LB/JR2EK89uvcu2COk8PssG6Pcd37XsGQxKUJqYhaQ=",
+            "type": "github"
+        },
+        "version": "f338a5f6db54d0cf8db4708d6656b1856c8d59b4"
+    },
     "caretaker": {
         "cargoLocks": null,
         "date": null,
@@ -238,13 +258,13 @@
         "pinned": false,
         "src": {
             "deepClone": false,
-            "fetchSubmodules": false,
+            "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
             "owner": "bbannier",
             "repo": "zeek-language-server",
             "rev": "2d8eafc17959402ace45defdb6b05fcbf42b3560",
-            "sha256": "sha256-Q8n/LhGAZdZ8j90rlNs0iBDrVOkcieptKRt05gGoSn8=",
+            "sha256": "sha256-GUEtAIdZ63Kv/IxcU3HP1rwubQ68jw1qNdc93VzXi1w=",
             "type": "github"
         },
         "version": "2d8eafc17959402ace45defdb6b05fcbf42b3560"

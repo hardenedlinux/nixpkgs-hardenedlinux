@@ -29,10 +29,10 @@ src.prefix = "v"
 src.git = "https://github.com/troyeguo/koodo-reader"
 fetch.github = "troyeguo/koodo-reader"
 
-# [broker]
-# src.git = "https://github.com/zeek/broker"
-# fetch.github = "zeek/broker"
-# git.fetchSubmodules = true
+[broker]
+src.git = "https://github.com/zeek/broker"
+fetch.github = "zeek/broker"
+git.fetchSubmodules = true
 
 [tuc]
 src.git = "https://github.com/riquito/tuc"
@@ -55,7 +55,7 @@ fetch.github = "kurtbuilds/watchexec-simple"
 [zeek-language-server]
 src.git = "https://github.com/bbannier/zeek-language-server"
 fetch.github = "bbannier/zeek-language-server"
-# git.fetchSubmodules = true
+git.fetchSubmodules = true
 
 [sslproxy]
 src.git = "https://github.com/sonertari/SSLproxy"
