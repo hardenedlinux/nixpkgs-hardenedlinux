@@ -41,7 +41,7 @@
     },
     "chatgpt-next-web": {
         "cargoLocks": null,
-        "date": "2023-07-21",
+        "date": "2023-07-26",
         "extract": null,
         "name": "chatgpt-next-web",
         "passthru": null,
@@ -53,11 +53,11 @@
             "name": null,
             "owner": "Yidadaa",
             "repo": "ChatGPT-Next-Web",
-            "rev": "b7320e6834f905debf1d2b7e1326f7e8f28d1ccf",
-            "sha256": "sha256-hWDDxe7UBb6pxFaZmDcEj3Q97bOSiupj8FQXGPqPolo=",
+            "rev": "e83e0f6a33d8463a8f2d274a4c1bb0f477817f73",
+            "sha256": "sha256-fsRVhgmVJdAwcDWp8+NdG4Iy1VQqV9jfvInrVdeS0u0=",
             "type": "github"
         },
-        "version": "b7320e6834f905debf1d2b7e1326f7e8f28d1ccf"
+        "version": "e83e0f6a33d8463a8f2d274a4c1bb0f477817f73"
     },
     "chatgpt-web": {
         "cargoLocks": null,
@@ -121,7 +121,7 @@
     },
     "koodo-reader": {
         "cargoLocks": null,
-        "date": "2023-06-24",
+        "date": "2023-07-23",
         "extract": null,
         "name": "koodo-reader",
         "passthru": null,
@@ -133,11 +133,11 @@
             "name": null,
             "owner": "troyeguo",
             "repo": "koodo-reader",
-            "rev": "d153bc8a735c6ee223fc51f1cb9b7b2007330e7d",
-            "sha256": "sha256-ySRqlv38a1waaFmCnLDWQfVqlQ+fJ4mz972dvNMBAeM=",
+            "rev": "dcba2a5ab120f359dcd329f807941d3dc260a946",
+            "sha256": "sha256-5r3pfCQt9mlrtzk6zH2bcMuk9plmmf2NEZUrjorFvlg=",
             "type": "github"
         },
-        "version": "d153bc8a735c6ee223fc51f1cb9b7b2007330e7d"
+        "version": "dcba2a5ab120f359dcd329f807941d3dc260a946"
     },
     "nix-unstable-installer": {
         "cargoLocks": null,
@@ -148,11 +148,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-QbQO0qGgTz23BRK9cm+kCp8aEmSxJQHPpbBSFNd9dzM=",
+            "sha256": "sha256-44sSrCYdfCGuqEPbww09826YBPzfipJMhfVddN78zco=",
             "type": "url",
-            "url": "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.17.0pre20230713_bbc08a1/install"
+            "url": "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.17.0pre20230721_fe1fbdb/install"
         },
-        "version": "nix-2.17.0pre20230713_bbc08a1"
+        "version": "nix-2.17.0pre20230721_fe1fbdb"
     },
     "osquery": {
         "cargoLocks": null,
