@@ -3,15 +3,15 @@
 {
   broker = {
     pname = "broker";
-    version = "f338a5f6db54d0cf8db4708d6656b1856c8d59b4";
+    version = "8dacaa358299a95e3c38fe479dbc348a69ed60a4";
     src = fetchFromGitHub {
       owner = "zeek";
       repo = "broker";
-      rev = "f338a5f6db54d0cf8db4708d6656b1856c8d59b4";
+      rev = "8dacaa358299a95e3c38fe479dbc348a69ed60a4";
       fetchSubmodules = true;
-      sha256 = "sha256-4LB/JR2EK89uvcu2COk8PssG6Pcd37XsGQxKUJqYhaQ=";
+      sha256 = "sha256-MbmJem1RoFiRDtexgLvhhvClsvxuUDz8SLIMe5RQS9Q=";
     };
-    date = "2023-07-02";
+    date = "2023-07-31";
   };
   caretaker = {
     pname = "caretaker";
@@ -26,15 +26,15 @@
   };
   chatgpt-next-web = {
     pname = "chatgpt-next-web";
-    version = "70a4f94c8151306a2870170026bd406d8a4e5cda";
+    version = "543989151f406398532a96096085feccf7062949";
     src = fetchFromGitHub {
       owner = "Yidadaa";
       repo = "ChatGPT-Next-Web";
-      rev = "70a4f94c8151306a2870170026bd406d8a4e5cda";
+      rev = "543989151f406398532a96096085feccf7062949";
       fetchSubmodules = false;
-      sha256 = "sha256-UrykdtMSVoTOjzZLqwrrir82mU04R6/KAMCVhH4ecik=";
+      sha256 = "sha256-5eUtN3FdXNLL0FP4RUmO6P+92szRepU9OJ81X5QBYYw=";
     };
-    date = "2023-07-17";
+    date = "2023-08-04";
   };
   chatgpt-web = {
     pname = "chatgpt-web";
@@ -62,33 +62,33 @@
   };
   gptcommit = {
     pname = "gptcommit";
-    version = "v0.5.10";
+    version = "v0.5.11";
     src = fetchFromGitHub {
       owner = "zurawiki";
       repo = "gptcommit";
-      rev = "v0.5.10";
+      rev = "v0.5.11";
       fetchSubmodules = false;
-      sha256 = "sha256-W4AUP4OQCHWJ3BbuD7N9CowF4tPi9f1fmYZnAbG9Rq8=";
+      sha256 = "sha256-UUiqIwvZHV+WhzRc05sW/R3V+6ovL8+WoDOzz4chCq0=";
     };
   };
   koodo-reader = {
     pname = "koodo-reader";
-    version = "d153bc8a735c6ee223fc51f1cb9b7b2007330e7d";
+    version = "07d780eedb2e9ed9e576a18f3b9d55ebd7766c68";
     src = fetchFromGitHub {
       owner = "troyeguo";
       repo = "koodo-reader";
-      rev = "d153bc8a735c6ee223fc51f1cb9b7b2007330e7d";
+      rev = "07d780eedb2e9ed9e576a18f3b9d55ebd7766c68";
       fetchSubmodules = false;
-      sha256 = "sha256-ySRqlv38a1waaFmCnLDWQfVqlQ+fJ4mz972dvNMBAeM=";
+      sha256 = "sha256-PIE0BBcrWJRAazzzBmIKZcTfUBicWMigYL5uMF8dbFY=";
     };
-    date = "2023-06-24";
+    date = "2023-07-29";
   };
   nix-unstable-installer = {
     pname = "nix-unstable-installer";
-    version = "nix-2.17.0pre20230713_bbc08a1";
+    version = "nix-2.18.0pre20230725_2d1d811";
     src = fetchurl {
-      url = "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.17.0pre20230713_bbc08a1/install";
-      sha256 = "sha256-QbQO0qGgTz23BRK9cm+kCp8aEmSxJQHPpbBSFNd9dzM=";
+      url = "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.18.0pre20230725_2d1d811/install";
+      sha256 = "sha256-lYC7Gn7zxH9m5CiR+8/y79U6I9wc68sL5PKL2kJN5Tg=";
     };
   };
   osquery = {
@@ -113,15 +113,15 @@
   };
   tuc = {
     pname = "tuc";
-    version = "8e20617077e2d6e4728e689e9612d1b312e6a45b";
+    version = "89ef29696a62357e33fa57c4bb33a9401d12c259";
     src = fetchFromGitHub {
       owner = "riquito";
       repo = "tuc";
-      rev = "8e20617077e2d6e4728e689e9612d1b312e6a45b";
+      rev = "89ef29696a62357e33fa57c4bb33a9401d12c259";
       fetchSubmodules = false;
-      sha256 = "sha256-GFRWjhIbfqljJ2a6LY7c25h+YL3lZOGPvGllF82zjRs=";
+      sha256 = "sha256-VNp5tcZGsBltEPMbynep65uoZR/QqCGYoML8WrC8S7c=";
     };
-    date = "2023-07-01";
+    date = "2023-08-01";
   };
   watchexec-simple = {
     pname = "watchexec-simple";

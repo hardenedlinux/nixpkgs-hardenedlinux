@@ -1,7 +1,7 @@
 {
     "broker": {
         "cargoLocks": null,
-        "date": "2023-07-02",
+        "date": "2023-07-31",
         "extract": null,
         "name": "broker",
         "passthru": null,
@@ -13,11 +13,11 @@
             "name": null,
             "owner": "zeek",
             "repo": "broker",
-            "rev": "f338a5f6db54d0cf8db4708d6656b1856c8d59b4",
-            "sha256": "sha256-4LB/JR2EK89uvcu2COk8PssG6Pcd37XsGQxKUJqYhaQ=",
+            "rev": "8dacaa358299a95e3c38fe479dbc348a69ed60a4",
+            "sha256": "sha256-MbmJem1RoFiRDtexgLvhhvClsvxuUDz8SLIMe5RQS9Q=",
             "type": "github"
         },
-        "version": "f338a5f6db54d0cf8db4708d6656b1856c8d59b4"
+        "version": "8dacaa358299a95e3c38fe479dbc348a69ed60a4"
     },
     "caretaker": {
         "cargoLocks": null,
@@ -41,7 +41,7 @@
     },
     "chatgpt-next-web": {
         "cargoLocks": null,
-        "date": "2023-07-17",
+        "date": "2023-08-04",
         "extract": null,
         "name": "chatgpt-next-web",
         "passthru": null,
@@ -53,11 +53,11 @@
             "name": null,
             "owner": "Yidadaa",
             "repo": "ChatGPT-Next-Web",
-            "rev": "70a4f94c8151306a2870170026bd406d8a4e5cda",
-            "sha256": "sha256-UrykdtMSVoTOjzZLqwrrir82mU04R6/KAMCVhH4ecik=",
+            "rev": "543989151f406398532a96096085feccf7062949",
+            "sha256": "sha256-5eUtN3FdXNLL0FP4RUmO6P+92szRepU9OJ81X5QBYYw=",
             "type": "github"
         },
-        "version": "70a4f94c8151306a2870170026bd406d8a4e5cda"
+        "version": "543989151f406398532a96096085feccf7062949"
     },
     "chatgpt-web": {
         "cargoLocks": null,
@@ -113,15 +113,15 @@
             "name": null,
             "owner": "zurawiki",
             "repo": "gptcommit",
-            "rev": "v0.5.10",
-            "sha256": "sha256-W4AUP4OQCHWJ3BbuD7N9CowF4tPi9f1fmYZnAbG9Rq8=",
+            "rev": "v0.5.11",
+            "sha256": "sha256-UUiqIwvZHV+WhzRc05sW/R3V+6ovL8+WoDOzz4chCq0=",
             "type": "github"
         },
-        "version": "v0.5.10"
+        "version": "v0.5.11"
     },
     "koodo-reader": {
         "cargoLocks": null,
-        "date": "2023-06-24",
+        "date": "2023-07-29",
         "extract": null,
         "name": "koodo-reader",
         "passthru": null,
@@ -133,11 +133,11 @@
             "name": null,
             "owner": "troyeguo",
             "repo": "koodo-reader",
-            "rev": "d153bc8a735c6ee223fc51f1cb9b7b2007330e7d",
-            "sha256": "sha256-ySRqlv38a1waaFmCnLDWQfVqlQ+fJ4mz972dvNMBAeM=",
+            "rev": "07d780eedb2e9ed9e576a18f3b9d55ebd7766c68",
+            "sha256": "sha256-PIE0BBcrWJRAazzzBmIKZcTfUBicWMigYL5uMF8dbFY=",
             "type": "github"
         },
-        "version": "d153bc8a735c6ee223fc51f1cb9b7b2007330e7d"
+        "version": "07d780eedb2e9ed9e576a18f3b9d55ebd7766c68"
     },
     "nix-unstable-installer": {
         "cargoLocks": null,
@@ -148,11 +148,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-QbQO0qGgTz23BRK9cm+kCp8aEmSxJQHPpbBSFNd9dzM=",
+            "sha256": "sha256-lYC7Gn7zxH9m5CiR+8/y79U6I9wc68sL5PKL2kJN5Tg=",
             "type": "url",
-            "url": "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.17.0pre20230713_bbc08a1/install"
+            "url": "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.18.0pre20230725_2d1d811/install"
         },
-        "version": "nix-2.17.0pre20230713_bbc08a1"
+        "version": "nix-2.18.0pre20230725_2d1d811"
     },
     "osquery": {
         "cargoLocks": null,
@@ -191,7 +191,7 @@
     },
     "tuc": {
         "cargoLocks": null,
-        "date": "2023-07-01",
+        "date": "2023-08-01",
         "extract": null,
         "name": "tuc",
         "passthru": null,
@@ -203,11 +203,11 @@
             "name": null,
             "owner": "riquito",
             "repo": "tuc",
-            "rev": "8e20617077e2d6e4728e689e9612d1b312e6a45b",
-            "sha256": "sha256-GFRWjhIbfqljJ2a6LY7c25h+YL3lZOGPvGllF82zjRs=",
+            "rev": "89ef29696a62357e33fa57c4bb33a9401d12c259",
+            "sha256": "sha256-VNp5tcZGsBltEPMbynep65uoZR/QqCGYoML8WrC8S7c=",
             "type": "github"
         },
-        "version": "8e20617077e2d6e4728e689e9612d1b312e6a45b"
+        "version": "89ef29696a62357e33fa57c4bb33a9401d12c259"
     },
     "watchexec-simple": {
         "cargoLocks": null,
