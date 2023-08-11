@@ -18,20 +18,11 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: cachix/install-nix-action@v22
-        with:
-          install_url: https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.13.0pre20221215_26c7602/install
-          extra_nix_config: |
-            experimental-features = nix-command flakes
-            system-features = nixos-test benchmark big-parallel kvm recursive-nix
 
-      - uses: cachix/cachix-action@v12
-        with:
-          name: zeek
-          pushFilter: '(-source$|\.tar\.gz$|\.squashfs$)'
-          authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
+      - uses: nixbuild/nix-quick-install-action@v25
+      - uses: DeterminateSystems/magic-nix-cache-action@main
 
-      # CI workflows
+        # CI workflows
       - name: Run Nix Flake Show
         run: nix flake show
 
