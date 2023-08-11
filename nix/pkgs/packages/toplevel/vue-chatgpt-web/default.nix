@@ -3,7 +3,8 @@
   nixpkgs-hardenedlinux-sources,
   mkPnpmPackage,
   buildEnv,
-}: let
+}:
+let
   meta = with lib; {
     description = "用 Express 和 Vue3 搭建的 ChatGPT 演示网页";
     homepage = "https://github.com/Chanzhaoyu/chatgpt-web";
@@ -21,21 +22,23 @@
       inherit meta;
       copyPnpmStore = true;
       distDir = "build";
-    })
-    .overrideAttrs (old: {
-      postInstall = ''
-        mkdir -p $out
-        cp -r node_modules $out/node_modules
-      '';
-    });
+    }).overrideAttrs
+      (
+        old: {
+          postInstall = ''
+            mkdir -p $out
+            cp -r node_modules $out/node_modules
+          '';
+        }
+      );
 in
-  buildEnv {
-    name = "chatgpt-web";
-    paths = [];
-    postBuild = ''
+buildEnv {
+  name = "chatgpt-web";
+  paths = [ ];
+  postBuild = ''
     cp ${app}/ $out/public
     cp -r ${service} $out/build
     cp -r ${service}/node_modules $out/node_modules
     cp -r ${nixpkgs-hardenedlinux-sources.chatgpt-web.src}/service/* $out/.
   '';
-  }
+}

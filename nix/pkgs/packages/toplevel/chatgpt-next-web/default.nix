@@ -8,11 +8,9 @@ buildYarnPackage {
   inherit (nixpkgs-hardenedlinux-sources.chatgpt-next-web) pname version;
   src = applyPatches {
     src = nixpkgs-hardenedlinux-sources.chatgpt-next-web.src;
-    patches = [
-      ./version.patch
-    ];
+    patches = [ ./version.patch ];
   };
-  buildInputs = [];
+  buildInputs = [ ];
   # # NODE_OPTIONS = "--openssl-legacy-provider";
   yarnBuild = ''
     export HOME=$PWD

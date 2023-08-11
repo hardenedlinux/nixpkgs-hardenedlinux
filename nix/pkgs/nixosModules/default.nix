@@ -1,6 +1,1 @@
-{
-  inputs,
-  cell,
-}: {
-  osquery = ./osquery;
-}
+{ inputs, cell }: { osquery = ./osquery; }

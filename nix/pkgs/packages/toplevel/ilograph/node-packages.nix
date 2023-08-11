@@ -6,8 +6,9 @@
   nix-gitignore,
   stdenv,
   lib,
-  globalBuildInputs ? [],
-}: let
+  globalBuildInputs ? [ ],
+}:
+let
   sources = {
     "ansi-regex-5.0.1" = {
       name = "ansi-regex";
@@ -658,7 +659,8 @@
       };
     };
   };
-in {
+in
+{
   export-ilograph = nodeEnv.buildNodePackage {
     name = "export-ilograph";
     packageName = "export-ilograph";
@@ -671,12 +673,12 @@ in {
       sources."ansi-regex-5.0.1"
       sources."ansi-styles-4.3.0"
       sources."archiver-5.3.1"
-      (sources."archiver-utils-2.1.0"
+      (
+        sources."archiver-utils-2.1.0"
         // {
-          dependencies = [
-            sources."readable-stream-2.3.8"
-          ];
-        })
+          dependencies = [ sources."readable-stream-2.3.8" ];
+        }
+      )
       sources."argparse-1.0.10"
       sources."async-3.2.4"
       sources."balanced-match-1.0.2"
@@ -710,12 +712,12 @@ in {
       sources."is-fullwidth-code-point-3.0.0"
       sources."isarray-1.0.0"
       sources."js-yaml-3.14.1"
-      (sources."lazystream-1.0.1"
+      (
+        sources."lazystream-1.0.1"
         // {
-          dependencies = [
-            sources."readable-stream-2.3.8"
-          ];
-        })
+          dependencies = [ sources."readable-stream-2.3.8" ];
+        }
+      )
       sources."lodash.defaults-4.2.0"
       sources."lodash.difference-4.5.0"
       sources."lodash.flatten-4.4.0"
@@ -728,13 +730,15 @@ in {
       sources."path-is-absolute-1.0.1"
       sources."process-nextick-args-2.0.1"
       sources."readable-stream-3.6.2"
-      (sources."readdir-glob-1.1.3"
+      (
+        sources."readdir-glob-1.1.3"
         // {
           dependencies = [
             sources."brace-expansion-2.0.1"
             sources."minimatch-5.1.6"
           ];
-        })
+        }
+      )
       sources."require-directory-2.1.1"
       sources."safe-buffer-5.1.2"
       sources."safer-buffer-2.1.2"

@@ -1,15 +1,12 @@
-{
-  inputs,
-  cell,
-}: let
+{ inputs, cell }:
+let
   inherit (inputs) std-ext;
   inherit (inputs.std-ext.inputs) flops;
   l = inputs.nixpkgs.lib // builtins;
 
   callInputs =
-    (flops.lib.flake.pops.default.setInitInputs ./lib/lock)
-    .setSystem
-    inputs.nixpkgs.system;
+    (flops.lib.flake.pops.default.setInitInputs ./lib/lock).setSystem
+      inputs.nixpkgs.system;
 
   __inputs__ = callInputs.outputsForInputs;
 
@@ -21,7 +18,8 @@
       crane = __inputs__.crane.mkLib final;
     })
   ];
-in {
+in
+{
   inherit __inputs__ nixpkgs callInputs;
 
   filterDerivations = std-ext.lib.attrsets.filterDerivations;

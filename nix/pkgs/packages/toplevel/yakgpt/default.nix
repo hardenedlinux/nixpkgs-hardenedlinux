@@ -6,7 +6,7 @@
 }:
 buildYarnPackage {
   inherit (nixpkgs-hardenedlinux-sources.yakgpt) pname src version;
-  buildInputs = [openssl];
+  buildInputs = [ openssl ];
   installPhase = ''
     cp -r $src $out
     chmod -R u+w $out

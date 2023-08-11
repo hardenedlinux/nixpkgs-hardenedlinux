@@ -1,7 +1,4 @@
-{
-  installApp,
-  fetchurl
-}:
+{ installApp, fetchurl }:
 installApp {
   pname = "ilograph-dmg";
   version = "1.5.3";

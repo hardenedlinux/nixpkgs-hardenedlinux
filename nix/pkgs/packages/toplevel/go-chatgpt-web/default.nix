@@ -8,7 +8,7 @@ buildGoApplication rec {
 
   modules = ./gomod2nix.toml;
 
-  subPackages = ["."];
+  subPackages = [ "." ];
 
   passthru.update = update-scripts.gomod2nix {
     inherit src;

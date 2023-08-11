@@ -7,7 +7,7 @@
 python3Packages.buildPythonPackage rec {
   inherit (nixpkgs-hardenedlinux-python-sources.broker-to-json) pname version src;
   doCheck = false;
-  nativeBuildInputs = [broker];
+  nativeBuildInputs = [ broker ];
   meta = with lib; {
     description = "Zeek Broker to JSON";
     homepage = "https://github.com/grigorescu/broker-to-json";

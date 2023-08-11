@@ -6,8 +6,14 @@
 }:
 python3Packages.buildPythonPackage rec {
   inherit (nixpkgs-hardenedlinux-python-sources.vault-cli) pname src version;
-  propagatedBuildInputs = with python3Packages; [click pyyaml jinja2 requests hvac];
-  checkInputs = with python3Packages; [pytest];
+  propagatedBuildInputs = with python3Packages; [
+    click
+    pyyaml
+    jinja2
+    requests
+    hvac
+  ];
+  checkInputs = with python3Packages; [ pytest ];
   postPatch = ''
     substituteInPlace setup.cfg \
     --replace "hvac<0.10.12" "hvac"

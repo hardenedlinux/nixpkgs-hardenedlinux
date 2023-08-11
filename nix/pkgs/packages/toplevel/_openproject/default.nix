@@ -8,9 +8,10 @@
   runCommand,
   nodejs-16_x,
   buildNpmPackage,
-}: let
+}:
+let
   inherit (nixpkgs-hardenedlinux-sources.openproject) pname version src;
-  src' = runCommand "frontend" {} ''
+  src' = runCommand "frontend" { } ''
     cp -RL --no-preserve=mode ${src}/frontend $out
     cp ${./pnpm-lock.yaml} $out/pnpm-lock.yaml
   '';
@@ -33,14 +34,14 @@
     src = src';
     nodejs = nodejs-16_x;
   };
-  # TODO: backend
 in
-  # bundlerEnv {
-  #   name = "openproject-dev";
-  #   inherit ruby;
-  #   gemdir = src;
-  #   gemfile = src + "/Gemfile";
-  #   lockfile = src + "/Gemfile.lock";
-  #   gemset = src + "/nix/gemset.nix";
-  # }
-  frontend
+# TODO: backend
+# bundlerEnv {
+#   name = "openproject-dev";
+#   inherit ruby;
+#   gemdir = src;
+#   gemfile = src + "/Gemfile";
+#   lockfile = src + "/Gemfile.lock";
+#   gemset = src + "/nix/gemset.nix";
+# }
+frontend

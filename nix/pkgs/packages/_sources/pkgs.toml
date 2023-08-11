@@ -64,7 +64,6 @@ fetch.github = "sonertari/SSLproxy"
 [yakgpt]
 src.git = "https://github.com/yakGPT/yakGPT"
 fetch.github = "yakGPT/yakGPT"
-
 # [ilograph-dmg]
 # src.manual = "1.5.3"
 # fetch.url = "https://www.ilograph.com/desktop/release/Ilograph%20Desktop-$ver-arm64.dmg"

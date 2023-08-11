@@ -6,13 +6,16 @@
 pythonPackages.buildPythonPackage rec {
   inherit (nixpkgs-hardenedlinux-python-sources.cliche) pname version src;
 
-  checkInputs = with pythonPackages; [pytestCheckHook];
+  checkInputs = with pythonPackages; [ pytestCheckHook ];
 
-  patches = [./nix-cliche.patch];
+  patches = [ ./nix-cliche.patch ];
 
   doCheck = true;
 
-  propagatedBuildInputs = with pythonPackages; [ipdb argcomplete];
+  propagatedBuildInputs = with pythonPackages; [
+    ipdb
+    argcomplete
+  ];
 
   postPatch = ''
     substituteInPlace setup.py \

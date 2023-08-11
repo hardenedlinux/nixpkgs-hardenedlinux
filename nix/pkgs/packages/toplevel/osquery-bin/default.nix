@@ -11,9 +11,14 @@
 }:
 stdenv.mkDerivation rec {
   inherit (nixpkgs-hardenedlinux-sources.osquery) pname version src;
-  buildInputs = [syslogng];
-  nativeBuildInputs = [wrapGAppsHook autoPatchelfHook makeWrapper dpkg];
-  runtimeLibs = lib.makeLibraryPath [];
+  buildInputs = [ syslogng ];
+  nativeBuildInputs = [
+    wrapGAppsHook
+    autoPatchelfHook
+    makeWrapper
+    dpkg
+  ];
+  runtimeLibs = lib.makeLibraryPath [ ];
   unpackPhase = "dpkg-deb --fsys-tarfile $src | tar -x --no-same-permissions --no-same-owner";
   installPhase = ''
     runHook preInstall

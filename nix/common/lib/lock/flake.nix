@@ -26,5 +26,5 @@
     rust-overlay.url = "github:oxalica/rust-overlay";
     rust-overlay.inputs.nixpkgs.follows = "nixpkgs";
   };
-  outputs = {self, ...}: {};
+  outputs = { self, ... }: { };
 }

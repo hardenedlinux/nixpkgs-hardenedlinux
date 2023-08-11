@@ -1,4 +1,4 @@
-{}
+{ }
 # {
 #   lib,
 #   stdenv,
@@ -46,4 +46,3 @@
 #     # "The futex facility returned an unexpected error code."
 #     XDG_CONFIG_HOME="$tmpdir" ${xvfb-run}/bin/xvfb-run ${bin}/bin/ilograph $@
 #   ''
-

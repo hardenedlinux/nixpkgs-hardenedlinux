@@ -1,9 +1,8 @@
-{
-  inputs,
-  cell,
-}: let
+{ inputs, cell }:
+let
   inherit (inputs.cells.common.lib) __inputs__;
-in {
+in
+{
   nixpkgs = inputs.cells.common.lib.nixpkgs.appendOverlays [
     cell.overlays.default
     cell.overlays.python

@@ -6,7 +6,7 @@
 }:
 buildYarnPackage {
   inherit (nixpkgs-hardenedlinux-sources.koodo-reader) pname src version;
-  buildInputs = [openssl];
+  buildInputs = [ openssl ];
   installPhase = ''
     cp -r build $out
   '';

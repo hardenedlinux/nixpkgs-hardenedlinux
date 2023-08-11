@@ -28,75 +28,86 @@
   glibc,
   libsecret,
   nixpkgs-hardenedlinux-sources,
-}: let
+}:
+let
   version = "5.9.18";
 in
-  stdenv.mkDerivation rec {
-    pname = "feishu";
+stdenv.mkDerivation rec {
+  pname = "feishu";
 
-    inherit version;
+  inherit version;
 
-    src = fetchurl {
-      url = "https://sf3-cn.feishucdn.com/obj/ee-appcenter/5db94058d7ad/Feishu-linux_x64-${version}.deb";
-      sha256 = "sha256-/7KbWhhLAl1OTqRoqPaEpwZ6tb/UWGerw3Dlm+Y4ksc=";
-    };
+  src = fetchurl {
+    url = "https://sf3-cn.feishucdn.com/obj/ee-appcenter/5db94058d7ad/Feishu-linux_x64-${version}.deb";
+    sha256 = "sha256-/7KbWhhLAl1OTqRoqPaEpwZ6tb/UWGerw3Dlm+Y4ksc=";
+  };
 
-    buildInputs = [
-      gsettings-desktop-schemas
-      libdrm
-      mesa.drivers.dev
-      glib
-      gtk3
-      cairo
-      atk
-      gdk-pixbuf
-      at-spi2-atk
-      dbus
-      dconf
-      xorg.libX11
-      xorg.libxcb
-      xorg.libXi
-      xorg.libXcursor
-      xorg.libXdamage
-      xorg.libXrandr
-      xorg.libXcomposite
-      xorg.libXext
-      xorg.libXfixes
-      xorg.libXrender
-      xorg.libXtst
-      xorg.libXScrnSaver
-      xorg.libxshmfence
-      nss
-      nspr
-      alsa-lib
-      cups
-      fontconfig
-      expat
-    ];
-    nativeBuildInputs = [wrapGAppsHook autoPatchelfHook makeWrapper dpkg];
-    unpackPhase = "dpkg-deb --fsys-tarfile $src | tar -x --no-same-permissions --no-same-owner";
-    installPhase = ''
-      runHook preInstall
+  buildInputs = [
+    gsettings-desktop-schemas
+    libdrm
+    mesa.drivers.dev
+    glib
+    gtk3
+    cairo
+    atk
+    gdk-pixbuf
+    at-spi2-atk
+    dbus
+    dconf
+    xorg.libX11
+    xorg.libxcb
+    xorg.libXi
+    xorg.libXcursor
+    xorg.libXdamage
+    xorg.libXrandr
+    xorg.libXcomposite
+    xorg.libXext
+    xorg.libXfixes
+    xorg.libXrender
+    xorg.libXtst
+    xorg.libXScrnSaver
+    xorg.libxshmfence
+    nss
+    nspr
+    alsa-lib
+    cups
+    fontconfig
+    expat
+  ];
+  nativeBuildInputs = [
+    wrapGAppsHook
+    autoPatchelfHook
+    makeWrapper
+    dpkg
+  ];
+  unpackPhase = "dpkg-deb --fsys-tarfile $src | tar -x --no-same-permissions --no-same-owner";
+  installPhase = ''
+    runHook preInstall
 
-      mkdir -p $out/{bin,share/feishu,lib}
+    mkdir -p $out/{bin,share/feishu,lib}
 
-      mv opt/bytedance/feishu/* $out/share/feishu
-      mv usr/share/* $out/share/
+    mv opt/bytedance/feishu/* $out/share/feishu
+    mv usr/share/* $out/share/
 
-      substituteInPlace $out/share/applications/bytedance-feishu.desktop  \
-        --replace "/usr/bin/bytedance-feishu-stable %U" "$out/bin/feishu $U"
+    substituteInPlace $out/share/applications/bytedance-feishu.desktop  \
+      --replace "/usr/bin/bytedance-feishu-stable %U" "$out/bin/feishu $U"
 
-      runHook postInstall
-    '';
+    runHook postInstall
+  '';
 
-    dontWrapGApps = true;
+  dontWrapGApps = true;
 
-    runtimeLibs = lib.makeLibraryPath [libudev0-shim glibc libsecret nss];
+  runtimeLibs = lib.makeLibraryPath [
+    libudev0-shim
+    glibc
+    libsecret
+    nss
+  ];
 
-    preFixup = ''
-      makeWrapper $out/share/feishu/feishu $out/bin/feishu \
-        --prefix LD_LIBRARY_PATH : "${runtimeLibs}" \
-        "''${gappsWrapperArgs[@]}"
-    '';
-    enableParallelBuilding = true;
-  }
+  preFixup = ''
+    makeWrapper $out/share/feishu/feishu $out/bin/feishu \
+      --prefix LD_LIBRARY_PATH : "${runtimeLibs}" \
+      "''${gappsWrapperArgs[@]}"
+  '';
+  enableParallelBuilding = true;
+}

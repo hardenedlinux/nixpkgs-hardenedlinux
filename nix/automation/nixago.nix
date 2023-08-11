@@ -1,26 +1,23 @@
+{ inputs, cell }:
+let
+  inherit (inputs) std-ext;
+in
 {
-  inputs,
-  cell,
-}: let
-  inherit (inputs) std-data-collection;
-in {
   # mdbook = std.presets.nixago.mdbook {
   #   configData = {
   #     book.title = "nixpkgs hardenedlinux";
   #   };
   # };
 
-  treefmt = std-data-collection.data.configs.treefmt {
-    data.formatter.nix = {
-      excludes = [
-        "generated.nix"
-      ];
-    };
-    data.formatter.prettier = {
-      excludes = [
-        "generated.json"
-        "gomod2nix.toml"
-      ];
-    };
-  };
+  treefmt =
+    std-ext.preset.nixago.treefmt
+      {
+        data.formatter.prettier = {
+          excludes = [
+            "generated.json"
+            "gomod2nix.toml"
+          ];
+        };
+      }
+      std-ext.preset.configs.treefmt.nvfetcher;
 }

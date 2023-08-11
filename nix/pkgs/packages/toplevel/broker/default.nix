@@ -13,8 +13,17 @@
 stdenv.mkDerivation rec {
   name = "broker";
   inherit (nixpkgs-hardenedlinux-sources.broker) pname version src;
-  nativeBuildInputs = [cmake openssl];
-  buildInputs = [cmake gcc openssl caf ncurses5];
+  nativeBuildInputs = [
+    cmake
+    openssl
+  ];
+  buildInputs = [
+    cmake
+    gcc
+    openssl
+    caf
+    ncurses5
+  ];
   cmakeFlags = [
     "-DPY_MOD_INSTALL_DIR=${placeholder "out"}/${python3.sitePackages}"
     "-DCMAKE_SKIP_BUILD_RPATH=OFF"

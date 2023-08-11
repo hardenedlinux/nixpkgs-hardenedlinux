@@ -15,7 +15,11 @@ buildPythonPackage rec {
     sed -i 's#/usr/bin/env python#${python.interpreter}#' test.py
   '';
 
-  checkInputs = [coverage lsof glibcLocales];
+  checkInputs = [
+    coverage
+    lsof
+    glibcLocales
+  ];
 
   preCheck = ''
     export LC_ALL="en_US.UTF-8"

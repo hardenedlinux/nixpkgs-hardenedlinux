@@ -13,13 +13,20 @@
 gnustep.gsmakeDerivation rec {
   inherit (nixpkgs-hardenedlinux-sources.sslproxy) pname version src;
 
-  nativeBuildInputs = [openssl pkg-config];
+  nativeBuildInputs = [
+    openssl
+    pkg-config
+  ];
 
   LIBNET_BASE = libnet;
 
   PREFIX = "${placeholder "out"}";
 
-  buildInputs = [libevent libpcap sqlite];
+  buildInputs = [
+    libevent
+    libpcap
+    sqlite
+  ];
 
   enableParallelBuilding = true;
 

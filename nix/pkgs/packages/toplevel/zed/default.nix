@@ -7,7 +7,7 @@
 buildGoApplication rec {
   inherit (nixpkgs-hardenedlinux-sources.zed) pname src version;
   modules = ./gomod2nix.toml;
-  subPackages = ["cmd/*"];
+  subPackages = [ "cmd/*" ];
   go = go_1_19;
 
   doCheck = false;

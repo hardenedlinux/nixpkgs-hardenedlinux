@@ -8,7 +8,8 @@
   undmg,
   unzip,
   ...
-}: {
+}:
+{
   pname,
   version,
   appname ? pname,
@@ -16,7 +17,7 @@
   src,
   postInstall ? "",
   sourceRoot ? ".",
-  extraBuildInputs ? [],
+  extraBuildInputs ? [ ],
   description ? "",
   ...
 }:
@@ -24,7 +25,7 @@ stdenv.mkDerivation {
   name = "${pname}-${version}";
   version = "${version}";
   src = src;
-  buildInputs = [unzip];
+  buildInputs = [ unzip ];
   unpackCmd = ''
     echo "File to unpack: $curSrc"
     if ! [[ "$curSrc" =~ \.dmg$ ]]; then return 1; fi
@@ -49,17 +50,21 @@ stdenv.mkDerivation {
     (cd "$mnt"; cp -a !(Applications) "$DEST/")
   '';
   sourceRoot = sourceRoot;
-  phases = ["unpackPhase" "installPhase"];
+  phases = [
+    "unpackPhase"
+    "installPhase"
+  ];
   installPhase =
     ''
       mkdir -p "$out/Applications/${appname}.app"
       cp -a ./. "$out/Applications/${appname}.app/"
     ''
-    + postInstall;
+    + postInstall
+  ;
   meta = {
     description = description;
     homepage = homepage;
-    maintainers = ["ldeck <ldeck@example.com>"];
+    maintainers = [ "ldeck <ldeck@example.com>" ];
     platforms = lib.platforms.darwin;
   };
 }

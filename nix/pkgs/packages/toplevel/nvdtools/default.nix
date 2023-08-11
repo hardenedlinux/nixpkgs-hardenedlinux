@@ -8,7 +8,7 @@ buildGoApplication rec {
   inherit (nixpkgs-hardenedlinux-sources.nvdtools) pname version src;
   modules = ./gomod2nix.toml;
 
-  subPackages = ["cmd/*"];
+  subPackages = [ "cmd/*" ];
 
   passthru.update = update-scripts.gomod2nix {
     inherit src;

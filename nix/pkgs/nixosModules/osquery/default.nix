@@ -4,30 +4,32 @@
   lib,
   ...
 }:
-with lib; let
+with lib;
+let
   cfg = config.services.osquery-bin;
   configFile = pkgs.writeText "osquery.conf" (
     builtins.toJSON (
       recursiveUpdate
-      {
-        schedule = {
-          time_again = {
-            query = "select * from time;";
-            interval = 1;
+        {
+          schedule = {
+            time_again = {
+              query = "select * from time;";
+              interval = 1;
+            };
           };
-        };
-        options = {
-          config_plugin = "filesystem";
-          logger_plugin = "filesystem";
-          logger_path = cfg.loggerPath;
-          database_path = cfg.databasePath;
-          inherit (cfg) utc;
-        };
-      }
-      cfg.extraConfig
+          options = {
+            config_plugin = "filesystem";
+            logger_plugin = "filesystem";
+            logger_path = cfg.loggerPath;
+            database_path = cfg.databasePath;
+            inherit (cfg) utc;
+          };
+        }
+        cfg.extraConfig
     )
   );
-in {
+in
+{
   options = {
     services.osquery-bin = {
       enable = mkEnableOption "osquery";
@@ -39,8 +41,8 @@ in {
       flagsOption = mkOption {
         type = types.listOf types.str;
         description = "enable the feature with the corresponding CLI flags";
-        default = [];
-        example = ["--enable_file_events=true"];
+        default = [ ];
+        example = [ "--enable_file_events=true" ];
       };
       dataDir = mkOption {
         type = types.path;
@@ -73,22 +75,23 @@ in {
         default = "${cfg.dataDir}/osquery.em";
       };
       extraConfig = mkOption {
-        type =
-          types.attrs
-          // {
-            merge = loc: foldl' (res: def: recursiveUpdate res def.value) {};
-          };
+        type = types.attrs // {
+          merge = loc: foldl' (res: def: recursiveUpdate res def.value) { };
+        };
         description = "Extra config to be recursively merged into the JSON config file.";
-        default = {};
+        default = { };
       };
     };
   };
   config = mkIf cfg.enable {
-    environment.systemPackages = [cfg.package];
+    environment.systemPackages = [ cfg.package ];
     systemd.services.osquery = {
-      after = ["network.target" "syslog.service"];
-      wantedBy = ["multi-user.target"];
-      path = [pkgs.osquery-bin];
+      after = [
+        "network.target"
+        "syslog.service"
+      ];
+      wantedBy = [ "multi-user.target" ];
+      path = [ pkgs.osquery-bin ];
       script = ''
         if [[ ! -d "${cfg.dataDir}/log" ]];then
            mkdir -p ${cfg.dataDir}/log

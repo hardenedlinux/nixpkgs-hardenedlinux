@@ -14,9 +14,7 @@ buildPythonPackage {
     cd bindings/torch
   '';
 
-  propagatedBuildInputs = [
-    torch
-  ];
+  propagatedBuildInputs = [ torch ];
 
   meta = with lib; {
     description = "A tiny CUDA neural network library";
