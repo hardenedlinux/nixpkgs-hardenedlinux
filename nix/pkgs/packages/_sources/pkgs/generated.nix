@@ -3,15 +3,15 @@
 {
   broker = {
     pname = "broker";
-    version = "8dacaa358299a95e3c38fe479dbc348a69ed60a4";
+    version = "f9af5f0ed2b87e01790fe06a0658cc54f1c32974";
     src = fetchFromGitHub {
       owner = "zeek";
       repo = "broker";
-      rev = "8dacaa358299a95e3c38fe479dbc348a69ed60a4";
+      rev = "f9af5f0ed2b87e01790fe06a0658cc54f1c32974";
       fetchSubmodules = true;
-      sha256 = "sha256-MbmJem1RoFiRDtexgLvhhvClsvxuUDz8SLIMe5RQS9Q=";
+      sha256 = "sha256-whC02FxxkhSgXCewFcL0AL9pLCGjLHAp5azjKUNAteY=";
     };
-    date = "2023-07-31";
+    date = "2023-08-15";
   };
   caretaker = {
     pname = "caretaker";
@@ -26,15 +26,15 @@
   };
   chatgpt-next-web = {
     pname = "chatgpt-next-web";
-    version = "61852b4021448240d14af2178369da3ef5fd4f32";
+    version = "50eb7a5f98b094e955b5268a7154ce4e1f436c45";
     src = fetchFromGitHub {
       owner = "Yidadaa";
       repo = "ChatGPT-Next-Web";
-      rev = "61852b4021448240d14af2178369da3ef5fd4f32";
+      rev = "50eb7a5f98b094e955b5268a7154ce4e1f436c45";
       fetchSubmodules = false;
-      sha256 = "sha256-Nhj37KlmeUXbN8yY+R7RFmHsei/PoyRSESDx1nLqgWY=";
+      sha256 = "sha256-ZtNDo4g1NL/SPBcI+bMealVXIw8WMo8Sn/Pt3CtHHPw=";
     };
-    date = "2023-08-10";
+    date = "2023-08-18";
   };
   chatgpt-web = {
     pname = "chatgpt-web";
@@ -85,10 +85,10 @@
   };
   nix-unstable-installer = {
     pname = "nix-unstable-installer";
-    version = "nix-2.18.0pre20230803_635df5e";
+    version = "nix-2.18.0pre20230810_a1fdc68";
     src = fetchurl {
-      url = "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.18.0pre20230803_635df5e/install";
-      sha256 = "sha256-YMftZRzodp+dUZGY0faKWodkhvfDxx82cigPyCeuNjg=";
+      url = "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.18.0pre20230810_a1fdc68/install";
+      sha256 = "sha256-QHUH+joNNc5reirC8h6wBDzwToWFj5GCWrY7ix0+zhY=";
     };
   };
   osquery = {

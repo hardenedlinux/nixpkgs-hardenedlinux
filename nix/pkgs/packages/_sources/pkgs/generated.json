@@ -1,7 +1,7 @@
 {
     "broker": {
         "cargoLocks": null,
-        "date": "2023-07-31",
+        "date": "2023-08-15",
         "extract": null,
         "name": "broker",
         "passthru": null,
@@ -13,11 +13,11 @@
             "name": null,
             "owner": "zeek",
             "repo": "broker",
-            "rev": "8dacaa358299a95e3c38fe479dbc348a69ed60a4",
-            "sha256": "sha256-MbmJem1RoFiRDtexgLvhhvClsvxuUDz8SLIMe5RQS9Q=",
+            "rev": "f9af5f0ed2b87e01790fe06a0658cc54f1c32974",
+            "sha256": "sha256-whC02FxxkhSgXCewFcL0AL9pLCGjLHAp5azjKUNAteY=",
             "type": "github"
         },
-        "version": "8dacaa358299a95e3c38fe479dbc348a69ed60a4"
+        "version": "f9af5f0ed2b87e01790fe06a0658cc54f1c32974"
     },
     "caretaker": {
         "cargoLocks": null,
@@ -41,7 +41,7 @@
     },
     "chatgpt-next-web": {
         "cargoLocks": null,
-        "date": "2023-08-10",
+        "date": "2023-08-18",
         "extract": null,
         "name": "chatgpt-next-web",
         "passthru": null,
@@ -53,11 +53,11 @@
             "name": null,
             "owner": "Yidadaa",
             "repo": "ChatGPT-Next-Web",
-            "rev": "61852b4021448240d14af2178369da3ef5fd4f32",
-            "sha256": "sha256-Nhj37KlmeUXbN8yY+R7RFmHsei/PoyRSESDx1nLqgWY=",
+            "rev": "50eb7a5f98b094e955b5268a7154ce4e1f436c45",
+            "sha256": "sha256-ZtNDo4g1NL/SPBcI+bMealVXIw8WMo8Sn/Pt3CtHHPw=",
             "type": "github"
         },
-        "version": "61852b4021448240d14af2178369da3ef5fd4f32"
+        "version": "50eb7a5f98b094e955b5268a7154ce4e1f436c45"
     },
     "chatgpt-web": {
         "cargoLocks": null,
@@ -148,11 +148,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-YMftZRzodp+dUZGY0faKWodkhvfDxx82cigPyCeuNjg=",
+            "sha256": "sha256-QHUH+joNNc5reirC8h6wBDzwToWFj5GCWrY7ix0+zhY=",
             "type": "url",
-            "url": "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.18.0pre20230803_635df5e/install"
+            "url": "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.18.0pre20230810_a1fdc68/install"
         },
-        "version": "nix-2.18.0pre20230803_635df5e"
+        "version": "nix-2.18.0pre20230810_a1fdc68"
     },
     "osquery": {
         "cargoLocks": null,
