@@ -1,7 +1,7 @@
 {
     "broker": {
         "cargoLocks": null,
-        "date": "2023-08-15",
+        "date": "2023-08-24",
         "extract": null,
         "name": "broker",
         "passthru": null,
@@ -13,11 +13,11 @@
             "name": null,
             "owner": "zeek",
             "repo": "broker",
-            "rev": "f9af5f0ed2b87e01790fe06a0658cc54f1c32974",
-            "sha256": "sha256-whC02FxxkhSgXCewFcL0AL9pLCGjLHAp5azjKUNAteY=",
+            "rev": "db01d8f7640a8604f4fb6a1a2e44cd1d81dbbadb",
+            "sha256": "sha256-t/sTzfxFMsDzW2bJ+N7QjN3kvIyfYOEiQVCGTWx0Ybo=",
             "type": "github"
         },
-        "version": "f9af5f0ed2b87e01790fe06a0658cc54f1c32974"
+        "version": "db01d8f7640a8604f4fb6a1a2e44cd1d81dbbadb"
     },
     "caretaker": {
         "cargoLocks": null,
@@ -41,7 +41,7 @@
     },
     "chatgpt-next-web": {
         "cargoLocks": null,
-        "date": "2023-08-18",
+        "date": "2023-08-24",
         "extract": null,
         "name": "chatgpt-next-web",
         "passthru": null,
@@ -53,11 +53,11 @@
             "name": null,
             "owner": "Yidadaa",
             "repo": "ChatGPT-Next-Web",
-            "rev": "50eb7a5f98b094e955b5268a7154ce4e1f436c45",
-            "sha256": "sha256-ZtNDo4g1NL/SPBcI+bMealVXIw8WMo8Sn/Pt3CtHHPw=",
+            "rev": "b3fd56c2c11d69335f364622588c5ba59e1f4250",
+            "sha256": "sha256-HX/u3JH3vVb8dEFr6OlqwHLwtXC4C7GcWGqfxQeReno=",
             "type": "github"
         },
-        "version": "50eb7a5f98b094e955b5268a7154ce4e1f436c45"
+        "version": "b3fd56c2c11d69335f364622588c5ba59e1f4250"
     },
     "chatgpt-web": {
         "cargoLocks": null,
@@ -251,7 +251,7 @@
     },
     "zeek-language-server": {
         "cargoLocks": null,
-        "date": "2023-08-07",
+        "date": "2023-08-25",
         "extract": null,
         "name": "zeek-language-server",
         "passthru": null,
@@ -263,10 +263,10 @@
             "name": null,
             "owner": "bbannier",
             "repo": "zeek-language-server",
-            "rev": "02c0b9ce3cc1be4b2a4c37dd3c293fc42f8f42fd",
-            "sha256": "sha256-sJrVhETGZIYBB8gn0z2grcakgQI+jQciH3Xm/uNCok8=",
+            "rev": "126b21254886313050cafd8d67d207fcccf79736",
+            "sha256": "sha256-TWwOUyr/jHb17zZP6LxN7aFwy3bKB+3YsObUe2BCKUM=",
             "type": "github"
         },
-        "version": "02c0b9ce3cc1be4b2a4c37dd3c293fc42f8f42fd"
+        "version": "126b21254886313050cafd8d67d207fcccf79736"
     }
 }
