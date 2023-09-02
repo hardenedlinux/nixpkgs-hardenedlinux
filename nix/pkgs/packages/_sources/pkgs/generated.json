@@ -1,7 +1,7 @@
 {
     "broker": {
         "cargoLocks": null,
-        "date": "2023-08-24",
+        "date": "2023-08-28",
         "extract": null,
         "name": "broker",
         "passthru": null,
@@ -13,11 +13,11 @@
             "name": null,
             "owner": "zeek",
             "repo": "broker",
-            "rev": "db01d8f7640a8604f4fb6a1a2e44cd1d81dbbadb",
-            "sha256": "sha256-t/sTzfxFMsDzW2bJ+N7QjN3kvIyfYOEiQVCGTWx0Ybo=",
+            "rev": "21219561bd2db50f7da4c1b7c3d9e54fa56f9fba",
+            "sha256": "sha256-4mWkoG472y6dvyhzIxdPGA9lRcKPTzNeX2BVe5jveJA=",
             "type": "github"
         },
-        "version": "db01d8f7640a8604f4fb6a1a2e44cd1d81dbbadb"
+        "version": "21219561bd2db50f7da4c1b7c3d9e54fa56f9fba"
     },
     "caretaker": {
         "cargoLocks": null,
@@ -41,7 +41,7 @@
     },
     "chatgpt-next-web": {
         "cargoLocks": null,
-        "date": "2023-08-24",
+        "date": "2023-08-28",
         "extract": null,
         "name": "chatgpt-next-web",
         "passthru": null,
@@ -53,11 +53,11 @@
             "name": null,
             "owner": "Yidadaa",
             "repo": "ChatGPT-Next-Web",
-            "rev": "b3fd56c2c11d69335f364622588c5ba59e1f4250",
-            "sha256": "sha256-HX/u3JH3vVb8dEFr6OlqwHLwtXC4C7GcWGqfxQeReno=",
+            "rev": "1f94ae78889ea65e0a9483c0f233328fb48a6e7c",
+            "sha256": "sha256-gYI69aZ5gPFNE9ZEoNe+1vHfIonYHCYeuaqewT8sGZs=",
             "type": "github"
         },
-        "version": "b3fd56c2c11d69335f364622588c5ba59e1f4250"
+        "version": "1f94ae78889ea65e0a9483c0f233328fb48a6e7c"
     },
     "chatgpt-web": {
         "cargoLocks": null,
@@ -121,7 +121,7 @@
     },
     "koodo-reader": {
         "cargoLocks": null,
-        "date": "2023-07-29",
+        "date": "2023-08-27",
         "extract": null,
         "name": "koodo-reader",
         "passthru": null,
@@ -133,11 +133,11 @@
             "name": null,
             "owner": "troyeguo",
             "repo": "koodo-reader",
-            "rev": "07d780eedb2e9ed9e576a18f3b9d55ebd7766c68",
-            "sha256": "sha256-PIE0BBcrWJRAazzzBmIKZcTfUBicWMigYL5uMF8dbFY=",
+            "rev": "8e49ad663619b99cf38877bcc4c2c5f4a2e21b22",
+            "sha256": "sha256-HS+TNnjiSclsYMUKmvH6rT2d3SG3qTEZocIzBtljUFU=",
             "type": "github"
         },
-        "version": "07d780eedb2e9ed9e576a18f3b9d55ebd7766c68"
+        "version": "8e49ad663619b99cf38877bcc4c2c5f4a2e21b22"
     },
     "nix-unstable-installer": {
         "cargoLocks": null,
@@ -251,7 +251,7 @@
     },
     "zeek-language-server": {
         "cargoLocks": null,
-        "date": "2023-08-25",
+        "date": "2023-08-28",
         "extract": null,
         "name": "zeek-language-server",
         "passthru": null,
@@ -263,10 +263,10 @@
             "name": null,
             "owner": "bbannier",
             "repo": "zeek-language-server",
-            "rev": "126b21254886313050cafd8d67d207fcccf79736",
-            "sha256": "sha256-TWwOUyr/jHb17zZP6LxN7aFwy3bKB+3YsObUe2BCKUM=",
+            "rev": "938fc019dd21ea39717aeef64d41d9185a855dda",
+            "sha256": "sha256-hU46eQN0+/HECJkwTe+nqsPY6ylgAo2jUP2hmZIAqzY=",
             "type": "github"
         },
-        "version": "126b21254886313050cafd8d67d207fcccf79736"
+        "version": "938fc019dd21ea39717aeef64d41d9185a855dda"
     }
 }
