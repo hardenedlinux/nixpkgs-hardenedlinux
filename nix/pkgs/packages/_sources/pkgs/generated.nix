@@ -26,15 +26,15 @@
   };
   chatgpt-next-web = {
     pname = "chatgpt-next-web";
-    version = "f7a6fa987322d800bd058f7ffa2641361c53b12d";
+    version = "3e1514239ccd6bb1c8890684dbac7328ab72a307";
     src = fetchFromGitHub {
       owner = "Yidadaa";
       repo = "ChatGPT-Next-Web";
-      rev = "f7a6fa987322d800bd058f7ffa2641361c53b12d";
+      rev = "3e1514239ccd6bb1c8890684dbac7328ab72a307";
       fetchSubmodules = false;
-      sha256 = "sha256-1a0w+U5/aRN4nmCLzvW57kUiKBBwCRiHqonFRe0NDkI=";
+      sha256 = "sha256-AXPD/7UBPrOnUq4z190hoPPLTmkwRP3C+1O+YYnSsLw=";
     };
-    date = "2023-09-07";
+    date = "2023-09-15";
   };
   chatgpt-web = {
     pname = "chatgpt-web";
@@ -73,15 +73,15 @@
   };
   koodo-reader = {
     pname = "koodo-reader";
-    version = "422f998250142313a65fc8ef29ece82b68be354d";
+    version = "09df0f7dc4bd6312d9434e516b71452063f7a51c";
     src = fetchFromGitHub {
       owner = "troyeguo";
       repo = "koodo-reader";
-      rev = "422f998250142313a65fc8ef29ece82b68be354d";
+      rev = "09df0f7dc4bd6312d9434e516b71452063f7a51c";
       fetchSubmodules = false;
-      sha256 = "sha256-I5AlZp+WQ8JoqNuARWdkkDHdgXvDYcKjz5z005iCZdU=";
+      sha256 = "sha256-bTtGetV9uLSQY1GdP7fUSIG/QT2exM9c8eiOVNk5UUc=";
     };
-    date = "2023-09-03";
+    date = "2023-09-10";
   };
   nix-unstable-installer = {
     pname = "nix-unstable-installer";
@@ -149,14 +149,14 @@
   };
   zeek-language-server = {
     pname = "zeek-language-server";
-    version = "621d0a73b1b8fbf8ec4743b5d9f34aa48e3b8496";
+    version = "a6811829c12ef4302dde0f5500fbb0d7cd65fed6";
     src = fetchFromGitHub {
       owner = "bbannier";
       repo = "zeek-language-server";
-      rev = "621d0a73b1b8fbf8ec4743b5d9f34aa48e3b8496";
+      rev = "a6811829c12ef4302dde0f5500fbb0d7cd65fed6";
       fetchSubmodules = true;
-      sha256 = "sha256-rf6JNro41NOftT/5PB9bH/lG1TFcd+o240SB+ObYROI=";
+      sha256 = "sha256-eHIf3re05xFKTsmzojMfJUNKavjyxY+xcWt+lYT8RF8=";
     };
-    date = "2023-09-06";
+    date = "2023-09-11";
   };
 }
