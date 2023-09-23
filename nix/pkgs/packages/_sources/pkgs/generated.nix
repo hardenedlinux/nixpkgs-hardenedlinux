@@ -26,15 +26,15 @@
   };
   chatgpt-next-web = {
     pname = "chatgpt-next-web";
-    version = "3e1514239ccd6bb1c8890684dbac7328ab72a307";
+    version = "23eb7732d7011ce9476ab6309c92509e094fca81";
     src = fetchFromGitHub {
       owner = "Yidadaa";
       repo = "ChatGPT-Next-Web";
-      rev = "3e1514239ccd6bb1c8890684dbac7328ab72a307";
+      rev = "23eb7732d7011ce9476ab6309c92509e094fca81";
       fetchSubmodules = false;
-      sha256 = "sha256-AXPD/7UBPrOnUq4z190hoPPLTmkwRP3C+1O+YYnSsLw=";
+      sha256 = "sha256-2CM3lHtBusPGJ0eVziwAdWX64EwfB0F0Dfa4m/Yelzg=";
     };
-    date = "2023-09-15";
+    date = "2023-09-20";
   };
   chatgpt-web = {
     pname = "chatgpt-web";
@@ -73,15 +73,15 @@
   };
   koodo-reader = {
     pname = "koodo-reader";
-    version = "09df0f7dc4bd6312d9434e516b71452063f7a51c";
+    version = "34704fa6e2e16bd88f7a45a47765490ba99f56f1";
     src = fetchFromGitHub {
       owner = "troyeguo";
       repo = "koodo-reader";
-      rev = "09df0f7dc4bd6312d9434e516b71452063f7a51c";
+      rev = "34704fa6e2e16bd88f7a45a47765490ba99f56f1";
       fetchSubmodules = false;
-      sha256 = "sha256-bTtGetV9uLSQY1GdP7fUSIG/QT2exM9c8eiOVNk5UUc=";
+      sha256 = "sha256-UdKxsqgm5aViwT1PBt6Zrufge9BSyF3NibpP7HSNmew=";
     };
-    date = "2023-09-10";
+    date = "2023-09-16";
   };
   nix-unstable-installer = {
     pname = "nix-unstable-installer";

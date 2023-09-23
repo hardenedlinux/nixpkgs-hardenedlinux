@@ -41,7 +41,7 @@
     },
     "chatgpt-next-web": {
         "cargoLocks": null,
-        "date": "2023-09-15",
+        "date": "2023-09-20",
         "extract": null,
         "name": "chatgpt-next-web",
         "passthru": null,
@@ -53,11 +53,11 @@
             "name": null,
             "owner": "Yidadaa",
             "repo": "ChatGPT-Next-Web",
-            "rev": "3e1514239ccd6bb1c8890684dbac7328ab72a307",
-            "sha256": "sha256-AXPD/7UBPrOnUq4z190hoPPLTmkwRP3C+1O+YYnSsLw=",
+            "rev": "23eb7732d7011ce9476ab6309c92509e094fca81",
+            "sha256": "sha256-2CM3lHtBusPGJ0eVziwAdWX64EwfB0F0Dfa4m/Yelzg=",
             "type": "github"
         },
-        "version": "3e1514239ccd6bb1c8890684dbac7328ab72a307"
+        "version": "23eb7732d7011ce9476ab6309c92509e094fca81"
     },
     "chatgpt-web": {
         "cargoLocks": null,
@@ -121,7 +121,7 @@
     },
     "koodo-reader": {
         "cargoLocks": null,
-        "date": "2023-09-10",
+        "date": "2023-09-16",
         "extract": null,
         "name": "koodo-reader",
         "passthru": null,
@@ -133,11 +133,11 @@
             "name": null,
             "owner": "troyeguo",
             "repo": "koodo-reader",
-            "rev": "09df0f7dc4bd6312d9434e516b71452063f7a51c",
-            "sha256": "sha256-bTtGetV9uLSQY1GdP7fUSIG/QT2exM9c8eiOVNk5UUc=",
+            "rev": "34704fa6e2e16bd88f7a45a47765490ba99f56f1",
+            "sha256": "sha256-UdKxsqgm5aViwT1PBt6Zrufge9BSyF3NibpP7HSNmew=",
             "type": "github"
         },
-        "version": "09df0f7dc4bd6312d9434e516b71452063f7a51c"
+        "version": "34704fa6e2e16bd88f7a45a47765490ba99f56f1"
     },
     "nix-unstable-installer": {
         "cargoLocks": null,
