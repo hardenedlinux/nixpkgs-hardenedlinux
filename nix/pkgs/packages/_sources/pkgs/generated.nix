@@ -26,27 +26,27 @@
   };
   chatgpt-next-web = {
     pname = "chatgpt-next-web";
-    version = "23eb7732d7011ce9476ab6309c92509e094fca81";
+    version = "144200e315bb37f05073ffad5c58fee4ea3b4a88";
     src = fetchFromGitHub {
       owner = "Yidadaa";
       repo = "ChatGPT-Next-Web";
-      rev = "23eb7732d7011ce9476ab6309c92509e094fca81";
+      rev = "144200e315bb37f05073ffad5c58fee4ea3b4a88";
       fetchSubmodules = false;
-      sha256 = "sha256-2CM3lHtBusPGJ0eVziwAdWX64EwfB0F0Dfa4m/Yelzg=";
+      sha256 = "sha256-//zAT8SzgaD32Vqtmwr3HL+h+Mn67NeaS9UFFByxE3g=";
     };
-    date = "2023-09-20";
+    date = "2023-09-27";
   };
   chatgpt-web = {
     pname = "chatgpt-web";
-    version = "2b2efe2f1505653c34da7ad51a8e29e4a8c3ea66";
+    version = "a6f670101ac41ca903f3a06876f13051ca3bffd3";
     src = fetchFromGitHub {
       owner = "Chanzhaoyu";
       repo = "chatgpt-web";
-      rev = "2b2efe2f1505653c34da7ad51a8e29e4a8c3ea66";
+      rev = "a6f670101ac41ca903f3a06876f13051ca3bffd3";
       fetchSubmodules = false;
-      sha256 = "sha256-Gkm/SygqCfz03uPr5ZcggsgH/Xze0UdJzhcDwwxj3Lo=";
+      sha256 = "sha256-OBnTs+fbHbRARari9UsnQBZU2361B5WfBnXfqXS7Nw0=";
     };
-    date = "2023-08-09";
+    date = "2023-09-26";
   };
   firecracker-task-driver = {
     pname = "firecracker-task-driver";
@@ -73,22 +73,22 @@
   };
   koodo-reader = {
     pname = "koodo-reader";
-    version = "34704fa6e2e16bd88f7a45a47765490ba99f56f1";
+    version = "5955c67910ccc439f5e61ef26402fd46feec0977";
     src = fetchFromGitHub {
       owner = "troyeguo";
       repo = "koodo-reader";
-      rev = "34704fa6e2e16bd88f7a45a47765490ba99f56f1";
+      rev = "5955c67910ccc439f5e61ef26402fd46feec0977";
       fetchSubmodules = false;
-      sha256 = "sha256-UdKxsqgm5aViwT1PBt6Zrufge9BSyF3NibpP7HSNmew=";
+      sha256 = "sha256-wbGn9Ir/SRXKcvSvNIteaLS+Ei96r9sT2f7uvQ8+dVQ=";
     };
-    date = "2023-09-16";
+    date = "2023-09-24";
   };
   nix-unstable-installer = {
     pname = "nix-unstable-installer";
-    version = "nix-2.18.0pre20230810_a1fdc68";
+    version = "nix-2.19.0pre20230921_2d2aff5";
     src = fetchurl {
-      url = "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.18.0pre20230810_a1fdc68/install";
-      sha256 = "sha256-QHUH+joNNc5reirC8h6wBDzwToWFj5GCWrY7ix0+zhY=";
+      url = "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.19.0pre20230921_2d2aff5/install";
+      sha256 = "sha256-xV4GvEgA1Jmf6i40L4XMWTRqlj6mJSaww6fKqAiWimo=";
     };
   };
   osquery = {
@@ -149,14 +149,14 @@
   };
   zeek-language-server = {
     pname = "zeek-language-server";
-    version = "a6811829c12ef4302dde0f5500fbb0d7cd65fed6";
+    version = "fe748b7927be045539c3eab68119116809fea87a";
     src = fetchFromGitHub {
       owner = "bbannier";
       repo = "zeek-language-server";
-      rev = "a6811829c12ef4302dde0f5500fbb0d7cd65fed6";
+      rev = "fe748b7927be045539c3eab68119116809fea87a";
       fetchSubmodules = true;
-      sha256 = "sha256-eHIf3re05xFKTsmzojMfJUNKavjyxY+xcWt+lYT8RF8=";
+      sha256 = "sha256-fIi8kgLM+wjGGRfdtiocQSt67zDbim116w2OzaAz3oc=";
     };
-    date = "2023-09-11";
+    date = "2023-09-25";
   };
 }
