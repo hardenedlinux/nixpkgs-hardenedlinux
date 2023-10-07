@@ -38,15 +38,15 @@
   };
   chatgpt-web = {
     pname = "chatgpt-web";
-    version = "a6f670101ac41ca903f3a06876f13051ca3bffd3";
+    version = "34825654816a412a287a2fb45b9f6ad4fb461515";
     src = fetchFromGitHub {
       owner = "Chanzhaoyu";
       repo = "chatgpt-web";
-      rev = "a6f670101ac41ca903f3a06876f13051ca3bffd3";
+      rev = "34825654816a412a287a2fb45b9f6ad4fb461515";
       fetchSubmodules = false;
-      sha256 = "sha256-OBnTs+fbHbRARari9UsnQBZU2361B5WfBnXfqXS7Nw0=";
+      sha256 = "sha256-D7Xgr46eMmac5AjWbD7BbkuEQh8ESan6/1c6tVuuLVI=";
     };
-    date = "2023-09-26";
+    date = "2023-10-07";
   };
   firecracker-task-driver = {
     pname = "firecracker-task-driver";
@@ -149,14 +149,14 @@
   };
   zeek-language-server = {
     pname = "zeek-language-server";
-    version = "fe748b7927be045539c3eab68119116809fea87a";
+    version = "208c6fb354c3a90a8032aef3e3a19c6a6b7447f4";
     src = fetchFromGitHub {
       owner = "bbannier";
       repo = "zeek-language-server";
-      rev = "fe748b7927be045539c3eab68119116809fea87a";
+      rev = "208c6fb354c3a90a8032aef3e3a19c6a6b7447f4";
       fetchSubmodules = true;
-      sha256 = "sha256-fIi8kgLM+wjGGRfdtiocQSt67zDbim116w2OzaAz3oc=";
+      sha256 = "sha256-RfrUmZalcotmYV3JdRdHu9e42/s9hoj5fUwY4UHKCkA=";
     };
-    date = "2023-09-25";
+    date = "2023-10-02";
   };
 }
