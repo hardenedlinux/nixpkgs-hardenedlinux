@@ -1,7 +1,7 @@
 {
     "broker": {
         "cargoLocks": null,
-        "date": "2023-08-28",
+        "date": "2023-10-13",
         "extract": null,
         "name": "broker",
         "passthru": null,
@@ -13,11 +13,11 @@
             "name": null,
             "owner": "zeek",
             "repo": "broker",
-            "rev": "21219561bd2db50f7da4c1b7c3d9e54fa56f9fba",
-            "sha256": "sha256-4mWkoG472y6dvyhzIxdPGA9lRcKPTzNeX2BVe5jveJA=",
+            "rev": "86ed39b80c272cff44bb95f58eeda1bc5ff6f65c",
+            "sha256": "sha256-/rRTicBsSQR1G+wpDZigpp9+BJIgS6tRLwJjpTzXwVA=",
             "type": "github"
         },
-        "version": "21219561bd2db50f7da4c1b7c3d9e54fa56f9fba"
+        "version": "86ed39b80c272cff44bb95f58eeda1bc5ff6f65c"
     },
     "caretaker": {
         "cargoLocks": null,
@@ -41,7 +41,7 @@
     },
     "chatgpt-next-web": {
         "cargoLocks": null,
-        "date": "2023-09-27",
+        "date": "2023-10-13",
         "extract": null,
         "name": "chatgpt-next-web",
         "passthru": null,
@@ -53,15 +53,15 @@
             "name": null,
             "owner": "Yidadaa",
             "repo": "ChatGPT-Next-Web",
-            "rev": "144200e315bb37f05073ffad5c58fee4ea3b4a88",
-            "sha256": "sha256-//zAT8SzgaD32Vqtmwr3HL+h+Mn67NeaS9UFFByxE3g=",
+            "rev": "06e043d3f1979c92d9fb0bd8068a78ffaaa9f108",
+            "sha256": "sha256-OoBPbNgxWXlgMbAoHWFGTnok8GC4ddl4erHAfUVwOBY=",
             "type": "github"
         },
-        "version": "144200e315bb37f05073ffad5c58fee4ea3b4a88"
+        "version": "06e043d3f1979c92d9fb0bd8068a78ffaaa9f108"
     },
     "chatgpt-web": {
         "cargoLocks": null,
-        "date": "2023-10-07",
+        "date": "2023-10-11",
         "extract": null,
         "name": "chatgpt-web",
         "passthru": null,
@@ -73,11 +73,11 @@
             "name": null,
             "owner": "Chanzhaoyu",
             "repo": "chatgpt-web",
-            "rev": "34825654816a412a287a2fb45b9f6ad4fb461515",
-            "sha256": "sha256-D7Xgr46eMmac5AjWbD7BbkuEQh8ESan6/1c6tVuuLVI=",
+            "rev": "a6605e8a57750903f2a720ead630e25368667309",
+            "sha256": "sha256-zueRv9ztYbyrV1L0QbUFr9dtneGeWCH7v8CfNknFaeA=",
             "type": "github"
         },
-        "version": "34825654816a412a287a2fb45b9f6ad4fb461515"
+        "version": "a6605e8a57750903f2a720ead630e25368667309"
     },
     "firecracker-task-driver": {
         "cargoLocks": null,
@@ -148,11 +148,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-xV4GvEgA1Jmf6i40L4XMWTRqlj6mJSaww6fKqAiWimo=",
+            "sha256": "sha256-N+n9XkMrAF35SW26AwWSLBKVVwVNWUeVvR3w/cVJvi4=",
             "type": "url",
-            "url": "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.19.0pre20230921_2d2aff5/install"
+            "url": "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.19.0pre20231007_c29b8ba/install"
         },
-        "version": "nix-2.19.0pre20230921_2d2aff5"
+        "version": "nix-2.19.0pre20231007_c29b8ba"
     },
     "osquery": {
         "cargoLocks": null,
@@ -251,7 +251,7 @@
     },
     "zeek-language-server": {
         "cargoLocks": null,
-        "date": "2023-10-02",
+        "date": "2023-10-09",
         "extract": null,
         "name": "zeek-language-server",
         "passthru": null,
@@ -263,10 +263,10 @@
             "name": null,
             "owner": "bbannier",
             "repo": "zeek-language-server",
-            "rev": "208c6fb354c3a90a8032aef3e3a19c6a6b7447f4",
-            "sha256": "sha256-RfrUmZalcotmYV3JdRdHu9e42/s9hoj5fUwY4UHKCkA=",
+            "rev": "f9c3bc3a37f9df9d7a0a5034a5f5a0ca62b54497",
+            "sha256": "sha256-COaYsQiBgJ3X7DFJBJKjVUWSR6fyij+dMGcSOG0291g=",
             "type": "github"
         },
-        "version": "208c6fb354c3a90a8032aef3e3a19c6a6b7447f4"
+        "version": "f9c3bc3a37f9df9d7a0a5034a5f5a0ca62b54497"
     }
 }
