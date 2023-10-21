@@ -26,15 +26,15 @@
   };
   chatgpt-next-web = {
     pname = "chatgpt-next-web";
-    version = "06e043d3f1979c92d9fb0bd8068a78ffaaa9f108";
+    version = "cc565cf57ebedc6d59483e37b7633349426ff510";
     src = fetchFromGitHub {
       owner = "Yidadaa";
       repo = "ChatGPT-Next-Web";
-      rev = "06e043d3f1979c92d9fb0bd8068a78ffaaa9f108";
+      rev = "cc565cf57ebedc6d59483e37b7633349426ff510";
       fetchSubmodules = false;
-      sha256 = "sha256-OoBPbNgxWXlgMbAoHWFGTnok8GC4ddl4erHAfUVwOBY=";
+      sha256 = "sha256-ThSnis7QU0RKcD47mv8QpClCwTkXrWsPODo/W8mRbL4=";
     };
-    date = "2023-10-13";
+    date = "2023-10-16";
   };
   chatgpt-web = {
     pname = "chatgpt-web";
@@ -62,13 +62,13 @@
   };
   gptcommit = {
     pname = "gptcommit";
-    version = "v0.5.13";
+    version = "v0.5.14";
     src = fetchFromGitHub {
       owner = "zurawiki";
       repo = "gptcommit";
-      rev = "v0.5.13";
+      rev = "v0.5.14";
       fetchSubmodules = false;
-      sha256 = "sha256-O0dqLN2wDXRIVcb9whlzK0BJOm/qhTH+nLpCwSUObng=";
+      sha256 = "sha256-xjaFr1y2Fd7IWbJlegnIsfS5/oMJYd6QTnwp7IK17xM=";
     };
   };
   koodo-reader = {
@@ -85,10 +85,10 @@
   };
   nix-unstable-installer = {
     pname = "nix-unstable-installer";
-    version = "nix-2.19.0pre20231007_c29b8ba";
+    version = "nix-2.19.0pre20231009_aaef47a";
     src = fetchurl {
-      url = "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.19.0pre20231007_c29b8ba/install";
-      sha256 = "sha256-N+n9XkMrAF35SW26AwWSLBKVVwVNWUeVvR3w/cVJvi4=";
+      url = "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.19.0pre20231009_aaef47a/install";
+      sha256 = "sha256-YjDbyBrFH13n78IQKCSEefie+QgKGwVTXF2xW1wT+20=";
     };
   };
   osquery = {

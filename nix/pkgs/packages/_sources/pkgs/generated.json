@@ -41,7 +41,7 @@
     },
     "chatgpt-next-web": {
         "cargoLocks": null,
-        "date": "2023-10-13",
+        "date": "2023-10-16",
         "extract": null,
         "name": "chatgpt-next-web",
         "passthru": null,
@@ -53,11 +53,11 @@
             "name": null,
             "owner": "Yidadaa",
             "repo": "ChatGPT-Next-Web",
-            "rev": "06e043d3f1979c92d9fb0bd8068a78ffaaa9f108",
-            "sha256": "sha256-OoBPbNgxWXlgMbAoHWFGTnok8GC4ddl4erHAfUVwOBY=",
+            "rev": "cc565cf57ebedc6d59483e37b7633349426ff510",
+            "sha256": "sha256-ThSnis7QU0RKcD47mv8QpClCwTkXrWsPODo/W8mRbL4=",
             "type": "github"
         },
-        "version": "06e043d3f1979c92d9fb0bd8068a78ffaaa9f108"
+        "version": "cc565cf57ebedc6d59483e37b7633349426ff510"
     },
     "chatgpt-web": {
         "cargoLocks": null,
@@ -113,11 +113,11 @@
             "name": null,
             "owner": "zurawiki",
             "repo": "gptcommit",
-            "rev": "v0.5.13",
-            "sha256": "sha256-O0dqLN2wDXRIVcb9whlzK0BJOm/qhTH+nLpCwSUObng=",
+            "rev": "v0.5.14",
+            "sha256": "sha256-xjaFr1y2Fd7IWbJlegnIsfS5/oMJYd6QTnwp7IK17xM=",
             "type": "github"
         },
-        "version": "v0.5.13"
+        "version": "v0.5.14"
     },
     "koodo-reader": {
         "cargoLocks": null,
@@ -148,11 +148,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-N+n9XkMrAF35SW26AwWSLBKVVwVNWUeVvR3w/cVJvi4=",
+            "sha256": "sha256-YjDbyBrFH13n78IQKCSEefie+QgKGwVTXF2xW1wT+20=",
             "type": "url",
-            "url": "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.19.0pre20231007_c29b8ba/install"
+            "url": "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.19.0pre20231009_aaef47a/install"
         },
-        "version": "nix-2.19.0pre20231007_c29b8ba"
+        "version": "nix-2.19.0pre20231009_aaef47a"
     },
     "osquery": {
         "cargoLocks": null,
