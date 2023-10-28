@@ -41,7 +41,7 @@
     },
     "chatgpt-next-web": {
         "cargoLocks": null,
-        "date": "2023-10-16",
+        "date": "2023-10-26",
         "extract": null,
         "name": "chatgpt-next-web",
         "passthru": null,
@@ -53,11 +53,11 @@
             "name": null,
             "owner": "Yidadaa",
             "repo": "ChatGPT-Next-Web",
-            "rev": "cc565cf57ebedc6d59483e37b7633349426ff510",
-            "sha256": "sha256-ThSnis7QU0RKcD47mv8QpClCwTkXrWsPODo/W8mRbL4=",
+            "rev": "b90dfb48ee0446fdcb567dae2b77220508f62f0d",
+            "sha256": "sha256-Hm5RFETFBtsqYrUXsymUuPWgQGIgalepAKS8iG20otE=",
             "type": "github"
         },
-        "version": "cc565cf57ebedc6d59483e37b7633349426ff510"
+        "version": "b90dfb48ee0446fdcb567dae2b77220508f62f0d"
     },
     "chatgpt-web": {
         "cargoLocks": null,
@@ -148,11 +148,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-YjDbyBrFH13n78IQKCSEefie+QgKGwVTXF2xW1wT+20=",
+            "sha256": "sha256-S/UCAc5iIc3+i9AUer3TZpGBZmYHaSv7kf/xFaGu4lU=",
             "type": "url",
-            "url": "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.19.0pre20231009_aaef47a/install"
+            "url": "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.19.0pre20231020_97a0c08/install"
         },
-        "version": "nix-2.19.0pre20231009_aaef47a"
+        "version": "nix-2.19.0pre20231020_97a0c08"
     },
     "osquery": {
         "cargoLocks": null,
@@ -211,7 +211,7 @@
     },
     "watchexec-simple": {
         "cargoLocks": null,
-        "date": "2023-07-03",
+        "date": "2023-10-24",
         "extract": null,
         "name": "watchexec-simple",
         "passthru": null,
@@ -223,11 +223,11 @@
             "name": null,
             "owner": "kurtbuilds",
             "repo": "watchexec-simple",
-            "rev": "7c4828fa41d9c0e61b8915c9a2131eae40e2ca6b",
-            "sha256": "sha256-Ku/sZkOCAhE8bM+9qofhFC64SenbbPLWWe60xIfC3nU=",
+            "rev": "68eee93f60cf574403b1fc97b73e42cf8e6d92e9",
+            "sha256": "sha256-lvC79sFODEfKeZ7bTMrQIUpWQ/zFw9JyLz2lymmdQ0M=",
             "type": "github"
         },
-        "version": "7c4828fa41d9c0e61b8915c9a2131eae40e2ca6b"
+        "version": "68eee93f60cf574403b1fc97b73e42cf8e6d92e9"
     },
     "yakgpt": {
         "cargoLocks": null,
@@ -251,7 +251,7 @@
     },
     "zeek-language-server": {
         "cargoLocks": null,
-        "date": "2023-10-09",
+        "date": "2023-10-23",
         "extract": null,
         "name": "zeek-language-server",
         "passthru": null,
@@ -263,10 +263,10 @@
             "name": null,
             "owner": "bbannier",
             "repo": "zeek-language-server",
-            "rev": "f9c3bc3a37f9df9d7a0a5034a5f5a0ca62b54497",
-            "sha256": "sha256-COaYsQiBgJ3X7DFJBJKjVUWSR6fyij+dMGcSOG0291g=",
+            "rev": "7844f04516857f3b20dab5ea8caab7de3254ff94",
+            "sha256": "sha256-b1JmlElY4yKMO7J6uSUab9LNa2oBxkeGMGZWILjbgac=",
             "type": "github"
         },
-        "version": "f9c3bc3a37f9df9d7a0a5034a5f5a0ca62b54497"
+        "version": "7844f04516857f3b20dab5ea8caab7de3254ff94"
     }
 }

@@ -26,15 +26,15 @@
   };
   chatgpt-next-web = {
     pname = "chatgpt-next-web";
-    version = "cc565cf57ebedc6d59483e37b7633349426ff510";
+    version = "b90dfb48ee0446fdcb567dae2b77220508f62f0d";
     src = fetchFromGitHub {
       owner = "Yidadaa";
       repo = "ChatGPT-Next-Web";
-      rev = "cc565cf57ebedc6d59483e37b7633349426ff510";
+      rev = "b90dfb48ee0446fdcb567dae2b77220508f62f0d";
       fetchSubmodules = false;
-      sha256 = "sha256-ThSnis7QU0RKcD47mv8QpClCwTkXrWsPODo/W8mRbL4=";
+      sha256 = "sha256-Hm5RFETFBtsqYrUXsymUuPWgQGIgalepAKS8iG20otE=";
     };
-    date = "2023-10-16";
+    date = "2023-10-26";
   };
   chatgpt-web = {
     pname = "chatgpt-web";
@@ -85,10 +85,10 @@
   };
   nix-unstable-installer = {
     pname = "nix-unstable-installer";
-    version = "nix-2.19.0pre20231009_aaef47a";
+    version = "nix-2.19.0pre20231020_97a0c08";
     src = fetchurl {
-      url = "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.19.0pre20231009_aaef47a/install";
-      sha256 = "sha256-YjDbyBrFH13n78IQKCSEefie+QgKGwVTXF2xW1wT+20=";
+      url = "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.19.0pre20231020_97a0c08/install";
+      sha256 = "sha256-S/UCAc5iIc3+i9AUer3TZpGBZmYHaSv7kf/xFaGu4lU=";
     };
   };
   osquery = {
@@ -125,15 +125,15 @@
   };
   watchexec-simple = {
     pname = "watchexec-simple";
-    version = "7c4828fa41d9c0e61b8915c9a2131eae40e2ca6b";
+    version = "68eee93f60cf574403b1fc97b73e42cf8e6d92e9";
     src = fetchFromGitHub {
       owner = "kurtbuilds";
       repo = "watchexec-simple";
-      rev = "7c4828fa41d9c0e61b8915c9a2131eae40e2ca6b";
+      rev = "68eee93f60cf574403b1fc97b73e42cf8e6d92e9";
       fetchSubmodules = false;
-      sha256 = "sha256-Ku/sZkOCAhE8bM+9qofhFC64SenbbPLWWe60xIfC3nU=";
+      sha256 = "sha256-lvC79sFODEfKeZ7bTMrQIUpWQ/zFw9JyLz2lymmdQ0M=";
     };
-    date = "2023-07-03";
+    date = "2023-10-24";
   };
   yakgpt = {
     pname = "yakgpt";
@@ -149,14 +149,14 @@
   };
   zeek-language-server = {
     pname = "zeek-language-server";
-    version = "f9c3bc3a37f9df9d7a0a5034a5f5a0ca62b54497";
+    version = "7844f04516857f3b20dab5ea8caab7de3254ff94";
     src = fetchFromGitHub {
       owner = "bbannier";
       repo = "zeek-language-server";
-      rev = "f9c3bc3a37f9df9d7a0a5034a5f5a0ca62b54497";
+      rev = "7844f04516857f3b20dab5ea8caab7de3254ff94";
       fetchSubmodules = true;
-      sha256 = "sha256-COaYsQiBgJ3X7DFJBJKjVUWSR6fyij+dMGcSOG0291g=";
+      sha256 = "sha256-b1JmlElY4yKMO7J6uSUab9LNa2oBxkeGMGZWILjbgac=";
     };
-    date = "2023-10-09";
+    date = "2023-10-23";
   };
 }
