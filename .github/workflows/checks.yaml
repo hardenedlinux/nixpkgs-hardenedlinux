@@ -19,7 +19,7 @@ jobs:
           fetch-depth: 0
 
 
-      - uses: nixbuild/nix-quick-install-action@v25
+      - uses: nixbuild/nix-quick-install-action@v26
       - uses: DeterminateSystems/magic-nix-cache-action@main
 
         # CI workflows
