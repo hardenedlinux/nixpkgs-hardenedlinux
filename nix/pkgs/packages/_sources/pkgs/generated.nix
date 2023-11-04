@@ -73,22 +73,22 @@
   };
   koodo-reader = {
     pname = "koodo-reader";
-    version = "5955c67910ccc439f5e61ef26402fd46feec0977";
+    version = "0a99508155e45fcb60df0f2a8b3c69195c3cd3ec";
     src = fetchFromGitHub {
       owner = "troyeguo";
       repo = "koodo-reader";
-      rev = "5955c67910ccc439f5e61ef26402fd46feec0977";
+      rev = "0a99508155e45fcb60df0f2a8b3c69195c3cd3ec";
       fetchSubmodules = false;
-      sha256 = "sha256-wbGn9Ir/SRXKcvSvNIteaLS+Ei96r9sT2f7uvQ8+dVQ=";
+      sha256 = "sha256-8n2311CrMH7Q2+Tm6MlVO39i83cFItKHWYFj6K9SGao=";
     };
-    date = "2023-09-24";
+    date = "2023-10-30";
   };
   nix-unstable-installer = {
     pname = "nix-unstable-installer";
-    version = "nix-2.19.0pre20231020_97a0c08";
+    version = "nix-2.19.0pre20231026_1dc6a65";
     src = fetchurl {
-      url = "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.19.0pre20231020_97a0c08/install";
-      sha256 = "sha256-S/UCAc5iIc3+i9AUer3TZpGBZmYHaSv7kf/xFaGu4lU=";
+      url = "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.19.0pre20231026_1dc6a65/install";
+      sha256 = "sha256-LR46TTKHcUEVJNLudd1a97zmtBsMG7VNQ776WJOivKU=";
     };
   };
   osquery = {
@@ -149,14 +149,14 @@
   };
   zeek-language-server = {
     pname = "zeek-language-server";
-    version = "7844f04516857f3b20dab5ea8caab7de3254ff94";
+    version = "e9e28406875b6c04fe07643c2b045842a6cc4be1";
     src = fetchFromGitHub {
       owner = "bbannier";
       repo = "zeek-language-server";
-      rev = "7844f04516857f3b20dab5ea8caab7de3254ff94";
+      rev = "e9e28406875b6c04fe07643c2b045842a6cc4be1";
       fetchSubmodules = true;
-      sha256 = "sha256-b1JmlElY4yKMO7J6uSUab9LNa2oBxkeGMGZWILjbgac=";
+      sha256 = "sha256-KpFVz9IP7Xl2w/2ZILWHwNjIUgPF4eXKpSai8fy5xW8=";
     };
-    date = "2023-10-23";
+    date = "2023-10-30";
   };
 }
