@@ -3,15 +3,15 @@
 {
   broker = {
     pname = "broker";
-    version = "86ed39b80c272cff44bb95f58eeda1bc5ff6f65c";
+    version = "69d9eae560a37af18425879eaf1a7c3d59e3926c";
     src = fetchFromGitHub {
       owner = "zeek";
       repo = "broker";
-      rev = "86ed39b80c272cff44bb95f58eeda1bc5ff6f65c";
+      rev = "69d9eae560a37af18425879eaf1a7c3d59e3926c";
       fetchSubmodules = true;
-      sha256 = "sha256-/rRTicBsSQR1G+wpDZigpp9+BJIgS6tRLwJjpTzXwVA=";
+      sha256 = "sha256-xs/uU/uD60SMv/C7cbu+jnVmSBioKhnxZK83Cl8uIJA=";
     };
-    date = "2023-10-13";
+    date = "2023-11-16";
   };
   caretaker = {
     pname = "caretaker";
@@ -26,15 +26,15 @@
   };
   chatgpt-next-web = {
     pname = "chatgpt-next-web";
-    version = "943214c6a78bf3b9c6ed12e029efa682adaee659";
+    version = "cf220dd2eb08589c7bd99b5a2c05eddf8f2e106f";
     src = fetchFromGitHub {
       owner = "Yidadaa";
       repo = "ChatGPT-Next-Web";
-      rev = "943214c6a78bf3b9c6ed12e029efa682adaee659";
+      rev = "cf220dd2eb08589c7bd99b5a2c05eddf8f2e106f";
       fetchSubmodules = false;
-      sha256 = "sha256-ftmld8/M3dWrP7J+NUaV1EMGftbA0kJHuQTEYIx43QE=";
+      sha256 = "sha256-3OX69hz/8TeKxCSFOnWlm6fwq/KvXd8juVQ6Lq8UGyk=";
     };
-    date = "2023-11-10";
+    date = "2023-11-17";
   };
   chatgpt-web = {
     pname = "chatgpt-web";
@@ -149,14 +149,14 @@
   };
   zeek-language-server = {
     pname = "zeek-language-server";
-    version = "2fa3cd59811ae96f9ecae5cb2c05ca83c28a9f22";
+    version = "77510e2ed82cd73e3288a235b24584085bd16647";
     src = fetchFromGitHub {
       owner = "bbannier";
       repo = "zeek-language-server";
-      rev = "2fa3cd59811ae96f9ecae5cb2c05ca83c28a9f22";
+      rev = "77510e2ed82cd73e3288a235b24584085bd16647";
       fetchSubmodules = true;
-      sha256 = "sha256-Sm4X3yMttpPH0Rc/dKKCudgd1hQgzMolpY0loQY6hXQ=";
+      sha256 = "sha256-scesTxB4euTUzGGg/Eh2dvd8Kg6hQLplgoxFPhjUWZw=";
     };
-    date = "2023-11-06";
+    date = "2023-11-14";
   };
 }
