@@ -1,6 +1,7 @@
 # nixago-auto-created: mdbook-build-folder
 docs/book/**
 
+/.data
 # nixago: ignore-linked-files
 /treefmt.toml
 treefmt.toml

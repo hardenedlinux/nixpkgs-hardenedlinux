@@ -19,7 +19,7 @@ jobs:
           fetch-depth: 0
 
 
-      - uses: nixbuild/nix-quick-install-action@v25
+      - uses: DeterminateSystems/nix-installer-action@main
       - uses: DeterminateSystems/magic-nix-cache-action@main
 
         # CI workflows
@@ -30,20 +30,13 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          nix develop -c nvfetcher-pkgs
+          nix develop -c nvfetcher-pkgs; nvfetcher-python; nvfetcher-go
 
-      - name: Commit changes
+      - name: Create Pull Request
         if: ${{ env.COMMIT_MSG != null }}
-        uses: stefanzweifel/git-auto-commit-action@v4
+        uses: peter-evans/create-pull-request@v5
         with:
           commit_message: ${{ env.COMMIT_MSG }}
-
-
-      - name: Build Packages
-        run: nix -Lv develop .#mkdoc -c mkdoc
-
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4.4.2
-        with:
-          branch: gh-pages
-          folder: ./docs/publish/public
+          title: Update Packages
+          delete-branch: true
+          branch: update-packages

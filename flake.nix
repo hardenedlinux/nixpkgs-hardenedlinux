@@ -1,69 +1,28 @@
 {
   inputs = {
-    nixpkgs.follows = "std-ext/nixpkgs";
-
-    org-roam-book-template.follows = "std-ext/org-roam-book-template";
-    std-ext.url = "github:GTrunSec/std-ext";
-    std.follows = "std-ext/std";
-    flops.follows = "std-ext/flops";
+    omnibusSrc.url = "github:gtrunsec/omnibus";
+    omnibusSrc.flake = false;
   };
 
   outputs =
-    { std, ... }@inputs:
-    std.growOn
-      {
-        inherit inputs;
-        cellsFrom = ./nix;
-
-        cellBlocks = with std.blockTypes; [
-          (installables "packages")
-
-          (functions "devshellProfiles")
-          (devshells "devshells")
-
-          (runnables "entrypoints")
-
-          (functions "lib")
-
-          (functions "packages")
-
-          (functions "overlays")
-
-          (functions "nixosModules")
-
-          (nixago "nixago")
-        ];
-      }
-      {
-        devShells = inputs.std.harvest inputs.self [
-          "automation"
-          "devshells"
-        ];
-        overlays =
-          (inputs.std.harvest inputs.self [
-            [
-              "python"
-              "overlays"
-            ]
-            [
-              "pkgs"
-              "overlays"
-            ]
-          ]).x86_64-linux;
-        nixosModules =
-          (inputs.std.harvest inputs.self [ [
-            "pkgs"
-            "nixosModules"
-          ] ]).x86_64-linux;
-        packages = inputs.std.harvest inputs.self [
-          [
-            "python"
-            "packages"
-          ]
-          [
-            "pkgs"
-            "packages"
-          ]
-        ];
-      };
+    {
+      self,
+      omnibusSrc,
+      nixpkgs,
+      ...
+    }@inputs:
+    let
+      omnibus = import omnibusSrc;
+      eachSystem = nixpkgs.lib.genAttrs [
+        "x86_64-linux"
+        "aarch64-linux"
+        "aarch64-darwin"
+      ];
+      srcPop = import ./nix/src/__init.nix { inherit inputs eachSystem omnibus; };
+      src = srcPop.exports.default;
+    in
+    {
+      inherit src;
+      inherit (src.flakeOutputs) packages overlays scopedPackages;
+    };
 }

@@ -1,0 +1,442 @@
+{
+    "aim": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "aim",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "aimhubio",
+            "repo": "aim",
+            "rev": "v3.17.5",
+            "sha256": "sha256-IGA2Ol2LkRQvWqjwIv1+ymqDoobQmQjRvnBie41OL+Q=",
+            "type": "github"
+        },
+        "version": "v3.17.5"
+    },
+    "broker-to-json": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "broker-to-json",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "grigorescu",
+            "repo": "broker-to-json",
+            "rev": "v_02",
+            "sha256": "sha256-SROcIR2P5ixk4yDVwkUJczdbuU4STpmTyLNBCj6dEtg=",
+            "type": "github"
+        },
+        "version": "v_02"
+    },
+    "btest": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "btest",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-MS7vhzqr2go5zm5xbBVT4DR46qBoZFb2MnAgXgSfprs=",
+            "type": "url",
+            "url": "https://pypi.org/packages/source/b/btest/btest-1.1.tar.gz"
+        },
+        "version": "1.1"
+    },
+    "choochoo": {
+        "cargoLocks": null,
+        "date": "2021-09-12",
+        "extract": null,
+        "name": "choochoo",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "andrewcooke",
+            "repo": "choochoo",
+            "rev": "29750cdb9f87dc7a4b6e423df6e805e14ecae5e1",
+            "sha256": "sha256-/PjfY1thoILxpu3/PTmFRfzR4eFgraLbTXpVM54GXJk=",
+            "type": "github"
+        },
+        "version": "29750cdb9f87dc7a4b6e423df6e805e14ecae5e1"
+    },
+    "cliche": {
+        "cargoLocks": null,
+        "date": "2023-11-23",
+        "extract": null,
+        "name": "cliche",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "kootenpv",
+            "repo": "cliche",
+            "rev": "3621191561579f93867417c14b6bc25583d00c0d",
+            "sha256": "sha256-K/39gTrZrZ1Nsrv9zYQV7ID3r8V1LcAJeHUQbq8Eqo0=",
+            "type": "github"
+        },
+        "version": "3621191561579f93867417c14b6bc25583d00c0d"
+    },
+    "durationpy": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "durationpy",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-XvlBa1J7UNci80ZVvs+3Xkkijrgvh7hV7RkRszFLVAg=",
+            "type": "url",
+            "url": "https://pypi.org/packages/source/d/durationpy/durationpy-0.5.tar.gz"
+        },
+        "version": "0.5"
+    },
+    "eZeeKonfigurator": {
+        "cargoLocks": null,
+        "date": "2022-07-05",
+        "extract": null,
+        "name": "eZeeKonfigurator",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "esnet",
+            "repo": "eZeeKonfigurator",
+            "rev": "d4b0d2382be550e2af46aeaf0ac02aab9b694668",
+            "sha256": "sha256-K7PLVVesjv27dhYyRaWItfnsh+p6FTMFOXVE576a01I=",
+            "type": "github"
+        },
+        "version": "d4b0d2382be550e2af46aeaf0ac02aab9b694668"
+    },
+    "eZeeKonfigurator_client": {
+        "cargoLocks": null,
+        "date": "2021-07-01",
+        "extract": null,
+        "name": "eZeeKonfigurator_client",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "esnet",
+            "repo": "eZeeKonfigurator_client",
+            "rev": "efbe39bb1e40a0332d37c3291ee3c8af1ff7678e",
+            "sha256": "sha256-b2QqmduoyohAIOJnZP/Vnt9FdmoOebDfmaTs5SNVoAg=",
+            "type": "github"
+        },
+        "version": "efbe39bb1e40a0332d37c3291ee3c8af1ff7678e"
+    },
+    "elastalert2": {
+        "cargoLocks": null,
+        "date": "2023-11-24",
+        "extract": null,
+        "name": "elastalert2",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "jertel",
+            "repo": "elastalert2",
+            "rev": "bfbdd4dcbdc3e84a2f5b612d5ba344dd09ce6254",
+            "sha256": "sha256-1XjoMYe8eTHI2PptaZQ9oeP8HIE4q7L+VtgRFaNVVys=",
+            "type": "github"
+        },
+        "version": "bfbdd4dcbdc3e84a2f5b612d5ba344dd09ce6254"
+    },
+    "fastai": {
+        "cargoLocks": null,
+        "date": "2023-11-02",
+        "extract": null,
+        "name": "fastai",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "fastai",
+            "repo": "fastai",
+            "rev": "96f0e2027c8fd82eef40984faf14c1c81e0eb031",
+            "sha256": "sha256-EUZy7pEBlPBZpfzTh5ENWeGlCdJeaICZ2Ic2mw355wA=",
+            "type": "github"
+        },
+        "version": "96f0e2027c8fd82eef40984faf14c1c81e0eb031"
+    },
+    "fastcore": {
+        "cargoLocks": null,
+        "date": "2023-06-25",
+        "extract": null,
+        "name": "fastcore",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "fastai",
+            "repo": "fastcore",
+            "rev": "1cb38a0d8d97091cd3365e669e39db64be40aaa2",
+            "sha256": "sha256-QhzzXkNol3OfZ/gCBTsfwsbjWbkQ8ZpYMszBQK/2oUU=",
+            "type": "github"
+        },
+        "version": "1cb38a0d8d97091cd3365e669e39db64be40aaa2"
+    },
+    "fastdownload": {
+        "cargoLocks": null,
+        "date": "2022-07-08",
+        "extract": null,
+        "name": "fastdownload",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "fastai",
+            "repo": "fastdownload",
+            "rev": "9c729f96be9b930054dadfc1598964e61664f434",
+            "sha256": "sha256-LCI5eP7SYKp2RP+Mk8mfm4sNITgCn1tkqXXpNdqenqc=",
+            "type": "github"
+        },
+        "version": "9c729f96be9b930054dadfc1598964e61664f434"
+    },
+    "fastprogress": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "fastprogress",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-ehfStDiJD4OMBI7vzjLE3tRxl+zI6gQs7MM9PeuAIvU=",
+            "type": "url",
+            "url": "https://pypi.org/packages/source/f/fastprogress/fastprogress-1.0.3.tar.gz"
+        },
+        "version": "1.0.3"
+    },
+    "polars": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "polars",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "pola-rs",
+            "repo": "polars",
+            "rev": "py-0.19.16",
+            "sha256": "sha256-nKLObPGcuTYhUz3A3PhFu5kMymDh8vQzm8zIcxWGWPs=",
+            "type": "github"
+        },
+        "version": "py-0.19.16"
+    },
+    "py-tree-sitter": {
+        "cargoLocks": null,
+        "date": "2023-11-15",
+        "extract": null,
+        "name": "py-tree-sitter",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": true,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "tree-sitter",
+            "repo": "py-tree-sitter",
+            "rev": "dd45124a09dee409f452f949f98882ae4a612120",
+            "sha256": "sha256-t+cTBszZcyPPW+Aqk+R91X/TkOaZXxUifmNYl63tFQE=",
+            "type": "github"
+        },
+        "version": "dd45124a09dee409f452f949f98882ae4a612120"
+    },
+    "sh": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "sh",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-mymY8xPyAcd34sAGHwsTZ0lwl+8TOIWVvhR+KgC/e6E=",
+            "type": "url",
+            "url": "https://pypi.org/packages/source/s/sh/sh-2.0.6.tar.gz"
+        },
+        "version": "2.0.6"
+    },
+    "sybilhunter": {
+        "cargoLocks": null,
+        "date": "2019-03-26",
+        "extract": null,
+        "name": "sybilhunter",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "NullHypothesis",
+            "repo": "sybilhunter",
+            "rev": "2f0a8f09308f7de51ce1095353f4af82a8a15f88",
+            "sha256": "sha256-vIOibQuMauVhkxgR9QaL+pbocY7xgyamMeOhtKmye70=",
+            "type": "github"
+        },
+        "version": "2f0a8f09308f7de51ce1095353f4af82a8a15f88"
+    },
+    "tiny-cuda-nn": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "tiny-cuda-nn",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "NVlabs",
+            "repo": "tiny-cuda-nn",
+            "rev": "v1.6",
+            "sha256": "sha256-5qNVMK0PCH8E1kQqDcGCs+i787Vidq4y436LnH36yD0=",
+            "type": "github"
+        },
+        "version": "v1.6"
+    },
+    "vailyn": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "vailyn",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "VainlyStrain",
+            "repo": "Vailyn",
+            "rev": "v3.3.2-1",
+            "sha256": "sha256-eHnqfL6Nt0FDyIoZ4RhwB29h3r6ctVQKAGCeZkOk5yo=",
+            "type": "github"
+        },
+        "version": "v3.3.2-1"
+    },
+    "vault-cli": {
+        "cargoLocks": null,
+        "date": "2022-01-27",
+        "extract": null,
+        "name": "vault-cli",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "peopledoc",
+            "repo": "vault-cli",
+            "rev": "0142476bcfda52876951f49b0990ac1d85377d3a",
+            "sha256": "sha256-/YNBI1IknygmqKy5JMCS63AX581YY5wqE1KN75rBPH0=",
+            "type": "github"
+        },
+        "version": "0142476bcfda52876951f49b0990ac1d85377d3a"
+    },
+    "zat": {
+        "cargoLocks": null,
+        "date": "2023-09-07",
+        "extract": null,
+        "name": "zat",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "SuperCowPowers",
+            "repo": "zat",
+            "rev": "36685ae54bb4db6444f2efa36ad40a9247212efd",
+            "sha256": "sha256-g6rC/uAOVP3uA2e9JJRI4yi5TwnTyEDh1dJ9e1030QA=",
+            "type": "github"
+        },
+        "version": "36685ae54bb4db6444f2efa36ad40a9247212efd"
+    },
+    "zed": {
+        "cargoLocks": null,
+        "date": "2023-11-22",
+        "extract": null,
+        "name": "zed",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "brimdata",
+            "repo": "zed",
+            "rev": "f530788f732472ed060ab320ea0e175690c47b4d",
+            "sha256": "sha256-b7X4inBKYDafDH+VE8OoNx3SF7NjpvA6hq/7ABEsiPw=",
+            "type": "github"
+        },
+        "version": "f530788f732472ed060ab320ea0e175690c47b4d"
+    },
+    "zeekscript": {
+        "cargoLocks": null,
+        "date": "2023-11-07",
+        "extract": null,
+        "name": "zeekscript",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": true,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "zeek",
+            "repo": "zeekscript",
+            "rev": "ed16219b20ed02f63806b8d60197e161da1383da",
+            "sha256": "sha256-jmIswaq6nNDbjYkuraDtAih+odCOZtY7hvBHPmDiMCw=",
+            "type": "github"
+        },
+        "version": "ed16219b20ed02f63806b8d60197e161da1383da"
+    }
+}
