@@ -26,6 +26,12 @@
           -- nix/_sources/go.toml -o nix/_sources/go
         '';
       }
+      {
+        name = "nvfetcher-all";
+        command = ''
+        nvfetcher-python; nvfetcher-pkgs; nvfetcher-go
+        '';
+      }
     ];
   };
 }

@@ -12,7 +12,7 @@ fetch.github = "uetchy/gst"
 
 [zitadel-bin]
 src.github = "zitadel/zitadel"
-fetch.url = "https://github.com/zitadel/zitadel/releases/download/$ver/zitadel_Linux_x86_64.tar.gz"
+fetch.url = "https://github.com/zitadel/zitadel/releases/download/$ver/zitadel-linux-amd64.tar.gz"
 
 # [deepsea]
 # src.manual= "b48e9302d079ed9f53a9123a805096a845d2c6a5"

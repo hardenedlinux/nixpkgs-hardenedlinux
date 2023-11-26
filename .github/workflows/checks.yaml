@@ -9,7 +9,7 @@ on:
     - cron: "0 0 * * SAT" # every sunday
 
 jobs:
-  nix-tests:
+  nix-build:
     runs-on: ubuntu-latest
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -18,9 +18,11 @@ jobs:
         with:
           fetch-depth: 0
 
-
       - uses: DeterminateSystems/nix-installer-action@main
       - uses: DeterminateSystems/magic-nix-cache-action@main
+      - name: Install nixci
+        shell: bash
+        run: nix profile install nixpkgs#nixci
 
         # CI workflows
       - name: Run Nix Flake Show
@@ -30,7 +32,10 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          nix develop -c nvfetcher-pkgs; nvfetcher-python; nvfetcher-go
+          nix develop ./nix/std -c nvfetcher-all
+
+      - name: Build packages with nixci
+        run: nixci
 
       - name: Create Pull Request
         if: ${{ env.COMMIT_MSG != null }}
