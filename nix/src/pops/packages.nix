@@ -24,7 +24,7 @@ eachSystem (
     ];
     importNvfetch =
       subPath:
-      import (projectDir + "/nix/_sources/${subPath}/generated.nix") {
+      import (projectDir + "/nix/nvfetcher/${subPath}/generated.nix") {
         inherit (nixpkgs)
           fetchgit
           fetchurl

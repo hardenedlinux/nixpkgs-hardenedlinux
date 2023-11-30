@@ -1,15 +1,3 @@
-[go-chatgpt-web]
-src.git = "https://github.com/869413421/chatgpt-web"
-fetch.github = "869413421/chatgpt-web"
-
-[ghq]
-src.git = "https://github.com/x-motemen/ghq"
-fetch.github = "x-motemen/ghq"
-
-[gst]
-src.git = "https://github.com/uetchy/gst"
-fetch.github = "uetchy/gst"
-
 [zitadel-bin]
 src.github = "zitadel/zitadel"
 fetch.url = "https://github.com/zitadel/zitadel/releases/download/$ver/zitadel-linux-amd64.tar.gz"
@@ -20,10 +8,6 @@ fetch.url = "https://github.com/zitadel/zitadel/releases/download/$ver/zitadel-l
 [go-nfsd]
 src.git = "https://github.com/mit-pdos/go-nfsd"
 fetch.github = "mit-pdos/go-nfsd"
-
-[zed]
-src.git = "https://github.com/brimdata/zed"
-fetch.github = "brimdata/zed"
 
 [nvdtools]
 src.git = "https://github.com/facebookincubator/nvdtools"

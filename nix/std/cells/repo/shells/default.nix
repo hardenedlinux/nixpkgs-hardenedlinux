@@ -10,5 +10,7 @@ l.mapAttrs (_: std.lib.dev.mkShell) {
     imports = [ cell.shellProfiles.default ];
 
     nixago = [ cell.nixago.treefmt.default ];
+
+    packages = [ nixpkgs.nixci ];
   };
 }

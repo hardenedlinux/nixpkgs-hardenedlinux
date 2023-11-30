@@ -1,24 +1,4 @@
 {
-    "broker": {
-        "cargoLocks": null,
-        "date": "2023-11-16",
-        "extract": null,
-        "name": "broker",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": true,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "zeek",
-            "repo": "broker",
-            "rev": "69d9eae560a37af18425879eaf1a7c3d59e3926c",
-            "sha256": "sha256-xs/uU/uD60SMv/C7cbu+jnVmSBioKhnxZK83Cl8uIJA=",
-            "type": "github"
-        },
-        "version": "69d9eae560a37af18425879eaf1a7c3d59e3926c"
-    },
     "caretaker": {
         "cargoLocks": null,
         "date": null,
@@ -41,7 +21,7 @@
     },
     "chatgpt-next-web": {
         "cargoLocks": null,
-        "date": "2023-11-24",
+        "date": "2023-11-29",
         "extract": null,
         "name": "chatgpt-next-web",
         "passthru": null,
@@ -53,31 +33,11 @@
             "name": null,
             "owner": "Yidadaa",
             "repo": "ChatGPT-Next-Web",
-            "rev": "b21931c667abf2825eca43d59f794471420c1db0",
-            "sha256": "sha256-KbkcZzdYfyrnD/o2XUOEQne1Wt62UAqR3P/keXxjBSc=",
+            "rev": "cf50299b142a40d1b043f0b3ceb3cc6c4c5b249d",
+            "sha256": "sha256-f0AZQwoPpaMP6ZH/KdxmqdKzihdpgDNsYJv8/TwTwKY=",
             "type": "github"
         },
-        "version": "b21931c667abf2825eca43d59f794471420c1db0"
-    },
-    "chatgpt-web": {
-        "cargoLocks": null,
-        "date": "2023-11-23",
-        "extract": null,
-        "name": "chatgpt-web",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "Chanzhaoyu",
-            "repo": "chatgpt-web",
-            "rev": "ed1e41c4f129cf14cc91f2ae688657a7cd3b4088",
-            "sha256": "sha256-RsQAqWXRh+DrJUxQTJ7SkOt7pWcgKZFBac7BuSeHsAw=",
-            "type": "github"
-        },
-        "version": "ed1e41c4f129cf14cc91f2ae688657a7cd3b4088"
+        "version": "cf50299b142a40d1b043f0b3ceb3cc6c4c5b249d"
     },
     "firecracker-task-driver": {
         "cargoLocks": null,
@@ -98,26 +58,6 @@
             "type": "github"
         },
         "version": "dbfdebbfff78794006eed9736a27b49c34278508"
-    },
-    "gptcommit": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "gptcommit",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "zurawiki",
-            "repo": "gptcommit",
-            "rev": "v0.5.14",
-            "sha256": "sha256-xjaFr1y2Fd7IWbJlegnIsfS5/oMJYd6QTnwp7IK17xM=",
-            "type": "github"
-        },
-        "version": "v0.5.14"
     },
     "koodo-reader": {
         "cargoLocks": null,
@@ -189,26 +129,6 @@
         },
         "version": "30ed5b420002c8f1ac6f5c865373baa1e46bc4b8"
     },
-    "tuc": {
-        "cargoLocks": null,
-        "date": "2023-08-01",
-        "extract": null,
-        "name": "tuc",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "riquito",
-            "repo": "tuc",
-            "rev": "89ef29696a62357e33fa57c4bb33a9401d12c259",
-            "sha256": "sha256-VNp5tcZGsBltEPMbynep65uoZR/QqCGYoML8WrC8S7c=",
-            "type": "github"
-        },
-        "version": "89ef29696a62357e33fa57c4bb33a9401d12c259"
-    },
     "watchexec-simple": {
         "cargoLocks": null,
         "date": "2023-10-24",
@@ -231,7 +151,7 @@
     },
     "yakgpt": {
         "cargoLocks": null,
-        "date": "2023-04-25",
+        "date": "2023-11-26",
         "extract": null,
         "name": "yakgpt",
         "passthru": null,
@@ -243,15 +163,15 @@
             "name": null,
             "owner": "yakGPT",
             "repo": "yakGPT",
-            "rev": "7675e969071c3e75a641c1ea42c933cd13215cb2",
-            "sha256": "sha256-nA03lQ5wpa7E5hH3deYTgAv2aD7SbW2sjuZg6KWtN0w=",
+            "rev": "eac84e69a297ea344f9b2533601e2810d739307c",
+            "sha256": "sha256-IhxOFr/HCReJzlGLB2LmHJPZr7KVuqRsdyN/iUJ3q9U=",
             "type": "github"
         },
-        "version": "7675e969071c3e75a641c1ea42c933cd13215cb2"
+        "version": "eac84e69a297ea344f9b2533601e2810d739307c"
     },
     "zeek-language-server": {
         "cargoLocks": null,
-        "date": "2023-11-21",
+        "date": "2023-11-27",
         "extract": null,
         "name": "zeek-language-server",
         "passthru": null,
@@ -263,10 +183,10 @@
             "name": null,
             "owner": "bbannier",
             "repo": "zeek-language-server",
-            "rev": "3b701bafd6bf3aba3deb6944254b431ca488a896",
-            "sha256": "sha256-wndfy8gPvokWTKdntcduAypZbjKHhvJLv2o//EtVLQk=",
+            "rev": "515320b25ba0cc341f0a69354b00df2a1502ed30",
+            "sha256": "sha256-p2A0muru8qpr6myrxLPd3YUjnovtbRHzHgE41FO/jwQ=",
             "type": "github"
         },
-        "version": "3b701bafd6bf3aba3deb6944254b431ca488a896"
+        "version": "515320b25ba0cc341f0a69354b00df2a1502ed30"
     }
 }

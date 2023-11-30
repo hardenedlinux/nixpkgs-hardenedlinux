@@ -19,46 +19,6 @@
         },
         "version": "cc5bb29e518d14a89b4dd74ba2789d808d6a62d6"
     },
-    "ghq": {
-        "cargoLocks": null,
-        "date": "2023-04-17",
-        "extract": null,
-        "name": "ghq",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "x-motemen",
-            "repo": "ghq",
-            "rev": "7163e61e2309a039241ad40b4a25bea35671ea6f",
-            "sha256": "sha256-ggTx5Kz9cRqOqxxzERv4altf7m1GlreGgOiYCnHyJks=",
-            "type": "github"
-        },
-        "version": "7163e61e2309a039241ad40b4a25bea35671ea6f"
-    },
-    "go-chatgpt-web": {
-        "cargoLocks": null,
-        "date": "2023-04-10",
-        "extract": null,
-        "name": "go-chatgpt-web",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "869413421",
-            "repo": "chatgpt-web",
-            "rev": "e6855125ee5523c3feaedb969996b22473b12690",
-            "sha256": "sha256-CQUMB0gm8+RFpTuKxutihBI2xrNwaaexQhaa+vZSYE0=",
-            "type": "github"
-        },
-        "version": "e6855125ee5523c3feaedb969996b22473b12690"
-    },
     "go-nfsd": {
         "cargoLocks": null,
         "date": "2023-08-30",
@@ -78,26 +38,6 @@
             "type": "github"
         },
         "version": "b02df67ac6264f4a71e424288c84a9aa0a62c2a8"
-    },
-    "gst": {
-        "cargoLocks": null,
-        "date": "2021-10-27",
-        "extract": null,
-        "name": "gst",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "uetchy",
-            "repo": "gst",
-            "rev": "b4af138c9a2dfc6bb04d853cd045eff9a5d8b608",
-            "sha256": "sha256-NhbGHTYucfqCloVirkaDlAtQfhWP2cw4I+t/ysvvkR0=",
-            "type": "github"
-        },
-        "version": "b4af138c9a2dfc6bb04d853cd045eff9a5d8b608"
     },
     "nvdtools": {
         "cargoLocks": null,
@@ -139,26 +79,6 @@
         },
         "version": "6827f7b2f5e9ec675cb7dc9bbe4b201c228d565e"
     },
-    "zed": {
-        "cargoLocks": null,
-        "date": "2023-11-22",
-        "extract": null,
-        "name": "zed",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "brimdata",
-            "repo": "zed",
-            "rev": "f530788f732472ed060ab320ea0e175690c47b4d",
-            "sha256": "sha256-b7X4inBKYDafDH+VE8OoNx3SF7NjpvA6hq/7ABEsiPw=",
-            "type": "github"
-        },
-        "version": "f530788f732472ed060ab320ea0e175690c47b4d"
-    },
     "zitadel-bin": {
         "cargoLocks": null,
         "date": null,
@@ -168,10 +88,10 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-1jy2Azf+s7y6zXKLmca+YDJDqAY5T0lkDptzK3k7lVU=",
+            "sha256": "sha256-YYYmiYeb7XFeBtD9JTm+Z4B1Hp5FsOD4IPhQ7m2HGwo=",
             "type": "url",
-            "url": "https://github.com/zitadel/zitadel/releases/download/v2.41.4/zitadel-linux-amd64.tar.gz"
+            "url": "https://github.com/zitadel/zitadel/releases/download/v2.41.6/zitadel-linux-amd64.tar.gz"
         },
-        "version": "v2.41.4"
+        "version": "v2.41.6"
     }
 }

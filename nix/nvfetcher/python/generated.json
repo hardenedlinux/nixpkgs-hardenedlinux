@@ -1,0 +1,212 @@
+{
+    "choochoo": {
+        "cargoLocks": null,
+        "date": "2021-09-12",
+        "extract": null,
+        "name": "choochoo",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "andrewcooke",
+            "repo": "choochoo",
+            "rev": "29750cdb9f87dc7a4b6e423df6e805e14ecae5e1",
+            "sha256": "sha256-/PjfY1thoILxpu3/PTmFRfzR4eFgraLbTXpVM54GXJk=",
+            "type": "github"
+        },
+        "version": "29750cdb9f87dc7a4b6e423df6e805e14ecae5e1"
+    },
+    "cliche": {
+        "cargoLocks": null,
+        "date": "2023-11-23",
+        "extract": null,
+        "name": "cliche",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "kootenpv",
+            "repo": "cliche",
+            "rev": "3621191561579f93867417c14b6bc25583d00c0d",
+            "sha256": "sha256-K/39gTrZrZ1Nsrv9zYQV7ID3r8V1LcAJeHUQbq8Eqo0=",
+            "type": "github"
+        },
+        "version": "3621191561579f93867417c14b6bc25583d00c0d"
+    },
+    "durationpy": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "durationpy",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-XvlBa1J7UNci80ZVvs+3Xkkijrgvh7hV7RkRszFLVAg=",
+            "type": "url",
+            "url": "https://pypi.org/packages/source/d/durationpy/durationpy-0.5.tar.gz"
+        },
+        "version": "0.5"
+    },
+    "eZeeKonfigurator": {
+        "cargoLocks": null,
+        "date": "2022-07-05",
+        "extract": null,
+        "name": "eZeeKonfigurator",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "esnet",
+            "repo": "eZeeKonfigurator",
+            "rev": "d4b0d2382be550e2af46aeaf0ac02aab9b694668",
+            "sha256": "sha256-K7PLVVesjv27dhYyRaWItfnsh+p6FTMFOXVE576a01I=",
+            "type": "github"
+        },
+        "version": "d4b0d2382be550e2af46aeaf0ac02aab9b694668"
+    },
+    "eZeeKonfigurator_client": {
+        "cargoLocks": null,
+        "date": "2021-07-01",
+        "extract": null,
+        "name": "eZeeKonfigurator_client",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "esnet",
+            "repo": "eZeeKonfigurator_client",
+            "rev": "efbe39bb1e40a0332d37c3291ee3c8af1ff7678e",
+            "sha256": "sha256-b2QqmduoyohAIOJnZP/Vnt9FdmoOebDfmaTs5SNVoAg=",
+            "type": "github"
+        },
+        "version": "efbe39bb1e40a0332d37c3291ee3c8af1ff7678e"
+    },
+    "elastalert2": {
+        "cargoLocks": null,
+        "date": "2023-11-30",
+        "extract": null,
+        "name": "elastalert2",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "jertel",
+            "repo": "elastalert2",
+            "rev": "8713ab369c7a1917edd3db839ddeb027c4387dc0",
+            "sha256": "sha256-205bYtfWt56s5+52xiyXo6w/sn7uXxDUUuKlstorLqU=",
+            "type": "github"
+        },
+        "version": "8713ab369c7a1917edd3db839ddeb027c4387dc0"
+    },
+    "polars": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "polars",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "pola-rs",
+            "repo": "polars",
+            "rev": "py-0.19.18",
+            "sha256": "sha256-fyI1tp8M4VO8ZSzg951Oq7pVQn1csZhmrZaM/8JlF/4=",
+            "type": "github"
+        },
+        "version": "py-0.19.18"
+    },
+    "sh": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "sh",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-mymY8xPyAcd34sAGHwsTZ0lwl+8TOIWVvhR+KgC/e6E=",
+            "type": "url",
+            "url": "https://pypi.org/packages/source/s/sh/sh-2.0.6.tar.gz"
+        },
+        "version": "2.0.6"
+    },
+    "sybilhunter": {
+        "cargoLocks": null,
+        "date": "2019-03-26",
+        "extract": null,
+        "name": "sybilhunter",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "NullHypothesis",
+            "repo": "sybilhunter",
+            "rev": "2f0a8f09308f7de51ce1095353f4af82a8a15f88",
+            "sha256": "sha256-vIOibQuMauVhkxgR9QaL+pbocY7xgyamMeOhtKmye70=",
+            "type": "github"
+        },
+        "version": "2f0a8f09308f7de51ce1095353f4af82a8a15f88"
+    },
+    "vailyn": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "vailyn",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "VainlyStrain",
+            "repo": "Vailyn",
+            "rev": "v3.3.2-1",
+            "sha256": "sha256-eHnqfL6Nt0FDyIoZ4RhwB29h3r6ctVQKAGCeZkOk5yo=",
+            "type": "github"
+        },
+        "version": "v3.3.2-1"
+    },
+    "vault-cli": {
+        "cargoLocks": null,
+        "date": "2022-01-27",
+        "extract": null,
+        "name": "vault-cli",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "peopledoc",
+            "repo": "vault-cli",
+            "rev": "0142476bcfda52876951f49b0990ac1d85377d3a",
+            "sha256": "sha256-/YNBI1IknygmqKy5JMCS63AX581YY5wqE1KN75rBPH0=",
+            "type": "github"
+        },
+        "version": "0142476bcfda52876951f49b0990ac1d85377d3a"
+    }
+}

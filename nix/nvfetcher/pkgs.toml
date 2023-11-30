@@ -2,10 +2,6 @@
 src.git = "https://github.com/Yidadaa/ChatGPT-Next-Web"
 fetch.github = "Yidadaa/ChatGPT-Next-Web"
 
-[chatgpt-web]
-src.git = "https://github.com/Chanzhaoyu/chatgpt-web"
-fetch.github = "Chanzhaoyu/chatgpt-web"
-
 [firecracker-task-driver]
 src.git = "https://github.com/cneira/firecracker-task-driver"
 fetch.github = "cneira/firecracker-task-driver"
@@ -29,25 +25,12 @@ src.prefix = "v"
 src.git = "https://github.com/troyeguo/koodo-reader"
 fetch.github = "troyeguo/koodo-reader"
 
-[broker]
-src.git = "https://github.com/zeek/broker"
-fetch.github = "zeek/broker"
-git.fetchSubmodules = true
-
-[tuc]
-src.git = "https://github.com/riquito/tuc"
-fetch.github = "riquito/tuc"
-
 [caretaker]
 src.github = "grego/caretaker"
 fetch.github = "grego/caretaker"
 
 # Pull the contents of `Cargo.lock` into generated nix expr
 # cargo_locks = ["Cargo.lock"]
-[gptcommit]
-src.github = "zurawiki/gptcommit"
-fetch.github = "zurawiki/gptcommit"
-
 [watchexec-simple]
 src.git = "https://github.com/kurtbuilds/watchexec-simple"
 fetch.github = "kurtbuilds/watchexec-simple"

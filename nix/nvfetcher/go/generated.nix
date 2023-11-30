@@ -13,30 +13,6 @@
     };
     date = "2023-11-21";
   };
-  ghq = {
-    pname = "ghq";
-    version = "7163e61e2309a039241ad40b4a25bea35671ea6f";
-    src = fetchFromGitHub {
-      owner = "x-motemen";
-      repo = "ghq";
-      rev = "7163e61e2309a039241ad40b4a25bea35671ea6f";
-      fetchSubmodules = false;
-      sha256 = "sha256-ggTx5Kz9cRqOqxxzERv4altf7m1GlreGgOiYCnHyJks=";
-    };
-    date = "2023-04-17";
-  };
-  go-chatgpt-web = {
-    pname = "go-chatgpt-web";
-    version = "e6855125ee5523c3feaedb969996b22473b12690";
-    src = fetchFromGitHub {
-      owner = "869413421";
-      repo = "chatgpt-web";
-      rev = "e6855125ee5523c3feaedb969996b22473b12690";
-      fetchSubmodules = false;
-      sha256 = "sha256-CQUMB0gm8+RFpTuKxutihBI2xrNwaaexQhaa+vZSYE0=";
-    };
-    date = "2023-04-10";
-  };
   go-nfsd = {
     pname = "go-nfsd";
     version = "b02df67ac6264f4a71e424288c84a9aa0a62c2a8";
@@ -48,18 +24,6 @@
       sha256 = "sha256-yRovu5H4gEo+Unk4ZxImasRKhitf1SXcfOUTDkrEprw=";
     };
     date = "2023-08-30";
-  };
-  gst = {
-    pname = "gst";
-    version = "b4af138c9a2dfc6bb04d853cd045eff9a5d8b608";
-    src = fetchFromGitHub {
-      owner = "uetchy";
-      repo = "gst";
-      rev = "b4af138c9a2dfc6bb04d853cd045eff9a5d8b608";
-      fetchSubmodules = false;
-      sha256 = "sha256-NhbGHTYucfqCloVirkaDlAtQfhWP2cw4I+t/ysvvkR0=";
-    };
-    date = "2021-10-27";
   };
   nvdtools = {
     pname = "nvdtools";
@@ -85,24 +49,12 @@
     };
     date = "2023-10-29";
   };
-  zed = {
-    pname = "zed";
-    version = "f530788f732472ed060ab320ea0e175690c47b4d";
-    src = fetchFromGitHub {
-      owner = "brimdata";
-      repo = "zed";
-      rev = "f530788f732472ed060ab320ea0e175690c47b4d";
-      fetchSubmodules = false;
-      sha256 = "sha256-b7X4inBKYDafDH+VE8OoNx3SF7NjpvA6hq/7ABEsiPw=";
-    };
-    date = "2023-11-22";
-  };
   zitadel-bin = {
     pname = "zitadel-bin";
-    version = "v2.41.4";
+    version = "v2.41.6";
     src = fetchurl {
-      url = "https://github.com/zitadel/zitadel/releases/download/v2.41.4/zitadel-linux-amd64.tar.gz";
-      sha256 = "sha256-1jy2Azf+s7y6zXKLmca+YDJDqAY5T0lkDptzK3k7lVU=";
+      url = "https://github.com/zitadel/zitadel/releases/download/v2.41.6/zitadel-linux-amd64.tar.gz";
+      sha256 = "sha256-YYYmiYeb7XFeBtD9JTm+Z4B1Hp5FsOD4IPhQ7m2HGwo=";
     };
   };
 }

@@ -7,14 +7,16 @@
   coverage,
   lsof,
   glibcLocales,
+  poetry-core
 }:
 buildPythonPackage rec {
+  pyproject = true;
+
   inherit (nixpkgs-hardenedlinux-python-sources.sh) pname src version;
 
-  postPatch = ''
-    sed -i 's#/usr/bin/env python#${python.interpreter}#' test.py
-  '';
-
+  propagatedBuildInputs = [
+    poetry-core
+  ];
   checkInputs = [
     coverage
     lsof
