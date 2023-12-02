@@ -38,15 +38,15 @@
   };
   koodo-reader = {
     pname = "koodo-reader";
-    version = "587e4bc5d8ce162d3ab03e8e6287501b0dfcb9b5";
+    version = "f40c9cebe3f45521d6d72d7535bf15be6780a2db";
     src = fetchFromGitHub {
       owner = "troyeguo";
       repo = "koodo-reader";
-      rev = "587e4bc5d8ce162d3ab03e8e6287501b0dfcb9b5";
+      rev = "f40c9cebe3f45521d6d72d7535bf15be6780a2db";
       fetchSubmodules = false;
-      sha256 = "sha256-rG+FjI+X34IrPL45lUyVMZhtVGKTt1q5zqngvD7FG28=";
+      sha256 = "sha256-qTiNzox2dTdILAEUC3EcQrNp0EAD+supL+hFkFhiZDI=";
     };
-    date = "2023-11-05";
+    date = "2023-12-02";
   };
   nix-unstable-installer = {
     pname = "nix-unstable-installer";
