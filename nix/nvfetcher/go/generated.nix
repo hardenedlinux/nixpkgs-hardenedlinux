@@ -3,15 +3,15 @@
 {
   container-structure-test = {
     pname = "container-structure-test";
-    version = "cc5bb29e518d14a89b4dd74ba2789d808d6a62d6";
+    version = "0c5cfe02944b6ab468980bc8e08eea36231a1dd1";
     src = fetchFromGitHub {
       owner = "GoogleContainerTools";
       repo = "container-structure-test";
-      rev = "cc5bb29e518d14a89b4dd74ba2789d808d6a62d6";
+      rev = "0c5cfe02944b6ab468980bc8e08eea36231a1dd1";
       fetchSubmodules = false;
-      sha256 = "sha256-RaP5ylVUkWuThQalyX4bYhbB3sPvN7Kz9cO2IM/oxDs=";
+      sha256 = "sha256-xVJsj2+jv7FBW0K/jNFpMc05t4mV6AgvdqZ9qtAXE0E=";
     };
-    date = "2023-11-21";
+    date = "2023-11-30";
   };
   go-nfsd = {
     pname = "go-nfsd";
@@ -51,10 +51,10 @@
   };
   zitadel-bin = {
     pname = "zitadel-bin";
-    version = "v2.41.6";
+    version = "v2.42.1";
     src = fetchurl {
-      url = "https://github.com/zitadel/zitadel/releases/download/v2.41.6/zitadel-linux-amd64.tar.gz";
-      sha256 = "sha256-YYYmiYeb7XFeBtD9JTm+Z4B1Hp5FsOD4IPhQ7m2HGwo=";
+      url = "https://github.com/zitadel/zitadel/releases/download/v2.42.1/zitadel-linux-amd64.tar.gz";
+      sha256 = "sha256-nO286zR4KXzPyb6idXFCkMhVOG7mNVNgIhNGvDqJcB4=";
     };
   };
 }
