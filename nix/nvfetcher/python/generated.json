@@ -108,11 +108,11 @@
             "name": null,
             "owner": "jertel",
             "repo": "elastalert2",
-            "rev": "8713ab369c7a1917edd3db839ddeb027c4387dc0",
-            "sha256": "sha256-205bYtfWt56s5+52xiyXo6w/sn7uXxDUUuKlstorLqU=",
+            "rev": "a47a8841dc91dcaa28545194003ec11fd2218f08",
+            "sha256": "sha256-RYuAel5ob2G2rYX6WKo4SCuoSiohGxvcLw6E3jO3tcY=",
             "type": "github"
         },
-        "version": "8713ab369c7a1917edd3db839ddeb027c4387dc0"
+        "version": "a47a8841dc91dcaa28545194003ec11fd2218f08"
     },
     "polars": {
         "cargoLocks": null,
@@ -128,11 +128,11 @@
             "name": null,
             "owner": "pola-rs",
             "repo": "polars",
-            "rev": "py-0.19.18",
-            "sha256": "sha256-fyI1tp8M4VO8ZSzg951Oq7pVQn1csZhmrZaM/8JlF/4=",
+            "rev": "py-0.19.19",
+            "sha256": "sha256-uT228XgmSEBfCFbkYEOvrjDt1Xv6e4coz9/SjgA2Tjg=",
             "type": "github"
         },
-        "version": "py-0.19.18"
+        "version": "py-0.19.19"
     },
     "sh": {
         "cargoLocks": null,
