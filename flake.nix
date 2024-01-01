@@ -23,6 +23,6 @@
     in
     {
       inherit src;
-      # inherit (src.flakeOutputs) packages overlays scopedPackages;
+      inherit (src.flakeOutputs) packages overlays scopedPackages;
     };
 }
