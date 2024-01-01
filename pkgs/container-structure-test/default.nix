@@ -8,7 +8,7 @@ buildGoApplication rec {
     pname
     src
     version
-  ;
+    ;
   modules = ./gomod2nix.toml;
   subPackages = [ "cmd/*" ];
   meta = {

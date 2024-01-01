@@ -8,7 +8,7 @@ buildGoApplication rec {
     pname
     src
     version
-  ;
+    ;
   modules = ./gomod2nix.toml;
   meta = {
     description = "nomad task driver that uses firecracker to start micro-vms";

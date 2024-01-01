@@ -30,7 +30,7 @@ eachSystem (
           fetchurl
           fetchFromGitHub
           dockerTools
-        ;
+          ;
       };
   in
   (omnibus.pops.packages {

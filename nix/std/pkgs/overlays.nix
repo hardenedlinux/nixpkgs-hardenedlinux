@@ -4,7 +4,7 @@
     inherit (import ./packages/_loader.nix { inherit inputs pkgs; })
       toplevel
       python
-    ;
+      ;
   };
   default =
     pkgs: _:
@@ -21,7 +21,7 @@
             fetchurl
             fetchFromGitHub
             dockerTools
-          ;
+            ;
         })
         // (import ./packages/_sources/go/generated.nix {
           inherit (pkgs)
@@ -29,7 +29,7 @@
             fetchurl
             fetchFromGitHub
             dockerTools
-          ;
+            ;
         });
     };
 
@@ -47,7 +47,7 @@
               fetchurl
               fetchFromGitHub
               dockerTools
-            ;
+              ;
           };
 
       python3 = prev.python3.override (

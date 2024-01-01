@@ -39,10 +39,6 @@ src.git = "https://github.com/kootenpv/cliche"
 fetch.github = "kootenpv/cliche"
 
 #Python Packages
-[durationpy]
-src.pypi = "durationpy"
-fetch.pypi = "durationpy"
-
 [sh]
 src.pypi = "sh"
 fetch.pypi = "sh"

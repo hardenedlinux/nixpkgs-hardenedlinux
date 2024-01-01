@@ -14,15 +14,15 @@
   };
   chatgpt-next-web = {
     pname = "chatgpt-next-web";
-    version = "cf50299b142a40d1b043f0b3ceb3cc6c4c5b249d";
+    version = "9eaf492d5b72d252c9dcaa55d5d99dab87bf19e0";
     src = fetchFromGitHub {
       owner = "Yidadaa";
       repo = "ChatGPT-Next-Web";
-      rev = "cf50299b142a40d1b043f0b3ceb3cc6c4c5b249d";
+      rev = "9eaf492d5b72d252c9dcaa55d5d99dab87bf19e0";
       fetchSubmodules = false;
-      sha256 = "sha256-f0AZQwoPpaMP6ZH/KdxmqdKzihdpgDNsYJv8/TwTwKY=";
+      sha256 = "sha256-Le1OwflPvhe2JehVwacA6ytxstvswv4pjAqsV297UCU=";
     };
-    date = "2023-11-29";
+    date = "2023-12-31";
   };
   firecracker-task-driver = {
     pname = "firecracker-task-driver";
@@ -38,15 +38,15 @@
   };
   koodo-reader = {
     pname = "koodo-reader";
-    version = "f40c9cebe3f45521d6d72d7535bf15be6780a2db";
+    version = "52737f6ccf29ed5e5c070ec876799cdae01bab96";
     src = fetchFromGitHub {
       owner = "troyeguo";
       repo = "koodo-reader";
-      rev = "f40c9cebe3f45521d6d72d7535bf15be6780a2db";
+      rev = "52737f6ccf29ed5e5c070ec876799cdae01bab96";
       fetchSubmodules = false;
-      sha256 = "sha256-qTiNzox2dTdILAEUC3EcQrNp0EAD+supL+hFkFhiZDI=";
+      sha256 = "sha256-owbelVGUVYQk8E2Y4XP2QX25ihOHxJAV22JXON/OmM4=";
     };
-    date = "2023-12-02";
+    date = "2024-01-01";
   };
   nix-unstable-installer = {
     pname = "nix-unstable-installer";
@@ -102,14 +102,14 @@
   };
   zeek-language-server = {
     pname = "zeek-language-server";
-    version = "515320b25ba0cc341f0a69354b00df2a1502ed30";
+    version = "b1573d324c91772f4ee14ade2297bd85a5ea6297";
     src = fetchFromGitHub {
       owner = "bbannier";
       repo = "zeek-language-server";
-      rev = "515320b25ba0cc341f0a69354b00df2a1502ed30";
+      rev = "b1573d324c91772f4ee14ade2297bd85a5ea6297";
       fetchSubmodules = true;
-      sha256 = "sha256-p2A0muru8qpr6myrxLPd3YUjnovtbRHzHgE41FO/jwQ=";
+      sha256 = "sha256-zh54vI/Q7axQ1T+Du11ww4CTxzgkXoaQwt+ZC+iPNVU=";
     };
-    date = "2023-11-27";
+    date = "2023-12-30";
   };
 }

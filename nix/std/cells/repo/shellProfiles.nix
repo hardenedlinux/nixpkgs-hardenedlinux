@@ -29,7 +29,7 @@
       {
         name = "nvfetcher-all";
         command = ''
-        nvfetcher-python; nvfetcher-pkgs; nvfetcher-go
+          nvfetcher-python; nvfetcher-pkgs; nvfetcher-go
         '';
       }
     ];

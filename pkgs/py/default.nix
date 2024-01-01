@@ -9,4 +9,6 @@ let
   inherit (python3Packages) newScope;
   inherit (__inputs__) callPackagesWithOmnibus;
 in
-(makeScope newScope (selfScope: callPackagesWithOmnibus selfScope ./.)).overrideScope (_: _: {} )
+(makeScope newScope (selfScope: callPackagesWithOmnibus selfScope ./.))
+.overrideScope
+  (_: _: { })

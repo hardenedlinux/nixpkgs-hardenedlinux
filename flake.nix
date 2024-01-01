@@ -18,11 +18,11 @@
         "aarch64-linux"
         "aarch64-darwin"
       ];
-      srcPop = import ./nix/src/__init.nix { inherit inputs eachSystem omnibus; };
+      srcPop = import ./nix/src { inherit inputs eachSystem omnibus; };
       src = srcPop.exports.default;
     in
     {
       inherit src;
-      inherit (src.flakeOutputs) packages overlays scopedPackages;
+      # inherit (src.flakeOutputs) packages overlays scopedPackages;
     };
 }

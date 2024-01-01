@@ -15,23 +15,15 @@
   };
   cliche = {
     pname = "cliche";
-    version = "3621191561579f93867417c14b6bc25583d00c0d";
+    version = "82c4f9dc1644f34077ab0995dda3bf7dcc2946a4";
     src = fetchFromGitHub {
       owner = "kootenpv";
       repo = "cliche";
-      rev = "3621191561579f93867417c14b6bc25583d00c0d";
+      rev = "82c4f9dc1644f34077ab0995dda3bf7dcc2946a4";
       fetchSubmodules = false;
-      sha256 = "sha256-K/39gTrZrZ1Nsrv9zYQV7ID3r8V1LcAJeHUQbq8Eqo0=";
+      sha256 = "sha256-rM6HPITGKrHElBrDoYrfm5ivXa+6SGjPbIbWVrFTwpA=";
     };
-    date = "2023-11-23";
-  };
-  durationpy = {
-    pname = "durationpy";
-    version = "0.5";
-    src = fetchurl {
-      url = "https://pypi.org/packages/source/d/durationpy/durationpy-0.5.tar.gz";
-      sha256 = "sha256-XvlBa1J7UNci80ZVvs+3Xkkijrgvh7hV7RkRszFLVAg=";
-    };
+    date = "2023-12-21";
   };
   eZeeKonfigurator = {
     pname = "eZeeKonfigurator";
@@ -59,25 +51,25 @@
   };
   elastalert2 = {
     pname = "elastalert2";
-    version = "a47a8841dc91dcaa28545194003ec11fd2218f08";
+    version = "436d3386652d1f9367368a7910943ee00986cc34";
     src = fetchFromGitHub {
       owner = "jertel";
       repo = "elastalert2";
-      rev = "a47a8841dc91dcaa28545194003ec11fd2218f08";
+      rev = "436d3386652d1f9367368a7910943ee00986cc34";
       fetchSubmodules = false;
-      sha256 = "sha256-RYuAel5ob2G2rYX6WKo4SCuoSiohGxvcLw6E3jO3tcY=";
+      sha256 = "sha256-TDWG7losdoTy4wdGP8ueM+ZQoT/nQaVcUNYXP6irLV4=";
     };
-    date = "2023-11-30";
+    date = "2023-12-17";
   };
   polars = {
     pname = "polars";
-    version = "py-0.19.19";
+    version = "py-0.20.2";
     src = fetchFromGitHub {
       owner = "pola-rs";
       repo = "polars";
-      rev = "py-0.19.19";
+      rev = "py-0.20.2";
       fetchSubmodules = false;
-      sha256 = "sha256-uT228XgmSEBfCFbkYEOvrjDt1Xv6e4coz9/SjgA2Tjg=";
+      sha256 = "sha256-NZsM3y9xNX9C3/lm+pXgfxvjFy2KgvPXufc6i4eXP0A=";
     };
   };
   sh = {
