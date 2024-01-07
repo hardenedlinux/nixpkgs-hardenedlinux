@@ -113,11 +113,11 @@
             "name": null,
             "owner": "pola-rs",
             "repo": "polars",
-            "rev": "py-0.20.2",
-            "sha256": "sha256-NZsM3y9xNX9C3/lm+pXgfxvjFy2KgvPXufc6i4eXP0A=",
+            "rev": "py-0.20.3",
+            "sha256": "sha256-aNcOI123uF7JdMoWxFCQbITFMZiBpqfvLQQ2W/fHWkE=",
             "type": "github"
         },
-        "version": "py-0.20.2"
+        "version": "py-0.20.3"
     },
     "sh": {
         "cargoLocks": null,

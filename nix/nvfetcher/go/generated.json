@@ -88,10 +88,10 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-DGgc3L2h5Hh03EtRDRREJH/aFJhToL2g1XO6RaIVPQ0=",
+            "sha256": "sha256-9eQrU1y0JiP7Bu5BGDGFg8Knnbw715uhok+hSKFADCY=",
             "type": "url",
-            "url": "https://github.com/zitadel/zitadel/releases/download/v2.42.3/zitadel-linux-amd64.tar.gz"
+            "url": "https://github.com/zitadel/zitadel/releases/download/v2.43.3/zitadel-linux-amd64.tar.gz"
         },
-        "version": "v2.42.3"
+        "version": "v2.43.3"
     }
 }
