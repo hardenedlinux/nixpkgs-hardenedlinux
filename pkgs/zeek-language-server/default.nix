@@ -3,9 +3,20 @@
   tree-sitter,
   nodejs,
   crane,
+  rust-bin,
 }:
 let
-  craneLib = crane.overrideScope' (final: prev: { });
+  craneLib = crane.overrideScope (
+    final: prev:
+    let
+      rust = rust-bin.nightly.latest.default;
+    in
+    {
+
+      rust = rust;
+      cargo = rust;
+    }
+  );
 in
 craneLib.buildPackage {
   inherit (nixpkgs-hardenedlinux-sources.zeek-language-server) src pname version;

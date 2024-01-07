@@ -16,6 +16,12 @@
 
     pnpm2nix.url = "github:Ninlives/pnpm2nix";
     pnpm2nix.inputs.nixpkgs.follows = "nixpkgs";
+
+    gpt-academic.url = "github:binary-husky/gpt_academic";
+    gpt-academic.flake = false;
+
+    dream2nix.url = "github:nix-community/dream2nix";
+    dream2nix.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs = _: { };

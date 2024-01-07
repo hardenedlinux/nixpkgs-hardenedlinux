@@ -17,11 +17,11 @@
     "omnibusSrc": {
       "flake": false,
       "locked": {
-        "lastModified": 1704070768,
-        "narHash": "sha256-/vI3Z/lydpe3Ygx3ePHwkpychihJiw/yFpm8Y3G36WI=",
+        "lastModified": 1704530240,
+        "narHash": "sha256-iBSAwkcSiE3LJLWS/n3xuF9XYc16UyLmaGD2TxF2XsY=",
         "owner": "gtrunsec",
         "repo": "omnibus",
-        "rev": "b31a3fbbd40ed626ac2e78d484ff42b5c1676ddc",
+        "rev": "be1d4b445aa8b99e4dd1315ece22a80035847775",
         "type": "github"
       },
       "original": {
