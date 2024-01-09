@@ -31,7 +31,7 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "owner": "Yidadaa",
+            "owner": "ChatGPTNextWeb",
             "repo": "ChatGPT-Next-Web",
             "rev": "cc86923fd578d3f9182df6d1cac86a6e97b30259",
             "sha256": "sha256-djkuFWH9tk0Ml3TYobe3zTAq84nVzff0RqHoYoPQxk8=",
@@ -61,7 +61,7 @@
     },
     "koodo-reader": {
         "cargoLocks": null,
-        "date": "2024-01-07",
+        "date": "2024-01-09",
         "extract": null,
         "name": "koodo-reader",
         "passthru": null,
@@ -73,11 +73,11 @@
             "name": null,
             "owner": "troyeguo",
             "repo": "koodo-reader",
-            "rev": "2bfebe65b20d86b3d954e8592600a2ca8865d28a",
-            "sha256": "sha256-AkaAkuG+xB9pmClYqOinAWrlswsBU6SqxNdGFxevdkA=",
+            "rev": "f7d7da8e9a219be9d0d90a1615a3728e7efe9edf",
+            "sha256": "sha256-pZReURY4uxkaT2kk0k/llA6cvy1Jsr1ym1VaPnXtVOA=",
             "type": "github"
         },
-        "version": "2bfebe65b20d86b3d954e8592600a2ca8865d28a"
+        "version": "f7d7da8e9a219be9d0d90a1615a3728e7efe9edf"
     },
     "nix-unstable-installer": {
         "cargoLocks": null,
@@ -171,7 +171,7 @@
     },
     "zeek-language-server": {
         "cargoLocks": null,
-        "date": "2024-01-01",
+        "date": "2024-01-08",
         "extract": null,
         "name": "zeek-language-server",
         "passthru": null,
@@ -183,10 +183,10 @@
             "name": null,
             "owner": "bbannier",
             "repo": "zeek-language-server",
-            "rev": "0c86af098e0f50f41f99f10f0970b689cfcaf9be",
-            "sha256": "sha256-PlHtQs+wb7VjjFesj0xYEvrO9vc2W75XmRbpOLMR0RU=",
+            "rev": "b2a80a54d454ee74e36e4e4492f4b46a87c09b6c",
+            "sha256": "sha256-Vy5FC96xkP1uesZ059pg1L5zQRV0HybEE/mZOi0D+Xs=",
             "type": "github"
         },
-        "version": "0c86af098e0f50f41f99f10f0970b689cfcaf9be"
+        "version": "b2a80a54d454ee74e36e4e4492f4b46a87c09b6c"
     }
 }
