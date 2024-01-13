@@ -51,25 +51,25 @@
   };
   elastalert2 = {
     pname = "elastalert2";
-    version = "436d3386652d1f9367368a7910943ee00986cc34";
+    version = "93f85108a3bc9c48c8542a04b6214dda17dc1c62";
     src = fetchFromGitHub {
       owner = "jertel";
       repo = "elastalert2";
-      rev = "436d3386652d1f9367368a7910943ee00986cc34";
+      rev = "93f85108a3bc9c48c8542a04b6214dda17dc1c62";
       fetchSubmodules = false;
-      sha256 = "sha256-TDWG7losdoTy4wdGP8ueM+ZQoT/nQaVcUNYXP6irLV4=";
+      sha256 = "sha256-klijITPOsZ56fiW5swSrknI24d7pKUaUt8D1g8OCIvY=";
     };
-    date = "2023-12-17";
+    date = "2024-01-08";
   };
   polars = {
     pname = "polars";
-    version = "py-0.20.3";
+    version = "py-0.20.4";
     src = fetchFromGitHub {
       owner = "pola-rs";
       repo = "polars";
-      rev = "py-0.20.3";
+      rev = "py-0.20.4";
       fetchSubmodules = false;
-      sha256 = "sha256-aNcOI123uF7JdMoWxFCQbITFMZiBpqfvLQQ2W/fHWkE=";
+      sha256 = "sha256-Z+iJfHKdkf8eqbPTnoQ5ynGBFRAUKKUblAyP/OmK4cM=";
     };
   };
   sh = {
