@@ -51,10 +51,10 @@
   };
   zitadel-bin = {
     pname = "zitadel-bin";
-    version = "v2.43.3";
+    version = "v2.42.10";
     src = fetchurl {
-      url = "https://github.com/zitadel/zitadel/releases/download/v2.43.3/zitadel-linux-amd64.tar.gz";
-      sha256 = "sha256-9eQrU1y0JiP7Bu5BGDGFg8Knnbw715uhok+hSKFADCY=";
+      url = "https://github.com/zitadel/zitadel/releases/download/v2.42.10/zitadel-linux-amd64.tar.gz";
+      sha256 = "sha256-Oj0ugGVCzT5B50/BrtRA0u5vMQFoJNsxYtTmx9n9RGc=";
     };
   };
 }
