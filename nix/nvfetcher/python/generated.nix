@@ -51,15 +51,15 @@
   };
   elastalert2 = {
     pname = "elastalert2";
-    version = "1e418d7f4ae99228a5d44bab87f779fa934d78fc";
+    version = "1fc170a89647197c8f8a3b14efe77d32bf27cedb";
     src = fetchFromGitHub {
       owner = "jertel";
       repo = "elastalert2";
-      rev = "1e418d7f4ae99228a5d44bab87f779fa934d78fc";
+      rev = "1fc170a89647197c8f8a3b14efe77d32bf27cedb";
       fetchSubmodules = false;
-      sha256 = "sha256-LmBsHG11UbTkuCbxwgmpxeKpdmt9lWWPi4eAdR8cvnk=";
+      sha256 = "sha256-u337D2rthSZEEd/3kxVfUvROYN3aPSdU5HvnQRsO+Rw=";
     };
-    date = "2024-01-24";
+    date = "2024-01-31";
   };
   polars = {
     pname = "polars";
