@@ -21,7 +21,7 @@
     },
     "chatgpt-next-web": {
         "cargoLocks": null,
-        "date": "2024-01-26",
+        "date": "2024-02-03",
         "extract": null,
         "name": "chatgpt-next-web",
         "passthru": null,
@@ -33,11 +33,11 @@
             "name": null,
             "owner": "ChatGPTNextWeb",
             "repo": "ChatGPT-Next-Web",
-            "rev": "981a3629b6eeb9f41090c2a7cd4fd568f6981a55",
-            "sha256": "sha256-O+c5pD2gqU0Emyvece67eMydOMG9OYQ/cpVhh1tD3jY=",
+            "rev": "4511aa4d21eda4e6e0b5130d1e3222bb30734672",
+            "sha256": "sha256-G+8fBDTK4EFCXkGzqorrPPI6bagcW1GMmXgovPNp7zw=",
             "type": "github"
         },
-        "version": "981a3629b6eeb9f41090c2a7cd4fd568f6981a55"
+        "version": "4511aa4d21eda4e6e0b5130d1e3222bb30734672"
     },
     "firecracker-task-driver": {
         "cargoLocks": null,
@@ -61,7 +61,7 @@
     },
     "koodo-reader": {
         "cargoLocks": null,
-        "date": "2024-01-25",
+        "date": "2024-01-30",
         "extract": null,
         "name": "koodo-reader",
         "passthru": null,
@@ -73,11 +73,11 @@
             "name": null,
             "owner": "troyeguo",
             "repo": "koodo-reader",
-            "rev": "083967fe94b855ae22c83cd2e1859f4a70b3850b",
-            "sha256": "sha256-JecTvsX9//3wa3upHcARF3t3gTmH2gGi2k1Shr3OdKw=",
+            "rev": "3aafbeb3cf4eefe8b4ace1cdfbd84f2e536b1600",
+            "sha256": "sha256-Tpy4N+Z/UFKV4iT+yU2aqr81pLIjAwVDQldGIEVfaWA=",
             "type": "github"
         },
-        "version": "083967fe94b855ae22c83cd2e1859f4a70b3850b"
+        "version": "3aafbeb3cf4eefe8b4ace1cdfbd84f2e536b1600"
     },
     "nix-unstable-installer": {
         "cargoLocks": null,
@@ -88,11 +88,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-czH5OgDuJf3WTwHDSIKUc1qz2osXYoXOFArkS91qb2Q=",
+            "sha256": "sha256-iAThBSX263Bx8222qaAmVrgn9z9IEjregWNTPorCwGA=",
             "type": "url",
-            "url": "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.20.0pre20240119_3b20cca/install"
+            "url": "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.20.0pre20240123_08bf284/install"
         },
-        "version": "nix-2.20.0pre20240119_3b20cca"
+        "version": "nix-2.20.0pre20240123_08bf284"
     },
     "osquery": {
         "cargoLocks": null,
@@ -171,7 +171,7 @@
     },
     "zeek-language-server": {
         "cargoLocks": null,
-        "date": "2024-01-22",
+        "date": "2024-01-29",
         "extract": null,
         "name": "zeek-language-server",
         "passthru": null,
@@ -183,10 +183,10 @@
             "name": null,
             "owner": "bbannier",
             "repo": "zeek-language-server",
-            "rev": "510892fa2c388c8495437711debf6c67a2f03bb8",
-            "sha256": "sha256-l+TakrXE47REGzmGOfScTarmunRkSd+thJKhGbAS0o8=",
+            "rev": "d5da210837845a5b54ce71b5d94d8b2a1ce9b4f9",
+            "sha256": "sha256-LbmU3RK0bjzhIfZevhPEgFpxNMfYNQmdq2vOie1o+CM=",
             "type": "github"
         },
-        "version": "510892fa2c388c8495437711debf6c67a2f03bb8"
+        "version": "d5da210837845a5b54ce71b5d94d8b2a1ce9b4f9"
     }
 }

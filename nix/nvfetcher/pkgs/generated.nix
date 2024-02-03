@@ -14,15 +14,15 @@
   };
   chatgpt-next-web = {
     pname = "chatgpt-next-web";
-    version = "981a3629b6eeb9f41090c2a7cd4fd568f6981a55";
+    version = "4511aa4d21eda4e6e0b5130d1e3222bb30734672";
     src = fetchFromGitHub {
       owner = "ChatGPTNextWeb";
       repo = "ChatGPT-Next-Web";
-      rev = "981a3629b6eeb9f41090c2a7cd4fd568f6981a55";
+      rev = "4511aa4d21eda4e6e0b5130d1e3222bb30734672";
       fetchSubmodules = false;
-      sha256 = "sha256-O+c5pD2gqU0Emyvece67eMydOMG9OYQ/cpVhh1tD3jY=";
+      sha256 = "sha256-G+8fBDTK4EFCXkGzqorrPPI6bagcW1GMmXgovPNp7zw=";
     };
-    date = "2024-01-26";
+    date = "2024-02-03";
   };
   firecracker-task-driver = {
     pname = "firecracker-task-driver";
@@ -38,22 +38,22 @@
   };
   koodo-reader = {
     pname = "koodo-reader";
-    version = "083967fe94b855ae22c83cd2e1859f4a70b3850b";
+    version = "3aafbeb3cf4eefe8b4ace1cdfbd84f2e536b1600";
     src = fetchFromGitHub {
       owner = "troyeguo";
       repo = "koodo-reader";
-      rev = "083967fe94b855ae22c83cd2e1859f4a70b3850b";
+      rev = "3aafbeb3cf4eefe8b4ace1cdfbd84f2e536b1600";
       fetchSubmodules = false;
-      sha256 = "sha256-JecTvsX9//3wa3upHcARF3t3gTmH2gGi2k1Shr3OdKw=";
+      sha256 = "sha256-Tpy4N+Z/UFKV4iT+yU2aqr81pLIjAwVDQldGIEVfaWA=";
     };
-    date = "2024-01-25";
+    date = "2024-01-30";
   };
   nix-unstable-installer = {
     pname = "nix-unstable-installer";
-    version = "nix-2.20.0pre20240119_3b20cca";
+    version = "nix-2.20.0pre20240123_08bf284";
     src = fetchurl {
-      url = "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.20.0pre20240119_3b20cca/install";
-      sha256 = "sha256-czH5OgDuJf3WTwHDSIKUc1qz2osXYoXOFArkS91qb2Q=";
+      url = "https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.20.0pre20240123_08bf284/install";
+      sha256 = "sha256-iAThBSX263Bx8222qaAmVrgn9z9IEjregWNTPorCwGA=";
     };
   };
   osquery = {
@@ -102,14 +102,14 @@
   };
   zeek-language-server = {
     pname = "zeek-language-server";
-    version = "510892fa2c388c8495437711debf6c67a2f03bb8";
+    version = "d5da210837845a5b54ce71b5d94d8b2a1ce9b4f9";
     src = fetchFromGitHub {
       owner = "bbannier";
       repo = "zeek-language-server";
-      rev = "510892fa2c388c8495437711debf6c67a2f03bb8";
+      rev = "d5da210837845a5b54ce71b5d94d8b2a1ce9b4f9";
       fetchSubmodules = true;
-      sha256 = "sha256-l+TakrXE47REGzmGOfScTarmunRkSd+thJKhGbAS0o8=";
+      sha256 = "sha256-LbmU3RK0bjzhIfZevhPEgFpxNMfYNQmdq2vOie1o+CM=";
     };
-    date = "2024-01-22";
+    date = "2024-01-29";
   };
 }
