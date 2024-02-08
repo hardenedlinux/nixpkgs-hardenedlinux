@@ -63,13 +63,13 @@
   };
   polars = {
     pname = "polars";
-    version = "py-0.20.6";
+    version = "py-0.20.7";
     src = fetchFromGitHub {
       owner = "pola-rs";
       repo = "polars";
-      rev = "py-0.20.6";
+      rev = "py-0.20.7";
       fetchSubmodules = false;
-      sha256 = "sha256-8JUHIJg6N2TmXrEfDAefNVmxCAfRXKcl2IeTn6brPFU=";
+      sha256 = "sha256-R3by/e28HE+1xq+HQd9wYy/iK+fDM6/IfKuc563atX4=";
     };
   };
   sh = {

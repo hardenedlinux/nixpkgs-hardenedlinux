@@ -21,7 +21,7 @@
     },
     "chatgpt-next-web": {
         "cargoLocks": null,
-        "date": "2024-02-03",
+        "date": "2024-02-05",
         "extract": null,
         "name": "chatgpt-next-web",
         "passthru": null,
@@ -33,11 +33,11 @@
             "name": null,
             "owner": "ChatGPTNextWeb",
             "repo": "ChatGPT-Next-Web",
-            "rev": "4511aa4d21eda4e6e0b5130d1e3222bb30734672",
-            "sha256": "sha256-G+8fBDTK4EFCXkGzqorrPPI6bagcW1GMmXgovPNp7zw=",
+            "rev": "bb26c03141473c9437827ceb559d43041b149604",
+            "sha256": "sha256-630TbrrOD92APeUpnhhHVOWCLIrJtDAYQxeGdrRrSdE=",
             "type": "github"
         },
-        "version": "4511aa4d21eda4e6e0b5130d1e3222bb30734672"
+        "version": "bb26c03141473c9437827ceb559d43041b149604"
     },
     "firecracker-task-driver": {
         "cargoLocks": null,
@@ -151,7 +151,7 @@
     },
     "yakgpt": {
         "cargoLocks": null,
-        "date": "2023-11-26",
+        "date": "2024-02-05",
         "extract": null,
         "name": "yakgpt",
         "passthru": null,
@@ -163,15 +163,15 @@
             "name": null,
             "owner": "yakGPT",
             "repo": "yakGPT",
-            "rev": "eac84e69a297ea344f9b2533601e2810d739307c",
-            "sha256": "sha256-IhxOFr/HCReJzlGLB2LmHJPZr7KVuqRsdyN/iUJ3q9U=",
+            "rev": "9da0bd57b5fac964b526f9b5eee86ecb2ba7023a",
+            "sha256": "sha256-gA64Lc5fIhrxHSvX2ArJyylxppcHprqIe0aTZCBB4r4=",
             "type": "github"
         },
-        "version": "eac84e69a297ea344f9b2533601e2810d739307c"
+        "version": "9da0bd57b5fac964b526f9b5eee86ecb2ba7023a"
     },
     "zeek-language-server": {
         "cargoLocks": null,
-        "date": "2024-01-29",
+        "date": "2024-02-05",
         "extract": null,
         "name": "zeek-language-server",
         "passthru": null,
@@ -183,10 +183,10 @@
             "name": null,
             "owner": "bbannier",
             "repo": "zeek-language-server",
-            "rev": "d5da210837845a5b54ce71b5d94d8b2a1ce9b4f9",
-            "sha256": "sha256-LbmU3RK0bjzhIfZevhPEgFpxNMfYNQmdq2vOie1o+CM=",
+            "rev": "b691b42febcebf320ee1a0e5e2b471f2bc51be0d",
+            "sha256": "sha256-TxMMC0Ygn6GzZkRJJwUcLh4/3C4X9eZBTa/go9hUoX4=",
             "type": "github"
         },
-        "version": "d5da210837845a5b54ce71b5d94d8b2a1ce9b4f9"
+        "version": "b691b42febcebf320ee1a0e5e2b471f2bc51be0d"
     }
 }
