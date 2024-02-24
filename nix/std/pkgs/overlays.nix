@@ -50,20 +50,15 @@
               ;
           };
 
-      python3 = prev.python3.override (
-        old: {
-          packageOverrides =
-            pkgs.lib.composeExtensions (old.packageOverrides or (_: _: { }))
-              packages;
-        }
-      );
+      python3 = prev.python3.override (old: {
+        packageOverrides = pkgs.lib.composeExtensions (old.packageOverrides
+          or (_: _: { })
+        ) packages;
+      });
 
-      python3Packages = prev.python3Packages.override (
-        old: {
-          overrides =
-            prev.lib.composeExtensions (old.packageOverrides or (_: _: { }))
-              packages;
-        }
-      );
+      python3Packages = prev.python3Packages.override (old: {
+        overrides = prev.lib.composeExtensions (old.packageOverrides or (_: _: { })
+          ) packages;
+      });
     };
 }

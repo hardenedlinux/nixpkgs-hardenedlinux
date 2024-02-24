@@ -1,11 +1,18 @@
 diff --git a/package.json b/package.json
-index 0938c5b..20556be 100644
+index b31d6a9..8471152 100644
 --- a/package.json
 +++ b/package.json
 @@ -1,5 +1,6 @@
  {
-   "name": "chatgpt-next-web",
-+  "version": "1.0.0",
+   "name": "nextchat",
++  "version": "0.1.0",
    "private": false,
    "license": "mit",
    "scripts": {
+@@ -64,4 +65,4 @@
+   "resolutions": {
+     "lint-staged/yaml": "^2.2.2"
+   }
+-}
+\ No newline at end of file
++}

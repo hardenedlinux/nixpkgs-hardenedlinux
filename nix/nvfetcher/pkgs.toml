@@ -1,3 +1,7 @@
+[copilot-gpt4-service]
+src.git = "https://github.com/aaamoon/copilot-gpt4-service"
+fetch.github = "aaamoon/copilot-gpt4-service"
+
 [chatgpt-next-web]
 src.git = "https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web"
 fetch.github = "ChatGPTNextWeb/ChatGPT-Next-Web"

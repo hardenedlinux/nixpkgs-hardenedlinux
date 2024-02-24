@@ -9,23 +9,21 @@ let
   cfg = config.services.osquery-bin;
   configFile = pkgs.writeText "osquery.conf" (
     builtins.toJSON (
-      recursiveUpdate
-        {
-          schedule = {
-            time_again = {
-              query = "select * from time;";
-              interval = 1;
-            };
+      recursiveUpdate {
+        schedule = {
+          time_again = {
+            query = "select * from time;";
+            interval = 1;
           };
-          options = {
-            config_plugin = "filesystem";
-            logger_plugin = "filesystem";
-            logger_path = cfg.loggerPath;
-            database_path = cfg.databasePath;
-            inherit (cfg) utc;
-          };
-        }
-        cfg.extraConfig
+        };
+        options = {
+          config_plugin = "filesystem";
+          logger_plugin = "filesystem";
+          logger_path = cfg.loggerPath;
+          database_path = cfg.databasePath;
+          inherit (cfg) utc;
+        };
+      } cfg.extraConfig
     )
   );
 in

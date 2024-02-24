@@ -1,17 +1,20 @@
 {
-  inputs = {
-    nixpkgs.follows = "omnibusStd/nixpkgs";
-    omnibusStd.url = "github:gtrunsec/omnibus/?dir=local";
-    std.follows = "omnibusStd/std";
-  };
+  inputs = { };
 
   outputs =
-    { std, ... }@inputs:
+    { ... }@inputs:
+    let
+      inputsSource = inputs // rec {
+        nixpkgs = (import ../..).inputs.nixpkgs;
+        omnibus = import (import ../..).inputs.omnibusSrc;
+        inherit (omnibus.flake.inputs) std;
+      };
+      inherit (inputsSource.omnibus.flake.inputs) std;
+    in
     std.growOn
       {
-        inputs = inputs // {
-          omnibus = import (inputs.omnibusStd.inputs.call-flake ../..).inputs.omnibusSrc;
-        };
+        inputs = inputsSource;
+
         cellsFrom = ./cells;
 
         cellBlocks = with std.blockTypes; [
@@ -34,12 +37,12 @@
         ];
       }
       {
-        devShells = inputs.std.harvest inputs.self [
+        devShells = std.harvest inputs.self [
           "repo"
           "shells"
         ];
         overlays =
-          (inputs.std.harvest inputs.self [
+          (std.harvest inputs.self [
             [
               "python"
               "overlays"
@@ -50,13 +53,13 @@
             ]
           ]).x86_64-linux;
         nixosModules =
-          (inputs.std.harvest inputs.self [
+          (std.harvest inputs.self [
             [
               "pkgs"
               "nixosModules"
             ]
           ]).x86_64-linux;
-        packages = inputs.std.harvest inputs.self [
+        packages = std.harvest inputs.self [
           [
             "python"
             "packages"

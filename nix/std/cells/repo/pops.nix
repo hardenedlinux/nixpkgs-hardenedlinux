@@ -16,13 +16,14 @@ in
           _self: _super: {
             exports = rec {
               inherit (inputs.omnibus.lib.mapPopsExports pops) self;
-              pops.self =
-                (self.layouts.default.addLoadExtender {
+              pops.self = (
+                self.layouts.default.addLoadExtender {
                   load.inputs = {
                     # extend the inputs of the default layout
                     # inherit inputs cell;
                   };
-                });
+                }
+              );
             };
           }
         )

@@ -10,7 +10,11 @@ in
       transformer = [
         (
           _cursor: dir:
-          if dir ? default then assert (l.hasAttr "default" dir); dir.default else dir
+          if dir ? default then
+            assert (l.hasAttr "default" dir);
+            dir.default
+          else
+            dir
         )
       ];
     }).outputsForTarget
@@ -24,7 +28,11 @@ in
       transformer = [
         (
           _cursor: dir:
-          if dir ? default then assert (l.hasAttr "default" dir); dir.default else dir
+          if dir ? default then
+            assert (l.hasAttr "default" dir);
+            dir.default
+          else
+            dir
         )
       ];
     }).outputsForTarget
