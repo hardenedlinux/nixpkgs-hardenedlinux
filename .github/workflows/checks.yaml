@@ -36,7 +36,7 @@ jobs:
           nix develop ./nix/std -c nvfetcher-all
 
       - name: Build packages with nixci
-        run: nixci
+        run: nixci build
 
       - name: Create Pull Request
         if: ${{ env.COMMIT_MSG != null }}
