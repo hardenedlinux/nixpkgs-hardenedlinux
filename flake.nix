@@ -1,6 +1,6 @@
 {
   inputs = {
-    omnibusSrc.url = "github:gtrunsec/omnibus";
+    omnibusSrc.url = "github:tao3k/omnibus";
     omnibusSrc.flake = false;
   };
 

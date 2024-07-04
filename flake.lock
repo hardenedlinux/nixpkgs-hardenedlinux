@@ -2,11 +2,11 @@
   "nodes": {
     "nixpkgs": {
       "locked": {
-        "lastModified": 1708751719,
-        "narHash": "sha256-0uWOKSpXJXmXswOvDM5Vk3blB74apFB6rNGWV5IjoN0=",
+        "lastModified": 1720058333,
+        "narHash": "sha256-gM2RCi5XkxmcsZ44pUkKIYBiBMfZ6u7MdcZcykmccrs=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "f63ce824cd2f036216eb5f637dfef31e1a03ee89",
+        "rev": "6842b061970bf96965d66fcc86a28e1f719aae95",
         "type": "github"
       },
       "original": {
@@ -17,15 +17,15 @@
     "omnibusSrc": {
       "flake": false,
       "locked": {
-        "lastModified": 1708757039,
-        "narHash": "sha256-r1/SbtgdlmaZz8vuCZCp5KX+Z/AFyx76XTRrZBtUFGM=",
-        "owner": "gtrunsec",
+        "lastModified": 1720004143,
+        "narHash": "sha256-EXwMxJfAWNK97Sl60SnFrrjw0bBUUgzv3TLvvxfJZo0=",
+        "owner": "tao3k",
         "repo": "omnibus",
-        "rev": "e88b800ca69efc17b6d3719a0b4e84fca4b58117",
+        "rev": "f915203a5f33758b3ea4d3eb23389a8b536dd0de",
         "type": "github"
       },
       "original": {
-        "owner": "gtrunsec",
+        "owner": "tao3k",
         "repo": "omnibus",
         "type": "github"
       }
